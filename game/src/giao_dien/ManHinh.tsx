@@ -1,6 +1,7 @@
 import type { Lenh } from '../luat/kieu'
 import type { DuLieuManHinh } from '../luat/xem'
 import { BanDieuKhien } from './BanDieuKhien'
+import { BangTamHiep } from './BangTamHiep'
 import { BienNien } from './BienNien'
 import { ThanhTrangThai } from './ThanhTrangThai'
 
@@ -15,6 +16,7 @@ export function ManHinh({ duLieu, phat }: PropsManHinh) {
       <ThanhTrangThai duLieu={duLieu} />
       <BienNien bienNien={duLieu.bien_nien} />
       <BanDieuKhien ap={duLieu.ap} phat={phat} />
+      {duLieu.tam_hiep && <BangTamHiep tran={duLieu.tam_hiep} phat={phat} />}
     </div>
   )
 }

@@ -155,7 +155,7 @@ Xem trực quan và copy HTML ở [mau.html](mau.html).
 | Thẻ xem nhanh | `.vk-popover` | Thông tin 1 - 3 dòng | `__tieu-de` có thể kèm huy hiệu |
 | Lớp phủ + Thẻ quyết định | `.vk-phu > .vk-modal` | Sự kiện bắt buộc chọn | `__tieu-de`, `__than`, `__lua-chon` |
 | Phương án | `.vk-lua-chon` | Mỗi lựa chọn trong Modal | `--nguy`, `aria-disabled="true"` (Cổng chưa đạt) |
-| Bảng Tam Hiệp | `.vk-tam-hiep` + `.vk-hiep` | Trong Modal giao chiến | `.vk-hiep__o[aria-current="step"]` |
+| Bảng Tam Hiệp | `.vk-tam-hiep` + `.vk-hiep` | Trong Modal giao chiến; thanh HP đối thủ, bộ đếm hiệp, thanh HP và MP của người chơi (đều theo %) | `.vk-hiep__o[aria-current="step"]` |
 | Dock | `.vk-dock` | Đáy màn hình chính | `__hanh-dong` chứa AP và +1 Tuổi |
 | Ngọc AP | `.vk-ap > .vk-ap__ngoc` | Số AP còn lại | `data-sang="true"` |
 | Nút +1 Tuổi | `.vk-nut.vk-nut--chinh.vk-nut--lon.vk-qua-nam` | Qua năm | `data-nhac="true"` khi hết AP |

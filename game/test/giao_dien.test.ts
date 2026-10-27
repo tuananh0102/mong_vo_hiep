@@ -1,5 +1,8 @@
 import { describe, expect, it } from 'vitest'
-import { khoiTaoTroChoi, reducer } from '../src/giao_dien/dung_tro_choi'
+import { DU_LIEU } from '../src/du_lieu/nap_vite'
+import { khoiTaoTroChoi, reducer, taoTrangThaiMacDinh, type BoNho } from '../src/giao_dien/dung_tro_choi'
+import { datTranThu } from '../src/giao_dien/thu_tam_hiep'
+import { xemManHinh } from '../src/luat/xem'
 
 describe('giao_dien / dung_tro_choi', () => {
   it('khoiTaoTroChoi tạo trạng thái ban đầu tuổi 0', () => {
@@ -22,6 +25,22 @@ describe('giao_dien / dung_tro_choi', () => {
     const s2 = reducer(s1, { loai: 'qua_nam' })
     expect(s2.hien_tai.nhan_vat.tuoi).toBe(2)
     expect(s2.lenh.length).toBe(2)
+  })
+
+  it('trận Tam Hiệp thử: chơi đủ 3 hiệp qua reducer, xong thì ghi Biên Niên Sử', () => {
+    const s = datTranThu(taoTrangThaiMacDinh(5))
+    let boNho: BoNho = { trang_thai_dau: s, lenh: [], hien_tai: s, loi: null }
+    const hiepDaThay = new Set<number>()
+    for (let i = 0; i < 12 && boNho.hien_tai.cho?.loai === 'tam_hiep'; i++) {
+      const tran = xemManHinh(boNho.hien_tai, DU_LIEU).tam_hiep!
+      hiepDaThay.add(tran.hiep)
+      expect(tran.lua_chon.length).toBeGreaterThan(0)
+      boNho = reducer(boNho, { loai: 'tam_hiep', buoc: tran.lua_chon[0]!.buoc })
+      expect(boNho.loi).toBeNull()
+    }
+    expect([...hiepDaThay].sort()).toEqual([1, 2, 3])
+    expect(boNho.hien_tai.cho).toBeNull()
+    expect(boNho.hien_tai.bien_nien.some((d) => d.loai_hien_thi === 'giao-chien')).toBe(true)
   })
 
   it('reducer từ chối lệnh không hợp lệ và báo lỗi', () => {

@@ -470,7 +470,7 @@ Nối các mã phái sinh vào `docChiSo` (thay chỗ `throw` ở M0-05).
 
 ---
 
-### [ ] M1-11 Chiến đấu: Giao chiến nhanh và Quyết Đấu Tam Hiệp
+### [x] M1-11 Chiến đấu: Giao chiến nhanh và Quyết Đấu Tam Hiệp
 
 Task lớn, làm theo 4 phần, mỗi phần một commit.
 
@@ -516,7 +516,7 @@ Task lớn, làm theo 4 phần, mỗi phần một commit.
 
 **Test:** mỗi nhánh HS02 V.3; nhảy vực 3 mức; cứu mạng chỉ 1 lần / trận.
 
-#### [ ] M1-11d Giao diện Tam Hiệp
+#### [x] M1-11d Giao diện Tam Hiệp
 
 **Đọc:** `giao_dien/mau.html` khung "Thẻ quyết định - Tam Hiệp"; thiết kế mục 7 (`.vk-tam-hiep`, `.vk-hiep`).
 **Tạo:** `game/src/giao_dien/BangTamHiep.tsx`.

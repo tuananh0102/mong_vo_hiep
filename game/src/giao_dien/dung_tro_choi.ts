@@ -6,6 +6,7 @@ import { apDung } from '../luat/dong_co'
 import type { Lenh, TrangThaiGame } from '../luat/kieu'
 import { docBanLuu, PHIEN_BAN, tuanTuHoa, type BanLuu } from '../luat/luu'
 import { xemManHinh, type DuLieuManHinh } from '../luat/xem'
+import { CO_TRAN_THU, datTranThu } from './thu_tam_hiep'
 
 export const KHOA_LUU = 'vkgh.kiep'
 
@@ -37,6 +38,10 @@ export function taoTrangThaiMacDinh(seed = Date.now()): TrangThaiGame {
 }
 
 export function khoiTaoTroChoi(): BoNho {
+  if (CO_TRAN_THU) {
+    const s = datTranThu(taoTrangThaiMacDinh())
+    return { trang_thai_dau: s, lenh: [], hien_tai: s, loi: null }
+  }
   if (typeof window !== 'undefined' && typeof window.localStorage !== 'undefined') {
     try {
       const chuoi = window.localStorage.getItem(KHOA_LUU)
@@ -79,7 +84,7 @@ export function reducer(state: BoNho, lenh: Lenh): BoNho {
     loi: null,
   }
 
-  if (typeof window !== 'undefined' && typeof window.localStorage !== 'undefined') {
+  if (!CO_TRAN_THU && typeof window !== 'undefined' && typeof window.localStorage !== 'undefined') {
     try {
       const banLuu: BanLuu = {
         phien_ban: PHIEN_BAN,

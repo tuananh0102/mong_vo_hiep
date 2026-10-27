@@ -19,6 +19,8 @@ import {
 export interface LuaChonTran {
   buoc: BuocTamHiep
   nhan: string
+  /** Tên chỉ số của Roll kèm độ khó (chỉ có khi lựa chọn là Roll). */
+  chi_so?: string
   do_kho?: NhanDoKho
   nguy: boolean
 }
@@ -29,6 +31,7 @@ export interface BenHienThi {
 }
 
 export interface TranHienThi {
+  ten_doi_thu: string
   che_do: CheDoTran
   hiep: 1 | 2 | 3
   buoc: BuocTran
@@ -64,7 +67,10 @@ function luaChonHienTai(t: TranDau, mau: (k: string) => string): LuaChonTran[] {
         nhan: mau(`nhan.huong.${h}`),
         // Án Binh có Roll Ngộ tính vs Ngộ tính địch (HS02 V.1)
         ...(h === 'Q'
-          ? { do_kho: nhanDoKho(pRoll(t.a.vg.ngo_tinh, t.b.vg.ngo_tinh, t.a.vg.phuc_duyen)) }
+          ? {
+              chi_so: 'Ngộ tính',
+              do_kho: nhanDoKho(pRoll(t.a.vg.ngo_tinh, t.b.vg.ngo_tinh, t.a.vg.phuc_duyen)),
+            }
           : {}),
         nguy: false,
       }))
@@ -79,7 +85,7 @@ function luaChonHienTai(t: TranDau, mau: (k: string) => string): LuaChonTran[] {
       return luaChonPhanDinh(t).map((ma) => ({
         buoc: { loai: 'phan_dinh', ma },
         nhan: mau(`nhan.phan_dinh.${ma}`),
-        ...(ma === 'bo_chay' ? { do_kho: nhanDoKho(pBoChay(t)) } : {}),
+        ...(ma === 'bo_chay' ? { chi_so: 'Võ lực', do_kho: nhanDoKho(pBoChay(t)) } : {}),
         nguy: NGUY.includes(ma),
       }))
     default:
@@ -122,6 +128,7 @@ export function taoMauTamHiep(
 export function xemTranDau(t: TranDau, dl: DuLieu, tenDoiThu = 'Đối thủ'): TranHienThi {
   const mau = taoMauTamHiep(dl, tenDoiThu)
   return {
+    ten_doi_thu: tenDoiThu,
     che_do: t.che_do,
     hiep: t.hiep,
     buoc: t.buoc,
