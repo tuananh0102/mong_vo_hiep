@@ -235,7 +235,7 @@ Trước khi làm: đọc [README.md](README.md) mục 3 - 5 và [01_KIEN_TRUC.m
 
 ---
 
-### [ ] M0-10 Khung giao diện
+### [x] M0-10 Khung giao diện
 
 **Phụ thuộc:** M0-09.
 **Đọc:** 01 mục 12; `giao_dien/HE_THONG_THIET_KE.md` mục 1, 6, 7, 10; `giao_dien/mau.html` khung "Màn hình chính" (tìm bằng `grep -n "<figcaption>"`).
