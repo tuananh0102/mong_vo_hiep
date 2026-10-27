@@ -211,7 +211,7 @@ Trước khi làm: đọc [README.md](README.md) mục 3 - 5 và [01_KIEN_TRUC.m
 
 ---
 
-### [ ] M0-09 Động cơ, bất biến, lưu game
+### [x] M0-09 Động cơ, bất biến, lưu game
 
 **Phụ thuộc:** M0-02, M0-08.
 **Đọc:** 01 mục 5, 10.4, 10.5, 11.

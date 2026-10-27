@@ -12,6 +12,22 @@ export type MaNhan = string
 export type MaNpc = string
 export type MaMonPhai = string
 export type MaGoiLuanHoi = string
+export type MaHanhDong = string
+export type MaO = 'noi_cong' | 'khinh_cong' | 'ngoai_cong' | 'tuyet_ky' | 'binh_khi' | 'giap'
+export type BuocTamHiep = unknown
+
+/** 01 mục 5.2: Lệnh gửi vào động cơ apDung. */
+export type Lenh =
+  | { loai: 'tao_kiep'; seed: number; gioi_tinh: 'nam' | 'nu'; ten: string; uu_dai: MaGoiLuanHoi[] }
+  | { loai: 'chon_thien_phu'; ma: MaThienPhu }
+  | { loai: 'hanh_dong'; ma: MaHanhDong; tham_so?: Record<string, string | number> }
+  | { loai: 'qua_nam' }
+  | { loai: 'chon'; ma_lua_chon: string }
+  | { loai: 'tam_hiep'; buoc: BuocTamHiep }
+  | { loai: 'trang_bi'; o: MaO; ma: string | null }
+  | { loai: 'dung_vat_pham'; ma: MaVatPham }
+  | { loai: 'mua'; ma: MaVatPham; so_luong: number }
+  | { loai: 'tiep_tuc' }
 
 /** HS06 II.3: nợ theo từng chủ nợ, lãi 20%/năm. */
 export interface KhoanNo {
