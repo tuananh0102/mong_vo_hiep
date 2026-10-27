@@ -1,0 +1,171 @@
+/*
+ * VẠN KIẾP GIANG HỒ - DESIGN TOKENS
+ * Nguồn sự thật duy nhất cho màu, chữ, khoảng cách, bo góc, bóng, chuyển động, lớp.
+ * Quy tắc: thành phần CHỈ dùng tầng 2 (ngữ nghĩa). Tầng 1 (bảng màu gốc) chỉ được tham chiếu trong file này.
+ * Thêm/sửa màu chữ xong phải chạy: python giao_dien/kiem_tra_tuong_phan.py
+ */
+
+:root {
+  /* ---------- TẦNG 1: BẢNG MÀU GỐC (Hồ sơ 07 mục 1.1) ---------- */
+  --mau-giay: #F4EFE6;          /* Giấy Tuyên Thành */
+  --mau-giay-sang: #FBF8F2;     /* Giấy mới, mặt thẻ nổi */
+  --mau-giay-dam: #EAE2D3;      /* Giấy cũ, vùng lõm */
+  --mau-giay-sam: #DDD2BE;      /* Đường kẻ, viền nhạt (không dùng cho chữ) */
+  --mau-muc: #1C1B18;           /* Mực tàu */
+  --mau-muc-nhat: #5C564B;      /* Mực pha nước, chữ phụ */
+  --mau-chu-sa: #9E2A2B;        /* Đỏ chu sa */
+  --mau-thanh-ngoc: #2A6F68;    /* Xanh thanh ngọc */
+  --mau-tim-huyen: #5B3A6E;     /* Tím huyền */
+  --mau-lam-chau: #2B4C7E;      /* Lam chàm */
+  --mau-kim-dam: #7A5C10;       /* Vàng kim đậm */
+  --mau-kim-sang: #D4AF37;      /* Vàng kim sáng - KHÔNG dùng cho chữ */
+  --mau-trang: #FFFFFF;
+
+  /* ---------- TẦNG 2: NGỮ NGHĨA (thành phần chỉ dùng tầng này) ---------- */
+
+  /* Nền & bề mặt */
+  --nen: var(--mau-giay);
+  --be-mat-noi: var(--mau-giay-sang);     /* thẻ, modal, sheet */
+  --be-mat-lom: var(--mau-giay-dam);      /* dock, ô trống, track thanh máu */
+  --phu-mo: rgb(28 27 24 / 0.45);         /* lớp tối sau modal */
+
+  /* Chữ */
+  --chu: var(--mau-muc);
+  --chu-phu: var(--mau-muc-nhat);
+  --chu-dao: var(--mau-giay-sang);        /* chữ trên nền mực */
+  --chu-lien-ket: var(--mau-lam-chau);    /* tên NPC / võ học chạm được */
+
+  /* Viền */
+  --vien: var(--mau-giay-sam);            /* trang trí, phân cách */
+  --vien-dieu-khien: var(--mau-muc-nhat); /* viền nút / ô bấm được (>= 3:1) */
+  --vien-nhan: var(--mau-kim-sang);       /* viền ánh kim, điểm nhấn */
+
+  /* Hành động */
+  --hanh-dong: var(--mau-muc);
+  --hanh-dong-chu: var(--mau-giay-sang);
+  --hanh-dong-nguy: var(--mau-chu-sa);
+  --vo-hieu-nen: var(--mau-giay-dam);
+  --vo-hieu-chu: var(--mau-muc-nhat);
+  --vong-focus: var(--mau-lam-chau);
+
+  /* Loại sự kiện trong Biên Niên Sử (màu chữ + biểu tượng, không bao giờ chỉ màu) */
+  --su-kien-thuong: var(--mau-muc);
+  --su-kien-giao-chien: var(--mau-chu-sa);   /* ⚔ */
+  --su-kien-tinh-duyen: var(--mau-tim-huyen);/* ❀ */
+  --su-kien-ky-ngo: var(--mau-kim-dam);      /* ✦ Kỳ ngộ SSS */
+  --su-kien-dao-gia: var(--mau-thanh-ngoc);  /* ☯ Kỳ ngộ đạo gia */
+
+  /* Phẩm cấp 4 bậc thống nhất (xem HE_THONG_THIET_KE.md mục Phẩm cấp) */
+  --pham-1: var(--mau-muc-nhat);   /* Trắng / B / Nhập môn */
+  --pham-2: var(--mau-lam-chau);   /* Lam / A / Thượng thừa */
+  --pham-3: var(--mau-tim-huyen);  /* Tím / S - SS / Trấn phái */
+  --pham-4: var(--mau-chu-sa);     /* Đỏ / SSS / Thần công */
+
+  /* Nhãn độ khó kiểm định (Hồ sơ 07 mục I.1, Hồ sơ 06 I.2) */
+  --do-kho-de: var(--mau-thanh-ngoc);
+  --do-kho-kha: var(--mau-muc);
+  --do-kho-kho: var(--mau-kim-dam);
+  --do-kho-hiem: var(--mau-chu-sa);
+
+  /* Thanh chỉ số */
+  --thanh-hp: var(--mau-chu-sa);
+  --thanh-mp: var(--mau-lam-chau);
+  --thanh-tien-do: var(--mau-thanh-ngoc);
+  --thanh-track: var(--mau-giay-dam);
+
+  /* Ngọc AP */
+  --ap-sang: var(--mau-kim-sang);
+  --ap-tat: var(--mau-giay-sam);
+  --ap-vien: var(--mau-kim-dam);
+  --muc-loang: rgb(28 27 24 / 0.45); /* hiệu ứng nhắc nút +1 Tuổi */
+
+  /* ---------- CHỮ ---------- */
+  --font-than: "Noto Serif", "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-tieu-de: "Noto Serif", Georgia, serif;
+  --font-so: "Noto Serif", Georgia, serif; /* số dùng font-variant-numeric: tabular-nums */
+
+  --co-chu-xs: 0.75rem;   /* 12px - nhãn phụ trong huy hiệu */
+  --co-chu-sm: 0.875rem;  /* 14px - meta, chú thích */
+  --co-chu-md: 1.0625rem; /* 17px - thân văn, Biên Niên Sử */
+  --co-chu-lg: 1.25rem;   /* 20px - tiêu đề thẻ */
+  --co-chu-xl: 1.5rem;    /* 24px - tiêu đề màn hình */
+  --co-chu-2xl: 2rem;     /* 32px - văn bia, kết cục */
+
+  --dam-thuong: 400;
+  --dam-vua: 600;
+  --dam-dam: 700;
+
+  --dong-chat: 1.25;
+  --dong-than: 1.6;
+
+  /* ---------- KHOẢNG CÁCH (bước 4px) ---------- */
+  --kc-1: 4px;
+  --kc-2: 8px;
+  --kc-3: 12px;
+  --kc-4: 16px;
+  --kc-5: 24px;
+  --kc-6: 32px;
+  --kc-7: 48px;
+
+  /* ---------- BO GÓC ---------- */
+  --bo-nho: 2px;    /* huy hiệu, chip */
+  --bo-vua: 6px;    /* nút, ô, thẻ */
+  --bo-lon: 12px;   /* modal, sheet */
+  --bo-tron: 999px; /* ngọc AP, thanh */
+
+  /* ---------- BÓNG (mực loang nhẹ, không bóng xanh/xám lạnh) ---------- */
+  --bong-1: 0 1px 2px rgb(28 27 24 / 0.12);
+  --bong-2: 0 4px 12px rgb(28 27 24 / 0.16);
+  --bong-3: 0 12px 32px rgb(28 27 24 / 0.28);
+
+  /* ---------- CHUYỂN ĐỘNG ---------- */
+  --tg-nhanh: 120ms;
+  --tg-vua: 200ms;
+  --tg-cham: 320ms;
+  --nhip: cubic-bezier(0.2, 0, 0, 1);
+
+  /* ---------- KÍCH THƯỚC ---------- */
+  --cham-toi-thieu: 44px;  /* vùng chạm tối thiểu */
+  --rong-toi-da: 480px;    /* màn hình dọc, desktop căn giữa */
+
+  /* ---------- LỚP (z-index) ---------- */
+  --lop-dock: 10;
+  --lop-sheet: 20;
+  --lop-modal: 30;
+  --lop-popover: 40;
+}
+
+/* Chủ đề Tang (Màn hình Báo tử & Văn bia, Hồ sơ 07 Phần II): trắng - đen trang nghiêm.
+   Chỉ ghi đè tầng 2, thành phần không đổi gì. */
+[data-chu-de="tang"] {
+  --nen: #EDEDEB;
+  --be-mat-noi: #F7F7F5;
+  --be-mat-lom: #DCDCD8;
+  --chu: #161616;
+  --chu-phu: #545452;
+  --chu-lien-ket: #161616;
+  --vien: #C8C8C4;
+  --vien-dieu-khien: #545452;
+  --vien-nhan: #8A8A86;
+  --hanh-dong: #161616;
+  --hanh-dong-chu: #F7F7F5;
+  --hanh-dong-nguy: #161616;
+  --vong-focus: #161616;
+  --su-kien-thuong: #161616;
+  --su-kien-giao-chien: #161616;
+  --su-kien-tinh-duyen: #161616;
+  --su-kien-ky-ngo: #161616;
+  --su-kien-dao-gia: #161616;
+  --pham-1: #545452;
+  --pham-2: #161616;
+  --pham-3: #161616;
+  --pham-4: #161616;
+  --do-kho-de: #161616;
+  --do-kho-kha: #161616;
+  --do-kho-kho: #161616;
+  --do-kho-hiem: #161616;
+  --thanh-hp: #161616;
+  --thanh-mp: #545452;
+  --thanh-tien-do: #545452;
+  --ap-sang: #161616;
+}

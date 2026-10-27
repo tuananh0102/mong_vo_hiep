@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vạn Kiếp Giang Hồ - Mẫu giao diện chung</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="thanh_phan.css">
+<style>
+  /* CSS riêng của trang mẫu (tiền tố .mau-), KHÔNG dùng trong game. */
+  .mau-trang { max-width: 1280px; margin: 0 auto; padding: var(--kc-6) var(--kc-5); }
+  .mau-trang > header h1 { margin: 0; font-size: var(--co-chu-2xl); }
+  .mau-trang > header p { margin: var(--kc-1) 0 0; color: var(--chu-phu); }
+  .mau-muc { margin-top: var(--kc-7); }
+  .mau-muc > h2 { margin: 0 0 var(--kc-1); font-size: var(--co-chu-xl); }
+  .mau-muc > p { margin: 0 0 var(--kc-4); color: var(--chu-phu); font-size: var(--co-chu-sm); }
+  .mau-luoi { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: var(--kc-4); }
+  .mau-o { padding: var(--kc-4); border: 1px solid var(--vien); border-radius: var(--bo-vua); background: var(--be-mat-noi); }
+  .mau-o > h3 { margin: 0 0 var(--kc-3); font-size: var(--co-chu-sm); color: var(--chu-phu); font-family: ui-monospace, Consolas, monospace; font-weight: var(--dam-thuong); }
+  .mau-hang { display: flex; flex-wrap: wrap; align-items: center; gap: var(--kc-2); }
+  .mau-mau { display: grid; grid-template-columns: 40px 1fr; gap: var(--kc-1) var(--kc-3); align-items: center; font-size: var(--co-chu-sm); }
+  .mau-mau i { display: block; width: 40px; height: 40px; border-radius: var(--bo-vua); box-shadow: inset 0 0 0 1px rgb(0 0 0 / 0.1); }
+  .mau-mau code { font-size: var(--co-chu-xs); color: var(--chu-phu); }
+  .mau-dien-thoai { display: flex; flex-wrap: wrap; gap: var(--kc-6); }
+  .mau-dien-thoai figure { margin: 0; }
+  .mau-dien-thoai figcaption { margin-top: var(--kc-2); font-size: var(--co-chu-sm); color: var(--chu-phu); text-align: center; }
+  .mau-khung { width: 390px; height: 844px; border: 1px solid var(--vien-dieu-khien); border-radius: 28px; overflow: hidden; box-shadow: var(--bong-2); }
+  .mau-khung .vk-man-hinh { height: 100%; }
+  .mau-khung[data-chu-de="tang"] { background: var(--nen); display: grid; align-content: center; padding: var(--kc-4); overflow-y: auto; }
+</style>
+</head>
+<body>
+<div class="mau-trang">
+  <header>
+    <h1>Vạn Kiếp Giang Hồ - Mẫu giao diện chung</h1>
+    <p>Trang mẫu sống của hệ thống thiết kế. Quy tắc đầy đủ: <code>giao_dien/HE_THONG_THIET_KE.md</code>. Mọi thành phần mới phải được thêm vào đây.</p>
+  </header>
+
+  <!-- ===================== MÀN HÌNH GHÉP SẴN ===================== -->
+  <section class="mau-muc" id="man-hinh">
+    <h2>Màn hình ghép sẵn</h2>
+    <p>Khung 390 × 844 (màn hình dọc mobile-first). Header ~15% | Biên Niên Sử ~65% | Dock ~20%.</p>
+    <div class="mau-dien-thoai">
+
+      <!-- 1. Màn hình chính -->
+      <figure>
+        <div class="mau-khung">
+          <div class="vk-man-hinh">
+            <header class="vk-header">
+              <div class="vk-header__hang">
+                <div>
+                  <button class="vk-header__ten" type="button">Lý Tiêu Dao</button>
+                  <div class="vk-header__danh-hieu">Thiếu Hiệp Hoa Sơn</div>
+                </div>
+                <span class="vk-header__tuoi">17 tuổi</span>
+              </div>
+              <div class="vk-header__meta">
+                <button class="vk-header__vung" type="button">Trung Nguyên</button>
+                <span>Hoa Sơn · Nội môn đệ tử</span>
+                <span class="vk-tien vk-so">1.250 lạng</span>
+              </div>
+              <div class="vk-header__chi-so">
+                <div class="vk-thanh vk-thanh--hp" style="--ti-le: 82%"><span class="vk-thanh__nhan">HP</span><span class="vk-thanh__track"></span><span class="vk-thanh__gia-tri">410</span></div>
+                <div class="vk-thanh vk-thanh--mp" style="--ti-le: 55%"><span class="vk-thanh__nhan">MP</span><span class="vk-thanh__track"></span><span class="vk-thanh__gia-tri">220</span></div>
+              </div>
+            </header>
+
+            <main class="vk-bien-nien" aria-live="polite">
+              <h2 class="vk-bien-nien__nam">Năm 15 tuổi · Canh Thìn</h2>
+              <p class="vk-bien-nien__muc">Vượt qua khảo nghiệm, được <button class="vk-lien-ket" type="button">Nhạc Bất Quần</button> thu làm đệ tử ký danh.</p>
+              <p class="vk-bien-nien__muc" data-loai="dao-gia">Gặp một đạo sĩ già bên suối, nghe giảng nửa bộ Đạo Đức Kinh. Ngộ tính +3.</p>
+              <h2 class="vk-bien-nien__nam">Năm 16 tuổi · Tân Tỵ</h2>
+              <p class="vk-bien-nien__muc">Luyện <button class="vk-lien-ket" type="button">Hoa Sơn Kiếm Pháp</button> lên cấp 3/10.</p>
+              <p class="vk-bien-nien__muc" data-loai="tinh-duyen">Tiểu sư muội <button class="vk-lien-ket" type="button">Nhạc Linh San</button> tặng bạn một chiếc túi thơm. Hảo cảm +10.</p>
+              <h2 class="vk-bien-nien__nam">Năm 17 tuổi · Nhâm Ngọ</h2>
+              <p class="vk-bien-nien__muc" data-loai="giao-chien">Đụng độ sơn tặc trên đường áp tiêu. Thắng, Danh vọng +20.</p>
+              <p class="vk-bien-nien__muc" data-loai="ky-ngo">Rơi xuống vực Tư Quá Nhai, tìm thấy di tích kiếm pháp khắc trên vách đá!</p>
+              <p class="vk-bien-nien__muc">Trời trở lạnh. Bạn ở lại sơn môn chép kinh cho sư phụ.</p>
+            </main>
+
+            <nav class="vk-dock" aria-label="Bàn điều khiển">
+              <div class="vk-dock__hanh-dong">
+                <ul class="vk-ap" aria-label="Điểm hành động: còn 2 trên 4">
+                  <li class="vk-ap__ngoc" data-sang="true"></li>
+                  <li class="vk-ap__ngoc" data-sang="true"></li>
+                  <li class="vk-ap__ngoc"></li>
+                  <li class="vk-ap__ngoc"></li>
+                </ul>
+                <button class="vk-nut vk-nut--chinh vk-nut--lon vk-qua-nam" type="button">+1 Tuổi</button>
+              </div>
+              <ul class="vk-tabs" role="tablist">
+                <li><button class="vk-tab" role="tab" aria-selected="false" type="button"><span class="vk-tab__bieu-tuong" aria-hidden="true">⛰</span>Tu Luyện</button></li>
+                <li><button class="vk-tab" role="tab" aria-selected="false" type="button"><span class="vk-tab__bieu-tuong" aria-hidden="true">⚔</span>Võ Học</button></li>
+                <li><button class="vk-tab" role="tab" aria-selected="false" type="button"><span class="vk-tab__bieu-tuong" aria-hidden="true">⚭</span>Nhân Mạch</button></li>
+                <li><button class="vk-tab" role="tab" aria-selected="false" type="button"><span class="vk-tab__bieu-tuong" aria-hidden="true">⛩</span>Môn Phái</button></li>
+                <li><button class="vk-tab" role="tab" aria-selected="false" type="button"><span class="vk-tab__bieu-tuong" aria-hidden="true">☰</span>Phong Vân</button></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <figcaption>Màn hình chính</figcaption>
+      </figure>
+
+      <!-- 2. Quyết Đấu Tam Hiệp -->
+      <figure>
+        <div class="mau-khung">
+          <div class="vk-man-hinh">
+            <header class="vk-header">
+              <div class="vk-header__hang">
+                <div>
+                  <button class="vk-header__ten" type="button">Lý Tiêu Dao</button>
+                  <div class="vk-header__danh-hieu">Thiếu Hiệp Hoa Sơn</div>
+                </div>
+                <span class="vk-header__tuoi">17 tuổi</span>
+              </div>
+              <div class="vk-header__meta">
+                <button class="vk-header__vung" type="button">Trung Nguyên</button>
+                <span>Hoa Sơn · Nội môn đệ tử</span>
+                <span class="vk-tien vk-so">1.250 lạng</span>
+              </div>
+              <div class="vk-header__chi-so">
+                <div class="vk-thanh vk-thanh--hp" style="--ti-le: 64%"><span class="vk-thanh__nhan">HP</span><span class="vk-thanh__track"></span><span class="vk-thanh__gia-tri">320</span></div>
+                <div class="vk-thanh vk-thanh--mp" style="--ti-le: 30%"><span class="vk-thanh__nhan">MP</span><span class="vk-thanh__track"></span><span class="vk-thanh__gia-tri">120</span></div>
+              </div>
+            </header>
+            <main class="vk-bien-nien"></main>
+            <nav class="vk-dock" aria-label="Bàn điều khiển">
+              <div class="vk-dock__hanh-dong">
+                <ul class="vk-ap" aria-label="Điểm hành động: hết">
+                  <li class="vk-ap__ngoc"></li><li class="vk-ap__ngoc"></li><li class="vk-ap__ngoc"></li><li class="vk-ap__ngoc"></li>
+                </ul>
+                <button class="vk-nut vk-nut--chinh vk-nut--lon vk-qua-nam" data-nhac="true" type="button">+1 Tuổi</button>
+              </div>
+              <ul class="vk-tabs" role="tablist">
+                <li><button class="vk-tab" role="tab" type="button"><span class="vk-tab__bieu-tuong" aria-hidden="true">⛰</span>Tu Luyện</button></li>
+                <li><button class="vk-tab" role="tab" type="button"><span class="vk-tab__bieu-tuong" aria-hidden="true">⚔</span>Võ Học</button></li>
+                <li><button class="vk-tab" role="tab" type="button"><span class="vk-tab__bieu-tuong" aria-hidden="true">⚭</span>Nhân Mạch</button></li>
+                <li><button class="vk-tab" role="tab" type="button"><span class="vk-tab__bieu-tuong" aria-hidden="true">⛩</span>Môn Phái</button></li>
+                <li><button class="vk-tab" role="tab" type="button"><span class="vk-tab__bieu-tuong" aria-hidden="true">☰</span>Phong Vân</button></li>
+              </ul>
+            </nav>
+
+            <div class="vk-phu">
+              <section class="vk-modal" role="dialog" aria-modal="true" aria-labelledby="tieu-de-tam-hiep">
+                <h2 class="vk-modal__tieu-de" id="tieu-de-tam-hiep">Quyết Đấu Tam Hiệp</h2>
+                <div class="vk-tam-hiep">
+                  <div class="vk-tam-hiep__doi-thu"><span>Điền Bá Quang</span><span class="vk-huy-hieu" data-pham="3">Trấn phái</span></div>
+                  <div class="vk-thanh vk-thanh--hp" style="--ti-le: 47%"><span class="vk-thanh__nhan">HP</span><span class="vk-thanh__track"></span><span class="vk-thanh__gia-tri">235</span></div>
+                  <ol class="vk-hiep" aria-label="Hiệp 2 trên 3">
+                    <li class="vk-hiep__o">1</li>
+                    <li class="vk-hiep__o" aria-current="step">2</li>
+                    <li class="vk-hiep__o">3</li>
+                  </ol>
+                </div>
+                <p class="vk-modal__than">Đao pháp của hắn nhanh như gió, mỗi nhát đều nhắm yết hầu. Ngươi lùi ba bước, lưng đã chạm vách đá.</p>
+                <ul class="vk-modal__lua-chon">
+                  <li><button class="vk-lua-chon" type="button">
+                    <span class="vk-lua-chon__noi-dung">Án binh bất động, chờ sơ hở</span>
+                    <span class="vk-lua-chon__kiem-dinh">Ngộ tính <span class="vk-huy-hieu" data-do-kho="kha">Khá</span></span>
+                  </button></li>
+                  <li><button class="vk-lua-chon" type="button">
+                    <span class="vk-lua-chon__noi-dung">Tung khinh công vượt lên vách</span>
+                    <span class="vk-lua-chon__kiem-dinh">Khinh công <span class="vk-huy-hieu" data-do-kho="kho">Khó</span></span>
+                  </button></li>
+                  <li><button class="vk-lua-chon vk-lua-chon--nguy" type="button">
+                    <span class="vk-lua-chon__noi-dung">Liều mạng đổi đòn</span>
+                    <span class="vk-lua-chon__kiem-dinh">Võ lực <span class="vk-huy-hieu" data-do-kho="hiem">Hiểm</span></span>
+                  </button></li>
+                  <li><button class="vk-lua-chon" type="button" aria-disabled="true">
+                    <span class="vk-lua-chon__noi-dung">Uống Thiên Vương Bảo Tâm Đan</span>
+                    <span class="vk-lua-chon__kiem-dinh">Cần Thiên Vương Bảo Tâm Đan trong hành trang</span>
+                  </button></li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+        <figcaption>Thẻ quyết định - Tam Hiệp (hết AP, nút +1 Tuổi đang nhắc)</figcaption>
+      </figure>
+
+      <!-- 3. Sheet Tab Võ Học & Hành Trang -->
+      <figure>
+        <div class="mau-khung">
+          <div class="vk-man-hinh">
+            <header class="vk-header">
+              <div class="vk-header__hang">
+                <div>
+                  <button class="vk-header__ten" type="button">Lý Tiêu Dao</button>
+                  <div class="vk-header__danh-hieu">Thiếu Hiệp Hoa Sơn</div>
+                </div>
+                <span class="vk-header__tuoi">17 tuổi</span>
+              </div>
+              <div class="vk-header__meta">
+                <button class="vk-header__vung" type="button">Trung Nguyên</button>
+                <span>Hoa Sơn · Nội môn đệ tử</span>
+                <span class="vk-tien vk-so">1.250 lạng</span>
+              </div>
+              <div class="vk-header__chi-so">
+                <div class="vk-thanh vk-thanh--hp" style="--ti-le: 82%"><span class="vk-thanh__nhan">HP</span><span class="vk-thanh__track"></span><span class="vk-thanh__gia-tri">410</span></div>
+                <div class="vk-thanh vk-thanh--mp" style="--ti-le: 55%"><span class="vk-thanh__nhan">MP</span><span class="vk-thanh__track"></span><span class="vk-thanh__gia-tri">220</span></div>
+              </div>
+            </header>
+            <main class="vk-bien-nien"></main>
+            <nav class="vk-dock" aria-label="Bàn điều khiển">
+              <div class="vk-dock__hanh-dong">
+                <ul class="vk-ap" aria-label="Điểm hành động: còn 2 trên 4">
+                  <li class="vk-ap__ngoc" data-sang="true"></li><li class="vk-ap__ngoc" data-sang="true"></li><li class="vk-ap__ngoc"></li><li class="vk-ap__ngoc"></li>
+                </ul>
+                <button class="vk-nut vk-nut--chinh vk-nut--lon vk-qua-nam" type="button">+1 Tuổi</button>
+              </div>
+              <ul class="vk-tabs" role="tablist">
+                <li><button class="vk-tab" role="tab" aria-selected="false" type="button"><span class="vk-tab__bieu-tuong" aria-hidden="true">⛰</span>Tu Luyện</button></li>
+                <li><button class="vk-tab" role="tab" aria-selected="true" type="button"><span class="vk-tab__bieu-tuong" aria-hidden="true">⚔</span>Võ Học</button></li>
+                <li><button class="vk-tab" role="tab" aria-selected="false" type="button"><span class="vk-tab__bieu-tuong" aria-hidden="true">⚭</span>Nhân Mạch</button></li>
+                <li><button class="vk-tab" role="tab" aria-selected="false" type="button"><span class="vk-tab__bieu-tuong" aria-hidden="true">⛩</span>Môn Phái</button></li>
+                <li><button class="vk-tab" role="tab" aria-selected="false" aria-disabled="true" type="button"><span class="vk-tab__bieu-tuong" aria-hidden="true">☰</span>Phong Vân</button></li>
+              </ul>
+            </nav>
+
+            <section class="vk-sheet" role="tabpanel" aria-labelledby="tieu-de-vo-hoc">
+              <div class="vk-sheet__tay-cam"></div>
+              <div class="vk-sheet__dau">
+                <h2 class="vk-sheet__tieu-de" id="tieu-de-vo-hoc">Võ Học &amp; Hành Trang</h2>
+                <span class="vk-chi-phi">0 AP</span>
+              </div>
+              <div class="vk-sheet__than">
+                <h3 class="vk-tieu-de-muc">Ô võ học</h3>
+                <div class="vk-o-luoi">
+                  <button class="vk-o" type="button"><span class="vk-o__loai">Nội công</span><span class="vk-o__ten">Tử Hà Thần Công</span><span class="vk-huy-hieu" data-pham="3">Trấn phái · 4/10</span></button>
+                  <button class="vk-o" type="button"><span class="vk-o__loai">Ngoại công</span><span class="vk-o__ten">Hoa Sơn Kiếm Pháp</span><span class="vk-huy-hieu" data-pham="2">Thượng thừa · 3/10</span></button>
+                  <button class="vk-o" type="button"><span class="vk-o__loai">Khinh công</span><span class="vk-o__ten">Kim Nhạn Công</span><span class="vk-huy-hieu" data-pham="1">Nhập môn · 2/4</span></button>
+                  <button class="vk-o" type="button" data-trong="true"><span class="vk-o__loai">Tuyệt kỹ</span><span class="vk-o__ten">Chưa có</span></button>
+                </div>
+                <h3 class="vk-tieu-de-muc">Thiên phú &amp; Trạng thái</h3>
+                <p><span class="vk-nhan" data-pham="4">Tiên Thiên Võ Thể</span> <span class="vk-nhan" data-pham="2">Đào Hoa Kiếp</span> <span class="vk-nhan">Kiêu Ngạo</span></p>
+                <h3 class="vk-tieu-de-muc">Đan dược</h3>
+                <ul class="vk-danh-sach">
+                  <li><button class="vk-dong" type="button">
+                    <span class="vk-dong__chinh"><span class="vk-dong__tieu-de">Bạch Vân Hùng Đảm Hoàn</span><span class="vk-dong__meta">Trị nội thương, chữa kịp thời</span></span>
+                    <span class="vk-dong__phu">×2</span>
+                  </button></li>
+                  <li><button class="vk-dong" type="button" disabled>
+                    <span class="vk-dong__chinh"><span class="vk-dong__tieu-de">Thiên Vương Bảo Tâm Đan</span><span class="vk-dong__meta">Hết - mua ở Dược Vương Cốc</span></span>
+                    <span class="vk-dong__phu">×0</span>
+                  </button></li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </div>
+        <figcaption>Sheet nội dung Tab (Tab Phong Vân đang khóa)</figcaption>
+      </figure>
+
+      <!-- 4. Văn bia (chủ đề Tang) -->
+      <figure>
+        <div class="mau-khung" data-chu-de="tang">
+          <article class="vk-van-bia">
+            <p class="vk-van-bia__nam">Giáp Tý - Nhâm Thìn · Hưởng thọ 78 tuổi</p>
+            <h2 class="vk-van-bia__ten">Lý Tiêu Dao</h2>
+            <p class="vk-van-bia__ket-cuc">Tiêu Dao Giang Hồ - Thần Tiên Quyến Lữ</p>
+            <p class="vk-van-bia__minh-van">Sinh năm Giáp Tý tại đất Giang Nam trong gia cảnh hàn vi. Năm 25 tuổi một kiếm bại quần hùng trên đỉnh Hoa Sơn. Năm 48 tuổi rửa tay gác kiếm, cùng người tri kỷ ẩn cư nơi sơn cốc đến cuối đời.</p>
+            <table class="vk-van-bia__diem">
+              <tbody>
+                <tr><td>Tuổi thọ × 2</td><td>156</td></tr>
+                <tr><td>Hiệp nghĩa ÷ 5</td><td>96</td></tr>
+                <tr><td>Võ công cấp 10 × 50</td><td>100</td></tr>
+                <tr><td>Đại sự kiện × 100</td><td>200</td></tr>
+                <tr><td>Kết cục <span class="vk-huy-hieu" data-pham="3">SS</span></td><td>350</td></tr>
+              </tbody>
+              <tfoot><tr><td>Điểm Luân Hồi</td><td>902</td></tr></tfoot>
+            </table>
+            <button class="vk-nut vk-nut--chinh vk-nut--khoi" type="button">Bước vào Đài Vọng Hương</button>
+          </article>
+        </div>
+        <figcaption>Văn bia - chủ đề Tang (<code>data-chu-de="tang"</code>)</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===================== TOKEN ===================== -->
+  <section class="mau-muc" id="token">
+    <h2>Token màu ngữ nghĩa</h2>
+    <p>Thành phần chỉ dùng tên ngữ nghĩa. Mã màu gốc chỉ nằm trong <code>tokens.css</code>.</p>
+    <div class="mau-luoi">
+      <div class="mau-o"><h3>Nền &amp; chữ</h3><div class="mau-mau">
+        <i style="background: var(--nen)"></i><span>Nền giấy<br><code>--nen</code></span>
+        <i style="background: var(--be-mat-noi)"></i><span>Bề mặt nổi<br><code>--be-mat-noi</code></span>
+        <i style="background: var(--be-mat-lom)"></i><span>Bề mặt lõm<br><code>--be-mat-lom</code></span>
+        <i style="background: var(--chu)"></i><span>Chữ<br><code>--chu</code></span>
+        <i style="background: var(--chu-phu)"></i><span>Chữ phụ<br><code>--chu-phu</code></span>
+        <i style="background: var(--vien-nhan)"></i><span>Viền ánh kim<br><code>--vien-nhan</code></span>
+      </div></div>
+      <div class="mau-o"><h3>Loại sự kiện</h3><div class="mau-mau">
+        <i style="background: var(--su-kien-thuong)"></i><span>· Đời thường<br><code>--su-kien-thuong</code></span>
+        <i style="background: var(--su-kien-giao-chien)"></i><span>⚔ Giao chiến<br><code>--su-kien-giao-chien</code></span>
+        <i style="background: var(--su-kien-tinh-duyen)"></i><span>❀ Tình duyên<br><code>--su-kien-tinh-duyen</code></span>
+        <i style="background: var(--su-kien-ky-ngo)"></i><span>✦ Kỳ ngộ SSS<br><code>--su-kien-ky-ngo</code></span>
+        <i style="background: var(--su-kien-dao-gia)"></i><span>☯ Đạo gia<br><code>--su-kien-dao-gia</code></span>
+      </div></div>
+      <div class="mau-o"><h3>Phẩm cấp 4 bậc</h3><div class="mau-mau">
+        <i style="background: var(--pham-1)"></i><span>Bậc 1 · Trắng / B / Nhập môn<br><code>--pham-1</code></span>
+        <i style="background: var(--pham-2)"></i><span>Bậc 2 · Lam / A / Thượng thừa<br><code>--pham-2</code></span>
+        <i style="background: var(--pham-3)"></i><span>Bậc 3 · Tím / S, SS / Trấn phái<br><code>--pham-3</code></span>
+        <i style="background: var(--pham-4)"></i><span>Bậc 4 · Đỏ / SSS / Thần công<br><code>--pham-4</code></span>
+      </div></div>
+    </div>
+  </section>
+
+  <!-- ===================== THÀNH PHẦN ===================== -->
+  <section class="mau-muc" id="thanh-phan">
+    <h2>Thành phần</h2>
+    <p>Mỗi ô ghi tên lớp gốc. Copy nguyên HTML từ đây khi dựng màn hình mới.</p>
+    <div class="mau-luoi">
+      <div class="mau-o"><h3>.vk-nut</h3><div class="mau-hang">
+        <button class="vk-nut vk-nut--chinh" type="button">Chính</button>
+        <button class="vk-nut" type="button">Phụ</button>
+        <button class="vk-nut vk-nut--nguy" type="button">Nguy</button>
+        <button class="vk-nut" type="button" disabled>Vô hiệu</button>
+      </div></div>
+
+      <div class="mau-o"><h3>.vk-huy-hieu[data-pham]</h3><div class="mau-hang">
+        <span class="vk-huy-hieu" data-pham="1">Nhập môn</span>
+        <span class="vk-huy-hieu" data-pham="2">Thượng thừa</span>
+        <span class="vk-huy-hieu" data-pham="3">Trấn phái</span>
+        <span class="vk-huy-hieu" data-pham="4">SSS</span>
+      </div></div>
+
+      <div class="mau-o"><h3>.vk-huy-hieu[data-do-kho]</h3><div class="mau-hang">
+        <span class="vk-huy-hieu" data-do-kho="de">Dễ</span>
+        <span class="vk-huy-hieu" data-do-kho="kha">Khá</span>
+        <span class="vk-huy-hieu" data-do-kho="kho">Khó</span>
+        <span class="vk-huy-hieu" data-do-kho="hiem">Hiểm</span>
+      </div></div>
+
+      <div class="mau-o"><h3>.vk-nhan[data-pham]</h3>
+        <span class="vk-nhan" data-pham="4">Cửu Dương Tuyệt Mạch</span>
+        <span class="vk-nhan" data-pham="3">Tư Chất Ngu Độn</span>
+        <span class="vk-nhan">Nhẫn Nhịn Thâm Sâu</span>
+      </div>
+
+      <div class="mau-o"><h3>.vk-thanh</h3><div style="display: grid; gap: var(--kc-2)">
+        <div class="vk-thanh vk-thanh--hp" style="--ti-le: 70%"><span class="vk-thanh__nhan">HP</span><span class="vk-thanh__track"></span><span class="vk-thanh__gia-tri">350</span></div>
+        <div class="vk-thanh vk-thanh--mp" style="--ti-le: 40%"><span class="vk-thanh__nhan">MP</span><span class="vk-thanh__track"></span><span class="vk-thanh__gia-tri">160</span></div>
+        <div class="vk-thanh vk-thanh--tien-do" style="--ti-le: 65%"><span class="vk-thanh__nhan">Cấp</span><span class="vk-thanh__track"></span><span class="vk-thanh__gia-tri">65%</span></div>
+      </div></div>
+
+      <div class="mau-o"><h3>.vk-chi-phi</h3><div class="mau-hang">
+        <span class="vk-chi-phi vk-chi-phi--ap">1 AP</span>
+        <span class="vk-chi-phi">0 AP</span>
+        <span class="vk-chi-phi">200 lạng</span>
+      </div></div>
+
+      <div class="mau-o" style="position: relative; min-height: 180px"><h3>.vk-lien-ket + .vk-popover</h3>
+        <p style="margin: 0">Bái kiến <button class="vk-lien-ket" type="button">Phong Thanh Dương</button>.</p>
+        <div class="vk-popover" role="dialog" style="top: 84px; left: var(--kc-4)">
+          <div class="vk-popover__tieu-de">Phong Thanh Dương <span class="vk-huy-hieu" data-pham="4">SSS</span></div>
+          <p>Kiếm Tông Hoa Sơn · Ẩn cư Tư Quá Nhai · Hảo cảm 35</p>
+        </div>
+      </div>
+
+      <div class="mau-o"><h3>.vk-lua-chon</h3><ul class="vk-modal__lua-chon">
+        <li><button class="vk-lua-chon" type="button"><span class="vk-lua-chon__noi-dung">Gồng mình chịu lạnh</span><span class="vk-lua-chon__kiem-dinh">Căn cốt <span class="vk-huy-hieu" data-do-kho="de">Dễ</span></span></button></li>
+        <li><button class="vk-lua-chon" type="button" aria-disabled="true"><span class="vk-lua-chon__noi-dung">Mua áo bông</span><span class="vk-lua-chon__kiem-dinh">Cần Ngân lượng 50</span></button></li>
+      </ul></div>
+
+      <div class="mau-o"><h3>.vk-danh-sach &gt; .vk-dong</h3><ul class="vk-danh-sach" style="margin: 0">
+        <li><button class="vk-dong" type="button"><span class="vk-dong__chinh"><span class="vk-dong__tieu-de">Luyện nội công</span><span class="vk-dong__meta">Tử Hà Thần Công +18% tiến độ</span></span><span class="vk-dong__phu"><span class="vk-chi-phi vk-chi-phi--ap">1 AP</span></span></button></li>
+        <li><button class="vk-dong" type="button" disabled><span class="vk-dong__chinh"><span class="vk-dong__tieu-de">Áp tiêu</span><span class="vk-dong__meta">Cần Căn cốt 50</span></span><span class="vk-dong__phu"><span class="vk-chi-phi vk-chi-phi--ap">1 AP</span></span></button></li>
+      </ul></div>
+
+      <div class="mau-o"><h3>.vk-bang</h3>
+        <table class="vk-bang">
+          <thead><tr><th>#</th><th>Cao thủ</th><th class="so">Chiến lực</th><th class="so">Thắng</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>Phương Chứng<div class="vk-dong__meta">Thiếu Lâm</div></td><td class="so">468</td><td class="so">4%</td></tr>
+            <tr><td>2</td><td>Nhậm Ngã Hành<div class="vk-dong__meta">Nhật Nguyệt</div></td><td class="so">440 ± 30</td><td class="so">~9%</td></tr>
+            <tr aria-current="true"><td>37</td><td>Lý Tiêu Dao<div class="vk-dong__meta">Hoa Sơn</div></td><td class="so">212</td><td class="so">-</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mau-o"><h3>.vk-uu-dai</h3>
+        <article class="vk-uu-dai">
+          <div class="vk-uu-dai__dau"><h4 class="vk-uu-dai__ten">Túc Tuệ Tiền Kiếp</h4><span class="vk-chi-phi">500 điểm</span></div>
+          <p class="vk-uu-dai__mo-ta">Ngộ tính +20, mang 1 võ công Thượng thừa từ kiếp trước.</p>
+          <button class="vk-nut vk-nut--chinh" type="button">Đổi</button>
+        </article>
+        <article class="vk-uu-dai">
+          <div class="vk-uu-dai__dau"><h4 class="vk-uu-dai__ten">Thời Đại Hoàng Kim</h4><span class="vk-chi-phi">1.500 điểm</span></div>
+          <p class="vk-uu-dai__mo-ta">Độ khó cao: 200 NPC +30% chỉ số.</p>
+          <button class="vk-nut" type="button" disabled>Thiếu 598 điểm</button>
+        </article>
+      </div>
+
+      <div class="mau-o"><h3>.vk-ap / .vk-tabs</h3>
+        <ul class="vk-ap" aria-label="Điểm hành động: còn 3 trên 5" style="margin-bottom: var(--kc-3)">
+          <li class="vk-ap__ngoc" data-sang="true"></li><li class="vk-ap__ngoc" data-sang="true"></li><li class="vk-ap__ngoc" data-sang="true"></li><li class="vk-ap__ngoc"></li><li class="vk-ap__ngoc"></li>
+        </ul>
+        <ul class="vk-tabs" role="tablist">
+          <li><button class="vk-tab" role="tab" aria-selected="true" type="button"><span class="vk-tab__bieu-tuong" aria-hidden="true">⛰</span>Chọn</button></li>
+          <li><button class="vk-tab" role="tab" type="button"><span class="vk-tab__bieu-tuong" aria-hidden="true">⚔</span>Thường</button></li>
+          <li><button class="vk-tab" role="tab" aria-disabled="true" type="button"><span class="vk-tab__bieu-tuong" aria-hidden="true">⛩</span>Khóa</button></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+</body>
+</html>

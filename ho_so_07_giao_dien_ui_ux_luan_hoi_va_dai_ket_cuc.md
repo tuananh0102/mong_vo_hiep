@@ -28,6 +28,8 @@ Giao diện của *Vạn Kiếp Giang Hồ* sử dụng tông màu **Giấy Tuy�
 
 Mọi màu chữ đạt chuẩn WCAG AA ($\ge 4.5:1$). Màu không bao giờ là tín hiệu duy nhất: luôn kèm biểu tượng hoặc nhãn chữ.
 
+Token đầy đủ (thêm lam chàm `#2B4C7E`, thang phẩm cấp 4 bậc), thành phần dùng chung và quy tắc thêm giao diện mới: [giao_dien/HE_THONG_THIET_KE.md](giao_dien/HE_THONG_THIET_KE.md).
+
 ### 2. Chi Tiết 5 Tab Chức Năng Ở Thanh Điều Khiển Dưới Cùng
 1. **Tab [Tu Luyện & Hành Động] (Tốn AP):** Chứa danh sách các việc làm trong năm theo độ tuổi (Luyện nội công, Nghiên cứu kiếm phổ, Làm nhiệm vụ sư môn, Áp tiêu, Đi dạo phố thị, Bế quan).
 2. **Tab [Võ Học & Hành Trang] (0 AP):** Quản lý 4 ô trang bị Võ học (Nội công, Ngoại công, Khinh công, Tuyệt kỹ), mặc Thần binh/Giáp trụ, uống Đan dược hoặc tẩm Độc dược trước trận đấu.
