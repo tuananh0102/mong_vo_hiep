@@ -1,0 +1,87 @@
+{
+  "nguon": "mo_phong/xuat_vector.py",
+  "ngay_sinh": "2026-10-27",
+  "so_luong": 16,
+  "du_lieu": [
+    {
+      "he_a": "duong",
+      "he_b": "duong",
+      "ket_qua": 1.0
+    },
+    {
+      "he_a": "duong",
+      "he_b": "am",
+      "ket_qua": 1.05
+    },
+    {
+      "he_a": "duong",
+      "he_b": "hoa",
+      "ket_qua": 0.95
+    },
+    {
+      "he_a": "duong",
+      "he_b": "ngoai",
+      "ket_qua": 1.0
+    },
+    {
+      "he_a": "am",
+      "he_b": "duong",
+      "ket_qua": 0.95
+    },
+    {
+      "he_a": "am",
+      "he_b": "am",
+      "ket_qua": 1.0
+    },
+    {
+      "he_a": "am",
+      "he_b": "hoa",
+      "ket_qua": 1.05
+    },
+    {
+      "he_a": "am",
+      "he_b": "ngoai",
+      "ket_qua": 1.05
+    },
+    {
+      "he_a": "hoa",
+      "he_b": "duong",
+      "ket_qua": 1.05
+    },
+    {
+      "he_a": "hoa",
+      "he_b": "am",
+      "ket_qua": 0.95
+    },
+    {
+      "he_a": "hoa",
+      "he_b": "hoa",
+      "ket_qua": 1.0
+    },
+    {
+      "he_a": "hoa",
+      "he_b": "ngoai",
+      "ket_qua": 1.0
+    },
+    {
+      "he_a": "ngoai",
+      "he_b": "duong",
+      "ket_qua": 1.0
+    },
+    {
+      "he_a": "ngoai",
+      "he_b": "am",
+      "ket_qua": 0.95
+    },
+    {
+      "he_a": "ngoai",
+      "he_b": "hoa",
+      "ket_qua": 1.0
+    },
+    {
+      "he_a": "ngoai",
+      "he_b": "ngoai",
+      "ket_qua": 1.0
+    }
+  ]
+}

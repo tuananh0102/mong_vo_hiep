@@ -1,0 +1,8912 @@
+{
+  "nguon": "mo_phong/xuat_vector.py",
+  "ngay_sinh": "2026-10-27",
+  "tien_do": [
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 0,
+      "tier": 1,
+      "ket_qua": 0.0
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 0,
+      "tier": 2,
+      "ket_qua": 0.0
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 0,
+      "tier": 3,
+      "ket_qua": 0.0
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 0,
+      "tier": 4,
+      "ket_qua": 0.0
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 1,
+      "tier": 1,
+      "ket_qua": 2.0
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 1,
+      "tier": 2,
+      "ket_qua": 1.0
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 1,
+      "tier": 3,
+      "ket_qua": 0.6666666666666666
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 1,
+      "tier": 4,
+      "ket_qua": 0.4
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 2,
+      "tier": 1,
+      "ket_qua": 4.0
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 2,
+      "tier": 2,
+      "ket_qua": 2.0
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 2,
+      "tier": 3,
+      "ket_qua": 1.3333333333333333
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 2,
+      "tier": 4,
+      "ket_qua": 0.8
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 3,
+      "tier": 1,
+      "ket_qua": 6.0
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 3,
+      "tier": 2,
+      "ket_qua": 3.0
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 3,
+      "tier": 3,
+      "ket_qua": 2.0
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 3,
+      "tier": 4,
+      "ket_qua": 1.2
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 4,
+      "tier": 1,
+      "ket_qua": 8.0
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 4,
+      "tier": 2,
+      "ket_qua": 4.0
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 4,
+      "tier": 3,
+      "ket_qua": 2.6666666666666665
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 4,
+      "tier": 4,
+      "ket_qua": 1.6
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 5,
+      "tier": 1,
+      "ket_qua": 10.0
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 5,
+      "tier": 2,
+      "ket_qua": 5.0
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 5,
+      "tier": 3,
+      "ket_qua": 3.3333333333333335
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 5,
+      "tier": 4,
+      "ket_qua": 2.0
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 6,
+      "tier": 1,
+      "ket_qua": 12.0
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 6,
+      "tier": 2,
+      "ket_qua": 6.0
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 6,
+      "tier": 3,
+      "ket_qua": 4.0
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 6,
+      "tier": 4,
+      "ket_qua": 2.4
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 7,
+      "tier": 1,
+      "ket_qua": 14.0
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 7,
+      "tier": 2,
+      "ket_qua": 7.0
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 7,
+      "tier": 3,
+      "ket_qua": 4.666666666666667
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 7,
+      "tier": 4,
+      "ket_qua": 2.8
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 8,
+      "tier": 1,
+      "ket_qua": 16.0
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 8,
+      "tier": 2,
+      "ket_qua": 8.0
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 8,
+      "tier": 3,
+      "ket_qua": 5.333333333333333
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 8,
+      "tier": 4,
+      "ket_qua": 3.2
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 9,
+      "tier": 1,
+      "ket_qua": 18.0
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 9,
+      "tier": 2,
+      "ket_qua": 9.0
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 9,
+      "tier": 3,
+      "ket_qua": 6.0
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 9,
+      "tier": 4,
+      "ket_qua": 3.6
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 10,
+      "tier": 1,
+      "ket_qua": 20.0
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 10,
+      "tier": 2,
+      "ket_qua": 10.0
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 10,
+      "tier": 3,
+      "ket_qua": 6.666666666666667
+    },
+    {
+      "ngo_tinh": 0,
+      "cap_su_phu": 10,
+      "tier": 4,
+      "ket_qua": 4.0
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 0,
+      "tier": 1,
+      "ket_qua": 6.0
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 0,
+      "tier": 2,
+      "ket_qua": 3.0
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 0,
+      "tier": 3,
+      "ket_qua": 2.0
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 0,
+      "tier": 4,
+      "ket_qua": 1.2
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 1,
+      "tier": 1,
+      "ket_qua": 8.0
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 1,
+      "tier": 2,
+      "ket_qua": 4.0
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 1,
+      "tier": 3,
+      "ket_qua": 2.6666666666666665
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 1,
+      "tier": 4,
+      "ket_qua": 1.6
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 2,
+      "tier": 1,
+      "ket_qua": 10.0
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 2,
+      "tier": 2,
+      "ket_qua": 5.0
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 2,
+      "tier": 3,
+      "ket_qua": 3.3333333333333335
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 2,
+      "tier": 4,
+      "ket_qua": 2.0
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 3,
+      "tier": 1,
+      "ket_qua": 12.0
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 3,
+      "tier": 2,
+      "ket_qua": 6.0
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 3,
+      "tier": 3,
+      "ket_qua": 4.0
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 3,
+      "tier": 4,
+      "ket_qua": 2.4
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 4,
+      "tier": 1,
+      "ket_qua": 14.0
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 4,
+      "tier": 2,
+      "ket_qua": 7.0
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 4,
+      "tier": 3,
+      "ket_qua": 4.666666666666667
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 4,
+      "tier": 4,
+      "ket_qua": 2.8
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 5,
+      "tier": 1,
+      "ket_qua": 16.0
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 5,
+      "tier": 2,
+      "ket_qua": 8.0
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 5,
+      "tier": 3,
+      "ket_qua": 5.333333333333333
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 5,
+      "tier": 4,
+      "ket_qua": 3.2
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 6,
+      "tier": 1,
+      "ket_qua": 18.0
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 6,
+      "tier": 2,
+      "ket_qua": 9.0
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 6,
+      "tier": 3,
+      "ket_qua": 6.0
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 6,
+      "tier": 4,
+      "ket_qua": 3.6
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 7,
+      "tier": 1,
+      "ket_qua": 20.0
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 7,
+      "tier": 2,
+      "ket_qua": 10.0
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 7,
+      "tier": 3,
+      "ket_qua": 6.666666666666667
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 7,
+      "tier": 4,
+      "ket_qua": 4.0
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 8,
+      "tier": 1,
+      "ket_qua": 22.0
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 8,
+      "tier": 2,
+      "ket_qua": 11.0
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 8,
+      "tier": 3,
+      "ket_qua": 7.333333333333333
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 8,
+      "tier": 4,
+      "ket_qua": 4.4
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 9,
+      "tier": 1,
+      "ket_qua": 24.0
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 9,
+      "tier": 2,
+      "ket_qua": 12.0
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 9,
+      "tier": 3,
+      "ket_qua": 8.0
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 9,
+      "tier": 4,
+      "ket_qua": 4.8
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 10,
+      "tier": 1,
+      "ket_qua": 26.0
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 10,
+      "tier": 2,
+      "ket_qua": 13.0
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 10,
+      "tier": 3,
+      "ket_qua": 8.666666666666666
+    },
+    {
+      "ngo_tinh": 5,
+      "cap_su_phu": 10,
+      "tier": 4,
+      "ket_qua": 5.2
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 0,
+      "tier": 1,
+      "ket_qua": 12.0
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 0,
+      "tier": 2,
+      "ket_qua": 6.0
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 0,
+      "tier": 3,
+      "ket_qua": 4.0
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 0,
+      "tier": 4,
+      "ket_qua": 2.4
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 1,
+      "tier": 1,
+      "ket_qua": 14.0
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 1,
+      "tier": 2,
+      "ket_qua": 7.0
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 1,
+      "tier": 3,
+      "ket_qua": 4.666666666666667
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 1,
+      "tier": 4,
+      "ket_qua": 2.8
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 2,
+      "tier": 1,
+      "ket_qua": 16.0
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 2,
+      "tier": 2,
+      "ket_qua": 8.0
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 2,
+      "tier": 3,
+      "ket_qua": 5.333333333333333
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 2,
+      "tier": 4,
+      "ket_qua": 3.2
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 3,
+      "tier": 1,
+      "ket_qua": 18.0
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 3,
+      "tier": 2,
+      "ket_qua": 9.0
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 3,
+      "tier": 3,
+      "ket_qua": 6.0
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 3,
+      "tier": 4,
+      "ket_qua": 3.6
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 4,
+      "tier": 1,
+      "ket_qua": 20.0
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 4,
+      "tier": 2,
+      "ket_qua": 10.0
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 4,
+      "tier": 3,
+      "ket_qua": 6.666666666666667
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 4,
+      "tier": 4,
+      "ket_qua": 4.0
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 5,
+      "tier": 1,
+      "ket_qua": 22.0
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 5,
+      "tier": 2,
+      "ket_qua": 11.0
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 5,
+      "tier": 3,
+      "ket_qua": 7.333333333333333
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 5,
+      "tier": 4,
+      "ket_qua": 4.4
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 6,
+      "tier": 1,
+      "ket_qua": 24.0
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 6,
+      "tier": 2,
+      "ket_qua": 12.0
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 6,
+      "tier": 3,
+      "ket_qua": 8.0
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 6,
+      "tier": 4,
+      "ket_qua": 4.8
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 7,
+      "tier": 1,
+      "ket_qua": 26.0
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 7,
+      "tier": 2,
+      "ket_qua": 13.0
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 7,
+      "tier": 3,
+      "ket_qua": 8.666666666666666
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 7,
+      "tier": 4,
+      "ket_qua": 5.2
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 8,
+      "tier": 1,
+      "ket_qua": 28.0
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 8,
+      "tier": 2,
+      "ket_qua": 14.0
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 8,
+      "tier": 3,
+      "ket_qua": 9.333333333333334
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 8,
+      "tier": 4,
+      "ket_qua": 5.6
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 9,
+      "tier": 1,
+      "ket_qua": 30.0
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 9,
+      "tier": 2,
+      "ket_qua": 15.0
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 9,
+      "tier": 3,
+      "ket_qua": 10.0
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 9,
+      "tier": 4,
+      "ket_qua": 6.0
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 10,
+      "tier": 1,
+      "ket_qua": 32.0
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 10,
+      "tier": 2,
+      "ket_qua": 16.0
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 10,
+      "tier": 3,
+      "ket_qua": 10.666666666666666
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 10,
+      "tier": 4,
+      "ket_qua": 6.4
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 0,
+      "tier": 1,
+      "ket_qua": 18.0
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 0,
+      "tier": 2,
+      "ket_qua": 9.0
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 0,
+      "tier": 3,
+      "ket_qua": 6.0
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 0,
+      "tier": 4,
+      "ket_qua": 3.6
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 1,
+      "tier": 1,
+      "ket_qua": 20.0
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 1,
+      "tier": 2,
+      "ket_qua": 10.0
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 1,
+      "tier": 3,
+      "ket_qua": 6.666666666666667
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 1,
+      "tier": 4,
+      "ket_qua": 4.0
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 2,
+      "tier": 1,
+      "ket_qua": 22.0
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 2,
+      "tier": 2,
+      "ket_qua": 11.0
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 2,
+      "tier": 3,
+      "ket_qua": 7.333333333333333
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 2,
+      "tier": 4,
+      "ket_qua": 4.4
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 3,
+      "tier": 1,
+      "ket_qua": 24.0
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 3,
+      "tier": 2,
+      "ket_qua": 12.0
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 3,
+      "tier": 3,
+      "ket_qua": 8.0
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 3,
+      "tier": 4,
+      "ket_qua": 4.8
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 4,
+      "tier": 1,
+      "ket_qua": 26.0
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 4,
+      "tier": 2,
+      "ket_qua": 13.0
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 4,
+      "tier": 3,
+      "ket_qua": 8.666666666666666
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 4,
+      "tier": 4,
+      "ket_qua": 5.2
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 5,
+      "tier": 1,
+      "ket_qua": 28.0
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 5,
+      "tier": 2,
+      "ket_qua": 14.0
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 5,
+      "tier": 3,
+      "ket_qua": 9.333333333333334
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 5,
+      "tier": 4,
+      "ket_qua": 5.6
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 6,
+      "tier": 1,
+      "ket_qua": 30.0
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 6,
+      "tier": 2,
+      "ket_qua": 15.0
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 6,
+      "tier": 3,
+      "ket_qua": 10.0
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 6,
+      "tier": 4,
+      "ket_qua": 6.0
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 7,
+      "tier": 1,
+      "ket_qua": 32.0
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 7,
+      "tier": 2,
+      "ket_qua": 16.0
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 7,
+      "tier": 3,
+      "ket_qua": 10.666666666666666
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 7,
+      "tier": 4,
+      "ket_qua": 6.4
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 8,
+      "tier": 1,
+      "ket_qua": 34.0
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 8,
+      "tier": 2,
+      "ket_qua": 17.0
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 8,
+      "tier": 3,
+      "ket_qua": 11.333333333333334
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 8,
+      "tier": 4,
+      "ket_qua": 6.8
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 9,
+      "tier": 1,
+      "ket_qua": 36.0
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 9,
+      "tier": 2,
+      "ket_qua": 18.0
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 9,
+      "tier": 3,
+      "ket_qua": 12.0
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 9,
+      "tier": 4,
+      "ket_qua": 7.2
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 10,
+      "tier": 1,
+      "ket_qua": 38.0
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 10,
+      "tier": 2,
+      "ket_qua": 19.0
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 10,
+      "tier": 3,
+      "ket_qua": 12.666666666666666
+    },
+    {
+      "ngo_tinh": 15,
+      "cap_su_phu": 10,
+      "tier": 4,
+      "ket_qua": 7.6
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 0,
+      "tier": 1,
+      "ket_qua": 24.0
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 0,
+      "tier": 2,
+      "ket_qua": 12.0
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 0,
+      "tier": 3,
+      "ket_qua": 8.0
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 0,
+      "tier": 4,
+      "ket_qua": 4.8
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 1,
+      "tier": 1,
+      "ket_qua": 26.0
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 1,
+      "tier": 2,
+      "ket_qua": 13.0
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 1,
+      "tier": 3,
+      "ket_qua": 8.666666666666666
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 1,
+      "tier": 4,
+      "ket_qua": 5.2
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 2,
+      "tier": 1,
+      "ket_qua": 28.0
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 2,
+      "tier": 2,
+      "ket_qua": 14.0
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 2,
+      "tier": 3,
+      "ket_qua": 9.333333333333334
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 2,
+      "tier": 4,
+      "ket_qua": 5.6
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 3,
+      "tier": 1,
+      "ket_qua": 30.0
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 3,
+      "tier": 2,
+      "ket_qua": 15.0
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 3,
+      "tier": 3,
+      "ket_qua": 10.0
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 3,
+      "tier": 4,
+      "ket_qua": 6.0
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 4,
+      "tier": 1,
+      "ket_qua": 32.0
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 4,
+      "tier": 2,
+      "ket_qua": 16.0
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 4,
+      "tier": 3,
+      "ket_qua": 10.666666666666666
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 4,
+      "tier": 4,
+      "ket_qua": 6.4
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 5,
+      "tier": 1,
+      "ket_qua": 34.0
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 5,
+      "tier": 2,
+      "ket_qua": 17.0
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 5,
+      "tier": 3,
+      "ket_qua": 11.333333333333334
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 5,
+      "tier": 4,
+      "ket_qua": 6.8
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 6,
+      "tier": 1,
+      "ket_qua": 36.0
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 6,
+      "tier": 2,
+      "ket_qua": 18.0
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 6,
+      "tier": 3,
+      "ket_qua": 12.0
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 6,
+      "tier": 4,
+      "ket_qua": 7.2
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 7,
+      "tier": 1,
+      "ket_qua": 38.0
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 7,
+      "tier": 2,
+      "ket_qua": 19.0
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 7,
+      "tier": 3,
+      "ket_qua": 12.666666666666666
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 7,
+      "tier": 4,
+      "ket_qua": 7.6
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 8,
+      "tier": 1,
+      "ket_qua": 40.0
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 8,
+      "tier": 2,
+      "ket_qua": 20.0
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 8,
+      "tier": 3,
+      "ket_qua": 13.333333333333334
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 8,
+      "tier": 4,
+      "ket_qua": 8.0
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 9,
+      "tier": 1,
+      "ket_qua": 42.0
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 9,
+      "tier": 2,
+      "ket_qua": 21.0
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 9,
+      "tier": 3,
+      "ket_qua": 14.0
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 9,
+      "tier": 4,
+      "ket_qua": 8.4
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 10,
+      "tier": 1,
+      "ket_qua": 44.0
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 10,
+      "tier": 2,
+      "ket_qua": 22.0
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 10,
+      "tier": 3,
+      "ket_qua": 14.666666666666666
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 10,
+      "tier": 4,
+      "ket_qua": 8.8
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 0,
+      "tier": 1,
+      "ket_qua": 30.0
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 0,
+      "tier": 2,
+      "ket_qua": 15.0
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 0,
+      "tier": 3,
+      "ket_qua": 10.0
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 0,
+      "tier": 4,
+      "ket_qua": 6.0
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 1,
+      "tier": 1,
+      "ket_qua": 32.0
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 1,
+      "tier": 2,
+      "ket_qua": 16.0
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 1,
+      "tier": 3,
+      "ket_qua": 10.666666666666666
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 1,
+      "tier": 4,
+      "ket_qua": 6.4
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 2,
+      "tier": 1,
+      "ket_qua": 34.0
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 2,
+      "tier": 2,
+      "ket_qua": 17.0
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 2,
+      "tier": 3,
+      "ket_qua": 11.333333333333334
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 2,
+      "tier": 4,
+      "ket_qua": 6.8
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 3,
+      "tier": 1,
+      "ket_qua": 36.0
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 3,
+      "tier": 2,
+      "ket_qua": 18.0
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 3,
+      "tier": 3,
+      "ket_qua": 12.0
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 3,
+      "tier": 4,
+      "ket_qua": 7.2
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 4,
+      "tier": 1,
+      "ket_qua": 38.0
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 4,
+      "tier": 2,
+      "ket_qua": 19.0
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 4,
+      "tier": 3,
+      "ket_qua": 12.666666666666666
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 4,
+      "tier": 4,
+      "ket_qua": 7.6
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 5,
+      "tier": 1,
+      "ket_qua": 40.0
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 5,
+      "tier": 2,
+      "ket_qua": 20.0
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 5,
+      "tier": 3,
+      "ket_qua": 13.333333333333334
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 5,
+      "tier": 4,
+      "ket_qua": 8.0
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 6,
+      "tier": 1,
+      "ket_qua": 42.0
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 6,
+      "tier": 2,
+      "ket_qua": 21.0
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 6,
+      "tier": 3,
+      "ket_qua": 14.0
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 6,
+      "tier": 4,
+      "ket_qua": 8.4
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 7,
+      "tier": 1,
+      "ket_qua": 44.0
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 7,
+      "tier": 2,
+      "ket_qua": 22.0
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 7,
+      "tier": 3,
+      "ket_qua": 14.666666666666666
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 7,
+      "tier": 4,
+      "ket_qua": 8.8
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 8,
+      "tier": 1,
+      "ket_qua": 46.0
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 8,
+      "tier": 2,
+      "ket_qua": 23.0
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 8,
+      "tier": 3,
+      "ket_qua": 15.333333333333334
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 8,
+      "tier": 4,
+      "ket_qua": 9.2
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 9,
+      "tier": 1,
+      "ket_qua": 48.0
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 9,
+      "tier": 2,
+      "ket_qua": 24.0
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 9,
+      "tier": 3,
+      "ket_qua": 16.0
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 9,
+      "tier": 4,
+      "ket_qua": 9.6
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 10,
+      "tier": 1,
+      "ket_qua": 50.0
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 10,
+      "tier": 2,
+      "ket_qua": 25.0
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 10,
+      "tier": 3,
+      "ket_qua": 16.666666666666668
+    },
+    {
+      "ngo_tinh": 25,
+      "cap_su_phu": 10,
+      "tier": 4,
+      "ket_qua": 10.0
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 0,
+      "tier": 1,
+      "ket_qua": 36.0
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 0,
+      "tier": 2,
+      "ket_qua": 18.0
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 0,
+      "tier": 3,
+      "ket_qua": 12.0
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 0,
+      "tier": 4,
+      "ket_qua": 7.2
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 1,
+      "tier": 1,
+      "ket_qua": 38.0
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 1,
+      "tier": 2,
+      "ket_qua": 19.0
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 1,
+      "tier": 3,
+      "ket_qua": 12.666666666666666
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 1,
+      "tier": 4,
+      "ket_qua": 7.6
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 2,
+      "tier": 1,
+      "ket_qua": 40.0
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 2,
+      "tier": 2,
+      "ket_qua": 20.0
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 2,
+      "tier": 3,
+      "ket_qua": 13.333333333333334
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 2,
+      "tier": 4,
+      "ket_qua": 8.0
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 3,
+      "tier": 1,
+      "ket_qua": 42.0
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 3,
+      "tier": 2,
+      "ket_qua": 21.0
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 3,
+      "tier": 3,
+      "ket_qua": 14.0
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 3,
+      "tier": 4,
+      "ket_qua": 8.4
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 4,
+      "tier": 1,
+      "ket_qua": 44.0
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 4,
+      "tier": 2,
+      "ket_qua": 22.0
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 4,
+      "tier": 3,
+      "ket_qua": 14.666666666666666
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 4,
+      "tier": 4,
+      "ket_qua": 8.8
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 5,
+      "tier": 1,
+      "ket_qua": 46.0
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 5,
+      "tier": 2,
+      "ket_qua": 23.0
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 5,
+      "tier": 3,
+      "ket_qua": 15.333333333333334
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 5,
+      "tier": 4,
+      "ket_qua": 9.2
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 6,
+      "tier": 1,
+      "ket_qua": 48.0
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 6,
+      "tier": 2,
+      "ket_qua": 24.0
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 6,
+      "tier": 3,
+      "ket_qua": 16.0
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 6,
+      "tier": 4,
+      "ket_qua": 9.6
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 7,
+      "tier": 1,
+      "ket_qua": 50.0
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 7,
+      "tier": 2,
+      "ket_qua": 25.0
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 7,
+      "tier": 3,
+      "ket_qua": 16.666666666666668
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 7,
+      "tier": 4,
+      "ket_qua": 10.0
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 8,
+      "tier": 1,
+      "ket_qua": 52.0
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 8,
+      "tier": 2,
+      "ket_qua": 26.0
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 8,
+      "tier": 3,
+      "ket_qua": 17.333333333333332
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 8,
+      "tier": 4,
+      "ket_qua": 10.4
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 9,
+      "tier": 1,
+      "ket_qua": 54.0
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 9,
+      "tier": 2,
+      "ket_qua": 27.0
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 9,
+      "tier": 3,
+      "ket_qua": 18.0
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 9,
+      "tier": 4,
+      "ket_qua": 10.8
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 10,
+      "tier": 1,
+      "ket_qua": 56.0
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 10,
+      "tier": 2,
+      "ket_qua": 28.0
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 10,
+      "tier": 3,
+      "ket_qua": 18.666666666666668
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 10,
+      "tier": 4,
+      "ket_qua": 11.2
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 0,
+      "tier": 1,
+      "ket_qua": 42.0
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 0,
+      "tier": 2,
+      "ket_qua": 21.0
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 0,
+      "tier": 3,
+      "ket_qua": 14.0
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 0,
+      "tier": 4,
+      "ket_qua": 8.4
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 1,
+      "tier": 1,
+      "ket_qua": 44.0
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 1,
+      "tier": 2,
+      "ket_qua": 22.0
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 1,
+      "tier": 3,
+      "ket_qua": 14.666666666666666
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 1,
+      "tier": 4,
+      "ket_qua": 8.8
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 2,
+      "tier": 1,
+      "ket_qua": 46.0
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 2,
+      "tier": 2,
+      "ket_qua": 23.0
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 2,
+      "tier": 3,
+      "ket_qua": 15.333333333333334
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 2,
+      "tier": 4,
+      "ket_qua": 9.2
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 3,
+      "tier": 1,
+      "ket_qua": 48.0
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 3,
+      "tier": 2,
+      "ket_qua": 24.0
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 3,
+      "tier": 3,
+      "ket_qua": 16.0
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 3,
+      "tier": 4,
+      "ket_qua": 9.6
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 4,
+      "tier": 1,
+      "ket_qua": 50.0
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 4,
+      "tier": 2,
+      "ket_qua": 25.0
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 4,
+      "tier": 3,
+      "ket_qua": 16.666666666666668
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 4,
+      "tier": 4,
+      "ket_qua": 10.0
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 5,
+      "tier": 1,
+      "ket_qua": 52.0
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 5,
+      "tier": 2,
+      "ket_qua": 26.0
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 5,
+      "tier": 3,
+      "ket_qua": 17.333333333333332
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 5,
+      "tier": 4,
+      "ket_qua": 10.4
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 6,
+      "tier": 1,
+      "ket_qua": 54.0
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 6,
+      "tier": 2,
+      "ket_qua": 27.0
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 6,
+      "tier": 3,
+      "ket_qua": 18.0
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 6,
+      "tier": 4,
+      "ket_qua": 10.8
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 7,
+      "tier": 1,
+      "ket_qua": 56.0
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 7,
+      "tier": 2,
+      "ket_qua": 28.0
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 7,
+      "tier": 3,
+      "ket_qua": 18.666666666666668
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 7,
+      "tier": 4,
+      "ket_qua": 11.2
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 8,
+      "tier": 1,
+      "ket_qua": 58.0
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 8,
+      "tier": 2,
+      "ket_qua": 29.0
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 8,
+      "tier": 3,
+      "ket_qua": 19.333333333333332
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 8,
+      "tier": 4,
+      "ket_qua": 11.6
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 9,
+      "tier": 1,
+      "ket_qua": 60.0
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 9,
+      "tier": 2,
+      "ket_qua": 30.0
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 9,
+      "tier": 3,
+      "ket_qua": 20.0
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 9,
+      "tier": 4,
+      "ket_qua": 12.0
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 10,
+      "tier": 1,
+      "ket_qua": 62.0
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 10,
+      "tier": 2,
+      "ket_qua": 31.0
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 10,
+      "tier": 3,
+      "ket_qua": 20.666666666666668
+    },
+    {
+      "ngo_tinh": 35,
+      "cap_su_phu": 10,
+      "tier": 4,
+      "ket_qua": 12.4
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 0,
+      "tier": 1,
+      "ket_qua": 48.0
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 0,
+      "tier": 2,
+      "ket_qua": 24.0
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 0,
+      "tier": 3,
+      "ket_qua": 16.0
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 0,
+      "tier": 4,
+      "ket_qua": 9.6
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 1,
+      "tier": 1,
+      "ket_qua": 50.0
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 1,
+      "tier": 2,
+      "ket_qua": 25.0
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 1,
+      "tier": 3,
+      "ket_qua": 16.666666666666668
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 1,
+      "tier": 4,
+      "ket_qua": 10.0
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 2,
+      "tier": 1,
+      "ket_qua": 52.0
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 2,
+      "tier": 2,
+      "ket_qua": 26.0
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 2,
+      "tier": 3,
+      "ket_qua": 17.333333333333332
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 2,
+      "tier": 4,
+      "ket_qua": 10.4
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 3,
+      "tier": 1,
+      "ket_qua": 54.0
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 3,
+      "tier": 2,
+      "ket_qua": 27.0
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 3,
+      "tier": 3,
+      "ket_qua": 18.0
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 3,
+      "tier": 4,
+      "ket_qua": 10.8
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 4,
+      "tier": 1,
+      "ket_qua": 56.0
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 4,
+      "tier": 2,
+      "ket_qua": 28.0
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 4,
+      "tier": 3,
+      "ket_qua": 18.666666666666668
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 4,
+      "tier": 4,
+      "ket_qua": 11.2
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 5,
+      "tier": 1,
+      "ket_qua": 58.0
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 5,
+      "tier": 2,
+      "ket_qua": 29.0
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 5,
+      "tier": 3,
+      "ket_qua": 19.333333333333332
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 5,
+      "tier": 4,
+      "ket_qua": 11.6
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 6,
+      "tier": 1,
+      "ket_qua": 60.0
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 6,
+      "tier": 2,
+      "ket_qua": 30.0
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 6,
+      "tier": 3,
+      "ket_qua": 20.0
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 6,
+      "tier": 4,
+      "ket_qua": 12.0
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 7,
+      "tier": 1,
+      "ket_qua": 62.0
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 7,
+      "tier": 2,
+      "ket_qua": 31.0
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 7,
+      "tier": 3,
+      "ket_qua": 20.666666666666668
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 7,
+      "tier": 4,
+      "ket_qua": 12.4
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 8,
+      "tier": 1,
+      "ket_qua": 64.0
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 8,
+      "tier": 2,
+      "ket_qua": 32.0
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 8,
+      "tier": 3,
+      "ket_qua": 21.333333333333332
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 8,
+      "tier": 4,
+      "ket_qua": 12.8
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 9,
+      "tier": 1,
+      "ket_qua": 66.0
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 9,
+      "tier": 2,
+      "ket_qua": 33.0
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 9,
+      "tier": 3,
+      "ket_qua": 22.0
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 9,
+      "tier": 4,
+      "ket_qua": 13.2
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 10,
+      "tier": 1,
+      "ket_qua": 68.0
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 10,
+      "tier": 2,
+      "ket_qua": 34.0
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 10,
+      "tier": 3,
+      "ket_qua": 22.666666666666668
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 10,
+      "tier": 4,
+      "ket_qua": 13.6
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 0,
+      "tier": 1,
+      "ket_qua": 54.0
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 0,
+      "tier": 2,
+      "ket_qua": 27.0
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 0,
+      "tier": 3,
+      "ket_qua": 18.0
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 0,
+      "tier": 4,
+      "ket_qua": 10.8
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 1,
+      "tier": 1,
+      "ket_qua": 56.0
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 1,
+      "tier": 2,
+      "ket_qua": 28.0
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 1,
+      "tier": 3,
+      "ket_qua": 18.666666666666668
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 1,
+      "tier": 4,
+      "ket_qua": 11.2
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 2,
+      "tier": 1,
+      "ket_qua": 58.0
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 2,
+      "tier": 2,
+      "ket_qua": 29.0
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 2,
+      "tier": 3,
+      "ket_qua": 19.333333333333332
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 2,
+      "tier": 4,
+      "ket_qua": 11.6
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 3,
+      "tier": 1,
+      "ket_qua": 60.0
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 3,
+      "tier": 2,
+      "ket_qua": 30.0
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 3,
+      "tier": 3,
+      "ket_qua": 20.0
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 3,
+      "tier": 4,
+      "ket_qua": 12.0
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 4,
+      "tier": 1,
+      "ket_qua": 62.0
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 4,
+      "tier": 2,
+      "ket_qua": 31.0
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 4,
+      "tier": 3,
+      "ket_qua": 20.666666666666668
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 4,
+      "tier": 4,
+      "ket_qua": 12.4
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 5,
+      "tier": 1,
+      "ket_qua": 64.0
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 5,
+      "tier": 2,
+      "ket_qua": 32.0
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 5,
+      "tier": 3,
+      "ket_qua": 21.333333333333332
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 5,
+      "tier": 4,
+      "ket_qua": 12.8
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 6,
+      "tier": 1,
+      "ket_qua": 66.0
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 6,
+      "tier": 2,
+      "ket_qua": 33.0
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 6,
+      "tier": 3,
+      "ket_qua": 22.0
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 6,
+      "tier": 4,
+      "ket_qua": 13.2
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 7,
+      "tier": 1,
+      "ket_qua": 68.0
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 7,
+      "tier": 2,
+      "ket_qua": 34.0
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 7,
+      "tier": 3,
+      "ket_qua": 22.666666666666668
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 7,
+      "tier": 4,
+      "ket_qua": 13.6
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 8,
+      "tier": 1,
+      "ket_qua": 70.0
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 8,
+      "tier": 2,
+      "ket_qua": 35.0
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 8,
+      "tier": 3,
+      "ket_qua": 23.333333333333332
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 8,
+      "tier": 4,
+      "ket_qua": 14.0
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 9,
+      "tier": 1,
+      "ket_qua": 72.0
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 9,
+      "tier": 2,
+      "ket_qua": 36.0
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 9,
+      "tier": 3,
+      "ket_qua": 24.0
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 9,
+      "tier": 4,
+      "ket_qua": 14.4
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 10,
+      "tier": 1,
+      "ket_qua": 74.0
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 10,
+      "tier": 2,
+      "ket_qua": 37.0
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 10,
+      "tier": 3,
+      "ket_qua": 24.666666666666668
+    },
+    {
+      "ngo_tinh": 45,
+      "cap_su_phu": 10,
+      "tier": 4,
+      "ket_qua": 14.8
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 0,
+      "tier": 1,
+      "ket_qua": 60.0
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 0,
+      "tier": 2,
+      "ket_qua": 30.0
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 0,
+      "tier": 3,
+      "ket_qua": 20.0
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 0,
+      "tier": 4,
+      "ket_qua": 12.0
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 1,
+      "tier": 1,
+      "ket_qua": 62.0
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 1,
+      "tier": 2,
+      "ket_qua": 31.0
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 1,
+      "tier": 3,
+      "ket_qua": 20.666666666666668
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 1,
+      "tier": 4,
+      "ket_qua": 12.4
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 2,
+      "tier": 1,
+      "ket_qua": 64.0
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 2,
+      "tier": 2,
+      "ket_qua": 32.0
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 2,
+      "tier": 3,
+      "ket_qua": 21.333333333333332
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 2,
+      "tier": 4,
+      "ket_qua": 12.8
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 3,
+      "tier": 1,
+      "ket_qua": 66.0
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 3,
+      "tier": 2,
+      "ket_qua": 33.0
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 3,
+      "tier": 3,
+      "ket_qua": 22.0
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 3,
+      "tier": 4,
+      "ket_qua": 13.2
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 4,
+      "tier": 1,
+      "ket_qua": 68.0
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 4,
+      "tier": 2,
+      "ket_qua": 34.0
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 4,
+      "tier": 3,
+      "ket_qua": 22.666666666666668
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 4,
+      "tier": 4,
+      "ket_qua": 13.6
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 5,
+      "tier": 1,
+      "ket_qua": 70.0
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 5,
+      "tier": 2,
+      "ket_qua": 35.0
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 5,
+      "tier": 3,
+      "ket_qua": 23.333333333333332
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 5,
+      "tier": 4,
+      "ket_qua": 14.0
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 6,
+      "tier": 1,
+      "ket_qua": 72.0
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 6,
+      "tier": 2,
+      "ket_qua": 36.0
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 6,
+      "tier": 3,
+      "ket_qua": 24.0
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 6,
+      "tier": 4,
+      "ket_qua": 14.4
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 7,
+      "tier": 1,
+      "ket_qua": 74.0
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 7,
+      "tier": 2,
+      "ket_qua": 37.0
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 7,
+      "tier": 3,
+      "ket_qua": 24.666666666666668
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 7,
+      "tier": 4,
+      "ket_qua": 14.8
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 8,
+      "tier": 1,
+      "ket_qua": 76.0
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 8,
+      "tier": 2,
+      "ket_qua": 38.0
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 8,
+      "tier": 3,
+      "ket_qua": 25.333333333333332
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 8,
+      "tier": 4,
+      "ket_qua": 15.2
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 9,
+      "tier": 1,
+      "ket_qua": 78.0
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 9,
+      "tier": 2,
+      "ket_qua": 39.0
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 9,
+      "tier": 3,
+      "ket_qua": 26.0
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 9,
+      "tier": 4,
+      "ket_qua": 15.6
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 10,
+      "tier": 1,
+      "ket_qua": 80.0
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 10,
+      "tier": 2,
+      "ket_qua": 40.0
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 10,
+      "tier": 3,
+      "ket_qua": 26.666666666666668
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 10,
+      "tier": 4,
+      "ket_qua": 16.0
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 0,
+      "tier": 1,
+      "ket_qua": 66.0
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 0,
+      "tier": 2,
+      "ket_qua": 33.0
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 0,
+      "tier": 3,
+      "ket_qua": 22.0
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 0,
+      "tier": 4,
+      "ket_qua": 13.2
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 1,
+      "tier": 1,
+      "ket_qua": 68.0
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 1,
+      "tier": 2,
+      "ket_qua": 34.0
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 1,
+      "tier": 3,
+      "ket_qua": 22.666666666666668
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 1,
+      "tier": 4,
+      "ket_qua": 13.6
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 2,
+      "tier": 1,
+      "ket_qua": 70.0
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 2,
+      "tier": 2,
+      "ket_qua": 35.0
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 2,
+      "tier": 3,
+      "ket_qua": 23.333333333333332
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 2,
+      "tier": 4,
+      "ket_qua": 14.0
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 3,
+      "tier": 1,
+      "ket_qua": 72.0
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 3,
+      "tier": 2,
+      "ket_qua": 36.0
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 3,
+      "tier": 3,
+      "ket_qua": 24.0
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 3,
+      "tier": 4,
+      "ket_qua": 14.4
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 4,
+      "tier": 1,
+      "ket_qua": 74.0
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 4,
+      "tier": 2,
+      "ket_qua": 37.0
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 4,
+      "tier": 3,
+      "ket_qua": 24.666666666666668
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 4,
+      "tier": 4,
+      "ket_qua": 14.8
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 5,
+      "tier": 1,
+      "ket_qua": 76.0
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 5,
+      "tier": 2,
+      "ket_qua": 38.0
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 5,
+      "tier": 3,
+      "ket_qua": 25.333333333333332
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 5,
+      "tier": 4,
+      "ket_qua": 15.2
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 6,
+      "tier": 1,
+      "ket_qua": 78.0
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 6,
+      "tier": 2,
+      "ket_qua": 39.0
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 6,
+      "tier": 3,
+      "ket_qua": 26.0
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 6,
+      "tier": 4,
+      "ket_qua": 15.6
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 7,
+      "tier": 1,
+      "ket_qua": 80.0
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 7,
+      "tier": 2,
+      "ket_qua": 40.0
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 7,
+      "tier": 3,
+      "ket_qua": 26.666666666666668
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 7,
+      "tier": 4,
+      "ket_qua": 16.0
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 8,
+      "tier": 1,
+      "ket_qua": 82.0
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 8,
+      "tier": 2,
+      "ket_qua": 41.0
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 8,
+      "tier": 3,
+      "ket_qua": 27.333333333333332
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 8,
+      "tier": 4,
+      "ket_qua": 16.4
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 9,
+      "tier": 1,
+      "ket_qua": 84.0
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 9,
+      "tier": 2,
+      "ket_qua": 42.0
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 9,
+      "tier": 3,
+      "ket_qua": 28.0
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 9,
+      "tier": 4,
+      "ket_qua": 16.8
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 10,
+      "tier": 1,
+      "ket_qua": 86.0
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 10,
+      "tier": 2,
+      "ket_qua": 43.0
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 10,
+      "tier": 3,
+      "ket_qua": 28.666666666666668
+    },
+    {
+      "ngo_tinh": 55,
+      "cap_su_phu": 10,
+      "tier": 4,
+      "ket_qua": 17.2
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 0,
+      "tier": 1,
+      "ket_qua": 72.0
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 0,
+      "tier": 2,
+      "ket_qua": 36.0
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 0,
+      "tier": 3,
+      "ket_qua": 24.0
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 0,
+      "tier": 4,
+      "ket_qua": 14.4
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 1,
+      "tier": 1,
+      "ket_qua": 74.0
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 1,
+      "tier": 2,
+      "ket_qua": 37.0
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 1,
+      "tier": 3,
+      "ket_qua": 24.666666666666668
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 1,
+      "tier": 4,
+      "ket_qua": 14.8
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 2,
+      "tier": 1,
+      "ket_qua": 76.0
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 2,
+      "tier": 2,
+      "ket_qua": 38.0
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 2,
+      "tier": 3,
+      "ket_qua": 25.333333333333332
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 2,
+      "tier": 4,
+      "ket_qua": 15.2
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 3,
+      "tier": 1,
+      "ket_qua": 78.0
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 3,
+      "tier": 2,
+      "ket_qua": 39.0
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 3,
+      "tier": 3,
+      "ket_qua": 26.0
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 3,
+      "tier": 4,
+      "ket_qua": 15.6
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 4,
+      "tier": 1,
+      "ket_qua": 80.0
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 4,
+      "tier": 2,
+      "ket_qua": 40.0
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 4,
+      "tier": 3,
+      "ket_qua": 26.666666666666668
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 4,
+      "tier": 4,
+      "ket_qua": 16.0
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 5,
+      "tier": 1,
+      "ket_qua": 82.0
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 5,
+      "tier": 2,
+      "ket_qua": 41.0
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 5,
+      "tier": 3,
+      "ket_qua": 27.333333333333332
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 5,
+      "tier": 4,
+      "ket_qua": 16.4
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 6,
+      "tier": 1,
+      "ket_qua": 84.0
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 6,
+      "tier": 2,
+      "ket_qua": 42.0
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 6,
+      "tier": 3,
+      "ket_qua": 28.0
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 6,
+      "tier": 4,
+      "ket_qua": 16.8
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 7,
+      "tier": 1,
+      "ket_qua": 86.0
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 7,
+      "tier": 2,
+      "ket_qua": 43.0
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 7,
+      "tier": 3,
+      "ket_qua": 28.666666666666668
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 7,
+      "tier": 4,
+      "ket_qua": 17.2
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 8,
+      "tier": 1,
+      "ket_qua": 88.0
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 8,
+      "tier": 2,
+      "ket_qua": 44.0
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 8,
+      "tier": 3,
+      "ket_qua": 29.333333333333332
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 8,
+      "tier": 4,
+      "ket_qua": 17.6
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 9,
+      "tier": 1,
+      "ket_qua": 90.0
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 9,
+      "tier": 2,
+      "ket_qua": 45.0
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 9,
+      "tier": 3,
+      "ket_qua": 30.0
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 9,
+      "tier": 4,
+      "ket_qua": 18.0
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 10,
+      "tier": 1,
+      "ket_qua": 92.0
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 10,
+      "tier": 2,
+      "ket_qua": 46.0
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 10,
+      "tier": 3,
+      "ket_qua": 30.666666666666668
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 10,
+      "tier": 4,
+      "ket_qua": 18.4
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 0,
+      "tier": 1,
+      "ket_qua": 78.0
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 0,
+      "tier": 2,
+      "ket_qua": 39.0
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 0,
+      "tier": 3,
+      "ket_qua": 26.0
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 0,
+      "tier": 4,
+      "ket_qua": 15.6
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 1,
+      "tier": 1,
+      "ket_qua": 80.0
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 1,
+      "tier": 2,
+      "ket_qua": 40.0
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 1,
+      "tier": 3,
+      "ket_qua": 26.666666666666668
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 1,
+      "tier": 4,
+      "ket_qua": 16.0
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 2,
+      "tier": 1,
+      "ket_qua": 82.0
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 2,
+      "tier": 2,
+      "ket_qua": 41.0
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 2,
+      "tier": 3,
+      "ket_qua": 27.333333333333332
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 2,
+      "tier": 4,
+      "ket_qua": 16.4
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 3,
+      "tier": 1,
+      "ket_qua": 84.0
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 3,
+      "tier": 2,
+      "ket_qua": 42.0
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 3,
+      "tier": 3,
+      "ket_qua": 28.0
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 3,
+      "tier": 4,
+      "ket_qua": 16.8
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 4,
+      "tier": 1,
+      "ket_qua": 86.0
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 4,
+      "tier": 2,
+      "ket_qua": 43.0
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 4,
+      "tier": 3,
+      "ket_qua": 28.666666666666668
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 4,
+      "tier": 4,
+      "ket_qua": 17.2
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 5,
+      "tier": 1,
+      "ket_qua": 88.0
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 5,
+      "tier": 2,
+      "ket_qua": 44.0
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 5,
+      "tier": 3,
+      "ket_qua": 29.333333333333332
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 5,
+      "tier": 4,
+      "ket_qua": 17.6
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 6,
+      "tier": 1,
+      "ket_qua": 90.0
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 6,
+      "tier": 2,
+      "ket_qua": 45.0
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 6,
+      "tier": 3,
+      "ket_qua": 30.0
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 6,
+      "tier": 4,
+      "ket_qua": 18.0
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 7,
+      "tier": 1,
+      "ket_qua": 92.0
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 7,
+      "tier": 2,
+      "ket_qua": 46.0
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 7,
+      "tier": 3,
+      "ket_qua": 30.666666666666668
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 7,
+      "tier": 4,
+      "ket_qua": 18.4
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 8,
+      "tier": 1,
+      "ket_qua": 94.0
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 8,
+      "tier": 2,
+      "ket_qua": 47.0
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 8,
+      "tier": 3,
+      "ket_qua": 31.333333333333332
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 8,
+      "tier": 4,
+      "ket_qua": 18.8
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 9,
+      "tier": 1,
+      "ket_qua": 96.0
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 9,
+      "tier": 2,
+      "ket_qua": 48.0
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 9,
+      "tier": 3,
+      "ket_qua": 32.0
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 9,
+      "tier": 4,
+      "ket_qua": 19.2
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 10,
+      "tier": 1,
+      "ket_qua": 98.0
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 10,
+      "tier": 2,
+      "ket_qua": 49.0
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 10,
+      "tier": 3,
+      "ket_qua": 32.666666666666664
+    },
+    {
+      "ngo_tinh": 65,
+      "cap_su_phu": 10,
+      "tier": 4,
+      "ket_qua": 19.6
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 0,
+      "tier": 1,
+      "ket_qua": 84.0
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 0,
+      "tier": 2,
+      "ket_qua": 42.0
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 0,
+      "tier": 3,
+      "ket_qua": 28.0
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 0,
+      "tier": 4,
+      "ket_qua": 16.8
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 1,
+      "tier": 1,
+      "ket_qua": 86.0
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 1,
+      "tier": 2,
+      "ket_qua": 43.0
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 1,
+      "tier": 3,
+      "ket_qua": 28.666666666666668
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 1,
+      "tier": 4,
+      "ket_qua": 17.2
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 2,
+      "tier": 1,
+      "ket_qua": 88.0
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 2,
+      "tier": 2,
+      "ket_qua": 44.0
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 2,
+      "tier": 3,
+      "ket_qua": 29.333333333333332
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 2,
+      "tier": 4,
+      "ket_qua": 17.6
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 3,
+      "tier": 1,
+      "ket_qua": 90.0
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 3,
+      "tier": 2,
+      "ket_qua": 45.0
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 3,
+      "tier": 3,
+      "ket_qua": 30.0
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 3,
+      "tier": 4,
+      "ket_qua": 18.0
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 4,
+      "tier": 1,
+      "ket_qua": 92.0
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 4,
+      "tier": 2,
+      "ket_qua": 46.0
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 4,
+      "tier": 3,
+      "ket_qua": 30.666666666666668
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 4,
+      "tier": 4,
+      "ket_qua": 18.4
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 5,
+      "tier": 1,
+      "ket_qua": 94.0
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 5,
+      "tier": 2,
+      "ket_qua": 47.0
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 5,
+      "tier": 3,
+      "ket_qua": 31.333333333333332
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 5,
+      "tier": 4,
+      "ket_qua": 18.8
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 6,
+      "tier": 1,
+      "ket_qua": 96.0
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 6,
+      "tier": 2,
+      "ket_qua": 48.0
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 6,
+      "tier": 3,
+      "ket_qua": 32.0
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 6,
+      "tier": 4,
+      "ket_qua": 19.2
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 7,
+      "tier": 1,
+      "ket_qua": 98.0
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 7,
+      "tier": 2,
+      "ket_qua": 49.0
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 7,
+      "tier": 3,
+      "ket_qua": 32.666666666666664
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 7,
+      "tier": 4,
+      "ket_qua": 19.6
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 8,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 8,
+      "tier": 2,
+      "ket_qua": 50.0
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 8,
+      "tier": 3,
+      "ket_qua": 33.333333333333336
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 8,
+      "tier": 4,
+      "ket_qua": 20.0
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 9,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 9,
+      "tier": 2,
+      "ket_qua": 51.0
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 9,
+      "tier": 3,
+      "ket_qua": 34.0
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 9,
+      "tier": 4,
+      "ket_qua": 20.4
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 10,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 10,
+      "tier": 2,
+      "ket_qua": 52.0
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 10,
+      "tier": 3,
+      "ket_qua": 34.666666666666664
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 10,
+      "tier": 4,
+      "ket_qua": 20.8
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 0,
+      "tier": 1,
+      "ket_qua": 90.0
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 0,
+      "tier": 2,
+      "ket_qua": 45.0
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 0,
+      "tier": 3,
+      "ket_qua": 30.0
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 0,
+      "tier": 4,
+      "ket_qua": 18.0
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 1,
+      "tier": 1,
+      "ket_qua": 92.0
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 1,
+      "tier": 2,
+      "ket_qua": 46.0
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 1,
+      "tier": 3,
+      "ket_qua": 30.666666666666668
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 1,
+      "tier": 4,
+      "ket_qua": 18.4
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 2,
+      "tier": 1,
+      "ket_qua": 94.0
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 2,
+      "tier": 2,
+      "ket_qua": 47.0
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 2,
+      "tier": 3,
+      "ket_qua": 31.333333333333332
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 2,
+      "tier": 4,
+      "ket_qua": 18.8
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 3,
+      "tier": 1,
+      "ket_qua": 96.0
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 3,
+      "tier": 2,
+      "ket_qua": 48.0
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 3,
+      "tier": 3,
+      "ket_qua": 32.0
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 3,
+      "tier": 4,
+      "ket_qua": 19.2
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 4,
+      "tier": 1,
+      "ket_qua": 98.0
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 4,
+      "tier": 2,
+      "ket_qua": 49.0
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 4,
+      "tier": 3,
+      "ket_qua": 32.666666666666664
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 4,
+      "tier": 4,
+      "ket_qua": 19.6
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 5,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 5,
+      "tier": 2,
+      "ket_qua": 50.0
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 5,
+      "tier": 3,
+      "ket_qua": 33.333333333333336
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 5,
+      "tier": 4,
+      "ket_qua": 20.0
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 6,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 6,
+      "tier": 2,
+      "ket_qua": 51.0
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 6,
+      "tier": 3,
+      "ket_qua": 34.0
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 6,
+      "tier": 4,
+      "ket_qua": 20.4
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 7,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 7,
+      "tier": 2,
+      "ket_qua": 52.0
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 7,
+      "tier": 3,
+      "ket_qua": 34.666666666666664
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 7,
+      "tier": 4,
+      "ket_qua": 20.8
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 8,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 8,
+      "tier": 2,
+      "ket_qua": 53.0
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 8,
+      "tier": 3,
+      "ket_qua": 35.333333333333336
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 8,
+      "tier": 4,
+      "ket_qua": 21.2
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 9,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 9,
+      "tier": 2,
+      "ket_qua": 54.0
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 9,
+      "tier": 3,
+      "ket_qua": 36.0
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 9,
+      "tier": 4,
+      "ket_qua": 21.6
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 10,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 10,
+      "tier": 2,
+      "ket_qua": 55.0
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 10,
+      "tier": 3,
+      "ket_qua": 36.666666666666664
+    },
+    {
+      "ngo_tinh": 75,
+      "cap_su_phu": 10,
+      "tier": 4,
+      "ket_qua": 22.0
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 0,
+      "tier": 1,
+      "ket_qua": 96.0
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 0,
+      "tier": 2,
+      "ket_qua": 48.0
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 0,
+      "tier": 3,
+      "ket_qua": 32.0
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 0,
+      "tier": 4,
+      "ket_qua": 19.2
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 1,
+      "tier": 1,
+      "ket_qua": 98.0
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 1,
+      "tier": 2,
+      "ket_qua": 49.0
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 1,
+      "tier": 3,
+      "ket_qua": 32.666666666666664
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 1,
+      "tier": 4,
+      "ket_qua": 19.6
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 2,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 2,
+      "tier": 2,
+      "ket_qua": 50.0
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 2,
+      "tier": 3,
+      "ket_qua": 33.333333333333336
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 2,
+      "tier": 4,
+      "ket_qua": 20.0
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 3,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 3,
+      "tier": 2,
+      "ket_qua": 51.0
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 3,
+      "tier": 3,
+      "ket_qua": 34.0
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 3,
+      "tier": 4,
+      "ket_qua": 20.4
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 4,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 4,
+      "tier": 2,
+      "ket_qua": 52.0
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 4,
+      "tier": 3,
+      "ket_qua": 34.666666666666664
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 4,
+      "tier": 4,
+      "ket_qua": 20.8
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 5,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 5,
+      "tier": 2,
+      "ket_qua": 53.0
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 5,
+      "tier": 3,
+      "ket_qua": 35.333333333333336
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 5,
+      "tier": 4,
+      "ket_qua": 21.2
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 6,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 6,
+      "tier": 2,
+      "ket_qua": 54.0
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 6,
+      "tier": 3,
+      "ket_qua": 36.0
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 6,
+      "tier": 4,
+      "ket_qua": 21.6
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 7,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 7,
+      "tier": 2,
+      "ket_qua": 55.0
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 7,
+      "tier": 3,
+      "ket_qua": 36.666666666666664
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 7,
+      "tier": 4,
+      "ket_qua": 22.0
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 8,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 8,
+      "tier": 2,
+      "ket_qua": 56.0
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 8,
+      "tier": 3,
+      "ket_qua": 37.333333333333336
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 8,
+      "tier": 4,
+      "ket_qua": 22.4
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 9,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 9,
+      "tier": 2,
+      "ket_qua": 57.0
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 9,
+      "tier": 3,
+      "ket_qua": 38.0
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 9,
+      "tier": 4,
+      "ket_qua": 22.8
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 10,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 10,
+      "tier": 2,
+      "ket_qua": 58.0
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 10,
+      "tier": 3,
+      "ket_qua": 38.666666666666664
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 10,
+      "tier": 4,
+      "ket_qua": 23.2
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 0,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 0,
+      "tier": 2,
+      "ket_qua": 51.0
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 0,
+      "tier": 3,
+      "ket_qua": 34.0
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 0,
+      "tier": 4,
+      "ket_qua": 20.4
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 1,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 1,
+      "tier": 2,
+      "ket_qua": 52.0
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 1,
+      "tier": 3,
+      "ket_qua": 34.666666666666664
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 1,
+      "tier": 4,
+      "ket_qua": 20.8
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 2,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 2,
+      "tier": 2,
+      "ket_qua": 53.0
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 2,
+      "tier": 3,
+      "ket_qua": 35.333333333333336
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 2,
+      "tier": 4,
+      "ket_qua": 21.2
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 3,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 3,
+      "tier": 2,
+      "ket_qua": 54.0
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 3,
+      "tier": 3,
+      "ket_qua": 36.0
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 3,
+      "tier": 4,
+      "ket_qua": 21.6
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 4,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 4,
+      "tier": 2,
+      "ket_qua": 55.0
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 4,
+      "tier": 3,
+      "ket_qua": 36.666666666666664
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 4,
+      "tier": 4,
+      "ket_qua": 22.0
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 5,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 5,
+      "tier": 2,
+      "ket_qua": 56.0
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 5,
+      "tier": 3,
+      "ket_qua": 37.333333333333336
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 5,
+      "tier": 4,
+      "ket_qua": 22.4
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 6,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 6,
+      "tier": 2,
+      "ket_qua": 57.0
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 6,
+      "tier": 3,
+      "ket_qua": 38.0
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 6,
+      "tier": 4,
+      "ket_qua": 22.8
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 7,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 7,
+      "tier": 2,
+      "ket_qua": 58.0
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 7,
+      "tier": 3,
+      "ket_qua": 38.666666666666664
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 7,
+      "tier": 4,
+      "ket_qua": 23.2
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 8,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 8,
+      "tier": 2,
+      "ket_qua": 59.0
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 8,
+      "tier": 3,
+      "ket_qua": 39.333333333333336
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 8,
+      "tier": 4,
+      "ket_qua": 23.6
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 9,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 9,
+      "tier": 2,
+      "ket_qua": 60.0
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 9,
+      "tier": 3,
+      "ket_qua": 40.0
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 9,
+      "tier": 4,
+      "ket_qua": 24.0
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 10,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 10,
+      "tier": 2,
+      "ket_qua": 61.0
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 10,
+      "tier": 3,
+      "ket_qua": 40.666666666666664
+    },
+    {
+      "ngo_tinh": 85,
+      "cap_su_phu": 10,
+      "tier": 4,
+      "ket_qua": 24.4
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 0,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 0,
+      "tier": 2,
+      "ket_qua": 54.0
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 0,
+      "tier": 3,
+      "ket_qua": 36.0
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 0,
+      "tier": 4,
+      "ket_qua": 21.6
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 1,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 1,
+      "tier": 2,
+      "ket_qua": 55.0
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 1,
+      "tier": 3,
+      "ket_qua": 36.666666666666664
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 1,
+      "tier": 4,
+      "ket_qua": 22.0
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 2,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 2,
+      "tier": 2,
+      "ket_qua": 56.0
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 2,
+      "tier": 3,
+      "ket_qua": 37.333333333333336
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 2,
+      "tier": 4,
+      "ket_qua": 22.4
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 3,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 3,
+      "tier": 2,
+      "ket_qua": 57.0
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 3,
+      "tier": 3,
+      "ket_qua": 38.0
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 3,
+      "tier": 4,
+      "ket_qua": 22.8
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 4,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 4,
+      "tier": 2,
+      "ket_qua": 58.0
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 4,
+      "tier": 3,
+      "ket_qua": 38.666666666666664
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 4,
+      "tier": 4,
+      "ket_qua": 23.2
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 5,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 5,
+      "tier": 2,
+      "ket_qua": 59.0
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 5,
+      "tier": 3,
+      "ket_qua": 39.333333333333336
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 5,
+      "tier": 4,
+      "ket_qua": 23.6
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 6,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 6,
+      "tier": 2,
+      "ket_qua": 60.0
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 6,
+      "tier": 3,
+      "ket_qua": 40.0
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 6,
+      "tier": 4,
+      "ket_qua": 24.0
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 7,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 7,
+      "tier": 2,
+      "ket_qua": 61.0
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 7,
+      "tier": 3,
+      "ket_qua": 40.666666666666664
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 7,
+      "tier": 4,
+      "ket_qua": 24.4
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 8,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 8,
+      "tier": 2,
+      "ket_qua": 62.0
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 8,
+      "tier": 3,
+      "ket_qua": 41.333333333333336
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 8,
+      "tier": 4,
+      "ket_qua": 24.8
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 9,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 9,
+      "tier": 2,
+      "ket_qua": 63.0
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 9,
+      "tier": 3,
+      "ket_qua": 42.0
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 9,
+      "tier": 4,
+      "ket_qua": 25.2
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 10,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 10,
+      "tier": 2,
+      "ket_qua": 64.0
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 10,
+      "tier": 3,
+      "ket_qua": 42.666666666666664
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 10,
+      "tier": 4,
+      "ket_qua": 25.6
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 0,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 0,
+      "tier": 2,
+      "ket_qua": 57.0
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 0,
+      "tier": 3,
+      "ket_qua": 38.0
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 0,
+      "tier": 4,
+      "ket_qua": 22.8
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 1,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 1,
+      "tier": 2,
+      "ket_qua": 58.0
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 1,
+      "tier": 3,
+      "ket_qua": 38.666666666666664
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 1,
+      "tier": 4,
+      "ket_qua": 23.2
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 2,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 2,
+      "tier": 2,
+      "ket_qua": 59.0
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 2,
+      "tier": 3,
+      "ket_qua": 39.333333333333336
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 2,
+      "tier": 4,
+      "ket_qua": 23.6
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 3,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 3,
+      "tier": 2,
+      "ket_qua": 60.0
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 3,
+      "tier": 3,
+      "ket_qua": 40.0
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 3,
+      "tier": 4,
+      "ket_qua": 24.0
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 4,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 4,
+      "tier": 2,
+      "ket_qua": 61.0
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 4,
+      "tier": 3,
+      "ket_qua": 40.666666666666664
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 4,
+      "tier": 4,
+      "ket_qua": 24.4
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 5,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 5,
+      "tier": 2,
+      "ket_qua": 62.0
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 5,
+      "tier": 3,
+      "ket_qua": 41.333333333333336
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 5,
+      "tier": 4,
+      "ket_qua": 24.8
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 6,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 6,
+      "tier": 2,
+      "ket_qua": 63.0
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 6,
+      "tier": 3,
+      "ket_qua": 42.0
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 6,
+      "tier": 4,
+      "ket_qua": 25.2
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 7,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 7,
+      "tier": 2,
+      "ket_qua": 64.0
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 7,
+      "tier": 3,
+      "ket_qua": 42.666666666666664
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 7,
+      "tier": 4,
+      "ket_qua": 25.6
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 8,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 8,
+      "tier": 2,
+      "ket_qua": 65.0
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 8,
+      "tier": 3,
+      "ket_qua": 43.333333333333336
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 8,
+      "tier": 4,
+      "ket_qua": 26.0
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 9,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 9,
+      "tier": 2,
+      "ket_qua": 66.0
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 9,
+      "tier": 3,
+      "ket_qua": 44.0
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 9,
+      "tier": 4,
+      "ket_qua": 26.4
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 10,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 10,
+      "tier": 2,
+      "ket_qua": 67.0
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 10,
+      "tier": 3,
+      "ket_qua": 44.666666666666664
+    },
+    {
+      "ngo_tinh": 95,
+      "cap_su_phu": 10,
+      "tier": 4,
+      "ket_qua": 26.8
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 0,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 0,
+      "tier": 2,
+      "ket_qua": 60.0
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 0,
+      "tier": 3,
+      "ket_qua": 40.0
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 0,
+      "tier": 4,
+      "ket_qua": 24.0
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 1,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 1,
+      "tier": 2,
+      "ket_qua": 61.0
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 1,
+      "tier": 3,
+      "ket_qua": 40.666666666666664
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 1,
+      "tier": 4,
+      "ket_qua": 24.4
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 2,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 2,
+      "tier": 2,
+      "ket_qua": 62.0
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 2,
+      "tier": 3,
+      "ket_qua": 41.333333333333336
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 2,
+      "tier": 4,
+      "ket_qua": 24.8
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 3,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 3,
+      "tier": 2,
+      "ket_qua": 63.0
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 3,
+      "tier": 3,
+      "ket_qua": 42.0
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 3,
+      "tier": 4,
+      "ket_qua": 25.2
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 4,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 4,
+      "tier": 2,
+      "ket_qua": 64.0
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 4,
+      "tier": 3,
+      "ket_qua": 42.666666666666664
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 4,
+      "tier": 4,
+      "ket_qua": 25.6
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 5,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 5,
+      "tier": 2,
+      "ket_qua": 65.0
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 5,
+      "tier": 3,
+      "ket_qua": 43.333333333333336
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 5,
+      "tier": 4,
+      "ket_qua": 26.0
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 6,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 6,
+      "tier": 2,
+      "ket_qua": 66.0
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 6,
+      "tier": 3,
+      "ket_qua": 44.0
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 6,
+      "tier": 4,
+      "ket_qua": 26.4
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 7,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 7,
+      "tier": 2,
+      "ket_qua": 67.0
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 7,
+      "tier": 3,
+      "ket_qua": 44.666666666666664
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 7,
+      "tier": 4,
+      "ket_qua": 26.8
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 8,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 8,
+      "tier": 2,
+      "ket_qua": 68.0
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 8,
+      "tier": 3,
+      "ket_qua": 45.333333333333336
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 8,
+      "tier": 4,
+      "ket_qua": 27.2
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 9,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 9,
+      "tier": 2,
+      "ket_qua": 69.0
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 9,
+      "tier": 3,
+      "ket_qua": 46.0
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 9,
+      "tier": 4,
+      "ket_qua": 27.6
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 10,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 10,
+      "tier": 2,
+      "ket_qua": 70.0
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 10,
+      "tier": 3,
+      "ket_qua": 46.666666666666664
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 10,
+      "tier": 4,
+      "ket_qua": 28.0
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 0,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 0,
+      "tier": 2,
+      "ket_qua": 63.0
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 0,
+      "tier": 3,
+      "ket_qua": 42.0
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 0,
+      "tier": 4,
+      "ket_qua": 25.2
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 1,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 1,
+      "tier": 2,
+      "ket_qua": 64.0
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 1,
+      "tier": 3,
+      "ket_qua": 42.666666666666664
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 1,
+      "tier": 4,
+      "ket_qua": 25.6
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 2,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 2,
+      "tier": 2,
+      "ket_qua": 65.0
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 2,
+      "tier": 3,
+      "ket_qua": 43.333333333333336
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 2,
+      "tier": 4,
+      "ket_qua": 26.0
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 3,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 3,
+      "tier": 2,
+      "ket_qua": 66.0
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 3,
+      "tier": 3,
+      "ket_qua": 44.0
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 3,
+      "tier": 4,
+      "ket_qua": 26.4
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 4,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 4,
+      "tier": 2,
+      "ket_qua": 67.0
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 4,
+      "tier": 3,
+      "ket_qua": 44.666666666666664
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 4,
+      "tier": 4,
+      "ket_qua": 26.8
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 5,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 5,
+      "tier": 2,
+      "ket_qua": 68.0
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 5,
+      "tier": 3,
+      "ket_qua": 45.333333333333336
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 5,
+      "tier": 4,
+      "ket_qua": 27.2
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 6,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 6,
+      "tier": 2,
+      "ket_qua": 69.0
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 6,
+      "tier": 3,
+      "ket_qua": 46.0
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 6,
+      "tier": 4,
+      "ket_qua": 27.6
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 7,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 7,
+      "tier": 2,
+      "ket_qua": 70.0
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 7,
+      "tier": 3,
+      "ket_qua": 46.666666666666664
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 7,
+      "tier": 4,
+      "ket_qua": 28.0
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 8,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 8,
+      "tier": 2,
+      "ket_qua": 71.0
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 8,
+      "tier": 3,
+      "ket_qua": 47.333333333333336
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 8,
+      "tier": 4,
+      "ket_qua": 28.4
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 9,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 9,
+      "tier": 2,
+      "ket_qua": 72.0
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 9,
+      "tier": 3,
+      "ket_qua": 48.0
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 9,
+      "tier": 4,
+      "ket_qua": 28.8
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 10,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 10,
+      "tier": 2,
+      "ket_qua": 73.0
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 10,
+      "tier": 3,
+      "ket_qua": 48.666666666666664
+    },
+    {
+      "ngo_tinh": 105,
+      "cap_su_phu": 10,
+      "tier": 4,
+      "ket_qua": 29.2
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 0,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 0,
+      "tier": 2,
+      "ket_qua": 66.0
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 0,
+      "tier": 3,
+      "ket_qua": 44.0
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 0,
+      "tier": 4,
+      "ket_qua": 26.4
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 1,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 1,
+      "tier": 2,
+      "ket_qua": 67.0
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 1,
+      "tier": 3,
+      "ket_qua": 44.666666666666664
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 1,
+      "tier": 4,
+      "ket_qua": 26.8
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 2,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 2,
+      "tier": 2,
+      "ket_qua": 68.0
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 2,
+      "tier": 3,
+      "ket_qua": 45.333333333333336
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 2,
+      "tier": 4,
+      "ket_qua": 27.2
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 3,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 3,
+      "tier": 2,
+      "ket_qua": 69.0
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 3,
+      "tier": 3,
+      "ket_qua": 46.0
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 3,
+      "tier": 4,
+      "ket_qua": 27.6
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 4,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 4,
+      "tier": 2,
+      "ket_qua": 70.0
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 4,
+      "tier": 3,
+      "ket_qua": 46.666666666666664
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 4,
+      "tier": 4,
+      "ket_qua": 28.0
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 5,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 5,
+      "tier": 2,
+      "ket_qua": 71.0
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 5,
+      "tier": 3,
+      "ket_qua": 47.333333333333336
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 5,
+      "tier": 4,
+      "ket_qua": 28.4
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 6,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 6,
+      "tier": 2,
+      "ket_qua": 72.0
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 6,
+      "tier": 3,
+      "ket_qua": 48.0
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 6,
+      "tier": 4,
+      "ket_qua": 28.8
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 7,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 7,
+      "tier": 2,
+      "ket_qua": 73.0
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 7,
+      "tier": 3,
+      "ket_qua": 48.666666666666664
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 7,
+      "tier": 4,
+      "ket_qua": 29.2
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 8,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 8,
+      "tier": 2,
+      "ket_qua": 74.0
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 8,
+      "tier": 3,
+      "ket_qua": 49.333333333333336
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 8,
+      "tier": 4,
+      "ket_qua": 29.6
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 9,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 9,
+      "tier": 2,
+      "ket_qua": 75.0
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 9,
+      "tier": 3,
+      "ket_qua": 50.0
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 9,
+      "tier": 4,
+      "ket_qua": 30.0
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 10,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 10,
+      "tier": 2,
+      "ket_qua": 76.0
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 10,
+      "tier": 3,
+      "ket_qua": 50.666666666666664
+    },
+    {
+      "ngo_tinh": 110,
+      "cap_su_phu": 10,
+      "tier": 4,
+      "ket_qua": 30.4
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 0,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 0,
+      "tier": 2,
+      "ket_qua": 69.0
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 0,
+      "tier": 3,
+      "ket_qua": 46.0
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 0,
+      "tier": 4,
+      "ket_qua": 27.6
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 1,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 1,
+      "tier": 2,
+      "ket_qua": 70.0
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 1,
+      "tier": 3,
+      "ket_qua": 46.666666666666664
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 1,
+      "tier": 4,
+      "ket_qua": 28.0
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 2,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 2,
+      "tier": 2,
+      "ket_qua": 71.0
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 2,
+      "tier": 3,
+      "ket_qua": 47.333333333333336
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 2,
+      "tier": 4,
+      "ket_qua": 28.4
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 3,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 3,
+      "tier": 2,
+      "ket_qua": 72.0
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 3,
+      "tier": 3,
+      "ket_qua": 48.0
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 3,
+      "tier": 4,
+      "ket_qua": 28.8
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 4,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 4,
+      "tier": 2,
+      "ket_qua": 73.0
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 4,
+      "tier": 3,
+      "ket_qua": 48.666666666666664
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 4,
+      "tier": 4,
+      "ket_qua": 29.2
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 5,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 5,
+      "tier": 2,
+      "ket_qua": 74.0
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 5,
+      "tier": 3,
+      "ket_qua": 49.333333333333336
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 5,
+      "tier": 4,
+      "ket_qua": 29.6
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 6,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 6,
+      "tier": 2,
+      "ket_qua": 75.0
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 6,
+      "tier": 3,
+      "ket_qua": 50.0
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 6,
+      "tier": 4,
+      "ket_qua": 30.0
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 7,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 7,
+      "tier": 2,
+      "ket_qua": 76.0
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 7,
+      "tier": 3,
+      "ket_qua": 50.666666666666664
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 7,
+      "tier": 4,
+      "ket_qua": 30.4
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 8,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 8,
+      "tier": 2,
+      "ket_qua": 77.0
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 8,
+      "tier": 3,
+      "ket_qua": 51.333333333333336
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 8,
+      "tier": 4,
+      "ket_qua": 30.8
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 9,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 9,
+      "tier": 2,
+      "ket_qua": 78.0
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 9,
+      "tier": 3,
+      "ket_qua": 52.0
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 9,
+      "tier": 4,
+      "ket_qua": 31.2
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 10,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 10,
+      "tier": 2,
+      "ket_qua": 79.0
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 10,
+      "tier": 3,
+      "ket_qua": 52.666666666666664
+    },
+    {
+      "ngo_tinh": 115,
+      "cap_su_phu": 10,
+      "tier": 4,
+      "ket_qua": 31.6
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 0,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 0,
+      "tier": 2,
+      "ket_qua": 72.0
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 0,
+      "tier": 3,
+      "ket_qua": 48.0
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 0,
+      "tier": 4,
+      "ket_qua": 28.8
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 1,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 1,
+      "tier": 2,
+      "ket_qua": 73.0
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 1,
+      "tier": 3,
+      "ket_qua": 48.666666666666664
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 1,
+      "tier": 4,
+      "ket_qua": 29.2
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 2,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 2,
+      "tier": 2,
+      "ket_qua": 74.0
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 2,
+      "tier": 3,
+      "ket_qua": 49.333333333333336
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 2,
+      "tier": 4,
+      "ket_qua": 29.6
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 3,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 3,
+      "tier": 2,
+      "ket_qua": 75.0
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 3,
+      "tier": 3,
+      "ket_qua": 50.0
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 3,
+      "tier": 4,
+      "ket_qua": 30.0
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 4,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 4,
+      "tier": 2,
+      "ket_qua": 76.0
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 4,
+      "tier": 3,
+      "ket_qua": 50.666666666666664
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 4,
+      "tier": 4,
+      "ket_qua": 30.4
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 5,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 5,
+      "tier": 2,
+      "ket_qua": 77.0
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 5,
+      "tier": 3,
+      "ket_qua": 51.333333333333336
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 5,
+      "tier": 4,
+      "ket_qua": 30.8
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 6,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 6,
+      "tier": 2,
+      "ket_qua": 78.0
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 6,
+      "tier": 3,
+      "ket_qua": 52.0
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 6,
+      "tier": 4,
+      "ket_qua": 31.2
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 7,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 7,
+      "tier": 2,
+      "ket_qua": 79.0
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 7,
+      "tier": 3,
+      "ket_qua": 52.666666666666664
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 7,
+      "tier": 4,
+      "ket_qua": 31.6
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 8,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 8,
+      "tier": 2,
+      "ket_qua": 80.0
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 8,
+      "tier": 3,
+      "ket_qua": 53.333333333333336
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 8,
+      "tier": 4,
+      "ket_qua": 32.0
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 9,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 9,
+      "tier": 2,
+      "ket_qua": 81.0
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 9,
+      "tier": 3,
+      "ket_qua": 54.0
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 9,
+      "tier": 4,
+      "ket_qua": 32.4
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 10,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 10,
+      "tier": 2,
+      "ket_qua": 82.0
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 10,
+      "tier": 3,
+      "ket_qua": 54.666666666666664
+    },
+    {
+      "ngo_tinh": 120,
+      "cap_su_phu": 10,
+      "tier": 4,
+      "ket_qua": 32.8
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 0,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 0,
+      "tier": 2,
+      "ket_qua": 75.0
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 0,
+      "tier": 3,
+      "ket_qua": 50.0
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 0,
+      "tier": 4,
+      "ket_qua": 30.0
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 1,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 1,
+      "tier": 2,
+      "ket_qua": 76.0
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 1,
+      "tier": 3,
+      "ket_qua": 50.666666666666664
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 1,
+      "tier": 4,
+      "ket_qua": 30.4
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 2,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 2,
+      "tier": 2,
+      "ket_qua": 77.0
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 2,
+      "tier": 3,
+      "ket_qua": 51.333333333333336
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 2,
+      "tier": 4,
+      "ket_qua": 30.8
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 3,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 3,
+      "tier": 2,
+      "ket_qua": 78.0
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 3,
+      "tier": 3,
+      "ket_qua": 52.0
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 3,
+      "tier": 4,
+      "ket_qua": 31.2
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 4,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 4,
+      "tier": 2,
+      "ket_qua": 79.0
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 4,
+      "tier": 3,
+      "ket_qua": 52.666666666666664
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 4,
+      "tier": 4,
+      "ket_qua": 31.6
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 5,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 5,
+      "tier": 2,
+      "ket_qua": 80.0
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 5,
+      "tier": 3,
+      "ket_qua": 53.333333333333336
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 5,
+      "tier": 4,
+      "ket_qua": 32.0
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 6,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 6,
+      "tier": 2,
+      "ket_qua": 81.0
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 6,
+      "tier": 3,
+      "ket_qua": 54.0
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 6,
+      "tier": 4,
+      "ket_qua": 32.4
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 7,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 7,
+      "tier": 2,
+      "ket_qua": 82.0
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 7,
+      "tier": 3,
+      "ket_qua": 54.666666666666664
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 7,
+      "tier": 4,
+      "ket_qua": 32.8
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 8,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 8,
+      "tier": 2,
+      "ket_qua": 83.0
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 8,
+      "tier": 3,
+      "ket_qua": 55.333333333333336
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 8,
+      "tier": 4,
+      "ket_qua": 33.2
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 9,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 9,
+      "tier": 2,
+      "ket_qua": 84.0
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 9,
+      "tier": 3,
+      "ket_qua": 56.0
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 9,
+      "tier": 4,
+      "ket_qua": 33.6
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 10,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 10,
+      "tier": 2,
+      "ket_qua": 85.0
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 10,
+      "tier": 3,
+      "ket_qua": 56.666666666666664
+    },
+    {
+      "ngo_tinh": 125,
+      "cap_su_phu": 10,
+      "tier": 4,
+      "ket_qua": 34.0
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 0,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 0,
+      "tier": 2,
+      "ket_qua": 78.0
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 0,
+      "tier": 3,
+      "ket_qua": 52.0
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 0,
+      "tier": 4,
+      "ket_qua": 31.2
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 1,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 1,
+      "tier": 2,
+      "ket_qua": 79.0
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 1,
+      "tier": 3,
+      "ket_qua": 52.666666666666664
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 1,
+      "tier": 4,
+      "ket_qua": 31.6
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 2,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 2,
+      "tier": 2,
+      "ket_qua": 80.0
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 2,
+      "tier": 3,
+      "ket_qua": 53.333333333333336
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 2,
+      "tier": 4,
+      "ket_qua": 32.0
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 3,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 3,
+      "tier": 2,
+      "ket_qua": 81.0
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 3,
+      "tier": 3,
+      "ket_qua": 54.0
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 3,
+      "tier": 4,
+      "ket_qua": 32.4
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 4,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 4,
+      "tier": 2,
+      "ket_qua": 82.0
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 4,
+      "tier": 3,
+      "ket_qua": 54.666666666666664
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 4,
+      "tier": 4,
+      "ket_qua": 32.8
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 5,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 5,
+      "tier": 2,
+      "ket_qua": 83.0
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 5,
+      "tier": 3,
+      "ket_qua": 55.333333333333336
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 5,
+      "tier": 4,
+      "ket_qua": 33.2
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 6,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 6,
+      "tier": 2,
+      "ket_qua": 84.0
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 6,
+      "tier": 3,
+      "ket_qua": 56.0
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 6,
+      "tier": 4,
+      "ket_qua": 33.6
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 7,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 7,
+      "tier": 2,
+      "ket_qua": 85.0
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 7,
+      "tier": 3,
+      "ket_qua": 56.666666666666664
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 7,
+      "tier": 4,
+      "ket_qua": 34.0
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 8,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 8,
+      "tier": 2,
+      "ket_qua": 86.0
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 8,
+      "tier": 3,
+      "ket_qua": 57.333333333333336
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 8,
+      "tier": 4,
+      "ket_qua": 34.4
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 9,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 9,
+      "tier": 2,
+      "ket_qua": 87.0
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 9,
+      "tier": 3,
+      "ket_qua": 58.0
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 9,
+      "tier": 4,
+      "ket_qua": 34.8
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 10,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 10,
+      "tier": 2,
+      "ket_qua": 88.0
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 10,
+      "tier": 3,
+      "ket_qua": 58.666666666666664
+    },
+    {
+      "ngo_tinh": 130,
+      "cap_su_phu": 10,
+      "tier": 4,
+      "ket_qua": 35.2
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 0,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 0,
+      "tier": 2,
+      "ket_qua": 81.0
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 0,
+      "tier": 3,
+      "ket_qua": 54.0
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 0,
+      "tier": 4,
+      "ket_qua": 32.4
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 1,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 1,
+      "tier": 2,
+      "ket_qua": 82.0
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 1,
+      "tier": 3,
+      "ket_qua": 54.666666666666664
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 1,
+      "tier": 4,
+      "ket_qua": 32.8
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 2,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 2,
+      "tier": 2,
+      "ket_qua": 83.0
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 2,
+      "tier": 3,
+      "ket_qua": 55.333333333333336
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 2,
+      "tier": 4,
+      "ket_qua": 33.2
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 3,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 3,
+      "tier": 2,
+      "ket_qua": 84.0
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 3,
+      "tier": 3,
+      "ket_qua": 56.0
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 3,
+      "tier": 4,
+      "ket_qua": 33.6
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 4,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 4,
+      "tier": 2,
+      "ket_qua": 85.0
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 4,
+      "tier": 3,
+      "ket_qua": 56.666666666666664
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 4,
+      "tier": 4,
+      "ket_qua": 34.0
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 5,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 5,
+      "tier": 2,
+      "ket_qua": 86.0
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 5,
+      "tier": 3,
+      "ket_qua": 57.333333333333336
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 5,
+      "tier": 4,
+      "ket_qua": 34.4
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 6,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 6,
+      "tier": 2,
+      "ket_qua": 87.0
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 6,
+      "tier": 3,
+      "ket_qua": 58.0
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 6,
+      "tier": 4,
+      "ket_qua": 34.8
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 7,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 7,
+      "tier": 2,
+      "ket_qua": 88.0
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 7,
+      "tier": 3,
+      "ket_qua": 58.666666666666664
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 7,
+      "tier": 4,
+      "ket_qua": 35.2
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 8,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 8,
+      "tier": 2,
+      "ket_qua": 89.0
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 8,
+      "tier": 3,
+      "ket_qua": 59.333333333333336
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 8,
+      "tier": 4,
+      "ket_qua": 35.6
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 9,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 9,
+      "tier": 2,
+      "ket_qua": 90.0
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 9,
+      "tier": 3,
+      "ket_qua": 60.0
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 9,
+      "tier": 4,
+      "ket_qua": 36.0
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 10,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 10,
+      "tier": 2,
+      "ket_qua": 91.0
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 10,
+      "tier": 3,
+      "ket_qua": 60.666666666666664
+    },
+    {
+      "ngo_tinh": 135,
+      "cap_su_phu": 10,
+      "tier": 4,
+      "ket_qua": 36.4
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 0,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 0,
+      "tier": 2,
+      "ket_qua": 84.0
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 0,
+      "tier": 3,
+      "ket_qua": 56.0
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 0,
+      "tier": 4,
+      "ket_qua": 33.6
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 1,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 1,
+      "tier": 2,
+      "ket_qua": 85.0
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 1,
+      "tier": 3,
+      "ket_qua": 56.666666666666664
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 1,
+      "tier": 4,
+      "ket_qua": 34.0
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 2,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 2,
+      "tier": 2,
+      "ket_qua": 86.0
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 2,
+      "tier": 3,
+      "ket_qua": 57.333333333333336
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 2,
+      "tier": 4,
+      "ket_qua": 34.4
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 3,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 3,
+      "tier": 2,
+      "ket_qua": 87.0
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 3,
+      "tier": 3,
+      "ket_qua": 58.0
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 3,
+      "tier": 4,
+      "ket_qua": 34.8
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 4,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 4,
+      "tier": 2,
+      "ket_qua": 88.0
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 4,
+      "tier": 3,
+      "ket_qua": 58.666666666666664
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 4,
+      "tier": 4,
+      "ket_qua": 35.2
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 5,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 5,
+      "tier": 2,
+      "ket_qua": 89.0
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 5,
+      "tier": 3,
+      "ket_qua": 59.333333333333336
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 5,
+      "tier": 4,
+      "ket_qua": 35.6
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 6,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 6,
+      "tier": 2,
+      "ket_qua": 90.0
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 6,
+      "tier": 3,
+      "ket_qua": 60.0
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 6,
+      "tier": 4,
+      "ket_qua": 36.0
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 7,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 7,
+      "tier": 2,
+      "ket_qua": 91.0
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 7,
+      "tier": 3,
+      "ket_qua": 60.666666666666664
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 7,
+      "tier": 4,
+      "ket_qua": 36.4
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 8,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 8,
+      "tier": 2,
+      "ket_qua": 92.0
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 8,
+      "tier": 3,
+      "ket_qua": 61.333333333333336
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 8,
+      "tier": 4,
+      "ket_qua": 36.8
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 9,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 9,
+      "tier": 2,
+      "ket_qua": 93.0
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 9,
+      "tier": 3,
+      "ket_qua": 62.0
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 9,
+      "tier": 4,
+      "ket_qua": 37.2
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 10,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 10,
+      "tier": 2,
+      "ket_qua": 94.0
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 10,
+      "tier": 3,
+      "ket_qua": 62.666666666666664
+    },
+    {
+      "ngo_tinh": 140,
+      "cap_su_phu": 10,
+      "tier": 4,
+      "ket_qua": 37.6
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 0,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 0,
+      "tier": 2,
+      "ket_qua": 87.0
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 0,
+      "tier": 3,
+      "ket_qua": 58.0
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 0,
+      "tier": 4,
+      "ket_qua": 34.8
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 1,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 1,
+      "tier": 2,
+      "ket_qua": 88.0
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 1,
+      "tier": 3,
+      "ket_qua": 58.666666666666664
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 1,
+      "tier": 4,
+      "ket_qua": 35.2
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 2,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 2,
+      "tier": 2,
+      "ket_qua": 89.0
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 2,
+      "tier": 3,
+      "ket_qua": 59.333333333333336
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 2,
+      "tier": 4,
+      "ket_qua": 35.6
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 3,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 3,
+      "tier": 2,
+      "ket_qua": 90.0
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 3,
+      "tier": 3,
+      "ket_qua": 60.0
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 3,
+      "tier": 4,
+      "ket_qua": 36.0
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 4,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 4,
+      "tier": 2,
+      "ket_qua": 91.0
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 4,
+      "tier": 3,
+      "ket_qua": 60.666666666666664
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 4,
+      "tier": 4,
+      "ket_qua": 36.4
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 5,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 5,
+      "tier": 2,
+      "ket_qua": 92.0
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 5,
+      "tier": 3,
+      "ket_qua": 61.333333333333336
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 5,
+      "tier": 4,
+      "ket_qua": 36.8
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 6,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 6,
+      "tier": 2,
+      "ket_qua": 93.0
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 6,
+      "tier": 3,
+      "ket_qua": 62.0
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 6,
+      "tier": 4,
+      "ket_qua": 37.2
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 7,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 7,
+      "tier": 2,
+      "ket_qua": 94.0
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 7,
+      "tier": 3,
+      "ket_qua": 62.666666666666664
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 7,
+      "tier": 4,
+      "ket_qua": 37.6
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 8,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 8,
+      "tier": 2,
+      "ket_qua": 95.0
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 8,
+      "tier": 3,
+      "ket_qua": 63.333333333333336
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 8,
+      "tier": 4,
+      "ket_qua": 38.0
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 9,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 9,
+      "tier": 2,
+      "ket_qua": 96.0
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 9,
+      "tier": 3,
+      "ket_qua": 64.0
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 9,
+      "tier": 4,
+      "ket_qua": 38.4
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 10,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 10,
+      "tier": 2,
+      "ket_qua": 97.0
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 10,
+      "tier": 3,
+      "ket_qua": 64.66666666666667
+    },
+    {
+      "ngo_tinh": 145,
+      "cap_su_phu": 10,
+      "tier": 4,
+      "ket_qua": 38.8
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 0,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 0,
+      "tier": 2,
+      "ket_qua": 90.0
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 0,
+      "tier": 3,
+      "ket_qua": 60.0
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 0,
+      "tier": 4,
+      "ket_qua": 36.0
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 1,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 1,
+      "tier": 2,
+      "ket_qua": 91.0
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 1,
+      "tier": 3,
+      "ket_qua": 60.666666666666664
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 1,
+      "tier": 4,
+      "ket_qua": 36.4
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 2,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 2,
+      "tier": 2,
+      "ket_qua": 92.0
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 2,
+      "tier": 3,
+      "ket_qua": 61.333333333333336
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 2,
+      "tier": 4,
+      "ket_qua": 36.8
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 3,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 3,
+      "tier": 2,
+      "ket_qua": 93.0
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 3,
+      "tier": 3,
+      "ket_qua": 62.0
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 3,
+      "tier": 4,
+      "ket_qua": 37.2
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 4,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 4,
+      "tier": 2,
+      "ket_qua": 94.0
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 4,
+      "tier": 3,
+      "ket_qua": 62.666666666666664
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 4,
+      "tier": 4,
+      "ket_qua": 37.6
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 5,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 5,
+      "tier": 2,
+      "ket_qua": 95.0
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 5,
+      "tier": 3,
+      "ket_qua": 63.333333333333336
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 5,
+      "tier": 4,
+      "ket_qua": 38.0
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 6,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 6,
+      "tier": 2,
+      "ket_qua": 96.0
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 6,
+      "tier": 3,
+      "ket_qua": 64.0
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 6,
+      "tier": 4,
+      "ket_qua": 38.4
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 7,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 7,
+      "tier": 2,
+      "ket_qua": 97.0
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 7,
+      "tier": 3,
+      "ket_qua": 64.66666666666667
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 7,
+      "tier": 4,
+      "ket_qua": 38.8
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 8,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 8,
+      "tier": 2,
+      "ket_qua": 98.0
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 8,
+      "tier": 3,
+      "ket_qua": 65.33333333333333
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 8,
+      "tier": 4,
+      "ket_qua": 39.2
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 9,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 9,
+      "tier": 2,
+      "ket_qua": 99.0
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 9,
+      "tier": 3,
+      "ket_qua": 66.0
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 9,
+      "tier": 4,
+      "ket_qua": 39.6
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 10,
+      "tier": 1,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 10,
+      "tier": 2,
+      "ket_qua": 100.0
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 10,
+      "tier": 3,
+      "ket_qua": 66.66666666666667
+    },
+    {
+      "ngo_tinh": 150,
+      "cap_su_phu": 10,
+      "tier": 4,
+      "ket_qua": 40.0
+    }
+  ],
+  "ap_len_10": [
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 0,
+      "tier": 1,
+      "ket_qua": 75
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 0,
+      "tier": 2,
+      "ket_qua": 150
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 0,
+      "tier": 3,
+      "ket_qua": 225
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 0,
+      "tier": 4,
+      "ket_qua": 376
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 6,
+      "tier": 1,
+      "ket_qua": 38
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 6,
+      "tier": 2,
+      "ket_qua": 75
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 6,
+      "tier": 3,
+      "ket_qua": 113
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 6,
+      "tier": 4,
+      "ket_qua": 188
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 10,
+      "tier": 1,
+      "ket_qua": 29
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 10,
+      "tier": 2,
+      "ket_qua": 57
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 10,
+      "tier": 3,
+      "ket_qua": 85
+    },
+    {
+      "ngo_tinh": 10,
+      "cap_su_phu": 10,
+      "tier": 4,
+      "ket_qua": 141
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 0,
+      "tier": 1,
+      "ket_qua": 38
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 0,
+      "tier": 2,
+      "ket_qua": 75
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 0,
+      "tier": 3,
+      "ket_qua": 113
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 0,
+      "tier": 4,
+      "ket_qua": 188
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 6,
+      "tier": 1,
+      "ket_qua": 25
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 6,
+      "tier": 2,
+      "ket_qua": 50
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 6,
+      "tier": 3,
+      "ket_qua": 75
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 6,
+      "tier": 4,
+      "ket_qua": 125
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 10,
+      "tier": 1,
+      "ket_qua": 21
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 10,
+      "tier": 2,
+      "ket_qua": 41
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 10,
+      "tier": 3,
+      "ket_qua": 62
+    },
+    {
+      "ngo_tinh": 20,
+      "cap_su_phu": 10,
+      "tier": 4,
+      "ket_qua": 103
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 0,
+      "tier": 1,
+      "ket_qua": 25
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 0,
+      "tier": 2,
+      "ket_qua": 50
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 0,
+      "tier": 3,
+      "ket_qua": 75
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 0,
+      "tier": 4,
+      "ket_qua": 125
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 6,
+      "tier": 1,
+      "ket_qua": 19
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 6,
+      "tier": 2,
+      "ket_qua": 38
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 6,
+      "tier": 3,
+      "ket_qua": 57
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 6,
+      "tier": 4,
+      "ket_qua": 94
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 10,
+      "tier": 1,
+      "ket_qua": 17
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 10,
+      "tier": 2,
+      "ket_qua": 33
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 10,
+      "tier": 3,
+      "ket_qua": 49
+    },
+    {
+      "ngo_tinh": 30,
+      "cap_su_phu": 10,
+      "tier": 4,
+      "ket_qua": 81
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 0,
+      "tier": 1,
+      "ket_qua": 19
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 0,
+      "tier": 2,
+      "ket_qua": 38
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 0,
+      "tier": 3,
+      "ket_qua": 57
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 0,
+      "tier": 4,
+      "ket_qua": 94
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 6,
+      "tier": 1,
+      "ket_qua": 15
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 6,
+      "tier": 2,
+      "ket_qua": 30
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 6,
+      "tier": 3,
+      "ket_qua": 45
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 6,
+      "tier": 4,
+      "ket_qua": 75
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 10,
+      "tier": 1,
+      "ket_qua": 14
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 10,
+      "tier": 2,
+      "ket_qua": 27
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 10,
+      "tier": 3,
+      "ket_qua": 40
+    },
+    {
+      "ngo_tinh": 40,
+      "cap_su_phu": 10,
+      "tier": 4,
+      "ket_qua": 67
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 0,
+      "tier": 1,
+      "ket_qua": 15
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 0,
+      "tier": 2,
+      "ket_qua": 30
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 0,
+      "tier": 3,
+      "ket_qua": 45
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 0,
+      "tier": 4,
+      "ket_qua": 75
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 6,
+      "tier": 1,
+      "ket_qua": 13
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 6,
+      "tier": 2,
+      "ket_qua": 25
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 6,
+      "tier": 3,
+      "ket_qua": 38
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 6,
+      "tier": 4,
+      "ket_qua": 63
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 10,
+      "tier": 1,
+      "ket_qua": 12
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 10,
+      "tier": 2,
+      "ket_qua": 23
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 10,
+      "tier": 3,
+      "ket_qua": 34
+    },
+    {
+      "ngo_tinh": 50,
+      "cap_su_phu": 10,
+      "tier": 4,
+      "ket_qua": 57
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 0,
+      "tier": 1,
+      "ket_qua": 13
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 0,
+      "tier": 2,
+      "ket_qua": 25
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 0,
+      "tier": 3,
+      "ket_qua": 38
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 0,
+      "tier": 4,
+      "ket_qua": 63
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 6,
+      "tier": 1,
+      "ket_qua": 11
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 6,
+      "tier": 2,
+      "ket_qua": 22
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 6,
+      "tier": 3,
+      "ket_qua": 33
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 6,
+      "tier": 4,
+      "ket_qua": 54
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 10,
+      "tier": 1,
+      "ket_qua": 10
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 10,
+      "tier": 2,
+      "ket_qua": 20
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 10,
+      "tier": 3,
+      "ket_qua": 30
+    },
+    {
+      "ngo_tinh": 60,
+      "cap_su_phu": 10,
+      "tier": 4,
+      "ket_qua": 49
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 0,
+      "tier": 1,
+      "ket_qua": 11
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 0,
+      "tier": 2,
+      "ket_qua": 22
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 0,
+      "tier": 3,
+      "ket_qua": 33
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 0,
+      "tier": 4,
+      "ket_qua": 54
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 6,
+      "tier": 1,
+      "ket_qua": 10
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 6,
+      "tier": 2,
+      "ket_qua": 19
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 6,
+      "tier": 3,
+      "ket_qua": 29
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 6,
+      "tier": 4,
+      "ket_qua": 47
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 10,
+      "tier": 1,
+      "ket_qua": 9
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 10,
+      "tier": 2,
+      "ket_qua": 18
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 10,
+      "tier": 3,
+      "ket_qua": 26
+    },
+    {
+      "ngo_tinh": 70,
+      "cap_su_phu": 10,
+      "tier": 4,
+      "ket_qua": 44
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 0,
+      "tier": 1,
+      "ket_qua": 10
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 0,
+      "tier": 2,
+      "ket_qua": 19
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 0,
+      "tier": 3,
+      "ket_qua": 29
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 0,
+      "tier": 4,
+      "ket_qua": 47
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 6,
+      "tier": 1,
+      "ket_qua": 9
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 6,
+      "tier": 2,
+      "ket_qua": 17
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 6,
+      "tier": 3,
+      "ket_qua": 25
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 6,
+      "tier": 4,
+      "ket_qua": 42
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 10,
+      "tier": 1,
+      "ket_qua": 9
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 10,
+      "tier": 2,
+      "ket_qua": 16
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 10,
+      "tier": 3,
+      "ket_qua": 24
+    },
+    {
+      "ngo_tinh": 80,
+      "cap_su_phu": 10,
+      "tier": 4,
+      "ket_qua": 39
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 0,
+      "tier": 1,
+      "ket_qua": 9
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 0,
+      "tier": 2,
+      "ket_qua": 17
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 0,
+      "tier": 3,
+      "ket_qua": 25
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 0,
+      "tier": 4,
+      "ket_qua": 42
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 6,
+      "tier": 1,
+      "ket_qua": 9
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 6,
+      "tier": 2,
+      "ket_qua": 15
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 6,
+      "tier": 3,
+      "ket_qua": 23
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 6,
+      "tier": 4,
+      "ket_qua": 38
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 10,
+      "tier": 1,
+      "ket_qua": 9
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 10,
+      "tier": 2,
+      "ket_qua": 15
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 10,
+      "tier": 3,
+      "ket_qua": 22
+    },
+    {
+      "ngo_tinh": 90,
+      "cap_su_phu": 10,
+      "tier": 4,
+      "ket_qua": 36
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 0,
+      "tier": 1,
+      "ket_qua": 9
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 0,
+      "tier": 2,
+      "ket_qua": 15
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 0,
+      "tier": 3,
+      "ket_qua": 23
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 0,
+      "tier": 4,
+      "ket_qua": 38
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 6,
+      "tier": 1,
+      "ket_qua": 9
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 6,
+      "tier": 2,
+      "ket_qua": 14
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 6,
+      "tier": 3,
+      "ket_qua": 21
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 6,
+      "tier": 4,
+      "ket_qua": 35
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 10,
+      "tier": 1,
+      "ket_qua": 9
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 10,
+      "tier": 2,
+      "ket_qua": 13
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 10,
+      "tier": 3,
+      "ket_qua": 20
+    },
+    {
+      "ngo_tinh": 100,
+      "cap_su_phu": 10,
+      "tier": 4,
+      "ket_qua": 33
+    }
+  ]
+}

@@ -1,0 +1,5562 @@
+{
+  "nguon": "mo_phong/xuat_vector.py",
+  "ngay_sinh": "2026-10-27",
+  "so_luong": 1111,
+  "du_lieu": [
+    {
+      "tuoi": 0,
+      "canh_gioi": 0,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 0,
+      "canh_gioi": 1,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 0,
+      "canh_gioi": 2,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 0,
+      "canh_gioi": 3,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 0,
+      "canh_gioi": 4,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 0,
+      "canh_gioi": 5,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 0,
+      "canh_gioi": 6,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 0,
+      "canh_gioi": 7,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 0,
+      "canh_gioi": 8,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 0,
+      "canh_gioi": 9,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 0,
+      "canh_gioi": 10,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 1,
+      "canh_gioi": 0,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 1,
+      "canh_gioi": 1,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 1,
+      "canh_gioi": 2,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 1,
+      "canh_gioi": 3,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 1,
+      "canh_gioi": 4,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 1,
+      "canh_gioi": 5,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 1,
+      "canh_gioi": 6,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 1,
+      "canh_gioi": 7,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 1,
+      "canh_gioi": 8,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 1,
+      "canh_gioi": 9,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 1,
+      "canh_gioi": 10,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 2,
+      "canh_gioi": 0,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 2,
+      "canh_gioi": 1,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 2,
+      "canh_gioi": 2,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 2,
+      "canh_gioi": 3,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 2,
+      "canh_gioi": 4,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 2,
+      "canh_gioi": 5,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 2,
+      "canh_gioi": 6,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 2,
+      "canh_gioi": 7,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 2,
+      "canh_gioi": 8,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 2,
+      "canh_gioi": 9,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 2,
+      "canh_gioi": 10,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 3,
+      "canh_gioi": 0,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 3,
+      "canh_gioi": 1,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 3,
+      "canh_gioi": 2,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 3,
+      "canh_gioi": 3,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 3,
+      "canh_gioi": 4,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 3,
+      "canh_gioi": 5,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 3,
+      "canh_gioi": 6,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 3,
+      "canh_gioi": 7,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 3,
+      "canh_gioi": 8,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 3,
+      "canh_gioi": 9,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 3,
+      "canh_gioi": 10,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 4,
+      "canh_gioi": 0,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 4,
+      "canh_gioi": 1,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 4,
+      "canh_gioi": 2,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 4,
+      "canh_gioi": 3,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 4,
+      "canh_gioi": 4,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 4,
+      "canh_gioi": 5,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 4,
+      "canh_gioi": 6,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 4,
+      "canh_gioi": 7,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 4,
+      "canh_gioi": 8,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 4,
+      "canh_gioi": 9,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 4,
+      "canh_gioi": 10,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 5,
+      "canh_gioi": 0,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 5,
+      "canh_gioi": 1,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 5,
+      "canh_gioi": 2,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 5,
+      "canh_gioi": 3,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 5,
+      "canh_gioi": 4,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 5,
+      "canh_gioi": 5,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 5,
+      "canh_gioi": 6,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 5,
+      "canh_gioi": 7,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 5,
+      "canh_gioi": 8,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 5,
+      "canh_gioi": 9,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 5,
+      "canh_gioi": 10,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 6,
+      "canh_gioi": 0,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 6,
+      "canh_gioi": 1,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 6,
+      "canh_gioi": 2,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 6,
+      "canh_gioi": 3,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 6,
+      "canh_gioi": 4,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 6,
+      "canh_gioi": 5,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 6,
+      "canh_gioi": 6,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 6,
+      "canh_gioi": 7,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 6,
+      "canh_gioi": 8,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 6,
+      "canh_gioi": 9,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 6,
+      "canh_gioi": 10,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 7,
+      "canh_gioi": 0,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 7,
+      "canh_gioi": 1,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 7,
+      "canh_gioi": 2,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 7,
+      "canh_gioi": 3,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 7,
+      "canh_gioi": 4,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 7,
+      "canh_gioi": 5,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 7,
+      "canh_gioi": 6,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 7,
+      "canh_gioi": 7,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 7,
+      "canh_gioi": 8,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 7,
+      "canh_gioi": 9,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 7,
+      "canh_gioi": 10,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 8,
+      "canh_gioi": 0,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 8,
+      "canh_gioi": 1,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 8,
+      "canh_gioi": 2,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 8,
+      "canh_gioi": 3,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 8,
+      "canh_gioi": 4,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 8,
+      "canh_gioi": 5,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 8,
+      "canh_gioi": 6,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 8,
+      "canh_gioi": 7,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 8,
+      "canh_gioi": 8,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 8,
+      "canh_gioi": 9,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 8,
+      "canh_gioi": 10,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 9,
+      "canh_gioi": 0,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 9,
+      "canh_gioi": 1,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 9,
+      "canh_gioi": 2,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 9,
+      "canh_gioi": 3,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 9,
+      "canh_gioi": 4,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 9,
+      "canh_gioi": 5,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 9,
+      "canh_gioi": 6,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 9,
+      "canh_gioi": 7,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 9,
+      "canh_gioi": 8,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 9,
+      "canh_gioi": 9,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 9,
+      "canh_gioi": 10,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 10,
+      "canh_gioi": 0,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 10,
+      "canh_gioi": 1,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 10,
+      "canh_gioi": 2,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 10,
+      "canh_gioi": 3,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 10,
+      "canh_gioi": 4,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 10,
+      "canh_gioi": 5,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 10,
+      "canh_gioi": 6,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 10,
+      "canh_gioi": 7,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 10,
+      "canh_gioi": 8,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 10,
+      "canh_gioi": 9,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 10,
+      "canh_gioi": 10,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 11,
+      "canh_gioi": 0,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 11,
+      "canh_gioi": 1,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 11,
+      "canh_gioi": 2,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 11,
+      "canh_gioi": 3,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 11,
+      "canh_gioi": 4,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 11,
+      "canh_gioi": 5,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 11,
+      "canh_gioi": 6,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 11,
+      "canh_gioi": 7,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 11,
+      "canh_gioi": 8,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 11,
+      "canh_gioi": 9,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 11,
+      "canh_gioi": 10,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 12,
+      "canh_gioi": 0,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 12,
+      "canh_gioi": 1,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 12,
+      "canh_gioi": 2,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 12,
+      "canh_gioi": 3,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 12,
+      "canh_gioi": 4,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 12,
+      "canh_gioi": 5,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 12,
+      "canh_gioi": 6,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 12,
+      "canh_gioi": 7,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 12,
+      "canh_gioi": 8,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 12,
+      "canh_gioi": 9,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 12,
+      "canh_gioi": 10,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 13,
+      "canh_gioi": 0,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 13,
+      "canh_gioi": 1,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 13,
+      "canh_gioi": 2,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 13,
+      "canh_gioi": 3,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 13,
+      "canh_gioi": 4,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 13,
+      "canh_gioi": 5,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 13,
+      "canh_gioi": 6,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 13,
+      "canh_gioi": 7,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 13,
+      "canh_gioi": 8,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 13,
+      "canh_gioi": 9,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 13,
+      "canh_gioi": 10,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 14,
+      "canh_gioi": 0,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 14,
+      "canh_gioi": 1,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 14,
+      "canh_gioi": 2,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 14,
+      "canh_gioi": 3,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 14,
+      "canh_gioi": 4,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 14,
+      "canh_gioi": 5,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 14,
+      "canh_gioi": 6,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 14,
+      "canh_gioi": 7,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 14,
+      "canh_gioi": 8,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 14,
+      "canh_gioi": 9,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 14,
+      "canh_gioi": 10,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 15,
+      "canh_gioi": 0,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 15,
+      "canh_gioi": 1,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 15,
+      "canh_gioi": 2,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 15,
+      "canh_gioi": 3,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 15,
+      "canh_gioi": 4,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 15,
+      "canh_gioi": 5,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 15,
+      "canh_gioi": 6,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 15,
+      "canh_gioi": 7,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 15,
+      "canh_gioi": 8,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 15,
+      "canh_gioi": 9,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 15,
+      "canh_gioi": 10,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 16,
+      "canh_gioi": 0,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 16,
+      "canh_gioi": 1,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 16,
+      "canh_gioi": 2,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 16,
+      "canh_gioi": 3,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 16,
+      "canh_gioi": 4,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 16,
+      "canh_gioi": 5,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 16,
+      "canh_gioi": 6,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 16,
+      "canh_gioi": 7,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 16,
+      "canh_gioi": 8,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 16,
+      "canh_gioi": 9,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 16,
+      "canh_gioi": 10,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 17,
+      "canh_gioi": 0,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 17,
+      "canh_gioi": 1,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 17,
+      "canh_gioi": 2,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 17,
+      "canh_gioi": 3,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 17,
+      "canh_gioi": 4,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 17,
+      "canh_gioi": 5,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 17,
+      "canh_gioi": 6,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 17,
+      "canh_gioi": 7,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 17,
+      "canh_gioi": 8,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 17,
+      "canh_gioi": 9,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 17,
+      "canh_gioi": 10,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 18,
+      "canh_gioi": 0,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 18,
+      "canh_gioi": 1,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 18,
+      "canh_gioi": 2,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 18,
+      "canh_gioi": 3,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 18,
+      "canh_gioi": 4,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 18,
+      "canh_gioi": 5,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 18,
+      "canh_gioi": 6,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 18,
+      "canh_gioi": 7,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 18,
+      "canh_gioi": 8,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 18,
+      "canh_gioi": 9,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 18,
+      "canh_gioi": 10,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 19,
+      "canh_gioi": 0,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 19,
+      "canh_gioi": 1,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 19,
+      "canh_gioi": 2,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 19,
+      "canh_gioi": 3,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 19,
+      "canh_gioi": 4,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 19,
+      "canh_gioi": 5,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 19,
+      "canh_gioi": 6,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 19,
+      "canh_gioi": 7,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 19,
+      "canh_gioi": 8,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 19,
+      "canh_gioi": 9,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 19,
+      "canh_gioi": 10,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 20,
+      "canh_gioi": 0,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 20,
+      "canh_gioi": 1,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 20,
+      "canh_gioi": 2,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 20,
+      "canh_gioi": 3,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 20,
+      "canh_gioi": 4,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 20,
+      "canh_gioi": 5,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 20,
+      "canh_gioi": 6,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 20,
+      "canh_gioi": 7,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 20,
+      "canh_gioi": 8,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 20,
+      "canh_gioi": 9,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 20,
+      "canh_gioi": 10,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 21,
+      "canh_gioi": 0,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 21,
+      "canh_gioi": 1,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 21,
+      "canh_gioi": 2,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 21,
+      "canh_gioi": 3,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 21,
+      "canh_gioi": 4,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 21,
+      "canh_gioi": 5,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 21,
+      "canh_gioi": 6,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 21,
+      "canh_gioi": 7,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 21,
+      "canh_gioi": 8,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 21,
+      "canh_gioi": 9,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 21,
+      "canh_gioi": 10,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 22,
+      "canh_gioi": 0,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 22,
+      "canh_gioi": 1,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 22,
+      "canh_gioi": 2,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 22,
+      "canh_gioi": 3,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 22,
+      "canh_gioi": 4,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 22,
+      "canh_gioi": 5,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 22,
+      "canh_gioi": 6,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 22,
+      "canh_gioi": 7,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 22,
+      "canh_gioi": 8,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 22,
+      "canh_gioi": 9,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 22,
+      "canh_gioi": 10,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 23,
+      "canh_gioi": 0,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 23,
+      "canh_gioi": 1,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 23,
+      "canh_gioi": 2,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 23,
+      "canh_gioi": 3,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 23,
+      "canh_gioi": 4,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 23,
+      "canh_gioi": 5,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 23,
+      "canh_gioi": 6,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 23,
+      "canh_gioi": 7,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 23,
+      "canh_gioi": 8,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 23,
+      "canh_gioi": 9,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 23,
+      "canh_gioi": 10,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 24,
+      "canh_gioi": 0,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 24,
+      "canh_gioi": 1,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 24,
+      "canh_gioi": 2,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 24,
+      "canh_gioi": 3,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 24,
+      "canh_gioi": 4,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 24,
+      "canh_gioi": 5,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 24,
+      "canh_gioi": 6,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 24,
+      "canh_gioi": 7,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 24,
+      "canh_gioi": 8,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 24,
+      "canh_gioi": 9,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 24,
+      "canh_gioi": 10,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 25,
+      "canh_gioi": 0,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 25,
+      "canh_gioi": 1,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 25,
+      "canh_gioi": 2,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 25,
+      "canh_gioi": 3,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 25,
+      "canh_gioi": 4,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 25,
+      "canh_gioi": 5,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 25,
+      "canh_gioi": 6,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 25,
+      "canh_gioi": 7,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 25,
+      "canh_gioi": 8,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 25,
+      "canh_gioi": 9,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 25,
+      "canh_gioi": 10,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 26,
+      "canh_gioi": 0,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 26,
+      "canh_gioi": 1,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 26,
+      "canh_gioi": 2,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 26,
+      "canh_gioi": 3,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 26,
+      "canh_gioi": 4,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 26,
+      "canh_gioi": 5,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 26,
+      "canh_gioi": 6,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 26,
+      "canh_gioi": 7,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 26,
+      "canh_gioi": 8,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 26,
+      "canh_gioi": 9,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 26,
+      "canh_gioi": 10,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 27,
+      "canh_gioi": 0,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 27,
+      "canh_gioi": 1,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 27,
+      "canh_gioi": 2,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 27,
+      "canh_gioi": 3,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 27,
+      "canh_gioi": 4,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 27,
+      "canh_gioi": 5,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 27,
+      "canh_gioi": 6,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 27,
+      "canh_gioi": 7,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 27,
+      "canh_gioi": 8,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 27,
+      "canh_gioi": 9,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 27,
+      "canh_gioi": 10,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 28,
+      "canh_gioi": 0,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 28,
+      "canh_gioi": 1,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 28,
+      "canh_gioi": 2,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 28,
+      "canh_gioi": 3,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 28,
+      "canh_gioi": 4,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 28,
+      "canh_gioi": 5,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 28,
+      "canh_gioi": 6,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 28,
+      "canh_gioi": 7,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 28,
+      "canh_gioi": 8,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 28,
+      "canh_gioi": 9,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 28,
+      "canh_gioi": 10,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 29,
+      "canh_gioi": 0,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 29,
+      "canh_gioi": 1,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 29,
+      "canh_gioi": 2,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 29,
+      "canh_gioi": 3,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 29,
+      "canh_gioi": 4,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 29,
+      "canh_gioi": 5,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 29,
+      "canh_gioi": 6,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 29,
+      "canh_gioi": 7,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 29,
+      "canh_gioi": 8,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 29,
+      "canh_gioi": 9,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 29,
+      "canh_gioi": 10,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 30,
+      "canh_gioi": 0,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 30,
+      "canh_gioi": 1,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 30,
+      "canh_gioi": 2,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 30,
+      "canh_gioi": 3,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 30,
+      "canh_gioi": 4,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 30,
+      "canh_gioi": 5,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 30,
+      "canh_gioi": 6,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 30,
+      "canh_gioi": 7,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 30,
+      "canh_gioi": 8,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 30,
+      "canh_gioi": 9,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 30,
+      "canh_gioi": 10,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 31,
+      "canh_gioi": 0,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 31,
+      "canh_gioi": 1,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 31,
+      "canh_gioi": 2,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 31,
+      "canh_gioi": 3,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 31,
+      "canh_gioi": 4,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 31,
+      "canh_gioi": 5,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 31,
+      "canh_gioi": 6,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 31,
+      "canh_gioi": 7,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 31,
+      "canh_gioi": 8,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 31,
+      "canh_gioi": 9,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 31,
+      "canh_gioi": 10,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 32,
+      "canh_gioi": 0,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 32,
+      "canh_gioi": 1,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 32,
+      "canh_gioi": 2,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 32,
+      "canh_gioi": 3,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 32,
+      "canh_gioi": 4,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 32,
+      "canh_gioi": 5,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 32,
+      "canh_gioi": 6,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 32,
+      "canh_gioi": 7,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 32,
+      "canh_gioi": 8,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 32,
+      "canh_gioi": 9,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 32,
+      "canh_gioi": 10,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 33,
+      "canh_gioi": 0,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 33,
+      "canh_gioi": 1,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 33,
+      "canh_gioi": 2,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 33,
+      "canh_gioi": 3,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 33,
+      "canh_gioi": 4,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 33,
+      "canh_gioi": 5,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 33,
+      "canh_gioi": 6,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 33,
+      "canh_gioi": 7,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 33,
+      "canh_gioi": 8,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 33,
+      "canh_gioi": 9,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 33,
+      "canh_gioi": 10,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 34,
+      "canh_gioi": 0,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 34,
+      "canh_gioi": 1,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 34,
+      "canh_gioi": 2,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 34,
+      "canh_gioi": 3,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 34,
+      "canh_gioi": 4,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 34,
+      "canh_gioi": 5,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 34,
+      "canh_gioi": 6,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 34,
+      "canh_gioi": 7,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 34,
+      "canh_gioi": 8,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 34,
+      "canh_gioi": 9,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 34,
+      "canh_gioi": 10,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 35,
+      "canh_gioi": 0,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 35,
+      "canh_gioi": 1,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 35,
+      "canh_gioi": 2,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 35,
+      "canh_gioi": 3,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 35,
+      "canh_gioi": 4,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 35,
+      "canh_gioi": 5,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 35,
+      "canh_gioi": 6,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 35,
+      "canh_gioi": 7,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 35,
+      "canh_gioi": 8,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 35,
+      "canh_gioi": 9,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 35,
+      "canh_gioi": 10,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 36,
+      "canh_gioi": 0,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 36,
+      "canh_gioi": 1,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 36,
+      "canh_gioi": 2,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 36,
+      "canh_gioi": 3,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 36,
+      "canh_gioi": 4,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 36,
+      "canh_gioi": 5,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 36,
+      "canh_gioi": 6,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 36,
+      "canh_gioi": 7,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 36,
+      "canh_gioi": 8,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 36,
+      "canh_gioi": 9,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 36,
+      "canh_gioi": 10,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 37,
+      "canh_gioi": 0,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 37,
+      "canh_gioi": 1,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 37,
+      "canh_gioi": 2,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 37,
+      "canh_gioi": 3,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 37,
+      "canh_gioi": 4,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 37,
+      "canh_gioi": 5,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 37,
+      "canh_gioi": 6,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 37,
+      "canh_gioi": 7,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 37,
+      "canh_gioi": 8,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 37,
+      "canh_gioi": 9,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 37,
+      "canh_gioi": 10,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 38,
+      "canh_gioi": 0,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 38,
+      "canh_gioi": 1,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 38,
+      "canh_gioi": 2,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 38,
+      "canh_gioi": 3,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 38,
+      "canh_gioi": 4,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 38,
+      "canh_gioi": 5,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 38,
+      "canh_gioi": 6,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 38,
+      "canh_gioi": 7,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 38,
+      "canh_gioi": 8,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 38,
+      "canh_gioi": 9,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 38,
+      "canh_gioi": 10,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 39,
+      "canh_gioi": 0,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 39,
+      "canh_gioi": 1,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 39,
+      "canh_gioi": 2,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 39,
+      "canh_gioi": 3,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 39,
+      "canh_gioi": 4,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 39,
+      "canh_gioi": 5,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 39,
+      "canh_gioi": 6,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 39,
+      "canh_gioi": 7,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 39,
+      "canh_gioi": 8,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 39,
+      "canh_gioi": 9,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 39,
+      "canh_gioi": 10,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 40,
+      "canh_gioi": 0,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 40,
+      "canh_gioi": 1,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 40,
+      "canh_gioi": 2,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 40,
+      "canh_gioi": 3,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 40,
+      "canh_gioi": 4,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 40,
+      "canh_gioi": 5,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 40,
+      "canh_gioi": 6,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 40,
+      "canh_gioi": 7,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 40,
+      "canh_gioi": 8,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 40,
+      "canh_gioi": 9,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 40,
+      "canh_gioi": 10,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 41,
+      "canh_gioi": 0,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 41,
+      "canh_gioi": 1,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 41,
+      "canh_gioi": 2,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 41,
+      "canh_gioi": 3,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 41,
+      "canh_gioi": 4,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 41,
+      "canh_gioi": 5,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 41,
+      "canh_gioi": 6,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 41,
+      "canh_gioi": 7,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 41,
+      "canh_gioi": 8,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 41,
+      "canh_gioi": 9,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 41,
+      "canh_gioi": 10,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 42,
+      "canh_gioi": 0,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 42,
+      "canh_gioi": 1,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 42,
+      "canh_gioi": 2,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 42,
+      "canh_gioi": 3,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 42,
+      "canh_gioi": 4,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 42,
+      "canh_gioi": 5,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 42,
+      "canh_gioi": 6,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 42,
+      "canh_gioi": 7,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 42,
+      "canh_gioi": 8,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 42,
+      "canh_gioi": 9,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 42,
+      "canh_gioi": 10,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 43,
+      "canh_gioi": 0,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 43,
+      "canh_gioi": 1,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 43,
+      "canh_gioi": 2,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 43,
+      "canh_gioi": 3,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 43,
+      "canh_gioi": 4,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 43,
+      "canh_gioi": 5,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 43,
+      "canh_gioi": 6,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 43,
+      "canh_gioi": 7,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 43,
+      "canh_gioi": 8,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 43,
+      "canh_gioi": 9,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 43,
+      "canh_gioi": 10,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 44,
+      "canh_gioi": 0,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 44,
+      "canh_gioi": 1,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 44,
+      "canh_gioi": 2,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 44,
+      "canh_gioi": 3,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 44,
+      "canh_gioi": 4,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 44,
+      "canh_gioi": 5,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 44,
+      "canh_gioi": 6,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 44,
+      "canh_gioi": 7,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 44,
+      "canh_gioi": 8,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 44,
+      "canh_gioi": 9,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 44,
+      "canh_gioi": 10,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 45,
+      "canh_gioi": 0,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 45,
+      "canh_gioi": 1,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 45,
+      "canh_gioi": 2,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 45,
+      "canh_gioi": 3,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 45,
+      "canh_gioi": 4,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 45,
+      "canh_gioi": 5,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 45,
+      "canh_gioi": 6,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 45,
+      "canh_gioi": 7,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 45,
+      "canh_gioi": 8,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 45,
+      "canh_gioi": 9,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 45,
+      "canh_gioi": 10,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 46,
+      "canh_gioi": 0,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 46,
+      "canh_gioi": 1,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 46,
+      "canh_gioi": 2,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 46,
+      "canh_gioi": 3,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 46,
+      "canh_gioi": 4,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 46,
+      "canh_gioi": 5,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 46,
+      "canh_gioi": 6,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 46,
+      "canh_gioi": 7,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 46,
+      "canh_gioi": 8,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 46,
+      "canh_gioi": 9,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 46,
+      "canh_gioi": 10,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 47,
+      "canh_gioi": 0,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 47,
+      "canh_gioi": 1,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 47,
+      "canh_gioi": 2,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 47,
+      "canh_gioi": 3,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 47,
+      "canh_gioi": 4,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 47,
+      "canh_gioi": 5,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 47,
+      "canh_gioi": 6,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 47,
+      "canh_gioi": 7,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 47,
+      "canh_gioi": 8,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 47,
+      "canh_gioi": 9,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 47,
+      "canh_gioi": 10,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 48,
+      "canh_gioi": 0,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 48,
+      "canh_gioi": 1,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 48,
+      "canh_gioi": 2,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 48,
+      "canh_gioi": 3,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 48,
+      "canh_gioi": 4,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 48,
+      "canh_gioi": 5,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 48,
+      "canh_gioi": 6,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 48,
+      "canh_gioi": 7,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 48,
+      "canh_gioi": 8,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 48,
+      "canh_gioi": 9,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 48,
+      "canh_gioi": 10,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 49,
+      "canh_gioi": 0,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 49,
+      "canh_gioi": 1,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 49,
+      "canh_gioi": 2,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 49,
+      "canh_gioi": 3,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 49,
+      "canh_gioi": 4,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 49,
+      "canh_gioi": 5,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 49,
+      "canh_gioi": 6,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 49,
+      "canh_gioi": 7,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 49,
+      "canh_gioi": 8,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 49,
+      "canh_gioi": 9,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 49,
+      "canh_gioi": 10,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 50,
+      "canh_gioi": 0,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 50,
+      "canh_gioi": 1,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 50,
+      "canh_gioi": 2,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 50,
+      "canh_gioi": 3,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 50,
+      "canh_gioi": 4,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 50,
+      "canh_gioi": 5,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 50,
+      "canh_gioi": 6,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 50,
+      "canh_gioi": 7,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 50,
+      "canh_gioi": 8,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 50,
+      "canh_gioi": 9,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 50,
+      "canh_gioi": 10,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 51,
+      "canh_gioi": 0,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 51,
+      "canh_gioi": 1,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 51,
+      "canh_gioi": 2,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 51,
+      "canh_gioi": 3,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 51,
+      "canh_gioi": 4,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 51,
+      "canh_gioi": 5,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 51,
+      "canh_gioi": 6,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 51,
+      "canh_gioi": 7,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 51,
+      "canh_gioi": 8,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 51,
+      "canh_gioi": 9,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 51,
+      "canh_gioi": 10,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 52,
+      "canh_gioi": 0,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 52,
+      "canh_gioi": 1,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 52,
+      "canh_gioi": 2,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 52,
+      "canh_gioi": 3,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 52,
+      "canh_gioi": 4,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 52,
+      "canh_gioi": 5,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 52,
+      "canh_gioi": 6,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 52,
+      "canh_gioi": 7,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 52,
+      "canh_gioi": 8,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 52,
+      "canh_gioi": 9,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 52,
+      "canh_gioi": 10,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 53,
+      "canh_gioi": 0,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 53,
+      "canh_gioi": 1,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 53,
+      "canh_gioi": 2,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 53,
+      "canh_gioi": 3,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 53,
+      "canh_gioi": 4,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 53,
+      "canh_gioi": 5,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 53,
+      "canh_gioi": 6,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 53,
+      "canh_gioi": 7,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 53,
+      "canh_gioi": 8,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 53,
+      "canh_gioi": 9,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 53,
+      "canh_gioi": 10,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 54,
+      "canh_gioi": 0,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 54,
+      "canh_gioi": 1,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 54,
+      "canh_gioi": 2,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 54,
+      "canh_gioi": 3,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 54,
+      "canh_gioi": 4,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 54,
+      "canh_gioi": 5,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 54,
+      "canh_gioi": 6,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 54,
+      "canh_gioi": 7,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 54,
+      "canh_gioi": 8,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 54,
+      "canh_gioi": 9,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 54,
+      "canh_gioi": 10,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 55,
+      "canh_gioi": 0,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 55,
+      "canh_gioi": 1,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 55,
+      "canh_gioi": 2,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 55,
+      "canh_gioi": 3,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 55,
+      "canh_gioi": 4,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 55,
+      "canh_gioi": 5,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 55,
+      "canh_gioi": 6,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 55,
+      "canh_gioi": 7,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 55,
+      "canh_gioi": 8,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 55,
+      "canh_gioi": 9,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 55,
+      "canh_gioi": 10,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 56,
+      "canh_gioi": 0,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 56,
+      "canh_gioi": 1,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 56,
+      "canh_gioi": 2,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 56,
+      "canh_gioi": 3,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 56,
+      "canh_gioi": 4,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 56,
+      "canh_gioi": 5,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 56,
+      "canh_gioi": 6,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 56,
+      "canh_gioi": 7,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 56,
+      "canh_gioi": 8,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 56,
+      "canh_gioi": 9,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 56,
+      "canh_gioi": 10,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 57,
+      "canh_gioi": 0,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 57,
+      "canh_gioi": 1,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 57,
+      "canh_gioi": 2,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 57,
+      "canh_gioi": 3,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 57,
+      "canh_gioi": 4,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 57,
+      "canh_gioi": 5,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 57,
+      "canh_gioi": 6,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 57,
+      "canh_gioi": 7,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 57,
+      "canh_gioi": 8,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 57,
+      "canh_gioi": 9,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 57,
+      "canh_gioi": 10,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 58,
+      "canh_gioi": 0,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 58,
+      "canh_gioi": 1,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 58,
+      "canh_gioi": 2,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 58,
+      "canh_gioi": 3,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 58,
+      "canh_gioi": 4,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 58,
+      "canh_gioi": 5,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 58,
+      "canh_gioi": 6,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 58,
+      "canh_gioi": 7,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 58,
+      "canh_gioi": 8,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 58,
+      "canh_gioi": 9,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 58,
+      "canh_gioi": 10,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 59,
+      "canh_gioi": 0,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 59,
+      "canh_gioi": 1,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 59,
+      "canh_gioi": 2,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 59,
+      "canh_gioi": 3,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 59,
+      "canh_gioi": 4,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 59,
+      "canh_gioi": 5,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 59,
+      "canh_gioi": 6,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 59,
+      "canh_gioi": 7,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 59,
+      "canh_gioi": 8,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 59,
+      "canh_gioi": 9,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 59,
+      "canh_gioi": 10,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 60,
+      "canh_gioi": 0,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 60,
+      "canh_gioi": 1,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 60,
+      "canh_gioi": 2,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 60,
+      "canh_gioi": 3,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 60,
+      "canh_gioi": 4,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 60,
+      "canh_gioi": 5,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 60,
+      "canh_gioi": 6,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 60,
+      "canh_gioi": 7,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 60,
+      "canh_gioi": 8,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 60,
+      "canh_gioi": 9,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 60,
+      "canh_gioi": 10,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 61,
+      "canh_gioi": 0,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 61,
+      "canh_gioi": 1,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 61,
+      "canh_gioi": 2,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 61,
+      "canh_gioi": 3,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 61,
+      "canh_gioi": 4,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 61,
+      "canh_gioi": 5,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 61,
+      "canh_gioi": 6,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 61,
+      "canh_gioi": 7,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 61,
+      "canh_gioi": 8,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 61,
+      "canh_gioi": 9,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 61,
+      "canh_gioi": 10,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 62,
+      "canh_gioi": 0,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 62,
+      "canh_gioi": 1,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 62,
+      "canh_gioi": 2,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 62,
+      "canh_gioi": 3,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 62,
+      "canh_gioi": 4,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 62,
+      "canh_gioi": 5,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 62,
+      "canh_gioi": 6,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 62,
+      "canh_gioi": 7,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 62,
+      "canh_gioi": 8,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 62,
+      "canh_gioi": 9,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 62,
+      "canh_gioi": 10,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 63,
+      "canh_gioi": 0,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 63,
+      "canh_gioi": 1,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 63,
+      "canh_gioi": 2,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 63,
+      "canh_gioi": 3,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 63,
+      "canh_gioi": 4,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 63,
+      "canh_gioi": 5,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 63,
+      "canh_gioi": 6,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 63,
+      "canh_gioi": 7,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 63,
+      "canh_gioi": 8,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 63,
+      "canh_gioi": 9,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 63,
+      "canh_gioi": 10,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 64,
+      "canh_gioi": 0,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 64,
+      "canh_gioi": 1,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 64,
+      "canh_gioi": 2,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 64,
+      "canh_gioi": 3,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 64,
+      "canh_gioi": 4,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 64,
+      "canh_gioi": 5,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 64,
+      "canh_gioi": 6,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 64,
+      "canh_gioi": 7,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 64,
+      "canh_gioi": 8,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 64,
+      "canh_gioi": 9,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 64,
+      "canh_gioi": 10,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 65,
+      "canh_gioi": 0,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 65,
+      "canh_gioi": 1,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 65,
+      "canh_gioi": 2,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 65,
+      "canh_gioi": 3,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 65,
+      "canh_gioi": 4,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 65,
+      "canh_gioi": 5,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 65,
+      "canh_gioi": 6,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 65,
+      "canh_gioi": 7,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 65,
+      "canh_gioi": 8,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 65,
+      "canh_gioi": 9,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 65,
+      "canh_gioi": 10,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 66,
+      "canh_gioi": 0,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 66,
+      "canh_gioi": 1,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 66,
+      "canh_gioi": 2,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 66,
+      "canh_gioi": 3,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 66,
+      "canh_gioi": 4,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 66,
+      "canh_gioi": 5,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 66,
+      "canh_gioi": 6,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 66,
+      "canh_gioi": 7,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 66,
+      "canh_gioi": 8,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 66,
+      "canh_gioi": 9,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 66,
+      "canh_gioi": 10,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 67,
+      "canh_gioi": 0,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 67,
+      "canh_gioi": 1,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 67,
+      "canh_gioi": 2,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 67,
+      "canh_gioi": 3,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 67,
+      "canh_gioi": 4,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 67,
+      "canh_gioi": 5,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 67,
+      "canh_gioi": 6,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 67,
+      "canh_gioi": 7,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 67,
+      "canh_gioi": 8,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 67,
+      "canh_gioi": 9,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 67,
+      "canh_gioi": 10,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 68,
+      "canh_gioi": 0,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 68,
+      "canh_gioi": 1,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 68,
+      "canh_gioi": 2,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 68,
+      "canh_gioi": 3,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 68,
+      "canh_gioi": 4,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 68,
+      "canh_gioi": 5,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 68,
+      "canh_gioi": 6,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 68,
+      "canh_gioi": 7,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 68,
+      "canh_gioi": 8,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 68,
+      "canh_gioi": 9,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 68,
+      "canh_gioi": 10,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 69,
+      "canh_gioi": 0,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 69,
+      "canh_gioi": 1,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 69,
+      "canh_gioi": 2,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 69,
+      "canh_gioi": 3,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 69,
+      "canh_gioi": 4,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 69,
+      "canh_gioi": 5,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 69,
+      "canh_gioi": 6,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 69,
+      "canh_gioi": 7,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 69,
+      "canh_gioi": 8,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 69,
+      "canh_gioi": 9,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 69,
+      "canh_gioi": 10,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 70,
+      "canh_gioi": 0,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 70,
+      "canh_gioi": 1,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 70,
+      "canh_gioi": 2,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 70,
+      "canh_gioi": 3,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 70,
+      "canh_gioi": 4,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 70,
+      "canh_gioi": 5,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 70,
+      "canh_gioi": 6,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 70,
+      "canh_gioi": 7,
+      "ket_qua": 3
+    },
+    {
+      "tuoi": 70,
+      "canh_gioi": 8,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 70,
+      "canh_gioi": 9,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 70,
+      "canh_gioi": 10,
+      "ket_qua": 4
+    },
+    {
+      "tuoi": 71,
+      "canh_gioi": 0,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 71,
+      "canh_gioi": 1,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 71,
+      "canh_gioi": 2,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 71,
+      "canh_gioi": 3,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 71,
+      "canh_gioi": 4,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 71,
+      "canh_gioi": 5,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 71,
+      "canh_gioi": 6,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 71,
+      "canh_gioi": 7,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 71,
+      "canh_gioi": 8,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 71,
+      "canh_gioi": 9,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 71,
+      "canh_gioi": 10,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 72,
+      "canh_gioi": 0,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 72,
+      "canh_gioi": 1,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 72,
+      "canh_gioi": 2,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 72,
+      "canh_gioi": 3,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 72,
+      "canh_gioi": 4,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 72,
+      "canh_gioi": 5,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 72,
+      "canh_gioi": 6,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 72,
+      "canh_gioi": 7,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 72,
+      "canh_gioi": 8,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 72,
+      "canh_gioi": 9,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 72,
+      "canh_gioi": 10,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 73,
+      "canh_gioi": 0,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 73,
+      "canh_gioi": 1,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 73,
+      "canh_gioi": 2,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 73,
+      "canh_gioi": 3,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 73,
+      "canh_gioi": 4,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 73,
+      "canh_gioi": 5,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 73,
+      "canh_gioi": 6,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 73,
+      "canh_gioi": 7,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 73,
+      "canh_gioi": 8,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 73,
+      "canh_gioi": 9,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 73,
+      "canh_gioi": 10,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 74,
+      "canh_gioi": 0,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 74,
+      "canh_gioi": 1,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 74,
+      "canh_gioi": 2,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 74,
+      "canh_gioi": 3,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 74,
+      "canh_gioi": 4,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 74,
+      "canh_gioi": 5,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 74,
+      "canh_gioi": 6,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 74,
+      "canh_gioi": 7,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 74,
+      "canh_gioi": 8,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 74,
+      "canh_gioi": 9,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 74,
+      "canh_gioi": 10,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 75,
+      "canh_gioi": 0,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 75,
+      "canh_gioi": 1,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 75,
+      "canh_gioi": 2,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 75,
+      "canh_gioi": 3,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 75,
+      "canh_gioi": 4,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 75,
+      "canh_gioi": 5,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 75,
+      "canh_gioi": 6,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 75,
+      "canh_gioi": 7,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 75,
+      "canh_gioi": 8,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 75,
+      "canh_gioi": 9,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 75,
+      "canh_gioi": 10,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 76,
+      "canh_gioi": 0,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 76,
+      "canh_gioi": 1,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 76,
+      "canh_gioi": 2,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 76,
+      "canh_gioi": 3,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 76,
+      "canh_gioi": 4,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 76,
+      "canh_gioi": 5,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 76,
+      "canh_gioi": 6,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 76,
+      "canh_gioi": 7,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 76,
+      "canh_gioi": 8,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 76,
+      "canh_gioi": 9,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 76,
+      "canh_gioi": 10,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 77,
+      "canh_gioi": 0,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 77,
+      "canh_gioi": 1,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 77,
+      "canh_gioi": 2,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 77,
+      "canh_gioi": 3,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 77,
+      "canh_gioi": 4,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 77,
+      "canh_gioi": 5,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 77,
+      "canh_gioi": 6,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 77,
+      "canh_gioi": 7,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 77,
+      "canh_gioi": 8,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 77,
+      "canh_gioi": 9,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 77,
+      "canh_gioi": 10,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 78,
+      "canh_gioi": 0,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 78,
+      "canh_gioi": 1,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 78,
+      "canh_gioi": 2,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 78,
+      "canh_gioi": 3,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 78,
+      "canh_gioi": 4,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 78,
+      "canh_gioi": 5,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 78,
+      "canh_gioi": 6,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 78,
+      "canh_gioi": 7,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 78,
+      "canh_gioi": 8,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 78,
+      "canh_gioi": 9,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 78,
+      "canh_gioi": 10,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 79,
+      "canh_gioi": 0,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 79,
+      "canh_gioi": 1,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 79,
+      "canh_gioi": 2,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 79,
+      "canh_gioi": 3,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 79,
+      "canh_gioi": 4,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 79,
+      "canh_gioi": 5,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 79,
+      "canh_gioi": 6,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 79,
+      "canh_gioi": 7,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 79,
+      "canh_gioi": 8,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 79,
+      "canh_gioi": 9,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 79,
+      "canh_gioi": 10,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 80,
+      "canh_gioi": 0,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 80,
+      "canh_gioi": 1,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 80,
+      "canh_gioi": 2,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 80,
+      "canh_gioi": 3,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 80,
+      "canh_gioi": 4,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 80,
+      "canh_gioi": 5,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 80,
+      "canh_gioi": 6,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 80,
+      "canh_gioi": 7,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 80,
+      "canh_gioi": 8,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 80,
+      "canh_gioi": 9,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 80,
+      "canh_gioi": 10,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 81,
+      "canh_gioi": 0,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 81,
+      "canh_gioi": 1,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 81,
+      "canh_gioi": 2,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 81,
+      "canh_gioi": 3,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 81,
+      "canh_gioi": 4,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 81,
+      "canh_gioi": 5,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 81,
+      "canh_gioi": 6,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 81,
+      "canh_gioi": 7,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 81,
+      "canh_gioi": 8,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 81,
+      "canh_gioi": 9,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 81,
+      "canh_gioi": 10,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 82,
+      "canh_gioi": 0,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 82,
+      "canh_gioi": 1,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 82,
+      "canh_gioi": 2,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 82,
+      "canh_gioi": 3,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 82,
+      "canh_gioi": 4,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 82,
+      "canh_gioi": 5,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 82,
+      "canh_gioi": 6,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 82,
+      "canh_gioi": 7,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 82,
+      "canh_gioi": 8,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 82,
+      "canh_gioi": 9,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 82,
+      "canh_gioi": 10,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 83,
+      "canh_gioi": 0,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 83,
+      "canh_gioi": 1,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 83,
+      "canh_gioi": 2,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 83,
+      "canh_gioi": 3,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 83,
+      "canh_gioi": 4,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 83,
+      "canh_gioi": 5,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 83,
+      "canh_gioi": 6,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 83,
+      "canh_gioi": 7,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 83,
+      "canh_gioi": 8,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 83,
+      "canh_gioi": 9,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 83,
+      "canh_gioi": 10,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 84,
+      "canh_gioi": 0,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 84,
+      "canh_gioi": 1,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 84,
+      "canh_gioi": 2,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 84,
+      "canh_gioi": 3,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 84,
+      "canh_gioi": 4,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 84,
+      "canh_gioi": 5,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 84,
+      "canh_gioi": 6,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 84,
+      "canh_gioi": 7,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 84,
+      "canh_gioi": 8,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 84,
+      "canh_gioi": 9,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 84,
+      "canh_gioi": 10,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 85,
+      "canh_gioi": 0,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 85,
+      "canh_gioi": 1,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 85,
+      "canh_gioi": 2,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 85,
+      "canh_gioi": 3,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 85,
+      "canh_gioi": 4,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 85,
+      "canh_gioi": 5,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 85,
+      "canh_gioi": 6,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 85,
+      "canh_gioi": 7,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 85,
+      "canh_gioi": 8,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 85,
+      "canh_gioi": 9,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 85,
+      "canh_gioi": 10,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 86,
+      "canh_gioi": 0,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 86,
+      "canh_gioi": 1,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 86,
+      "canh_gioi": 2,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 86,
+      "canh_gioi": 3,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 86,
+      "canh_gioi": 4,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 86,
+      "canh_gioi": 5,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 86,
+      "canh_gioi": 6,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 86,
+      "canh_gioi": 7,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 86,
+      "canh_gioi": 8,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 86,
+      "canh_gioi": 9,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 86,
+      "canh_gioi": 10,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 87,
+      "canh_gioi": 0,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 87,
+      "canh_gioi": 1,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 87,
+      "canh_gioi": 2,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 87,
+      "canh_gioi": 3,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 87,
+      "canh_gioi": 4,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 87,
+      "canh_gioi": 5,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 87,
+      "canh_gioi": 6,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 87,
+      "canh_gioi": 7,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 87,
+      "canh_gioi": 8,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 87,
+      "canh_gioi": 9,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 87,
+      "canh_gioi": 10,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 88,
+      "canh_gioi": 0,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 88,
+      "canh_gioi": 1,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 88,
+      "canh_gioi": 2,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 88,
+      "canh_gioi": 3,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 88,
+      "canh_gioi": 4,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 88,
+      "canh_gioi": 5,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 88,
+      "canh_gioi": 6,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 88,
+      "canh_gioi": 7,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 88,
+      "canh_gioi": 8,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 88,
+      "canh_gioi": 9,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 88,
+      "canh_gioi": 10,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 89,
+      "canh_gioi": 0,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 89,
+      "canh_gioi": 1,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 89,
+      "canh_gioi": 2,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 89,
+      "canh_gioi": 3,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 89,
+      "canh_gioi": 4,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 89,
+      "canh_gioi": 5,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 89,
+      "canh_gioi": 6,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 89,
+      "canh_gioi": 7,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 89,
+      "canh_gioi": 8,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 89,
+      "canh_gioi": 9,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 89,
+      "canh_gioi": 10,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 90,
+      "canh_gioi": 0,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 90,
+      "canh_gioi": 1,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 90,
+      "canh_gioi": 2,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 90,
+      "canh_gioi": 3,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 90,
+      "canh_gioi": 4,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 90,
+      "canh_gioi": 5,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 90,
+      "canh_gioi": 6,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 90,
+      "canh_gioi": 7,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 90,
+      "canh_gioi": 8,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 90,
+      "canh_gioi": 9,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 90,
+      "canh_gioi": 10,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 91,
+      "canh_gioi": 0,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 91,
+      "canh_gioi": 1,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 91,
+      "canh_gioi": 2,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 91,
+      "canh_gioi": 3,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 91,
+      "canh_gioi": 4,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 91,
+      "canh_gioi": 5,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 91,
+      "canh_gioi": 6,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 91,
+      "canh_gioi": 7,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 91,
+      "canh_gioi": 8,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 91,
+      "canh_gioi": 9,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 91,
+      "canh_gioi": 10,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 92,
+      "canh_gioi": 0,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 92,
+      "canh_gioi": 1,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 92,
+      "canh_gioi": 2,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 92,
+      "canh_gioi": 3,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 92,
+      "canh_gioi": 4,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 92,
+      "canh_gioi": 5,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 92,
+      "canh_gioi": 6,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 92,
+      "canh_gioi": 7,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 92,
+      "canh_gioi": 8,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 92,
+      "canh_gioi": 9,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 92,
+      "canh_gioi": 10,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 93,
+      "canh_gioi": 0,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 93,
+      "canh_gioi": 1,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 93,
+      "canh_gioi": 2,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 93,
+      "canh_gioi": 3,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 93,
+      "canh_gioi": 4,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 93,
+      "canh_gioi": 5,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 93,
+      "canh_gioi": 6,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 93,
+      "canh_gioi": 7,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 93,
+      "canh_gioi": 8,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 93,
+      "canh_gioi": 9,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 93,
+      "canh_gioi": 10,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 94,
+      "canh_gioi": 0,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 94,
+      "canh_gioi": 1,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 94,
+      "canh_gioi": 2,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 94,
+      "canh_gioi": 3,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 94,
+      "canh_gioi": 4,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 94,
+      "canh_gioi": 5,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 94,
+      "canh_gioi": 6,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 94,
+      "canh_gioi": 7,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 94,
+      "canh_gioi": 8,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 94,
+      "canh_gioi": 9,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 94,
+      "canh_gioi": 10,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 95,
+      "canh_gioi": 0,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 95,
+      "canh_gioi": 1,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 95,
+      "canh_gioi": 2,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 95,
+      "canh_gioi": 3,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 95,
+      "canh_gioi": 4,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 95,
+      "canh_gioi": 5,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 95,
+      "canh_gioi": 6,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 95,
+      "canh_gioi": 7,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 95,
+      "canh_gioi": 8,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 95,
+      "canh_gioi": 9,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 95,
+      "canh_gioi": 10,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 96,
+      "canh_gioi": 0,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 96,
+      "canh_gioi": 1,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 96,
+      "canh_gioi": 2,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 96,
+      "canh_gioi": 3,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 96,
+      "canh_gioi": 4,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 96,
+      "canh_gioi": 5,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 96,
+      "canh_gioi": 6,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 96,
+      "canh_gioi": 7,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 96,
+      "canh_gioi": 8,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 96,
+      "canh_gioi": 9,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 96,
+      "canh_gioi": 10,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 97,
+      "canh_gioi": 0,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 97,
+      "canh_gioi": 1,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 97,
+      "canh_gioi": 2,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 97,
+      "canh_gioi": 3,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 97,
+      "canh_gioi": 4,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 97,
+      "canh_gioi": 5,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 97,
+      "canh_gioi": 6,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 97,
+      "canh_gioi": 7,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 97,
+      "canh_gioi": 8,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 97,
+      "canh_gioi": 9,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 97,
+      "canh_gioi": 10,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 98,
+      "canh_gioi": 0,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 98,
+      "canh_gioi": 1,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 98,
+      "canh_gioi": 2,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 98,
+      "canh_gioi": 3,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 98,
+      "canh_gioi": 4,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 98,
+      "canh_gioi": 5,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 98,
+      "canh_gioi": 6,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 98,
+      "canh_gioi": 7,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 98,
+      "canh_gioi": 8,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 98,
+      "canh_gioi": 9,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 98,
+      "canh_gioi": 10,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 99,
+      "canh_gioi": 0,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 99,
+      "canh_gioi": 1,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 99,
+      "canh_gioi": 2,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 99,
+      "canh_gioi": 3,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 99,
+      "canh_gioi": 4,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 99,
+      "canh_gioi": 5,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 99,
+      "canh_gioi": 6,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 99,
+      "canh_gioi": 7,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 99,
+      "canh_gioi": 8,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 99,
+      "canh_gioi": 9,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 99,
+      "canh_gioi": 10,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 100,
+      "canh_gioi": 0,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 100,
+      "canh_gioi": 1,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 100,
+      "canh_gioi": 2,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 100,
+      "canh_gioi": 3,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 100,
+      "canh_gioi": 4,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 100,
+      "canh_gioi": 5,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 100,
+      "canh_gioi": 6,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 100,
+      "canh_gioi": 7,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 100,
+      "canh_gioi": 8,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 100,
+      "canh_gioi": 9,
+      "ket_qua": 2
+    },
+    {
+      "tuoi": 100,
+      "canh_gioi": 10,
+      "ket_qua": 2
+    }
+  ]
+}

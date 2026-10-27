@@ -163,7 +163,7 @@ Trước khi làm: đọc [README.md](README.md) mục 3 - 5 và [01_KIEN_TRUC.m
 
 ---
 
-### [ ] M0-07 Vector đối chiếu từ Python
+### [x] M0-07 Vector đối chiếu từ Python
 
 **Phụ thuộc:** M0-06.
 **Đọc:** 01 mục 10.2, 10.3; `mo_phong/mo_phong.py` (khối GIẢ ĐỊNH đầu file, các hàm `p_roll`, `bonus_tuoi`, `ap_moi_nam`, `tien_do`, `ap_len_10`, `khac_che`, lớp `VoGia`, lớp `Doi` thuộc tính `age_max`, `tuoi_bat_dau_lao_hoa`, `thong_ke`, `MUC_SUC_MANH`). Dùng `grep -n` và Read theo đoạn, không đọc cả file.

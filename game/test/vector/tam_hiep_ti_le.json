@@ -1,0 +1,700 @@
+{
+  "nguon": "mo_phong/xuat_vector.py",
+  "ngay_sinh": "2026-10-27",
+  "so_tran": 20000,
+  "muc_suc_manh": [
+    {
+      "ten_a": "Sơ nhập (Nhập môn 3/10, NC 2)",
+      "ten_b": "Sơ nhập (Nhập môn 3/10, NC 2)",
+      "dau_vao_a": {
+        "can_cot": 50,
+        "ngo_tinh": 50,
+        "tier": 1,
+        "cap_vo": 3,
+        "canh_gioi": 2,
+        "tuoi": 18
+      },
+      "dau_vao_b": {
+        "can_cot": 50,
+        "ngo_tinh": 50,
+        "tier": 1,
+        "cap_vo": 3,
+        "canh_gioi": 2,
+        "tuoi": 18
+      },
+      "ti_le_thang": 0.5018,
+      "ti_le_hoa": 0.0,
+      "ti_le_thua": 0.4982,
+      "ko_h1": 0.0,
+      "ko_som": 0.4085,
+      "bat_phan": 0.62105,
+      "hp_con": 0.284996705233103,
+      "hp_yeu_h2": 0.3055046446744669
+    },
+    {
+      "ten_a": "Sơ nhập (Nhập môn 3/10, NC 2)",
+      "ten_b": "Trung (Thượng thừa 5/10, NC 5)",
+      "dau_vao_a": {
+        "can_cot": 50,
+        "ngo_tinh": 50,
+        "tier": 1,
+        "cap_vo": 3,
+        "canh_gioi": 2,
+        "tuoi": 18
+      },
+      "dau_vao_b": {
+        "can_cot": 60,
+        "ngo_tinh": 60,
+        "tier": 2,
+        "cap_vo": 5,
+        "canh_gioi": 5,
+        "tuoi": 30
+      },
+      "ti_le_thang": 0.0,
+      "ti_le_hoa": 0.0,
+      "ti_le_thua": 1.0,
+      "ko_h1": 0.0,
+      "ko_som": 0.8821,
+      "bat_phan": 0.18035,
+      "hp_con": 0.6359076001672376,
+      "hp_yeu_h2": 0.09076282929448289
+    },
+    {
+      "ten_a": "Sơ nhập (Nhập môn 3/10, NC 2)",
+      "ten_b": "Cao (Trấn phái 8/10, NC 8)",
+      "dau_vao_a": {
+        "can_cot": 50,
+        "ngo_tinh": 50,
+        "tier": 1,
+        "cap_vo": 3,
+        "canh_gioi": 2,
+        "tuoi": 18
+      },
+      "dau_vao_b": {
+        "can_cot": 70,
+        "ngo_tinh": 70,
+        "tier": 3,
+        "cap_vo": 8,
+        "canh_gioi": 8,
+        "tuoi": 40
+      },
+      "ti_le_thang": 0.0,
+      "ti_le_hoa": 0.0,
+      "ti_le_thua": 1.0,
+      "ko_h1": 0.0,
+      "ko_som": 0.892,
+      "bat_phan": 0.05725,
+      "hp_con": 0.7497398932695954,
+      "hp_yeu_h2": 0.03738162982442964
+    },
+    {
+      "ten_a": "Sơ nhập (Nhập môn 3/10, NC 2)",
+      "ten_b": "Đỉnh (SSS 10/10, NC 10)",
+      "dau_vao_a": {
+        "can_cot": 50,
+        "ngo_tinh": 50,
+        "tier": 1,
+        "cap_vo": 3,
+        "canh_gioi": 2,
+        "tuoi": 18
+      },
+      "dau_vao_b": {
+        "can_cot": 90,
+        "ngo_tinh": 85,
+        "tier": 4,
+        "cap_vo": 10,
+        "canh_gioi": 10,
+        "tuoi": 45
+      },
+      "ti_le_thang": 0.0,
+      "ti_le_hoa": 0.0,
+      "ti_le_thua": 1.0,
+      "ko_h1": 0.5034,
+      "ko_som": 0.9272,
+      "bat_phan": 0.0,
+      "hp_con": 0.8600359673512757,
+      "hp_yeu_h2": 0.003359783591007743
+    },
+    {
+      "ten_a": "Trung (Thượng thừa 5/10, NC 5)",
+      "ten_b": "Sơ nhập (Nhập môn 3/10, NC 2)",
+      "dau_vao_a": {
+        "can_cot": 60,
+        "ngo_tinh": 60,
+        "tier": 2,
+        "cap_vo": 5,
+        "canh_gioi": 5,
+        "tuoi": 30
+      },
+      "dau_vao_b": {
+        "can_cot": 50,
+        "ngo_tinh": 50,
+        "tier": 1,
+        "cap_vo": 3,
+        "canh_gioi": 2,
+        "tuoi": 18
+      },
+      "ti_le_thang": 1.0,
+      "ti_le_hoa": 0.0,
+      "ti_le_thua": 0.0,
+      "ko_h1": 0.0,
+      "ko_som": 0.8835,
+      "bat_phan": 0.18495,
+      "hp_con": 0.6337645115553086,
+      "hp_yeu_h2": 0.0923168274593911
+    },
+    {
+      "ten_a": "Trung (Thượng thừa 5/10, NC 5)",
+      "ten_b": "Trung (Thượng thừa 5/10, NC 5)",
+      "dau_vao_a": {
+        "can_cot": 60,
+        "ngo_tinh": 60,
+        "tier": 2,
+        "cap_vo": 5,
+        "canh_gioi": 5,
+        "tuoi": 30
+      },
+      "dau_vao_b": {
+        "can_cot": 60,
+        "ngo_tinh": 60,
+        "tier": 2,
+        "cap_vo": 5,
+        "canh_gioi": 5,
+        "tuoi": 30
+      },
+      "ti_le_thang": 0.5071,
+      "ti_le_hoa": 0.0,
+      "ti_le_thua": 0.4929,
+      "ko_h1": 0.0,
+      "ko_som": 0.33525,
+      "bat_phan": 0.53615,
+      "hp_con": 0.28522199797938247,
+      "hp_yeu_h2": 0.2928343852864153
+    },
+    {
+      "ten_a": "Trung (Thượng thừa 5/10, NC 5)",
+      "ten_b": "Cao (Trấn phái 8/10, NC 8)",
+      "dau_vao_a": {
+        "can_cot": 60,
+        "ngo_tinh": 60,
+        "tier": 2,
+        "cap_vo": 5,
+        "canh_gioi": 5,
+        "tuoi": 30
+      },
+      "dau_vao_b": {
+        "can_cot": 70,
+        "ngo_tinh": 70,
+        "tier": 3,
+        "cap_vo": 8,
+        "canh_gioi": 8,
+        "tuoi": 40
+      },
+      "ti_le_thang": 0.0,
+      "ti_le_hoa": 0.0,
+      "ti_le_thua": 1.0,
+      "ko_h1": 0.0,
+      "ko_som": 0.7811,
+      "bat_phan": 0.18695,
+      "hp_con": 0.5570738257339101,
+      "hp_yeu_h2": 0.09683673396624516
+    },
+    {
+      "ten_a": "Trung (Thượng thừa 5/10, NC 5)",
+      "ten_b": "Đỉnh (SSS 10/10, NC 10)",
+      "dau_vao_a": {
+        "can_cot": 60,
+        "ngo_tinh": 60,
+        "tier": 2,
+        "cap_vo": 5,
+        "canh_gioi": 5,
+        "tuoi": 30
+      },
+      "dau_vao_b": {
+        "can_cot": 90,
+        "ngo_tinh": 85,
+        "tier": 4,
+        "cap_vo": 10,
+        "canh_gioi": 10,
+        "tuoi": 45
+      },
+      "ti_le_thang": 0.0,
+      "ti_le_hoa": 0.0,
+      "ti_le_thua": 1.0,
+      "ko_h1": 0.0,
+      "ko_som": 0.9795,
+      "bat_phan": 0.1645,
+      "hp_con": 0.7068254108741322,
+      "hp_yeu_h2": 0.05449471917053619
+    },
+    {
+      "ten_a": "Cao (Trấn phái 8/10, NC 8)",
+      "ten_b": "Sơ nhập (Nhập môn 3/10, NC 2)",
+      "dau_vao_a": {
+        "can_cot": 70,
+        "ngo_tinh": 70,
+        "tier": 3,
+        "cap_vo": 8,
+        "canh_gioi": 8,
+        "tuoi": 40
+      },
+      "dau_vao_b": {
+        "can_cot": 50,
+        "ngo_tinh": 50,
+        "tier": 1,
+        "cap_vo": 3,
+        "canh_gioi": 2,
+        "tuoi": 18
+      },
+      "ti_le_thang": 1.0,
+      "ti_le_hoa": 0.0,
+      "ti_le_thua": 0.0,
+      "ko_h1": 0.0,
+      "ko_som": 0.89365,
+      "bat_phan": 0.0596,
+      "hp_con": 0.7510308618575546,
+      "hp_yeu_h2": 0.037708427140980896
+    },
+    {
+      "ten_a": "Cao (Trấn phái 8/10, NC 8)",
+      "ten_b": "Trung (Thượng thừa 5/10, NC 5)",
+      "dau_vao_a": {
+        "can_cot": 70,
+        "ngo_tinh": 70,
+        "tier": 3,
+        "cap_vo": 8,
+        "canh_gioi": 8,
+        "tuoi": 40
+      },
+      "dau_vao_b": {
+        "can_cot": 60,
+        "ngo_tinh": 60,
+        "tier": 2,
+        "cap_vo": 5,
+        "canh_gioi": 5,
+        "tuoi": 30
+      },
+      "ti_le_thang": 1.0,
+      "ti_le_hoa": 0.0,
+      "ti_le_thua": 0.0,
+      "ko_h1": 0.0,
+      "ko_som": 0.77275,
+      "bat_phan": 0.1863,
+      "hp_con": 0.5592143191533636,
+      "hp_yeu_h2": 0.09749113293650273
+    },
+    {
+      "ten_a": "Cao (Trấn phái 8/10, NC 8)",
+      "ten_b": "Cao (Trấn phái 8/10, NC 8)",
+      "dau_vao_a": {
+        "can_cot": 70,
+        "ngo_tinh": 70,
+        "tier": 3,
+        "cap_vo": 8,
+        "canh_gioi": 8,
+        "tuoi": 40
+      },
+      "dau_vao_b": {
+        "can_cot": 70,
+        "ngo_tinh": 70,
+        "tier": 3,
+        "cap_vo": 8,
+        "canh_gioi": 8,
+        "tuoi": 40
+      },
+      "ti_le_thang": 0.50235,
+      "ti_le_hoa": 0.0,
+      "ti_le_thua": 0.49765,
+      "ko_h1": 0.0,
+      "ko_som": 0.1616,
+      "bat_phan": 0.2234,
+      "hp_con": 0.2527554940243563,
+      "hp_yeu_h2": 0.2183315091610972
+    },
+    {
+      "ten_a": "Cao (Trấn phái 8/10, NC 8)",
+      "ten_b": "Đỉnh (SSS 10/10, NC 10)",
+      "dau_vao_a": {
+        "can_cot": 70,
+        "ngo_tinh": 70,
+        "tier": 3,
+        "cap_vo": 8,
+        "canh_gioi": 8,
+        "tuoi": 40
+      },
+      "dau_vao_b": {
+        "can_cot": 90,
+        "ngo_tinh": 85,
+        "tier": 4,
+        "cap_vo": 10,
+        "canh_gioi": 10,
+        "tuoi": 45
+      },
+      "ti_le_thang": 0.0,
+      "ti_le_hoa": 0.0,
+      "ti_le_thua": 1.0,
+      "ko_h1": 0.0,
+      "ko_som": 0.77715,
+      "bat_phan": 0.17875,
+      "hp_con": 0.5262957086548931,
+      "hp_yeu_h2": 0.09412259984600903
+    },
+    {
+      "ten_a": "Đỉnh (SSS 10/10, NC 10)",
+      "ten_b": "Sơ nhập (Nhập môn 3/10, NC 2)",
+      "dau_vao_a": {
+        "can_cot": 90,
+        "ngo_tinh": 85,
+        "tier": 4,
+        "cap_vo": 10,
+        "canh_gioi": 10,
+        "tuoi": 45
+      },
+      "dau_vao_b": {
+        "can_cot": 50,
+        "ngo_tinh": 50,
+        "tier": 1,
+        "cap_vo": 3,
+        "canh_gioi": 2,
+        "tuoi": 18
+      },
+      "ti_le_thang": 1.0,
+      "ti_le_hoa": 0.0,
+      "ti_le_thua": 0.0,
+      "ko_h1": 0.49765,
+      "ko_som": 0.93155,
+      "bat_phan": 0.0,
+      "hp_con": 0.8605109933067137,
+      "hp_yeu_h2": 0.0030686591201305796
+    },
+    {
+      "ten_a": "Đỉnh (SSS 10/10, NC 10)",
+      "ten_b": "Trung (Thượng thừa 5/10, NC 5)",
+      "dau_vao_a": {
+        "can_cot": 90,
+        "ngo_tinh": 85,
+        "tier": 4,
+        "cap_vo": 10,
+        "canh_gioi": 10,
+        "tuoi": 45
+      },
+      "dau_vao_b": {
+        "can_cot": 60,
+        "ngo_tinh": 60,
+        "tier": 2,
+        "cap_vo": 5,
+        "canh_gioi": 5,
+        "tuoi": 30
+      },
+      "ti_le_thang": 1.0,
+      "ti_le_hoa": 0.0,
+      "ti_le_thua": 0.0,
+      "ko_h1": 0.0,
+      "ko_som": 0.97915,
+      "bat_phan": 0.16505,
+      "hp_con": 0.7071022376398378,
+      "hp_yeu_h2": 0.054345578472996946
+    },
+    {
+      "ten_a": "Đỉnh (SSS 10/10, NC 10)",
+      "ten_b": "Cao (Trấn phái 8/10, NC 8)",
+      "dau_vao_a": {
+        "can_cot": 90,
+        "ngo_tinh": 85,
+        "tier": 4,
+        "cap_vo": 10,
+        "canh_gioi": 10,
+        "tuoi": 45
+      },
+      "dau_vao_b": {
+        "can_cot": 70,
+        "ngo_tinh": 70,
+        "tier": 3,
+        "cap_vo": 8,
+        "canh_gioi": 8,
+        "tuoi": 40
+      },
+      "ti_le_thang": 1.0,
+      "ti_le_hoa": 0.0,
+      "ti_le_thua": 0.0,
+      "ko_h1": 0.0,
+      "ko_som": 0.7746,
+      "bat_phan": 0.18485,
+      "hp_con": 0.525337478584145,
+      "hp_yeu_h2": 0.0965928950965011
+    },
+    {
+      "ten_a": "Đỉnh (SSS 10/10, NC 10)",
+      "ten_b": "Đỉnh (SSS 10/10, NC 10)",
+      "dau_vao_a": {
+        "can_cot": 90,
+        "ngo_tinh": 85,
+        "tier": 4,
+        "cap_vo": 10,
+        "canh_gioi": 10,
+        "tuoi": 45
+      },
+      "dau_vao_b": {
+        "can_cot": 90,
+        "ngo_tinh": 85,
+        "tier": 4,
+        "cap_vo": 10,
+        "canh_gioi": 10,
+        "tuoi": 45
+      },
+      "ti_le_thang": 0.50485,
+      "ti_le_hoa": 0.0,
+      "ti_le_thua": 0.49515,
+      "ko_h1": 0.0,
+      "ko_som": 0.13435,
+      "bat_phan": 0.24525,
+      "hp_con": 0.25824898149402886,
+      "hp_yeu_h2": 0.2342455116716078
+    }
+  ],
+  "chenh_lech_trung": [
+    {
+      "nhan": "Ngang nhau",
+      "dau_vao_a": {
+        "can_cot": 60,
+        "ngo_tinh": 60,
+        "tier": 2,
+        "cap_vo": 5,
+        "canh_gioi": 5,
+        "tuoi": 30
+      },
+      "dau_vao_b": {
+        "can_cot": 60,
+        "ngo_tinh": 60,
+        "tier": 2,
+        "cap_vo": 5,
+        "canh_gioi": 5,
+        "tuoi": 30
+      },
+      "ti_le_thang": 0.50165,
+      "ti_le_hoa": 0.0,
+      "ti_le_thua": 0.49835,
+      "ko_h1": 0.0,
+      "ko_som": 0.33815,
+      "bat_phan": 0.5314,
+      "hp_con": 0.28388928279534964,
+      "hp_yeu_h2": 0.2890153266989542
+    },
+    {
+      "nhan": "+1 cấp võ học",
+      "dau_vao_a": {
+        "can_cot": 60,
+        "ngo_tinh": 60,
+        "tier": 2,
+        "cap_vo": 6,
+        "canh_gioi": 5,
+        "tuoi": 30
+      },
+      "dau_vao_b": {
+        "can_cot": 60,
+        "ngo_tinh": 60,
+        "tier": 2,
+        "cap_vo": 5,
+        "canh_gioi": 5,
+        "tuoi": 30
+      },
+      "ti_le_thang": 0.74695,
+      "ti_le_hoa": 0.0,
+      "ti_le_thua": 0.25305,
+      "ko_h1": 0.0,
+      "ko_som": 0.15605,
+      "bat_phan": 0.31755,
+      "hp_con": 0.28267230027612766,
+      "hp_yeu_h2": 0.25622751969211743
+    },
+    {
+      "nhan": "+2 cấp võ học",
+      "dau_vao_a": {
+        "can_cot": 60,
+        "ngo_tinh": 60,
+        "tier": 2,
+        "cap_vo": 7,
+        "canh_gioi": 5,
+        "tuoi": 30
+      },
+      "dau_vao_b": {
+        "can_cot": 60,
+        "ngo_tinh": 60,
+        "tier": 2,
+        "cap_vo": 5,
+        "canh_gioi": 5,
+        "tuoi": 30
+      },
+      "ti_le_thang": 0.8625,
+      "ti_le_hoa": 0.0,
+      "ti_le_thua": 0.1375,
+      "ko_h1": 0.0,
+      "ko_som": 0.15545,
+      "bat_phan": 0.22715,
+      "hp_con": 0.2936487074948108,
+      "hp_yeu_h2": 0.2149330754426096
+    },
+    {
+      "nhan": "+3 cấp võ học",
+      "dau_vao_a": {
+        "can_cot": 60,
+        "ngo_tinh": 60,
+        "tier": 2,
+        "cap_vo": 8,
+        "canh_gioi": 5,
+        "tuoi": 30
+      },
+      "dau_vao_b": {
+        "can_cot": 60,
+        "ngo_tinh": 60,
+        "tier": 2,
+        "cap_vo": 5,
+        "canh_gioi": 5,
+        "tuoi": 30
+      },
+      "ti_le_thang": 0.91995,
+      "ti_le_hoa": 0.0,
+      "ti_le_thua": 0.08005,
+      "ko_h1": 0.0,
+      "ko_som": 0.1968,
+      "bat_phan": 0.21295,
+      "hp_con": 0.2970782851212272,
+      "hp_yeu_h2": 0.16904876283323156
+    },
+    {
+      "nhan": "+1 Cảnh giới Nội công",
+      "dau_vao_a": {
+        "can_cot": 60,
+        "ngo_tinh": 60,
+        "tier": 2,
+        "cap_vo": 5,
+        "canh_gioi": 6,
+        "tuoi": 30
+      },
+      "dau_vao_b": {
+        "can_cot": 60,
+        "ngo_tinh": 60,
+        "tier": 2,
+        "cap_vo": 5,
+        "canh_gioi": 5,
+        "tuoi": 30
+      },
+      "ti_le_thang": 0.7273,
+      "ti_le_hoa": 0.0,
+      "ti_le_thua": 0.2727,
+      "ko_h1": 0.0,
+      "ko_som": 0.35585,
+      "bat_phan": 0.5557,
+      "hp_con": 0.28952278697612827,
+      "hp_yeu_h2": 0.29558992251528937
+    },
+    {
+      "nhan": "+3 Cảnh giới Nội công",
+      "dau_vao_a": {
+        "can_cot": 60,
+        "ngo_tinh": 60,
+        "tier": 2,
+        "cap_vo": 5,
+        "canh_gioi": 8,
+        "tuoi": 30
+      },
+      "dau_vao_b": {
+        "can_cot": 60,
+        "ngo_tinh": 60,
+        "tier": 2,
+        "cap_vo": 5,
+        "canh_gioi": 5,
+        "tuoi": 30
+      },
+      "ti_le_thang": 0.8985,
+      "ti_le_hoa": 0.0,
+      "ti_le_thua": 0.1015,
+      "ko_h1": 0.0,
+      "ko_som": 0.2342,
+      "bat_phan": 0.42835,
+      "hp_con": 0.3446942375402669,
+      "hp_yeu_h2": 0.2874228047239812
+    },
+    {
+      "nhan": "+10 Căn cốt",
+      "dau_vao_a": {
+        "can_cot": 70,
+        "ngo_tinh": 60,
+        "tier": 2,
+        "cap_vo": 5,
+        "canh_gioi": 5,
+        "tuoi": 30
+      },
+      "dau_vao_b": {
+        "can_cot": 60,
+        "ngo_tinh": 60,
+        "tier": 2,
+        "cap_vo": 5,
+        "canh_gioi": 5,
+        "tuoi": 30
+      },
+      "ti_le_thang": 0.8199,
+      "ti_le_hoa": 0.0,
+      "ti_le_thua": 0.1801,
+      "ko_h1": 0.0,
+      "ko_som": 0.38105,
+      "bat_phan": 0.6075,
+      "hp_con": 0.2984095461158778,
+      "hp_yeu_h2": 0.3109437338275702
+    },
+    {
+      "nhan": "+1 tier (Trấn phái 5/10)",
+      "dau_vao_a": {
+        "can_cot": 60,
+        "ngo_tinh": 60,
+        "tier": 3,
+        "cap_vo": 5,
+        "canh_gioi": 5,
+        "tuoi": 30
+      },
+      "dau_vao_b": {
+        "can_cot": 60,
+        "ngo_tinh": 60,
+        "tier": 2,
+        "cap_vo": 5,
+        "canh_gioi": 5,
+        "tuoi": 30
+      },
+      "ti_le_thang": 0.78085,
+      "ti_le_hoa": 0.0,
+      "ti_le_thua": 0.21915,
+      "ko_h1": 0.0,
+      "ko_som": 0.14525,
+      "bat_phan": 0.2843,
+      "hp_con": 0.28392671956929133,
+      "hp_yeu_h2": 0.24756367802968993
+    },
+    {
+      "nhan": "-1 tier (Nhập môn 5/10)",
+      "dau_vao_a": {
+        "can_cot": 60,
+        "ngo_tinh": 60,
+        "tier": 1,
+        "cap_vo": 5,
+        "canh_gioi": 5,
+        "tuoi": 30
+      },
+      "dau_vao_b": {
+        "can_cot": 60,
+        "ngo_tinh": 60,
+        "tier": 2,
+        "cap_vo": 5,
+        "canh_gioi": 5,
+        "tuoi": 30
+      },
+      "ti_le_thang": 0.1709,
+      "ti_le_hoa": 0.0,
+      "ti_le_thua": 0.8291,
+      "ko_h1": 0.0,
+      "ko_som": 0.41485,
+      "bat_phan": 0.6564,
+      "hp_con": 0.30217611189879784,
+      "hp_yeu_h2": 0.3210842536025688
+    }
+  ]
+}
