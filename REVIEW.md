@@ -17,6 +17,7 @@ Còn mở mới: Lãng khách tụt khỏi Thập Đại Cao Thủ (4%) sau vòn
 Chủ dự án chốt dùng **tên nguyên tác Kim Dung**; 33 lỗ hổng phát hiện khi lập kế hoạch (G01 - G33) đã chốt và ghi vào hồ sơ, chỉ mục ở đầu `ke_hoach/05_LO_HONG_GDD.md`.
 Nhờ vậy đã đóng: nguyên mẫu Lang Quân (HS05 II.1), quy tắc di chuyển giữa các vùng (mục 1.7, HS01 I), mục 6 (tên nguyên tác, rating 17+), mục 7 (phạm vi theo 3 cột mốc), mục 8 (kết cục #14, #18, danh hiệu phụ, Võ Lâm Minh Chủ, Kỳ Thư Xuất Thế, Kinh Mạch Nghịch Hành, võ công tự sáng tạo).
 Còn mở: mức "nhân đôi" của Âm Dương Hỗ Tế (HS02 II.2) và sức mạnh võ học tự sáng tạo (HS04 III.2) phải chạy mô phỏng khi implement (task M3-05, M3-10); 2 điểm "Còn mở mới" ở trên đo lại ở task M2-18.
+Còn mở (M1-11a, `GIẢ ĐỊNH`): `NhanVat` chưa có Bản mệnh nên `tuNhanVat` dùng `chinh_truc` (như `mo_phong.py`); `MauNpcTran` (`game/src/luat/tam_hiep/toan.ts`) chỉ nhận chỉ số trực tiếp vì chưa có schema NPC (vào ở M2-01).
 Mức độ: 🔴 Chặn (phải sửa trước khi viết data/code), 🟠 Quan trọng (ảnh hưởng cân bằng/trải nghiệm), 🟡 Nhỏ (văn bản, nhất quán).
 
 ---

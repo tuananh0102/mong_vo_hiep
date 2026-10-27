@@ -477,7 +477,7 @@ Task lớn, làm theo 4 phần, mỗi phần một commit.
 **Phụ thuộc:** M1-05, M1-08.
 **Đọc:** HS02 V (toàn bộ); HS06 I.3 (Tuyệt Cảnh), I.4; HS01 II.2 (Danh vọng thắng / thua); `mo_phong.py` hàm `sat_thuong`, `chon_ai`, `quyet_dau`, `npc_ngang`, `thua_tran_sinh_tu`, `trong_thuong` và khối GIẢ ĐỊNH (`BAO_KICH_CO_BAN`, `TIEU_HAO_MP_HIEP2`, `BIEN_THIEN_SAT_THUONG`, `TUYET_SAT`).
 
-#### [ ] M1-11a Toán chiến đấu và trận tự động
+#### [x] M1-11a Toán chiến đấu và trận tự động
 
 **Tạo:** `game/src/luat/tam_hiep/toan.ts`, `tu_dong.ts`, `ai.ts`; `giao_chien_nhanh.ts`; `game/test/tam_hiep_toan.test.ts`.
 

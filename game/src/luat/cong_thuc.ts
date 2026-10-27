@@ -224,7 +224,7 @@ export function capKhinhCong(nv: NhanVat): number {
  * Tìm môn ngoại công tốt nhất và cấp của nó để tính Võ Lực / Chiến Lực.
  * Tiêu chí HS06 I.4, I.5: uy lực chiêu thức UY_LUC[tier] * (1 + cap / 5) lớn nhất.
  */
-function timMonNgoaiCongTotNhat(
+export function timMonNgoaiCongTotNhat(
   nv: NhanVat,
   dl?: DuLieu,
 ): { ma: string | null; tier: number; capVo: number } {
@@ -278,7 +278,7 @@ function timMonNgoaiCongTotNhat(
 /**
  * Trích xuất sát thương Thần binh từ trang bị binh khí của nhân vật (HS06 I.4, I.5).
  */
-function laySatThuongThanBinh(nv: NhanVat, dl?: DuLieu): number {
+export function laySatThuongThanBinh(nv: NhanVat, dl?: DuLieu): number {
   if (!nv.binh_khi || !dl?.vat_pham) return 0
   const vp = dl.vat_pham[nv.binh_khi]
   if (!vp) return 0

@@ -77,3 +77,48 @@ export const TIER_THEO_BAC: Record<number, number> = {
   4: 3,
   5: 3,
 }
+
+// HS06 I.4: Sát thương Quyết Đấu Tam Hiệp
+export const HE_SO_THAM_DO = 1.0
+export const HE_SO_NOI_TUC = 0.08
+export const GIAM_TRU_MOI_CAN_COT = 0.003
+export const GIAM_TRU_MOI_KHINH_CONG = 0.02
+export const GIAM_TRU_TOI_DA = 0.50
+export const BIEN_THIEN_SAT_THUONG = 0.10
+
+// HS06 I.4 (chốt G18): Bạo kích và tiêu hao
+export const BAO_KICH_CO_BAN = 0.10
+export const BAO_KICH_HE_SO = 1.5
+export const TIEU_HAO_MP_HIEP2 = 0.30
+
+// HS02 V.1: Hệ số chiến thuật Hiệp 1
+export const H1_TIEN_HA_THU = 1.1
+export const H1_THUA_M1 = 0.9
+export const H1_THUA_M2 = 1.0
+export const H1_AN_BINH_GIAM_DICH = 0.95
+
+// HS02 V.1: Khắc chế hướng tiếp cận Hiệp 1 (T: Tiên Hạ Thủ, Q: Án Binh, D: Thân Pháp)
+export const KHAC_H1: Record<'T' | 'Q' | 'D', 'T' | 'Q' | 'D'> = {
+  T: 'Q',
+  Q: 'D',
+  D: 'T',
+}
+
+// HS02 V.1: Trọng số AI chọn hướng tiếp cận Hiệp 1 theo bản mệnh
+export const AI_H1: Record<string, { T: number; Q: number; D: number }> = {
+  chinh_truc: { T: 34, Q: 33, D: 33 },
+  nguy_quan_tu: { T: 20, Q: 50, D: 30 },
+  ta_ac: { T: 50, Q: 20, D: 30 },
+  ngong_cuong: { T: 45, Q: 30, D: 25 },
+  si_tinh: { T: 30, Q: 30, D: 40 },
+}
+
+// HS02 V.3: Xác suất NPC chọn Tuyệt sát theo bản mệnh khi áp đảo người chơi trong trận sinh tử
+export const TUYET_SAT: Record<string, number> = {
+  ta_ac: 0.6,
+  ngong_cuong: 0.3,
+  nguy_quan_tu: 0.3,
+  si_tinh: 0.1,
+  chinh_truc: 0.0,
+}
+
