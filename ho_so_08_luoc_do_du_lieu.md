@@ -27,7 +27,8 @@ File chưa có lược đồ bị `npm run kiem-tra-du-lieu` từ chối ("khôn
 | `gia_canh.json`, `thien_phu.json`, `trang_thai.json`, `nhan.json` | Gia cảnh, Thiên phú, Trạng thái, Nhãn tính cách | Đã có (M1-02) |
 | `vo_hoc/*.json`, `mon_phai/*.json` | Võ học, môn phái | Đã có (M1-01) |
 | `vat_pham/*.json`, `hanh_dong.json` | Vật phẩm, hành động | Đã có (M1-03) |
-| `su_kien/<nhom>/<ma>.json` | Sự kiện, một file một sự kiện | M1-05 |
+| `su_kien/<nhom>/<ma>.json` | Sự kiện, một file một sự kiện | Đã có (M1-05) |
+| `npc/ten.json` | Danh sách họ và tên sinh ngẫu nhiên | Đã có (M1-06) |
 | `dai_su_kien/*.json`, `npc/*.json` | Đại sự kiện, NPC | M2 |
 | `ket_cuc.json`, `luan_hoi.json`, `van_ban/*.json`, `ten_hien_thi.json` | Kết cục, Luân Hồi, văn bản hệ thống, tên hiển thị | M1-18 trở đi |
 
@@ -482,6 +483,26 @@ Ví dụ hoàn chỉnh:
     "mo_ta": "Dạo phố phường ghé tiệm thuốc và sạp chợ mua đan dược vật phẩm (tối đa 2 hành động miễn phí mỗi năm)."
   }
 ]
+```
+
+### II.11. `npc/ten.json`
+
+Tệp cấu hình danh sách họ và tên dùng để sinh tên ngẫu nhiên cho NPC và nhân vật người chơi lúc tạo kiếp (HS01 II.0, M1-06).
+
+| Trường | Kiểu | Ý nghĩa |
+| :--- | :--- | :--- |
+| `ho` | mảng chuỗi | Danh sách các họ kiếm hiệp (Lý, Trương, Triệu, Tiêu, Lệnh Hồ, Mộ Dung...). |
+| `ten_nam` | mảng chuỗi | Danh sách tên gọi dành cho nhân vật nam (Vô Kỵ, Tiêu Dao, Phong, Quá...). |
+| `ten_nu` | mảng chuỗi | Danh sách tên gọi dành cho nhân vật nữ (Ngữ Yên, Mộng Cô, Uyển Thanh, Chỉ Nhược...). |
+
+Ví dụ hoàn chỉnh:
+
+```json
+{
+  "ho": ["Lý", "Trương", "Tiêu", "Đoàn", "Lệnh Hồ", "Mộ Dung"],
+  "ten_nam": ["Vô Kỵ", "Tiêu Dao", "Phong", "Quá", "Tĩnh", "Xung"],
+  "ten_nu": ["Ngữ Yên", "Mộng Cô", "Uyển Thanh", "Doanh Doanh", "Chỉ Nhược", "Tố Tố"]
+}
 ```
 
 ## III. Sự kiện

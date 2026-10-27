@@ -369,6 +369,14 @@ export const LuocDoHanhDong = z.object({
 })
 export type HanhDong = z.infer<typeof LuocDoHanhDong>
 
+// HS01 II.0, M1-06: Danh sách họ và tên NPC / người chơi
+export const LuocDoTenNpc = z.object({
+  ho: z.array(z.string().min(1)),
+  ten_nam: z.array(z.string().min(1)),
+  ten_nu: z.array(z.string().min(1)),
+})
+export type DanhSachTenNpc = z.infer<typeof LuocDoTenNpc>
+
 export interface DuLieu {
   vung: Record<string, Vung>
   chi_so: Record<string, DinhNghiaChiSo>
@@ -381,4 +389,5 @@ export interface DuLieu {
   su_kien?: Record<string, SuKien>
   vat_pham?: Record<string, VatPham>
   hanh_dong?: Record<string, HanhDong>
+  ten_npc?: DanhSachTenNpc
 }

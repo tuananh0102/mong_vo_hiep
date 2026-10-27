@@ -1,6 +1,7 @@
 // 01 mục 5: Động cơ game - một cửa vào duy nhất apDung.
 import type { DuLieu } from '../du_lieu/luoc_do'
 import { kiemTraBatBien } from './bat_bien'
+import { khoiTaoKiep, thucHienChonThienPhu } from './dau_thai'
 import type { DongBienNien, Lenh, TrangThaiGame } from './kieu'
 import { rngTuSeed, taoRng } from './rng'
 import { xuLyChon } from './su_kien'
@@ -57,32 +58,19 @@ export function apDung(s: TrangThaiGame, lenh: Lenh, dl: DuLieu): KetQuaLenh {
 
     case 'tao_kiep': {
       const rngKhoiTao = rngTuSeed(lenh.seed)
-      d.phien_ban = 1
-      d.seed = lenh.seed
+      khoiTaoKiep(d, rngKhoiTao, dl, lenh)
       d.rng = rngKhoiTao.layTrangThai()
-      d.nam_the_gioi = 0
-      d.nhan_vat.ten = lenh.ten
-      d.nhan_vat.gioi_tinh = lenh.gioi_tinh
-      d.nhan_vat.tuoi = 0
-      d.ket_thuc = null
-      d.cho = null
-      d.hang_doi_su_kien = []
-      d.lich_hen = []
-      d.bien_nien = [
-        {
-          tuoi: 0,
-          van_ban: `${lenh.ten} cất tiếng khóc chào đời.`,
-          loai_hien_thi: 'thuong',
-        },
-      ]
-      dongMoi = [...d.bien_nien]
+      dongMoi = []
       break
     }
 
     case 'chon_thien_phu': {
       if (d.cho?.loai === 'chon_thien_phu') {
-        d.nhan_vat.thien_phu.push(lenh.ma)
-        d.cho = null
+        const kq = thucHienChonThienPhu(d, rng, dl, lenh.ma)
+        if (kq.loi) {
+          return { trang_thai: s, dong_moi: [], loi: kq.loi }
+        }
+        dongMoi = kq.dongMoi
       }
       break
     }

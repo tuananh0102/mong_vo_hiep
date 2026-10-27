@@ -176,6 +176,15 @@ describe('ví dụ HS08', () => {
     expect(dl.hanh_dong?.['mua_sam']?.mien_phi).toBe(true)
   })
 
+  it('II.11 npc/ten.json qua lược đồ', () => {
+    const dl = napDuLieu({
+      'npc/ten.json': khoiJson('### II.11.'),
+    })
+    expect(dl.ten_npc?.ho).toContain('Lý')
+    expect(dl.ten_npc?.ten_nam).toContain('Vô Kỵ')
+    expect(dl.ten_npc?.ten_nu).toContain('Ngữ Yên')
+  })
+
   it('không có dấu gạch dài', () => {
     expect(hs08).not.toContain('—')
   })

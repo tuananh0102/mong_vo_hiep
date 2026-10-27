@@ -8,6 +8,7 @@ import {
   LuocDoMonPhai,
   LuocDoNhan,
   LuocDoSuKien,
+  LuocDoTenNpc,
   LuocDoThienPhu,
   LuocDoTrangThai,
   LuocDoVatPham,
@@ -104,6 +105,9 @@ export function napDuLieu(tep: Record<string, unknown>): DuLieu {
     } else if (duong === 'hanh_dong.json') {
       const ds = doc(duong, noiDung, LuocDoHanhDong.array())
       if (ds) dl.hanh_dong = theoMa(duong, ds, loi)
+    } else if (duong === 'npc/ten.json') {
+      const tn = doc(duong, noiDung, LuocDoTenNpc)
+      if (tn) dl.ten_npc = tn
     } else if (
       duong.startsWith('su_kien/') ||
       (typeof noiDung === 'object' && noiDung !== null && 'lua_chon' in noiDung)

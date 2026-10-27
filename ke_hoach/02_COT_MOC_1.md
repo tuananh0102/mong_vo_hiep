@@ -371,7 +371,7 @@ Nối các mã phái sinh vào `docChiSo` (thay chỗ `throw` ở M0-05).
 
 ---
 
-### [ ] M1-06 Đầu thai (tạo kiếp)
+### [x] M1-06 Đầu thai (tạo kiếp)
 
 **Phụ thuộc:** M1-02, M1-05.
 **Đọc:** HS01 II.0, III; HS06 II.4; HS05 IV.1 (chỉ số bẩm sinh); `05_LO_HONG_GDD.md` G01, G06.
