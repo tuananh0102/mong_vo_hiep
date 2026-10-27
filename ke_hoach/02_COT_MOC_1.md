@@ -69,7 +69,7 @@ Trước khi làm: đọc [README.md](README.md) mục 3 - 5 và [01_KIEN_TRUC.m
 
 ---
 
-### [ ] M0-03 Lược đồ và nạp dữ liệu
+### [x] M0-03 Lược đồ và nạp dữ liệu
 
 **Phụ thuộc:** M0-01.
 **Đọc:** 01 mục 2, 7, 8.

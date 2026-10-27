@@ -1,0 +1,7 @@
+[
+  { "ma": "trung_nguyen", "ten": "Trung Nguyên", "nguon": "HS01 I", "he_so_ky_ngo": 0 },
+  { "ma": "giang_nam", "ten": "Giang Nam", "nguon": "HS01 I", "he_so_ky_ngo": 0.01 },
+  { "ma": "tay_vuc", "ten": "Tây Vực & Đại Mạc", "nguon": "HS01 I", "he_so_ky_ngo": 0.04 },
+  { "ma": "nam_cuong", "ten": "Nam Cương", "nguon": "HS01 I", "he_so_ky_ngo": 0.04 },
+  { "ma": "bac_canh", "ten": "Bắc Cảnh (Quan Ngoại)", "nguon": "HS01 I", "he_so_ky_ngo": 0.04 }
+]
