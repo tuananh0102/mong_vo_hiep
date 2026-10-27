@@ -1,0 +1,63 @@
+[
+  {
+    "ma": "song_thu_ho_bac",
+    "ten": "Song Thủ Hỗ Bác",
+    "nguon": "HS02 III.1",
+    "nguon_ten": "nguyen_tac",
+    "tru_cot": "tuyet_ky",
+    "tier": 4,
+    "he_noi_luc": null,
+    "loai_binh_khi": null,
+    "uy_luc_lech": 0,
+    "tran_cap": 10,
+    "dieu_kien_hoc": { "so": "ngo_tinh", "op": "<", "gt": 40 },
+    "dac_biet": ["danh_hai_lan"],
+    "mon_phai": null,
+    "mo_ta": "Tuyệt kỹ kỳ lạ do Lão Ngoan Đồng sáng tạo, tay trái vẽ hình vuông tay phải vẽ hình tròn, cho phép ra đòn hai lần một lượt."
+  },
+  {
+    "ma": "khong_minh_quyen",
+    "ten": "Không Minh Quyền",
+    "nguon": "HS02 III.1",
+    "nguon_ten": "nguyen_tac",
+    "tru_cot": "ngoai_cong",
+    "tier": 3,
+    "he_noi_luc": null,
+    "loai_binh_khi": "quyen_chuong",
+    "uy_luc_lech": 0.05,
+    "tran_cap": 10,
+    "dac_biet": [],
+    "mon_phai": null,
+    "mo_ta": "Bộ quyền pháp đạo gia do Chu Bá Thông ngộ ra, lấy hư không làm gốc, kình lực mờ ảo khó dò."
+  },
+  {
+    "ma": "hu_thi_doc_chuong",
+    "ten": "Hủ Thi Độc Chưởng",
+    "nguon": "HS02 I.2",
+    "nguon_ten": "nguyen_tac",
+    "tru_cot": "ngoai_cong",
+    "tier": 2,
+    "he_noi_luc": null,
+    "loai_binh_khi": "quyen_chuong",
+    "uy_luc_lech": 0.05,
+    "tran_cap": 10,
+    "dac_biet": ["doc_cong"],
+    "mon_phai": null,
+    "mo_ta": "Chưởng pháp tà dị mang theo hủ thi kịch độc, người trúng chiêu thịt nát xương tan."
+  },
+  {
+    "ma": "doc_co_cuu_kiem",
+    "ten": "Độc Cô Cửu Kiếm",
+    "nguon": "HS02 I.4, HS02 III.1",
+    "nguon_ten": "nguyen_tac",
+    "tru_cot": "ngoai_cong",
+    "tier": 4,
+    "he_noi_luc": null,
+    "loai_binh_khi": "kiem",
+    "uy_luc_lech": 0.1,
+    "tran_cap": 10,
+    "dac_biet": ["pha_chieu"],
+    "mon_phai": null,
+    "mo_ta": "Tuyệt học kiếm thuật vô chiêu thắng hữu chiêu của Kiếm ma Độc Cô Cầu Bại, nhìn thấu mọi sơ hở trong thiên hạ."
+  }
+]

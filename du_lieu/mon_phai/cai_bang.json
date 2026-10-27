@@ -1,0 +1,32 @@
+{
+  "ma": "cai_bang",
+  "ten": "Cái Bang",
+  "nguon": "HS02 I.1.D",
+  "nguon_ten": "nguyen_tac",
+  "phe": "chinh",
+  "vung": "trung_nguyen",
+  "quy_mo": "lon",
+  "dieu_kien_gia_nhap": {
+    "va": [
+      { "la": "gia_canh", "trong": ["han_vi", "binh_dan"] },
+      { "so": "ngan_luong", "op": "<", "gt": 10 }
+    ]
+  },
+  "vo_hoc_theo_bac": {
+    "1": ["thai_to_truong_quyen", "lien_hoa_lac", "dong_chuy_thu", "cai_bang_tam_phap", "cai_bang_than_phap"],
+    "2": ["phong_ma_truong_phap", "tieu_dao_du", "toa_hau_cam_na_thu"],
+    "3": ["hang_long_thap_bat_chuong", "da_cau_bong_phap"],
+    "4": ["hang_long_thap_bat_chuong", "da_cau_bong_phap"],
+    "5": ["hang_long_thap_bat_chuong", "da_cau_bong_phap"]
+  },
+  "cap_su_phu_theo_bac": {
+    "1": 6,
+    "2": 8,
+    "3": 10,
+    "4": 10,
+    "5": 10
+  },
+  "khao_nghiem": "khao_nghiem_cai_bang",
+  "dac_quyen": ["mang_luoi_tinh_bao"],
+  "mo_ta": "Thiên hạ đệ nhất đại bang, đệ tử đông đảo khắp Thần Châu, chia làm hai phái Áo Sạch và Áo Bẩn."
+}

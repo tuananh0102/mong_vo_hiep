@@ -1,0 +1,32 @@
+{
+  "ma": "vo_dang",
+  "ten": "Võ Đang Phái",
+  "nguon": "HS02 I.1.B",
+  "nguon_ten": "nguyen_tac",
+  "phe": "chinh",
+  "vung": "trung_nguyen",
+  "quy_mo": "lon",
+  "dieu_kien_gia_nhap": {
+    "va": [
+      { "so": "hiep_nghia", "op": ">=", "gt": 50 },
+      { "so": "ngo_tinh", "op": ">=", "gt": 50 }
+    ]
+  },
+  "vo_hoc_theo_bac": {
+    "1": ["vo_dang_truong_quyen", "nhu_van_kiem_phap", "mien_chuong", "vo_dang_tam_phap", "vo_dang_than_phap"],
+    "2": ["than_mon_thap_tam_kiem", "huyen_hu_dao_phap", "ho_trao_tuyet_ho_thu", "the_van_tung"],
+    "3": ["thai_cuc_quyen", "thai_cuc_kiem", "thuan_duong_vo_cuc_cong"],
+    "4": ["thai_cuc_quyen", "thai_cuc_kiem", "thuan_duong_vo_cuc_cong"],
+    "5": ["thai_cuc_quyen", "thai_cuc_kiem", "thuan_duong_vo_cuc_cong"]
+  },
+  "cap_su_phu_theo_bac": {
+    "1": 6,
+    "2": 8,
+    "3": 10,
+    "4": 10,
+    "5": 10
+  },
+  "khao_nghiem": "khao_nghiem_vo_dang",
+  "dac_quyen": ["tang_kinh_cac", "dao_gia"],
+  "mo_ta": "Đạo gia chính tông, lấy tĩnh chế động, lấy nhu khắc cương, nội lực càng về già càng thâm hậu."
+}

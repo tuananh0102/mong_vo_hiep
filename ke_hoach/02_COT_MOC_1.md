@@ -254,7 +254,7 @@ Trước khi làm: đọc [README.md](README.md) mục 3 - 5 và [01_KIEN_TRUC.m
 
 ## PHẦN M1 - CỘT MỐC 1
 
-### [ ] M1-01 Dữ liệu võ học và 4 môn phái
+### [x] M1-01 Dữ liệu võ học và 4 môn phái
 
 **Phụ thuộc:** M0-04.
 **Đọc:** HS02 I.1 (A Thiếu Lâm, B Võ Đang, D Cái Bang), HS02 I.4 (Hoa Sơn), HS02 II.1, II.2; HS03 IV (võ học được dạy khi nhập môn); HS04 I.1 (bậc); `05_LO_HONG_GDD.md` G15, G16.

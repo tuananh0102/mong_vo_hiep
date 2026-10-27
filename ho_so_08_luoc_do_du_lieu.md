@@ -25,7 +25,7 @@ File chưa có lược đồ bị `npm run kiem-tra-du-lieu` từ chối ("khôn
 | `vung.json` | 5 khu vực | Đã có (M0-03) |
 | `chi_so.json` | Danh sách chỉ số theo HS01 II.8 | Đã có (M0-05) |
 | `gia_canh.json`, `thien_phu.json`, `trang_thai.json`, `nhan.json` | Gia cảnh, Thiên phú, Trạng thái, Nhãn tính cách | M1-02 |
-| `vo_hoc/*.json`, `mon_phai/*.json` | Võ học, môn phái | M1-01 |
+| `vo_hoc/*.json`, `mon_phai/*.json` | Võ học, môn phái | Đã có (M1-01) |
 | `vat_pham/*.json`, `hanh_dong.json` | Vật phẩm, hành động | M1-03 |
 | `su_kien/<nhom>/<ma>.json` | Sự kiện, một file một sự kiện | M1-05 |
 | `dai_su_kien/*.json`, `npc/*.json` | Đại sự kiện, NPC | M2 |
@@ -77,6 +77,105 @@ Ví dụ hoàn chỉnh:
   { "ma": "can_cot", "ten": "Căn Cốt", "nhom": "thien_phu", "min": 0, "max": 100, "tran_cung": 150, "hien_thi": "hien", "nguon": "HS01 II.8" },
   { "ma": "hp_max", "ten": "Sinh Mệnh tối đa", "nhom": "chien_dau", "min": 0, "max": null, "tran_cung": null, "hien_thi": "hien", "phai_sinh": true, "nguon": "HS01 II.8" }
 ]
+```
+
+### II.3. `vo_hoc/*.json`
+
+Mỗi file là một mảng các võ học.
+
+| Trường | Kiểu | Ý nghĩa |
+| :--- | :--- | :--- |
+| `ma` | chuỗi | Mã định danh võ học. |
+| `ten` | chuỗi | Tên võ học theo GDD. |
+| `nguon` | chuỗi | Mục GDD hoặc mã G.. |
+| `nguon_ten` | `nguyen_tac` / `phong_tac` | Nguồn tên (01 mục 7.6). |
+| `tru_cot` | `noi_cong` / `ngoai_cong` / `khinh_cong` / `tuyet_ky` | Bốn trụ cột võ học (HS02 II.1). |
+| `tier` | 1 / 2 / 3 / 4 | 1 Nhập môn, 2 Thượng thừa, 3 Trấn phái, 4 SSS. |
+| `he_noi_luc` | `duong` / `am` / `hoa` / `null` | Bắt buộc đối với nội công, còn lại null (HS02 II.2, G16). |
+| `loai_binh_khi` | `quyen_chuong` / `chi_trao` / `kiem` / `dao` / `bong` / `am_khi` / `null` | Loại binh khí của ngoại công (HS02 II.1). |
+| `uy_luc_lech` | số từ -0.1 đến 0.1 | Độ lệch uy lực chiêu thức (HS06 I.4). |
+| `tran_cap` | số nguyên từ 1 đến 10 | Trần cấp luyện công (khinh công có trần theo tier: 4 / 6 / 8 / 10). |
+| `dieu_kien_hoc` | `DieuKien` hoặc `null` | Điều kiện để học võ công. |
+| `dac_biet` | mảng chuỗi | Mã cơ chế riêng. |
+| `mon_phai` | chuỗi hoặc `null` | Môn phái sở hữu, null nếu tự do. |
+| `mo_ta` | chuỗi | Mô tả tóm tắt võ học. |
+
+Ví dụ hoàn chỉnh:
+
+```json
+[
+  {
+    "ma": "thieu_lam_tam_phap",
+    "ten": "Thiếu Lâm Tâm Pháp",
+    "nguon": "G15, G16",
+    "nguon_ten": "phong_tac",
+    "tru_cot": "noi_cong",
+    "tier": 1,
+    "he_noi_luc": "duong",
+    "loai_binh_khi": null,
+    "uy_luc_lech": 0,
+    "tran_cap": 10,
+    "mon_phai": "thieu_lam",
+    "mo_ta": "Nội công nhập môn tụ khí đan điền của Thiếu Lâm Tự, thuộc hệ Chí Dương."
+  }
+]
+```
+
+### II.4. `mon_phai/*.json`
+
+Mỗi file là một môn phái hoàn chỉnh.
+
+| Trường | Kiểu | Ý nghĩa |
+| :--- | :--- | :--- |
+| `ma` | chuỗi | Mã môn phái. |
+| `ten` | chuỗi | Tên môn phái. |
+| `nguon` | chuỗi | Mục GDD gốc. |
+| `nguon_ten` | `nguyen_tac` / `phong_tac` | Nguồn tên môn phái. |
+| `phe` | `chinh` / `ta` / `trung_lap` | Phe phái của môn phái (HS02 I). |
+| `vung` | chuỗi | Mã vùng địa lý môn phái đóng đô. |
+| `quy_mo` | `nho` / `vua` / `lon` | Quy mô môn phái (HS02 I, HS04 I). |
+| `dieu_kien_gia_nhap` | `DieuKien` | Điều kiện gia nhập môn phái (HS02 I). |
+| `vo_hoc_theo_bac` | bảng theo bậc | Danh sách võ học được truyền dạy theo từng bậc (HS04 I.1). |
+| `cap_su_phu_theo_bac` | bảng theo bậc | Cấp võ học của sư phụ theo từng bậc (G17). |
+| `khao_nghiem` | chuỗi hoặc `null` | Mã sự kiện khảo nghiệm nhập môn (HS03 IV). |
+| `dac_quyen` | mảng chuỗi | Đặc quyền môn phái. |
+| `mo_ta` | chuỗi | Mô tả tóm tắt môn phái. |
+
+Ví dụ hoàn chỉnh:
+
+```json
+{
+  "ma": "hoa_son",
+  "ten": "Hoa Sơn Phái",
+  "nguon": "HS02 I.4",
+  "nguon_ten": "nguyen_tac",
+  "phe": "chinh",
+  "vung": "trung_nguyen",
+  "quy_mo": "vua",
+  "dieu_kien_gia_nhap": {
+    "va": [
+      { "so": "ngo_tinh", "op": ">=", "gt": 40 },
+      { "so": "hiep_nghia", "op": ">=", "gt": 0 }
+    ]
+  },
+  "vo_hoc_theo_bac": {
+    "1": ["hoa_son_kiem_phap", "hoa_son_tam_phap", "hoa_son_than_phap"],
+    "2": ["hon_nguyen_chuong"],
+    "3": ["tu_ha_than_cong"],
+    "4": ["tu_ha_than_cong"],
+    "5": ["tu_ha_than_cong"]
+  },
+  "cap_su_phu_theo_bac": {
+    "1": 6,
+    "2": 8,
+    "3": 10,
+    "4": 10,
+    "5": 10
+  },
+  "khao_nghiem": "khao_nghiem_hoa_son",
+  "dac_quyen": ["tang_kinh_cac"],
+  "mo_ta": "Môn phái danh tiếng trong Ngũ Nhạc Kiếm Phái, chia rẽ giữa Kiếm Tông và Khí Tông."
+}
 ```
 
 ## III. Sự kiện

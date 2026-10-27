@@ -1,0 +1,33 @@
+{
+  "ma": "thieu_lam",
+  "ten": "Thiếu Lâm Tự",
+  "nguon": "HS02 I.1.A",
+  "nguon_ten": "nguyen_tac",
+  "phe": "chinh",
+  "vung": "trung_nguyen",
+  "quy_mo": "lon",
+  "dieu_kien_gia_nhap": {
+    "va": [
+      { "la": "gioi_tinh", "trong": ["nam"] },
+      { "so": "hiep_nghia", "op": ">=", "gt": 0 },
+      { "so": "can_cot", "op": ">=", "gt": 50 }
+    ]
+  },
+  "vo_hoc_theo_bac": {
+    "1": ["la_han_quyen", "vi_da_chu", "pho_mon_dao_phap", "thieu_lam_tam_phap", "thieu_lam_than_phap"],
+    "2": ["long_trao_thu", "dai_luc_kim_cuong_chi", "nhu_lai_thien_diep_thu", "dat_ma_kiem_phap", "nhien_moc_dao_phap", "vo_tuong_kiep_chi"],
+    "3": ["dich_can_kinh", "tay_tuy_kinh", "kim_cuong_bat_hoai_the"],
+    "4": ["dich_can_kinh", "tay_tuy_kinh", "kim_cuong_bat_hoai_the"],
+    "5": ["dich_can_kinh", "tay_tuy_kinh", "kim_cuong_bat_hoai_the"]
+  },
+  "cap_su_phu_theo_bac": {
+    "1": 6,
+    "2": 8,
+    "3": 10,
+    "4": 10,
+    "5": 10
+  },
+  "khao_nghiem": "khao_nghiem_thieu_lam",
+  "dac_quyen": ["tang_kinh_cac", "xuat_gia"],
+  "mo_ta": "Thái Sơn Bắc Đẩu của võ lâm Trung Nguyên, nội công thâm hậu, phòng ngự đệ nhất."
+}

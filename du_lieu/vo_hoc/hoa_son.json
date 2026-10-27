@@ -1,0 +1,72 @@
+[
+  {
+    "ma": "hoa_son_kiem_phap",
+    "ten": "Hoa Sơn Kiếm Pháp",
+    "nguon": "HS02 I.4",
+    "nguon_ten": "nguyen_tac",
+    "tru_cot": "ngoai_cong",
+    "tier": 1,
+    "he_noi_luc": null,
+    "loai_binh_khi": "kiem",
+    "uy_luc_lech": 0,
+    "tran_cap": 10,
+    "mon_phai": "hoa_son",
+    "mo_ta": "Kiếm pháp chính tông của Hoa Sơn Phái, thế kiếm sắc bén thanh thoát như mây ngút trời cao."
+  },
+  {
+    "ma": "hoa_son_tam_phap",
+    "ten": "Hoa Sơn Tâm Pháp",
+    "nguon": "G15, G16",
+    "nguon_ten": "phong_tac",
+    "tru_cot": "noi_cong",
+    "tier": 1,
+    "he_noi_luc": "duong",
+    "loai_binh_khi": null,
+    "uy_luc_lech": 0,
+    "tran_cap": 10,
+    "mon_phai": "hoa_son",
+    "mo_ta": "Nội công nhập môn của Hoa Sơn Phái, dẫn khí nhập đan điền, thuộc hệ Chí Dương."
+  },
+  {
+    "ma": "hoa_son_than_phap",
+    "ten": "Hoa Sơn Thân Pháp",
+    "nguon": "G15",
+    "nguon_ten": "phong_tac",
+    "tru_cot": "khinh_cong",
+    "tier": 1,
+    "he_noi_luc": null,
+    "loai_binh_khi": null,
+    "uy_luc_lech": 0,
+    "tran_cap": 4,
+    "mon_phai": "hoa_son",
+    "mo_ta": "Thân pháp nhập môn leo núi vượt dốc cheo leo trên các đỉnh núi cao hiểm trở của Hoa Sơn."
+  },
+  {
+    "ma": "hon_nguyen_chuong",
+    "ten": "Hỗn Nguyên Chưởng",
+    "nguon": "HS02 I.4",
+    "nguon_ten": "nguyen_tac",
+    "tru_cot": "ngoai_cong",
+    "tier": 2,
+    "he_noi_luc": null,
+    "loai_binh_khi": "quyen_chuong",
+    "uy_luc_lech": 0.05,
+    "tran_cap": 10,
+    "mon_phai": "hoa_son",
+    "mo_ta": "Chưởng pháp thượng thừa của Khí Tông Hoa Sơn, lấy chiêu thức dưỡng nội lực, càng đánh càng bền bỉ."
+  },
+  {
+    "ma": "tu_ha_than_cong",
+    "ten": "Tử Hà Thần Công",
+    "nguon": "HS02 I.4, HS02 II.2",
+    "nguon_ten": "nguyen_tac",
+    "tru_cot": "noi_cong",
+    "tier": 3,
+    "he_noi_luc": "duong",
+    "loai_binh_khi": null,
+    "uy_luc_lech": 0.1,
+    "tran_cap": 10,
+    "mon_phai": "hoa_son",
+    "mo_ta": "Trấn phái thần công của Hoa Sơn, mặt bừng sắc tím khi vận công, nội lực Chí Dương phát tác hùng hậu."
+  }
+]

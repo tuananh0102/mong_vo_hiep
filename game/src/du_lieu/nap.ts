@@ -1,7 +1,15 @@
 // 01 mục 2, 7, 8: nạp + kiểm tra + đóng băng dữ liệu. Hàm thuần, không đọc đĩa.
 import type { z } from 'zod'
 import { kiemTraNguNghia } from './kiem_tra_ngu_nghia'
-import { LuocDoChiSo, LuocDoSuKien, LuocDoThienPhu, LuocDoVung, type DuLieu } from './luoc_do'
+import {
+  LuocDoChiSo,
+  LuocDoMonPhai,
+  LuocDoSuKien,
+  LuocDoThienPhu,
+  LuocDoVoHoc,
+  LuocDoVung,
+  type DuLieu,
+} from './luoc_do'
 
 function dongBangSau<T>(v: T): T {
   if (v && typeof v === 'object' && !Object.isFrozen(v)) {
@@ -23,7 +31,7 @@ function theoMa<T extends { ma: string }>(duong: string, ds: T[], loi: string[])
 /** `tep`: đường dẫn tương đối từ du_lieu/ (dấu "/") → nội dung JSON đã parse. */
 export function napDuLieu(tep: Record<string, unknown>): DuLieu {
   const loi: string[] = []
-  const dl: DuLieu = { vung: {}, chi_so: {}, thien_phu: {}, su_kien: {} }
+  const dl: DuLieu = { vung: {}, chi_so: {}, thien_phu: {}, vo_hoc: {}, mon_phai: {}, su_kien: {} }
 
   const doc = <T>(duong: string, noiDung: unknown, luocDo: z.ZodType<T>): T | null => {
     const kq = luocDo.safeParse(noiDung)
@@ -42,6 +50,22 @@ export function napDuLieu(tep: Record<string, unknown>): DuLieu {
     } else if (duong === 'thien_phu.json') {
       const ds = doc(duong, noiDung, LuocDoThienPhu.array())
       if (ds) dl.thien_phu = theoMa(duong, ds, loi)
+    } else if (duong.startsWith('vo_hoc/')) {
+      const ds = doc(duong, noiDung, LuocDoVoHoc.array())
+      if (ds) {
+        if (!dl.vo_hoc) dl.vo_hoc = {}
+        for (const vh of ds) {
+          if (vh.ma in dl.vo_hoc) loi.push(`${duong}: ma "${vh.ma}" bị trùng`)
+          dl.vo_hoc[vh.ma] = vh
+        }
+      }
+    } else if (duong.startsWith('mon_phai/')) {
+      const mp = doc(duong, noiDung, LuocDoMonPhai)
+      if (mp) {
+        if (!dl.mon_phai) dl.mon_phai = {}
+        if (mp.ma in dl.mon_phai) loi.push(`${duong}: ma "${mp.ma}" bị trùng`)
+        dl.mon_phai[mp.ma] = mp
+      }
     } else if (
       duong.startsWith('su_kien/') ||
       (typeof noiDung === 'object' && noiDung !== null && 'lua_chon' in noiDung)

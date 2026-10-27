@@ -26,6 +26,92 @@ describe('ví dụ HS08', () => {
     expect(dl.chi_so['can_cot']?.tran_cung).toBe(150)
   })
 
+  it('II.3 vo_hoc qua lược đồ', () => {
+    const dl = napDuLieu({ 'vo_hoc/vi_du.json': khoiJson('### II.3.') })
+    expect(dl.vo_hoc?.['thieu_lam_tam_phap']?.tru_cot).toBe('noi_cong')
+    expect(dl.vo_hoc?.['thieu_lam_tam_phap']?.he_noi_luc).toBe('duong')
+  })
+
+  it('II.4 mon_phai qua lược đồ', () => {
+    const dsChiSo = [
+      ...(khoiJson('### II.2.') as object[]),
+      {
+        ma: 'ngo_tinh',
+        ten: 'Ngộ Tính',
+        nhom: 'thien_phu',
+        min: 0,
+        max: 100,
+        tran_cung: 150,
+        hien_thi: 'hien',
+        nguon: 'HS01 II.8',
+      },
+      {
+        ma: 'hiep_nghia',
+        ten: 'Hiệp Nghĩa',
+        nhom: 'xa_hoi',
+        min: -1000,
+        max: 1000,
+        tran_cung: null,
+        hien_thi: 'hien',
+        nguon: 'HS01 II.8',
+      },
+    ]
+    const dl = napDuLieu({
+      'vung.json': khoiJson('### II.1.'),
+      'chi_so.json': dsChiSo,
+      'vo_hoc/vi_du.json': [
+        {
+          ma: 'hoa_son_kiem_phap',
+          ten: 'Hoa Sơn Kiếm Pháp',
+          nguon: 'HS02 I.4',
+          nguon_ten: 'nguyen_tac',
+          tru_cot: 'ngoai_cong',
+          tier: 1,
+          loai_binh_khi: 'kiem',
+        },
+        {
+          ma: 'hoa_son_tam_phap',
+          ten: 'Hoa Sơn Tâm Pháp',
+          nguon: 'G15',
+          nguon_ten: 'phong_tac',
+          tru_cot: 'noi_cong',
+          tier: 1,
+          he_noi_luc: 'duong',
+        },
+        {
+          ma: 'hoa_son_than_phap',
+          ten: 'Hoa Sơn Thân Pháp',
+          nguon: 'G15',
+          nguon_ten: 'phong_tac',
+          tru_cot: 'khinh_cong',
+          tier: 1,
+          tran_cap: 4,
+        },
+        {
+          ma: 'hon_nguyen_chuong',
+          ten: 'Hỗn Nguyên Chưởng',
+          nguon: 'HS02 I.4',
+          nguon_ten: 'nguyen_tac',
+          tru_cot: 'ngoai_cong',
+          tier: 2,
+          loai_binh_khi: 'quyen_chuong',
+        },
+        {
+          ma: 'tu_ha_than_cong',
+          ten: 'Tử Hà Thần Công',
+          nguon: 'HS02 I.4',
+          nguon_ten: 'nguyen_tac',
+          tru_cot: 'noi_cong',
+          tier: 3,
+          he_noi_luc: 'duong',
+        },
+      ],
+      'mon_phai/hoa_son.json': khoiJson('### II.4.'),
+    })
+    expect(dl.mon_phai?.['hoa_son']?.phe).toBe('chinh')
+    expect(dl.mon_phai?.['hoa_son']?.quy_mo).toBe('vua')
+  })
+
   it('không có dấu gạch dài', () => {
     expect(hs08).not.toContain('—')
   })

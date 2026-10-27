@@ -1,0 +1,32 @@
+{
+  "ma": "hoa_son",
+  "ten": "Hoa Sơn Phái",
+  "nguon": "HS02 I.4",
+  "nguon_ten": "nguyen_tac",
+  "phe": "chinh",
+  "vung": "trung_nguyen",
+  "quy_mo": "vua",
+  "dieu_kien_gia_nhap": {
+    "va": [
+      { "so": "ngo_tinh", "op": ">=", "gt": 40 },
+      { "so": "hiep_nghia", "op": ">=", "gt": 0 }
+    ]
+  },
+  "vo_hoc_theo_bac": {
+    "1": ["hoa_son_kiem_phap", "hoa_son_tam_phap", "hoa_son_than_phap"],
+    "2": ["hon_nguyen_chuong"],
+    "3": ["tu_ha_than_cong"],
+    "4": ["tu_ha_than_cong"],
+    "5": ["tu_ha_than_cong"]
+  },
+  "cap_su_phu_theo_bac": {
+    "1": 6,
+    "2": 8,
+    "3": 10,
+    "4": 10,
+    "5": 10
+  },
+  "khao_nghiem": "khao_nghiem_hoa_son",
+  "dac_quyen": ["tang_kinh_cac"],
+  "mo_ta": "Môn phái danh tiếng trong Ngũ Nhạc Kiếm Phái, chia rẽ giữa Kiếm Tông và Khí Tông."
+}

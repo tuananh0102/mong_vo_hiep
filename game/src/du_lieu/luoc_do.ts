@@ -258,9 +258,51 @@ export const LuocDoSuKien = z.object({
 })
 export type SuKien = z.infer<typeof LuocDoSuKien>
 
+// --- 01 mục 8: Võ học ---
+export const LuocDoVoHoc = z.object({
+  ma: z.string().min(1),
+  ten: z.string().min(1),
+  nguon: z.string().min(1),
+  nguon_ten: z.enum(['nguyen_tac', 'phong_tac']),
+  tru_cot: z.enum(['noi_cong', 'ngoai_cong', 'khinh_cong', 'tuyet_ky']),
+  tier: z.union([z.literal(1), z.literal(2), z.literal(3), z.literal(4)]),
+  he_noi_luc: z.enum(['duong', 'am', 'hoa']).nullable().default(null),
+  loai_binh_khi: z
+    .enum(['quyen_chuong', 'chi_trao', 'kiem', 'dao', 'bong', 'am_khi'])
+    .nullable()
+    .default(null),
+  uy_luc_lech: z.number().min(-0.1).max(0.1).default(0),
+  tran_cap: z.number().int().min(1).max(10).default(10),
+  dieu_kien_hoc: LuocDoDieuKien.nullable().optional(),
+  dac_biet: z.array(z.string()).default([]),
+  mon_phai: z.string().nullable().default(null),
+  mo_ta: z.string().default(''),
+})
+export type VoHoc = z.infer<typeof LuocDoVoHoc>
+
+// --- 01 mục 8: Môn phái ---
+export const LuocDoMonPhai = z.object({
+  ma: z.string().min(1),
+  ten: z.string().min(1),
+  nguon: z.string().min(1),
+  nguon_ten: z.enum(['nguyen_tac', 'phong_tac']),
+  phe: z.enum(['chinh', 'ta', 'trung_lap']),
+  vung: z.string().min(1),
+  quy_mo: z.enum(['nho', 'vua', 'lon']),
+  dieu_kien_gia_nhap: LuocDoDieuKien,
+  vo_hoc_theo_bac: z.record(z.string(), z.array(z.string())),
+  cap_su_phu_theo_bac: z.record(z.string(), z.number().int()),
+  khao_nghiem: z.string().nullable().default(null),
+  dac_quyen: z.array(z.string()).default([]),
+  mo_ta: z.string().default(''),
+})
+export type MonPhai = z.infer<typeof LuocDoMonPhai>
+
 export interface DuLieu {
   vung: Record<string, Vung>
   chi_so: Record<string, DinhNghiaChiSo>
   thien_phu: Record<string, ThienPhuDuLieu>
+  vo_hoc?: Record<string, VoHoc>
+  mon_phai?: Record<string, MonPhai>
   su_kien?: Record<string, SuKien>
 }

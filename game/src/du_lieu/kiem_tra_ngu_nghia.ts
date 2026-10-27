@@ -1,6 +1,6 @@
 // 01 mục 7.4: kiểm tra ngữ nghĩa bắt buộc cho toàn bộ dữ liệu game.
 import { bienTrongMau } from '../luat/van_ban'
-import type { DieuKien, DuLieu, HieuUng, LuaChon, SuKien } from './luoc_do'
+import type { DieuKien, DuLieu, HieuUng, LuaChon, MonPhai, SuKien, VoHoc } from './luoc_do'
 
 const EM_DASH = /—/
 const CHU_HAN = /[\u4E00-\u9FFF]/
@@ -58,6 +58,10 @@ function kiemTraDieuKien(dk: DieuKien, duong: string, dl: DuLieu, loi: string[])
     if (dl.thien_phu && Object.keys(dl.thien_phu).length > 0 && !dl.thien_phu[dk.thien_phu]) {
       loi.push(`${duong}: điều kiện thiên phú tham chiếu "${dk.thien_phu}" không tồn tại`)
     }
+  } else if ('vo_hoc' in dk) {
+    if (dl.vo_hoc && Object.keys(dl.vo_hoc).length > 0 && !dl.vo_hoc[dk.vo_hoc]) {
+      loi.push(`${duong}: điều kiện võ học tham chiếu "${dk.vo_hoc}" không tồn tại`)
+    }
   } else if ('va' in dk) {
     dk.va.forEach((c, i) => kiemTraDieuKien(c, `${duong}.va[${i}]`, dl, loi))
   } else if ('hoac' in dk) {
@@ -67,7 +71,19 @@ function kiemTraDieuKien(dk: DieuKien, duong: string, dl: DuLieu, loi: string[])
   }
 }
 
-function kiemTraHieuUng(hu: HieuUng, duong: string, _dl: DuLieu, sk: SuKien, loi: string[]): void {
+function kiemTraHieuUng(hu: HieuUng, duong: string, dl: DuLieu, sk: SuKien, loi: string[]): void {
+  // Kiểm tra tham chiếu võ học và môn phái
+  if ('hoc_vo_hoc' in hu) {
+    if (dl.vo_hoc && Object.keys(dl.vo_hoc).length > 0 && !dl.vo_hoc[hu.hoc_vo_hoc]) {
+      loi.push(`${duong}: hiệu ứng hoc_vo_hoc tham chiếu võ học không tồn tại "${hu.hoc_vo_hoc}"`)
+    }
+  }
+  if ('gia_nhap_mon_phai' in hu) {
+    if (dl.mon_phai && Object.keys(dl.mon_phai).length > 0 && !dl.mon_phai[hu.gia_nhap_mon_phai]) {
+      loi.push(`${duong}: hiệu ứng gia_nhap_mon_phai tham chiếu môn phái không tồn tại "${hu.gia_nhap_mon_phai}"`)
+    }
+  }
+
   // Luật 3: Hiệu ứng cột mốc sau chưa hỗ trợ
   if ('hao_cam' in hu) {
     loi.push(`${duong}: hiệu ứng hao_cam chưa được hỗ trợ trước cột mốc M2 (01 mục 7.3)`)
@@ -210,6 +226,95 @@ function kiemTraSuKien(sk: SuKien, duong: string, dl: DuLieu, loi: string[]): vo
   }
 }
 
+function kiemTraVoHoc(vh: VoHoc, duong: string, dl: DuLieu, loi: string[]): void {
+  if (!vh.nguon || vh.nguon.trim() === '') {
+    loi.push(`${duong}: thiếu nguon (01 mục 7.4 #12)`)
+  }
+
+  if (vh.tru_cot === 'noi_cong') {
+    if (!vh.he_noi_luc) {
+      loi.push(`${duong}: võ học nội công "${vh.ma}" bắt buộc phải có he_noi_luc (HS02 II.2, G16)`)
+    }
+  } else if (vh.he_noi_luc !== null) {
+    loi.push(`${duong}: võ học không phải nội công "${vh.ma}" không được có he_noi_luc (HS02 II.2)`)
+  }
+
+  if (vh.tru_cot === 'ngoai_cong' && !vh.loai_binh_khi) {
+    loi.push(`${duong}: võ học ngoại công "${vh.ma}" bắt buộc phải có loai_binh_khi (HS02 II.1)`)
+  }
+
+  if (vh.tru_cot === 'khinh_cong') {
+    const tranToiDa = vh.tier === 1 ? 4 : vh.tier === 2 ? 6 : vh.tier === 3 ? 8 : 10
+    if (vh.tran_cap > tranToiDa) {
+      loi.push(
+        `${duong}: khinh công tier ${vh.tier} "${vh.ma}" có tran_cap = ${vh.tran_cap} vượt quá trần quy định ${tranToiDa} (HS02 II.1)`,
+      )
+    }
+  }
+
+  if (vh.uy_luc_lech < -0.1 || vh.uy_luc_lech > 0.1) {
+    loi.push(`${duong}: uy_luc_lech của "${vh.ma}" phải nằm trong [-0.1, 0.1] (HS06 I.4)`)
+  }
+
+  if (vh.mon_phai !== null && dl.mon_phai && Object.keys(dl.mon_phai).length > 0) {
+    if (!dl.mon_phai[vh.mon_phai]) {
+      loi.push(`${duong}: võ học "${vh.ma}" tham chiếu môn phái không tồn tại "${vh.mon_phai}"`)
+    }
+  }
+
+  if (vh.dieu_kien_hoc) {
+    kiemTraDieuKien(vh.dieu_kien_hoc, `${duong}.dieu_kien_hoc`, dl, loi)
+  }
+}
+
+function kiemTraMonPhai(mp: MonPhai, duong: string, dl: DuLieu, loi: string[]): void {
+  if (!mp.nguon || mp.nguon.trim() === '') {
+    loi.push(`${duong}: thiếu nguon (01 mục 7.4 #12)`)
+  }
+
+  if (dl.vung && Object.keys(dl.vung).length > 0 && !dl.vung[mp.vung]) {
+    loi.push(`${duong}: môn phái "${mp.ma}" tham chiếu vùng không tồn tại "${mp.vung}"`)
+  }
+
+  kiemTraDieuKien(mp.dieu_kien_gia_nhap, `${duong}.dieu_kien_gia_nhap`, dl, loi)
+
+  // Kiểm tra võ học theo bậc
+  if (!mp.vo_hoc_theo_bac['1']) {
+    loi.push(`${duong}: môn phái "${mp.ma}" thiếu võ học bậc 1`)
+  }
+
+  for (const [bacStr, dsVh] of Object.entries(mp.vo_hoc_theo_bac)) {
+    for (const maVh of dsVh) {
+      if (dl.vo_hoc && Object.keys(dl.vo_hoc).length > 0 && !dl.vo_hoc[maVh]) {
+        loi.push(`${duong}.vo_hoc_theo_bac[${bacStr}]: tham chiếu võ học không tồn tại "${maVh}"`)
+      }
+    }
+  }
+
+  // G15: bậc 1 có ít nhất 1 nội công và 1 khinh công
+  if (dl.vo_hoc && Object.keys(dl.vo_hoc).length > 0 && mp.vo_hoc_theo_bac['1']) {
+    const dsB1 = mp.vo_hoc_theo_bac['1']
+    const coNoiCong = dsB1.some(m => dl.vo_hoc?.[m]?.tru_cot === 'noi_cong')
+    const coKhinhCong = dsB1.some(m => dl.vo_hoc?.[m]?.tru_cot === 'khinh_cong')
+    if (!coNoiCong) {
+      loi.push(`${duong}: môn phái "${mp.ma}" bậc 1 thiếu Nội công Nhập môn (G15)`)
+    }
+    if (!coKhinhCong) {
+      loi.push(`${duong}: môn phái "${mp.ma}" bậc 1 thiếu Khinh công (G15)`)
+    }
+  }
+
+  // G17: cấp sư phụ theo bậc
+  const capChuan: Record<string, number> = { '1': 6, '2': 8, '3': 10, '4': 10, '5': 10 }
+  for (const [bacStr, cap] of Object.entries(capChuan)) {
+    if (mp.cap_su_phu_theo_bac[bacStr] !== undefined && mp.cap_su_phu_theo_bac[bacStr] !== cap) {
+      loi.push(
+        `${duong}: cap_su_phu_theo_bac bậc ${bacStr} của "${mp.ma}" phải bằng ${cap} (G17)`,
+      )
+    }
+  }
+}
+
 export function kiemTraNguNghia(dl: DuLieu): string[] {
   const loi: string[] = []
 
@@ -218,6 +323,20 @@ export function kiemTraNguNghia(dl: DuLieu): string[] {
     if (EM_DASH.test(s)) loi.push(`${duong}: chứa dấu gạch dài (01 mục 7.4 #9)`)
     if (CHU_HAN.test(s)) loi.push(`${duong}: chứa chữ Hán (01 mục 7.4 #9)`)
   })
+
+  // Kiểm tra võ học
+  if (dl.vo_hoc) {
+    for (const [ma, vh] of Object.entries(dl.vo_hoc)) {
+      kiemTraVoHoc(vh, `vo_hoc[${ma}]`, dl, loi)
+    }
+  }
+
+  // Kiểm tra môn phái
+  if (dl.mon_phai) {
+    for (const [ma, mp] of Object.entries(dl.mon_phai)) {
+      kiemTraMonPhai(mp, `mon_phai[${ma}]`, dl, loi)
+    }
+  }
 
   // Kiểm tra tất cả các sự kiện đã nạp
   if (dl.su_kien) {
