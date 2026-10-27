@@ -28,6 +28,8 @@ Thiết kế game nằm ở `ho_so_01` đến `ho_so_07`, mô phỏng cân bằn
 13. Logic có nhánh hoặc công thức phải để lại một kiểm tra chạy được (kiểu `kiem_tra()` trong `mo_phong.py` hay `kiem_tra_tuong_phan.py`). Không thêm framework test khi chưa cần.
 14. Sửa lỗi: tái hiện lỗi như người chơi gặp trước, rồi mới sửa tận gốc.
 15. Làm đúng phạm vi được giao. Thấy lệch ở chỗ khác thì ghi vào `REVIEW.md`, không sửa lan.
+- Mã game ở `game/` theo `ke_hoach/01_KIEN_TRUC.md`; kế hoạch và tiến độ ở `ke_hoach/`.
+- Ngoại lệ quy tắc 13: `game/` dùng Vitest (game TypeScript nhiều module cần test runner).
 
 ### Giao diện
 
@@ -63,6 +65,7 @@ Luôn lấy mục lục trước, rồi chỉ đọc đúng mục.
 | `giao_dien/HE_THONG_THIET_KE.md` | 18 KB | Đọc mục 6.2, 7, 11 trước; mục khác khi cần. |
 | `giao_dien/thanh_phan.css` | 21 KB | `grep -n "============" ` lấy danh sách khối, đọc đúng khối. |
 | `giao_dien/mau.html` | 30 KB | `grep -n "<h3>\|<figcaption>"` tìm mẫu cần copy, đọc vùng quanh đó. |
+| `ke_hoach/*.md` | - | Đọc README trước, rồi đúng task. |
 
 ### Thói quen
 

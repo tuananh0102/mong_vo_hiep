@@ -12,7 +12,7 @@ Trước khi làm: đọc [README.md](README.md) mục 3 - 5 và [01_KIEN_TRUC.m
 
 ## PHẦN M0 - NỀN MÓNG
 
-### [ ] M0-01 Khởi tạo dự án `game/`
+### [x] M0-01 Khởi tạo dự án `game/`
 
 **Phụ thuộc:** không.
 **Đọc:** 01 mục 1, 2, 9; `AGENTS.md`.

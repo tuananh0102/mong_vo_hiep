@@ -1,1 +1,4 @@
 __pycache__/
+game/node_modules/
+game/dist/
+game/coverage/

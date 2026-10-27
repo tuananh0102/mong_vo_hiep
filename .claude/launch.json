@@ -4,8 +4,25 @@
     {
       "name": "mau-giao-dien",
       "runtimeExecutable": "python",
-      "runtimeArgs": ["-m", "http.server", "8765", "--directory", "giao_dien"],
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "8765",
+        "--directory",
+        "giao_dien"
+      ],
       "port": 8765
+    },
+    {
+      "name": "game",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev",
+        "--prefix",
+        "game"
+      ],
+      "port": 5173
     }
   ]
 }
