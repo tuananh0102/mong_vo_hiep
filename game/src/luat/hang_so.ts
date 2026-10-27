@@ -165,3 +165,51 @@ export const SAI_PHAI: Record<number, { thu_lao: [number, number]; nguong: numbe
 
 // HS02 I (G19): Giá Tàng Kinh Các (Cống hiến) theo tier võ học
 export const GIA_TANG_KINH_CAC: Record<number, number> = { 1: 50, 2: 150, 3: 400 }
+
+// HS06 II.3: Nợ
+export const LAI_NO = 0.2
+export const KHAU_TRU_NO = 0.5
+export const NO_QUA_HAN_DOI_NO = 3
+export const NO_QUA_HAN_BAO_QUAN = 5
+export const DOI_NO_NGUONG = 40
+export const DOI_NO_HP = 0.3
+export const DOI_NO_THANH_DANH = 30
+export const BAO_QUAN_THANH_DANH = 100
+
+// HS06 II.2: Sinh hoạt phí hằng năm theo Danh vọng hiển thị (tăng dần theo mốc), trần khi còn ở môn phái
+export const TUOI_SINH_HOAT_PHI = 16
+export const SINH_HOAT_PHI: ReadonlyArray<{ danh_vong: number; phi: number }> = [
+  { danh_vong: 700, phi: 300 },
+  { danh_vong: 400, phi: 150 },
+  { danh_vong: 100, phi: 50 },
+  { danh_vong: 0, phi: 10 },
+]
+export const SINH_HOAT_PHI_TRAN_MON_PHAI = 50
+export const GIA_PHONG_TRO = 20
+
+// HS06 II.4: Thu nhập gia đình tự động đến hết 15 tuổi
+export const TUOI_THU_NHAP_GIA_DINH_MAX = 15
+
+// HS06 II.1: Áp Tiêu
+export const AP_TIEU = { thu_lao: [100, 300], p_cuop: 0.35, nguong: 50, danh_vong: 20, den_gap: 2 } as const
+
+// HS06 II.1: Săn Tiền Thưởng - hạng mục tiêu, tiền thưởng (lạng), hệ số Căn cốt / Ngộ tính so với người chơi
+export const TUOI_SAN_TIEN_THUONG = 16
+export const TIER_SAN_TIEN_THUONG = 2 // "Võ công Thượng thừa trở lên"
+export const TRUY_NA_HIEP_NGHIA = 40
+export const TRUY_NA: Record<string, { suc: number; cap_them: number; thuong: [number, number] }> = {
+  yeu: { suc: 0.8, cap_them: 0, thuong: [150, 400] },
+  ngang: { suc: 1, cap_them: 0, thuong: [250, 800] },
+  manh: { suc: 1, cap_them: 1, thuong: [600, 1500] }, // "cao hơn 1 cấp võ học"
+}
+
+// HS06 III: Kháng Thuốc - hiệu quả đan dược tăng vĩnh viễn ở lần dùng thứ 1, 2, 3+
+export const KHANG_THUOC: readonly number[] = [1, 0.5, 0]
+// HS06 I.1 "Chữa kịp thời": thuốc trị nội thương là thuốc hồi HP giá từ 350 lạng (Bạch Vân Hùng Đảm Hoàn)
+export const GIA_THUOC_NOI_THUONG = 350
+
+/** Tên chủ nợ hiển thị trong Biên Niên Sử. */
+export const TEN_CHU_NO: Record<string, string> = {
+  chu_tro: 'chủ quán trọ',
+  tieu_cuc: 'tiêu cục',
+}

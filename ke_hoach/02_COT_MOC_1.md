@@ -552,7 +552,7 @@ Task lớn, làm theo 4 phần, mỗi phần một commit.
 
 ---
 
-### [ ] M1-13 Kinh tế cơ bản và trị thương
+### [x] M1-13 Kinh tế cơ bản và trị thương
 
 **Phụ thuộc:** M1-09, M1-11, M1-12.
 **Đọc:** HS06 II.1 (làm thuê, tiểu thương, áp tiêu, săn tiền thưởng), II.2 (sinh hoạt phí, phòng trọ), II.3 (Nợ), II.4; HS06 III (thuốc trị thương); HS06 I.1 ("Chữa kịp thời").

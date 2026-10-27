@@ -16,6 +16,7 @@ import {
   TUOI_NGOAI_MON_TOI_DA,
 } from './hang_so'
 import type { DongBienNien, LichSuMonPhai, TrangThaiGame } from './kieu'
+import { thu } from './kinh_te'
 import type { Rng } from './rng'
 import { hocVoHoc } from './vo_hoc'
 
@@ -168,8 +169,8 @@ export function saiPhaiSuMon(
     return { dong_moi: [dong(d, 'Việc sư môn giao không trọn, đồng môn đưa bạn về tay trắng.')], loi: null }
   }
   const tien = rng.nguyen(cau.thu_lao[0], cau.thu_lao[1])
-  d.nhan_vat.ngan_luong += tien
-  return { dong_moi: [dong(d, `Hoàn thành việc sư môn giao, nhận ${tien} lạng thù lao.`)], loi: null }
+  const kq = thu(d, tien, 'Sai phái')
+  return { dong_moi: [dong(d, `Hoàn thành việc sư môn giao, nhận ${tien} lạng thù lao.`), ...kq.dong_moi], loi: null }
 }
 
 /** HS06 II.1: Trợ cấp đệ tử môn phái theo bậc (vòng năm bước 3). Chưởng môn hưởng Bổng lộc, không ở đây. */
@@ -181,8 +182,8 @@ export function troCapNam(d: TrangThaiGame): DongBienNien[] {
     delete d.nhan_vat.co_su_kien[CO_MAT_TRO_CAP]
     return [dong(d, 'Năm nay môn phái khốn đốn, bạn không nhận được trợ cấp.')]
   }
-  d.nhan_vat.ngan_luong += tro
-  return [dong(d, `Nhận ${tro} lạng trợ cấp của môn phái.`)]
+  const kq = thu(d, tro, 'Trợ cấp')
+  return [dong(d, `Nhận ${tro} lạng trợ cấp của môn phái.`), ...kq.dong_moi]
 }
 
 /**

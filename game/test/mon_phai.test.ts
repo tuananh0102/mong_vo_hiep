@@ -224,12 +224,12 @@ describe('Môn phái (M1-12)', () => {
     })
 
     it('Ngoại môn quá 18 tuổi bị mời xuống núi (sau khi nhận trợ cấp)', () => {
-      const d = vaoPhai('thieu_lam', 1, { tuoi: 18 })
+      const d = vaoPhai('thieu_lam', 1, { tuoi: 18, ngan_luong: 100 })
       quaNam(d, rngTuSeed(5), dl)
       expect(d.nhan_vat.tuoi).toBe(19)
       expect(d.nhan_vat.mon_phai).toBeNull()
       expect(d.nhan_vat.lich_su_mon_phai.at(-1)?.ma).toBe('thieu_lam')
-      expect(d.nhan_vat.ngan_luong).toBe(10)
+      expect(d.nhan_vat.ngan_luong).toBe(100) // +10 trợ cấp (bước 3), -10 sinh hoạt phí Vô danh (bước 4)
     })
 
     it('Ngoại môn 17 tuổi, Nội môn 18 tuổi và Tạp dịch 18 tuổi ở lại', () => {

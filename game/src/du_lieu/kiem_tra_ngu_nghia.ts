@@ -28,6 +28,7 @@ const MA_CHI_SO_DAC_BIET = new Set([
   'canh_gioi_noi_cong',
   'cap_khinh_cong',
   'bac_mon_phai',
+  'tier_vo_cao_nhat',
   'cong_hien',
   'danh_vong',
 ])

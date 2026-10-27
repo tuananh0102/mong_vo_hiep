@@ -73,6 +73,8 @@ export interface NguCanhTran {
   doi_thu: string
   hang: HangDoiThu
   bien: Record<string, string>
+  /** Trận Săn Tiền Thưởng (HS06 II.1): hạng mục tiêu `yeu` / `ngang` / `manh`; không gắn sự kiện thật. */
+  truy_na?: string
 }
 
 /** Bên a là người chơi, bên b là đối thủ. */

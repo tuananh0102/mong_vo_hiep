@@ -217,7 +217,7 @@
     "ap": 1,
     "mien_phi": false,
     "khong_tinh_gioi_han": false,
-    "dieu_kien": null,
+    "dieu_kien": { "so": "tier_vo_cao_nhat", "op": ">=", "gt": 2 },
     "xu_ly": "san_tien_thuong",
     "nhom_tab": "giang_ho",
     "hieu_ung": [],
@@ -302,10 +302,10 @@
     "mien_phi": false,
     "khong_tinh_gioi_han": false,
     "dieu_kien": null,
-    "xu_ly": "tri_thuong",
+    "xu_ly": "nghi_tro",
     "nhom_tab": "sinh_hoat",
     "hieu_ung": [],
-    "mo_ta": "Thuê phòng trọ thượng hạng hồi phục 100% HP/MP, hoặc nằm tĩnh dưỡng dưỡng thương."
+    "mo_ta": "Thuê phòng trọ thượng hạng (20 lạng) hồi phục 100% HP/MP."
   },
   {
     "ma": "be_quan",

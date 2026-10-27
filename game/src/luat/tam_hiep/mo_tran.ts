@@ -28,6 +28,7 @@ export function moTranTuSuKien(
   dl: DuLieu,
   ngu_canh: NguCanhTran,
   cheDo: CheDoTran,
+  doiThu: { suc?: number; cap_them?: number } = {},
 ): TranDau {
   const nv = d.nhan_vat
   const a = tuNhanVat(nv, dl)
@@ -38,7 +39,8 @@ export function moTranTuSuKien(
       canh_gioi: canhGioiNoiCong(nv),
       tuoi: nv.tuoi,
       tier: a.tier,
-      cap_vo: a.cap_vo,
+      cap_vo: Math.min(10, a.cap_vo + (doiThu.cap_them ?? 0)),
+      suc: doiThu.suc,
       he: HE[rng.nguyen(0, HE.length - 1)]!,
       khinh_cong: a.khinh_cong,
       than_binh: a.than_binh,

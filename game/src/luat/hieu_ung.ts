@@ -2,6 +2,7 @@
 import type { DuLieu, HieuUng } from '../du_lieu/luoc_do'
 import { congChiSo } from './chi_so'
 import type { DongBienNien, TrangThaiGame } from './kieu'
+import { chi, thu } from './kinh_te'
 import type { Rng } from './rng'
 import { datBac, datMonPhai, roiPhai } from './mon_phai'
 import { hocVoHoc } from './vo_hoc'
@@ -12,21 +13,17 @@ function apCong(hu: { cong: Record<string, number>; no_neu_thieu?: string }, d: 
       throw new Error(`cong không được dùng trên ${ma}; phải dùng khóa riêng (HS01 II.2)`)
     }
 
-    if (ma === 'ngan_luong' && delta < 0) {
-      const tienCon = d.nhan_vat.ngan_luong + delta
-      if (tienCon < 0) {
-        if (hu.no_neu_thieu) {
-          const thieu = Math.abs(tienCon)
-          const chuNo = hu.no_neu_thieu
-          const kn = d.nhan_vat.no[chuNo]
-          d.nhan_vat.no[chuNo] = {
-            goc: (kn?.goc ?? 0) + thieu,
-            nam_vay: d.nhan_vat.tuoi,
-          }
-          d.nhan_vat.ngan_luong = 0
-          continue
-        }
+    if (ma === 'ngan_luong') {
+      if (delta > 0) {
+        thu(d, delta, 'Thu nhập') // HS06 II.3: mọi khoản thu đi qua `thu`
+        continue
+      }
+      if (d.nhan_vat.ngan_luong + delta < 0 && !hu.no_neu_thieu) {
         throw new Error('không đủ ngân lượng và không có no_neu_thieu (dữ liệu sai: lựa chọn phải có Cổng tiền)')
+      }
+      if (hu.no_neu_thieu) {
+        chi(d, -delta, hu.no_neu_thieu)
+        continue
       }
     }
 

@@ -8,9 +8,12 @@ import {
   TUYET_CANH_NGUONG_ROLL,
   TUYET_CANH_PHUC_DUYEN_CAO,
   TUYET_CANH_PHUC_DUYEN_THAP,
+  TRUY_NA,
+  TRUY_NA_HIEP_NGHIA,
   TUYET_CANH_SONG_TRAN,
 } from '../hang_so'
 import { pRoll } from '../kiem_dinh'
+import { thu } from '../kinh_te'
 import type { BuocTamHiep, DongBienNien, TrangThaiGame } from '../kieu'
 import type { Rng } from '../rng'
 import { apKetQua, hoanTatSuKien } from '../su_kien'
@@ -195,8 +198,22 @@ export function ketThucTran(
     return dong
   }
 
-  // Áp nhánh của sự kiện đã mở trận (hòa không phải thắng)
+  // Săn Tiền Thưởng (HS06 II.1): thắng thì nhận thưởng theo hạng và Hiệp nghĩa +40
   d.cho = null
+  if (nc?.truy_na) {
+    const h = TRUY_NA[nc.truy_na]
+    if (h && ketCuc === 'thang') {
+      const tien = rng.nguyen(h.thuong[0], h.thuong[1])
+      const kqThu = thu(d, tien, 'Tiền thưởng')
+      congChiSo(dl, nv, 'hiep_nghia', TRUY_NA_HIEP_NGHIA)
+      congChiSo(dl, nv, 'thanh_danh', TRUY_NA_HIEP_NGHIA)
+      ghi(`Lục Phiến Môn trao ${tien} lạng tiền thưởng (Hiệp nghĩa +${TRUY_NA_HIEP_NGHIA}).`)
+      dong.push(...kqThu.dong_moi)
+    }
+    return dong
+  }
+
+  // Áp nhánh của sự kiện đã mở trận (hòa không phải thắng)
   if (nc) {
     const sk = dl.su_kien?.[nc.su_kien]
     const lc = sk?.lua_chon.find((c) => c.ma === nc.lua_chon)

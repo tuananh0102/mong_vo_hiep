@@ -1,6 +1,7 @@
 // 01 mục 7.2: Đánh giá điều kiện (DieuKien) và mô tả điều kiện còn thiếu cho nút xám.
 import type { DieuKien, DuLieu } from '../du_lieu/luoc_do'
 import { docChiSo } from './chi_so'
+import { timMonNgoaiCongTotNhat } from './cong_thuc'
 import type { TrangThaiGame } from './kieu'
 
 function soSanh(a: number, op: '>=' | '<=' | '>' | '<' | '==' | '!=', b: number): boolean {
@@ -26,6 +27,8 @@ function layGiaTriSo(ma: string, d: TrangThaiGame, dl: DuLieu): number {
       return d.nhan_vat.mon_phai?.bac ?? 0
     case 'cong_hien':
       return d.nhan_vat.mon_phai?.cong_hien ?? 0
+    case 'tier_vo_cao_nhat':
+      return timMonNgoaiCongTotNhat(d.nhan_vat, dl).tier
     case 'cap_khinh_cong': {
       const maKhinh = d.nhan_vat.trang_bi.khinh_cong
       return maKhinh ? (d.nhan_vat.vo_hoc[maKhinh]?.cap ?? 0) : 0

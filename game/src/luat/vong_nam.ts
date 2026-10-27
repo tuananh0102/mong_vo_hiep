@@ -10,6 +10,7 @@ import {
 } from './cong_thuc'
 import { apHieuUng } from './hieu_ung'
 import { lanRoll, pRoll } from './kiem_dinh'
+import { chiSinhHoat, thuNhapGiaDinh, xuLyNo } from './kinh_te'
 import { moiXuongNui, troCapNam } from './mon_phai'
 import { chonSuKienNam } from './su_kien'
 import type { DongBienNien, TrangThaiGame } from './kieu'
@@ -59,15 +60,19 @@ const b2_duongThuong: HamBuoc = (d, rng) => {
   ]
 }
 
-// Bước 3: Thu nhập tự động: gia đình đến 15 tuổi (HS06 II.4), bổng lộc, lợi tức sản nghiệp đã quản lý (HS06 II.1, II.5) (M1-13);
+// Bước 3: Thu nhập tự động: gia đình đến 15 tuổi (HS06 II.4) đã có (M1-13); bổng lộc, lợi tức sản nghiệp đã quản lý (HS06 II.1, II.5) (M2);
 // trợ cấp môn phái và mời Ngoại môn quá tuổi xuống núi (HS06 II.1, HS04 I.1) đã có (M1-12).
-const b3_thuNhapTuDong: HamBuoc = (d, _rng, dl) => [...troCapNam(d), ...moiXuongNui(d, dl)]
+const b3_thuNhapTuDong: HamBuoc = (d, _rng, dl) => [
+  ...thuNhapGiaDinh(d, dl),
+  ...troCapNam(d),
+  ...moiXuongNui(d, dl),
+]
 
-// Bước 4: Chi tự động: sinh hoạt phí từ 16 tuổi (HS06 II.2), Hộ viện, bảo trì môn phái. Thiếu thì ghi Nợ. (M1-16)
-const b4_chiTuDong: HamBuoc = () => []
+// Bước 4: Chi tự động: sinh hoạt phí từ 16 tuổi (HS06 II.2), Thiếu thì ghi Nợ (M1-13). Hộ viện, bảo trì môn phái (M2).
+const b4_chiTuDong: HamBuoc = (d) => chiSinhHoat(d)
 
-// Bước 5: Nợ: lãi 20%, tăng số năm quá hạn, hẹn sự kiện đòi nợ (HS06 II.3). (M1-16)
-const b5_laiNo: HamBuoc = () => []
+// Bước 5: Nợ: lãi 20%, tăng số năm quá hạn, đòi nợ, báo quan (HS06 II.3) (M1-13).
+const b5_laiNo: HamBuoc = (d, rng, dl) => xuLyNo(d, rng, dl)
 
 // Bước 6: Tẩu hỏa nhập ma, Ma công phản phệ (HS06 I.4). (M2-05)
 const b6_tauHoaNhapMa: HamBuoc = () => []
