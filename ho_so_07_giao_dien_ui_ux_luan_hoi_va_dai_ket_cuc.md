@@ -2,6 +2,8 @@
 **Tên dự án:** *Vạn Kiếp Giang Hồ* (Thể loại: Text-based Life Sim / Võ Hiệp Kim Dung)
 **Mục tiêu thiết kế:** Hoàn thiện mảnh ghép cuối cùng của bộ tài liệu thiết kế game (GDD): Bố cục màn hình giao diện tối ưu cho trải nghiệm đọc và ra quyết định nhanh trên Mobile/Web (phong cách *BitLife* kết hợp thủy mặc cổ phong), hệ thống Điểm Nghiệp Lực Luân Hồi (Meta-Progression) khi tuyệt tự và 18 Đại Kết Cục (Endings) ghi danh sử sách.
 
+**Phân loại độ tuổi** (chốt 2026-10-27, `ke_hoach/05_LO_HONG_GDD.md` G25): nhắm **17+** (Apple) / **Mature 17+** (IARC). Giữ bạo lực và các lựa chọn tàn nhẫn; cảnh thân mật (kỹ viện, phong lưu, tự cung) chỉ mô tả gián tiếp; với nhân vật dưới 16 tuổi, lựa chọn tàn nhẫn chỉ mô tả ở mức hệ quả, không tả chi tiết.
+
 ## PHẦN I: THIẾT KẾ GIAO DIỆN UI/UX TEXT-BASED (MÀN HÌNH DỌC MOBILE-FIRST)
 
 Giao diện của *Vạn Kiếp Giang Hồ* sử dụng tông màu **Giấy Tuyên Thành ngả vàng cổ điển (`#F4EFE6`)** kết hợp mực tàu đen (`#1C1B18`), đỏ chu sa (`#9E2A2B`) cho các cảnh báo sinh tử và xanh thanh ngọc (`#2A6F68`) cho các kỳ ngộ đạo gia. Toàn bộ trải nghiệm gói gọn trên **1 màn hình dọc không cần chuyển cảnh phức tạp**.
@@ -14,6 +16,8 @@ Giao diện của *Vạn Kiếp Giang Hồ* sử dụng tông màu **Giấy Tuy�
 | **2. Cuộn Giấy Biên Niên Sử (Central Scroll Log)** | Giữa màn hình ($65\%$ chiều cao) | Dòng thời gian văn bản tự động cuộn theo từng năm. Mỗi loại sự kiện có **màu chữ kèm biểu tượng đầu dòng** (bảng màu ở mục 1.1), để người mù màu vẫn phân biệt được: **Mực đen** (Sự kiện đời thường), **Đỏ chu sa** ⚔ (Giao chiến / Thù hận), **Tím huyền** ❀ (Tình duyên), **Vàng kim** ✦ (Kỳ ngộ SSS). | Vuốt lên/xuống để đọc lại lịch sử từ năm $0$ tuổi. Các tên NPC và Võ học trong câu văn đều có thể **chạm trực tiếp (Hyperlink/Tooltip)** để xem thông tin nhanh. |
 | **3. Khung Quyết Định Sự Kiện / Giao Chiến (Modal Card)** | Nổi đè lên giữa màn hình khi có Sự kiện hoặc Tam Hiệp | Hiển thị đoạn văn miêu tả tình huống kịch tính và $2 - 4$ nút lựa chọn. Mỗi nút ghi rõ gợi ý kiểm định theo ký hiệu chuẩn ở Hồ sơ 06 mục I.2 (Ví dụ: *"[Ngộ tính - Khá]"* cho Roll, nút xám *"Cần Ngân lượng 50"* cho Cổng chưa đạt). Nhãn tỷ lệ theo xác suất thành công thật: **Hiểm** $< 25\%$, **Khó** $25 - 49\%$, **Khá** $50 - 74\%$, **Dễ** $\ge 75\%$. | Chạm chọn phương án. Trong **Quyết Đấu Tam Hiệp**, hiển thị thêm thanh máu đối phương và bộ đếm Hiệp $1/2/3$. |
 | **4. Bàn Điều Khiển Hành Động & Nút "+1 Tuổi" (Bottom Dock)** | Dưới cùng ($20\%$ chiều cao, đủ cho 1 hàng ngọc AP, 5 Tab và nút "+1 Tuổi"; Cuộn Biên Niên Sử là nội dung chính của game đọc chữ nên được ưu tiên diện tích) | Hiển thị số **Điểm Hành Động (AP)** còn lại trong năm (dạng các viên ngọc âm dương sáng đèn), 5 Tab chức năng và nút lớn **"+1 TUỔI (Qua Năm)"** ở chính giữa. | Khi dùng hết AP, nút **"+1 Tuổi"** phát sáng hiệu ứng mực loang nhắc người chơi kết thúc năm. |
+
+**Danh hiệu hiện tại ở Thanh Trạng Thái** (chốt 2026-10-27, `ke_hoach/05_LO_HONG_GDD.md` G31), lấy cái đầu tiên đạt: danh hiệu Ngũ Tuyệt → *Võ Lâm Minh Chủ* → chức vị (Chưởng môn / Giáo chủ / Trưởng lão) → mức Thanh danh (*Chính Nhân Quân Tử* / *Đại Ma Đầu*) ghép mức Danh vọng (*Danh hiệp* $\ge 400$, *Đại hiệp* $\ge 700$) → *Vô danh tiểu tốt*.
 
 #### 1.1. Bảng màu chuẩn (nền Giấy Tuyên Thành `#F4EFE6`)
 
@@ -52,6 +56,7 @@ $$\text{Tổng Điểm Luân Hồi} = \lfloor\text{Tuổi Thọ} \times 2\rfloor
   * *Đoạn 2 (Thành tựu Võ học & Danh chấn):* "Năm 25 tuổi một kiếm bại quần hùng trên đỉnh Hoa Sơn, luyện thành Cửu Dương Thần Công và Độc Cô Cửu Kiếm..."
   * *Đoạn 3 (Tình duyên & Ân oán):* "Trọn đời si tình cùng một vị Yêu nữ Minh Giáo, kết nghĩa kim lan cùng 2 bậc hào kiệt, dưới lưỡi kiếm đã tiễn 14 tên đại ma đầu về nơi chín suối..."
   * *Đoạn 4 (Vẫn lạc & Di sản):* "Năm 78 tuổi tọa hóa trên đỉnh Quang Minh Đỉnh, truyền lại cơ nghiệp vạn kim cùng môn tuyệt học tự sáng tạo cho trưởng tử kế thừa."
+  * *Lịch năm* (chốt G20): năm thế giới lúc bắt đầu ván quay ngẫu nhiên trong $1100 - 1199$; năm Can Chi theo chu kỳ 60, năm chia 60 dư 4 là Giáp Tý.
 
 ## PHẦN III: CỬA HÀNG LUÂN HỒI (META-PROGRESSION KHI TUYỆT TỰ / CHƠI VÁN MỚI)
 
@@ -65,9 +70,16 @@ Nếu người chơi chọn **"Truyền Thừa Cho Đời Con"** (đã trình b�
 | **4. Chuyển Thế Trọng Tu (Giữ Lại 1 Thiên Phú Đỏ)** | $1,000$ điểm | Được khóa và mang theo $1$ Thiên phú hiếm từ kiếp trước (độ hiếm Đỏ, như *[Cửu Dương Tuyệt Mạch]* hoặc *[Tiên Thiên Võ Thể]*. Chỉ áp dụng cho Thiên phú, không áp dụng cho Trạng thái như *[Bách Độc Bất Xâm]*) sang kiếp mới. |
 | **5. Mở Khóa Kịch Bản Ẩn: "Thời Đại Hoàng Kim"** | $1,500$ điểm | Khởi tạo thế giới mới ở chế độ **Độ Khó Cao (Hardcore Mode)**: Toàn bộ 200 NPC trong thế giới đều có chỉ số tăng $+30\%$, xuất hiện đồng thời cả *Ngũ Tuyệt* đời đầu và các Boss thần thoại. |
 
+**Chi tiết các gói** (chốt 2026-10-27, `ke_hoach/05_LO_HONG_GDD.md` G33):
+* Gói 3 *Thiên Mệnh Chi Tử*: hệ thống đếm số Kỳ ngộ cấp S trở lên đã gặp; cuối năm 13 tuổi và 15 tuổi nếu chưa đủ số cần có, lượt chọn sự kiện kế tiếp ép quay 1 Kỳ ngộ cấp S đủ điều kiện.
+* Gói 5 *Thời Đại Hoàng Kim*: *Ngũ Tuyệt* đời đầu là 5 NPC có Thần công SSS cấp 10, Cảnh giới Nội công 10, Căn cốt 90, tuổi $45 - 55$, mỗi người trấn một vùng; 3 Boss thần thoại (*Độc Cô Cầu Bại*, *Tảo Địa Tăng*, *Thiên Sơn Đồng Mỗ*) có Chiến lực khoảng 500, không dự Hoa Sơn, chỉ gặp qua sự kiện. Mức $+30\%$ chỉ số áp lên mọi NPC, kể cả hai nhóm này.
+
 ## PHẦN IV: DANH MỤC 18 ĐẠI KẾT CỤC GHI DANH SỬ SÁCH (ENDINGS CATALOG)
 
 Mỗi kiếp người khi khép lại sẽ được hệ thống xét duyệt từ trên xuống dưới để trao tặng **1 Danh Hiệu Đại Kết Cục (Ending Title)** cao quý nhất dựa trên con đường mà người chơi đã đi qua:
+
+* **Danh hiệu phụ** (chốt 2026-10-27, `ke_hoach/05_LO_HONG_GDD.md` G24): mọi kết cục khác cũng đạt được ghi thành danh hiệu phụ dưới Văn bia và mở trong thư viện kết cục, **không** cộng Điểm Luân Hồi.
+* **Kết cục mặc định** (chốt G09): kiếp không đạt kết cục nào nhận **[Giang Hồ Khách Qua Đường]**, Điểm Danh Hiệu Kết Cục $= 0$.
 
 ### Nhóm 1: Đỉnh Phong Võ Học & Bá Chủ Thiên Hạ (Tier SSS - $+500$ Điểm Luân Hồi)
 
@@ -115,7 +127,7 @@ Mỗi kiếp người khi khép lại sẽ được hệ thống xét duyệt t�
 13. **[Trọn Đời Làm Tạp Dịch - Tảo Địa Thần Tăng Ẩn Mình]:**
     * *Điều kiện:* Gia nhập Thiếu Lâm / Võ Đang / Toàn Chân ở vị trí **Đệ tử Tạp dịch / Hỏa đầu tăng**, suốt 60 năm không thèm thi thăng cấp lên Nội môn mà chỉ quét chùa, đọc kinh và âm thầm luyện *Dịch Cân Kinh / Tiên Thiên Công* lên cấp $10/10$.
 14. **[Bình Phàm Tiểu Nhân Vật - An Nhiên Tự Tại]:**
-    * *Điều kiện:* Không học bất kỳ môn võ công nào quá cấp 3, cả đời chỉ làm chủ quán trọ, tiều phu hoặc tiêu sư nhỏ ở Giang Nam, cưới một người vợ hiền lành, sinh 3 đứa con và qua đời trên giường bệnh ở tuổi $70$ trở lên trong sự quây quần của con cháu.
+    * *Điều kiện:* Không học bất kỳ môn võ công nào quá cấp 3, cả đời chỉ làm chủ quán trọ, tiều phu hoặc tiêu sư nhỏ ở Giang Nam, cưới một người vợ hiền lành (hoặc lấy một người chồng hiền lành), sinh 3 đứa con và qua đời trên giường bệnh (chết tự nhiên) ở tuổi $70$ trở lên trong sự quây quần của con cháu.
 15. **[Hồng Nhan Bạc Mệnh / Anh Hùng Đoản Mệnh]:**
     * *Điều kiện:* Đã sở hữu thiên phú cao hoặc học được Thần công nhưng bị chết trẻ trước năm **25 tuổi** do bạo phát *[Cửu Dương Tuyệt Mạch]*, bị Cừu gia của cha mẹ truy sát, hoặc uống nhầm độc dược.
 16. **[Phản Đồ Vạn Thế Thóa Mạ (Thiên Cổ Tội Nhân)]:**
@@ -123,7 +135,7 @@ Mỗi kiếp người khi khép lại sẽ được hệ thống xét duyệt t�
 17. **[Khô Cốt Nơi Đáy Vực - Kỳ Ngộ Bất Thành]:**
     * *Điều kiện:* Phúc duyên $< 30$, cố tình chọn nhảy xuống vách núi tìm bí kíp khi bị truy sát nhưng không gặp cây thông hay hang động nào mà... rơi thẳng xuống đá vỡ sọ chết ngay lập tức!
 18. **[Chết Yểu Từ Trong Nôi - Kiếp Người Chưa Trọn]:**
-    * *Điều kiện:* Qua đời ở giai đoạn $1 - 10$ tuổi do đói rét, bệnh tật hoặc ăn nhầm cóc độc trong đầm lầy mà Căn cốt quá thấp. *(Hệ thống tặng bù $+50$ Điểm Luân Hồi an ủi để đầu thai lại ngay)*.
+    * *Điều kiện:* Qua đời ở giai đoạn $0 - 10$ tuổi do đói rét, bệnh tật hoặc ăn nhầm cóc độc trong đầm lầy mà Căn cốt quá thấp. *(Hệ thống tặng bù $+50$ Điểm Luân Hồi an ủi để đầu thai lại ngay)*.
 
 ## PHẦN V: TỔNG KẾT CẤU TRÚC DỰ ÁN "VẠN KIẾP GIANG HỒ" (MASTER INDEX)
 

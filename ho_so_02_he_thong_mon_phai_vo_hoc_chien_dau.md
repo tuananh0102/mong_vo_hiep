@@ -7,11 +7,18 @@
 > **Quy ước nguồn:** Tên võ công, vật phẩm mặc định theo **nguyên tác Kim Dung**.
 > Mục nào đổi chủ, đổi nơi, tự đặt tên hoặc mượn từ tác giả khác được đánh dấu **(phóng tác)** kèm ghi chú nguyên tác.
 > Khi nhập data, mọi võ công và vật phẩm có thêm trường `nguon` = `nguyen_tac` / `phong_tac` để đội nội dung không nhầm.
+> **Quyết định tên gọi (2026-10-27, chủ dự án):** game dùng **tên nguyên tác Kim Dung** cho nhân vật, võ công, vật phẩm, môn phái. Dữ liệu vẫn giữ trường `nguon` và bảng ánh xạ tên hiển thị (`du_lieu/ten_hien_thi.json`, mặc định rỗng) để đổi được bằng dữ liệu nếu sau này cần.
 
 ## PHẦN I: HỆ THỐNG MÔN PHÁI ĐA TẦNG (TỪ ĐẠI PHÁI ĐẾN GIANG HỒ THẢO MỘC)
 
 Người chơi có thể gia nhập môn phái từ năm **7 tuổi đến 16 tuổi** (bái sư chính thức), hoặc **phản sư môn / học lén / kỳ ngộ** khi đã trưởng thành. Các môn phái chia làm 6 nhóm lớn.
 Lưu ý: điều kiện "Hiệp nghĩa" khi gia nhập môn phái là do sư môn phán xét, nên được xét theo **Thanh danh** (xem Hồ sơ 01, mục II.2).
+
+**Quy ước chung cho mọi môn phái** (chốt 2026-10-27, `ke_hoach/05_LO_HONG_GDD.md` G15 - G17, G19):
+* Mỗi môn phái có ít nhất 1 Nội công Nhập môn và 1 Khinh công Nhập môn. Phái nào mục dưới không ghi thì dùng môn phóng tác "*(Tên phái) Tâm Pháp*" và "*(Tên phái) Thân Pháp*" (trường `nguon` = `phong_tac`).
+* Hệ Nội lực của môn không được nêu ở Phần II.2 lấy theo phái: Thiếu Lâm, Cái Bang, Hoa Sơn, Huyết Đao Môn, Minh Giáo là Chí Dương; Võ Đang, Toàn Chân, Tiêu Dao là Trung Hòa; Nga Mi, Cổ Mộ, Nhật Nguyệt, Tinh Túc, Ngũ Độc là Chí Âm; phái còn lại là Trung Hòa.
+* Sư phụ truyền miễn phí khi lên bậc: Bậc 1 võ Nhập môn, Bậc 2 Thượng thừa, Bậc 3 trở lên Trấn phái. Cấp võ học của sư phụ (dùng trong công thức Tiến độ, Hồ sơ 06 I.1): Bậc 1 là $6$, Bậc 2 là $8$, Bậc 3 trở lên là $10$.
+* **Tàng Kinh Các môn phái** bán thêm các môn *khác* của phái, cùng tier hoặc thấp hơn bậc hiện tại: Nhập môn $50$, Thượng thừa $150$, Trấn phái $400$ Cống hiến. Tiêu Cống hiến làm chậm thăng cấp, đây là đánh đổi có chủ đích.
 
 ### 1. Ngũ Đại Danh Môn Chính Phái (Danh tiếng cao, quy củ nghiêm ngặt)
 
@@ -205,6 +212,7 @@ Mỗi nhân vật có các ô trang bị võ công (Skill Slots). Số ô của 
 
 > **Cơ chế "Xung Đột Nội Lực" & "Âm Dương Giao Thái":**
 > Nếu người chơi cùng lúc luyện 1 môn Chí Dương và 1 môn Chí Âm mà không có thiên phú hoặc kỳ ngộ điều hòa, mỗi năm sẽ có $30\%$ tỷ lệ **Tẩu Hỏa Nhập Ma** (Mất $50\%$ HP, Căn cốt $-5$, Điểm Ám Thương $+5$; nặng thì hóa điên làm loạn giang hồ). Ngược lại, nếu tìm được cách dung hợp (như Trương Vô Kỵ hoặc Dương Quá), nhân vật sẽ mở khóa trạng thái **Âm Dương Hỗ Tế** – sát thương và phòng thủ nhân đôi!
+> * *Cách mở khóa (chốt G23):* kỳ ngộ cấp S, chỉ xuất hiện khi đang có 1 Nội công Chí Dương và 1 Nội công Chí Âm cùng đạt cấp $\ge 5$. Sau khi có trạng thái này, tỷ lệ Tẩu Hỏa do song tu bằng $0$. Mức "nhân đôi" phải chạy mô phỏng (`mo_phong/`) trước khi bật trong game; nếu Chiến lực vượt khung Thập Đại Cao Thủ thì mở vòng cân bằng mới.
 
 > **Cơ chế "Ma Công" (đặc quyền của Tà phái):**
 > Võ công Trấn phái của Tà phái là **Ma công**: *Hấp Tinh Đại Pháp* (Nhật Nguyệt), *Hóa Công Đại Pháp* (Tinh Túc), *Huyết Hải Ma Công* (Huyết Đao Môn), *Vạn Cổ Phệ Tâm Quyết* (Ngũ Độc Giáo).
@@ -247,6 +255,7 @@ Mỗi nhân vật có các ô trang bị võ công (Skill Slots). Số ô của 
    * *Triết lý:* "Trọng kiếm vô phong, đại xảo bất công" – Không có chiêu thức hoa mỹ, mỗi nhát chém dùng sức nặng ngàn cân đè bẹp mọi kỹ xảo.
 10. **Long Tượng Bàn Nhược Công (Mật Tông Tây Tạng):**
     * *Cơ chế:* Chia làm 13 tầng. Mỗi tầng tăng sức mạnh cơ bắp tương đương 1 con rồng và 1 con voi cổ đại. Tuy nhiên, càng lên tầng cao thời gian luyện càng nhân đôi (tầng 10 mất 30 năm). Chỉ có người chơi có tuổi thọ cực cao hoặc kỳ ngộ tăng tốc mới đạt tầng 10 (mỗi đấm nặng ngàn cân).
+    * *Quy về Cấp Võ học (chốt G23):* tầng $1 - 10$ là Cấp $1 - 10$; tầng $11 - 13$ chỉ là văn miêu tả, không có trong game. Tier factor khi luyện từ Cấp $k$ lên $k + 1$ là $5 \times 1.09^{k-1}$, nên Ngộ tính $60$ tự học cần khoảng $90$ AP (khoảng 30 năm) để lên tầng 10.
 
 ---
 

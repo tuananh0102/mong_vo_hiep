@@ -17,6 +17,14 @@ Trong mỗi ván chơi, hệ thống sẽ khởi tạo ngẫu nhiên **200 NPC c
   * **$+21$ đến $+60$ (Bằng Hữu Giang Hồ):** Có thể rủ đi uống rượu, luận bàn võ công, tặng quà.
   * **$+61$ đến $+100$ (Sinh Tử Chi Giao / Khắc Cốt Ghi Tâm):** Sẵn sàng chắn đao thay người chơi khi lâm nguy, tự nguyện truyền thụ tuyệt học hoặc gả đi theo người chơi.
 
+### 2. Số liệu tương tác (chốt 2026-10-27, `ke_hoach/05_LO_HONG_GDD.md` G11, G26)
+* **Hành vi hằng năm của NPC:** mỗi NPC là "một đời mô phỏng" chạy cùng luật với người chơi theo lối chơi của nó (Chính phái, Chính phái chuyên tu, Tà phái, Lãng khách, Thương nhân), như `mo_phong/BAO_CAO.md` mục 15. NPC chết được thay bằng NPC $12 - 16$ tuổi để luôn đủ 200.
+* **Trò chuyện** (miễn phí): `[Roll: Mị lực vs 50]`. Thành công: Hảo cảm $+6$. Thất bại: Hảo cảm $+1$ và NPC hiểu lầm một câu (ghi Biên Niên Sử).
+* **Tặng quà:** Hảo cảm $+\min(15, \lfloor \text{giá quà} / 20 \rfloor)$. Nguyên mẫu *Băng Thanh Ngọc Khiết* không nhận quà bằng tiền.
+* **Huyết Hải Thâm Thù tìm đến:** mỗi NPC ở mức này có $15\%$ mỗi năm tìm đến (Tam Hiệp sinh tử); toàn bộ cừu thù cộng lại tối đa 1 lần mỗi năm.
+* **Phản môn:** Hảo cảm của mọi đồng môn cũ $-30$.
+* **Thách đấu** một người trên Thiên Hạ Phong Vân Bảng: $1$ AP, Tam Hiệp tỷ thí.
+
 ---
 
 ## II. HỆ THỐNG HỒNG NHAN TRI KỶ & TÌNH DUYÊN KIM DUNG
@@ -33,6 +41,19 @@ Khác với các game thông thường chỉ cần "tặng quà là cưới đư
 | **4. Hiệp Nữ Lẫm Liệt / Chưởng Môn Chính Đạo** | Chu Chỉ Nhược, Quách Tương | Mang trên vai trọng trách sư môn, bề ngoài dịu dàng nhưng nội tâm giằng xé giữa Tình và Nghĩa. | Rất coi trọng điểm *Hiệp nghĩa ($+500$ trở lên)*. **Biến cố:** Sư phụ của nàng trước khi chết có thể ép nàng lập lời thề độc "Không được lấy người chơi", đẩy nàng vào con đường hắc hóa nếu người chơi phụ bạc. |
 | **5. Ôn Nhu Tri Kỷ (Thị Nữ / Y Nữ)** | Tiểu Chiêu, Song Nhi, Trình Linh Tố | Dịu dàng, hết lòng hy sinh, giỏi y thuật hoặc kỳ môn độn giáp, không bao giờ phản bội. | Dễ chinh phục nhất qua các sự kiện cứu mạng hoặc chuộc thân. Khi kết hôn sẽ giúp người chơi tăng mạnh tốc độ hồi phục nội thương và quản lý gia trang cực tốt. |
 | **6. Độc Phụ Tuyệt Tình (Sư Bá / Cao Thủ Hận Tình)** | Lý Mạc Sầu, Khang Mẫn, Mai Siêu Phong | Đẹp sắc sảo nhưng tâm lý bất ổn do từng bị phản bội trong quá khứ. | Cực kỳ nguy hiểm. Nếu người chơi có *Mị lực $\ge 85$* tán tỉnh thành công thì được truyền tà công cực mạnh, nhưng chỉ cần người chơi có thêm nhân tình khác, ả sẽ lập tức hạ độc hoặc giết sạch cả nhà người chơi. |
+
+**Nguyên mẫu Lang Quân cho người chơi Nữ** (chốt 2026-10-27, `ke_hoach/05_LO_HONG_GDD.md` G14). Mỗi Lang Quân dùng đúng điều kiện chinh phục và biến cố của Hồng Nhan cùng dòng, chỉ đổi giới tính và văn bản:
+
+| Hồng Nhan | Lang Quân tương ứng | Hình tượng Kim Dung | Khác biệt riêng |
+| :--- | :--- | :--- | :--- |
+| 1. Thanh Mai Trúc Mã | Tiểu Sư Huynh | Lệnh Hồ Xung thời ở Hoa Sơn | Bị một sư muội / tiểu thư khác cướp mất nếu người chơi Mị lực thấp hoặc bị trục xuất |
+| 2. Băng Thanh Ngọc Khiết | Ẩn Sĩ Thoát Tục | Hư Trúc | Như Hồng Nhan |
+| 3. Yêu Nữ Ma Giáo / Quận Chúa | Thiếu Chủ Ma Giáo / Vương Tử Ngoại Bang | Dương Khang | Bắt đầu từ Kẻ thù ($-50$) |
+| 4. Hiệp Nữ Chính Đạo | Thiếu Hiệp Chính Đạo | Quách Tĩnh, Trương Vô Kỵ | Coi trọng Hiệp nghĩa $\ge +500$ |
+| 5. Ôn Nhu Tri Kỷ | Thư Sinh Si Tình | Đoàn Dự | Hồi phục nội thương, quản lý gia trang |
+| 6. Độc Phụ Tuyệt Tình | Lãng Tử Hắc Hóa | Lâm Bình Chi | Mị lực $\ge 85$ để chinh phục; có nhân tình khác thì hạ độc |
+
+Kết cục #11 với người chơi Nữ tính theo Lang Quân tương ứng (nguyên mẫu 3 và 6).
 
 ---
 
@@ -57,7 +78,7 @@ Khác với các game thông thường chỉ cần "tặng quà là cưới đư
 ### 1. Kết Nghĩa Kim Lan (Mô-típ Kiều Phong – Hư Trúc – Đoàn Dự)
 * Người chơi có thể kết bái huynh đệ/tỷ muội với tối đa **2 NPC cùng chí hướng** `[Cổng: Hảo cảm ≥ 80]`.
 * **Lợi ích Gameplay:**
-  * **Truyền công & Hợp kích:** Mỗi năm có thể chọn hành động *"Uống rượu luận võ"* cùng huynh đệ để học ké 1 chiêu thức trong bộ võ công của họ.
+  * **Truyền công & Hợp kích:** Mỗi năm có thể chọn hành động *"Uống rượu luận võ"* cùng huynh đệ để học ké 1 chiêu thức trong bộ võ công của họ. *(Chốt G26: 1 AP, được 1 lần Tiến độ ở một môn của huynh đệ với Cấp Sư Phụ bằng cấp của huynh đệ ở môn đó; chưa có môn thì học ở Cấp 1.)*
   * **Cứu giá:** Khi người chơi gặp sự kiện bị kẻ thù vây sát dẫn đến tử vong ($HP$ về $0$), `[Ngẫu nhiên: 50%]` Huynh đệ kết nghĩa sẽ bất ngờ từ trên trời rơi xuống đỡ đòn chí mạng và đưa người chơi chạy thoát (người chơi còn $10\%$ HP, huynh đệ nhận Điểm Ám Thương $+5$). Đây là một **Hiệu ứng Cứu Mạng**, tuân theo giới hạn 1 lần/trận và thứ tự ưu tiên ở Hồ sơ 02, Phần V.4.
 * **Rủi ro Phản bội:** Nếu kết nghĩa nhầm với NPC có tính cách **[Ngụy Quân Tử]** hoặc **[Tham Lam]**, khi người chơi nhặt được Thần binh/Bí kíp cấp Thần, gã huynh đệ này có thể bỏ độc vào rượu để cướp đoạt!
 
@@ -67,7 +88,8 @@ Trong giang hồ, mỗi khi người chơi chọn kết liễu mạng sống c�
 * **Các hình thức trả thù theo năm:**
   * *Thuê Sát Thủ:* Nếu kẻ thù giàu có (Phú thương/Thế gia), chúng sẽ chi bạc thuê **Hắc Phong Lâu** ám sát bạn vào ban đêm.
   * *Đầu độc giếng nước / Bắt cóc người thân:* Nếu kẻ thù là Tà phái, chúng không đánh trực diện mà nhắm vào Thê tử hoặc Con cái đang ở nhà của bạn.
-  * *Quân tử báo thù 10 năm chưa muộn:* Con trai của kẻ bị bạn giết có thể lặng lẽ đi tìm kỳ ngộ, luyện thành tuyệt kỹ rồi đột ngột xuất hiện thách đấu sinh tử với bạn đúng vào năm bạn 50 tuổi!
+  * *Quân tử báo thù 10 năm chưa muộn:* Con trai của kẻ bị bạn giết có thể lặng lẽ đi tìm kỳ ngộ, luyện thành tuyệt kỹ rồi đột ngột xuất hiện thách đấu sinh tử với bạn đúng vào năm bạn 50 tuổi! *(Chốt G26: NPC con của kẻ bị giết có $P_{KyNgo} \times 2$ khi mô phỏng.)*
+  * *Truy sát sau ám sát bại lộ* (Hồ sơ 06 II.1, chốt G26): trong 3 năm, mỗi năm $50\%$ gặp sát thủ hoặc bộ khoái (Tam Hiệp sinh tử).
 
 ---
 
@@ -82,6 +104,8 @@ Sau khi Kết hôn (hoặc có sự kiện *"Phong lưu một đêm"* ở tửu 
   * $\text{Chỉ số con} = \text{Trung bình (đã điều chỉnh)} \pm 15$ (ngẫu nhiên), giới hạn trong $0 - 100$.
   * **[Tiên Thiên Võ Thể] (Thiên phú Đỏ):** `[Ngẫu nhiên: 30%]` nếu **cả cha và mẹ** đều từng đạt Cấp $10/10$ ở ít nhất 1 môn Trấn phái hoặc Thần công SSS. Hiệu ứng: tốc độ Tiến độ lĩnh ngộ $+20\%$ cho mọi môn võ.
   * Phúc duyên của con không di truyền, được quay theo Gia cảnh như người chơi mới.
+* **Tỷ lệ sinh con** (chốt G13): đã kết hôn và người vợ $18 - 42$ tuổi thì $25\%$ mỗi năm có 1 con, tối đa 6 con; sự kiện *"Phong lưu một đêm"* $5\%$. *[Đào Hoa Kiếp]* nhân đôi trọng số sự kiện tình duyên và ghen tuông. Phu thê nguyên mẫu *Ôn Nhu Tri Kỷ* cộng $+20$ vào Căn cốt khi Roll dưỡng thương.
+* **Ngưỡng chống lạm phát** (dùng để kiểm thử, G13): qua 5 đời liên tiếp, Chiến lực trung vị lúc 50 tuổi của đời 5 không vượt đời 1 quá $15\%$, Gia sản trung vị không vượt quá $50\%$. Vượt thì mở vòng cân bằng mới.
 * **Định hướng Giáo dục (Từ $3 - 15$ tuổi của con):** Bất kể người chơi đang ở độ tuổi nào, chỉ cần có ít nhất 1 người con trong độ tuổi $3 - 15$, người chơi có **1 lượt miễn phí (0 AP)** mỗi năm để dạy con:
   * *Đích thân truyền thụ võ công:* Con cái có thể học sẵn tối đa **2 môn võ công** mà người chơi đang sở hữu trước khi đứa trẻ tròn 16 tuổi.
   * *Gửi vào môn phái của bằng hữu:* Nhờ huynh đệ kết nghĩa làm sư phụ cho con mình.

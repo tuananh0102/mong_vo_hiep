@@ -15,6 +15,12 @@ Thế giới trong game là một lục địa giả tưởng mang tên **Thần
 | **Nam Cương** | Rừng thiêng nước độc, sương mù bao phủ, địa hình hiểm trở nhiều sơn trại. | Ngũ Độc Giáo, Đại Lý Đoàn Thị, Vạn Thú Sơn Trang. Nổi tiếng với cổ trùng, y thuật dị biệt và kỳ trân dị bảo. |
 | **Bắc Cảnh (Quan Ngoại)** | Thảo nguyên mênh mông giáp ranh vùng núi băng giá cực Bắc. | Các bộ lạc du mục thiện chiến, Tuyết Sơn Phái, Băng Hỏa Đảo. Nơi rèn luyện ngoại công bá đạo và săn tìm thần thú. |
 
+**Vùng khởi đầu và di chuyển** (chốt 2026-10-27, `ke_hoach/05_LO_HONG_GDD.md` G01):
+* Vùng khởi đầu quay theo trọng số: Trung Nguyên $40$, Giang Nam $25$, Tây Vực $12$, Nam Cương $12$, Bắc Cảnh $11$. Võ Lâm Thế Gia lấy vùng của thế gia.
+* Dưới 11 tuổi chỉ đổi vùng qua sự kiện (theo cha mẹ, bị bán, được cứu). Từ 11 đến 15 tuổi chỉ đổi vùng qua sự kiện bái sư.
+* Từ 16 tuổi: hành động **Đổi vùng** tốn $1$ AP và $20$ lạng lộ phí. *Hãn Huyết Bảo Mã* cho $1$ lần đổi vùng $0$ AP mỗi năm (Hồ sơ 06 V.2).
+* Nhiệm vụ sư môn và Sai phái sư môn chỉ làm được khi đang ở vùng của môn phái. Hắc Thị chỉ họp ở Giang Nam hoặc Tây Vực (Hồ sơ 06 II.2).
+
 ---
 
 ## II. HỆ THỐNG CHỈ SỐ CỐT LÕI (CORE STATS)
@@ -33,7 +39,7 @@ Khi đầu thai ở **Tuổi 0**, người chơi sẽ nhận bộ chỉ số g�
     * **Nga Mi Phái:** Nam giới chỉ được làm đệ tử ngoại môn tạp dịch (trừ kỳ ngộ đặc biệt).
     * **Cổ Mộ Phái:** Chỉ nhận Nữ giới (Nam giới chỉ qua sự kiện ẩn, xem Hồ sơ 03).
     * **Quỳ Hoa Bảo Điển / Tịch Tà Kiếm Phổ:** Chỉ Nam giới luyện được. Nữ giới mở sách chỉ đọc được câu thoại, không luyện được.
-    * **Tình duyên & Thiên phú [Đào Hoa Kiếp]:** Áp dụng với NPC khác giới. Hồ sơ 05 hiện viết các nguyên mẫu cho người chơi Nam; người chơi Nữ dùng nguyên mẫu **Lang Quân** tương ứng (cần bổ sung ở Hồ sơ 05).
+    * **Tình duyên & Thiên phú [Đào Hoa Kiếp]:** Áp dụng với NPC khác giới. Hồ sơ 05 hiện viết các nguyên mẫu cho người chơi Nam; người chơi Nữ dùng nguyên mẫu **Lang Quân** tương ứng (Hồ sơ 05 II.1).
 
 ### 1. Bốn Chỉ số Thiên phú (Thang điểm gốc: $0 - 100$)
 * **Căn Cốt (Thể chất & Nội lực):** Quyết định giới hạn Sinh mệnh ($HP$), tốc độ hồi phục sau trọng thương, tuổi thọ tối đa và khả năng tu luyện các môn **Ngoại công / Dương cương nội công** (như *Hàng Long Thập Bát Chưởng*, *Kim Cương Bất Hoại*). Căn cốt thấp dễ chết yểu vì bệnh tật lúc nhỏ.
@@ -95,6 +101,7 @@ Các kỹ năng ngoài võ học, tăng qua hành động **"Học Tạp học"*
 * **Kỳ Môn Độn Giáp:** Phá / bày trận pháp, cơ quan.
 * **Cầm, Cờ, Thi, Họa (4 kỹ năng riêng):** Giao tiếp với văn nhân, giải đố, điều kiện vào Tiêu Dao Phái, Đào Hoa Đảo. (Dùng chữ **"Cờ"** thay cho "Kỳ" để không nhầm với *Kỳ Môn Độn Giáp*.)
 * Một kỹ năng được coi là **"Đã học"** khi đạt $\ge 20$, **"Tinh thông"** khi đạt $\ge 70$, **"Đại sư"** khi đạt $100$.
+* **Lượng tăng mỗi lần Học Tạp học** (chốt G07): $+\min(15, \ 5 + \lfloor \text{Ngộ tính} / 10 \rfloor)$. "Có thầy hoặc sách" nghĩa là: gia cảnh Phú Thương / Võ Lâm Thế Gia, đang ở môn phái, hoặc có vật phẩm sách của kỹ năng đó.
 
 ### 6. Chỉ số Quan hệ & Tổ chức
 * **Hảo Cảm (Theo từng NPC, $-100$ đến $+100$):** Thang mức và hệ quả xem Hồ sơ 05.
@@ -146,6 +153,10 @@ Các kỹ năng ngoài võ học, tăng qua hành động **"Học Tạp học"*
 | Tổ chức | Cống Hiến | `cong_hien` | $\ge 0$ | Hiện | Nhiệm vụ sư môn, lập công (Hồ sơ 04) |
 | Phân loại | Thiên Phú / Trạng Thái / Nhãn | `thien_phu[]`, `trang_thai[]`, `nhan[]` | Danh sách | Hiện | Mục 7 |
 
+**Mô tả chỉ số bán ẩn và ẩn** (chốt G02):
+* Phúc duyên: $< 30$ *Bạc mệnh*, $30 - 59$ *Bình thường*, $60 - 89$ *Hồng phúc*, $\ge 90$ *Thiên mệnh*.
+* Tuổi thọ, theo số năm còn lại ($Age_{max} - $ Tuổi): $\ge 20$ *Khí huyết dồi dào*, $10 - 19$ *Thân thể vững vàng*, $5 - 9$ *Tuổi xế chiều*, $\le 4$ *Đèn cạn dầu*.
+
 ---
 
 ## III. CƠ CHẾ ĐẦU THAI & THIÊN PHÚ ĐẦU ĐỜI (TUỔI 0)
@@ -158,10 +169,36 @@ Khi bắt đầu ván mới, hệ thống quay ngẫu nhiên **Gia cảnh** và 
 3. **Phú Thương / Quan Lại ($20\%$ tỷ lệ):** Con nhà buôn lụa Giang Nam, con quan huyện. Ngân lượng khởi đầu cao ($500 - 1,500$ lạng, bảng đầy đủ ở Hồ sơ 06 Phần II.4), Mị lực và Ngộ tính cao, nhưng dễ gặp biến cố "Gia đạo suy vi".
 4. **Võ Lâm Thế Gia / Ẩn Thế ($10\%$ tỷ lệ):** Hậu duệ danh môn, con của đại hiệp hoặc ma đầu ẩn danh. Có sẵn võ công gia truyền từ năm 5 tuổi, nhưng mặc định mang sẵn **Kẻ thù truyền kiếp**.
 
+**Chỉ số gốc theo Gia cảnh** (chốt G06): mỗi chỉ số Thiên phú gốc quay ngẫu nhiên đều trong $25 - 55$, cộng theo bảng dưới, rồi kẹp trong $5 - 95$ (trước khi cộng Thiên phú bẩm sinh):
+
+| Gia cảnh | Căn cốt | Ngộ tính | Phúc duyên | Mị lực |
+| :--- | :--- | :--- | :--- | :--- |
+| Hàn Vi | $-10$ | $0$ | $+15$ | $0$ |
+| Bình Dân | $0$ | $0$ | $0$ | $0$ |
+| Phú Thương | $-5$ | $+10$ | $0$ | $+10$ |
+| Võ Lâm Thế Gia | $+10$ | $+5$ | $0$ | $0$ |
+
 ### 2. Ví dụ về Thiên phú bẩm sinh (Innate Traits)
 * **[Cửu Dương Tuyệt Mạch]:** Căn cốt $+30$, nội lực tự tăng mỗi năm, nhưng nếu trước năm 20 tuổi không tìm được võ công hệ Dương hoặc Hàn băng bảo vật để cân bằng thì sẽ bạo thể mà chết.
 * **[Tư Chất Ngu Độn]:** Ngộ tính bị khóa vĩnh viễn ở mức $10$ (không thể tăng bằng bất kỳ cách nào). Bù lại, từ $0$ đến $15$ tuổi, mỗi năm Căn cốt $+2$ và Phúc duyên $+3$ (tổng tối đa $+32$ Căn cốt, $+48$ Phúc duyên). Sau 15 tuổi phần thưởng dừng lại, nhưng Ngộ tính vẫn bị khóa. Là con đường chính để luyện *Thái Huyền Kinh*, *Không Minh Quyền*, *Song Thủ Hỗ Bác*, đổi lại học mọi võ công khác cực chậm.
 * **[Đào Hoa Kiếp]:** Mị lực $+25$, cực dễ khiến NPC khác giới đem lòng yêu mến, nhưng tỷ lệ cao sẽ dẫn đến các sự kiện ghen tuông, tình sát đẫm máu.
+
+**Danh sách Thiên phú Tuổi 0** (chốt G05). Ba lựa chọn được rút không trùng nhau theo trọng số độ hiếm: Trắng $60$, Lam $28$, Tím $10$, Đỏ $2$.
+
+| Độ hiếm | Thiên phú | Hiệu ứng |
+| :--- | :--- | :--- |
+| Trắng | Thân Thể Cường Tráng | Căn cốt $+5$ |
+| Trắng | Thông Minh Lanh Lợi | Ngộ tính $+5$ |
+| Trắng | Mặt Mũi Khôi Ngô | Mị lực $+5$ |
+| Trắng | Số Hưởng | Phúc duyên $+5$ |
+| Lam | Đào Hoa Kiếp | Như trên |
+| Lam | Thiên Sinh Thần Lực | Căn cốt $+12$ |
+| Lam | Đọc Nhanh Nhớ Lâu | Ngộ tính $+12$ |
+| Lam | Kim Khẩu | Mị lực $+8$, Thi $+10$ |
+| Tím | Tư Chất Ngu Độn | Như trên |
+| Tím | Kinh Mạch Kỳ Dị | Tiến độ luyện Nội công $+20\%$ |
+| Đỏ | Cửu Dương Tuyệt Mạch | Như trên |
+| Đỏ | Tiên Thiên Võ Thể | Tiến độ luyện mọi môn võ $+20\%$ (Hồ sơ 05 IV.1; ngoài Tuổi 0 còn nhận qua di truyền) |
 
 ---
 
@@ -188,6 +225,32 @@ Thay vì cố định một mức AP gây thiếu hụt khi trưởng thành, l�
 * Các thao tác giao diện như *Xem bảng tin thế giới (Thiên Hạ Phong Vân Bảng)*, *Thay đổi trang bị / Võ học*, *Uống đan dược* luôn tốn 0 AP và **không tính** vào giới hạn 2 việc/năm.
 * **Chỉ dạy con cái:** Không gắn với độ tuổi của cha mẹ. Từ khi người chơi có ít nhất 1 người con trong độ tuổi $3 - 15$, mỗi năm được thêm **1 lượt Chỉ dạy con cái** miễn phí (ngoài giới hạn 2 việc/năm). Chi tiết xem Hồ sơ 05.
 
+**Thứ tự trong năm và hồi phục** (chốt G03, G04):
+* Nhấn "+1 Tuổi" khép năm cũ, tăng tuổi, rồi sự kiện cá nhân của năm mới hiện ra trước khi người chơi dùng AP.
+* Đầu mỗi năm HP và Nội tức hồi đầy. Đang Trọng thương chưa chữa thì HP tối đa chỉ còn $50\%$ cho tới khi chữa. Trong năm, HP mất do sự kiện giữ nguyên tới khi nghỉ trọ, dùng thuốc hoặc sang năm. Trận Tam Hiệp bắt đầu với HP hiện tại.
+* Sự kiện cá nhân: sự kiện cố định và sự kiện hẹn trước luôn xảy ra; nếu năm đó không có thì có $1$ sự kiện ngẫu nhiên, cộng $25\%$ có thêm sự kiện thứ hai. Tối đa $2$ sự kiện cá nhân mỗi năm. Tuổi 0 không có sự kiện ngẫu nhiên.
+
+**Hành động cụ thể theo tuổi** (chốt G08, G32):
+
+| Hành động | Tuổi | AP | Hiệu ứng |
+| :--- | :--- | :--- | :--- |
+| Nằm nôi | $0 - 5$ | 1 | HP hồi đầy, Căn cốt $+1$ |
+| Tập bò | $0 - 5$ | 1 | Căn cốt $+1$ |
+| Nghe kể chuyện | $0 - 5$ | 1 | Ngộ tính $+1$ |
+| Lục lọi đồ đạc | $0 - 5$ | 1 | `[Ngẫu nhiên: 10%]` nhặt được vài lạng hoặc mở 1 sự kiện lục lọi |
+| Đọc sách vỡ lòng | $6 - 10$ | 1 | Ngộ tính $+2$ |
+| Rèn thể lực | $6 - 10$ | 1 | Căn cốt $+2$ |
+| Chơi cùng trẻ hàng xóm | $6 - 10$ | 1 | Mị lực $+2$ |
+| Phụ giúp gia đình | $6 - 10$ | 1 | Ngân lượng $+2$, Hiệp nghĩa $+2$ |
+| Đi ăn trộm vặt | $6 - 10$ | 1 | $5 - 15$ lạng, Hiệp nghĩa $-5$ **[Ám]** (việc vặt) |
+| Khám phá quanh vùng / Hành tẩu giang hồ | $11+$ | 1 | Mở ngay 1 sự kiện ngẫu nhiên đủ điều kiện (quay Kỳ ngộ theo $P_{KyNgo}$ trước) |
+| Luyện võ cơ bản (chưa có môn phái) | $11+$ | 1 | Luyện công môn tự học, Cấp Sư Phụ $0$ |
+| Bế quan | $71+$ | 1 | 1 lần luyện Nội công với Tiến độ $\times 1.5$; tính là 1 năm ẩn cư (Danh vọng $-5$) |
+| Dưỡng già | $71+$ | 1 | HP đầy; `[Ngẫu nhiên: 10%]` Điểm Ám Thương $-5$ |
+| Truyền công | $71+$ | 1 | Chuyển $10\%$ Nội tức tối đa của mình cho 1 người con hoặc đệ tử |
+
+Tổng chỉ số một đứa trẻ chăm chỉ tự cộng được từ 0 đến 10 tuổi khoảng $+20$, cùng tầm *Tư Chất Ngu Độn*, để không lấn át Thiên phú.
+
 ---
 
 ## V. CƠ CHẾ "MỒI LỬA" CỐT TRUYỆN ĐỘNG (DYNAMIC WORLD CRISIS)
@@ -207,3 +270,14 @@ Mỗi Đại sự kiện kéo dài **3 Năm liên tiếp**, chia làm 3 Hồi: *
 | **3. Sơn Hà Phá Toái** *(Bảo vệ Tương Dương)* | Đại quân Thiết kỵ Bắc Cảnh tràn qua biên ải. Giá lương thực và thuốc trị thương trong game tăng gấp 3 lần. | **Đêm ám sát doanh trại giặc:** Người chơi lẻn vào trại địch cứu con tin hoặc ám sát Quốc sư Tây Tạng. Có thể chọn đầu hàng giặc làm *phong vương*! | **Huyết chiến giữ thành:** Dựa trên tổng điểm đóng góp và *Vũ Mục Di Thư*. Giữ được thành sẽ lưu danh sử sách ($+1000$ Hiệp nghĩa). |
 | **4. Huyết Án Mê Vụ** *(Mô-típ "Dĩ Bỉ Chi Đạo Hoàn Thi Bỉ Thân")* | Mỗi năm có 3 vị Chưởng môn/Cao thủ chết dưới chính tuyệt kỹ của mình. Lòng người hoang mang, nghi kỵ lẫn nhau. | Người chơi bị vu oan là hung thủ (hoặc được mời làm thám tử điều tra). Điều tra `[Roll: Ngộ tính vs 70]` để tìm ra hung thủ thật sự (Thường là Mộ Dung gia hoặc 1 Boss ẩn). *Thất bại:* điều tra sai hướng; nếu đang bị vu oan thì Thanh danh $-150$ và bị Chính đạo truy bắt đến hết sự kiện. Kẻ chủ mưu tự lộ diện ở Năm 3 với sức mạnh $+20\%$ vì không bị ngăn chặn sớm. | Đánh bại Kẻ chủ mưu đứng sau màn kịch để tịch thu toàn bộ bí kíp mà hắn đã ăn cắp của các phái. |
 | **5. Hoa Sơn Luận Kiếm** *(Định kỳ mỗi 10 năm theo lịch thế giới)* | Thiệp mời "Anh Hùng Thiếp" gửi đến những ai đứng trong **Thập Đại Cao Thủ** (Top 10 **Chiến lực** trên Thiên Hạ Phong Vân Bảng, Hồ sơ 06 I.5 và Hồ sơ 07) **và** có `[Cổng: Danh vọng ≥ 400]` (mức *Danh hiệp*, tính cả Danh vọng chức vị). Danh vọng chỉ là ngưỡng sàn "đủ tiếng để được mời", không xếp hạng, để các Chưởng môn không chiếm hết suất chỉ nhờ chức vị. Người chơi chưa đủ tư cách vẫn có thể lên Hoa Sơn với vai trò *Khán giả, Hộ vệ cho sư môn* hoặc *Kẻ phá đám* (thách đấu 1 người trong Top 10 để giành suất thay thế). | Tỷ thí vòng loại trên đỉnh núi tuyết Hoa Sơn suốt 7 ngày 7 đêm (Đấu liên tiếp 3 trận Tam Hiệp không được hồi máu hoàn toàn). | Người chiến thắng cuối cùng nhận danh hiệu **Đông Tà / Tây Độc / Nam Đế / Bắc Cái / Trung Thần Thông (Ngũ Tuyệt)** – Mở khóa toàn bộ đặc quyền ngoại giao khắp Thần Châu! |
+**Luật chi tiết của Đại sự kiện** (chốt 2026-10-27, `ke_hoach/05_LO_HONG_GDD.md` G23, G27):
+* **Điểm đóng góp:** mỗi Hồi người chơi được $0 - 3$ điểm tùy lựa chọn. Tổng 3 Hồi $\ge 6$ là *lập công lớn* (Cống hiến $+200$ theo Hồ sơ 04 I.1, Danh vọng $+50$ đến $+100$, phần thưởng riêng của sự kiện); $3 - 5$ là *lập công nhỏ* (một nửa); $\le 2$ không có thưởng.
+* **Phe thắng:** so tổng Chiến lực Top 10 của mỗi phe; phe của người chơi được cộng $+40$ nếu người chơi lập công lớn; đưa chênh lệch vào công thức tỷ lệ thắng ở Hồ sơ 06 I.5.
+* **Võ Lâm Minh Chủ** (Ma Giáo Đông Chinh) chỉ được phong khi Chính đạo thắng **và** người chơi đứng phe Chính **và** lập công lớn **và** Danh vọng $\ge 600$.
+* **Kỳ Thư Xuất Thế:** bảo vật là `[Ngẫu nhiên: 50%]` *Cửu Âm Chân Kinh* (đủ Thượng và Hạ quyển) hoặc $50\%$ *Đồ Long Đao* (kèm *Vũ Mục Di Thư*). "Luyện thành Thần công SSS" nghĩa là được học môn trong bảo vật đó.
+* **NPC tham chiến:** mỗi NPC tham gia một Đại sự kiện có $5\%$ tử trận.
+
+**Thể thức Hoa Sơn Luận Kiếm** (chốt G28):
+* Người dự đấu 3 trận Tam Hiệp liên tiếp với 3 người được mời khác, mạnh dần theo Chiến lực; giữa các trận chỉ hồi $30\%$ HP và Nội tức. Thắng cả 3 là vô địch. Khi người chơi không dự, kết quả giữa các NPC quay theo tỷ lệ thắng Chiến lực.
+* Danh hiệu Ngũ Tuyệt theo vùng người thắng đang ở: Giang Nam *Đông Tà*, Tây Vực *Tây Độc*, Nam Cương *Nam Đế*, Bắc Cảnh *Bắc Cái*, Trung Nguyên *Trung Thần Thông*.
+* **Đặc quyền ngoại giao:** Cổng Thanh danh của mọi môn phái coi như đạt; Hảo cảm khởi điểm với NPC mới quen $+20$; giá ở chợ $-20\%$.

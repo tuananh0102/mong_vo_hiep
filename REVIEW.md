@@ -11,6 +11,12 @@ Vòng 18 tách Hiệp nghĩa thật khỏi Thanh danh trong script, thêm lối 
 Đã xử lý mục 5 (nguyên tác), 9 (màu sắc, Dock), 10 (chữ Hán, "1in8b life", tên file HS01 - 05 đổi sang `ho_so_0X_...`).
 Mục 6 (pháp lý, độ tuổi) và 7 (phạm vi) cần chủ dự án quyết định; đề xuất ghi ngay trong từng mục.
 Còn mở mới: Lãng khách tụt khỏi Thập Đại Cao Thủ (4%) sau vòng 17; kết cục #10 Ngụy Quân Tử chưa mô phỏng.
+
+**Cập nhật (2026-10-27, lập kế hoạch implement):**
+Đã có bộ kế hoạch implement ở `ke_hoach/` (README trước), chia 3 cột mốc phát hành v0.1, v0.5, v1.0.
+Chủ dự án chốt dùng **tên nguyên tác Kim Dung**; 33 lỗ hổng phát hiện khi lập kế hoạch (G01 - G33) đã chốt và ghi vào hồ sơ, chỉ mục ở đầu `ke_hoach/05_LO_HONG_GDD.md`.
+Nhờ vậy đã đóng: nguyên mẫu Lang Quân (HS05 II.1), quy tắc di chuyển giữa các vùng (mục 1.7, HS01 I), mục 6 (tên nguyên tác, rating 17+), mục 7 (phạm vi theo 3 cột mốc), mục 8 (kết cục #14, #18, danh hiệu phụ, Võ Lâm Minh Chủ, Kỳ Thư Xuất Thế, Kinh Mạch Nghịch Hành, võ công tự sáng tạo).
+Còn mở: mức "nhân đôi" của Âm Dương Hỗ Tế (HS02 II.2) và sức mạnh võ học tự sáng tạo (HS04 III.2) phải chạy mô phỏng khi implement (task M3-05, M3-10); 2 điểm "Còn mở mới" ở trên đo lại ở task M2-18.
 Mức độ: 🔴 Chặn (phải sửa trước khi viết data/code), 🟠 Quan trọng (ảnh hưởng cân bằng/trải nghiệm), 🟡 Nhỏ (văn bản, nhất quán).
 
 ---
@@ -114,6 +120,8 @@ Việc này cũng giải luôn vấn đề 1.2 (Danh vọng chưa định nghĩa
 
 Vùng đất ảnh hưởng tới kỳ ngộ ([HS06:31](ho_so_06_cong_thuc_rng_kinh_te_dan_duoc_ky_tran.md:31)), sự kiện ([HS03:26](ho_so_03_kich_ban_tho_au_thieu_nien_0_15_tuoi.md:26)), điều kiện bái sư ([HS03:155](ho_so_03_kich_ban_tho_au_thieu_nien_0_15_tuoi.md:155)).
 Hãn Huyết Bảo Mã "đổi vùng miễn phí 0 AP" ([HS06:142](ho_so_06_cong_thuc_rng_kinh_te_dan_duoc_ky_tran.md:142)) ngụ ý di chuyển bình thường tốn AP, nhưng không hồ sơ nào ghi tốn bao nhiêu, đứa trẻ 5 tuổi có tự di chuyển được không, vùng khởi đầu được random thế nào.
+
+**Trạng thái (2026-10-27): ✅ Đã chốt ở HS01 I** (vùng khởi đầu, Đổi vùng 1 AP + 20 lạng từ 16 tuổi, trẻ con chỉ đổi vùng qua sự kiện).
 
 ---
 
@@ -239,12 +247,12 @@ Diệt Tuyệt Thập Tam Kiếm ở Minh Giáo đổi thành Ngũ Hành Kỳ Tr
   Nếu có ý định phát hành thương mại, cần quyết định sớm: xin license, hoặc đổi tên toàn bộ sang bản phóng tác (giữ mô-típ, đổi danh xưng).
   Quyết định này ảnh hưởng tới toàn bộ dữ liệu, nên làm trước khi nhập data.
   (Đây không phải tư vấn pháp lý, nên hỏi luật sư sở hữu trí tuệ.)
-  **Trạng thái (2026-10-27): ⏳ Chờ chủ dự án quyết định.**
+  **Trạng thái (2026-10-27): ✅ Chủ dự án chốt dùng tên nguyên tác Kim Dung** (ghi ở HS02 quy ước nguồn); dữ liệu vẫn giữ bảng ánh xạ tên hiển thị để đổi được về sau.
   Đề xuất: nếu chưa có license thì làm data theo hướng phóng tác ngay từ đầu, giữ tên Kim Dung chỉ trong một bảng ánh xạ `ten_nguyen_tac → ten_phong_tac` để đổi qua lại bằng dữ liệu, không phải viết lại kịch bản.
   Trường `nguon` mới ở HS02 là bước đầu của bảng này.
 - **Rating**: nội dung tự cung, kỹ viện, "phong lưu một đêm", trẻ 12-15 tuổi đẩy trẻ khác vào hố rắn ([HS03:140](ho_so_03_kich_ban_tho_au_thieu_nien_0_15_tuoi.md:140)), tự vẫn ([HS05:49](ho_so_05_he_thong_npc_tinh_duyen_truyen_thua_the_he.md:49)).
   Không có vấn đề với một game võ hiệp dành cho người lớn, nhưng cần xác định trước rating mục tiêu (App Store/Google Play 17+/18+) để biết mức độ mô tả được phép.
-  **Trạng thái (2026-10-27): ⏳ Chờ quyết định.**
+  **Trạng thái (2026-10-27): ✅ Chốt 17+** theo đề xuất bên dưới (ghi ở HS07 đầu Phần I).
   Đề xuất: nhắm 17+ (Apple) / Mature 17+ (IARC); giữ bạo lực và lựa chọn tàn nhẫn, nhưng mô tả gián tiếp các cảnh tình dục, và với nhân vật dưới 16 tuổi chỉ cho lựa chọn tàn nhẫn ở mức hệ quả (hố rắn) chứ không mô tả chi tiết.
 
 ---
@@ -263,7 +271,7 @@ Diệt Tuyệt Thập Tam Kiếm ở Minh Giáo đổi thành Ngũ Hành Kỳ Tr
   Đề xuất bổ sung Hồ sơ 08 định nghĩa schema, ví dụ: `id, tuổi_min, tuổi_max, vùng, điều_kiện, trọng_số, lặp_lại?, lựa_chọn[{text, cổng, roll, kết_quả_thành_công, kết_quả_thất_bại, cờ_đặt}]`.
   Việc viết lại các sự kiện hiện có theo schema sẽ tự lộ ra mọi chỗ thiếu nhánh và chỉ số chưa định nghĩa.
 
-**Trạng thái (2026-10-27): ⏳ Chờ quyết định phạm vi.**
+**Trạng thái (2026-10-27): ✅ Đã chốt phạm vi theo 3 cột mốc ở `ke_hoach/`** (v0.1 khoảng 60 sự kiện, v0.5 MVP 150 sự kiện như đề xuất dưới, v1.0 khoảng 500 sự kiện và đủ tính năng). Hồ sơ 08 schema viết ở task M0-04.
 Mô phỏng đã cho biết phần lõi nào cần cho MVP: 6 lối chơi mẫu (Chính phái, chuyên tu, Tà phái, Lãng khách, Thương nhân, Sát thủ ẩn danh) đều chạy được với các hệ thống ở HS01, HS02 V, HS04, HS06; thế giới 200 NPC chạy được bằng chính luật của người chơi (`mo_phong/BAO_CAO.md` mục 15), nên đề xuất 2 lớp NPC có thể đơn giản hóa thành "NPC là một đời mô phỏng".
 Đề xuất MVP: Trung Nguyên, 6 môn phái (Thiếu Lâm, Võ Đang, Hoa Sơn, Cái Bang, Nhật Nguyệt, Tinh Túc) đủ phủ 6 lối chơi; mục tiêu khoảng 150 sự kiện (60 cho 0 - 15 tuổi, 90 cho 16 - 80); Hồ sơ 08 schema viết sau khi chốt danh sách này.
 
@@ -284,6 +292,8 @@ Mô phỏng đã cho biết phần lõi nào cần cho MVP: 6 lối chơi mẫu 
 - **Kinh Mạch Nghịch Hành** ([HS04:83](ho_so_04_kich_ban_truong_thanh_tranh_ba_lao_nien_16_80_tuoi.md:83)): "mất quyền kiểm soát" nghĩa là game tự chơi? Người chơi còn chọn gì? Cần định nghĩa.
 - **Võ công tự sáng tạo** ([HS04:76](ho_so_04_kich_ban_truong_thanh_tranh_ba_lao_nien_16_80_tuoi.md:76)): sức mạnh tính thế nào (trung bình các môn nguồn? tier nào?). Đây là điểm dễ thành "vũ khí vô hạn" qua nhiều đời.
 - **Gói Luân Hồi #4** mang theo "[Bách Độc Bất Xâm]" và "[Tiên Thiên Võ Thể]", nhưng đây là trạng thái nhận trong đời, không phải Thiên phú Tuổi 0. Cần thống nhất khái niệm Thiên phú / Trạng thái / Nhãn tính cách.
+
+**Trạng thái (2026-10-27): ✅ Đã chốt** (`ke_hoach/05_LO_HONG_GDD.md` G09, G14, G21 - G24, G27): Lang Quân ở HS05 II.1; #14 "≥ 70 tuổi, chết tự nhiên" và #18 "0 - 10 tuổi" ở HS07 IV; 1 kết cục chính + danh hiệu phụ; Võ Lâm Minh Chủ và Kỳ Thư Xuất Thế ở HS01 V; Kinh Mạch Nghịch Hành ở HS04 III.3; võ công tự sáng tạo ở HS04 III.2. Cửu Dương Tuyệt Mạch và biến thể Lãng khách của sự kiện HS04 để xử lý khi viết nội dung (task M1-14, M1-15).
 
 ---
 

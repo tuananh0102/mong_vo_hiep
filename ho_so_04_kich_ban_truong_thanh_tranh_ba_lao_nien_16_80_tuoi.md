@@ -28,6 +28,10 @@ Thù lao thấp hơn săn truy nã và không cộng Danh vọng, đổi lại a
 **Danh vọng chức vị:** Trưởng lão được cộng $+150$ Danh vọng, Chưởng môn $+300$ (kể cả Chưởng môn tự lập phái) chừng nào còn giữ chức (Hồ sơ 01 II.2).
 Đây là nguồn Danh vọng chính của đệ tử không đi săn truy nã. Bị trục xuất hay thoái vị thì mất phần này, đổi lại sinh hoạt phí cũng không còn được môn phái lo.
 
+**Quyền của Chưởng môn** (chốt 2026-10-27, `ke_hoach/05_LO_HONG_GDD.md` G27):
+* *Đổi tôn chỉ Chính ↔ Tà:* đổi phe của môn phái; Thanh danh Chưởng môn $-200$ khi sang Tà, $+100$ khi sang Chính; $30\%$ NPC đệ tử bỏ phái.
+* *Tuyển Trưởng lão* cho môn phái (kể cả tự lập): $500$ lạng mỗi người, lấy từ Ngân khố; chỉ tuyển được NPC Lãng khách đang không thuộc phái nào.
+
 **Thất bại Sự kiện Thăng cấp:** Mọi thử thách thăng cấp trong bảng trên đều là `[Tam Hiệp]` hoặc nhiệm vụ có `[Roll]`. Thất bại lần đầu: giữ nguyên cấp bậc và Cống hiến, được thử lại sau 1 năm. Thất bại 2 lần liên tiếp: Cống hiến $-50$ và bị đồng môn coi thường (Hảo cảm của các đồng môn cùng bậc $-10$). Riêng thử thách Bậc 4 *"Giải cứu nguy nan"* thất bại thì môn phái chịu thiệt hại thật: trợ cấp năm đó bằng $0$ và 1 NPC đồng môn có tên tử trận.
 
 ### 2. Lộ trình Tản Tu / Giang Hồ Lãng Khách (Không vào Môn phái)
@@ -104,6 +108,10 @@ Khi bước qua tuổi 50, nhân vật bắt đầu bị giảm dần **Căn c�
   * *Thành công:* Dung hợp toàn bộ sở học cả đời để **Sáng tạo ra 1 Môn Tuyệt Học Mới** (Người chơi được **tự gõ tên môn võ từ bàn phím**, ví dụ: *Vạn Kiếp Thần Kiếm* hay *Tiêu Dao Ma Chưởng*!).
   * Môn võ này sẽ được lưu vĩnh viễn vào **Tàng Kinh Các Gia Tộc** ở mức độ hoàn thiện $100\%$ cho Đời Con kế thừa mà không bị giảm uy lực!
   * *Thất bại:* Chân khí các môn võ xung đột dữ dội ở năm bế quan thứ 3, bạn Tẩu hỏa nhập ma. Môn võ vẫn được sáng tạo và đặt tên nhưng chỉ đạt độ hoàn thiện $60\%$ (Cấp tối đa $6/10$, đời sau có thể hoàn thiện theo quy tắc Hồ sơ 05). *(Điểm Ám Thương $+10$; `[Ngẫu nhiên: 25%]` nhận ngay Trạng thái [Kinh Mạch Nghịch Hành] ở mục 3 bên dưới, bỏ qua điều kiện tuổi)*.
+* **Sức mạnh môn tự sáng tạo** (chốt 2026-10-27, `ke_hoach/05_LO_HONG_GDD.md` G21):
+  * Tier Trấn phái (Tier factor $3$, Điểm Tier Chiến lực $30$); nếu có từ 2 môn nguồn là Thần công SSS thì Điểm Tier $45$.
+  * Uy lực chiêu thức $= $ Uy lực cao nhất trong các môn nguồn $\times 1.05$, trần $320$. Hệ Nội lực theo Tâm pháp chủ đạo lúc bế quan. Loại môn (nội công / ngoại công) người chơi chọn khi đặt tên.
+  * Môn tự sáng tạo **không** được dùng làm môn nguồn cho lần bế quan sau, kể cả của đời con, để không cộng dồn qua nhiều thế hệ.
 
 ### 3. Sự kiện "Tẩu Hỏa Nhập Ma Tuổi Già – Kinh Mạch Nghịch Hành" (Mô-típ Âu Dương Phong)
 * **Điều kiện kích hoạt:** Tuổi $\ge 60$, từng học quá nhiều môn võ xung khắc Âm - Dương hoặc luyện *Cửu Âm Chân Kinh* bản thiếu.
@@ -111,3 +119,4 @@ Khi bước qua tuổi 50, nhân vật bắt đầu bị giảm dần **Căn c�
 * **Hệ quả Gameplay:**
   * Mất quyền kiểm soát các hành động Quản lý gia tộc/Mua bán, nhưng **Sức mạnh chiến đấu tăng vọt $+150\%$** (Do đánh chiêu thức ngược xuôi không theo quy luật nào khiến mọi cao thủ đều bó tay).
   * Đây là trạng thái cực kỳ thú vị để kết thúc kiếp sống trong vai một "Thiên hạ đệ nhất điên nhân" trước khi truyền ngôi cho Đời Con!
+  * **Phạm vi điều khiển** (chốt G22): người chơi vẫn chọn trong sự kiện và Tam Hiệp. Hành động tốn AP chỉ còn *Luyện công* và *Hành tẩu giang hồ*; mua bán, sản nghiệp, quản lý môn phái và gia trang bị khóa. Mỗi năm `[Ngẫu nhiên: 30%]` nhân vật tự gây sự với 1 Chưởng môn hoặc 1 người trong Thập Đại Cao Thủ (Tam Hiệp sinh tử). "Sức chiến đấu $+150\%$" nghĩa là sát thương gây ra $\times 2.5$. Trạng thái không chữa được.

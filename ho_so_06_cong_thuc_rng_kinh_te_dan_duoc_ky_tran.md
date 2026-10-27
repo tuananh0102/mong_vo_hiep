@@ -70,6 +70,8 @@ $$DMG = \Big[ \big(\text{Uy Lực Chiêu Thức} \times (1 + \frac{\text{Cấp V
 * **Sát Thương Thần Binh:** Lợi khí $+30$, Danh khí $+60$, Thần binh $+100$; không có binh khí đặc biệt thì $0$ (danh sách ở Hồ sơ 02 IV).
 * **Giảm Trừ Phòng Ngự** $= \min\big(50\%, \ \text{Căn Cốt} \times 0.3\% + \text{Cấp Khinh Công} \times 2\%\big)$. Cảnh giới Nội công **không** tham gia giảm trừ (nó đã tăng HP và Nội tức).
 * **Biến Thiên:** Ngẫu nhiên trong khoảng $0.9 - 1.1$ cho mỗi đòn, để hai bên ngang sức không luôn hòa tuyệt đối.
+* **Bạo kích và tiêu hao** (chốt 2026-10-27 từ khối giả định của `mo_phong/mo_phong.py`, `ke_hoach/05_LO_HONG_GDD.md` G18): tỷ lệ Bạo kích nền $10\%$ (sát thương $\times 1.5$, Án Binh thành công cộng thêm $30\%$); tung Tuyệt kỹ ở Hiệp 2 tiêu $30\%$ Nội tức tối đa.
+* **Dùng vật phẩm trong trận** (chốt G12): tối đa 1 vật phẩm giữa Hiệp 1 và Hiệp 2, không mất lượt; NPC không dùng.
 * **Mục tiêu cân bằng:** Hai bên ngang sức, sau Hiệp 2 bên yếu hơn còn khoảng $20\% - 30\%$ HP ở mọi cấp độ. Bộ số trên đã được kiểm chứng bằng script `mo_phong/mo_phong.py` (bên yếu còn $22\% - 31\%$).
 
 * **Hệ số Chiến thuật Hiệp 1 ($M_{\text{Hiệp 1}}$):**
@@ -136,6 +138,7 @@ $$\text{Chiến Lực} = \text{Điểm Tier} + 10 \times \text{Cấp Võ Học c
 2. **Đấu Giá Hắc Thị & Vạn Bảo Lâu ($500 - 10,000$ lạng):**
    * Mỗi 5 năm một lần tại Giang Nam hoặc Tây Vực, **Hắc Thị Đấu Giá Hội** sẽ mở cửa bán 3 vật phẩm ngẫu nhiên (Đan dược ngàn năm, Tàn quyển võ học, binh khí; mỗi món có $1/3$ là binh khí, nên khoảng $70\%$ phiên có ít nhất 1 binh khí). Đi đấu giá tốn $1$ AP. Người chơi phải đấu giá trực tiếp với các NPC Phú thương/Thế gia (Nếu trả giá cao quá có thể chọn phương án: *"Đợi người khác mua xong rồi ra cổng chặn đường cướp!"*).
      * *Giá binh khí:* **Lợi khí** ($80\%$ số binh khí lên sàn) giá sàn $2,000$ lạng, **Danh khí** ($20\%$) giá sàn $6,000$ lạng; giá chốt bằng giá sàn $\times 1.0 - 1.5$ tùy NPC tranh giá. Thần binh không bán (Hồ sơ 02 IV).
+     * *Cách đấu giá* (chốt G29): mỗi món hiện giá sàn; giá chốt quay đều trong $1.0 - 1.5 \times$ giá sàn, nhân thêm $1.2$ nếu có NPC Chướng Mắt với người chơi ở phiên. Người chơi chọn *Trả giá chốt*, *Bỏ qua*, hoặc *Chặn đường cướp* người mua (hành động **[Ám]** lớn, Tam Hiệp sinh tử). Giá sàn đan dược ngàn năm theo bảng Phần III; tàn quyển võ học Thượng thừa $1,500$, Trấn phái $4,000$ lạng.
      * *Cảnh báo dòng tiền (mô phỏng, `mo_phong/BAO_CAO.md` mục 19):* mua binh khí khi gia sản còn dưới khoảng $5,000$ lạng đẩy người chơi quay lại săn truy nã để bù tiền, và tỷ lệ tử trận của Chính phái tăng gấp đôi ($6\% \rightarrow 13\%$).
 3. **Chi Phí Khai Tông Lập Phái & Duy Trì Gia Trang ($5,000 - 20,000$ lạng):**
    * Mua núi lập phái: $5,000$ lạng.
@@ -202,6 +205,12 @@ Mọi lối chơi đều được mua sản nghiệp từ 16 tuổi, nhưng sả
 
 > **Cơ chế "Kháng Thuốc / Đan Độc Tích Tụ":**
 > Các loại đan dược tăng vĩnh viễn Căn cốt hoặc Nội tức tối đa ($MP_{max}$) chỉ phát huy $100\%$ hiệu quả ở **lần sử dụng đầu tiên trong đời**. Lần thứ 2 hiệu quả giảm còn $50\%$, từ lần thứ 3 trở đi hoàn toàn vô tác dụng (hoặc gây nổ mạch máu nếu lạm dụng).
+
+> **Tự chế đan dược và độc dược** (chốt 2026-10-27, `ke_hoach/05_LO_HONG_GDD.md` G30):
+> Hành động *Luyện đan* (Y thuật) hoặc *Chế độc* (Độc thuật) tốn $1$ AP và nguyên liệu bằng $50\%$ giá bán.
+> Kiểm định `[Roll: Y thuật vs N]` (hoặc Độc thuật): Kim Sáng Dược $N = 20$, Bạch Vân Hùng Đảm Hoàn $50$, Tiểu Hoàn Đan $70$, Cửu Hoa Ngọc Lộ Hoàn $90$; độc dược lấy $N$ theo cấp độc Hạ $30$, Trung $50$, Thượng $70$, Kỳ độc $90$.
+> Thất bại: mất nguyên liệu, `[Ngẫu nhiên: 10%]` bị phản độc mất $20\%$ HP.
+> Món "không bán ở chợ" (Đại Hoàn Đan) và độc môn của môn phái (Tam Thi Não Thần Đan, Thất Tâm Hải Đường) không tự chế được, trừ khi là đệ tử môn phái đó.
 
 | Tên Đan Dược | Nguồn gốc / Môn phái sở hữu | Giá trị (Lạng bạc) | Công dụng Gameplay Chi tiết |
 | :--- | :--- | :--- | :--- |
