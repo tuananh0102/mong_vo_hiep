@@ -273,7 +273,7 @@ Trước khi làm: đọc [README.md](README.md) mục 3 - 5 và [01_KIEN_TRUC.m
 
 ---
 
-### [ ] M1-02 Dữ liệu Gia cảnh, Thiên phú, Trạng thái, Nhãn
+### [x] M1-02 Dữ liệu Gia cảnh, Thiên phú, Trạng thái, Nhãn
 
 **Phụ thuộc:** M0-04.
 **Đọc:** HS01 II.7, III; HS06 II.4; HS05 IV.1 (*Tiên Thiên Võ Thể*); HS03 (mọi Trạng thái và Nhãn được nhắc); `05_LO_HONG_GDD.md` G05, G06.

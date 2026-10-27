@@ -1,6 +1,18 @@
 // 01 mục 7.4: kiểm tra ngữ nghĩa bắt buộc cho toàn bộ dữ liệu game.
 import { bienTrongMau } from '../luat/van_ban'
-import type { DieuKien, DuLieu, HieuUng, LuaChon, MonPhai, SuKien, VoHoc } from './luoc_do'
+import type {
+  DieuKien,
+  DuLieu,
+  GiaCanh,
+  HieuUng,
+  LuaChon,
+  MonPhai,
+  NhanDuLieu,
+  SuKien,
+  ThienPhuDuLieu,
+  TrangThaiDuLieu,
+  VoHoc,
+} from './luoc_do'
 
 const EM_DASH = /—/
 const CHU_HAN = /[\u4E00-\u9FFF]/
@@ -58,6 +70,14 @@ function kiemTraDieuKien(dk: DieuKien, duong: string, dl: DuLieu, loi: string[])
     if (dl.thien_phu && Object.keys(dl.thien_phu).length > 0 && !dl.thien_phu[dk.thien_phu]) {
       loi.push(`${duong}: điều kiện thiên phú tham chiếu "${dk.thien_phu}" không tồn tại`)
     }
+  } else if ('trang_thai' in dk) {
+    if (dl.trang_thai && Object.keys(dl.trang_thai).length > 0 && !dl.trang_thai[dk.trang_thai]) {
+      loi.push(`${duong}: điều kiện trạng thái tham chiếu "${dk.trang_thai}" không tồn tại`)
+    }
+  } else if ('nhan' in dk) {
+    if (dl.nhan && Object.keys(dl.nhan).length > 0 && !dl.nhan[dk.nhan]) {
+      loi.push(`${duong}: điều kiện nhãn tham chiếu "${dk.nhan}" không tồn tại`)
+    }
   } else if ('vo_hoc' in dk) {
     if (dl.vo_hoc && Object.keys(dl.vo_hoc).length > 0 && !dl.vo_hoc[dk.vo_hoc]) {
       loi.push(`${duong}: điều kiện võ học tham chiếu "${dk.vo_hoc}" không tồn tại`)
@@ -81,6 +101,26 @@ function kiemTraHieuUng(hu: HieuUng, duong: string, dl: DuLieu, sk: SuKien, loi:
   if ('gia_nhap_mon_phai' in hu) {
     if (dl.mon_phai && Object.keys(dl.mon_phai).length > 0 && !dl.mon_phai[hu.gia_nhap_mon_phai]) {
       loi.push(`${duong}: hiệu ứng gia_nhap_mon_phai tham chiếu môn phái không tồn tại "${hu.gia_nhap_mon_phai}"`)
+    }
+  }
+  if ('them_trang_thai' in hu) {
+    if (dl.trang_thai && Object.keys(dl.trang_thai).length > 0 && !dl.trang_thai[hu.them_trang_thai]) {
+      loi.push(`${duong}: hiệu ứng them_trang_thai tham chiếu trạng thái không tồn tại "${hu.them_trang_thai}"`)
+    }
+  }
+  if ('xoa_trang_thai' in hu) {
+    if (dl.trang_thai && Object.keys(dl.trang_thai).length > 0 && !dl.trang_thai[hu.xoa_trang_thai]) {
+      loi.push(`${duong}: hiệu ứng xoa_trang_thai tham chiếu trạng thái không tồn tại "${hu.xoa_trang_thai}"`)
+    }
+  }
+  if ('them_nhan' in hu) {
+    if (dl.nhan && Object.keys(dl.nhan).length > 0 && !dl.nhan[hu.them_nhan]) {
+      loi.push(`${duong}: hiệu ứng them_nhan tham chiếu nhãn không tồn tại "${hu.them_nhan}"`)
+    }
+  }
+  if ('doi_gia_canh' in hu) {
+    if (dl.gia_canh && Object.keys(dl.gia_canh).length > 0 && !dl.gia_canh[hu.doi_gia_canh]) {
+      loi.push(`${duong}: hiệu ứng doi_gia_canh tham chiếu gia cảnh không tồn tại "${hu.doi_gia_canh}"`)
     }
   }
 
@@ -315,6 +355,71 @@ function kiemTraMonPhai(mp: MonPhai, duong: string, dl: DuLieu, loi: string[]): 
   }
 }
 
+function kiemTraGiaCanh(gc: GiaCanh, duong: string, dl: DuLieu, loi: string[]): void {
+  if (!gc.nguon || gc.nguon.trim() === '') {
+    loi.push(`${duong}: thiếu nguon (01 mục 7.4 #12)`)
+  }
+  if (dl.chi_so && Object.keys(dl.chi_so).length > 0) {
+    for (const maCs of Object.keys(gc.dieu_chinh_chi_so)) {
+      if (!dl.chi_so[maCs]) {
+        loi.push(`${duong}: điều chỉnh chỉ số tham chiếu chỉ số không tồn tại "${maCs}"`)
+      }
+    }
+  }
+}
+
+function kiemTraThienPhu(tp: ThienPhuDuLieu, duong: string, dl: DuLieu, loi: string[]): void {
+  if (!tp.nguon || tp.nguon.trim() === '') {
+    loi.push(`${duong}: thiếu nguon (01 mục 7.4 #12)`)
+  }
+  if (dl.chi_so && Object.keys(dl.chi_so).length > 0) {
+    for (let i = 0; i < tp.hieu_ung_tuoi_0.length; i++) {
+      const hu = tp.hieu_ung_tuoi_0[i]!
+      if ('cong' in hu) {
+        for (const ma of Object.keys(hu.cong)) {
+          if (!dl.chi_so[ma]) {
+            loi.push(`${duong}.hieu_ung_tuoi_0[${i}]: tham chiếu chỉ số không tồn tại "${ma}"`)
+          }
+        }
+      }
+    }
+    for (let i = 0; i < tp.hieu_ung_moi_nam.length; i++) {
+      const hu = tp.hieu_ung_moi_nam[i]!
+      if ('cong' in hu) {
+        for (const ma of Object.keys(hu.cong)) {
+          if (!dl.chi_so[ma]) {
+            loi.push(`${duong}.hieu_ung_moi_nam[${i}]: tham chiếu chỉ số không tồn tại "${ma}"`)
+          }
+        }
+      }
+    }
+  }
+}
+
+function kiemTraTrangThai(tt: TrangThaiDuLieu, duong: string, dl: DuLieu, loi: string[]): void {
+  if (!tt.nguon || tt.nguon.trim() === '') {
+    loi.push(`${duong}: thiếu nguon (01 mục 7.4 #12)`)
+  }
+  if (dl.chi_so && Object.keys(dl.chi_so).length > 0) {
+    for (let i = 0; i < tt.hieu_ung_moi_nam.length; i++) {
+      const hu = tt.hieu_ung_moi_nam[i]!
+      if ('cong' in hu) {
+        for (const ma of Object.keys(hu.cong)) {
+          if (!dl.chi_so[ma]) {
+            loi.push(`${duong}.hieu_ung_moi_nam[${i}]: tham chiếu chỉ số không tồn tại "${ma}"`)
+          }
+        }
+      }
+    }
+  }
+}
+
+function kiemTraNhan(nh: NhanDuLieu, duong: string, _dl: DuLieu, loi: string[]): void {
+  if (!nh.nguon || nh.nguon.trim() === '') {
+    loi.push(`${duong}: thiếu nguon (01 mục 7.4 #12)`)
+  }
+}
+
 export function kiemTraNguNghia(dl: DuLieu): string[] {
   const loi: string[] = []
 
@@ -323,6 +428,38 @@ export function kiemTraNguNghia(dl: DuLieu): string[] {
     if (EM_DASH.test(s)) loi.push(`${duong}: chứa dấu gạch dài (01 mục 7.4 #9)`)
     if (CHU_HAN.test(s)) loi.push(`${duong}: chứa chữ Hán (01 mục 7.4 #9)`)
   })
+
+  // Kiểm tra gia cảnh
+  if (dl.gia_canh && Object.keys(dl.gia_canh).length > 0) {
+    const tongTiLe = Object.values(dl.gia_canh).reduce((sum, gc) => sum + gc.ti_le, 0)
+    if (tongTiLe !== 100) {
+      loi.push(`gia_canh: tổng ti_le của các gia cảnh = ${tongTiLe}; bắt buộc phải bằng 100 (HS01 III.1)`)
+    }
+    for (const [ma, gc] of Object.entries(dl.gia_canh)) {
+      kiemTraGiaCanh(gc, `gia_canh[${ma}]`, dl, loi)
+    }
+  }
+
+  // Kiểm tra thiên phú
+  if (dl.thien_phu) {
+    for (const [ma, tp] of Object.entries(dl.thien_phu)) {
+      kiemTraThienPhu(tp, `thien_phu[${ma}]`, dl, loi)
+    }
+  }
+
+  // Kiểm tra trạng thái
+  if (dl.trang_thai) {
+    for (const [ma, tt] of Object.entries(dl.trang_thai)) {
+      kiemTraTrangThai(tt, `trang_thai[${ma}]`, dl, loi)
+    }
+  }
+
+  // Kiểm tra nhãn
+  if (dl.nhan) {
+    for (const [ma, nh] of Object.entries(dl.nhan)) {
+      kiemTraNhan(nh, `nhan[${ma}]`, dl, loi)
+    }
+  }
 
   // Kiểm tra võ học
   if (dl.vo_hoc) {

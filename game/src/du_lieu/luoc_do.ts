@@ -24,15 +24,19 @@ export const LuocDoChiSo = z.object({
 })
 export type DinhNghiaChiSo = z.infer<typeof LuocDoChiSo>
 
-// Bản tối thiểu cho M0-05; M1-02 mở rộng (do_hiem, hieu_ung_tuoi_0...).
-// `dac_biet`: mã cơ chế riêng; `khoa_<ma_chi_so>` khóa mọi lần cộng chỉ số đó (HS01 III.2).
-export const LuocDoThienPhu = z.object({
+// HS01 III.1: 4 nhóm gia cảnh Tuổi 0, tỷ lệ và điều chỉnh chỉ số
+export const LuocDoGiaCanh = z.object({
   ma: z.string().min(1),
   ten: z.string().min(1),
   nguon: z.string().min(1),
+  ti_le: z.number().int().min(1).max(100),
+  ngan_luong_khoi_dau: z.tuple([z.number().int().min(0), z.number().int().min(0)]),
+  thu_nhap_gia_dinh: z.number().int().min(0),
+  dieu_chinh_chi_so: z.record(z.string(), z.number().int()),
   dac_biet: z.array(z.string()).default([]),
+  mo_ta: z.string().default(''),
 })
-export type ThienPhuDuLieu = z.infer<typeof LuocDoThienPhu>
+export type GiaCanh = z.infer<typeof LuocDoGiaCanh>
 
 // --- 01 mục 7.2: Điều kiện (`DieuKien`) ---
 export type DieuKien =
@@ -153,6 +157,40 @@ export const LuocDoKetQuaLuaChon = z.object({
   hieu_ung: z.array(LuocDoHieuUng).default([]),
 })
 export type KetQuaLuaChon = z.infer<typeof LuocDoKetQuaLuaChon>
+
+// HS01 III.2, HS05 IV.1, G05: Thiên phú Tuổi 0 và di truyền
+export const LuocDoThienPhu = z.object({
+  ma: z.string().min(1),
+  ten: z.string().min(1),
+  nguon: z.string().min(1),
+  do_hiem: z.union([z.literal(1), z.literal(2), z.literal(3), z.literal(4)]),
+  hieu_ung_tuoi_0: z.array(LuocDoHieuUng).default([]),
+  hieu_ung_moi_nam: z.array(LuocDoHieuUng).default([]),
+  dac_biet: z.array(z.string()).default([]),
+  mo_ta: z.string().default(''),
+})
+export type ThienPhuDuLieu = z.infer<typeof LuocDoThienPhu>
+
+// HS01 II.7: Trạng thái nhận trong đời qua sự kiện, có thể bị xóa hoặc chữa khỏi
+export const LuocDoTrangThai = z.object({
+  ma: z.string().min(1),
+  ten: z.string().min(1),
+  nguon: z.string().min(1),
+  hieu_ung_moi_nam: z.array(LuocDoHieuUng).default([]),
+  dac_biet: z.array(z.string()).default([]),
+  mo_ta: z.string().default(''),
+})
+export type TrangThaiDuLieu = z.infer<typeof LuocDoTrangThai>
+
+// HS01 II.7: Nhãn tính cách, dấu ấn hành vi, ảnh hưởng lựa chọn và phản ứng NPC
+export const LuocDoNhan = z.object({
+  ma: z.string().min(1),
+  ten: z.string().min(1),
+  nguon: z.string().min(1),
+  dac_biet: z.array(z.string()).default([]),
+  mo_ta: z.string().default(''),
+})
+export type NhanDuLieu = z.infer<typeof LuocDoNhan>
 
 // --- 01 mục 7.1: Kiểm định (`KiemDinh`) ---
 export const LuocDoKiemDinhRoll = z.object({
@@ -301,7 +339,10 @@ export type MonPhai = z.infer<typeof LuocDoMonPhai>
 export interface DuLieu {
   vung: Record<string, Vung>
   chi_so: Record<string, DinhNghiaChiSo>
+  gia_canh?: Record<string, GiaCanh>
   thien_phu: Record<string, ThienPhuDuLieu>
+  trang_thai?: Record<string, TrangThaiDuLieu>
+  nhan?: Record<string, NhanDuLieu>
   vo_hoc?: Record<string, VoHoc>
   mon_phai?: Record<string, MonPhai>
   su_kien?: Record<string, SuKien>

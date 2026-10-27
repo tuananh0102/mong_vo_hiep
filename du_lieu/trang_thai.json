@@ -1,0 +1,42 @@
+[
+  {
+    "ma": "bach_doc_bat_xam",
+    "ten": "Bách Độc Bất Xâm",
+    "nguon": "HS01 II.7",
+    "hieu_ung_moi_nam": [],
+    "dac_biet": ["mien_doc_trung_tro_xuong"],
+    "mo_ta": "Cơ thể miễn nhiễm toàn bộ độc dược từ cấp Trung trở xuống, Kháng Độc đạt 100% với độc cấp Trung trở xuống."
+  },
+  {
+    "ma": "minh_dong_da_sat",
+    "ten": "Mình Đồng Da Sắt",
+    "nguon": "HS01 II.7",
+    "hieu_ung_moi_nam": [],
+    "dac_biet": ["minh_dong_da_sat"],
+    "mo_ta": "Thân thể tôi luyện qua bão tuyết và nghịch cảnh, gân cốt cứng cỏi, tăng khả năng chống chịu ngoại lực."
+  },
+  {
+    "ma": "han_doc_phe_phoi",
+    "ten": "Hàn Độc Phế Phổi",
+    "nguon": "HS01 II.7",
+    "hieu_ung_moi_nam": [],
+    "dac_biet": ["giam_tuoi_tho_chua_truoc_18"],
+    "mo_ta": "Hàn khí ngấm vào tâm mạch và phế phổi thời thơ ấu, giảm tuổi thọ nếu không kịp thời chữa khỏi trước năm 18 tuổi."
+  },
+  {
+    "ma": "tam_ma_dut_ruot",
+    "ten": "Tâm Ma Đứt Ruột",
+    "nguon": "HS01 II.7",
+    "hieu_ung_moi_nam": [{ "cong": { "can_cot": -5 } }],
+    "dac_biet": ["uy_luc_he_am_50"],
+    "mo_ta": "Chịu nỗi đau mất đi tri kỷ hoặc biến cố đoạn trường, tâm ma cắn rứt. Mỗi năm giảm 5 Căn cốt, nhưng uy lực võ công hệ Âm hoặc Sầu khổ tăng 50%."
+  },
+  {
+    "ma": "kinh_mach_nghich_hanh",
+    "ten": "Kinh Mạch Nghịch Hành",
+    "nguon": "HS01 II.7",
+    "hieu_ung_moi_nam": [],
+    "dac_biet": ["dien_loan", "sat_thuong_x2_5", "khoa_quan_ly", "tu_gay_su_30"],
+    "mo_ta": "Tẩu hỏa nhập ma hóa điên, nghịch chuyển kinh mạch. Sát thương gây ra tăng 150% (x2.5), mất kiểm soát mua bán và quản lý, mỗi năm 30% tỷ lệ tự khiêu chiến các cao thủ giang hồ."
+  }
+]

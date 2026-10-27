@@ -3,9 +3,12 @@ import type { z } from 'zod'
 import { kiemTraNguNghia } from './kiem_tra_ngu_nghia'
 import {
   LuocDoChiSo,
+  LuocDoGiaCanh,
   LuocDoMonPhai,
+  LuocDoNhan,
   LuocDoSuKien,
   LuocDoThienPhu,
+  LuocDoTrangThai,
   LuocDoVoHoc,
   LuocDoVung,
   type DuLieu,
@@ -31,7 +34,17 @@ function theoMa<T extends { ma: string }>(duong: string, ds: T[], loi: string[])
 /** `tep`: đường dẫn tương đối từ du_lieu/ (dấu "/") → nội dung JSON đã parse. */
 export function napDuLieu(tep: Record<string, unknown>): DuLieu {
   const loi: string[] = []
-  const dl: DuLieu = { vung: {}, chi_so: {}, thien_phu: {}, vo_hoc: {}, mon_phai: {}, su_kien: {} }
+  const dl: DuLieu = {
+    vung: {},
+    chi_so: {},
+    gia_canh: {},
+    thien_phu: {},
+    trang_thai: {},
+    nhan: {},
+    vo_hoc: {},
+    mon_phai: {},
+    su_kien: {},
+  }
 
   const doc = <T>(duong: string, noiDung: unknown, luocDo: z.ZodType<T>): T | null => {
     const kq = luocDo.safeParse(noiDung)
@@ -47,9 +60,18 @@ export function napDuLieu(tep: Record<string, unknown>): DuLieu {
     } else if (duong === 'chi_so.json') {
       const ds = doc(duong, noiDung, LuocDoChiSo.array())
       if (ds) dl.chi_so = theoMa(duong, ds, loi)
+    } else if (duong === 'gia_canh.json') {
+      const ds = doc(duong, noiDung, LuocDoGiaCanh.array())
+      if (ds) dl.gia_canh = theoMa(duong, ds, loi)
     } else if (duong === 'thien_phu.json') {
       const ds = doc(duong, noiDung, LuocDoThienPhu.array())
       if (ds) dl.thien_phu = theoMa(duong, ds, loi)
+    } else if (duong === 'trang_thai.json') {
+      const ds = doc(duong, noiDung, LuocDoTrangThai.array())
+      if (ds) dl.trang_thai = theoMa(duong, ds, loi)
+    } else if (duong === 'nhan.json') {
+      const ds = doc(duong, noiDung, LuocDoNhan.array())
+      if (ds) dl.nhan = theoMa(duong, ds, loi)
     } else if (duong.startsWith('vo_hoc/')) {
       const ds = doc(duong, noiDung, LuocDoVoHoc.array())
       if (ds) {

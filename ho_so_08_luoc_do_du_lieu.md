@@ -24,7 +24,7 @@ File chưa có lược đồ bị `npm run kiem-tra-du-lieu` từ chối ("khôn
 | :--- | :--- | :--- |
 | `vung.json` | 5 khu vực | Đã có (M0-03) |
 | `chi_so.json` | Danh sách chỉ số theo HS01 II.8 | Đã có (M0-05) |
-| `gia_canh.json`, `thien_phu.json`, `trang_thai.json`, `nhan.json` | Gia cảnh, Thiên phú, Trạng thái, Nhãn tính cách | M1-02 |
+| `gia_canh.json`, `thien_phu.json`, `trang_thai.json`, `nhan.json` | Gia cảnh, Thiên phú, Trạng thái, Nhãn tính cách | Đã có (M1-02) |
 | `vo_hoc/*.json`, `mon_phai/*.json` | Võ học, môn phái | Đã có (M1-01) |
 | `vat_pham/*.json`, `hanh_dong.json` | Vật phẩm, hành động | M1-03 |
 | `su_kien/<nhom>/<ma>.json` | Sự kiện, một file một sự kiện | M1-05 |
@@ -176,6 +176,207 @@ Ví dụ hoàn chỉnh:
   "dac_quyen": ["tang_kinh_cac"],
   "mo_ta": "Môn phái danh tiếng trong Ngũ Nhạc Kiếm Phái, chia rẽ giữa Kiếm Tông và Khí Tông."
 }
+```
+
+### II.5. `gia_canh.json`
+
+Một mảng gồm 4 nhóm gia cảnh tại Tuổi 0 (HS01 III.1).
+Tổng tỷ lệ của các gia cảnh bắt buộc phải bằng 100.
+
+| Trường | Kiểu | Ý nghĩa |
+| :--- | :--- | :--- |
+| `ma` | chuỗi | Mã gia cảnh (`han_vi`, `binh_dan`, `phu_thuong`, `vo_lam_the_gia`). |
+| `ten` | chuỗi | Tên hiển thị. |
+| `nguon` | chuỗi | Mục GDD gốc (HS01 III.1). |
+| `ti_le` | số nguyên từ 1 đến 100 | Tỷ lệ quay trúng tại Tuổi 0 (HS01 III.1). |
+| `ngan_luong_khoi_dau` | mảng 2 số nguyên `[min, max]` | Khoảng ngân lượng khởi đầu tại Tuổi 0 (HS06 II.4). |
+| `thu_nhap_gia_dinh` | số nguyên | Thu nhập gia đình tự động nhận mỗi năm cho đến năm 15 tuổi (HS06 II.4). |
+| `dieu_chinh_chi_so` | bảng ánh xạ chỉ số sang số nguyên | Lượng cộng chỉ số bẩm sinh theo gia cảnh (HS01 III.1, G06). |
+| `dac_biet` | mảng chuỗi | Danh sách cờ cơ chế đặc biệt (ví dụ `vo_cong_gia_truyen_5_tuoi`, `ke_thu_truyen_kiep`). |
+| `mo_ta` | chuỗi | Mô tả bối cảnh xuất thân của gia cảnh. |
+
+Ví dụ hoàn chỉnh:
+
+```json
+[
+  {
+    "ma": "han_vi",
+    "ten": "Hàn Vi",
+    "nguon": "HS01 III.1",
+    "ti_le": 35,
+    "ngan_luong_khoi_dau": [0, 0],
+    "thu_nhap_gia_dinh": 0,
+    "dieu_chinh_chi_so": {
+      "can_cot": -10,
+      "ngo_tinh": 0,
+      "phuc_duyen": 15,
+      "mi_luc": 0
+    },
+    "dac_biet": [],
+    "mo_ta": "Con ăn mày, trẻ mồ côi thời loạn, con nông dân mất mùa. Ngân lượng bằng 0, Căn cốt thấp do suy dinh dưỡng, nhưng bù lại Phúc duyên cao."
+  },
+  {
+    "ma": "binh_dan",
+    "ten": "Bình Dân",
+    "nguon": "HS01 III.1",
+    "ti_le": 35,
+    "ngan_luong_khoi_dau": [10, 30],
+    "thu_nhap_gia_dinh": 5,
+    "dieu_chinh_chi_so": {
+      "can_cot": 0,
+      "ngo_tinh": 0,
+      "phuc_duyen": 0,
+      "mi_luc": 0
+    },
+    "dac_biet": [],
+    "mo_ta": "Con thợ rèn, con chủ quán trọ, gia đình tiều phu. Chỉ số cân bằng, cuộc sống êm đềm từ 0 đến 12 tuổi."
+  },
+  {
+    "ma": "phu_thuong",
+    "ten": "Phú Thương",
+    "nguon": "HS01 III.1",
+    "ti_le": 20,
+    "ngan_luong_khoi_dau": [500, 1500],
+    "thu_nhap_gia_dinh": 50,
+    "dieu_chinh_chi_so": {
+      "can_cot": -5,
+      "ngo_tinh": 10,
+      "phuc_duyen": 0,
+      "mi_luc": 10
+    },
+    "dac_biet": ["gia_dao_suy_vi"],
+    "mo_ta": "Con nhà buôn lụa Giang Nam, con quan huyện. Ngân lượng khởi đầu dồi dào, Mị lực và Ngộ tính cao, nhưng dễ gặp biến cố gia đạo suy vi."
+  },
+  {
+    "ma": "vo_lam_the_gia",
+    "ten": "Võ Lâm Thế Gia",
+    "nguon": "HS01 III.1",
+    "ti_le": 10,
+    "ngan_luong_khoi_dau": [200, 800],
+    "thu_nhap_gia_dinh": 20,
+    "dieu_chinh_chi_so": {
+      "can_cot": 10,
+      "ngo_tinh": 5,
+      "phuc_duyen": 0,
+      "mi_luc": 0
+    },
+    "dac_biet": ["vo_cong_gia_truyen_5_tuoi", "ke_thu_truyen_kiep"],
+    "mo_ta": "Hậu duệ danh môn, con của đại hiệp hoặc ma đầu ẩn danh. Có sẵn võ công gia truyền từ năm 5 tuổi, nhưng mặc định mang sẵn Kẻ thù truyền kiếp."
+  }
+]
+```
+
+### II.6. `thien_phu.json`
+
+Một mảng gồm các thiên phú bẩm sinh chọn ở Tuổi 0 hoặc di truyền (HS01 III.2, HS05 IV.1, G05).
+
+| Trường | Kiểu | Ý nghĩa |
+| :--- | :--- | :--- |
+| `ma` | chuỗi | Mã thiên phú. |
+| `ten` | chuỗi | Tên hiển thị. |
+| `nguon` | chuỗi | Mục GDD gốc (`HS01 III.2`, `HS05 IV.1`, `G05`). |
+| `do_hiem` | 1 / 2 / 3 / 4 | Độ hiếm: 1 Trắng (Thường), 2 Lam (Hiếm), 3 Tím (Quý), 4 Đỏ (Cực hiếm). |
+| `hieu_ung_tuoi_0` | mảng `HieuUng` | Hiệu ứng kích hoạt ngay khi chọn thiên phú tại Tuổi 0. |
+| `hieu_ung_moi_nam` | mảng `HieuUng` | Hiệu ứng kích hoạt định kỳ mỗi năm (ví dụ Tư Chất Ngu Độn). |
+| `dac_biet` | mảng chuỗi | Mã cơ chế riêng (ví dụ `khoa_ngo_tinh`, `dao_hoa_kiep`, `cuu_duong_tuyet_mach`). |
+| `mo_ta` | chuỗi | Mô tả chi tiết tác dụng của thiên phú. |
+
+Ví dụ hoàn chỉnh:
+
+```json
+[
+  {
+    "ma": "than_the_cuong_trang",
+    "ten": "Thân Thể Cường Tráng",
+    "nguon": "G05",
+    "do_hiem": 1,
+    "hieu_ung_tuoi_0": [{ "cong": { "can_cot": 5 } }],
+    "hieu_ung_moi_nam": [],
+    "dac_biet": [],
+    "mo_ta": "Thân thể khỏe khoắn từ nhỏ, Căn cốt tăng 5 điểm."
+  },
+  {
+    "ma": "tu_chat_ngu_don",
+    "ten": "Tư Chất Ngu Độn",
+    "nguon": "HS01 III.2",
+    "do_hiem": 3,
+    "hieu_ung_tuoi_0": [{ "cong": { "ngo_tinh": 10 } }],
+    "hieu_ung_moi_nam": [{ "cong": { "can_cot": 2, "phuc_duyen": 3 } }],
+    "dac_biet": ["khoa_ngo_tinh", "tu_chat_ngu_don"],
+    "mo_ta": "Ngộ tính bị khóa ở 10. Bù lại từ 0 đến 15 tuổi mỗi năm Căn cốt tăng 2 và Phúc duyên tăng 3. Là tiền đề luyện tuyệt kỹ thượng thừa như Thái Huyền Kinh."
+  }
+]
+```
+
+### II.7. `trang_thai.json`
+
+Một mảng gồm các trạng thái nhận trong đời qua biến cố hoặc kỳ ngộ (HS01 II.7).
+Trạng thái có thể mang hiệu ứng mỗi năm hoặc các cờ cơ chế đặc biệt.
+
+| Trường | Kiểu | Ý nghĩa |
+| :--- | :--- | :--- |
+| `ma` | chuỗi | Mã trạng thái. |
+| `ten` | chuỗi | Tên hiển thị. |
+| `nguon` | chuỗi | Mục GDD gốc (HS01 II.7). |
+| `hieu_ung_moi_nam` | mảng `HieuUng` | Hiệu ứng tác động mỗi năm khi nhân vật đang mang trạng thái này. |
+| `dac_biet` | mảng chuỗi | Mã cơ chế riêng của trạng thái. |
+| `mo_ta` | chuỗi | Mô tả nguyên nhân và hệ quả của trạng thái. |
+
+Ví dụ hoàn chỉnh:
+
+```json
+[
+  {
+    "ma": "bach_doc_bat_xam",
+    "ten": "Bách Độc Bất Xâm",
+    "nguon": "HS01 II.7",
+    "hieu_ung_moi_nam": [],
+    "dac_biet": ["mien_doc_trung_tro_xuong"],
+    "mo_ta": "Cơ thể miễn nhiễm toàn bộ độc dược từ cấp Trung trở xuống, Kháng Độc đạt 100% với độc cấp Trung trở xuống."
+  },
+  {
+    "ma": "tam_ma_dut_ruot",
+    "ten": "Tâm Ma Đứt Ruột",
+    "nguon": "HS01 II.7",
+    "hieu_ung_moi_nam": [{ "cong": { "can_cot": -5 } }],
+    "dac_biet": ["uy_luc_he_am_50"],
+    "mo_ta": "Chịu nỗi đau mất đi tri kỷ hoặc biến cố đoạn trường, tâm ma cắn rứt. Mỗi năm giảm 5 Căn cốt, nhưng uy lực võ công hệ Âm hoặc Sầu khổ tăng 50%."
+  }
+]
+```
+
+### II.8. `nhan.json`
+
+Một mảng gồm các nhãn tính cách thể hiện dấu ấn hành vi của nhân vật (HS01 II.7).
+Nhãn ảnh hưởng đến các lựa chọn sự kiện và thái độ của NPC trong giang hồ.
+
+| Trường | Kiểu | Ý nghĩa |
+| :--- | :--- | :--- |
+| `ma` | chuỗi | Mã nhãn tính cách. |
+| `ten` | chuỗi | Tên hiển thị. |
+| `nguon` | chuỗi | Mục GDD gốc (HS01 II.7). |
+| `dac_biet` | mảng chuỗi | Mã cơ chế riêng của nhãn. |
+| `mo_ta` | chuỗi | Mô tả nét tính cách và tác động hành vi. |
+
+Ví dụ hoàn chỉnh:
+
+```json
+[
+  {
+    "ma": "nhan_nhin_tham_sau",
+    "ten": "Nhẫn Nhịn Thâm Sâu",
+    "nguon": "HS01 II.7",
+    "dac_biet": ["tang_sat_thuong_danh_len_am_khi"],
+    "mo_ta": "Biết nhẫn nhục chờ thời, tăng sát thương khi đánh lén hoặc sử dụng ám khí."
+  },
+  {
+    "ma": "quat_cuong",
+    "ten": "Quật Cường",
+    "nguon": "HS03 III.2",
+    "dac_biet": ["quat_cuong"],
+    "mo_ta": "Tính cách kiên cường bất khuất, dù thất bại trước cường địch vẫn giữ vững khí tiết."
+  }
+]
 ```
 
 ## III. Sự kiện

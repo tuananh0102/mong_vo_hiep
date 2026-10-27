@@ -1,0 +1,122 @@
+[
+  {
+    "ma": "than_the_cuong_trang",
+    "ten": "Thân Thể Cường Tráng",
+    "nguon": "G05",
+    "do_hiem": 1,
+    "hieu_ung_tuoi_0": [{ "cong": { "can_cot": 5 } }],
+    "hieu_ung_moi_nam": [],
+    "dac_biet": [],
+    "mo_ta": "Thân thể khỏe khoắn từ nhỏ, Căn cốt tăng 5 điểm."
+  },
+  {
+    "ma": "thong_minh_lanh_loi",
+    "ten": "Thông Minh Lanh Lợi",
+    "nguon": "G05",
+    "do_hiem": 1,
+    "hieu_ung_tuoi_0": [{ "cong": { "ngo_tinh": 5 } }],
+    "hieu_ung_moi_nam": [],
+    "dac_biet": [],
+    "mo_ta": "Đầu óc lanh lợi, hiểu việc nhanh, Ngộ tính tăng 5 điểm."
+  },
+  {
+    "ma": "mat_mui_khoi_ngo",
+    "ten": "Mặt Mũi Khôi Ngô",
+    "nguon": "G05",
+    "do_hiem": 1,
+    "hieu_ung_tuoi_0": [{ "cong": { "mi_luc": 5 } }],
+    "hieu_ung_moi_nam": [],
+    "dac_biet": [],
+    "mo_ta": "Tướng mạo đoan trang thanh tú, Mị lực tăng 5 điểm."
+  },
+  {
+    "ma": "so_huong",
+    "ten": "Số Hưởng",
+    "nguon": "G05",
+    "do_hiem": 1,
+    "hieu_ung_tuoi_0": [{ "cong": { "phuc_duyen": 5 } }],
+    "hieu_ung_moi_nam": [],
+    "dac_biet": [],
+    "mo_ta": "Gặp dữ hóa lành, hay gặp may mắn, Phúc duyên tăng 5 điểm."
+  },
+  {
+    "ma": "dao_hoa_kiep",
+    "ten": "Đào Hoa Kiếp",
+    "nguon": "HS01 III.2",
+    "do_hiem": 2,
+    "hieu_ung_tuoi_0": [{ "cong": { "mi_luc": 25 } }],
+    "hieu_ung_moi_nam": [],
+    "dac_biet": ["dao_hoa_kiep"],
+    "mo_ta": "Mị lực tăng 25 điểm. Cực dễ khiến NPC khác giới yêu mến, nhưng tỷ lệ cao dẫn đến các sự kiện ghen tuông, tình sát đẫm máu."
+  },
+  {
+    "ma": "thien_sinh_than_luc",
+    "ten": "Thiên Sinh Thần Lực",
+    "nguon": "G05",
+    "do_hiem": 2,
+    "hieu_ung_tuoi_0": [{ "cong": { "can_cot": 12 } }],
+    "hieu_ung_moi_nam": [],
+    "dac_biet": [],
+    "mo_ta": "Bẩm sinh sức mạnh hơn người, Căn cốt tăng 12 điểm."
+  },
+  {
+    "ma": "doc_nhanh_nho_lau",
+    "ten": "Đọc Nhanh Nhớ Lâu",
+    "nguon": "G05",
+    "do_hiem": 2,
+    "hieu_ung_tuoi_0": [{ "cong": { "ngo_tinh": 12 } }],
+    "hieu_ung_moi_nam": [],
+    "dac_biet": [],
+    "mo_ta": "Khả năng ghi nhớ và tiếp thu vượt trội, Ngộ tính tăng 12 điểm."
+  },
+  {
+    "ma": "kim_khau",
+    "ten": "Kim Khẩu",
+    "nguon": "G05",
+    "do_hiem": 2,
+    "hieu_ung_tuoi_0": [{ "cong": { "mi_luc": 8, "thi": 10 } }],
+    "hieu_ung_moi_nam": [],
+    "dac_biet": [],
+    "mo_ta": "Lời nói như châu ngọc, Mị lực tăng 8 điểm, Tạp học Thi tăng 10 điểm."
+  },
+  {
+    "ma": "tu_chat_ngu_don",
+    "ten": "Tư Chất Ngu Độn",
+    "nguon": "HS01 III.2",
+    "do_hiem": 3,
+    "hieu_ung_tuoi_0": [{ "cong": { "ngo_tinh": 10 } }],
+    "hieu_ung_moi_nam": [{ "cong": { "can_cot": 2, "phuc_duyen": 3 } }],
+    "dac_biet": ["khoa_ngo_tinh", "tu_chat_ngu_don"],
+    "mo_ta": "Ngộ tính bị khóa ở 10. Bù lại từ 0 đến 15 tuổi mỗi năm Căn cốt tăng 2 và Phúc duyên tăng 3. Là tiền đề luyện tuyệt kỹ thượng thừa như Thái Huyền Kinh."
+  },
+  {
+    "ma": "kinh_mach_ky_di",
+    "ten": "Kinh Mạch Kỳ Dị",
+    "nguon": "G05",
+    "do_hiem": 3,
+    "hieu_ung_tuoi_0": [],
+    "hieu_ung_moi_nam": [],
+    "dac_biet": ["tien_do_noi_cong_20"],
+    "mo_ta": "Đường kinh mạch dị thường, tiến độ tu luyện Nội công tăng 20%."
+  },
+  {
+    "ma": "cuu_duong_tuyet_mach",
+    "ten": "Cửu Dương Tuyệt Mạch",
+    "nguon": "HS01 III.2",
+    "do_hiem": 4,
+    "hieu_ung_tuoi_0": [{ "cong": { "can_cot": 30 } }],
+    "hieu_ung_moi_nam": [],
+    "dac_biet": ["cuu_duong_tuyet_mach"],
+    "mo_ta": "Căn cốt tăng 30 điểm, nội lực tự tăng mỗi năm. Nếu trước năm 20 tuổi không tìm được võ công hệ Dương hoặc Hàn băng bảo vật để cân bằng thì sẽ bạo thể mà chết."
+  },
+  {
+    "ma": "tien_thien_vo_the",
+    "ten": "Tiên Thiên Võ Thể",
+    "nguon": "HS05 IV.1",
+    "do_hiem": 4,
+    "hieu_ung_tuoi_0": [],
+    "hieu_ung_moi_nam": [],
+    "dac_biet": ["tien_do_moi_mon_20"],
+    "mo_ta": "Bẩm sinh võ cốt phi phàm, tốc độ tiến độ lĩnh ngộ tăng 20% cho mọi môn võ công."
+  }
+]

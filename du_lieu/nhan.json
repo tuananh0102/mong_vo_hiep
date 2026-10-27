@@ -1,0 +1,37 @@
+[
+  {
+    "ma": "ac_mong_dem_mua",
+    "ten": "Ác Mộng Đêm Mưa",
+    "nguon": "HS03 II.2",
+    "dac_biet": ["hao_cam_ao_den_-10"],
+    "mo_ta": "Ký ức kinh hoàng thời ấu thơ dưới màn mưa đêm, Hảo cảm khởi đầu với NPC mặc áo đen giảm 10 điểm."
+  },
+  {
+    "ma": "nhan_nhin_tham_sau",
+    "ten": "Nhẫn Nhịn Thâm Sâu",
+    "nguon": "HS01 II.7",
+    "dac_biet": ["tang_sat_thuong_danh_len_am_khi"],
+    "mo_ta": "Biết nhẫn nhục chờ thời, tăng sát thương khi đánh lén hoặc sử dụng ám khí."
+  },
+  {
+    "ma": "quat_cuong",
+    "ten": "Quật Cường",
+    "nguon": "HS03 III.2",
+    "dac_biet": ["quat_cuong"],
+    "mo_ta": "Tính cách kiên cường bất khuất, dù thất bại trước cường địch vẫn giữ vững khí tiết."
+  },
+  {
+    "ma": "pha_gia_chi_tu",
+    "ten": "Phá Gia Chi Tử",
+    "nguon": "HS01 II.7",
+    "dac_biet": ["pha_gia_chi_tu"],
+    "mo_ta": "Tiêu xài hoang phí tiền của gia tộc, tính tình phóng đãng ngông cuồng."
+  },
+  {
+    "ma": "kieu_ngao",
+    "ten": "Kiêu Ngạo",
+    "nguon": "HS01 II.7",
+    "dac_biet": ["kieu_ngao"],
+    "mo_ta": "Tự phụ coi trời bằng vung, dễ đắc tội người khác trên giang hồ."
+  }
+]

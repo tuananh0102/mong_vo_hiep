@@ -7,7 +7,9 @@ const dl = napTuDia()
 // Thiên phú thử: Tư Chất Ngu Độn khóa Ngộ tính (HS01 III.2). Dữ liệu thật ở M1-02.
 const dlNgu = napDuLieu({
   'chi_so.json': Object.values(dl.chi_so),
-  'thien_phu.json': [{ ma: 'tu_chat_ngu_don', ten: 'Tư Chất Ngu Độn', nguon: 'HS01 III.2', dac_biet: ['khoa_ngo_tinh'] }],
+  'thien_phu.json': [
+    { ma: 'tu_chat_ngu_don', ten: 'Tư Chất Ngu Độn', nguon: 'HS01 III.2', do_hiem: 3, dac_biet: ['khoa_ngo_tinh'] },
+  ],
 })
 
 describe('chi_so', () => {

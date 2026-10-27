@@ -112,6 +112,52 @@ describe('ví dụ HS08', () => {
     expect(dl.mon_phai?.['hoa_son']?.quy_mo).toBe('vua')
   })
 
+  it('II.5 gia_canh.json qua lược đồ', () => {
+    const dsChiSo = [
+      ...(khoiJson('### II.2.') as object[]),
+      { ma: 'ngo_tinh', ten: 'Ngộ Tính', nhom: 'thien_phu', min: 0, max: 100, tran_cung: 150, hien_thi: 'hien', nguon: 'HS01 II.8' },
+      { ma: 'phuc_duyen', ten: 'Phúc Duyên', nhom: 'thien_phu', min: 0, max: 100, tran_cung: 150, hien_thi: 'ban_an', nguon: 'HS01 II.8' },
+      { ma: 'mi_luc', ten: 'Mị Lực', nhom: 'thien_phu', min: 0, max: 100, tran_cung: 150, hien_thi: 'hien', nguon: 'HS01 II.8' },
+    ]
+    const dl = napDuLieu({
+      'chi_so.json': dsChiSo,
+      'gia_canh.json': khoiJson('### II.5.'),
+    })
+    expect(dl.gia_canh?.['han_vi']?.ti_le).toBe(35)
+    expect(dl.gia_canh?.['vo_lam_the_gia']?.dac_biet).toContain('vo_cong_gia_truyen_5_tuoi')
+  })
+
+  it('II.6 thien_phu.json qua lược đồ', () => {
+    const dsChiSo = [
+      ...(khoiJson('### II.2.') as object[]),
+      { ma: 'ngo_tinh', ten: 'Ngộ Tính', nhom: 'thien_phu', min: 0, max: 100, tran_cung: 150, hien_thi: 'hien', nguon: 'HS01 II.8' },
+      { ma: 'phuc_duyen', ten: 'Phúc Duyên', nhom: 'thien_phu', min: 0, max: 100, tran_cung: 150, hien_thi: 'ban_an', nguon: 'HS01 II.8' },
+    ]
+    const dl = napDuLieu({
+      'chi_so.json': dsChiSo,
+      'thien_phu.json': khoiJson('### II.6.'),
+    })
+    expect(dl.thien_phu['than_the_cuong_trang']?.do_hiem).toBe(1)
+    expect(dl.thien_phu['tu_chat_ngu_don']?.do_hiem).toBe(3)
+  })
+
+  it('II.7 trang_thai.json qua lược đồ', () => {
+    const dl = napDuLieu({
+      'chi_so.json': khoiJson('### II.2.'),
+      'trang_thai.json': khoiJson('### II.7.'),
+    })
+    expect(dl.trang_thai?.['bach_doc_bat_xam']?.dac_biet).toContain('mien_doc_trung_tro_xuong')
+    expect(dl.trang_thai?.['tam_ma_dut_ruot']?.hieu_ung_moi_nam).toHaveLength(1)
+  })
+
+  it('II.8 nhan.json qua lược đồ', () => {
+    const dl = napDuLieu({
+      'nhan.json': khoiJson('### II.8.'),
+    })
+    expect(dl.nhan?.['nhan_nhin_tham_sau']?.dac_biet).toContain('tang_sat_thuong_danh_len_am_khi')
+    expect(dl.nhan?.['quat_cuong']?.ten).toBe('Quật Cường')
+  })
+
   it('không có dấu gạch dài', () => {
     expect(hs08).not.toContain('—')
   })

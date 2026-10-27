@@ -1,0 +1,66 @@
+[
+  {
+    "ma": "han_vi",
+    "ten": "Hàn Vi",
+    "nguon": "HS01 III.1",
+    "ti_le": 35,
+    "ngan_luong_khoi_dau": [0, 0],
+    "thu_nhap_gia_dinh": 0,
+    "dieu_chinh_chi_so": {
+      "can_cot": -10,
+      "ngo_tinh": 0,
+      "phuc_duyen": 15,
+      "mi_luc": 0
+    },
+    "dac_biet": [],
+    "mo_ta": "Con ăn mày, trẻ mồ côi thời loạn, con nông dân mất mùa. Ngân lượng bằng 0, Căn cốt thấp do suy dinh dưỡng, nhưng bù lại Phúc duyên cao."
+  },
+  {
+    "ma": "binh_dan",
+    "ten": "Bình Dân",
+    "nguon": "HS01 III.1",
+    "ti_le": 35,
+    "ngan_luong_khoi_dau": [10, 30],
+    "thu_nhap_gia_dinh": 5,
+    "dieu_chinh_chi_so": {
+      "can_cot": 0,
+      "ngo_tinh": 0,
+      "phuc_duyen": 0,
+      "mi_luc": 0
+    },
+    "dac_biet": [],
+    "mo_ta": "Con thợ rèn, con chủ quán trọ, gia đình tiều phu. Chỉ số cân bằng, cuộc sống êm đềm từ 0 đến 12 tuổi."
+  },
+  {
+    "ma": "phu_thuong",
+    "ten": "Phú Thương",
+    "nguon": "HS01 III.1",
+    "ti_le": 20,
+    "ngan_luong_khoi_dau": [500, 1500],
+    "thu_nhap_gia_dinh": 50,
+    "dieu_chinh_chi_so": {
+      "can_cot": -5,
+      "ngo_tinh": 10,
+      "phuc_duyen": 0,
+      "mi_luc": 10
+    },
+    "dac_biet": ["gia_dao_suy_vi"],
+    "mo_ta": "Con nhà buôn lụa Giang Nam, con quan huyện. Ngân lượng khởi đầu dồi dào, Mị lực và Ngộ tính cao, nhưng dễ gặp biến cố gia đạo suy vi."
+  },
+  {
+    "ma": "vo_lam_the_gia",
+    "ten": "Võ Lâm Thế Gia",
+    "nguon": "HS01 III.1",
+    "ti_le": 10,
+    "ngan_luong_khoi_dau": [200, 800],
+    "thu_nhap_gia_dinh": 20,
+    "dieu_chinh_chi_so": {
+      "can_cot": 10,
+      "ngo_tinh": 5,
+      "phuc_duyen": 0,
+      "mi_luc": 0
+    },
+    "dac_biet": ["vo_cong_gia_truyen_5_tuoi", "ke_thu_truyen_kiep"],
+    "mo_ta": "Hậu duệ danh môn, con của đại hiệp hoặc ma đầu ẩn danh. Có sẵn võ công gia truyền từ năm 5 tuổi, nhưng mặc định mang sẵn Kẻ thù truyền kiếp."
+  }
+]
