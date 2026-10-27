@@ -143,7 +143,7 @@ Trước khi làm: đọc [README.md](README.md) mục 3 - 5 và [01_KIEN_TRUC.m
 
 ---
 
-### [ ] M0-06 Kiểm định xác suất
+### [x] M0-06 Kiểm định xác suất
 
 **Phụ thuộc:** M0-05.
 **Đọc:** HS06 I.2 (toàn bộ); `mo_phong.py` hàm `p_roll`; thiết kế mục 9.
