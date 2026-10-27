@@ -7,6 +7,7 @@ import { rngTuSeed, taoRng } from './rng'
 import { xuLyChon } from './su_kien'
 import { quaNam } from './vong_nam'
 import { trangBi } from './vo_hoc'
+import { thucHienHanhDong } from './hanh_dong'
 
 export interface KetQuaLenh {
   trang_thai: TrangThaiGame
@@ -103,7 +104,15 @@ export function apDung(s: TrangThaiGame, lenh: Lenh, dl: DuLieu): KetQuaLenh {
       break
     }
 
-    case 'hanh_dong':
+    case 'hanh_dong': {
+      const kq = thucHienHanhDong(d, rng, dl, lenh.ma, lenh.tham_so)
+      if (kq.loi) {
+        return { trang_thai: s, dong_moi: [], loi: kq.loi }
+      }
+      dongMoi.push(...kq.dong_moi)
+      break
+    }
+
     case 'tam_hiep':
     case 'dung_vat_pham':
     case 'mua': {

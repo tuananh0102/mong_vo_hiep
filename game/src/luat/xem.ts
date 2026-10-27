@@ -2,7 +2,7 @@
 import type { DuLieu } from '../du_lieu/luoc_do'
 import { danhGia, moTaThieu } from './dieu_kien'
 import type { NhanDoKho } from './kiem_dinh'
-import { nhanDoKho } from './kiem_dinh'
+import { nhanDoKho, pRoll } from './kiem_dinh'
 import type { Cho, DongBienNien, KetThuc, TrangThaiGame } from './kieu'
 import { tinhXacSuatKiemDinh } from './su_kien'
 import { dienMau } from './van_ban'
@@ -139,4 +139,83 @@ export function xemManHinh(d: TrangThaiGame, dl: DuLieu): DuLieuManHinh {
     ket_thuc: d.ket_thuc,
     su_kien: d.cho?.loai === 'su_kien' ? xemSuKien(d, dl) : null,
   }
+}
+
+export interface HanhDongHienThi {
+  ma: string
+  ten: string
+  ap: number
+  nhom_tab: string
+  bi_khoa: boolean
+  ly_do: string | null
+  do_kho?: NhanDoKho
+  mo_ta: string
+}
+
+/**
+ * HS01 IV, HS06 I.2: Danh sách hành động nhóm theo Tab.
+ * Mỗi dòng có tên, chi phí AP, bi_khoa + lý do, và nếu có Roll thì nhãn độ khó.
+ */
+export function xemHanhDong(
+  d: TrangThaiGame,
+  dl: DuLieu,
+): Record<string, HanhDongHienThi[]> {
+  const ketQua: Record<string, HanhDongHienThi[]> = {}
+
+  if (!dl.hanh_dong) return ketQua
+
+  for (const [ma, hd] of Object.entries(dl.hanh_dong)) {
+    let biKhoa = false
+    let lyDo: string | null = null
+
+    // 1. Kiểm tra tuổi
+    if (d.nhan_vat.tuoi < hd.tuoi[0]) {
+      biKhoa = true
+      lyDo = `Chưa đủ tuổi (cần ${hd.tuoi[0]} tuổi)`
+    } else if (d.nhan_vat.tuoi > hd.tuoi[1]) {
+      biKhoa = true
+      lyDo = `Đã quá tuổi (chỉ từ ${hd.tuoi[0]} đến ${hd.tuoi[1]} tuổi)`
+    } else if (hd.dieu_kien && !danhGia(hd.dieu_kien, d, dl)) {
+      // 2. Kiểm tra điều kiện
+      biKhoa = true
+      lyDo = moTaThieu(hd.dieu_kien, d, dl) ?? 'Không đủ điều kiện'
+    } else if (hd.ap > 0 && d.nhan_vat.ap_con_lai < hd.ap) {
+      // 3. Kiểm tra AP
+      biKhoa = true
+      lyDo = 'Hết AP'
+    } else if (
+      hd.ap === 0 &&
+      hd.mien_phi &&
+      !hd.khong_tinh_gioi_han &&
+      d.nhan_vat.viec_mien_phi_con_lai < 1
+    ) {
+      biKhoa = true
+      lyDo = 'Hết lượt miễn phí năm nay'
+    }
+
+    // 4. Kiểm định Roll (nếu có, ví dụ tiểu thương)
+    let doKho: NhanDoKho | undefined
+    if (hd.xu_ly === 'tieu_thuong') {
+      const p = pRoll(d.nhan_vat.ngo_tinh, 50, d.nhan_vat.phuc_duyen)
+      doKho = nhanDoKho(p)
+    }
+
+    const item: HanhDongHienThi = {
+      ma,
+      ten: hd.ten,
+      ap: hd.ap,
+      nhom_tab: hd.nhom_tab,
+      bi_khoa: biKhoa,
+      ly_do: lyDo,
+      do_kho: doKho,
+      mo_ta: hd.mo_ta,
+    }
+
+    if (!ketQua[hd.nhom_tab]) {
+      ketQua[hd.nhom_tab] = []
+    }
+    ketQua[hd.nhom_tab]!.push(item)
+  }
+
+  return ketQua
 }

@@ -434,7 +434,7 @@ Nối các mã phái sinh vào `docChiSo` (thay chỗ `throw` ở M0-05).
 
 ---
 
-### [ ] M1-09 Hành động AP
+### [x] M1-09 Hành động AP
 
 **Phụ thuộc:** M1-03, M1-07, M1-08.
 **Đọc:** HS01 II.5, IV; HS03 I; HS06 II.1 (làm thuê, tiểu thương); `05_LO_HONG_GDD.md` G07, G08.

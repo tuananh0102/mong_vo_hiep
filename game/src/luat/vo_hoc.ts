@@ -96,7 +96,7 @@ export function luyenCong(
   d: TrangThaiGame,
   dl: DuLieu,
   ma: string,
-  tuyChon?: { capSuPhu?: number },
+  tuyChon?: { capSuPhu?: number; daTruAp?: boolean },
 ): DongBienNien[] {
   const daHoc = d.nhan_vat.vo_hoc[ma]
   const vh = dl.vo_hoc?.[ma]
@@ -113,8 +113,10 @@ export function luyenCong(
     ]
   }
 
-  // Trừ 1 AP
-  d.nhan_vat.ap_con_lai = Math.max(0, d.nhan_vat.ap_con_lai - 1)
+  // Trừ 1 AP (nếu chưa trừ trước đó)
+  if (!tuyChon?.daTruAp) {
+    d.nhan_vat.ap_con_lai = Math.max(0, d.nhan_vat.ap_con_lai - 1)
+  }
 
   // Tính tiến độ nhận được cho 1 AP
   const capSuPhu = tuyChon?.capSuPhu ?? layCapSuPhu(d, vh)
