@@ -310,7 +310,7 @@ Trước khi làm: đọc [README.md](README.md) mục 3 - 5 và [01_KIEN_TRUC.m
 
 ---
 
-### [ ] M1-04 Công thức phái sinh
+### [x] M1-04 Công thức phái sinh
 
 **Phụ thuộc:** M0-07, M1-01.
 **Đọc:** HS06 I.1, I.5; HS01 II.4, IV; HS02 II.1 (số ô, trần Khinh công); HS04 III (lão hóa).

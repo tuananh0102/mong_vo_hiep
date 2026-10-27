@@ -1,6 +1,15 @@
 // 01 mục 4: mọi ghi chỉ số đi qua đây để kẹp thang và trần cứng ở một chỗ (HS01 II.8, HS06 I.1).
 // Hàm ở đây sửa `nv` tại chỗ (quy ước bên trong apDung, 01 mục 5.1).
 import type { DinhNghiaChiSo, DuLieu } from '../du_lieu/luoc_do'
+import {
+  canhGioiNoiCong,
+  capKhinhCong,
+  chienLuc,
+  hpMax,
+  noiTucMax,
+  tuoiThoMax,
+  voLuc,
+} from './cong_thuc'
 import { rngTuSeed } from './rng'
 import type { NhanVat, TrangThaiGame } from './kieu'
 
@@ -15,13 +24,33 @@ function dinhNghia(dl: DuLieu, ma: string): DinhNghiaChiSo {
 
 function dinhNghiaLuu(dl: DuLieu, ma: string): DinhNghiaChiSo {
   const d = dinhNghia(dl, ma)
-  if (d.phai_sinh) throw new Error('M1-04') // phái sinh viết ở M1-04
+  if (d.phai_sinh) throw new Error(`không thể gán chỉ số phái sinh: ${ma}`)
   return d
 }
 
-/** Đọc chỉ số lưu; mã phái sinh chờ M1-04. */
+/** Đọc chỉ số lưu hoặc tính chỉ số phái sinh (HS01 II.8, M1-04). */
 export function docChiSo(dl: DuLieu, nv: NhanVat, ma: string): number {
-  dinhNghiaLuu(dl, ma)
+  const d = dinhNghia(dl, ma)
+  if (d.phai_sinh) {
+    switch (ma) {
+      case 'noi_tuc_max':
+        return noiTucMax(nv, dl)
+      case 'canh_gioi_noi_cong':
+        return canhGioiNoiCong(nv)
+      case 'hp_max':
+        return hpMax(nv, dl)
+      case 'vo_luc':
+        return voLuc(nv, dl)
+      case 'chien_luc':
+        return chienLuc(nv, dl)
+      case 'cap_khinh_cong':
+        return capKhinhCong(nv)
+      case 'tuoi_tho_max':
+        return tuoiThoMax(nv, dl)
+      default:
+        throw new Error(`chỉ số phái sinh chưa hỗ trợ: ${ma}`)
+    }
+  }
   return nv[ma as KhoaChiSo]
 }
 

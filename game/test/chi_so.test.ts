@@ -56,9 +56,11 @@ describe('chi_so', () => {
     expect(nv.y_thuat).toBe(100)
   })
 
-  it('mã phái sinh chờ M1-04, mã lạ báo lỗi', () => {
+  it('đọc mã phái sinh tính đúng, gán mã phái sinh báo lỗi, mã lạ báo lỗi', () => {
     const nv = taoNhanVatRong()
-    expect(() => docChiSo(dl, nv, 'hp_max')).toThrow('M1-04')
+    expect(docChiSo(dl, nv, 'hp_max')).toBe(100) // M1-04: phái sinh tính qua công thức
+    expect(() => datChiSo(dl, nv, 'hp_max', 200)).toThrow(/phái sinh/)
+    expect(() => congChiSo(dl, nv, 'hp_max', 10)).toThrow(/phái sinh/)
     expect(() => docChiSo(dl, nv, 'khong_co')).toThrow(/không tồn tại/)
     expect(docChiSo(dl, nv, 'tuoi')).toBe(0)
   })
