@@ -26,7 +26,7 @@ File chưa có lược đồ bị `npm run kiem-tra-du-lieu` từ chối ("khôn
 | `chi_so.json` | Danh sách chỉ số theo HS01 II.8 | Đã có (M0-05) |
 | `gia_canh.json`, `thien_phu.json`, `trang_thai.json`, `nhan.json` | Gia cảnh, Thiên phú, Trạng thái, Nhãn tính cách | Đã có (M1-02) |
 | `vo_hoc/*.json`, `mon_phai/*.json` | Võ học, môn phái | Đã có (M1-01) |
-| `vat_pham/*.json`, `hanh_dong.json` | Vật phẩm, hành động | M1-03 |
+| `vat_pham/*.json`, `hanh_dong.json` | Vật phẩm, hành động | Đã có (M1-03) |
 | `su_kien/<nhom>/<ma>.json` | Sự kiện, một file một sự kiện | M1-05 |
 | `dai_su_kien/*.json`, `npc/*.json` | Đại sự kiện, NPC | M2 |
 | `ket_cuc.json`, `luan_hoi.json`, `van_ban/*.json`, `ten_hien_thi.json` | Kết cục, Luân Hồi, văn bản hệ thống, tên hiển thị | M1-18 trở đi |
@@ -375,6 +375,111 @@ Ví dụ hoàn chỉnh:
     "nguon": "HS03 III.2",
     "dac_biet": ["quat_cuong"],
     "mo_ta": "Tính cách kiên cường bất khuất, dù thất bại trước cường địch vẫn giữ vững khí tiết."
+  }
+]
+```
+
+### II.9. `vat_pham/*.json`
+
+Mỗi file trong thư mục `vat_pham/` là một mảng các vật phẩm (đan dược, binh khí, giáp trụ, vật phẩm sự kiện...).
+
+| Trường | Kiểu | Ý nghĩa |
+| :--- | :--- | :--- |
+| `ma` | chuỗi | Mã vật phẩm duy nhất. |
+| `ten` | chuỗi | Tên hiển thị. |
+| `nguon` | chuỗi | Mục GDD gốc (HS06 III, HS03 II...). |
+| `loai` | `dan_duoc` / `su_kien` / `binh_khi` / `giap` / `bi_kip` / `ky_tran` | Loại vật phẩm. |
+| `gia` | số nguyên $\ge 0$ | Giá trị cơ sở tính bằng lạng bạc (0 nếu không bán). |
+| `ban_o` | `cho` / `hac_thi` / `khong_ban` | Kênh buôn bán trong game. |
+| `dung_trong_tran` | boolean | Có thể dùng giữa các hiệp trong trận Tam Hiệp hay không (mặc định false). |
+| `hieu_ung` | mảng `HieuUng` | Danh sách hiệu ứng kích hoạt khi sử dụng. |
+| `dac_biet` | mảng chuỗi | Danh sách cờ cơ chế riêng biệt của vật phẩm. |
+| `khang_thuoc` | boolean | Áp dụng cơ chế suy giảm hiệu quả kháng thuốc ở các lần uống sau hay không (HS06 III). |
+| `mo_ta` | chuỗi | Mô tả công dụng và điển cố của vật phẩm. |
+
+Ví dụ hoàn chỉnh:
+
+```json
+[
+  {
+    "ma": "kim_sang_duoc",
+    "ten": "Kim Sáng Dược",
+    "nguon": "HS06 III",
+    "loai": "dan_duoc",
+    "gia": 15,
+    "ban_o": "cho",
+    "dung_trong_tran": true,
+    "hieu_ung": [{ "cong_phan_tram": { "hp": 30 } }],
+    "dac_biet": [],
+    "khang_thuoc": false,
+    "mo_ta": "Thuốc trị ngoại thương phổ biến khắp tiệm thuốc, hồi phục ngay 30% HP, dùng được giữa hai hiệp trong trận đấu."
+  },
+  {
+    "ma": "thiet_kiem",
+    "ten": "Thiết Kiếm",
+    "nguon": "HS08 II.3",
+    "loai": "binh_khi",
+    "gia": 50,
+    "ban_o": "cho",
+    "dung_trong_tran": false,
+    "hieu_ung": [],
+    "dac_biet": [],
+    "khang_thuoc": false,
+    "mo_ta": "Thanh kiếm thép thông dụng của giang hồ hành giả."
+  }
+]
+```
+
+### II.10. `hanh_dong.json`
+
+Một mảng gồm các hành động chủ động mà người chơi có thể thực hiện trong giai đoạn đầu năm (HS01 IV, HS03 I, HS04 I).
+
+| Trường | Kiểu | Ý nghĩa |
+| :--- | :--- | :--- |
+| `ma` | chuỗi | Mã hành động duy nhất. |
+| `ten` | chuỗi | Tên hiển thị của hành động. |
+| `nguon` | chuỗi | Mục GDD gốc (HS01 IV, HS03 I, HS04 I, HS06 II.1, G08...). |
+| `tuoi` | mảng 2 số nguyên `[min, max]` | Khung độ tuổi mở khóa hành động. |
+| `ap` | số nguyên $\ge 0$ | Chi phí Điểm Hành Động (AP) cần dùng. |
+| `mien_phi` | boolean | Có phải hành động miễn phí 0 AP (giới hạn 2 lần/năm) hay không. |
+| `khong_tinh_gioi_han` | boolean | Hành động tiện ích không tính vào giới hạn 2 lần/năm (Uống thuốc, Thay trang bị, Xem bảng tin). |
+| `dieu_kien` | `DieuKien` hoặc `null` | Điều kiện cần thỏa mãn để hiển thị và chọn hành động. |
+| `xu_ly` | chuỗi | Tên hàm xử lý logic tương ứng trong code luật. |
+| `nhom_tab` | `sinh_hoat` / `tu_luyen` / `giang_ho` / `mon_phai` / `khac` | Nhóm tab chức năng hiển thị hành động trên giao diện. |
+| `hieu_ung` | mảng `HieuUng` | Danh sách hiệu ứng trực tiếp khi thực hiện hành động. |
+| `mo_ta` | chuỗi | Mô tả tóm tắt nội dung và hệ quả của hành động. |
+
+Ví dụ hoàn chỉnh:
+
+```json
+[
+  {
+    "ma": "nam_noi",
+    "ten": "Nằm Nôi",
+    "nguon": "HS03 I, G08",
+    "tuoi": [0, 5],
+    "ap": 1,
+    "mien_phi": false,
+    "khong_tinh_gioi_han": false,
+    "dieu_kien": null,
+    "xu_ly": "nam_noi",
+    "nhom_tab": "sinh_hoat",
+    "hieu_ung": [{ "cong_phan_tram": { "hp": 100 } }, { "cong": { "can_cot": 1 } }],
+    "mo_ta": "Ngoan ngoãn nằm trong nôi nghỉ ngơi, hồi phục toàn bộ thể lực và tăng 1 Căn cốt."
+  },
+  {
+    "ma": "mua_sam",
+    "ten": "Mua Sắm Ở Chợ",
+    "nguon": "HS01 IV",
+    "tuoi": [11, 200],
+    "ap": 0,
+    "mien_phi": true,
+    "khong_tinh_gioi_han": false,
+    "dieu_kien": null,
+    "xu_ly": "mua_sam",
+    "nhom_tab": "giang_ho",
+    "hieu_ung": [],
+    "mo_ta": "Dạo phố phường ghé tiệm thuốc và sạp chợ mua đan dược vật phẩm (tối đa 2 hành động miễn phí mỗi năm)."
   }
 ]
 ```

@@ -4,11 +4,13 @@ import { kiemTraNguNghia } from './kiem_tra_ngu_nghia'
 import {
   LuocDoChiSo,
   LuocDoGiaCanh,
+  LuocDoHanhDong,
   LuocDoMonPhai,
   LuocDoNhan,
   LuocDoSuKien,
   LuocDoThienPhu,
   LuocDoTrangThai,
+  LuocDoVatPham,
   LuocDoVoHoc,
   LuocDoVung,
   type DuLieu,
@@ -44,6 +46,8 @@ export function napDuLieu(tep: Record<string, unknown>): DuLieu {
     vo_hoc: {},
     mon_phai: {},
     su_kien: {},
+    vat_pham: {},
+    hanh_dong: {},
   }
 
   const doc = <T>(duong: string, noiDung: unknown, luocDo: z.ZodType<T>): T | null => {
@@ -88,6 +92,18 @@ export function napDuLieu(tep: Record<string, unknown>): DuLieu {
         if (mp.ma in dl.mon_phai) loi.push(`${duong}: ma "${mp.ma}" bị trùng`)
         dl.mon_phai[mp.ma] = mp
       }
+    } else if (duong.startsWith('vat_pham/')) {
+      const ds = doc(duong, noiDung, LuocDoVatPham.array())
+      if (ds) {
+        if (!dl.vat_pham) dl.vat_pham = {}
+        for (const vp of ds) {
+          if (vp.ma in dl.vat_pham) loi.push(`${duong}: ma "${vp.ma}" bị trùng`)
+          dl.vat_pham[vp.ma] = vp
+        }
+      }
+    } else if (duong === 'hanh_dong.json') {
+      const ds = doc(duong, noiDung, LuocDoHanhDong.array())
+      if (ds) dl.hanh_dong = theoMa(duong, ds, loi)
     } else if (
       duong.startsWith('su_kien/') ||
       (typeof noiDung === 'object' && noiDung !== null && 'lua_chon' in noiDung)

@@ -4,6 +4,7 @@ import type {
   DieuKien,
   DuLieu,
   GiaCanh,
+  HanhDong,
   HieuUng,
   LuaChon,
   MonPhai,
@@ -11,6 +12,7 @@ import type {
   SuKien,
   ThienPhuDuLieu,
   TrangThaiDuLieu,
+  VatPham,
   VoHoc,
 } from './luoc_do'
 
@@ -82,6 +84,10 @@ function kiemTraDieuKien(dk: DieuKien, duong: string, dl: DuLieu, loi: string[])
     if (dl.vo_hoc && Object.keys(dl.vo_hoc).length > 0 && !dl.vo_hoc[dk.vo_hoc]) {
       loi.push(`${duong}: điều kiện võ học tham chiếu "${dk.vo_hoc}" không tồn tại`)
     }
+  } else if ('vat_pham' in dk) {
+    if (dl.vat_pham && Object.keys(dl.vat_pham).length > 0 && !dl.vat_pham[dk.vat_pham]) {
+      loi.push(`${duong}: điều kiện vật phẩm tham chiếu "${dk.vat_pham}" không tồn tại`)
+    }
   } else if ('va' in dk) {
     dk.va.forEach((c, i) => kiemTraDieuKien(c, `${duong}.va[${i}]`, dl, loi))
   } else if ('hoac' in dk) {
@@ -121,6 +127,16 @@ function kiemTraHieuUng(hu: HieuUng, duong: string, dl: DuLieu, sk: SuKien, loi:
   if ('doi_gia_canh' in hu) {
     if (dl.gia_canh && Object.keys(dl.gia_canh).length > 0 && !dl.gia_canh[hu.doi_gia_canh]) {
       loi.push(`${duong}: hiệu ứng doi_gia_canh tham chiếu gia cảnh không tồn tại "${hu.doi_gia_canh}"`)
+    }
+  }
+  if ('nhan_vat_pham' in hu) {
+    if (dl.vat_pham && Object.keys(dl.vat_pham).length > 0 && !dl.vat_pham[hu.nhan_vat_pham]) {
+      loi.push(`${duong}: hiệu ứng nhan_vat_pham tham chiếu vật phẩm không tồn tại "${hu.nhan_vat_pham}"`)
+    }
+  }
+  if ('mat_vat_pham' in hu) {
+    if (dl.vat_pham && Object.keys(dl.vat_pham).length > 0 && !dl.vat_pham[hu.mat_vat_pham]) {
+      loi.push(`${duong}: hiệu ứng mat_vat_pham tham chiếu vật phẩm không tồn tại "${hu.mat_vat_pham}"`)
     }
   }
 
@@ -420,6 +436,48 @@ function kiemTraNhan(nh: NhanDuLieu, duong: string, _dl: DuLieu, loi: string[]):
   }
 }
 
+function kiemTraVatPham(vp: VatPham, duong: string, dl: DuLieu, loi: string[]): void {
+  if (!vp.nguon || vp.nguon.trim() === '') {
+    loi.push(`${duong}: thiếu nguon (01 mục 7.4 #12)`)
+  }
+  if (dl.chi_so && Object.keys(dl.chi_so).length > 0) {
+    for (let i = 0; i < vp.hieu_ung.length; i++) {
+      const hu = vp.hieu_ung[i]!
+      if ('cong' in hu) {
+        for (const ma of Object.keys(hu.cong)) {
+          if (!dl.chi_so[ma]) {
+            loi.push(`${duong}.hieu_ung[${i}]: tham chiếu chỉ số không tồn tại "${ma}"`)
+          }
+        }
+      }
+    }
+  }
+}
+
+function kiemTraHanhDong(hd: HanhDong, duong: string, dl: DuLieu, loi: string[]): void {
+  if (!hd.nguon || hd.nguon.trim() === '') {
+    loi.push(`${duong}: thiếu nguon (01 mục 7.4 #12)`)
+  }
+  if (hd.tuoi[0] > hd.tuoi[1]) {
+    loi.push(`${duong}: khoảng tuổi [${hd.tuoi[0]}, ${hd.tuoi[1]}] không hợp lệ`)
+  }
+  if (hd.dieu_kien) {
+    kiemTraDieuKien(hd.dieu_kien, `${duong}.dieu_kien`, dl, loi)
+  }
+  if (dl.chi_so && Object.keys(dl.chi_so).length > 0) {
+    for (let i = 0; i < hd.hieu_ung.length; i++) {
+      const hu = hd.hieu_ung[i]!
+      if ('cong' in hu) {
+        for (const ma of Object.keys(hu.cong)) {
+          if (!dl.chi_so[ma]) {
+            loi.push(`${duong}.hieu_ung[${i}]: tham chiếu chỉ số không tồn tại "${ma}"`)
+          }
+        }
+      }
+    }
+  }
+}
+
 export function kiemTraNguNghia(dl: DuLieu): string[] {
   const loi: string[] = []
 
@@ -479,6 +537,20 @@ export function kiemTraNguNghia(dl: DuLieu): string[] {
   if (dl.su_kien) {
     for (const [ma, sk] of Object.entries(dl.su_kien)) {
       kiemTraSuKien(sk, `su_kien[${ma}]`, dl, loi)
+    }
+  }
+
+  // Kiểm tra vật phẩm
+  if (dl.vat_pham) {
+    for (const [ma, vp] of Object.entries(dl.vat_pham)) {
+      kiemTraVatPham(vp, `vat_pham[${ma}]`, dl, loi)
+    }
+  }
+
+  // Kiểm tra hành động
+  if (dl.hanh_dong) {
+    for (const [ma, hd] of Object.entries(dl.hanh_dong)) {
+      kiemTraHanhDong(hd, `hanh_dong[${ma}]`, dl, loi)
     }
   }
 

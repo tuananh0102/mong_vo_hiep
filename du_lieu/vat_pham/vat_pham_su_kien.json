@@ -1,0 +1,80 @@
+[
+  {
+    "ma": "khan_lua_chua_mat_do",
+    "ten": "Khăn Lụa Chứa Mật Đồ",
+    "nguon": "HS03 II.2",
+    "loai": "su_kien",
+    "gia": 0,
+    "ban_o": "khong_ban",
+    "dung_trong_tran": false,
+    "hieu_ung": [],
+    "dac_biet": ["mat_do_gia_toc"],
+    "khang_thuoc": false,
+    "mo_ta": "Kỷ vật cha mẹ trao lại trong đêm mưa gia trang gặp nạn, chứa manh mối về thù gia và bí mật gia tộc."
+  },
+  {
+    "ma": "de_thiet_dau_tuong_quan",
+    "ten": "Dế Thiết Đầu Tướng Quân",
+    "nguon": "HS03 II.3",
+    "loai": "su_kien",
+    "gia": 50,
+    "ban_o": "khong_ban",
+    "dung_trong_tran": false,
+    "hieu_ung": [],
+    "dac_biet": ["de_choi_chau_ba_thong"],
+    "khang_thuoc": false,
+    "mo_ta": "Con dế đầu sắt dũng mãnh khác thường, đồ chơi yêu thích của Lão Ngoan Đồng Chu Bá Thông."
+  },
+  {
+    "ma": "lenh_bai_huyen_thiet",
+    "ten": "Lệnh Bài Huyền Thiết",
+    "nguon": "HS03 II.3",
+    "loai": "su_kien",
+    "gia": 0,
+    "ban_o": "khong_ban",
+    "dung_trong_tran": false,
+    "hieu_ung": [],
+    "dac_biet": ["tin_vat_huyen_thiet"],
+    "khang_thuoc": false,
+    "mo_ta": "Tín vật bí ẩn đúc bằng huyền thiết nặng trịch, tín bài mở ra cơ duyên kỳ ngộ."
+  },
+  {
+    "ma": "chu_tinh_bang_thiem",
+    "ten": "Chu Tình Băng Thiềm",
+    "nguon": "HS03 II.3",
+    "loai": "ky_tran",
+    "gia": 3000,
+    "ban_o": "khong_ban",
+    "dung_trong_tran": false,
+    "hieu_ung": [],
+    "dac_biet": ["bach_doc_bat_xam"],
+    "khang_thuoc": false,
+    "mo_ta": "Cóc băng ngàn năm mắt đỏ như chu sa, kỳ bảo giải trừ độc tố thiên hạ."
+  },
+  {
+    "ma": "quan_co_tran_lung",
+    "ten": "Quân Cờ Trân Lung",
+    "nguon": "HS03 V",
+    "loai": "su_kien",
+    "gia": 0,
+    "ban_o": "khong_ban",
+    "dung_trong_tran": false,
+    "hieu_ung": [],
+    "dac_biet": ["pha_giai_tran_lung"],
+    "khang_thuoc": false,
+    "mo_ta": "Quân cờ từ ván cờ Trân Lung của Tiêu Dao Phái, gợi ý giải mã kỳ trận."
+  },
+  {
+    "ma": "thiet_kiem",
+    "ten": "Thiết Kiếm",
+    "nguon": "HS08 II.3",
+    "loai": "binh_khi",
+    "gia": 50,
+    "ban_o": "cho",
+    "dung_trong_tran": false,
+    "hieu_ung": [],
+    "dac_biet": [],
+    "khang_thuoc": false,
+    "mo_ta": "Thanh kiếm thép thông dụng của giang hồ hành giả."
+  }
+]

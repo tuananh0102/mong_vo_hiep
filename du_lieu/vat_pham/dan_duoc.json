@@ -1,0 +1,128 @@
+[
+  {
+    "ma": "kim_sang_duoc",
+    "ten": "Kim Sáng Dược",
+    "nguon": "HS06 III",
+    "loai": "dan_duoc",
+    "gia": 15,
+    "ban_o": "cho",
+    "dung_trong_tran": true,
+    "hieu_ung": [{ "cong_phan_tram": { "hp": 30 } }],
+    "dac_biet": [],
+    "khang_thuoc": false,
+    "mo_ta": "Thuốc trị ngoại thương phổ biến khắp tiệm thuốc, hồi phục ngay 30% HP, dùng được giữa hai hiệp trong trận đấu."
+  },
+  {
+    "ma": "tieu_hoan_dan",
+    "ten": "Tiểu Hoàn Đan",
+    "nguon": "HS06 III",
+    "loai": "dan_duoc",
+    "gia": 150,
+    "ban_o": "cho",
+    "dung_trong_tran": false,
+    "hieu_ung": [
+      { "cong_phan_tram": { "noi_tuc": 50 } },
+      { "cong": { "can_cot": 2 } }
+    ],
+    "dac_biet": ["tang_noi_tuc_max_100"],
+    "khang_thuoc": true,
+    "mo_ta": "Linh đan của Thiếu Lâm Tự và Toàn Chân Giáo, hồi 50% MP, tăng vĩnh viễn 100 Nội tức tối đa và 2 Căn cốt ở lần đầu uống."
+  },
+  {
+    "ma": "dai_hoan_dan",
+    "ten": "Đại Hoàn Đan",
+    "nguon": "HS06 III",
+    "loai": "dan_duoc",
+    "gia": 2500,
+    "ban_o": "khong_ban",
+    "dung_trong_tran": false,
+    "hieu_ung": [
+      { "cong_phan_tram": { "hp": 100, "noi_tuc": 100 } },
+      { "cong": { "can_cot": 8 } }
+    ],
+    "dac_biet": ["xoa_toan_bo_am_thuong", "tang_noi_tuc_max_500"],
+    "khang_thuoc": true,
+    "mo_ta": "Bảo vật trấn tự của Thiếu Lâm Tự, cải tử hoàn sinh hồi đầy 100% HP/MP, xóa bỏ toàn bộ Điểm Ám Thương, tăng vĩnh viễn 500 Nội tức tối đa và 8 Căn cốt."
+  },
+  {
+    "ma": "cuu_hoa_ngoc_lo_hoan",
+    "ten": "Cửu Hoa Ngọc Lộ Hoàn",
+    "nguon": "HS06 III",
+    "loai": "dan_duoc",
+    "gia": 800,
+    "ban_o": "cho",
+    "dung_trong_tran": false,
+    "hieu_ung": [
+      { "cong_phan_tram": { "hp": 80, "noi_tuc": 80 } },
+      { "cong": { "mi_luc": 3, "ngo_tinh": 3 } }
+    ],
+    "dac_biet": ["hoa_giai_doc_trung_tro_xuong"],
+    "khang_thuoc": false,
+    "mo_ta": "Đông Tà Đào Hoa Đảo chế luyện từ sương sớm hoa đào, hồi 80% HP/MP, hóa giải độc tố cấp Trung trở xuống, tăng 3 Mị lực và 3 Ngộ tính."
+  },
+  {
+    "ma": "hac_ngoc_doan_tuc_cao",
+    "ten": "Hắc Ngọc Đoạn Tục Cao",
+    "nguon": "HS06 III",
+    "loai": "dan_duoc",
+    "gia": 1500,
+    "ban_o": "hac_thi",
+    "dung_trong_tran": false,
+    "hieu_ung": [],
+    "dac_biet": ["chua_tan_phe"],
+    "khang_thuoc": false,
+    "mo_ta": "Bí dược Tây Vực của Kim Cương Môn, thần dược nối xương duy nhất chữa khỏi trạng thái tàn phế, đứt kinh mạch hoặc cụt chi."
+  },
+  {
+    "ma": "thien_vuong_bao_tam_dan",
+    "ten": "Thiên Vương Bảo Tâm Đan",
+    "nguon": "HS06 III",
+    "loai": "dan_duoc",
+    "gia": 1200,
+    "ban_o": "hac_thi",
+    "dung_trong_tran": false,
+    "hieu_ung": [],
+    "dac_biet": ["thien_vuong_bao_tam"],
+    "khang_thuoc": false,
+    "mo_ta": "Thần dược bảo hộ tâm mạch của Dược Vương Cốc, mang theo người sẽ tự kích hoạt khi HP về 0 để giữ lại 1 HP và mở cơ hội thoát thân."
+  },
+  {
+    "ma": "bach_hung_dam_hoan",
+    "ten": "Bạch Hùng Đảm Hoàn",
+    "nguon": "HS06 III",
+    "loai": "dan_duoc",
+    "gia": 600,
+    "ban_o": "cho",
+    "dung_trong_tran": false,
+    "hieu_ung": [{ "cong": { "can_cot": 5 } }],
+    "dac_biet": ["khang_han_30_10_nam"],
+    "khang_thuoc": false,
+    "mo_ta": "Chế từ mật gấu trắng cực Bắc của Tuyết Sơn Phái, tăng 5 Căn cốt và tăng 30% Kháng hàn trong 10 năm."
+  },
+  {
+    "ma": "bach_van_hung_dam_hoan",
+    "ten": "Bạch Vân Hùng Đảm Hoàn",
+    "nguon": "HS06 III",
+    "loai": "dan_duoc",
+    "gia": 350,
+    "ban_o": "cho",
+    "dung_trong_tran": false,
+    "hieu_ung": [{ "cong_phan_tram": { "hp": 60 } }],
+    "dac_biet": ["xoa_xuat_huyet_noi_chan"],
+    "khang_thuoc": false,
+    "mo_ta": "Thuốc trị nội thương chuyên dụng của Hằng Sơn Phái, hồi 60% HP và xóa bỏ trạng thái xuất huyết, nội chấn."
+  },
+  {
+    "ma": "tuc_menh_bat_hoan",
+    "ten": "Tục Mệnh Bát Hoàn",
+    "nguon": "HS06 III",
+    "loai": "dan_duoc",
+    "gia": 2000,
+    "ban_o": "hac_thi",
+    "dung_trong_tran": false,
+    "hieu_ung": [],
+    "dac_biet": ["keo_dai_tuoi_tho_10"],
+    "khang_thuoc": false,
+    "mo_ta": "Tập hợp 8 vị thuốc quý ngàn năm do Lão Đầu Tử phối chế, kéo dài Tuổi Thọ Tối Đa thêm 10 năm."
+  }
+]

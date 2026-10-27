@@ -289,7 +289,7 @@ Trước khi làm: đọc [README.md](README.md) mục 3 - 5 và [01_KIEN_TRUC.m
 
 ---
 
-### [ ] M1-03 Dữ liệu vật phẩm và hành động
+### [x] M1-03 Dữ liệu vật phẩm và hành động
 
 **Phụ thuộc:** M0-04.
 **Đọc:** HS06 III (đan dược); HS06 II.1 - II.2 (thu nhập, chi tiêu); HS01 IV; HS03 I; HS04 I; `05_LO_HONG_GDD.md` G07, G08.

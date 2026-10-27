@@ -158,6 +158,24 @@ describe('ví dụ HS08', () => {
     expect(dl.nhan?.['quat_cuong']?.ten).toBe('Quật Cường')
   })
 
+  it('II.9 vat_pham qua lược đồ', () => {
+    const dl = napDuLieu({
+      'chi_so.json': khoiJson('### II.2.'),
+      'vat_pham/vi_du.json': khoiJson('### II.9.'),
+    })
+    expect(dl.vat_pham?.['kim_sang_duoc']?.dung_trong_tran).toBe(true)
+    expect(dl.vat_pham?.['thiet_kiem']?.loai).toBe('binh_khi')
+  })
+
+  it('II.10 hanh_dong.json qua lược đồ', () => {
+    const dl = napDuLieu({
+      'chi_so.json': khoiJson('### II.2.'),
+      'hanh_dong.json': khoiJson('### II.10.'),
+    })
+    expect(dl.hanh_dong?.['nam_noi']?.ap).toBe(1)
+    expect(dl.hanh_dong?.['mua_sam']?.mien_phi).toBe(true)
+  })
+
   it('không có dấu gạch dài', () => {
     expect(hs08).not.toContain('—')
   })

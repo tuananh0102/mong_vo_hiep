@@ -336,6 +336,39 @@ export const LuocDoMonPhai = z.object({
 })
 export type MonPhai = z.infer<typeof LuocDoMonPhai>
 
+// 01 mục 8, HS06 III: Vật phẩm
+export const LuocDoVatPham = z.object({
+  ma: z.string().min(1),
+  ten: z.string().min(1),
+  nguon: z.string().min(1),
+  loai: z.enum(['dan_duoc', 'su_kien', 'binh_khi', 'giap', 'bi_kip', 'ky_tran']),
+  gia: z.number().int().min(0),
+  ban_o: z.enum(['cho', 'hac_thi', 'khong_ban']),
+  dung_trong_tran: z.boolean().default(false),
+  hieu_ung: z.array(LuocDoHieuUng).default([]),
+  dac_biet: z.array(z.string()).default([]),
+  khang_thuoc: z.boolean().default(false),
+  mo_ta: z.string().default(''),
+})
+export type VatPham = z.infer<typeof LuocDoVatPham>
+
+// 01 mục 8, HS01 IV, HS03 I, HS04 I: Hành động
+export const LuocDoHanhDong = z.object({
+  ma: z.string().min(1),
+  ten: z.string().min(1),
+  nguon: z.string().min(1),
+  tuoi: z.tuple([z.number().int().min(0), z.number().int().min(0)]),
+  ap: z.number().int().min(0),
+  mien_phi: z.boolean().default(false),
+  khong_tinh_gioi_han: z.boolean().default(false),
+  dieu_kien: LuocDoDieuKien.nullable().optional(),
+  xu_ly: z.string().min(1),
+  nhom_tab: z.enum(['sinh_hoat', 'tu_luyen', 'giang_ho', 'mon_phai', 'khac']),
+  hieu_ung: z.array(LuocDoHieuUng).default([]),
+  mo_ta: z.string().default(''),
+})
+export type HanhDong = z.infer<typeof LuocDoHanhDong>
+
 export interface DuLieu {
   vung: Record<string, Vung>
   chi_so: Record<string, DinhNghiaChiSo>
@@ -346,4 +379,6 @@ export interface DuLieu {
   vo_hoc?: Record<string, VoHoc>
   mon_phai?: Record<string, MonPhai>
   su_kien?: Record<string, SuKien>
+  vat_pham?: Record<string, VatPham>
+  hanh_dong?: Record<string, HanhDong>
 }
