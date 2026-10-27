@@ -1,0 +1,40 @@
+[
+  { "ma": "tuoi", "ten": "Tuổi", "nhom": "nhan_than", "min": 0, "max": null, "tran_cung": null, "hien_thi": "hien", "nguon": "HS01 II.8" },
+
+  { "ma": "can_cot", "ten": "Căn Cốt", "nhom": "thien_phu", "min": 0, "max": 100, "tran_cung": 150, "hien_thi": "hien", "nguon": "HS01 II.8" },
+  { "ma": "can_cot_dinh", "ten": "Căn Cốt đỉnh", "nhom": "thien_phu", "min": 0, "max": 100, "tran_cung": 150, "hien_thi": "an", "nguon": "HS01 II.8" },
+  { "ma": "ngo_tinh", "ten": "Ngộ Tính", "nhom": "thien_phu", "min": 0, "max": 100, "tran_cung": 150, "hien_thi": "hien", "nguon": "HS01 II.8" },
+  { "ma": "phuc_duyen", "ten": "Phúc Duyên", "nhom": "thien_phu", "min": 0, "max": 100, "tran_cung": 150, "hien_thi": "ban_an", "nguon": "HS01 II.8" },
+  { "ma": "mi_luc", "ten": "Mị Lực", "nhom": "thien_phu", "min": 0, "max": 100, "tran_cung": 150, "hien_thi": "hien", "nguon": "HS01 II.8" },
+  { "ma": "can_cot_bam_sinh", "ten": "Căn Cốt bẩm sinh", "nhom": "thien_phu", "min": 0, "max": 150, "tran_cung": 150, "hien_thi": "an", "nguon": "HS01 II.8" },
+  { "ma": "ngo_tinh_bam_sinh", "ten": "Ngộ Tính bẩm sinh", "nhom": "thien_phu", "min": 0, "max": 150, "tran_cung": 150, "hien_thi": "an", "nguon": "HS01 II.8" },
+  { "ma": "mi_luc_bam_sinh", "ten": "Mị Lực bẩm sinh", "nhom": "thien_phu", "min": 0, "max": 150, "tran_cung": 150, "hien_thi": "an", "nguon": "HS01 II.8" },
+
+  { "ma": "ngan_luong", "ten": "Ngân Lượng", "nhom": "xa_hoi", "min": 0, "max": null, "tran_cung": null, "hien_thi": "hien", "nguon": "HS01 II.8" },
+  { "ma": "hiep_nghia", "ten": "Hiệp Nghĩa", "nhom": "xa_hoi", "min": -1000, "max": 1000, "tran_cung": null, "hien_thi": "hien", "nguon": "HS01 II.8" },
+  { "ma": "thanh_danh", "ten": "Thanh Danh", "nhom": "xa_hoi", "min": -1000, "max": 1000, "tran_cung": null, "hien_thi": "hien", "nguon": "HS01 II.8" },
+  { "ma": "danh_vong", "ten": "Danh Vọng", "nhom": "xa_hoi", "min": 0, "max": 1000, "tran_cung": null, "hien_thi": "hien", "nguon": "HS01 II.8" },
+
+  { "ma": "noi_tuc", "ten": "Nội Tức", "nhom": "noi_cong", "min": 0, "max": null, "tran_cung": null, "hien_thi": "hien", "nguon": "HS01 II.8" },
+  { "ma": "noi_tuc_max", "ten": "Nội Tức tối đa", "nhom": "noi_cong", "min": 0, "max": null, "tran_cung": null, "hien_thi": "hien", "phai_sinh": true, "nguon": "HS01 II.8" },
+  { "ma": "canh_gioi_noi_cong", "ten": "Cảnh Giới Nội Công", "nhom": "noi_cong", "min": 0, "max": 10, "tran_cung": null, "hien_thi": "hien", "phai_sinh": true, "nguon": "HS01 II.8" },
+
+  { "ma": "hp", "ten": "Sinh Mệnh", "nhom": "chien_dau", "min": 0, "max": null, "tran_cung": null, "hien_thi": "hien", "nguon": "HS01 II.8" },
+  { "ma": "hp_max", "ten": "Sinh Mệnh tối đa", "nhom": "chien_dau", "min": 0, "max": null, "tran_cung": null, "hien_thi": "hien", "phai_sinh": true, "nguon": "HS01 II.8" },
+  { "ma": "vo_luc", "ten": "Võ Lực", "nhom": "chien_dau", "min": 0, "max": 100, "tran_cung": null, "hien_thi": "hien", "phai_sinh": true, "nguon": "HS01 II.8" },
+  { "ma": "chien_luc", "ten": "Chiến Lực", "nhom": "chien_dau", "min": 0, "max": 630, "tran_cung": null, "hien_thi": "hien", "phai_sinh": true, "nguon": "HS01 II.8" },
+  { "ma": "cap_khinh_cong", "ten": "Cấp Khinh Công", "nhom": "chien_dau", "min": 0, "max": 10, "tran_cung": null, "hien_thi": "hien", "phai_sinh": true, "nguon": "HS01 II.8" },
+  { "ma": "khang_doc", "ten": "Kháng Độc", "nhom": "chien_dau", "min": 0, "max": 100, "tran_cung": null, "hien_thi": "hien", "nguon": "HS01 II.8" },
+  { "ma": "khang_han", "ten": "Kháng Hàn", "nhom": "chien_dau", "min": 0, "max": 100, "tran_cung": null, "hien_thi": "hien", "nguon": "HS01 II.8" },
+
+  { "ma": "am_thuong", "ten": "Điểm Ám Thương", "nhom": "sinh_ton", "min": 0, "max": null, "tran_cung": null, "hien_thi": "hien", "nguon": "HS01 II.8" },
+  { "ma": "tuoi_tho_max", "ten": "Tuổi Thọ Tối Đa", "nhom": "sinh_ton", "min": 0, "max": null, "tran_cung": null, "hien_thi": "an", "phai_sinh": true, "nguon": "HS01 II.8" },
+
+  { "ma": "y_thuat", "ten": "Y Thuật", "nhom": "tap_hoc", "min": 0, "max": 100, "tran_cung": null, "hien_thi": "hien", "nguon": "HS01 II.8" },
+  { "ma": "doc_thuat", "ten": "Độc Thuật", "nhom": "tap_hoc", "min": 0, "max": 100, "tran_cung": null, "hien_thi": "hien", "nguon": "HS01 II.8" },
+  { "ma": "ky_mon", "ten": "Kỳ Môn", "nhom": "tap_hoc", "min": 0, "max": 100, "tran_cung": null, "hien_thi": "hien", "nguon": "HS01 II.8" },
+  { "ma": "cam", "ten": "Cầm", "nhom": "tap_hoc", "min": 0, "max": 100, "tran_cung": null, "hien_thi": "hien", "nguon": "HS01 II.8" },
+  { "ma": "co", "ten": "Cờ", "nhom": "tap_hoc", "min": 0, "max": 100, "tran_cung": null, "hien_thi": "hien", "nguon": "HS01 II.8" },
+  { "ma": "thi", "ten": "Thi", "nhom": "tap_hoc", "min": 0, "max": 100, "tran_cung": null, "hien_thi": "hien", "nguon": "HS01 II.8" },
+  { "ma": "hoa", "ten": "Họa", "nhom": "tap_hoc", "min": 0, "max": 100, "tran_cung": null, "hien_thi": "hien", "nguon": "HS01 II.8" }
+]

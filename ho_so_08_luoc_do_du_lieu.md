@@ -23,7 +23,7 @@ File chưa có lược đồ bị `npm run kiem-tra-du-lieu` từ chối ("khôn
 | File | Nội dung | Lược đồ |
 | :--- | :--- | :--- |
 | `vung.json` | 5 khu vực | Đã có (M0-03) |
-| `chi_so.json` | Danh sách chỉ số theo HS01 II.8 | M0-05 |
+| `chi_so.json` | Danh sách chỉ số theo HS01 II.8 | Đã có (M0-05) |
 | `gia_canh.json`, `thien_phu.json`, `trang_thai.json`, `nhan.json` | Gia cảnh, Thiên phú, Trạng thái, Nhãn tính cách | M1-02 |
 | `vo_hoc/*.json`, `mon_phai/*.json` | Võ học, môn phái | M1-01 |
 | `vat_pham/*.json`, `hanh_dong.json` | Vật phẩm, hành động | M1-03 |
@@ -51,6 +51,31 @@ Ví dụ hoàn chỉnh:
 [
   { "ma": "trung_nguyen", "ten": "Trung Nguyên", "nguon": "HS01 I", "he_so_ky_ngo": 0 },
   { "ma": "giang_nam", "ten": "Giang Nam", "nguon": "HS01 I", "he_so_ky_ngo": 0.01 }
+]
+```
+
+### II.2. `chi_so.json`
+
+Một mảng, một dòng cho mỗi chỉ số số ở HS01 II.8.
+Người viết nội dung chỉ đọc file này để biết mã chỉ số hợp lệ; chỉ số mới phải thêm vào bảng HS01 II.8 trước.
+
+| Trường | Kiểu | Ý nghĩa |
+| :--- | :--- | :--- |
+| `ma` | chuỗi | Đúng cột "Mã dữ liệu" của HS01 II.8. |
+| `ten` | chuỗi | Tên hiển thị. |
+| `nhom` | `nhan_than` / `thien_phu` / `xa_hoi` / `noi_cong` / `chien_dau` / `sinh_ton` / `tap_hoc` | |
+| `min`, `max` | số, `max` có thể `null` | Thang danh nghĩa. |
+| `tran_cung` | số hoặc `null` | Trần thật khi vượt được `max` (Thiên phú: 150). |
+| `hien_thi` | `hien` / `ban_an` / `an` | |
+| `phai_sinh` | `true` nếu có | Chỉ số tính bằng công thức, không lưu. |
+| `nguon` | chuỗi | `"HS01 II.8"`. |
+
+Ví dụ hoàn chỉnh:
+
+```json
+[
+  { "ma": "can_cot", "ten": "Căn Cốt", "nhom": "thien_phu", "min": 0, "max": 100, "tran_cung": 150, "hien_thi": "hien", "nguon": "HS01 II.8" },
+  { "ma": "hp_max", "ten": "Sinh Mệnh tối đa", "nhom": "chien_dau", "min": 0, "max": null, "tran_cung": null, "hien_thi": "hien", "phai_sinh": true, "nguon": "HS01 II.8" }
 ]
 ```
 

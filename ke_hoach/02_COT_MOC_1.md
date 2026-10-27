@@ -115,7 +115,7 @@ Trước khi làm: đọc [README.md](README.md) mục 3 - 5 và [01_KIEN_TRUC.m
 
 ---
 
-### [ ] M0-05 Kiểu trạng thái và chỉ số
+### [x] M0-05 Kiểu trạng thái và chỉ số
 
 **Phụ thuộc:** M0-03.
 **Đọc:** HS01 II (toàn bộ, nhất là II.8 Bảng Chỉ Số Master); 01 mục 4.

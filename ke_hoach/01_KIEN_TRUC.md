@@ -166,7 +166,7 @@ export interface NhanVat {
   // Năm hiện tại
   ap_con_lai: number; viec_mien_phi_con_lai: number; ap_bi_tru_nam_sau: number;
   // Cốt truyện
-  co: Record<string, boolean | number | string>;  // cờ sự kiện
+  co_su_kien: Record<string, boolean | number | string>;  // cờ sự kiện (không đặt tên `co`: trùng chỉ số Tạp học Cờ)
   su_kien_da_gap: Record<string, number>;          // mã sự kiện → số lần
   viec_am_chua_lo: ViecAm[];                       // M2
   hao_cam: Record<MaNpc, number>;                  // M2
