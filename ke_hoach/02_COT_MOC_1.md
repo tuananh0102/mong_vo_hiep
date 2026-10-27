@@ -46,7 +46,7 @@ Trước khi làm: đọc [README.md](README.md) mục 3 - 5 và [01_KIEN_TRUC.m
 
 ---
 
-### [ ] M0-02 RNG có seed
+### [x] M0-02 RNG có seed
 
 **Phụ thuộc:** M0-01.
 **Đọc:** 01 mục 6.
