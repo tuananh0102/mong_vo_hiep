@@ -1,0 +1,55 @@
+{
+  "ma": "tieu_cuc_di_ngang",
+  "nguon": "noi_dung_moi",
+  "ten": "Tiêu Cục Rủ Đi Đường Xa",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [11, 15],
+  "vung": null,
+  "dieu_kien": { "la": "gia_canh", "trong": ["phu_thuong"] },
+  "trong_so": 20,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "Gia cảnh Phú Thương. Rủi ro 35% gặp cướp theo tỷ lệ áp tiêu của HS04 I.",
+  "mo_ta": "Lô hàng lớn của nhà bạn cần chở sang trấn bên, đường đi qua mấy đoạn rừng vắng. Đội tiêu sư quen của cha bạn đồng ý cho bạn đi theo học hỏi việc buôn bán, nhưng hứa trước là không dám bảo đảm đường đi hoàn toàn bình yên.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Xin theo đoàn tiêu đi suốt chuyến đường",
+      "nguy": true,
+      "kiem_dinh": {
+        "loai": "ngau_nhien",
+        "nhanh": [
+          {
+            "ti_le": 65,
+            "ket_qua": {
+              "van_ban": "Chuyến đi bình an. Bạn học được cách nhìn đường, nhìn người, cách trả giá và nhận tiền, về nhà được cha thưởng.",
+              "hieu_ung": [
+                { "cong": { "ngan_luong": 30, "mi_luc": 3, "ngo_tinh": 2 } }
+              ]
+            }
+          },
+          {
+            "ti_le": 35,
+            "ket_qua": {
+              "van_ban": "Đoàn xe bị một toán cướp chặn giữa rừng. Các tiêu sư đẩy lùi được chúng, nhưng bạn bị cuốn vào hỗn loạn, xây xát khắp người và mất một ít hàng. Về nhà, cha bạn không trách, chỉ im lặng rất lâu.",
+              "hieu_ung": [
+                { "cong_phan_tram": { "hp": -30 } },
+                { "cong": { "can_cot": 2, "mi_luc": 2 } }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Ở lại tiệm, nhờ cha dạy cách tính sổ đường dài",
+      "ket_qua": {
+        "van_ban": "Bạn ngồi cùng cha trong tiệm, học cách tính vốn lãi, cước đường, rủi ro mất hàng. Chuyến hàng đi về bình an, còn bạn thì hiểu thêm một điều: làm ăn là tính cho kỹ trước khi bước ra khỏi nhà.",
+        "hieu_ung": [
+          { "cong": { "ngo_tinh": 5, "ngan_luong": 10 } }
+        ]
+      }
+    }
+  ]
+}

@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest'
 import { DU_LIEU } from '../src/du_lieu/nap_vite'
 import { khoiTaoTroChoi, reducer, taoTrangThaiMacDinh, type BoNho } from '../src/giao_dien/dung_tro_choi'
 import { datTranThu } from '../src/giao_dien/thu_tam_hiep'
-import { xemManHinh } from '../src/luat/xem'
+import { xemManHinh, xemSuKien } from '../src/luat/xem'
 
 describe('giao_dien / dung_tro_choi', () => {
   it('khoiTaoTroChoi tạo trạng thái ban đầu tuổi 0', () => {
@@ -22,9 +22,14 @@ describe('giao_dien / dung_tro_choi', () => {
     expect(s1.loi).toBeNull()
     expect(s1.hien_tai.bien_nien.length).toBeGreaterThan(s0.hien_tai.bien_nien.length)
 
-    const s2 = reducer(s1, { loai: 'qua_nam' })
+    // Tuổi 1 có Lễ Thôi Nôi (M1-14) chặn qua_nam: chọn lựa chọn mở đầu tiên rồi mới qua năm.
+    expect(s1.hien_tai.cho?.loai).toBe('su_kien')
+    const ma = xemSuKien(s1.hien_tai, DU_LIEU)!.lua_chon.find((c) => !c.bi_khoa)!.ma
+    const s1b = reducer(s1, { loai: 'chon', ma_lua_chon: ma })
+    expect(s1b.hien_tai.cho).toBeNull()
+    const s2 = reducer(s1b, { loai: 'qua_nam' })
     expect(s2.hien_tai.nhan_vat.tuoi).toBe(2)
-    expect(s2.lenh.length).toBe(2)
+    expect(s2.lenh.filter((l) => l.loai === 'qua_nam')).toHaveLength(2)
   })
 
   it('trận Tam Hiệp thử: chơi đủ 3 hiệp qua reducer, xong thì ghi Biên Niên Sử', () => {

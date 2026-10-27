@@ -1,0 +1,76 @@
+{
+  "ma": "quai_nhan_trong_hang_nui",
+  "nguon": "HS03 III.2",
+  "ten": "Quái Nhân Trong Hang Núi",
+  "loai": "ky_ngo",
+  "cap_ky_ngo": "A",
+  "loai_hien_thi": "ky-ngo",
+  "tuoi": [8, 11],
+  "vung": null,
+  "dieu_kien": {
+    "va": [
+      { "so": "phuc_duyen", "op": ">=", "gt": 60 },
+      { "khong": { "co": "hang_nui_xong" } }
+    ]
+  },
+  "trong_so": 20,
+  "lap_lai": { "toi_da": 2 },
+  "ghi_chu": "HS03 cho 'quay lại thử thêm 1 lần trước 12 tuổi' khi thua nhánh B: lap_lai toi_da 2 và cờ hang_nui_xong chỉ đặt khi chuyện đã khép lại. Học Không Minh Quyền sơ cấp (nhánh 'hoặc' của Song Thủ Hỗ Bác). Phần thưởng vượt định mức theo nguyên văn HS03. Người tù thoát ra tìm bạn sau 18 tuổi là việc của M2.",
+  "m2_noi_tiep": true,
+  "mo_ta": "Năm {tuoi} tuổi, bạn trượt chân lăn xuống một khe đá hẹp lúc đi hái củi. Dưới đáy hang có một lão già tóc tai bù xù, chân tay bị xích sắt khóa chặt vào vách đá, vậy mà miệng vẫn đang... bắt dế chọi nhau.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Sợ hãi khóc thét lên rồi tìm đường trèo ra",
+      "ket_qua": {
+        "van_ban": "Lão già bực mình búng một hòn sỏi làm bạn ngất đi. Tỉnh dậy, bạn đã nằm ở bìa rừng, chẳng thu được gì.",
+        "hieu_ung": [
+          { "dat_co": "hang_nui_xong" }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Ngồi xuống chơi chọi dế cùng lão suốt ba ngày",
+      "kiem_dinh": { "loai": "roll_nguoc", "chi_so": "ngo_tinh", "nguong": 40 },
+      "thanh_cong": {
+        "van_ban": "Lão khoái chí cười ha hả, nhận bạn làm \"tiểu huynh đệ\" và dạy một bộ quyền pháp tay trái đánh tay phải để tự chơi một mình.",
+        "hieu_ung": [
+          { "hoc_vo_hoc": "khong_minh_quyen", "cap": 1 },
+          { "cong": { "phuc_duyen": 10 } },
+          { "dat_co": "hang_nui_xong" }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Bạn cứ hỏi đi hỏi lại luật chơi và tính toán con dế nào thắng, lão chán nản phẩy tay: \"Tiểu quỷ lắm mưu nhiều kế, chơi chẳng vui!\" Lão chỉ lối ra, kèm một con dế làm quà. Bạn nhớ rõ hang núi này, có thể quay lại thử thêm một lần.",
+        "hieu_ung": [
+          { "cong": { "phuc_duyen": 3 } },
+          { "nhan_vat_pham": "de_thiet_dau_tuong_quan" },
+          { "dat_co": "hang_nui_danh_dau" }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Tìm cách dùng đá đập đứt xích sắt cứu lão ra",
+      "nguy": true,
+      "kiem_dinh": { "loai": "roll", "chi_so": "can_cot", "nguong": 30 },
+      "thanh_cong": {
+        "van_ban": "Xích sắt đứt tung. Lão già đứng bật dậy, ánh mắt thoắt thay đổi, khiến bạn không biết mình vừa cứu một ân nhân hay một tai họa.",
+        "hieu_ung": [
+          { "dat_co": "hang_nui_xong" },
+          { "tiep": "quai_nhan_than_phan" }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Bạn đập đến rách cả hai bàn tay mà xích vẫn không suy suyển. Lão nhìn bạn hồi lâu rồi thở dài: \"Tiểu tử có lòng.\" Lão đọc cho bạn một bài khẩu quyết hô hấp rồi đẩy bạn rời hang trước khi kẻ canh ngục quay lại.",
+        "hieu_ung": [
+          { "hiep_nghia": 20 },
+          { "cong": { "phuc_duyen": 5, "noi_tuc_cong_them": 30 } },
+          { "dat_co": "hang_nui_xong" },
+          { "dat_co": "lao_trong_hang_chua_ro_than_phan" }
+        ]
+      }
+    }
+  ]
+}

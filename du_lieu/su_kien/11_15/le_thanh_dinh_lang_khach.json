@@ -1,0 +1,39 @@
+{
+  "ma": "le_thanh_dinh_lang_khach",
+  "nguon": "HS03 V",
+  "ten": "Lễ Thành Đinh - Lãng Khách",
+  "loai": "co_dinh",
+  "loai_hien_thi": "thuong",
+  "tuoi": [16, 16],
+  "vung": null,
+  "dieu_kien": { "la": "mon_phai", "trong": [""] },
+  "trong_so": 0,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "Tổng kết tuổi 15 của HS03 V cho Tản tu / Lãng khách. Cờ thanh_dinh_lang_khach để M1-15 nối biến thể Lãng khách.",
+  "mo_ta": "Bạn tròn mười sáu tuổi mà vẫn chưa có sư môn. Sáng nay bạn gói ghém hành trang: một thanh đao cùn, vài lạng bạc lẻ và nỗi háo hức lẫn lo âu. Con đường trước nhà dài hun hút, không ai chờ bạn ở cuối đường.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Mang hành trang lên đường ngay trong ngày",
+      "ket_qua": {
+        "van_ban": "Bạn quay lưng với căn nhà cũ, không ngoảnh lại. Con đường giang hồ đang mở ra, đầy cạm bẫy và cơ hội, và bạn bước vào đó với hai bàn tay trắng.",
+        "hieu_ung": [
+          { "cong": { "ngan_luong": 5 } },
+          { "dat_co": "thanh_dinh_lang_khach" }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Ghé thắp nén hương, từ biệt mộ phần người thân rồi mới đi",
+      "ket_qua": {
+        "van_ban": "Bạn cắm nén hương trước mộ, im lặng đứng rất lâu. Gió thổi qua nghĩa địa như tiếng ai đó thở dài. Khi quay đi, bước chân bạn nhẹ hơn một chút.",
+        "hieu_ung": [
+          { "hiep_nghia": 10 },
+          { "cong": { "phuc_duyen": 2 } },
+          { "dat_co": "thanh_dinh_lang_khach" }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "ma": "lang_gieng_tranh_dat",
+  "nguon": "noi_dung_moi",
+  "ten": "Hàng Xóm Tranh Bờ Ruộng",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [7, 10],
+  "vung": null,
+  "dieu_kien": { "la": "gia_canh", "trong": ["binh_dan"] },
+  "trong_so": 20,
+  "lap_lai": "mot_lan",
+  "mo_ta": "Hai nhà hàng xóm cãi nhau om sòm vì một mảnh bờ ruộng. Nhà bên kia đông đinh, gã trai lớn nhất đã xắn tay áo. Cha mẹ bạn đứng giữa, mặt tái xanh, còn bạn thì nhìn thấy rõ cột mốc ranh giới bị ai đó nhổ lên dời đi lúc sáng sớm.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Lên tiếng nói rõ chuyện cột mốc bị dời",
+      "kiem_dinh": { "loai": "roll", "chi_so": "mi_luc", "nguong": 35 },
+      "thanh_cong": {
+        "van_ban": "Cả xóm im bặt khi đứa trẻ lên tiếng. Gã trai lớn tái mặt, cúi đầu nhận lỗi. Người ta nhìn bạn khác hẳn từ hôm ấy.",
+        "hieu_ung": [
+          { "hiep_nghia": 30 },
+          { "cong": { "mi_luc": 4, "ngo_tinh": 2 } }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Gã trai lớn gạt phắt bạn sang một bên: \"Con nít biết gì mà nói!\" Cha mẹ bạn xấu hổ lôi bạn về, nhưng trong lòng ông bà vẫn thầm biết bạn nói đúng.",
+        "hieu_ung": [
+          { "hiep_nghia": 10 },
+          { "cong": { "mi_luc": -2 } }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Lén dời cột mốc trở lại chỗ cũ trong đêm",
+      "ket_qua": {
+        "van_ban": "Đêm đó bạn cắm lại cột mốc đúng chỗ cũ. Sáng ra không ai nói gì, hai nhà ngầm hiểu và cuộc cãi vã tự tan. Bạn thấy việc phải làm xong, dù không ai biết là bạn.",
+        "hieu_ung": [
+          { "cong": { "ngo_tinh": 4, "phuc_duyen": 2 } }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Im lặng đứng nhìn, mặc người lớn tự giải quyết",
+      "ket_qua": {
+        "van_ban": "Bạn đứng sau lưng mẹ, chẳng nói câu nào. Cuộc cãi vã kết thúc bằng việc nhà bạn nhượng bộ một lối đi. Bạn nhớ cảm giác bất lực ấy rất lâu.",
+        "hieu_ung": [
+          { "cong": { "ngo_tinh": 2, "mi_luc": -1 } }
+        ]
+      }
+    }
+  ]
+}

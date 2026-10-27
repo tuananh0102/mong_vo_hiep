@@ -1,0 +1,66 @@
+{
+  "ma": "ke_thu_cu_tim_den",
+  "nguon": "noi_dung_moi",
+  "ten": "Bóng Áo Đen Giữa Chợ",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [11, 15],
+  "vung": null,
+  "dieu_kien": {
+    "hoac": [{ "co": "ke_thu_hac_y_chuong_phap" }, { "co": "ke_thu_hac_y_nhan_vo_danh" }]
+  },
+  "trong_so": 60,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "Nối từ Đêm Mưa Máu Nhuộm Gia Trang (Võ Lâm Thế Gia). Kẻ thù truyền kiếp chỉ gợi ý nhận diện, chưa có NPC ở M1 nên không mở Tam Hiệp. Lựa chọn nguy hiểm nhưng nhánh thất bại không giết nhân vật.",
+  "mo_ta": "Giữa chợ đông, bạn bắt gặp một người áo đen đi lướt qua, tay chắp sau lưng, bước chân nhẹ như không chạm đất. Bạn không nhìn thấy mặt hắn, nhưng cách hắn vung tay áo, cách hắn rảo bước, khiến lòng bạn lạnh toát như đêm mưa năm xưa.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Lặng lẽ bám theo, xem hắn vào nhà nào",
+      "kiem_dinh": { "loai": "roll", "chi_so": "mi_luc", "nguong": 40 },
+      "thanh_cong": {
+        "van_ban": "Bạn bám hắn qua ba dãy phố, tới một tòa trạch viện kín cổng cao tường rồi biến mất. Bạn nhớ rõ từng viên gạch trên cổng, nhớ cả huy hiệu khắc trên cánh cửa.",
+        "hieu_ung": [
+          { "cong": { "ngo_tinh": 4 } },
+          { "dat_co": "biet_noi_o_ke_thu" }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Bước chân bạn vấp phải một chiếc sọt, tiếng động khiến người áo đen khựng lại. Hắn không quay đầu, chỉ nói khẽ một câu rồi biến mất vào ngõ. Bạn run bần bật, biết mình vừa thoát một kiếp.",
+        "hieu_ung": [
+          { "cong": { "mi_luc": -2, "phuc_duyen": 3 } }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Chạy về báo với người lớn trong nhà",
+      "ket_qua": {
+        "van_ban": "Bạn kể lại mọi điều cho người thân tín. Họ im lặng nghe xong, đóng cửa lại, dặn bạn đừng rời nhà một mình trong ít lâu. Bạn an toàn, nhưng nỗi thù vẫn nằm đó chờ.",
+        "hieu_ung": [
+          { "cong": { "phuc_duyen": 2 } }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Xông ra chặn đường, hét lên đòi hắn trả mạng cha mẹ",
+      "nguy": true,
+      "kiem_dinh": { "loai": "giao_chien_nhanh", "nguong": 60 },
+      "thanh_cong": {
+        "van_ban": "Hắn khựng lại, khẽ hừ một tiếng rồi bỏ đi, như thể không muốn gây chuyện giữa chợ đông. Bạn đứng thở dốc, không biết đó là hắn nhường hay chỉ là may mắn.",
+        "hieu_ung": [
+          { "danh_vong": 5 },
+          { "cong": { "mi_luc": 3 } }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Bạn chưa kịp nhìn rõ đã bị một luồng chưởng phong hất văng ra ba bước. Hắn biến mất giữa đám đông, bỏ lại bạn nằm giữa đường, ngực đau như vỡ.",
+        "hieu_ung": [
+          { "trong_thuong": true },
+          { "cong": { "can_cot": -2 } }
+        ]
+      }
+    }
+  ]
+}

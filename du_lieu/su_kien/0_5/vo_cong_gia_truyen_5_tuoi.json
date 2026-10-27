@@ -1,0 +1,58 @@
+{
+  "ma": "vo_cong_gia_truyen_5_tuoi",
+  "nguon": "HS01 III.1",
+  "ten": "Võ Công Gia Truyền",
+  "loai": "noi_tiep",
+  "loai_hien_thi": "thuong",
+  "tuoi": [5, 5],
+  "vung": null,
+  "dieu_kien": null,
+  "trong_so": 0,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "Hẹn bằng len_lich khi tạo kiếp Võ Lâm Thế Gia (dau_thai.ts, HS01 III.1: có sẵn võ công gia truyền từ năm 5 tuổi). Môn gia truyền là gia_truyen_quyen_phap, võ học tier 1 viết mới (nguon phong_tac).",
+  "mo_ta": "Sáng sớm, cha bạn gọi bạn ra sân luyện võ của gia trang, nơi những cọc gỗ sờn bóng qua bao đời. \"Từ hôm nay con bắt đầu học bộ quyền gia truyền. Dù mai sau con theo đường nào, bộ quyền này sẽ là nền cho con.\"",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Nghiêm túc học từng thế một theo lời cha",
+      "ket_qua": {
+        "van_ban": "Bạn tập từng thế, mồ hôi nhỏ giọt trên nền đá. Cha bạn đứng bên, thỉnh thoảng nắn lại tay chân, ánh mắt đầy tự hào.",
+        "hieu_ung": [
+          { "hoc_vo_hoc": "gia_truyen_quyen_phap", "cap": 1 },
+          { "cong": { "can_cot": 2 } }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Học qua loa cho có lệ, bụng nghĩ đến con diều ngoài vườn",
+      "ket_qua": {
+        "van_ban": "Bạn tập cho xong buổi, mắt cứ ngoái về phía bầu trời. Cha bạn thở dài nhưng không trách, bộ quyền vẫn vào đầu bạn nhưng mới được một nửa.",
+        "hieu_ung": [
+          { "hoc_vo_hoc": "gia_truyen_quyen_phap", "cap": 1, "hoan_thien": 60 },
+          { "cong": { "phuc_duyen": 3 } }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Đòi cha dạy ngay chiêu mạnh nhất của dòng họ",
+      "kiem_dinh": { "loai": "roll", "chi_so": "ngo_tinh", "nguong": 40 },
+      "thanh_cong": {
+        "van_ban": "Cha bạn kinh ngạc khi thấy bạn bắt chước đúng một chiêu khó ngay lần đầu. Ông cười lớn, vừa tự hào vừa lo cho cái tính nôn nóng của đứa trẻ này.",
+        "hieu_ung": [
+          { "hoc_vo_hoc": "gia_truyen_quyen_phap", "cap": 1 },
+          { "cong": { "ngo_tinh": 3 } },
+          { "them_nhan": "kieu_ngao" }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Chiêu mạnh nhất quá sức, bạn vung tay trượt ngã, trật cả cổ tay. Cha bạn nghiêm mặt bắt học lại từ thế đầu, bạn đỏ mặt cắm cúi tập.",
+        "hieu_ung": [
+          { "hoc_vo_hoc": "gia_truyen_quyen_phap", "cap": 1, "hoan_thien": 70 },
+          { "cong_phan_tram": { "hp": -10 } }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "ma": "xin_lam_tap_dich",
+  "nguon": "HS03 IV.1",
+  "ten": "Con Đường Cửa Sau",
+  "loai": "noi_tiep",
+  "loai_hien_thi": "thuong",
+  "tuoi": [11, 15],
+  "vung": null,
+  "dieu_kien": null,
+  "trong_so": 0,
+  "lap_lai": "moi_nam",
+  "ghi_chu": "Nối tiếp khi nhánh quỳ cổng thất bại: HS03 IV.1 cho phép 'vẫn có thể chọn [B] ngay năm nay'. Cờ vua_truot_* chỉ tồn tại trong lúc sự kiện này mở.",
+  "mo_ta": "Bạn ngồi bệt dưới chân núi, người ướt sũng, bụng đói cồn cào. Từ đằng xa, người cõng bạn xuống khẽ chỉ vào một lối mòn dẫn vòng ra phía sau núi, nơi khói bếp đang lên.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Xin vào bếp Thiếu Lâm làm tạp dịch ngay năm nay",
+      "cong_an": { "co": "vua_truot_thieu_lam" },
+      "cong": { "la": "mon_phai", "trong": [""] },
+      "ket_qua": {
+        "van_ban": "Bạn lê bước theo lối mòn, xin vào bếp chùa gánh nước bổ củi đổi lấy bát cháo. Ba năm đầu bạn chỉ làm việc nặng, nhưng thân thể ngày một cứng cáp.",
+        "hieu_ung": [
+          { "gia_nhap_mon_phai": "thieu_lam", "bac": 1 },
+          { "dat_co": "tap_dich" },
+          { "them_trang_thai": "tap_dich_ganh_nuoc", "so_nam": 3 },
+          { "xoa_co": "vua_truot_thieu_lam" }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Xin vào bếp Võ Đang làm hỏa đầu ngay năm nay",
+      "cong_an": { "co": "vua_truot_vo_dang" },
+      "cong": { "la": "mon_phai", "trong": [""] },
+      "ket_qua": {
+        "van_ban": "Bạn lê bước theo lối mòn, xin vào bếp đạo quán gánh nước bổ củi đổi lấy bát cháo. Ba năm đầu bạn chỉ làm việc nặng, nhưng thân thể ngày một cứng cáp.",
+        "hieu_ung": [
+          { "gia_nhap_mon_phai": "vo_dang", "bac": 1 },
+          { "dat_co": "tap_dich" },
+          { "them_trang_thai": "tap_dich_ganh_nuoc", "so_nam": 3 },
+          { "xoa_co": "vua_truot_vo_dang" }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Xuống núi, hẹn sang năm quay lại thử",
+      "ket_qua": {
+        "van_ban": "Bạn lắc đầu, lau mặt rồi xuống núi, quyết không để cơ hội này chỉ dừng ở hai lần quỳ.",
+        "hieu_ung": [
+          { "xoa_co": "vua_truot_thieu_lam" },
+          { "xoa_co": "vua_truot_vo_dang" }
+        ]
+      }
+    }
+  ]
+}

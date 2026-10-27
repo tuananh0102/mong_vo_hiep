@@ -1,0 +1,54 @@
+{
+  "ma": "su_thuc_day_ma_bo",
+  "nguon": "noi_dung_moi",
+  "ten": "Sư Thúc Dạy Mã Bộ",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [6, 10],
+  "vung": null,
+  "dieu_kien": { "la": "gia_canh", "trong": ["vo_lam_the_gia"] },
+  "trong_so": 25,
+  "lap_lai": "mot_lan",
+  "mo_ta": "Một vị sư thúc ghé thăm gia trang, nghe tiếng bạn có căn cốt tốt bèn gọi ra sân. \"Đứng mã bộ cho ta nửa canh giờ, tay không được hạ, chân không được run.\" Nắng gắt chiếu thẳng trên đầu.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Nghiến răng đứng cho đủ nửa canh giờ",
+      "kiem_dinh": { "loai": "roll", "chi_so": "can_cot", "nguong": 35 },
+      "thanh_cong": {
+        "van_ban": "Mồ hôi chảy vào mắt xót như lửa, chân run như lá mà bạn không buông. Hết nửa canh giờ, vị sư thúc gật đầu: \"Bộ xương tốt, chỉ cần có người rèn.\"",
+        "hieu_ung": [
+          { "cong": { "can_cot": 6 } },
+          { "dat_co": "biet_ma_bo" }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Chưa đầy một nén hương chân bạn đã khuỵu xuống, ngã ngồi giữa sân nắng. Vị sư thúc chỉ lắc đầu, bảo bạn về nghỉ, nhưng bạn thấy mình nhục hơn cả bị mắng.",
+        "hieu_ung": [
+          { "cong": { "can_cot": 2, "mi_luc": -2 } }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Giả vờ đứng, lén xem sư thúc luyện kiếm thế chỗ",
+      "ket_qua": {
+        "van_ban": "Bạn giữ dáng hờ hững, mắt không rời những đường kiếm của sư thúc ở góc sân. Bạn không rèn được gân cốt, nhưng lại nhớ được cả chuỗi chiêu thức trong đầu.",
+        "hieu_ung": [
+          { "cong": { "ngo_tinh": 5 } },
+          { "hiep_nghia": -10 }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Thưa thẳng rằng mình chưa muốn học võ",
+      "ket_qua": {
+        "van_ban": "Vị sư thúc ngạc nhiên rồi bật cười, không ép. Cha bạn đứng xa nhìn, không nói gì, nhưng bạn biết ông hơi thất vọng.",
+        "hieu_ung": [
+          { "cong": { "phuc_duyen": 3 } }
+        ]
+      }
+    }
+  ]
+}

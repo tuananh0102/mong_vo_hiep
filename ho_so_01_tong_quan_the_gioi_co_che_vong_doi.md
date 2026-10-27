@@ -138,7 +138,7 @@ Các kỹ năng ngoài võ học, tăng qua hành động **"Học Tạp học"*
 | Xã hội | Danh Vọng | `danh_vong` | $0 - 1000$ | Hiện | Chiến thắng công khai, Đại sự kiện, thăng chức; cộng Danh vọng chức vị khi đang giữ chức (Trưởng lão $+150$, Chưởng môn $+300$); ẩn cư làm giảm |
 | Nội công | Cảnh Giới Nội Công | `canh_gioi_noi_cong` | Cấp $0 - 10$ | Hiện | Tu luyện Tâm pháp chủ đạo |
 | Nội công | Hệ Nội Lực | `he_noi_luc` | Dương / Âm / Hòa | Hiện | Theo Tâm pháp chủ đạo |
-| Nội công | Nội Tức | `noi_tuc`, `noi_tuc_max` | Điểm | Hiện | Công thức $MP_{max}$, đan dược, kỳ ngộ, tiêu hao trong trận |
+| Nội công | Nội Tức | `noi_tuc`, `noi_tuc_max`, `noi_tuc_cong_them` | Điểm | Hiện (`noi_tuc_cong_them` ẩn) | Công thức $MP_{max}$ (`noi_tuc_cong_them` là "Điểm Kỳ Ngộ"), đan dược, kỳ ngộ, tiêu hao trong trận |
 | Chiến đấu | Sinh Mệnh | `hp`, `hp_max` | Điểm | Hiện | Công thức $HP_{max}$, thương tích, hồi phục |
 | Chiến đấu | Cấp Võ Học | `cap_vo_hoc[mon]` | Cấp $1 - 10$ mỗi môn | Hiện | Luyện công (AP), truyền thụ |
 | Chiến đấu | Võ Lực (phái sinh) | `vo_luc` | $0 - 100$ | Hiện | Công thức Hồ sơ 06, chỉ dùng cho Giao chiến nhanh |

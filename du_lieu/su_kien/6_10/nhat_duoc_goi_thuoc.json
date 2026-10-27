@@ -1,0 +1,39 @@
+{
+  "ma": "nhat_duoc_goi_thuoc",
+  "nguon": "noi_dung_moi",
+  "ten": "Gói Thuốc Bên Suối",
+  "loai": "ky_ngo",
+  "cap_ky_ngo": "B",
+  "loai_hien_thi": "ky-ngo",
+  "tuoi": [6, 10],
+  "vung": null,
+  "dieu_kien": null,
+  "trong_so": 25,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "Kỳ ngộ B: phần thưởng không quá +10 và chỉ là vật phẩm thường.",
+  "mo_ta": "Bên bờ suối, bạn nhặt được một gói vải bọc kín: bên trong là mấy vị thuốc đã phơi khô cùng hai lọ cao dán còn thơm mùi dược liệu. Phía xa, một lão lang y đang lom khom tìm kiếm gì đó dọc con đường mòn.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Chạy theo trả gói thuốc lại cho lão",
+      "ket_qua": {
+        "van_ban": "Lão lang y mừng rỡ, nắm tay bạn cảm tạ rối rít. Lão giảng cho bạn nghe công dụng của từng vị thuốc, dặn rằng thuốc quý hơn bạc, mất một gói là mất mạng một người.",
+        "hieu_ung": [
+          { "hiep_nghia": 20 },
+          { "cong": { "y_thuat": 5 } }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Giấu gói thuốc vào ngực, lặng lẽ đi về",
+      "ket_qua": {
+        "van_ban": "Bạn lén lút mang gói thuốc về nhà, cất kỹ dưới gối. Không ai hay biết, nhưng đêm đó bạn trằn trọc mãi không ngủ được.",
+        "hieu_ung": [
+          { "nhan_vat_pham": "kim_sang_duoc", "so_luong": 2 },
+          { "hiep_nghia": -15 }
+        ]
+      }
+    }
+  ]
+}

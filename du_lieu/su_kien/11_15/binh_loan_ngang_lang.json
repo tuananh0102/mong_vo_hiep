@@ -1,0 +1,58 @@
+{
+  "ma": "binh_loan_ngang_lang",
+  "nguon": "noi_dung_moi",
+  "ten": "Binh Loạn Ngang Làng",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [11, 15],
+  "vung": null,
+  "dieu_kien": null,
+  "trong_so": 10,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "HS03 I: thiếu niên có biến cố lớn (huyết án, chiến loạn). Mô tả mức hệ quả, không tả cảnh tàn nhẫn.",
+  "mo_ta": "Một toán binh lính tan hàng kéo vào làng lúc xế chiều, đòi lương thực, lục soát từng nhà. Tiếng quát tháo, tiếng gà bay chó chạy vang khắp xóm. Một lão nông gần nhà bạn đang bị bọn chúng giữ lại, không chịu giao kho thóc cuối cùng.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Chạy đến kho thóc, lén dắt dân làng trốn vào rừng",
+      "nguy": true,
+      "kiem_dinh": { "loai": "roll", "chi_so": "phuc_duyen", "nguong": 35 },
+      "thanh_cong": {
+        "van_ban": "Bạn dẫn mấy chục người già trẻ lớn bé lẩn qua lối ruộng ra rừng trong lúc bọn lính còn mải cãi vã. Đến sáng, toán lính bỏ đi, làng còn đủ người để dựng lại.",
+        "hieu_ung": [
+          { "hiep_nghia": 40 },
+          { "cong": { "ngo_tinh": 3, "mi_luc": 3 } }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Một tên lính phát hiện, quát đuổi. Bạn bị hất ngã, đập đầu xuống đất. May có tiếng người can nên bạn thoát nạn, nhưng đành nhìn bọn chúng lấy sạch kho thóc.",
+        "hieu_ung": [
+          { "hiep_nghia": 10 },
+          { "cong_phan_tram": { "hp": -30 } }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Trốn vào hầm đất sau nhà đến khi chúng đi hết",
+      "ket_qua": {
+        "van_ban": "Bạn nín thở trong hầm tối cả đêm, nghe tiếng ủng nện thình thịch trên đầu. Sáng ra làng xóm xơ xác, bạn vẫn nguyên vẹn, nhưng tiếng kêu của lão nông cứ ám bạn mãi.",
+        "hieu_ung": [
+          { "cong": { "phuc_duyen": 2, "ngo_tinh": 2 } },
+          { "hiep_nghia": -10 }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Nịnh bợ tên đội trưởng, chỉ giùm chỗ giấu lương của hàng xóm để được tha",
+      "ket_qua": {
+        "van_ban": "Tên đội trưởng cười nhạt, thưởng cho bạn mấy đồng rồi cho người đến những nhà bạn chỉ. Nhà bạn bình yên, nhưng ánh mắt hàng xóm nhìn bạn từ đó thay đổi.",
+        "hieu_ung": [
+          { "cong": { "ngan_luong": 30 } },
+          { "hiep_nghia": -40 }
+        ]
+      }
+    }
+  ]
+}

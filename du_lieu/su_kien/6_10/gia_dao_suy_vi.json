@@ -1,0 +1,71 @@
+{
+  "ma": "gia_dao_suy_vi",
+  "nguon": "HS01 III.1",
+  "ten": "Gia Đạo Suy Vi",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [8, 15],
+  "vung": null,
+  "dieu_kien": {
+    "va": [
+      { "la": "gia_canh", "trong": ["phu_thuong"] },
+      { "khong": { "co": "gia_dao_suy_vi" } }
+    ]
+  },
+  "trong_so": 12,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "HS01 III.1 / HS06 II.4: Gia cảnh Phú Thương dễ gặp biến cố 'Gia đạo suy vi', đặt cờ gia_dao_suy_vi để mất khoản thu nhập gia đình +50 lạng/năm (kinh_te.ts, M1-13). Có hai nhánh cứu vãn thành công để biến cố là rủi ro chứ không chắc chắn.",
+  "mo_ta": "Một chuyến hàng lớn của nhà bạn bị mất trắng giữa đường, chủ nợ kéo đến đứng chật cửa tiệm. Cha bạn ngồi bần thần bên quầy, bàn tính nằm im trong tay. Cả tiệm lặng ngắt, chỉ nghe tiếng ve kêu ngoài sân.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Dốc hết tiền riêng ra giúp cha cầm cự",
+      "cong": { "so": "ngan_luong", "op": ">=", "gt": 50 },
+      "kiem_dinh": { "loai": "roll", "chi_so": "ngo_tinh", "nguong": 40 },
+      "thanh_cong": {
+        "van_ban": "Bạn cùng cha tính từng khoản, xin gia hạn từng chủ nợ, dùng tiền riêng bịt những lỗ hổng gấp nhất. Cơ ngơi lung lay nhưng không đổ, và cha bạn nhìn bạn bằng ánh mắt khác hẳn.",
+        "hieu_ung": [
+          { "cong": { "ngan_luong": -50, "ngo_tinh": 3 } },
+          { "hiep_nghia": 10 }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Số tiền riêng của bạn chỉ là giọt nước giữa biển nợ. Chủ nợ vẫn niêm phong kho hàng, tiệm đóng cửa, gia đạo từ đây xuống dốc.",
+        "hieu_ung": [
+          { "cong": { "ngan_luong": -50 } },
+          { "hiep_nghia": 10 },
+          { "dat_co": "gia_dao_suy_vi" }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Theo cha đi từng nhà khách quen xin gia hạn và đòi nợ cũ",
+      "kiem_dinh": { "loai": "roll", "chi_so": "mi_luc", "nguong": 40 },
+      "thanh_cong": {
+        "van_ban": "Gương mặt thông minh của bạn khiến nhiều chủ nợ mềm lòng, vài khách quen trả nợ cũ sớm hơn hẹn. Tiệm vượt qua cơn khó khăn sát nút.",
+        "hieu_ung": [
+          { "cong": { "ngan_luong": 20, "mi_luc": 3 } }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Nhiều cánh cửa đóng sầm trước mặt hai cha con, có nhà còn thả chó đuổi. Về đến nơi, cha bạn lặng lẽ cất bàn tính, gia đạo từ đây suy vi.",
+        "hieu_ung": [
+          { "cong": { "mi_luc": -2 } },
+          { "dat_co": "gia_dao_suy_vi" }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Xin cha cho học một nghề tay chân phòng thân",
+      "ket_qua": {
+        "van_ban": "Bạn xin cha cho theo một ông thợ rèn quen biết học việc vài tháng. Cha bạn chưa kịp trả lời đã gục đầu xuống bàn. Tiệm đóng cửa, nhưng bạn có thêm đôi tay cứng cáp.",
+        "hieu_ung": [
+          { "cong": { "can_cot": 3, "mi_luc": -2 } },
+          { "dat_co": "gia_dao_suy_vi" }
+        ]
+      }
+    }
+  ]
+}

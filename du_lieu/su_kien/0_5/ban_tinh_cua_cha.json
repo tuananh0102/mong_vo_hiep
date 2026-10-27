@@ -1,0 +1,48 @@
+{
+  "ma": "ban_tinh_cua_cha",
+  "nguon": "noi_dung_moi",
+  "ten": "Tiếng Bàn Tính Lách Cách",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [3, 5],
+  "vung": null,
+  "dieu_kien": { "la": "gia_canh", "trong": ["phu_thuong"] },
+  "trong_so": 30,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "Không dùng [Ám] ở lựa chọn C vì M1 chưa hỗ trợ; việc vặt của trẻ con tính Hiệp nghĩa công khai nhỏ.",
+  "mo_ta": "Tiếng bàn tính lách cách vang lên suốt ngày trong tiệm của cha bạn. Hôm nay ông bận tiếp khách, để bạn ngồi một mình cạnh quầy, trước mặt là chiếc bàn tính bóng loáng và ngăn kéo đầy bạc lẻ.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Ngồi gảy bàn tính theo nhịp của cha",
+      "ket_qua": {
+        "van_ban": "Bạn gảy từng hạt, đếm nhẩm theo cha. Khách trong tiệm khen đứa trẻ có đầu óc sổ sách.",
+        "hieu_ung": [
+          { "cong": { "ngo_tinh": 4 } },
+          { "dat_co": "co_khieu_buon_ban" }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Tung hạt bàn tính làm đạn bắn chơi",
+      "ket_qua": {
+        "van_ban": "Hạt bàn tính văng tứ tung khắp tiệm, một hạt trúng ngay trán khách hàng. Cha bạn xin lỗi rối rít, nhưng chính ông cũng bật cười vì bạn bắn rất chuẩn.",
+        "hieu_ung": [
+          { "cong": { "mi_luc": 3 } }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Lén bỏ một thỏi bạc lẻ vào túi áo",
+      "ket_qua": {
+        "van_ban": "Bạn thoăn thoắt nhét thỏi bạc vào túi. Cha bạn tinh mắt nhìn thấy nhưng chỉ lắc đầu, ghi chuyện ấy vào lòng.",
+        "hieu_ung": [
+          { "cong": { "ngan_luong": 10 } },
+          { "hiep_nghia": -10 }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ma": "lam_thue_kiem_bac",
+  "nguon": "noi_dung_moi",
+  "ten": "Làm Thuê Kiếm Bạc",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [11, 15],
+  "vung": null,
+  "dieu_kien": { "la": "gia_canh", "trong": ["han_vi", "binh_dan"] },
+  "trong_so": 14,
+  "lap_lai": "mot_lan",
+  "mo_ta": "Năm nay mùa màng thất bát, nhà bạn thêm một miệng ăn phải lo. Bạn đã đủ lớn để kiếm việc làm thuê. Ở bến thuyền đang cần người khuân hàng, quán rượu đầu trấn thì đăng tin tuyển một đứa chạy bàn.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Ra bến thuyền khuân vác hàng nặng",
+      "kiem_dinh": { "loai": "roll", "chi_so": "can_cot", "nguong": 35 },
+      "thanh_cong": {
+        "van_ban": "Bạn gồng lưng vác hết bao này đến bao khác, được phu bến khen khỏe hơn cả thằng lớn hơn mình mấy tuổi. Tiền công đầy túi, người cũng cứng cáp hơn.",
+        "hieu_ung": [
+          { "cong": { "ngan_luong": 30, "can_cot": 3 } }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Bao hàng quá nặng, bạn trượt chân trên ván cầu và bị đè bầm dập. Chủ bến chỉ trả vài đồng rồi cho bạn nghỉ việc.",
+        "hieu_ung": [
+          { "cong": { "ngan_luong": 5 } },
+          { "cong_phan_tram": { "hp": -20 } }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Vào quán rượu làm tiểu nhị chạy bàn",
+      "ket_qua": {
+        "van_ban": "Bạn bưng rượu, lau bàn, nghe lỏm đủ thứ chuyện giang hồ từ những vị khách say. Tiền công không nhiều nhưng bạn học được cách nói chuyện và đọc nét mặt người.",
+        "hieu_ung": [
+          { "cong": { "ngan_luong": 15, "ngo_tinh": 3, "mi_luc": 2 } }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Theo một đoàn xiếc rong, học tung hứng đổi lấy cơm",
+      "ket_qua": {
+        "van_ban": "Đoàn xiếc nhận bạn làm phụ việc. Mấy tháng rong ruổi, bạn học được cách giữ thăng bằng, nhìn trước nhìn sau và cả mánh lận lưng của người làm nghề.",
+        "hieu_ung": [
+          { "cong": { "ngan_luong": 10, "can_cot": 2, "mi_luc": 3 } }
+        ]
+      }
+    }
+  ]
+}

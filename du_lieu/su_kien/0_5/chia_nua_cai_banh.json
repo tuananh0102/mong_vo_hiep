@@ -1,0 +1,47 @@
+{
+  "ma": "chia_nua_cai_banh",
+  "nguon": "noi_dung_moi",
+  "ten": "Nửa Chiếc Bánh Mốc",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [3, 5],
+  "vung": null,
+  "dieu_kien": { "la": "gia_canh", "trong": ["han_vi"] },
+  "trong_so": 30,
+  "lap_lai": "mot_lan",
+  "mo_ta": "Cả nhà chỉ còn lại một chiếc bánh bột đã mốc xanh một góc, bạn vừa bẻ được nửa thì thấy một đứa bé ăn mày gầy trơ xương đứng nép sau cánh cửa, mắt không rời miếng bánh.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Chìa nửa bánh ra cho đứa bé",
+      "ket_qua": {
+        "van_ban": "Đứa bé ăn ngấu nghiến rồi nở nụ cười đầu tiên trong ngày. Bụng bạn kêu ọc ọc, nhưng lòng lại thấy nhẹ.",
+        "hieu_ung": [
+          { "hiep_nghia": 15 },
+          { "cong": { "mi_luc": 2 } }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Quay lưng ăn nhanh cho kịp, không ngoảnh lại",
+      "ket_qua": {
+        "van_ban": "Bạn nuốt vội miếng bánh, giả vờ không thấy ánh mắt sau lưng. Bụng no thêm một chút, nhưng nỗi áy náy bám theo bạn mấy ngày.",
+        "hieu_ung": [
+          { "cong": { "can_cot": 2 } },
+          { "hiep_nghia": -10 }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Cất phần bánh vào ngực, dành cho bữa mai",
+      "ket_qua": {
+        "van_ban": "Bạn nhịn đói, cất miếng bánh vào ngực áo. Nhẫn nại từ thuở nhỏ, bạn sớm hiểu rằng người nghèo phải biết tính xa.",
+        "hieu_ung": [
+          { "cong": { "ngo_tinh": 3 } }
+        ]
+      }
+    }
+  ]
+}

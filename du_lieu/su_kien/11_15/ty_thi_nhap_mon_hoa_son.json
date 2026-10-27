@@ -1,0 +1,75 @@
+{
+  "ma": "ty_thi_nhap_mon_hoa_son",
+  "nguon": "HS03 IV.2",
+  "ten": "Tỷ Thí Nhập Môn Hoa Sơn",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [12, 15],
+  "vung": ["trung_nguyen"],
+  "dieu_kien": { "la": "mon_phai", "trong": [""] },
+  "trong_so": 100,
+  "lap_lai": { "toi_da": 2 },
+  "ghi_chu": "Khảo nghiệm bái sư (bước ngoặt), nhánh Hoa Sơn của HS03 IV.2. Roll [Ngộ tính vs 45] theo GDD thay cho Tam Hiệp ở lựa chọn A. 'Đệ tử Nội môn' của GDD trái HS04 I.1 (Nội môn là Bậc 2 từ 16 tuổi), giả định M1: vào Bậc 1 kèm Cống hiến +50 và cờ noi_mon_du_bi, ghi vào REVIEW. Gây khó dễ bởi Trưởng lão nằm ở truong_lao_hoa_son_gay_kho. Lựa chọn C viết mới để có lối lùi khi chưa đạt Cổng.",
+  "mo_ta": "Hoa Sơn mở đại hội thu nhận đệ tử. Bài kiểm tra là cầm kiếm gỗ đấu với một thiếu niên trạc tuổi, chính là cháu nội của một vị trưởng lão trong phái. Giữa trận, bạn nhận ra đối phương lộ sơ hở ở hạ bàn, nhưng hắn lại ngầm ra hiệu đe dọa bạn phải nhường.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Đâm thẳng kiếm gỗ vào sơ hở, đánh bại hắn trước toàn trường",
+      "cong": {
+        "va": [
+          { "so": "ngo_tinh", "op": ">=", "gt": 40 },
+          { "so": "thanh_danh", "op": ">=", "gt": 0 },
+          { "la": "mon_phai", "trong": [""] }
+        ]
+      },
+      "kiem_dinh": { "loai": "roll", "chi_so": "ngo_tinh", "nguong": 45 },
+      "thanh_cong": {
+        "van_ban": "Chưởng môn khen kiếm tâm của bạn thông minh, thu nhận làm đệ tử có triển vọng và dặn dò riêng. Nhưng từ khoảnh khắc ấy, bạn đã kết thù với vị trưởng lão kia, và bạn biết rồi sẽ có ngày hắn tìm cách làm khó bạn.",
+        "hieu_ung": [
+          { "gia_nhap_mon_phai": "hoa_son", "bac": 1 },
+          { "cong_hien": 50 },
+          { "dat_co": "noi_mon_du_bi" },
+          { "dat_co": "ke_thu_truong_lao_hoa_son" }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Sơ hở hóa ra là bẫy dụ địch, hắn xoay kiếm đánh bật kiếm gỗ khỏi tay bạn trước toàn trường. Bạn vừa thua vừa đắc tội với vị trưởng lão, nhưng Chưởng môn vẫn nhận bạn vì thấy bạn có gan.",
+        "hieu_ung": [
+          { "gia_nhap_mon_phai": "hoa_son", "bac": 1 },
+          { "danh_vong": 5 },
+          { "them_nhan": "quat_cuong" },
+          { "dat_co": "gay_kho_nhe_hoa_son" }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Giả vờ vấp ngã để thua một cách đẹp mắt, giữ thể diện cho cháu trưởng lão",
+      "cong": {
+        "va": [
+          { "so": "ngo_tinh", "op": ">=", "gt": 40 },
+          { "so": "thanh_danh", "op": ">=", "gt": 0 },
+          { "la": "mon_phai", "trong": [""] }
+        ]
+      },
+      "ket_qua": {
+        "van_ban": "Bạn \"vô ý\" vấp ngã rất đúng lúc. Chỉ được nhận làm đệ tử ngoại môn, học võ chậm hơn, nhưng vị trưởng lão quý mến, thường thưởng bạc và cho bạn đi theo các chuyến áp tiêu kiếm chác.",
+        "hieu_ung": [
+          { "gia_nhap_mon_phai": "hoa_son", "bac": 1 },
+          { "cong": { "ngan_luong": 50, "mi_luc": 8 } },
+          { "dat_co": "truong_lao_hoa_son_quy_men" }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Nhìn sân đấu rồi lặng lẽ rút lui, không tranh nữa",
+      "ket_qua": {
+        "van_ban": "Bạn buông kiếm gỗ, chắp tay chào rồi quay lưng bước ra khỏi sân. Bạn không muốn bước vào cửa một phái mà ngay trước cửa đã phải cúi đầu.",
+        "hieu_ung": [
+          { "cong": { "ngo_tinh": 2 } }
+        ]
+      }
+    }
+  ]
+}

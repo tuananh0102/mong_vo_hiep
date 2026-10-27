@@ -1,0 +1,48 @@
+{
+  "ma": "buoi_dau_trong_sap",
+  "nguon": "noi_dung_moi",
+  "ten": "Buổi Đầu Trông Sạp",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [8, 10],
+  "vung": null,
+  "dieu_kien": { "la": "gia_canh", "trong": ["phu_thuong"] },
+  "trong_so": 25,
+  "lap_lai": "mot_lan",
+  "mo_ta": "Cha bạn có việc phải ra bến, giao cho bạn trông sạp hàng trong một buổi chiều. Một bà lão nghèo run run bước tới, xin mua nửa cân gạo nhưng chỉ có đủ tiền mua một phần ba.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Tính đúng từng đồng, bán đúng lượng gạo bà đủ tiền mua",
+      "ket_qua": {
+        "van_ban": "Bạn gảy bàn tính nhanh thoăn thoắt, cân đúng lượng gạo và thối lại tiền không sai một xu. Cha bạn về, kiểm sổ thấy đủ, gật đầu hài lòng.",
+        "hieu_ung": [
+          { "cong": { "ngo_tinh": 4, "ngan_luong": 10 } }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Gian cân bớt lạng, bán đủ nửa cân giá cũ cho bà lão",
+      "ket_qua": {
+        "van_ban": "Bạn khéo tay đặt thêm quả cân giả, bà lão không hề hay biết mình mua thiếu. Bạn bỏ túi chênh lệch, nhưng khi bà lão cảm ơn rối rít, cổ họng bạn nghẹn lại.",
+        "hieu_ung": [
+          { "cong": { "ngan_luong": 30 } },
+          { "hiep_nghia": -20 }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Bán chịu đủ nửa cân, tự bỏ tiền túi bù vào",
+      "cong": { "so": "ngan_luong", "op": ">=", "gt": 5 },
+      "ket_qua": {
+        "van_ban": "Bạn lặng lẽ lấy năm đồng của mình bỏ vào hộc tiền, múc đầy nửa cân gạo cho bà lão. Bà không biết gì, chỉ chắp tay cầu phúc cho bạn.",
+        "hieu_ung": [
+          { "cong": { "ngan_luong": -5 } },
+          { "hiep_nghia": 20 }
+        ]
+      }
+    }
+  ]
+}

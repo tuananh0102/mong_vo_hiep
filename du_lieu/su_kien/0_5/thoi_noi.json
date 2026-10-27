@@ -1,0 +1,78 @@
+{
+  "ma": "thoi_noi",
+  "nguon": "HS03 II.1",
+  "ten": "Lễ Thôi Nôi - Trảo Chu",
+  "loai": "co_dinh",
+  "loai_hien_thi": "thuong",
+  "tuoi": [
+    1,
+    1
+  ],
+  "vung": null,
+  "dieu_kien": {
+    "so": "ngo_tinh",
+    "op": ">=",
+    "gt": 25
+  },
+  "trong_so": 0,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "HS03 II.1 có 5 lựa chọn (D và E là Cổng ẩn), lược đồ chỉ cho tối đa 4. Tách thành thoi_noi (A - C, Ngộ tính từ 25) và thoi_noi_ngu_guc (A - C và E, Ngộ tính dưới 25). Lựa chọn D (Nam Cương / Tây Vực) để M3-02 vì M1 luôn khởi đầu ở Trung Nguyên (G01). Số vượt định mức theo nguyên văn HS03.",
+  "mo_ta": "Ngày bạn tròn một tuổi, {cha_me} bày trước mặt bạn đủ thứ đồ vật để xem thiên hướng cuộc đời. Cả nhà nín thở nhìn bàn tay nhỏ xíu của bạn quờ quạng giữa đống đồ.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Chộp lấy thanh kiếm gỗ cũ kỹ",
+      "ket_qua": {
+        "van_ban": "Bạn nắm chặt thanh kiếm gỗ không chịu buông, cả nhà vỗ tay khen có khí phách.",
+        "hieu_ung": [
+          {
+            "cong": {
+              "can_cot": 5
+            }
+          },
+          {
+            "hiep_nghia": 10
+          },
+          {
+            "dat_co": "thien_huong_kiem_khach"
+          }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Nắm chặt cuốn sách rách nát",
+      "ket_qua": {
+        "van_ban": "Bạn ôm cuốn sách, lật giở như thể đọc hiểu được, ai cũng bảo đứa trẻ này mai sau ắt giỏi chữ nghĩa.",
+        "hieu_ung": [
+          {
+            "cong": {
+              "ngo_tinh": 8
+            }
+          },
+          {
+            "dat_co": "thien_huong_hoc_van"
+          }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Ôm khư khư thỏi bạc lẻ và cái bàn tính",
+      "ket_qua": {
+        "van_ban": "Bạn ôm thỏi bạc cười toe toét, khách khứa trầm trồ rằng trẻ này có khiếu buôn bán.",
+        "hieu_ung": [
+          {
+            "cong": {
+              "ngan_luong": 20,
+              "phuc_duyen": 3
+            }
+          },
+          {
+            "dat_co": "thien_huong_buon_ban"
+          }
+        ]
+      }
+    }
+  ]
+}

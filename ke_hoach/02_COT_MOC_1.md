@@ -574,7 +574,7 @@ Task lớn, làm theo 4 phần, mỗi phần một commit.
 
 ---
 
-### [ ] M1-14 Nội dung 0 - 15 tuổi (Trung Nguyên)
+### [x] M1-14 Nội dung 0 - 15 tuổi (Trung Nguyên)
 
 **Phụ thuộc:** M1-05, M1-06, M1-10, M1-12.
 **Đọc:** HS03 (toàn bộ); Phụ lục A file này; `ho_so_08_luoc_do_du_lieu.md`.

@@ -1,0 +1,46 @@
+{
+  "ma": "lop_hoc_cua_thay_do",
+  "nguon": "noi_dung_moi",
+  "ten": "Lớp Học Của Thầy Đồ",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [6, 10],
+  "vung": null,
+  "dieu_kien": { "la": "gia_canh", "trong": ["phu_thuong", "vo_lam_the_gia"] },
+  "trong_so": 15,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "HS03 I: Tạp học cần Gia cảnh Phú Thương, Võ Lâm Thế Gia hoặc có thầy đồ trong thôn.",
+  "mo_ta": "Nhà bạn mời một thầy đồ già về dạy chữ. Mỗi sáng thầy gõ thước xuống bàn, bắt cả lũ trẻ đọc những câu thơ cổ dài dằng dặc, trong khi ngoài sân nắng đẹp và cây ổi đang chín rộ.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Chăm chỉ đọc thuộc, tập chép từng nét chữ",
+      "ket_qua": {
+        "van_ban": "Bạn ngồi thẳng lưng, đọc đi đọc lại đến khi thuộc làu. Thầy đồ vuốt râu bảo đứa trẻ này có thể thành người có học.",
+        "hieu_ung": [
+          { "cong": { "ngo_tinh": 5, "thi": 4 } }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Trốn học, leo lên cây ổi hái quả",
+      "ket_qua": {
+        "van_ban": "Bạn leo thoăn thoắt lên ngọn ổi, ăn no nê rồi ngủ quên trên cành. Thầy đồ đứng dưới gốc cây chống thước than trời, nhưng tay chân bạn cũng vì thế mà dẻo dai hơn.",
+        "hieu_ung": [
+          { "cong": { "can_cot": 3, "mi_luc": 2 } }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Nguệch ngoạc vẽ hình người cầm kiếm lên giấy học trò",
+      "ket_qua": {
+        "van_ban": "Thầy đồ cầm tờ giấy lên nhìn hồi lâu, định mắng rồi lại thôi. Ông chỉ cho bạn cách đưa nét bút sao cho kiếm trông có sức nặng.",
+        "hieu_ung": [
+          { "cong": { "hoa": 4, "ngo_tinh": 2 } }
+        ]
+      }
+    }
+  ]
+}

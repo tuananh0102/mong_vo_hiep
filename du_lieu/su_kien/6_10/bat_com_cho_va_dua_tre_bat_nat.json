@@ -1,0 +1,52 @@
+{
+  "ma": "bat_com_cho_va_dua_tre_bat_nat",
+  "nguon": "HS03 III.1",
+  "ten": "Bát Cơm Chó Và Đứa Trẻ Bắt Nạt",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [7, 9],
+  "vung": null,
+  "dieu_kien": null,
+  "trong_so": 12,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "Mô-típ Hàn Tín / Dương Quá. Lựa chọn C trong HS03 là [Ám]; M1 chưa hỗ trợ [Ám] nên tính Hiệp nghĩa công khai, M2-06 đổi sang am: vat.",
+  "m2_noi_tiep": true,
+  "mo_ta": "Đám con nhà giàu trong trấn vây quanh bạn, ném một chiếc bánh bao thịt xuống vũng bùn và cười lớn: \"Chui qua háng tao rồi nhặt bánh lên ăn, tao cho thêm hai đồng kẽm!\"",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Nhẫn nhục chui qua, nhặt bánh ăn rồi lẳng lặng bỏ đi",
+      "ket_qua": {
+        "van_ban": "Bạn cúi đầu làm theo, nuốt cả bánh lẫn nhục vào bụng, không nói một lời. Đôi mắt bạn nhìn từng khuôn mặt cười cợt, nhớ kỹ từng người.",
+        "hieu_ung": [
+          { "cong": { "mi_luc": -5, "ngo_tinh": 8, "ngan_luong": 2 } },
+          { "them_nhan": "nhan_nhin_tham_sau" }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Nhặt cục đá dưới đất, liều mạng đập vào đầu tên cầm đầu",
+      "ket_qua": {
+        "van_ban": "Bạn bị đám gia đinh đánh bầm dập, nhưng từ đó không đứa nào dám trêu bạn nữa. Một lão già bán rượu đầu ngõ nhìn bạn gật gù tán thưởng.",
+        "hieu_ung": [
+          { "cong": { "can_cot": 6, "mi_luc": 5 } },
+          { "hiep_nghia": 15 },
+          { "cong_phan_tram": { "hp": -20 } }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Cười xòa nịnh bợ, rồi thừa lúc chúng lơ đễnh móc luôn túi tiền",
+      "ket_qua": {
+        "van_ban": "Bạn nịnh nọt cho chúng cười đến chảy nước mắt, bàn tay thì nhanh như chớp luồn vào túi áo gấm. Lúc chúng nhận ra thì bạn đã mất hút trong ngõ.",
+        "hieu_ung": [
+          { "cong": { "ngan_luong": 30 } },
+          { "hiep_nghia": -30 },
+          { "them_nhan": "dieu_thu_khong_khong" }
+        ]
+      }
+    }
+  ]
+}

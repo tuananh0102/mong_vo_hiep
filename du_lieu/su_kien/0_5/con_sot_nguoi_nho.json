@@ -1,0 +1,71 @@
+{
+  "ma": "con_sot_nguoi_nho",
+  "nguon": "noi_dung_moi",
+  "ten": "Cơn Sốt Đầu Mùa",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [2, 4],
+  "vung": null,
+  "dieu_kien": null,
+  "trong_so": 12,
+  "lap_lai": "mot_lan",
+  "mo_ta": "Giao mùa, bạn lên cơn sốt cao, mặt đỏ bừng, môi khô nứt nẻ. {cha_me} thức trắng đêm bên giường, thầy lang trong thôn lắc đầu bảo phải xem sức bạn chống chọi được đến đâu.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Nằm yên cho {cha_me} lau mình, đút thuốc",
+      "ket_qua": {
+        "van_ban": "Bạn ngoan ngoãn uống từng thìa thuốc đắng. Sáng ra cơn sốt lui, hơi ấm của người thân khiến bạn thấy mình may mắn.",
+        "hieu_ung": [
+          { "cong": { "can_cot": 2, "phuc_duyen": 2 } }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Nghiến răng chịu đựng, không khóc một tiếng",
+      "kiem_dinh": { "loai": "roll", "chi_so": "can_cot", "nguong": 30 },
+      "thanh_cong": {
+        "van_ban": "Bạn cắn chặt môi, mồ hôi ướt đẫm mà không rên rỉ. Cơn sốt đi qua, để lại một thân thể rắn rỏi hơn trước.",
+        "hieu_ung": [
+          { "cong": { "can_cot": 4 } }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Bạn gắng gượng quá sức, đến nửa đêm thì mê man bất tỉnh. Cơn sốt lui nhưng người suy nhược nhiều ngày.",
+        "hieu_ung": [
+          { "cong": { "can_cot": -3, "phuc_duyen": 1 } }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Lén trốn ra sân hứng gió lạnh cho đỡ nóng",
+      "nguy": true,
+      "kiem_dinh": {
+        "loai": "ngau_nhien",
+        "nhanh": [
+          {
+            "ti_le": 50,
+            "ket_qua": {
+              "van_ban": "Gió lạnh táp vào mặt khiến bạn tỉnh hẳn, mồ hôi toát ra như tắm. Sáng ra cơn sốt lui lạ lùng.",
+              "hieu_ung": [
+                { "cong": { "can_cot": 6 } }
+              ]
+            }
+          },
+          {
+            "ti_le": 50,
+            "ket_qua": {
+              "van_ban": "Gió lạnh làm cơn sốt thêm nặng, bạn run bần bật rồi ngất đi. Phải mất cả tháng mới hồi lại.",
+              "hieu_ung": [
+                { "cong": { "can_cot": -4 } },
+                { "cong_phan_tram": { "hp": -20 } }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

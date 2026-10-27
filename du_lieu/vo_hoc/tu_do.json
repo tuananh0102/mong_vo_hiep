@@ -59,5 +59,20 @@
     "dac_biet": ["pha_chieu"],
     "mon_phai": null,
     "mo_ta": "Tuyệt học kiếm thuật vô chiêu thắng hữu chiêu của Kiếm ma Độc Cô Cầu Bại, nhìn thấu mọi sơ hở trong thiên hạ."
+  },
+  {
+    "ma": "gia_truyen_quyen_phap",
+    "ten": "Gia Truyền Quyền Pháp",
+    "nguon": "HS01 III.1",
+    "nguon_ten": "phong_tac",
+    "tru_cot": "ngoai_cong",
+    "tier": 1,
+    "he_noi_luc": null,
+    "loai_binh_khi": "quyen_chuong",
+    "uy_luc_lech": 0,
+    "tran_cap": 10,
+    "dac_biet": [],
+    "mon_phai": null,
+    "mo_ta": "Bộ quyền pháp nhập môn mà con cháu Võ Lâm Thế Gia được cha truyền từ năm 5 tuổi, đơn giản mà vững nền."
   }
 ]

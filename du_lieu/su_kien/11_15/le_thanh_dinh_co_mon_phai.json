@@ -1,0 +1,38 @@
+{
+  "ma": "le_thanh_dinh_co_mon_phai",
+  "nguon": "HS03 V",
+  "ten": "Lễ Thành Đinh - Xuất Sơn",
+  "loai": "co_dinh",
+  "loai_hien_thi": "thuong",
+  "tuoi": [16, 16],
+  "vung": null,
+  "dieu_kien": { "khong": { "la": "mon_phai", "trong": [""] } },
+  "trong_so": 0,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "Tổng kết tuổi 15 của HS03 V cho người đã có môn phái. Nhiệm vụ Xuất sơn đầu tiên là sự kiện của M1-15, cờ thanh_dinh_xuong_nui / thanh_dinh_o_lai để M1-15 nối vào. Lược đồ chưa có loai chuyen_giai_doan nên viết dạng sự kiện cố định tuổi 16.",
+  "mo_ta": "Bạn tròn mười sáu tuổi, đã qua tuổi thiếu niên. Sáng nay sư phụ gọi bạn lên trước chính điện, nhìn bạn từ đầu đến chân rồi nói: \"{ten}, con đã đủ lớn. Giang hồ ngoài kia rộng lắm, đã đến lúc con tự mình đi xem.\"",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Quỳ lạy tạ ơn sư phụ, xin nhận lệnh xuống núi",
+      "ket_qua": {
+        "van_ban": "Bạn dập đầu ba lạy, nhận từ tay sư phụ một túi hành trang và lời dặn dò. Phía sau lưng, bóng sơn môn khuất dần trong sương sớm, trước mặt là con đường đất dẫn ra giang hồ.",
+        "hieu_ung": [
+          { "cong_hien": 20 },
+          { "dat_co": "thanh_dinh_xuong_nui" }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Xin sư phụ cho ở lại luyện công thêm một thời gian",
+      "ket_qua": {
+        "van_ban": "Bạn thưa rằng mình chưa đủ vững, xin được ở lại thêm. Sư phụ vuốt râu mỉm cười, ngầm khen bạn biết lượng sức, nhưng cũng nhắc rằng giang hồ không chờ ai.",
+        "hieu_ung": [
+          { "cong": { "ngo_tinh": 2, "can_cot": 2 } },
+          { "dat_co": "thanh_dinh_o_lai" }
+        ]
+      }
+    }
+  ]
+}

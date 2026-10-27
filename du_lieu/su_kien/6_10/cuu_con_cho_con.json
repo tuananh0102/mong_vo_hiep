@@ -1,0 +1,53 @@
+{
+  "ma": "cuu_con_cho_con",
+  "nguon": "noi_dung_moi",
+  "ten": "Con Chó Ghẻ Cuối Ngõ",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [6, 10],
+  "vung": null,
+  "dieu_kien": null,
+  "trong_so": 10,
+  "lap_lai": "mot_lan",
+  "mo_ta": "Cuối ngõ, một đám trẻ vây quanh con chó ghẻ gầy rộc, buộc dây vào đuôi nó rồi cười ầm lên mỗi khi nó rên ư ử. Con chó nằm bẹp, mắt ướt nhìn thẳng vào bạn như cầu cứu.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Xông vào can ngăn, giằng dây khỏi tay chúng",
+      "kiem_dinh": { "loai": "roll", "chi_so": "mi_luc", "nguong": 35 },
+      "thanh_cong": {
+        "van_ban": "Bạn quát đám trẻ bằng giọng lạ lùng cứng cỏi, chúng sững người rồi bỏ đi. Con chó liếm tay bạn, vẫy đuôi theo bạn một quãng.",
+        "hieu_ung": [
+          { "hiep_nghia": 20 },
+          { "cong": { "phuc_duyen": 3 } }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Đám trẻ xô bạn ngã sóng soài rồi cười nhạo. Bạn vẫn kịp cắt được sợi dây, con chó thoát chạy mất, chỉ còn bạn ngồi đó với đầu gối trầy xước.",
+        "hieu_ung": [
+          { "hiep_nghia": 10 },
+          { "cong_phan_tram": { "hp": -10 } }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Hùa theo cho khỏi bị cô lập",
+      "ket_qua": {
+        "van_ban": "Bạn cười theo, thậm chí còn nhặt hòn sỏi ném thử. Cả đám xem bạn là một đứa trong bọn, nhưng tiếng rên của con chó cứ đeo bám bạn đến tận đêm.",
+        "hieu_ung": [
+          { "hiep_nghia": -15 },
+          { "cong": { "mi_luc": 3 } }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Quay đi, coi như không thấy",
+      "ket_qua": {
+        "van_ban": "Bạn cúi đầu bước nhanh qua đầu ngõ. Chuyện của con chó không phải chuyện của bạn, bạn tự nhủ như thế.",
+        "hieu_ung": []
+      }
+    }
+  ]
+}

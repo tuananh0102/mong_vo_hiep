@@ -33,5 +33,12 @@
     "nguon": "HS01 II.7",
     "dac_biet": ["kieu_ngao"],
     "mo_ta": "Tự phụ coi trời bằng vung, dễ đắc tội người khác trên giang hồ."
+  },
+  {
+    "ma": "dieu_thu_khong_khong",
+    "ten": "Diệu Thủ Không Không",
+    "nguon": "HS03 III.1",
+    "dac_biet": ["moc_tui_cap_1"],
+    "mo_ta": "Đôi tay nhanh nhẹn học được từ những phi vụ vặt ngoài chợ, kỹ năng giang hồ cơ bản (móc túi cấp 1)."
   }
 ]

@@ -17,6 +17,7 @@
 
   { "ma": "noi_tuc", "ten": "Nội Tức", "nhom": "noi_cong", "min": 0, "max": null, "tran_cung": null, "hien_thi": "hien", "nguon": "HS01 II.8" },
   { "ma": "noi_tuc_max", "ten": "Nội Tức tối đa", "nhom": "noi_cong", "min": 0, "max": null, "tran_cung": null, "hien_thi": "hien", "phai_sinh": true, "nguon": "HS01 II.8" },
+  { "ma": "noi_tuc_cong_them", "ten": "Điểm Kỳ Ngộ Nội Tức", "nhom": "noi_cong", "min": 0, "max": null, "tran_cung": null, "hien_thi": "an", "nguon": "HS06 I.1" },
   { "ma": "canh_gioi_noi_cong", "ten": "Cảnh Giới Nội Công", "nhom": "noi_cong", "min": 0, "max": 10, "tran_cung": null, "hien_thi": "hien", "phai_sinh": true, "nguon": "HS01 II.8" },
 
   { "ma": "hp", "ten": "Sinh Mệnh", "nhom": "chien_dau", "min": 0, "max": null, "tran_cung": null, "hien_thi": "hien", "nguon": "HS01 II.8" },

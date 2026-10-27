@@ -1,0 +1,50 @@
+{
+  "ma": "dem_mua_mau_nhuom_gia_trang",
+  "nguon": "HS03 II.2",
+  "ten": "Đêm Mưa Máu Nhuộm Gia Trang",
+  "loai": "co_dinh",
+  "loai_hien_thi": "thuong",
+  "tuoi": [5, 5],
+  "vung": null,
+  "dieu_kien": { "la": "gia_canh", "trong": ["vo_lam_the_gia"] },
+  "trong_so": 60,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "Gia cảnh Võ Lâm Thế Gia. Số vượt định mức (Ngộ tính +10, Căn cốt -15, Phúc duyên +15) theo nguyên văn HS03. Nhánh dẫn sang Ẩn Thế chỉ đặt cờ mo_nhanh_an_the_som, nối tiếp ở M3-02.",
+  "m2_noi_tiep": true,
+  "mo_ta": "Nửa đêm, tiếng binh khí chát chúa vang lên khắp gia trang. Cha bạn mặt đầy máu nhét vào ngực bạn một chiếc khăn lụa rồi đẩy bạn xuống hầm bí mật, dặn: \"Dù có chuyện gì cũng không được lên tiếng!\" Qua khe gỗ, bạn thấy một kẻ áo đen vung chưởng về phía cha mẹ mình.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Cắn chặt môi đến bật máu, ghi nhớ từng đường chưởng của kẻ thù",
+      "kiem_dinh": { "loai": "roll", "chi_so": "ngo_tinh", "nguong": 35 },
+      "thanh_cong": {
+        "van_ban": "Cha mẹ qua đời, bạn thành cô nhi nhưng giữ được di vật và khắc sâu từng chiêu thức của kẻ thù vào tâm trí.",
+        "hieu_ung": [
+          { "cong": { "ngo_tinh": 10 } },
+          { "nhan_vat_pham": "khan_lua_chua_mat_do" },
+          { "ghi_ke_thu": "hac_y_chuong_phap" }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Quá kinh hãi, bạn ngất lịm trong hầm tối và không nhớ nổi một chiêu thức nào. Bạn vẫn giữ được di vật, nhưng kẻ thù chỉ còn là một bóng áo đen không tên.",
+        "hieu_ung": [
+          { "cong": { "phuc_duyen": 5 } },
+          { "nhan_vat_pham": "khan_lua_chua_mat_do" },
+          { "them_nhan": "ac_mong_dem_mua" },
+          { "ghi_ke_thu": "hac_y_nhan_vo_danh" }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Hoảng loạn hét lên và lao ra ôm cha mẹ",
+      "ket_qua": {
+        "van_ban": "Tên áo đen định ra tay với bạn, nhưng một tiếng thở dài vang lên từ mái nhà khiến hắn hoảng sợ bỏ chạy. Bạn bị chưởng phong làm chấn thương kinh mạch, may được một cao nhân cứu mạng.",
+        "hieu_ung": [
+          { "cong": { "can_cot": -15, "phuc_duyen": 15 } },
+          { "dat_co": "mo_nhanh_an_the_som" }
+        ]
+      }
+    }
+  ]
+}

@@ -3,6 +3,7 @@ import { napTuDia } from '../src/du_lieu/nap_node'
 import { taoTrangThaiRong } from '../src/luat/chi_so'
 import { apDung } from '../src/luat/dong_co'
 import type { TrangThaiGame } from '../src/luat/kieu'
+import { xemSuKien } from '../src/luat/xem'
 
 const dl = napTuDia()
 
@@ -68,9 +69,17 @@ describe('dong_co (apDung)', () => {
     let s1: TrangThaiGame = taoTrangThaiRong(seed)
     let s2: TrangThaiGame = taoTrangThaiRong(seed)
 
+    // Sự kiện năm mới (M1-14) chặn qua_nam: giải bằng lựa chọn mở đầu tiên rồi qua năm tiếp.
+    const giaiSuKien = (s: TrangThaiGame): TrangThaiGame => {
+      while (s.cho?.loai === 'su_kien') {
+        const mo = xemSuKien(s, dl)!.lua_chon.find((c) => !c.bi_khoa)!
+        s = apDung(s, { loai: 'chon', ma_lua_chon: mo.ma }, dl).trang_thai
+      }
+      return s
+    }
     for (let i = 0; i < 50; i++) {
-      s1 = apDung(s1, { loai: 'qua_nam' }, dl).trang_thai
-      s2 = apDung(s2, { loai: 'qua_nam' }, dl).trang_thai
+      s1 = giaiSuKien(apDung(s1, { loai: 'qua_nam' }, dl).trang_thai)
+      s2 = giaiSuKien(apDung(s2, { loai: 'qua_nam' }, dl).trang_thai)
     }
 
     expect(s1.nhan_vat.tuoi).toBe(50)

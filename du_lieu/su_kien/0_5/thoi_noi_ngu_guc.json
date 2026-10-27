@@ -1,0 +1,96 @@
+{
+  "ma": "thoi_noi_ngu_guc",
+  "nguon": "HS03 II.1",
+  "ten": "Lễ Thôi Nôi - Trảo Chu giấc ngủ say",
+  "loai": "co_dinh",
+  "loai_hien_thi": "thuong",
+  "tuoi": [
+    1,
+    1
+  ],
+  "vung": null,
+  "dieu_kien": {
+    "so": "ngo_tinh",
+    "op": "<",
+    "gt": 25
+  },
+  "trong_so": 0,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "Biến thể của thoi_noi khi Ngộ tính dưới 25: lựa chọn E là Cổng ẩn của HS03 II.1. Phúc duyên +12 vượt định mức theo nguyên văn HS03.",
+  "mo_ta": "Ngày bạn tròn một tuổi, {cha_me} bày trước mặt bạn đủ thứ đồ vật để xem thiên hướng cuộc đời. Bạn ngồi giữa đống đồ, mắt lim dim, đầu gật gà như chẳng thiết tha điều gì.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Chộp lấy thanh kiếm gỗ cũ kỹ",
+      "ket_qua": {
+        "van_ban": "Bạn nắm chặt thanh kiếm gỗ không chịu buông, cả nhà vỗ tay khen có khí phách.",
+        "hieu_ung": [
+          {
+            "cong": {
+              "can_cot": 5
+            }
+          },
+          {
+            "hiep_nghia": 10
+          },
+          {
+            "dat_co": "thien_huong_kiem_khach"
+          }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Nắm chặt cuốn sách rách nát",
+      "ket_qua": {
+        "van_ban": "Bạn ôm cuốn sách, lật giở như thể đọc hiểu được, ai cũng bảo đứa trẻ này mai sau ắt giỏi chữ nghĩa.",
+        "hieu_ung": [
+          {
+            "cong": {
+              "ngo_tinh": 8
+            }
+          },
+          {
+            "dat_co": "thien_huong_hoc_van"
+          }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Ôm khư khư thỏi bạc lẻ và cái bàn tính",
+      "ket_qua": {
+        "van_ban": "Bạn ôm thỏi bạc cười toe toét, khách khứa trầm trồ rằng trẻ này có khiếu buôn bán.",
+        "hieu_ung": [
+          {
+            "cong": {
+              "ngan_luong": 20,
+              "phuc_duyen": 3
+            }
+          },
+          {
+            "dat_co": "thien_huong_buon_ban"
+          }
+        ]
+      }
+    },
+    {
+      "ma": "e",
+      "nhan": "Ngủ gục, chẳng thèm bốc món nào",
+      "ket_qua": {
+        "van_ban": "Bạn ngáy khe khẽ giữa đống đồ, mặc cho cả nhà bối rối. Tâm tính bình thản như nước, trời xanh lại thương kẻ ngây thơ.",
+        "hieu_ung": [
+          {
+            "cong": {
+              "phuc_duyen": 12,
+              "can_cot": 5
+            }
+          },
+          {
+            "dat_co": "tam_tinh_binh_than"
+          }
+        ]
+      }
+    }
+  ]
+}

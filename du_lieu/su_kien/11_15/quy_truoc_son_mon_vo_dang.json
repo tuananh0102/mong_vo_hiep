@@ -1,0 +1,81 @@
+{
+  "ma": "quy_truoc_son_mon_vo_dang",
+  "nguon": "HS03 IV.1",
+  "ten": "Quỳ Trước Sơn Môn Võ Đang",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [12, 15],
+  "vung": ["trung_nguyen"],
+  "dieu_kien": { "la": "mon_phai", "trong": [""] },
+  "trong_so": 100,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "Khảo nghiệm bái sư (bước ngoặt), nhánh Võ Đang của HS03 IV.1: Roll Ngộ tính vs 50. Cổng là điều kiện gia nhập Võ Đang (Thanh danh và Ngộ tính cùng 50, HS02 I). Võ Đang bậc 1 được truyền đủ khi gia nhập (M1-12). Nhánh C nối tiếp ở M2-04 / M3-02. Lựa chọn D viết mới (xem ghi_chu của quy_truoc_son_mon_thieu_lam).",
+  "m2_noi_tiep": true,
+  "mo_ta": "Năm {tuoi} tuổi, bạn men theo bậc đá dài vô tận lên chân núi Võ Đang xin bái sư. Vị đạo trưởng ra tiếp chỉ nhìn bạn một lát rồi lắc đầu, bảo cơ duyên chưa tới, hãy về đi. Mây quấn quanh các đỉnh núi, tiếng chuông đạo quán vọng xuống lạnh lẽo.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Quỳ trước cổng núi suốt ba ngày ba đêm dưới mưa tầm tã",
+      "cong": {
+        "va": [
+          { "so": "thanh_danh", "op": ">=", "gt": 50 },
+          { "so": "ngo_tinh", "op": ">=", "gt": 50 },
+          { "la": "mon_phai", "trong": [""] }
+        ]
+      },
+      "kiem_dinh": { "loai": "roll", "chi_so": "ngo_tinh", "nguong": 50 },
+      "thanh_cong": {
+        "van_ban": "Chưởng môn cảm động trước nghị lực và sự tĩnh tại của bạn, nhận vào làm đệ tử. Bạn khoác áo đạo bào, bắt đầu học những môn võ nền tảng của Võ Đang.",
+        "hieu_ung": [
+          { "gia_nhap_mon_phai": "vo_dang", "bac": 1 },
+          { "cong": { "can_cot": 5 } },
+          { "hiep_nghia": 50 }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Sang đêm thứ hai bạn ngã gục giữa mưa, được một tiểu đạo đồng cõng xuống chân núi. Sơn môn ghi nhớ khuôn mặt bạn, có thể quay lại thử vào những năm sau.",
+        "hieu_ung": [
+          { "cong": { "can_cot": 2 } },
+          { "dat_co": "thu_vo_dang_1" },
+          { "dat_co": "vua_truot_vo_dang" },
+          { "tiep": "xin_lam_tap_dich" }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Lén vòng ra cửa sau, vào bếp đạo quán làm hỏa đầu",
+      "cong": { "la": "mon_phai", "trong": [""] },
+      "ket_qua": {
+        "van_ban": "Bạn trở thành tạp dịch ở bếp đạo quán. Ba năm đầu không ai dạy võ, chỉ có gánh nước, bổ củi, nhưng thân thể bạn mỗi ngày một rắn rỏi, và bạn thường lén nhìn các đạo sĩ luyện quyền lúc rạng đông.",
+        "hieu_ung": [
+          { "gia_nhap_mon_phai": "vo_dang", "bac": 1 },
+          { "dat_co": "tap_dich" },
+          { "them_trang_thai": "tap_dich_ganh_nuoc", "so_nam": 3 }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Tức giận chửi mắng đám danh môn chính phái đạo mạo rồi bỏ xuống núi",
+      "cong": { "la": "mon_phai", "trong": [""] },
+      "ket_qua": {
+        "van_ban": "Một gã áo gấm nấp gần đó vỗ tay khen bạn có cá tính, mời bạn đi theo. Bạn bỏ đi, lòng còn bừng bừng, chưa biết con đường ấy dẫn về đâu.",
+        "hieu_ung": [
+          { "hiep_nghia": -50 },
+          { "dat_co": "muon_vao_ta_phai" }
+        ]
+      }
+    },
+    {
+      "ma": "d",
+      "nhan": "Chắp tay vái ba vái rồi quay về, hẹn sang năm",
+      "ket_qua": {
+        "van_ban": "Bạn cúi chào ngọn núi mịt mù rồi lặng lẽ quay về, tự nhủ sẽ trở lại khi đã vững vàng hơn.",
+        "hieu_ung": [
+          { "dat_co": "thu_vo_dang_1" }
+        ]
+      }
+    }
+  ]
+}

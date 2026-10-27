@@ -1,0 +1,57 @@
+{
+  "ma": "an_trom_vat_o_cho",
+  "nguon": "noi_dung_moi",
+  "ten": "Quả Táo Trên Sạp",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [6, 10],
+  "vung": null,
+  "dieu_kien": { "la": "gia_canh", "trong": ["han_vi", "binh_dan"] },
+  "trong_so": 15,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "Hành động 'Đi ăn trộm vặt' của HS03 I trình bày thành sự kiện. Việc vặt tính Hiệp nghĩa công khai nhỏ vì M1 chưa có [Ám].",
+  "mo_ta": "Bụng bạn đã sôi từ sáng. Trước mặt, những quả táo đỏ au xếp cao thành chồng trên sạp, bà chủ sạp đang mải cân hàng cho khách, chẳng để ý gì đến đứa trẻ rách rưới đứng gần.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Thừa lúc bà chủ quay đi, tuồn một quả vào áo",
+      "kiem_dinh": { "loai": "roll", "chi_so": "mi_luc", "nguong": 30 },
+      "thanh_cong": {
+        "van_ban": "Bạn tuồn quả táo vào áo trơn tru, bước đi thản nhiên rồi mới co giò chạy. Quả táo ngọt lịm, nhưng cũng có vị chua của sự lén lút.",
+        "hieu_ung": [
+          { "cong": { "can_cot": 1 } },
+          { "hiep_nghia": -10 }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Bà chủ túm cổ áo bạn, quát ầm lên giữa chợ rồi quất cho mấy roi vào chân. Cả chợ nhìn bạn như nhìn một con chuột.",
+        "hieu_ung": [
+          { "hiep_nghia": -10 },
+          { "cong": { "mi_luc": -3 } },
+          { "cong_phan_tram": { "hp": -10 } }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Xin bà chủ cho phụ khuân hàng đổi lấy quả táo",
+      "ket_qua": {
+        "van_ban": "Bà chủ sạp nhìn bạn từ đầu đến chân rồi chỉ vào chồng sọt. Bạn khuân hết buổi, nhận được hai quả táo và vài đồng kẽm. Lưng ê ẩm nhưng lòng thanh thản.",
+        "hieu_ung": [
+          { "cong": { "can_cot": 2, "ngan_luong": 4 } },
+          { "hiep_nghia": 10 }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Nhịn đói, đi tiếp tìm chỗ khác",
+      "ket_qua": {
+        "van_ban": "Bạn nuốt nước bọt, bước tiếp. Cơn đói dạy bạn rằng có những thứ phải chịu đựng, và bạn lặng lẽ nhớ điều đó.",
+        "hieu_ung": [
+          { "cong": { "ngo_tinh": 2 } }
+        ]
+      }
+    }
+  ]
+}

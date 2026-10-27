@@ -1,0 +1,61 @@
+{
+  "ma": "nghe_ke_chuyen_giang_ho",
+  "nguon": "noi_dung_moi",
+  "ten": "Lão Kể Chuyện Đầu Chợ",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [3, 5],
+  "vung": null,
+  "dieu_kien": null,
+  "trong_so": 10,
+  "lap_lai": "mot_lan",
+  "mo_ta": "Đầu chợ có một lão thuyết thư râu bạc, gõ thước vào bàn kể chuyện hiệp khách một kiếm trừ gian, độc hành vạn dặm. Đám trẻ con ngồi chật quanh chiếu, và bạn chen được lên hàng đầu.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Ngồi nghe say sưa đến tận chiều tối",
+      "ket_qua": {
+        "van_ban": "Bạn quên cả đói, trong đầu in đậm hình bóng người hiệp khách áo xanh. Từ hôm ấy, bạn mơ một ngày được như thế.",
+        "hieu_ung": [
+          { "cong": { "ngo_tinh": 3 } },
+          { "hiep_nghia": 10 }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Hỏi vặn: sao hiệp khách không đi kiếm bạc cho đỡ đói?",
+      "kiem_dinh": { "loai": "roll", "chi_so": "ngo_tinh", "nguong": 30 },
+      "thanh_cong": {
+        "van_ban": "Lão thuyết thư ngẩn người rồi cười ha hả, khen bạn một câu hỏi sắc sảo hơn cả mấy ông đồ trong thôn.",
+        "hieu_ung": [
+          { "cong": { "ngo_tinh": 5, "mi_luc": 2 } }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Lão nhăn mặt, bảo trẻ con hỏi bậy rồi đuổi bạn ra khỏi chiếu giữa tiếng cười rúc rích của đám bạn.",
+        "hieu_ung": [
+          { "cong": { "mi_luc": -2, "phuc_duyen": 1 } }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Chạy tới xin lão dạy vài chiêu",
+      "kiem_dinh": { "loai": "roll", "chi_so": "mi_luc", "nguong": 40 },
+      "thanh_cong": {
+        "van_ban": "Lão bật cười, nắn chân tay cho bạn đứng thành tư thế trát mã bộ sơ đẳng. Bạn đứng được nửa nén hương không ngã.",
+        "hieu_ung": [
+          { "cong": { "can_cot": 3 } },
+          { "dat_co": "biet_ma_bo" }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Lão chỉ cười, nhét cho bạn cục kẹo mạch nha rồi bảo lớn lên hãy tính. Bạn ngậm kẹo, lòng hơi hụt hẫng.",
+        "hieu_ung": [
+          { "cong": { "mi_luc": 2 } }
+        ]
+      }
+    }
+  ]
+}

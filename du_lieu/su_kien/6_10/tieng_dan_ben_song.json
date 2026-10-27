@@ -1,0 +1,54 @@
+{
+  "ma": "tieng_dan_ben_song",
+  "nguon": "noi_dung_moi",
+  "ten": "Tiếng Đàn Bên Sông",
+  "loai": "ky_ngo",
+  "cap_ky_ngo": "A",
+  "loai_hien_thi": "ky-ngo",
+  "tuoi": [6, 10],
+  "vung": null,
+  "dieu_kien": null,
+  "trong_so": 15,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "Kỳ ngộ A: Tạp học Cầm +10 đến +15 theo HS08 IV.2.",
+  "mo_ta": "Chiều tà bên bờ sông, một cụ già mù ngồi dưới gốc liễu, ngón tay gảy cây đàn cũ kỹ. Tiếng đàn lúc nghẹn ngào như nước chảy ngược, lúc rộn rã như gió thổi qua bãi lau. Đám trẻ chăn trâu chạy ngang đều dừng lại.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Lặng lẽ ngồi nghe đến khi trời tối hẳn",
+      "ket_qua": {
+        "van_ban": "Bạn ngồi bệt xuống cỏ, nghe đến khi sao lên. Tiếng đàn như gột sạch bụi đời trong lòng bạn.",
+        "hieu_ung": [
+          { "cong": { "cam": 12 } }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Xin cụ cho gảy thử một dây",
+      "kiem_dinh": { "loai": "roll", "chi_so": "mi_luc", "nguong": 40 },
+      "thanh_cong": {
+        "van_ban": "Cụ mỉm cười, đặt bàn tay bé nhỏ của bạn lên dây đàn rồi dẫn từng nốt một. Dưới ngón tay bạn, tiếng đàn đầu tiên vang lên trong trẻo lạ thường.",
+        "hieu_ung": [
+          { "cong": { "cam": 15, "mi_luc": 2 } }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Dây đàn đứt phựt ngay khi bạn chạm vào. Cụ già chỉ cười hiền, nối lại dây và bảo duyên chưa tới. Dẫu vậy, âm thanh ấy vẫn vang mãi trong tai bạn.",
+        "hieu_ung": [
+          { "cong": { "cam": 5 } }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Cho là tiếng ồn buồn tẻ, kéo đám bạn đi chơi chỗ khác",
+      "ket_qua": {
+        "van_ban": "Bạn rủ đám trẻ đi đuổi chuồn chuồn, chẳng ngoảnh lại. Cụ già mù vẫn ngồi đó gảy đàn đến tận khuya, như thể chờ ai khác.",
+        "hieu_ung": [
+          { "cong": { "can_cot": 2 } }
+        ]
+      }
+    }
+  ]
+}

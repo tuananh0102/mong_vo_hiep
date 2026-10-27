@@ -1,0 +1,60 @@
+{
+  "ma": "quai_nhan_than_phan",
+  "nguon": "HS03 III.2",
+  "ten": "Thân Phận Thật Của Lão Già",
+  "loai": "noi_tiep",
+  "loai_hien_thi": "ky-ngo",
+  "tuoi": [6, 12],
+  "vung": null,
+  "dieu_kien": null,
+  "trong_so": 0,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "Nối tiếp của quai_nhan_trong_hang_nui nhánh C. Thân phận quay [Ngẫu nhiên: 50%] theo HS03 III.2, tách thành sự kiện riêng vì lược đồ không cho Ngẫu nhiên lồng trong Roll. Hiệp nghĩa +/-100 vượt định mức theo nguyên văn HS03. Học Hủ Thi Độc Chưởng bản tàn quyển (hoan_thien 40).",
+  "m2_noi_tiep": true,
+  "mo_ta": "Lão già vươn vai, khớp xương kêu răng rắc, rồi chậm rãi quay sang nhìn bạn. Trong hang tối, bạn không đoán nổi nụ cười của lão là biết ơn hay là thứ gì đáng sợ hơn.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Đứng yên chờ lão ra tay",
+      "kiem_dinh": {
+        "loai": "ngau_nhien",
+        "nhanh": [
+          {
+            "ti_le": 50,
+            "ket_qua": {
+              "van_ban": "Lão là một đại ma đầu bị nhốt nhiều năm. Lão phá xích thoát ra, cười khả ố rồi truyền cho bạn một luồng nội lực tà dị cùng cuốn sổ ghi chép độc công trước khi bay đi.",
+              "hieu_ung": [
+                { "hiep_nghia": -100 },
+                { "cong": { "can_cot": 15 } },
+                { "hoc_vo_hoc": "hu_thi_doc_chuong", "cap": 1, "hoan_thien": 40 },
+                { "dat_co": "lao_ma_dau" }
+              ]
+            }
+          },
+          {
+            "ti_le": 50,
+            "ket_qua": {
+              "van_ban": "Lão là một cao nhân chính đạo bị hãm hại. Lão cảm kích, trao cho bạn một tín vật nặng trịch, dặn năm mười hai tuổi hãy mang đến đại môn phái xin nhận chức đệ tử chân truyền.",
+              "hieu_ung": [
+                { "hiep_nghia": 100 },
+                { "nhan_vat_pham": "lenh_bai_huyen_thiet" },
+                { "dat_co": "lao_chinh_dao" }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Sợ hãi lùi lại rồi bỏ chạy ra khỏi hang",
+      "ket_qua": {
+        "van_ban": "Bạn co giò chạy một mạch, sau lưng vang lên tiếng cười dài của lão. Bạn không biết lão là ai, chỉ biết mình đã bỏ lỡ một điều gì đó.",
+        "hieu_ung": [
+          { "cong": { "phuc_duyen": 2 } },
+          { "dat_co": "lao_trong_hang_chua_ro_than_phan" }
+        ]
+      }
+    }
+  ]
+}

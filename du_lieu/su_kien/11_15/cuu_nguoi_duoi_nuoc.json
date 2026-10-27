@@ -1,0 +1,57 @@
+{
+  "ma": "cuu_nguoi_duoi_nuoc",
+  "nguon": "noi_dung_moi",
+  "ten": "Người Đuối Nước Giữa Dòng",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [11, 15],
+  "vung": null,
+  "dieu_kien": null,
+  "trong_so": 10,
+  "lap_lai": "mot_lan",
+  "mo_ta": "Bạn đang lội ven sông thì thấy giữa dòng nước xiết, một người đi đường bị cuốn trượt chân, đầu thoắt chìm thoắt nổi, tay vẫy yếu ớt. Trên bờ không còn ai khác trong tầm mắt.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Nhảy xuống dòng nước xiết kéo người lên bờ",
+      "nguy": true,
+      "kiem_dinh": { "loai": "roll", "chi_so": "can_cot", "nguong": 35 },
+      "thanh_cong": {
+        "van_ban": "Bạn bơi ngược dòng, túm được vạt áo người kia rồi kéo vào bờ. Hai đứa lăn ra bãi cát thở hổn hển. Người được cứu chắp tay vái bạn không biết bao nhiêu lần.",
+        "hieu_ung": [
+          { "hiep_nghia": 40 },
+          { "cong": { "can_cot": 4, "phuc_duyen": 3 } }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Dòng nước xiết hơn bạn tưởng, cả hai bị cuốn trôi một đoạn dài. Bạn bám được vào một cành cây, sặc nước ngất đi. Người dân chài tình cờ vớt được cả hai lên thuyền.",
+        "hieu_ung": [
+          { "hiep_nghia": 15 },
+          { "trong_thuong": true }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Chạy dọc bờ, hô hoán gọi thuyền chài đến cứu",
+      "ket_qua": {
+        "van_ban": "Bạn chạy một mạch dọc bờ sông, hét khản cả giọng. Một chiếc thuyền chài đổi hướng, quăng lưới vớt được người kia. Bạn thở phào, chân run lẩy bẩy.",
+        "hieu_ung": [
+          { "hiep_nghia": 15 },
+          { "cong": { "ngo_tinh": 2 } }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Quay đi, sợ rước họa vào thân",
+      "ket_qua": {
+        "van_ban": "Bạn lùi lại, quay lưng bước đi thật nhanh, tai vẫn nghe loáng thoáng tiếng nước. Cả buổi tối hôm ấy bạn không ăn nổi bát cơm.",
+        "hieu_ung": [
+          { "hiep_nghia": -20 },
+          { "cong": { "mi_luc": -1 } }
+        ]
+      }
+    }
+  ]
+}

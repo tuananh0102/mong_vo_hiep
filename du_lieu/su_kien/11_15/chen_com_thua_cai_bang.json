@@ -1,0 +1,79 @@
+{
+  "ma": "chen_com_thua_cai_bang",
+  "nguon": "HS03 IV.3",
+  "ten": "Chén Cơm Thừa Và Lòng Trung Nghĩa",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [11, 15],
+  "vung": null,
+  "dieu_kien": {
+    "va": [
+      { "la": "gia_canh", "trong": ["han_vi", "binh_dan"] },
+      { "so": "ngan_luong", "op": "<", "gt": 10 },
+      { "la": "mon_phai", "trong": [""] },
+      { "khong": { "trang_thai": "bi_cai_bang_tu_choi" } }
+    ]
+  },
+  "trong_so": 100,
+  "lap_lai": { "toi_da": 2 },
+  "ghi_chu": "Khảo nghiệm bái sư (bước ngoặt), nhánh Cái Bang của HS03 IV.3. Điều kiện sự kiện lấy từ điều kiện gia nhập Cái Bang (Hàn Vi / Bình Dân, Ngân lượng dưới 10). Cái Bang bậc 1 được truyền đủ võ bậc 1 khi gia nhập (M1-12). Tịnh Y / Ô Y ghi bằng cờ cai_bang_tinh_y / cai_bang_o_y. Nhánh Hải Sa Bang đặt cờ muon_vao_hai_sa_bang, nối tiếp ở M2. Lựa chọn C viết mới.",
+  "m2_noi_tiep": true,
+  "mo_ta": "Bạn lang thang ở góc chợ và được một lão ăn mày năm túi của Cái Bang để mắt tới. Lão giao cho bạn một gói giấy dầu, bảo mang đến giao một người ở đầu cầu phía Đông, tuyệt đối không được mở ra xem. Trong bọc tỏa ra mùi gà nướng thơm phức, trong khi bạn đã nhịn đói hai ngày.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Nhịn cơn đói cồn cào, giao nguyên vẹn gói giấy đúng hẹn",
+      "cong": { "so": "hiep_nghia", "op": ">=", "gt": 20 },
+      "kiem_dinh": { "loai": "roll", "chi_so": "can_cot", "nguong": 30 },
+      "thanh_cong": {
+        "van_ban": "Người nhận chính là vị trưởng lão chấp pháp của Cái Bang. Ông khen bạn có khí chất nghĩa hiệp, thu nhận làm đệ tử Tịnh Y Phái một túi và dạy những võ công đầu tiên của bang.",
+        "hieu_ung": [
+          { "gia_nhap_mon_phai": "cai_bang", "bac": 1 },
+          { "dat_co": "cai_bang_tinh_y" }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Đói lả, bạn ngất ngay giữa cầu, gói giấy vẫn ôm chặt trong lòng chưa hề bị mở. Khi tỉnh lại, bạn đã nằm trong miếu hoang của Cái Bang. Trưởng lão cảm động vì tấm lòng nhưng chê thân thể yếu ớt.",
+        "hieu_ung": [
+          { "gia_nhap_mon_phai": "cai_bang", "bac": 1 },
+          { "dat_co": "cai_bang_tinh_y" },
+          { "hiep_nghia": 10 },
+          { "cong": { "can_cot": 2 } }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Mở ra xé một cái đùi gà ăn trước, rồi trát bùn lên phần còn lại bảo bị chó hoang cướp mất",
+      "kiem_dinh": { "loai": "roll", "chi_so": "ngo_tinh", "nguong": 40 },
+      "thanh_cong": {
+        "van_ban": "Vị trưởng lão nhìn thấu mánh khóe của bạn nhưng lại bật cười vì sự lanh lợi, nhận bạn vào Ô Y Phái, chuyên lo tình báo, móc túi và đánh lén trên giang hồ.",
+        "hieu_ung": [
+          { "gia_nhap_mon_phai": "cai_bang", "bac": 1 },
+          { "dat_co": "cai_bang_o_y" }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Vết răng trên đùi gà quá rõ. Trưởng lão nổi giận, gọi bạn là tiểu tặc ăn vụng rồi sai đệ tử đuổi đánh. Một gã của Hải Sa Bang chứng kiến cảnh đó, mời bạn về làm chân chạy vặt, một con đường khác đang mở ra.",
+        "hieu_ung": [
+          { "hiep_nghia": -10 },
+          { "cong_phan_tram": { "hp": -20 } },
+          { "them_trang_thai": "bi_cai_bang_tu_choi", "so_nam": 3 },
+          { "dat_co": "muon_vao_hai_sa_bang" }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Mang gói giấy ra chợ bán cho tiệm gà lấy tiền",
+      "ket_qua": {
+        "van_ban": "Bạn bán nguyên gói cho một tiệm ăn với giá không tệ, rồi biến vào đám đông. Có tiền trong túi, nhưng ánh mắt lão ăn mày năm túi vẫn như đang nhìn theo sau lưng bạn.",
+        "hieu_ung": [
+          { "cong": { "ngan_luong": 20 } },
+          { "hiep_nghia": -30 },
+          { "them_trang_thai": "bi_cai_bang_tu_choi", "so_nam": 3 }
+        ]
+      }
+    }
+  ]
+}

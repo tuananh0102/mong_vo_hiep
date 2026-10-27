@@ -1,0 +1,60 @@
+{
+  "ma": "phien_cho_dau_tien",
+  "nguon": "noi_dung_moi",
+  "ten": "Phiên Chợ Đầu Tiên",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [3, 5],
+  "vung": null,
+  "dieu_kien": { "la": "gia_canh", "trong": ["binh_dan"] },
+  "trong_so": 30,
+  "lap_lai": "mot_lan",
+  "mo_ta": "{cha_me} dắt bạn ra chợ phiên lần đầu. Người chen người, tiếng rao hàng xen tiếng trống xiếc. Chỉ một thoáng ngoảnh đi, bàn tay ấm trong tay bạn đã biến mất giữa đám đông.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Đứng yên tại chỗ và khóc to gọi người nhà",
+      "kiem_dinh": { "loai": "roll", "chi_so": "phuc_duyen", "nguong": 25 },
+      "thanh_cong": {
+        "van_ban": "Một bà bán kẹo hồ lô nghe tiếng khóc, ôm bạn lên và dỗ dành. Chẳng bao lâu {cha_me} hớt hải chạy tới, mừng đến rơi nước mắt.",
+        "hieu_ung": [
+          { "cong": { "phuc_duyen": 3, "mi_luc": 2 } }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Tiếng khóc của bạn chìm nghỉm giữa phiên chợ ồn ào. Mãi đến chiều tối bạn mới được tìm thấy, khản cả giọng, sợ đến mức mấy hôm sau còn giật mình.",
+        "hieu_ung": [
+          { "cong": { "mi_luc": -2, "can_cot": 1 } }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Lần theo mùi bánh nướng thơm phức",
+      "ket_qua": {
+        "van_ban": "Bạn lẫm chẫm theo mùi thơm đến sạp bánh. Ông chủ sạp thấy bạn đáng yêu bèn cho một chiếc bánh nóng rồi giữ bạn lại cho đến khi người nhà đến đón.",
+        "hieu_ung": [
+          { "cong": { "ngan_luong": 2, "phuc_duyen": 2 } }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Bám theo đám đông xem võ sĩ đánh quyền",
+      "kiem_dinh": { "loai": "roll", "chi_so": "can_cot", "nguong": 30 },
+      "thanh_cong": {
+        "van_ban": "Bạn len được vào hàng đầu, mắt tròn xoe nhìn người võ sĩ đánh quyền dẻo dai như rắn. Tối ấy bạn lén bắt chước giữa sân, đâu ra đấy.",
+        "hieu_ung": [
+          { "cong": { "can_cot": 3, "ngo_tinh": 2 } }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Bạn bị đám đông xô ngã, trầy xước khắp người trước khi được một người hàng thịt nhấc ra. Từ đó bạn sợ chỗ đông người.",
+        "hieu_ung": [
+          { "cong_phan_tram": { "hp": -10 } },
+          { "cong": { "mi_luc": -1 } }
+        ]
+      }
+    }
+  ]
+}

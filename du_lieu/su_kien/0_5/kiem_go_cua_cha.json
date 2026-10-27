@@ -1,0 +1,53 @@
+{
+  "ma": "kiem_go_cua_cha",
+  "nguon": "noi_dung_moi",
+  "ten": "Thanh Kiếm Gỗ Của Cha",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [3, 5],
+  "vung": null,
+  "dieu_kien": { "la": "gia_canh", "trong": ["vo_lam_the_gia"] },
+  "trong_so": 30,
+  "lap_lai": "mot_lan",
+  "mo_ta": "Trong sân luyện võ của gia trang, cha bạn đặt vào tay bạn một thanh kiếm gỗ nhỏ, đẽo vừa tầm tay trẻ con. \"Con cầm cho vững, cha dạy con thế đứng đầu tiên của nhà ta.\"",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Chăm chú bắt chước từng động tác của cha",
+      "kiem_dinh": { "loai": "roll", "chi_so": "ngo_tinh", "nguong": 25 },
+      "thanh_cong": {
+        "van_ban": "Bạn múa theo cha đâu ra đấy, tay không run, chân không loạng choạng. Cha bạn vuốt râu gật đầu.",
+        "hieu_ung": [
+          { "cong": { "can_cot": 4, "ngo_tinh": 2 } }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Bạn vung kiếm quá đà, ngã chổng vó giữa sân, thanh kiếm gỗ gãy làm đôi. Cha bạn bật cười, nhưng đám đệ tử đứng ngoài đã kịp chê.",
+        "hieu_ung": [
+          { "cong": { "can_cot": 1, "mi_luc": -2 } }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Quăng kiếm, chạy theo con bướm bay ngang sân",
+      "ket_qua": {
+        "van_ban": "Bạn cười khanh khách đuổi theo cánh bướm qua tận vườn sau. Cha bạn thở dài, nhưng không nỡ mắng.",
+        "hieu_ung": [
+          { "cong": { "phuc_duyen": 4 } }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Đòi cha đổi cho thanh kiếm thật",
+      "ket_qua": {
+        "van_ban": "Bạn ném kiếm gỗ xuống đất, hét đòi kiếm sắt như các sư huynh. Cha bạn nghiêm mặt phạt đứng mã bộ, nhưng ai cũng thấy đứa trẻ này mang trong mình cái cao ngạo của dòng giống.",
+        "hieu_ung": [
+          { "cong": { "can_cot": 2 } },
+          { "them_nhan": "kieu_ngao" }
+        ]
+      }
+    }
+  ]
+}

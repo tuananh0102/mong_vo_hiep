@@ -1,0 +1,48 @@
+{
+  "ma": "lu_khach_day_nghe",
+  "nguon": "noi_dung_moi",
+  "ten": "Lữ Khách Dừng Chân",
+  "loai": "ky_ngo",
+  "cap_ky_ngo": "A",
+  "loai_hien_thi": "ky-ngo",
+  "tuoi": [11, 15],
+  "vung": null,
+  "dieu_kien": null,
+  "trong_so": 15,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "Kỳ ngộ A: Tạp học +10 đến +15 theo HS08 IV.2.",
+  "mo_ta": "Một lữ khách áo vải dừng chân nghỉ dưới mái hiên nhà bạn trong cơn mưa chiều. Ông chẳng nói tên, chỉ ngồi lặng lẽ mài một con dao nhỏ, rồi bất chợt hỏi bạn: \"Tiểu tử, muốn biết cái gì nhất trên đời?\" Nhìn dáng ngồi của ông, bạn có cảm giác đây không phải người thường.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Xin ông dạy cách nhận biết thảo dược và chữa thương",
+      "ket_qua": {
+        "van_ban": "Ông dạy bạn từng loại lá, từng nhánh rễ suốt đêm mưa, cách cầm máu, cách nắn xương. Sáng ra ông đã đi, chỉ còn bạn với một túi lá khô và trí nhớ đầy ắp.",
+        "hieu_ung": [
+          { "cong": { "y_thuat": 12 } }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Xin ông dạy cách nhận biết và chế phối độc dược",
+      "ket_qua": {
+        "van_ban": "Ông nhìn bạn rất lâu rồi mới chậm rãi chỉ bạn cách phân biệt độc thảo, cách phối liều. \"Thuốc hay độc đều là một thứ, khác nhau ở lòng người,\" ông nói. Bạn không biết đó là lời cảnh cáo hay lời dặn.",
+        "hieu_ung": [
+          { "cong": { "doc_thuat": 12 } },
+          { "hiep_nghia": -10 }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Xin ông dạy cách xem thế đất, bày trận đồ",
+      "ket_qua": {
+        "van_ban": "Ông lấy cành củi vạch xuống nền đất ẩm, bày ra một trận đồ đơn giản mà bạn nhìn mãi không thấu. Đến khi mưa tạnh bạn mới hiểu ra một góc, và ông mỉm cười gật đầu rồi đi.",
+        "hieu_ung": [
+          { "cong": { "ky_mon": 12 } }
+        ]
+      }
+    }
+  ]
+}

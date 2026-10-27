@@ -1,0 +1,53 @@
+{
+  "ma": "mua_dong_khac_nghiet",
+  "nguon": "HS03 II.2",
+  "ten": "Mùa Đông Khắc Nghiệt",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [2, 4],
+  "vung": null,
+  "dieu_kien": { "la": "gia_canh", "trong": ["han_vi"] },
+  "trong_so": 40,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "Gia cảnh Hàn Vi. HS03 II.2 ghi năm 3 tuổi, nới thành 2 - 4 tuổi để dùng khung tuổi của lược đồ. Số vượt định mức (Căn cốt +12, -10, Nội tức +50) theo nguyên văn HS03.",
+  "mo_ta": "Tuyết rơi dày đặc suốt hai tháng. Trong chòi rách không còn một hạt gạo, hơi thở của bạn yếu dần vì lạnh và đói.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Cố gắng gồng mình chịu đựng cái lạnh",
+      "kiem_dinh": { "loai": "roll", "chi_so": "can_cot", "nguong": 25 },
+      "thanh_cong": {
+        "van_ban": "Bạn run lên bần bật suốt đêm dài rồi vượt qua cơn bạo bệnh, cơ thể như được tôi luyện sau trận sốt.",
+        "hieu_ung": [
+          { "cong": { "can_cot": 8 } },
+          { "them_trang_thai": "minh_dong_da_sat" }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Hàn khí xâm nhập tâm mạch, bạn ho sặc sụa nhiều ngày liền, bệnh để lại trong phổi.",
+        "hieu_ung": [
+          { "cong": { "can_cot": -10 } },
+          { "them_trang_thai": "han_doc_phe_phoi" }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Bò ra ngoài đường tuyết tìm thức ăn",
+      "kiem_dinh": { "loai": "roll", "chi_so": "phuc_duyen", "nguong": 30 },
+      "thanh_cong": {
+        "van_ban": "Một vị đạo sĩ Toàn Chân đi ngang qua thấy thương xót, đút cho bạn một viên đan ấm nóng. Hơi ấm lan khắp người, gân cốt như nở ra.",
+        "hieu_ung": [
+          { "cong": { "can_cot": 12, "noi_tuc_cong_them": 50 } }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Bạn ngất xỉu trước cửa một tiêu cục, được chủ nhà nhận về làm tiểu sai vặt để có miếng ăn qua ngày.",
+        "hieu_ung": [
+          { "doi_gia_canh": "binh_dan" },
+          { "cong": { "ngan_luong": 5 } }
+        ]
+      }
+    }
+  ]
+}

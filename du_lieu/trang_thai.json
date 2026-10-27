@@ -38,5 +38,21 @@
     "hieu_ung_moi_nam": [],
     "dac_biet": ["dien_loan", "sat_thuong_x2_5", "khoa_quan_ly", "tu_gay_su_30"],
     "mo_ta": "Tẩu hỏa nhập ma hóa điên, nghịch chuyển kinh mạch. Sát thương gây ra tăng 150% (x2.5), mất kiểm soát mua bán và quản lý, mỗi năm 30% tỷ lệ tự khiêu chiến các cao thủ giang hồ."
+  },
+  {
+    "ma": "tap_dich_ganh_nuoc",
+    "ten": "Gánh Nước Bổ Củi",
+    "nguon": "HS03 IV.1",
+    "hieu_ung_moi_nam": [{ "cong": { "can_cot": 4 } }],
+    "dac_biet": [],
+    "mo_ta": "Ba năm đầu làm tạp dịch trong sơn môn, chỉ gánh nước bổ củi, mỗi năm gân cốt rắn rỏi thêm."
+  },
+  {
+    "ma": "bi_cai_bang_tu_choi",
+    "ten": "Bị Cái Bang Từ Chối",
+    "nguon": "HS03 IV.3",
+    "hieu_ung_moi_nam": [],
+    "dac_biet": ["khong_vao_cai_bang"],
+    "mo_ta": "Bị gọi là tiểu tặc ăn vụng, Cái Bang không nhận trong ba năm."
   }
 ]

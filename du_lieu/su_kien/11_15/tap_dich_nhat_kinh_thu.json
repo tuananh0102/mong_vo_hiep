@@ -1,0 +1,38 @@
+{
+  "ma": "tap_dich_nhat_kinh_thu",
+  "nguon": "HS03 IV.1",
+  "ten": "Kinh Thư Trong Bụng Tượng Phật",
+  "loai": "thuong",
+  "loai_hien_thi": "ky-ngo",
+  "tuoi": [11, 18],
+  "vung": null,
+  "dieu_kien": { "co": "tap_dich" },
+  "trong_so": 4,
+  "lap_lai": { "toi_da": 2 },
+  "ghi_chu": "HS03 IV.1: tạp dịch có 15% mỗi năm gặp Tảo Địa Tăng hoặc nhặt kinh thư. Sự kiện thường chọn theo trọng số nên tỷ lệ chỉ xấp xỉ, con số 15% chính xác cần cơ chế xác suất theo năm (đưa vào REVIEW). Phần thưởng chỉ là chỉ số và Nội tức, kỳ ngộ thật của Tảo Địa Thần Tăng thuộc HS04 / HS07.",
+  "mo_ta": "Giữa lúc quét sân sau, bạn va phải một pho tượng Phật nghiêng ngả, và từ bụng tượng rơi ra một cuốn kinh thư cũ kỹ ố vàng. Trong sân vắng lặng, chỉ có bóng một lão tăng quét lá ở xa, lưng còng như một cái dấu hỏi.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Giấu kinh vào ngực, đêm đến lén đọc",
+      "ket_qua": {
+        "van_ban": "Đêm xuống, bạn thắp đèn dầu đọc lén từng trang. Chữ nghĩa khó hiểu, nhưng bạn thuộc lòng được vài câu khẩu quyết, và từ hôm ấy hơi thở bạn dài hơn, bụng dưới ấm lên.",
+        "hieu_ung": [
+          { "cong": { "ngo_tinh": 6, "noi_tuc_cong_them": 20 } },
+          { "hiep_nghia": -10 }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Mang cuốn kinh dâng lên vị lão tăng đang quét lá",
+      "ket_qua": {
+        "van_ban": "Lão tăng lật vài trang, mắt thoáng nhìn bạn rất lâu, rồi chỉ gật đầu: \"Con giữ lấy mà đọc.\" Ông dặn dò vài lời về cách hít thở, rồi lại cúi xuống quét lá như chưa từng có chuyện gì.",
+        "hieu_ung": [
+          { "hiep_nghia": 20 },
+          { "cong": { "ngo_tinh": 4, "noi_tuc_cong_them": 20 } }
+        ]
+      }
+    }
+  ]
+}

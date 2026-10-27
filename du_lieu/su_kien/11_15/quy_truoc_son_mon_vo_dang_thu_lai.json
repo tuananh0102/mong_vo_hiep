@@ -1,0 +1,104 @@
+{
+  "ma": "quy_truoc_son_mon_vo_dang_thu_lai",
+  "nguon": "HS03 IV.1",
+  "ten": "Trở Lại Sơn Môn Võ Đang",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [12, 15],
+  "vung": ["trung_nguyen"],
+  "dieu_kien": {
+    "va": [
+      { "la": "mon_phai", "trong": [""] },
+      { "hoac": [{ "co": "thu_vo_dang_1" }, { "co": "thu_vo_dang_2" }] }
+    ]
+  },
+  "trong_so": 100,
+  "lap_lai": { "toi_da": 2 },
+  "ghi_chu": "Thử lại sau khi thất bại hoặc bỏ về (HS03 IV.1): lần 2 ngưỡng 45, lần 3 ngưỡng 40. Cờ thu_vo_dang_N đếm lần đã thử.",
+  "mo_ta": "Bạn lại đặt chân lên bậc đá Võ Đang. Tiểu đạo đồng ngày trước nhận ra bạn, mỉm cười đứng sang một bên. Lần này, bạn đã biết sương núi lạnh đến mức nào.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Quỳ lại trước cổng núi, ý chí hơn lần trước",
+      "cong_an": {
+        "va": [{ "co": "thu_vo_dang_1" }, { "khong": { "co": "thu_vo_dang_2" } }]
+      },
+      "cong": {
+        "va": [
+          { "so": "thanh_danh", "op": ">=", "gt": 50 },
+          { "so": "ngo_tinh", "op": ">=", "gt": 50 },
+          { "la": "mon_phai", "trong": [""] }
+        ]
+      },
+      "kiem_dinh": { "loai": "roll", "chi_so": "ngo_tinh", "nguong": 45 },
+      "thanh_cong": {
+        "van_ban": "Chưởng môn bước ra, nhìn bạn rồi gật đầu: \"Thành tâm thì đạo tự đến.\" Cổng đạo quán mở ra, bạn bước vào.",
+        "hieu_ung": [
+          { "gia_nhap_mon_phai": "vo_dang", "bac": 1 },
+          { "cong": { "can_cot": 5 } },
+          { "hiep_nghia": 50 }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Bạn lại gục giữa cơn mưa lạnh. Tiểu đạo đồng thở dài đỡ bạn dậy, thì thầm rằng còn một lần nữa thôi.",
+        "hieu_ung": [
+          { "cong": { "can_cot": 2 } },
+          { "dat_co": "thu_vo_dang_2" },
+          { "dat_co": "vua_truot_vo_dang" },
+          { "tiep": "xin_lam_tap_dich" }
+        ]
+      }
+    },
+    {
+      "ma": "a2",
+      "nhan": "Quỳ trước cổng núi lần cuối với toàn bộ ý chí",
+      "cong_an": { "co": "thu_vo_dang_2" },
+      "cong": {
+        "va": [
+          { "so": "thanh_danh", "op": ">=", "gt": 50 },
+          { "so": "ngo_tinh", "op": ">=", "gt": 50 },
+          { "la": "mon_phai", "trong": [""] }
+        ]
+      },
+      "kiem_dinh": { "loai": "roll", "chi_so": "ngo_tinh", "nguong": 40 },
+      "thanh_cong": {
+        "van_ban": "Nhìn thiếu niên quỳ lần thứ ba giữa mưa gió, Chưởng môn khẽ vuốt râu: \"Đạo pháp tự nhiên, nhận đi.\"",
+        "hieu_ung": [
+          { "gia_nhap_mon_phai": "vo_dang", "bac": 1 },
+          { "cong": { "can_cot": 5 } },
+          { "hiep_nghia": 50 }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Bạn quỵ xuống trước khi trời sáng. Đây là lần cuối bạn đứng trước cổng chính, những cánh cửa lớn từ nay đóng lại.",
+        "hieu_ung": [
+          { "cong": { "can_cot": 2 } },
+          { "dat_co": "thu_vo_dang_het" },
+          { "dat_co": "vua_truot_vo_dang" },
+          { "tiep": "xin_lam_tap_dich" }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Lặng lẽ xin vào bếp làm hỏa đầu",
+      "cong": { "la": "mon_phai", "trong": [""] },
+      "ket_qua": {
+        "van_ban": "Bạn bước vào cổng hông, nhận chổi và gánh nước. Ba năm đầu chỉ có việc nặng, nhưng thân thể bạn rắn rỏi lên từng ngày.",
+        "hieu_ung": [
+          { "gia_nhap_mon_phai": "vo_dang", "bac": 1 },
+          { "dat_co": "tap_dich" },
+          { "them_trang_thai": "tap_dich_ganh_nuoc", "so_nam": 3 }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Quay lưng, không thèm quỳ thêm",
+      "ket_qua": {
+        "van_ban": "Bạn nhìn ngọn núi lần cuối rồi bỏ đi, dặn lòng sẽ tìm con đường khác để lên giang hồ.",
+        "hieu_ung": []
+      }
+    }
+  ]
+}

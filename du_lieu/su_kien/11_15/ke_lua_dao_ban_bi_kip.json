@@ -1,0 +1,72 @@
+{
+  "ma": "ke_lua_dao_ban_bi_kip",
+  "nguon": "noi_dung_moi",
+  "ten": "Lão Bán Bí Kíp",
+  "loai": "thuong",
+  "loai_hien_thi": "dao-gia",
+  "tuoi": [11, 15],
+  "vung": null,
+  "dieu_kien": null,
+  "trong_so": 10,
+  "lap_lai": "mot_lan",
+  "mo_ta": "Giữa chợ, một lão râu dài xưng là cao nhân ẩn thế, trải trước mặt cuốn sách bìa đen sờn cũ: \"Bí kíp nội công trấn phái, ba trăm năm mới xuất hiện một lần! Hai mươi lạng, rẻ như cho!\" Người xem đứng quanh, kẻ nghi, người tin.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Dốc túi mua cuốn bí kíp",
+      "cong": { "so": "ngan_luong", "op": ">=", "gt": 20 },
+      "kiem_dinh": {
+        "loai": "ngau_nhien",
+        "nhanh": [
+          {
+            "ti_le": 75,
+            "ket_qua": {
+              "van_ban": "Về nhà bạn lật sách mới biết toàn là hình vẽ nguệch ngoạc chép bậy. Hai mươi lạng thế là mất trắng, bạn chỉ còn biết cười chua chát rồi nhét cuốn sách xuống gầm giường.",
+              "hieu_ung": [
+                { "cong": { "ngan_luong": -20, "ngo_tinh": 2 } }
+              ]
+            }
+          },
+          {
+            "ti_le": 25,
+            "ket_qua": {
+              "van_ban": "Sách giả đa phần, nhưng trang cuối lại là một đoạn khẩu quyết hô hấp thật, ai đó đã chép lẫn vào. Bạn luyện theo nửa năm, hơi thở dài ra thấy rõ.",
+              "hieu_ung": [
+                { "cong": { "ngan_luong": -20, "noi_tuc_cong_them": 30 } }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Chỉ thẳng vào sách, vạch trần lão là kẻ lừa đảo",
+      "kiem_dinh": { "loai": "roll", "chi_so": "ngo_tinh", "nguong": 40 },
+      "thanh_cong": {
+        "van_ban": "Bạn chỉ ra từng chỗ vô lý: huyệt đạo vẽ sai chỗ, tên phái chép sai chữ. Đám đông xì xào rồi quay sang chê lão. Lão thu sách chuồn thẳng, ném cho bạn ánh mắt oán độc.",
+        "hieu_ung": [
+          { "hiep_nghia": 20 },
+          { "cong": { "ngo_tinh": 3, "mi_luc": 2 } }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Bạn nói bừa không đúng chỗ, lão quát mắng rồi sai thuộc hạ xô bạn ngã giữa chợ. Cả chợ cười, bạn ôm đầu gối trầy xước, tức nghẹn mà không biết cãi thế nào.",
+        "hieu_ung": [
+          { "cong": { "mi_luc": -2 } },
+          { "cong_phan_tram": { "hp": -10 } }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Đứng xem một lát rồi bỏ đi",
+      "ket_qua": {
+        "van_ban": "Bạn ngó cuốn sách một hồi, thấy nực cười, bèn bỏ đi. Có những chuyện nhìn thấu mà không nói ra cũng là một cách khôn ngoan.",
+        "hieu_ung": [
+          { "cong": { "ngo_tinh": 1 } }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "ma": "truong_lao_hoa_son_gay_kho",
+  "nguon": "HS03 IV.2",
+  "ten": "Trưởng Lão Gây Khó Dễ",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [14, 18],
+  "vung": null,
+  "dieu_kien": {
+    "va": [
+      { "la": "mon_phai", "trong": ["hoa_son"] },
+      { "hoac": [{ "co": "ke_thu_truong_lao_hoa_son" }, { "co": "gay_kho_nhe_hoa_son" }] }
+    ]
+  },
+  "trong_so": 60,
+  "lap_lai": { "toi_da": 3 },
+  "ghi_chu": "HS03 IV.2: bị Trưởng lão gây khó dễ, hãm hại trong các năm 14 - 18 tuổi, nhẹ hơn khi thua trận. Hảo cảm chờ M2, nên M1 dùng cờ. Mô-típ Lệnh Hồ Xung / Lâm Bình Chi.",
+  "mo_ta": "Vị trưởng lão ngày trước vẫn chưa quên chuyện cũ. Hôm nay ông giao cho bạn việc quét dọn cả khu vườn kiếm, rồi cho người rải thêm lá khô ngay sau lưng bạn, sau đó mắng bạn làm việc cẩu thả giữa đông đủ sư huynh đệ.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Cúi đầu nhận lỗi, im lặng quét lại từ đầu",
+      "ket_qua": {
+        "van_ban": "Bạn nuốt giận vào bụng, quét lại cả khu vườn đến tối mịt. Mấy sư huynh nhìn bạn thông cảm, nhưng không ai dám lên tiếng thay.",
+        "hieu_ung": [
+          { "cong": { "ngo_tinh": 3, "can_cot": 2 } },
+          { "them_nhan": "nhan_nhin_tham_sau" }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Đứng thẳng lưng cãi lại giữa đông đủ mọi người",
+      "kiem_dinh": { "loai": "roll", "chi_so": "mi_luc", "nguong": 40 },
+      "thanh_cong": {
+        "van_ban": "Bạn nói rõ từng câu từng chữ, chỉ ra người rải lá khô là ai. Cả sân im lặng, vị trưởng lão tái mặt, phải nuốt cơn giận.",
+        "hieu_ung": [
+          { "hiep_nghia": 20 },
+          { "cong": { "mi_luc": 4 } },
+          { "danh_vong": 5 }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Bạn không có bằng chứng, lời nói đuối dần dưới ánh mắt lạnh của vị trưởng lão. Bạn bị phạt quỳ ngoài sân suốt đêm, và sang năm sẽ còn khó khăn hơn.",
+        "hieu_ung": [
+          { "mat_ap_nam_sau": 1 },
+          { "cong": { "mi_luc": -2 } }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Tìm dịp bẩm báo riêng với Chưởng môn",
+      "kiem_dinh": { "loai": "roll", "chi_so": "ngo_tinh", "nguong": 45 },
+      "thanh_cong": {
+        "van_ban": "Bạn chọn đúng lúc Chưởng môn rảnh rỗi, kể mọi chuyện bằng giọng bình thản, không oán trách. Chưởng môn trầm ngâm rồi hứa sẽ để mắt tới. Từ hôm sau, vị trưởng lão bớt đi nhiều trò.",
+        "hieu_ung": [
+          { "cong": { "ngo_tinh": 3 } },
+          { "xoa_co": "ke_thu_truong_lao_hoa_son" },
+          { "dat_co": "gay_kho_nhe_hoa_son" }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Chưởng môn nghe xong chỉ nhắc nhở trẻ con đừng hay phàn nàn chuyện nhỏ. Lời bạn đến tai vị trưởng lão, và hắn càng thêm ghét bạn.",
+        "hieu_ung": [
+          { "cong": { "mi_luc": -2 } },
+          { "dat_co": "ke_thu_truong_lao_hoa_son" }
+        ]
+      }
+    }
+  ]
+}

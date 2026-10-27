@@ -121,8 +121,8 @@ describe('M1-02: Gia cảnh, Thiên phú, Trạng thái, Nhãn', () => {
   })
 
   describe('Trạng thái (HS01 II.7, HS03, HS04 II - III)', () => {
-    it('đầy đủ 5 trạng thái', () => {
-      expect(Object.keys(dl.trang_thai ?? {})).toHaveLength(5)
+    it('đủ 5 trạng thái HS01 II.7 cùng 2 trạng thái sự kiện 0 - 15 tuổi (M1-14)', () => {
+      expect(Object.keys(dl.trang_thai ?? {})).toHaveLength(7)
       expect(dl.trang_thai).toHaveProperty('bach_doc_bat_xam')
       expect(dl.trang_thai).toHaveProperty('minh_dong_da_sat')
       expect(dl.trang_thai).toHaveProperty('han_doc_phe_phoi')
@@ -142,8 +142,8 @@ describe('M1-02: Gia cảnh, Thiên phú, Trạng thái, Nhãn', () => {
   })
 
   describe('Nhãn tính cách (HS01 II.7, HS03, HS04 II - III)', () => {
-    it('đầy đủ 5 nhãn tính cách', () => {
-      expect(Object.keys(dl.nhan ?? {})).toHaveLength(5)
+    it('đủ 5 nhãn tính cách HS01 II.7 cùng nhãn Diệu Thủ Không Không (M1-14)', () => {
+      expect(Object.keys(dl.nhan ?? {})).toHaveLength(6)
       expect(dl.nhan).toHaveProperty('ac_mong_dem_mua')
       expect(dl.nhan).toHaveProperty('nhan_nhin_tham_sau')
       expect(dl.nhan).toHaveProperty('quat_cuong')

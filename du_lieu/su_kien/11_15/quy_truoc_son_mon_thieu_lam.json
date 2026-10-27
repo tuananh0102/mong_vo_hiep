@@ -1,0 +1,87 @@
+{
+  "ma": "quy_truoc_son_mon_thieu_lam",
+  "nguon": "HS03 IV.1",
+  "ten": "Quỳ Trước Sơn Môn Thiếu Lâm",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [12, 15],
+  "vung": ["trung_nguyen"],
+  "dieu_kien": {
+    "va": [
+      { "la": "gioi_tinh", "trong": ["nam"] },
+      { "la": "mon_phai", "trong": [""] }
+    ]
+  },
+  "trong_so": 100,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "Khảo nghiệm bái sư (bước ngoặt). Tách riêng từng phái từ HS03 IV.1 vì ngưỡng Roll khác nhau; Toàn Chân chưa có trong M1. Cổng là điều kiện gia nhập Thiếu Lâm (HS02 I). Võ Thiếu Lâm bậc 1 được truyền đủ khi gia nhập (M1-12), không riêng La Hán Quyền. Nhánh thử lại giảm 5 ngưỡng ở quy_truoc_son_mon_thieu_lam_thu_lai. Nhánh C chuyển Lãng khách kèm cờ muon_vao_ta_phai, nối tiếp ở M2-04 / M3-02. Hiệp nghĩa +50 nằm trong định mức bước ngoặt. Lựa chọn D viết mới để không ai bị khóa kín mọi lựa chọn khi đã vào phái khác trong cùng năm.",
+  "m2_noi_tiep": true,
+  "mo_ta": "Năm {tuoi} tuổi, bạn tìm đến chân núi Thiếu Thất xin bái sư. Vị tri khách tăng chắp tay lắc đầu bảo cơ duyên chưa tới, khuyên bạn hãy về đi. Cổng chùa đóng im ỉm, mây mù phủ kín đỉnh núi.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Quỳ trước cổng núi suốt ba ngày ba đêm dưới mưa tầm tã",
+      "cong": {
+        "va": [
+          { "la": "gioi_tinh", "trong": ["nam"] },
+          { "so": "thanh_danh", "op": ">=", "gt": 0 },
+          { "so": "can_cot", "op": ">=", "gt": 50 },
+          { "la": "mon_phai", "trong": [""] }
+        ]
+      },
+      "kiem_dinh": { "loai": "roll", "chi_so": "can_cot", "nguong": 50 },
+      "thanh_cong": {
+        "van_ban": "Chưởng môn cảm động trước nghị lực của bạn, nhận vào làm đệ tử. Từ hôm ấy bạn bước vào cổng chùa, bắt đầu học những môn võ nền tảng của Thiếu Lâm.",
+        "hieu_ung": [
+          { "gia_nhap_mon_phai": "thieu_lam", "bac": 1 },
+          { "cong": { "can_cot": 5 } },
+          { "hiep_nghia": 50 }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Sang đêm thứ hai bạn ngã gục giữa mưa, được một chú tiểu cõng xuống chân núi. Sơn môn ghi nhớ khuôn mặt bạn, có thể quay lại thử vào những năm sau.",
+        "hieu_ung": [
+          { "cong": { "can_cot": 2 } },
+          { "dat_co": "thu_thieu_lam_1" },
+          { "dat_co": "vua_truot_thieu_lam" },
+          { "tiep": "xin_lam_tap_dich" }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Lén vòng ra cửa sau, chui vào nhà bếp làm tạp dịch",
+      "cong": { "la": "mon_phai", "trong": [""] },
+      "ket_qua": {
+        "van_ban": "Bạn trở thành tạp dịch trong chùa. Ba năm đầu không ai dạy võ, chỉ có gánh nước, bổ củi, nhưng thân thể bạn mỗi ngày một rắn rỏi, và có tiếng đồn trong kinh các có những cuốn sách bị bỏ quên.",
+        "hieu_ung": [
+          { "gia_nhap_mon_phai": "thieu_lam", "bac": 1 },
+          { "dat_co": "tap_dich" },
+          { "them_trang_thai": "tap_dich_ganh_nuoc", "so_nam": 3 }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Tức giận chửi mắng đám danh môn chính phái đạo mạo rồi bỏ xuống núi",
+      "cong": { "la": "mon_phai", "trong": [""] },
+      "ket_qua": {
+        "van_ban": "Một gã áo gấm nấp gần đó vỗ tay khen bạn có cá tính, mời bạn đi theo. Bạn bỏ đi, lòng còn bừng bừng, chưa biết con đường ấy dẫn về đâu.",
+        "hieu_ung": [
+          { "hiep_nghia": -50 },
+          { "dat_co": "muon_vao_ta_phai" }
+        ]
+      }
+    },
+    {
+      "ma": "d",
+      "nhan": "Chắp tay vái ba vái rồi quay về, hẹn sang năm",
+      "ket_qua": {
+        "van_ban": "Bạn cúi chào ngọn núi mịt mù rồi lặng lẽ quay về, tự nhủ sẽ trở lại khi đã vững vàng hơn.",
+        "hieu_ung": [
+          { "dat_co": "thu_thieu_lam_1" }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "ma": "quy_truoc_son_mon_thieu_lam_thu_lai",
+  "nguon": "HS03 IV.1",
+  "ten": "Trở Lại Sơn Môn Thiếu Lâm",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [12, 15],
+  "vung": ["trung_nguyen"],
+  "dieu_kien": {
+    "va": [
+      { "la": "gioi_tinh", "trong": ["nam"] },
+      { "la": "mon_phai", "trong": [""] },
+      { "hoac": [{ "co": "thu_thieu_lam_1" }, { "co": "thu_thieu_lam_2" }] }
+    ]
+  },
+  "trong_so": 100,
+  "lap_lai": { "toi_da": 2 },
+  "ghi_chu": "Thử lại sau khi thất bại hoặc bỏ về (HS03 IV.1): lần 2 ngưỡng 45, lần 3 ngưỡng 40 ('thành tâm' giảm 5 mỗi lần). Cờ thu_thieu_lam_N đếm lần đã thử. Hết lượt thì chỉ còn nhánh tạp dịch.",
+  "mo_ta": "Bạn lại đứng trước cổng núi Thiếu Thất. Vị tri khách tăng nhận ra gương mặt bạn, khẽ gật đầu nhưng không nói gì. Lần này, bạn hiểu rõ cái giá của việc quỳ lạy.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Quỳ lại trước cổng núi, ý chí hơn lần trước",
+      "cong_an": {
+        "va": [{ "co": "thu_thieu_lam_1" }, { "khong": { "co": "thu_thieu_lam_2" } }]
+      },
+      "cong": {
+        "va": [
+          { "la": "gioi_tinh", "trong": ["nam"] },
+          { "so": "thanh_danh", "op": ">=", "gt": 0 },
+          { "so": "can_cot", "op": ">=", "gt": 50 },
+          { "la": "mon_phai", "trong": [""] }
+        ]
+      },
+      "kiem_dinh": { "loai": "roll", "chi_so": "can_cot", "nguong": 45 },
+      "thanh_cong": {
+        "van_ban": "Vị trụ trì nhìn bạn lâu, rồi khẽ nói: \"Thành tâm rồi vậy.\" Cổng chùa mở ra, bạn bước vào.",
+        "hieu_ung": [
+          { "gia_nhap_mon_phai": "thieu_lam", "bac": 1 },
+          { "cong": { "can_cot": 5 } },
+          { "hiep_nghia": 50 }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Bạn lại gục xuống giữa cơn mưa lạnh, lần này không ai cõng bạn kịp. Sơn môn vẫn mở lòng, nhưng cơ hội đang cạn dần.",
+        "hieu_ung": [
+          { "cong": { "can_cot": 2 } },
+          { "dat_co": "thu_thieu_lam_2" },
+          { "dat_co": "vua_truot_thieu_lam" },
+          { "tiep": "xin_lam_tap_dich" }
+        ]
+      }
+    },
+    {
+      "ma": "a2",
+      "nhan": "Quỳ trước cổng núi lần cuối với toàn bộ ý chí",
+      "cong_an": { "co": "thu_thieu_lam_2" },
+      "cong": {
+        "va": [
+          { "la": "gioi_tinh", "trong": ["nam"] },
+          { "so": "thanh_danh", "op": ">=", "gt": 0 },
+          { "so": "can_cot", "op": ">=", "gt": 50 },
+          { "la": "mon_phai", "trong": [""] }
+        ]
+      },
+      "kiem_dinh": { "loai": "roll", "chi_so": "can_cot", "nguong": 40 },
+      "thanh_cong": {
+        "van_ban": "Nhìn thiếu niên quỳ lần thứ ba giữa mưa, vị trụ trì thở dài rồi mở cổng. \"Nhân duyên là thế.\"",
+        "hieu_ung": [
+          { "gia_nhap_mon_phai": "thieu_lam", "bac": 1 },
+          { "cong": { "can_cot": 5 } },
+          { "hiep_nghia": 50 }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Bạn quỵ xuống khi trời chưa sáng, hết sức lực. Đây là lần cuối chùa còn thấy bạn quỳ, những cánh cửa chính từ nay đóng lại.",
+        "hieu_ung": [
+          { "cong": { "can_cot": 2 } },
+          { "dat_co": "thu_thieu_lam_het" },
+          { "dat_co": "vua_truot_thieu_lam" },
+          { "tiep": "xin_lam_tap_dich" }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Lặng lẽ xin vào bếp làm tạp dịch",
+      "cong": { "la": "mon_phai", "trong": [""] },
+      "ket_qua": {
+        "van_ban": "Bạn bước vào cổng hông, vào nhà bếp nhận chổi và gánh nước. Ba năm đầu chỉ có việc nặng, nhưng thân thể bạn rắn rỏi lên từng ngày.",
+        "hieu_ung": [
+          { "gia_nhap_mon_phai": "thieu_lam", "bac": 1 },
+          { "dat_co": "tap_dich" },
+          { "them_trang_thai": "tap_dich_ganh_nuoc", "so_nam": 3 }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Quay lưng, không thèm quỳ thêm",
+      "ket_qua": {
+        "van_ban": "Bạn nhìn ngọn núi lần cuối rồi bỏ đi, dặn lòng sẽ tìm con đường khác để lên giang hồ.",
+        "hieu_ung": []
+      }
+    }
+  ]
+}
