@@ -342,7 +342,7 @@ Nối các mã phái sinh vào `docChiSo` (thay chỗ `throw` ở M0-05).
 
 ---
 
-### [ ] M1-05 Bộ chạy sự kiện
+### [x] M1-05 Bộ chạy sự kiện
 
 **Phụ thuộc:** M0-09, M1-04.
 **Đọc:** 01 mục 5.3, 7; HS06 I.2; thiết kế mục 9.

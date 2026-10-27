@@ -1,11 +1,9 @@
 // 01 mục 5: Động cơ game - một cửa vào duy nhất apDung.
 import type { DuLieu } from '../du_lieu/luoc_do'
 import { kiemTraBatBien } from './bat_bien'
-import { danhGia } from './dieu_kien'
-import { apHieuUng } from './hieu_ung'
 import type { DongBienNien, Lenh, TrangThaiGame } from './kieu'
-import { lanRoll, pRoll } from './kiem_dinh'
 import { rngTuSeed, taoRng } from './rng'
+import { xuLyChon } from './su_kien'
 import { quaNam } from './vong_nam'
 
 export interface KetQuaLenh {
@@ -91,95 +89,11 @@ export function apDung(s: TrangThaiGame, lenh: Lenh, dl: DuLieu): KetQuaLenh {
 
     case 'chon': {
       if (d.cho?.loai === 'su_kien') {
-        const maSk = d.cho.ma
-        const bien = d.cho.bien
-        const sk = dl.su_kien?.[maSk]
-        if (!sk) {
-          d.cho = null
-          break
+        const kq = xuLyChon(d, rng, dl, lenh.ma_lua_chon)
+        if (kq.loi) {
+          return { trang_thai: s, dong_moi: [], loi: kq.loi }
         }
-
-        const lc = sk.lua_chon.find((c) => c.ma === lenh.ma_lua_chon)
-        if (!lc) {
-          return { trang_thai: s, dong_moi: [], loi: 'lua_chon_khong_hop_le' }
-        }
-
-        // Kiểm tra Cổng
-        if (lc.cong && !danhGia(lc.cong, d, dl, bien)) {
-          return { trang_thai: s, dong_moi: [], loi: 'dieu_kien_khong_dat' }
-        }
-
-        // Chi phí AP và Ngân lượng
-        if (lc.chi_phi) {
-          if (lc.chi_phi.ap && d.nhan_vat.ap_con_lai < lc.chi_phi.ap) {
-            return { trang_thai: s, dong_moi: [], loi: 'khong_du_ap' }
-          }
-          if (lc.chi_phi.ngan_luong && d.nhan_vat.ngan_luong < lc.chi_phi.ngan_luong) {
-            return { trang_thai: s, dong_moi: [], loi: 'khong_du_ngan_luong' }
-          }
-          if (lc.chi_phi.ap) d.nhan_vat.ap_con_lai -= lc.chi_phi.ap
-          if (lc.chi_phi.ngan_luong) d.nhan_vat.ngan_luong -= lc.chi_phi.ngan_luong
-        }
-
-        // Xử lý kiểm định nếu có
-        if (lc.kiem_dinh) {
-          if (lc.kiem_dinh.loai === 'roll' || lc.kiem_dinh.loai === 'roll_nguoc') {
-            const nguoc = lc.kiem_dinh.loai === 'roll_nguoc'
-            const chiSo = lc.kiem_dinh.chi_so ?? 'can_cot'
-            const nguong = lc.kiem_dinh.nguong ?? 50
-            const csVal = (d.nhan_vat as unknown as Record<string, number>)[chiSo] ?? 50
-            const p = pRoll(csVal, nguong, d.nhan_vat.phuc_duyen, nguoc)
-            const win = lanRoll(rng, p)
-            const kq = win ? lc.thanh_cong : lc.that_bai
-            if (kq) {
-              dongMoi.push({
-                tuoi: d.nhan_vat.tuoi,
-                van_ban: kq.van_ban,
-                loai_hien_thi: sk.loai_hien_thi ?? 'thuong',
-              })
-              for (const hu of kq.hieu_ung) {
-                const dongSinh = apHieuUng(hu, d, rng, dl, bien)
-                if (dongSinh.length > 0) dongMoi.push(...dongSinh)
-              }
-            }
-          } else if (lc.kiem_dinh.loai === 'ngau_nhien') {
-            const roll = rng.so() * 100
-            let tichLuy = 0
-            for (const nh of lc.kiem_dinh.nhanh) {
-              tichLuy += nh.ti_le
-              if (roll <= tichLuy) {
-                dongMoi.push({
-                  tuoi: d.nhan_vat.tuoi,
-                  van_ban: nh.ket_qua.van_ban,
-                  loai_hien_thi: sk.loai_hien_thi ?? 'thuong',
-                })
-                for (const hu of nh.ket_qua.hieu_ung) {
-                  const dongSinh = apHieuUng(hu, d, rng, dl, bien)
-                  if (dongSinh.length > 0) dongMoi.push(...dongSinh)
-                }
-                break
-              }
-            }
-          }
-        } else if (lc.ket_qua) {
-          dongMoi.push({
-            tuoi: d.nhan_vat.tuoi,
-            van_ban: lc.ket_qua.van_ban,
-            loai_hien_thi: sk.loai_hien_thi ?? 'thuong',
-          })
-          for (const hu of lc.ket_qua.hieu_ung) {
-            const dongSinh = apHieuUng(hu, d, rng, dl, bien)
-            if (dongSinh.length > 0) dongMoi.push(...dongSinh)
-          }
-        }
-
-        d.cho = null
-
-        // Mở sự kiện tiếp theo trong hàng đợi nếu có
-        if (d.hang_doi_su_kien.length > 0) {
-          const tiep = d.hang_doi_su_kien.shift()!
-          d.cho = { loai: 'su_kien', ma: tiep, bien: {} }
-        }
+        dongMoi = kq.dongMoi
       }
       break
     }
