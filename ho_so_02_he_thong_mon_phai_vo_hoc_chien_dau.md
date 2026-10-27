@@ -4,6 +4,10 @@
 
 ---
 
+> **Quy ước nguồn:** Tên võ công, vật phẩm mặc định theo **nguyên tác Kim Dung**.
+> Mục nào đổi chủ, đổi nơi, tự đặt tên hoặc mượn từ tác giả khác được đánh dấu **(phóng tác)** kèm ghi chú nguyên tác.
+> Khi nhập data, mọi võ công và vật phẩm có thêm trường `nguon` = `nguyen_tac` / `phong_tac` để đội nội dung không nhầm.
+
 ## PHẦN I: HỆ THỐNG MÔN PHÁI ĐA TẦNG (TỪ ĐẠI PHÁI ĐẾN GIANG HỒ THẢO MỘC)
 
 Người chơi có thể gia nhập môn phái từ năm **7 tuổi đến 16 tuổi** (bái sư chính thức), hoặc **phản sư môn / học lén / kỳ ngộ** khi đã trưởng thành. Các môn phái chia làm 6 nhóm lớn.
@@ -61,8 +65,8 @@ Lưu ý: điều kiện "Hiệp nghĩa" khi gia nhập môn phái là do sư mô
 * **Điều kiện gia nhập:** Hiệp nghĩa từ $-100$ đến $+300$ (Chính tà đều nhận, miễn là có lòng nghĩa khí với huynh đệ), Căn cốt $\ge 60$.
 * **Đặc trưng Gameplay:** Tổ chức gồm Quang Minh Tả/Hữu Sứ, Tứ Đại Pháp Vương, Ngũ Tán Nhân. Nội bộ thường phân tranh khi thái bình, nhưng khi có ngoại xâm (Kịch bản *Lục Đại Phái vây Quang Minh Đỉnh* hoặc *Sơn Hà Phá Toái*), toàn giáo đoàn kết một lòng.
 * **Hệ thống Võ học:**
-    * *Nhập môn:* Thánh Hỏa Lệnh Công (Bản cơ bản), Diệt Tuyệt Thập Tam Kiếm, Phi Sa Tẩu Thạch Thập Tam Thức.
-    * *Thượng thừa:* **Hàn Băng Miên Chưởng** (Thanh Dực Bức Vương), **Ưng Trảo Cầm Nã Thủ** (Bạch Mi Ưng Vương), **Thất Thương Quyền** (Kim Mao Sư Vương), **Tiêu Diêu Ngự Phong**.
+    * *Nhập môn:* Thánh Hỏa Lệnh Công (Bản cơ bản), Ngũ Hành Kỳ Trận Pháp, Phi Sa Tẩu Thạch Thập Tam Thức (phóng tác).
+    * *Thượng thừa:* **Hàn Băng Miên Chưởng** (Thanh Dực Bức Vương), **Ưng Trảo Cầm Nã Thủ** (Bạch Mi Ưng Vương), **Thất Thương Quyền** (Kim Mao Sư Vương; nguyên tác là võ công Không Động bị Tạ Tốn cướp bí kíp, nên ở đây chỉ học được qua nhánh của Sư Vương), **Tiêu Diêu Ngự Phong** (phóng tác).
     * *Trấn phái:* **Càn Khôn Đại Na Di (7 Tầng)** (Kích phát tiềm năng cơ thể, sao chép và dịch chuyển lực đạo của mọi chiêu thức trong thiên hạ) & **Thánh Hỏa Lệnh Thần Công (Trọn bộ 6 tấm)**.
 
 #### B. Nhật Nguyệt Thần Giáo (Trung Nguyên/Hà Bắc - Hắc Mộc Nhai) - "Nhật Xuất Đông Phương, Duy Ngã Bất Bại"
@@ -87,12 +91,12 @@ Lưu ý: điều kiện "Hiệp nghĩa" khi gia nhập môn phái là do sư mô
     * *Thành công:* Bước ra khỏi hang rắn, được nhận làm đệ tử.
     * *Thất bại:* Bị độc xà cắn trọng thương, được kéo ra trong tình trạng hấp hối và không được nhận (Điểm Ám Thương $+5$, Kháng độc $+10\%$). Có thể thử lại sau 2 năm.
 * **Đặc trưng:** Nuôi dưỡng 5 loài độc trùng (Rết, Bò cạp, Nhện, Rắn, Cóc) trong cơ thể để chiến đấu và ám sát.
-* **Hệ thống Võ học:** Thiên Chu Vạn Độc Thủ (mỗi cấp độ phải cho 100 con nhện hoa cắn, khiến Mị lực giảm dần về $0$ nhưng sát thương độc vô phương cứu chữa), Kim Xà Tiên Pháp, Vạn Cổ Phệ Tâm Quyết.
+* **Hệ thống Võ học:** Thiên Chu Vạn Độc Thủ (phóng tác: nguyên tác là võ công của Ân Ly; mỗi cấp độ phải cho 100 con nhện hoa cắn, khiến Mị lực giảm dần về $0$ nhưng sát thương độc vô phương cứu chữa), Kim Xà Tiên Pháp, Vạn Cổ Phệ Tâm Quyết.
 
 #### E. Huyết Đao Môn (Bắc Cảnh - Tuyết Sơn)
 * **Điều kiện gia nhập:** Hiệp nghĩa $\le -300$ (Ác nhân bị truy nã mới tìm đến).
 * **Đặc trưng:** Một đám hòa thượng tà dâm, tàn bạo ẩn náu nơi núi tuyết. Đao pháp quỷ dị, chuyên chém từ những góc độ không tưởng.
-* **Hệ thống Võ học:** Huyết Đao Kinh, Huyết Hải Ma Công, Diệt Tuyệt Đao Pháp (Máu càng thấp sát thương càng tăng gấp bội).
+* **Hệ thống Võ học:** Huyết Đao Kinh, Huyết Hải Ma Công, Diệt Tuyệt Đao Pháp (phóng tác; máu càng thấp sát thương càng tăng gấp bội).
 
 ---
 
@@ -142,8 +146,9 @@ Lưu ý: điều kiện "Hiệp nghĩa" khi gia nhập môn phái là do sư mô
 3. **Bạch Đà Sơn Âu Dương Gia (Tây Vực):**
    * *Võ học:* **Hàm Mô Công** (Cóc thần công - Tích tụ lực đạo phản kích một đòn chí mạng), Linh Xà Quyền Pháp, Thần Đà Tuyết Sơn Chưởng.
    * *Đặc quyền:* Điều khiển đàn rắn độc khổng lồ, miễn nhiễm với hầu hết độc dược cấp thấp.
-4. **Cầu Gia / Hồ Gia Quan Ngoại (Bắc Cảnh):**
-   * *Võ học:* **Hồ Gia Đao Pháp** (Từng chiêu từng thức chậm rãi nhưng kín kẽ không chút sơ hở), Tứ Tượng Bộ Pháp, Miêu Gia Kiếm Pháp.
+4. **Hồ Gia & Miêu Gia Quan Ngoại (Bắc Cảnh):** Hai nhà thế thù trăm năm (Hồ Nhất Đao và Miêu Nhân Phượng), người chơi chỉ vào được một nhà; học lén võ nhà kia là hành động [Ám].
+   * *Võ học Hồ gia:* **Hồ Gia Đao Pháp** (Từng chiêu từng thức chậm rãi nhưng kín kẽ không chút sơ hở), Tứ Tượng Bộ Pháp (phóng tác).
+   * *Võ học Miêu gia:* **Miêu Gia Kiếm Pháp**.
 
 ---
 
@@ -180,6 +185,8 @@ Mỗi nhân vật có các ô trang bị võ công (Skill Slots). Số ô của 
 1. **Nội Công Tâm Pháp (1 Môn chủ đạo + tối đa 2 Môn phụ trợ):** Quyết định **Cảnh giới Nội công**, Nội tức tối đa ($MP_{max}$), tốc độ hồi khí mỗi năm và **Hệ Nội lực**.
 2. **Ngoại Công Chiêu Thức (Quyền/Chưởng, Chỉ/Trảo, Kiếm, Đao, Kỳ môn/Bổng, Ám khí):** Dùng để tấn công, phá phòng ngự hoặc điểm huyệt.
 3. **Khinh Công Thân Pháp (1 Môn):** Quyết định khả năng né tránh trong giao chiến và **tỷ lệ chạy trốn thành công** khi gặp cao thủ quá mạnh trên giang hồ.
+   * **Trần cấp theo tier:** Nhập môn tối đa cấp $4$ (*Kim Nhạn Công*), Thượng thừa $6$ (*Thê Vân Tung*), Trấn phái $8$, Thần công SSS $10$ (*Lăng Ba Vi Bộ*, *Thần Hành Bách Biến*). Tiến độ luyện vẫn theo Tier factor như mọi môn võ (Hồ sơ 06 I.1).
+   * *Lý do (`mo_phong/BAO_CAO.md` mục 19):* Chiến lực, Giảm trừ và Roll Khinh công chỉ dùng **Cấp**, không dùng tier. Không có trần thì môn Nhập môn (Tier factor $1$) lên cấp $10$ rẻ gấp $3 - 5$ lần môn cao cấp, và mô phỏng cho thấy $100\%$ đời Chính phái dùng khinh công Nhập môn đến cuối đời. Có trần thì khoảng $55\%$ dùng môn Trấn phái, $20\%$ Thượng thừa.
 4. **Tuyệt Kỹ Đặc Thù / Trận Pháp:** Các kỹ năng bị động như Phản đòn, Hút nội lực, Giả chết (*Quy Tức Công*), hoặc Dịch dung (*Thuật Dịch Dung*).
 
 ### 2. Tam Hệ Nội Lực & Sự Xung Khắc (Âm - Dương - Hòa)
@@ -199,6 +206,13 @@ Mỗi nhân vật có các ô trang bị võ công (Skill Slots). Số ô của 
 > **Cơ chế "Xung Đột Nội Lực" & "Âm Dương Giao Thái":**
 > Nếu người chơi cùng lúc luyện 1 môn Chí Dương và 1 môn Chí Âm mà không có thiên phú hoặc kỳ ngộ điều hòa, mỗi năm sẽ có $30\%$ tỷ lệ **Tẩu Hỏa Nhập Ma** (Mất $50\%$ HP, Căn cốt $-5$, Điểm Ám Thương $+5$; nặng thì hóa điên làm loạn giang hồ). Ngược lại, nếu tìm được cách dung hợp (như Trương Vô Kỵ hoặc Dương Quá), nhân vật sẽ mở khóa trạng thái **Âm Dương Hỗ Tế** – sát thương và phòng thủ nhân đôi!
 
+> **Cơ chế "Ma Công" (đặc quyền của Tà phái):**
+> Võ công Trấn phái của Tà phái là **Ma công**: *Hấp Tinh Đại Pháp* (Nhật Nguyệt), *Hóa Công Đại Pháp* (Tinh Túc), *Huyết Hải Ma Công* (Huyết Đao Môn), *Vạn Cổ Phệ Tâm Quyết* (Ngũ Độc Giáo).
+> Chỉ phát huy khi **Hiệp nghĩa $\le -300$** (Ma Tâm, Hồ sơ 01 II.2); Hiệp nghĩa cao hơn thì Ma công chỉ là một môn Trấn phái bình thường.
+> * *Sức mạnh:* Uy lực chiêu thức và Điểm Tier Chiến lực tính **như Thần công SSS** ($320$ và $45$, Hồ sơ 06 I.4, I.5), nhưng Tier factor vẫn là Trấn phái ($3$), nên học nhanh hơn SSS.
+> * *Phản phệ:* Mỗi năm còn trang bị Ma công có $3\%$ tỷ lệ **Tẩu Hỏa Nhập Ma** (Căn cốt $-5$, Điểm Ám Thương $+5$, không phải tán công). Trung bình khoảng $1,6$ lần mỗi đời, tức mất khoảng $8$ năm tuổi thọ và $10$ Chiến lực.
+> * *Lý do (mô phỏng `mo_phong/BAO_CAO.md` mục 18):* không có Ma công, Tà phái chỉ chiếm khoảng $1\%$ Thập Đại Cao Thủ; có Ma công thì khoảng $10\% - 13\%$, và khoảng $1/4$ đời Tà phái vào Top 10 ít nhất 1 lần (Chính phái khoảng $40\%$). Mức phản phệ $0\%$ cho Tà phái $28\%$ Top 10 (quá mạnh), $10\%$ đưa về lại $2\%$.
+
 ---
 
 ## PHẦN III: KHO TÀNG TUYỆT HỌC GIANG HỒ & KỲ THƯ THẤT TRUYỀN
@@ -211,7 +225,7 @@ Mỗi nhân vật có các ô trang bị võ công (Skill Slots). Số ô của 
    * *Nguồn gốc:* Hoàng Thường sáng tác. Chia làm Nội công (Bắc Đẩu Đại Pháp, Dịch Cân Đoán Cốt Thiên) và Ngoại công (Cửu Âm Bạch Cốt Trảo, Thôi Tâm Chưởng, Bạch Mãng Tiên Pháp).
    * *Điểm đặc sắc:* Nếu chỉ nhặt được quyển Hạ mà không có quyển Thượng (như Mai Siêu Phong), người chơi phải giết người lấy sọ luyện công (Hiệp nghĩa giảm $-100$/năm, biến thành Tà ma). Nếu có đủ 2 quyển + đọc hiểu *Phạn văn tổng cương*, sẽ trở thành đệ nhất cao thủ Chính đạo.
 2. **Cửu Dương Thần Công:**
-   * *Nguồn gốc:* Giấu trong bụng vượn trắng ở Côn Luân hoặc trong kẹp sách kinh Lăng Già.
+   * *Nguồn gốc:* Chép trong kẽ chữ cuốn *Lăng Già Kinh*, giấu trong bụng vượn trắng ở Côn Luân. Nhận được khi thu phục **Bạch Viên Côn Luân** (Hồ sơ 06 Phần V.2), đây là cùng một sự kiện.
    * *Hiệu ứng:* Nội lực tự sinh sôi vô tận, bách độc bất xâm, tự động phản chấn gãy xương kẻ địch dùng quyền cước đánh vào người, chữa lành mọi vết thương chí mạng sau 1 năm.
 3. **Độc Cô Cửu Kiếm:**
    * *Nguồn gốc:* Kiếm ma Độc Cô Cầu Bại truyền lại (Qua Phong Thanh Dương hoặc Kiếm Mộ).
@@ -255,6 +269,8 @@ Võ học Kim Dung không thể tách rời các món Thần binh. Khi sở hữ
 
 **Sát thương Thần binh** (cộng thẳng vào DMG, Hồ sơ 06 I.4) chia 3 bậc: **Lợi khí** $+30$ (*Đả Cẩu Bổng*, *Thánh Hỏa Lệnh*, binh khí của danh gia), **Danh khí** $+60$ (*Kim Xà Kiếm*, *Huyền Thiết Trọng Kiếm*), **Thần binh** $+100$ (*Đồ Long Đao*, *Ỷ Thiên Kiếm*). Nhuyễn Vị Giáp (giáp) và ám khí (Bạo Vũ Lê Hoa Châm) không thuộc thang này. Mô phỏng: ở mức Thượng thừa 5/10, Thần binh $+100$ nâng tỷ lệ thắng trước đối thủ ngang sức lên khoảng $87\%$; ở mức SSS 10/10 chỉ còn khoảng $77\%$ vì sát thương cộng thẳng nên loãng dần khi võ học mạnh lên.
 
+**Nguồn binh khí:** Lợi khí và Danh khí mua ở Hắc Thị Đấu Giá Hội (giá ở Hồ sơ 06 II.2). **Thần binh** (Đồ Long Đao, Ỷ Thiên Kiếm) là độc nhất, không bao giờ lên sàn đấu giá: chỉ có qua Đại sự kiện *Kỳ Thư Xuất Thế* hoặc kỳ ngộ cấp SSS.
+
 1. **Đồ Long Đao:** *"Võ lâm chí tôn, Bảo đao Đồ Long..."* – Nặng gần trăm cân, chém sắt như chém bùn. Giấu bên trong là *Vũ Mục Di Thư* (Giúp người chơi thống lĩnh quân đội đánh bại ngoại bang trong kịch bản "Sơn Hà Phá Toái").
 2. **Ỷ Thiên Kiếm:** Sắc bén vô song, khắc tinh của mọi loại giáp trụ. Giấu bên trong là bí kíp *Cửu Âm Chân Kinh* và *Hàng Long Thập Bát Chưởng*. (Nếu cho Đồ Long Đao và Ỷ Thiên Kiếm chém vào nhau sẽ gãy đôi để lấy bí kíp).
 3. **Kim Xà Kiếm:** Lưỡi kiếm phân nhánh như lưỡi rắn, tỏa ánh vàng kỳ dị, tăng sát thương độc và khả năng khóa vũ khí.
@@ -262,7 +278,7 @@ Võ học Kim Dung không thể tách rời các món Thần binh. Khi sở hữ
 5. **Đả Cẩu Bổng:** Cây gậy trúc xanh biếc như ngọc của Bang chủ Cái Bang. Khi cầm cây gậy này bước vào bất kỳ quán trọ hay thành thị nào, đệ tử Cái Bang địa phương đều tự động quỳ lạy dâng thông tin mật và ngân lượng.
 6. **Thánh Hỏa Lệnh (6 Tấm):** Đúc từ Bạch Kim Huyền Thiết cứng không thể phá hủy, trên bề mặt khắc văn tự Ba Tư chứa bộ võ công quỷ dị của Sơn Trung Lão Nhân.
 7. **Nhuyễn Vị Giáp (Áo giáp nhím):** Mặc bên trong áo thường. Bất kỳ kẻ nào dùng Quyền/Chưởng/Trảo đánh vào người chơi đều bị gai nhọn tẩm độc đâm nát bàn tay, đồng thời đao kiếm thông thường không thể đâm thủng.
-8. **Bạo Vũ Lê Hoa Châm / Khổng Tước Linh:** Ám khí cơ quan tối thượng. Chỉ có $3$ lần sử dụng trong cả cuộc đời. Mỗi lần bấm nút gây sát thương bằng $80\%$ $HP_{max}$ của địch, bỏ qua Giảm Trừ Phòng Ngự. Với NPC trong **Thập Đại Cao Thủ** hoặc đối thủ đã chọn *Án Binh Bất Động* ở Hiệp 1 (đang đề phòng), sát thương chỉ còn $40\%$ $HP_{max}$.
+8. **Bạo Vũ Lê Hoa Châm / Khổng Tước Linh (phóng tác, mượn từ Cổ Long chứ không phải Kim Dung):** Ám khí cơ quan tối thượng. Chỉ có $3$ lần sử dụng trong cả cuộc đời. Mỗi lần bấm nút gây sát thương bằng $80\%$ $HP_{max}$ của địch, bỏ qua Giảm Trừ Phòng Ngự. Với NPC trong **Thập Đại Cao Thủ** hoặc đối thủ đã chọn *Án Binh Bất Động* ở Hiệp 1 (đang đề phòng), sát thương chỉ còn $40\%$ $HP_{max}$.
 
 ---
 

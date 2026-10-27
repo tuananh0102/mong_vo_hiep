@@ -1,6 +1,6 @@
 # HỒ SƠ 07: THIẾT KẾ GIAO DIỆN UI/UX TEXT-BASED, HỆ THỐNG LUÂN HỒI & DANH MỤC ĐẠI KẾT CỤC (ENDINGS)
 **Tên dự án:** *Vạn Kiếp Giang Hồ* (Thể loại: Text-based Life Sim / Võ Hiệp Kim Dung)
-**Mục tiêu thiết kế:** Hoàn thiện mảnh ghép cuối cùng của bộ tài liệu thiết kế game (GDD): Bố cục màn hình giao diện tối ưu cho trải nghiệm đọc và ra quyết định nhanh trên Mobile/Web (phong cách *1in8b life* kết hợp thủy mặc cổ phong), hệ thống Điểm Nghiệp Lực Luân Hồi (Meta-Progression) khi tuyệt tự và 18 Đại Kết Cục (Endings) ghi danh sử sách.
+**Mục tiêu thiết kế:** Hoàn thiện mảnh ghép cuối cùng của bộ tài liệu thiết kế game (GDD): Bố cục màn hình giao diện tối ưu cho trải nghiệm đọc và ra quyết định nhanh trên Mobile/Web (phong cách *BitLife* kết hợp thủy mặc cổ phong), hệ thống Điểm Nghiệp Lực Luân Hồi (Meta-Progression) khi tuyệt tự và 18 Đại Kết Cục (Endings) ghi danh sử sách.
 
 ## PHẦN I: THIẾT KẾ GIAO DIỆN UI/UX TEXT-BASED (MÀN HÌNH DỌC MOBILE-FIRST)
 
@@ -11,9 +11,22 @@ Giao diện của *Vạn Kiếp Giang Hồ* sử dụng tông màu **Giấy Tuy�
 | Phân vùng | Vị trí & Tỷ lệ màn hình | Các thành phần hiển thị chi tiết | Tương tác Người dùng |
 | :--- | :--- | :--- | :--- |
 | **1. Thanh Trạng Thái Nhân Vật (Top Header Bar)** | Trên cùng ($15\%$ chiều cao) | Tên họ, Danh hiệu hiện tại, Tuổi / Tuổi thọ ẩn, Khu vực đang đứng, Môn phái & Chức vị, Thanh máu ($HP$), Nội tức ($MP$) và Ngân lượng. | Chạm vào Tên để mở bảng **Chi tiết Bát Tự & Thiên Phú**; chạm vào Khu vực để mở **Bản đồ Thần Châu**. |
-| **2. Cuộn Giấy Biên Niên Sử (Central Scroll Log)** | Giữa màn hình ($55\%$ chiều cao) | Dòng thời gian văn bản tự động cuộn theo từng năm. Phân biệt màu sắc rõ ràng: **Mực đen** (Sự kiện đời thường), **Đỏ chu sa** (Giao chiến / Thù hận), **Tím huyền** (Tình duyên), **Vàng kim** (Kỳ ngộ SSS). | Vuốt lên/xuống để đọc lại lịch sử từ năm $0$ tuổi. Các tên NPC và Võ học trong câu văn đều có thể **chạm trực tiếp (Hyperlink/Tooltip)** để xem thông tin nhanh. |
-| **3. Khung Quyết Định Sự Kiện / Giao Chiến (Modal Card)** | Nổi đè lên giữa màn hình khi có Sự kiện hoặc Tam Hiệp | Hiển thị đoạn văn miêu tả tình huống kịch tính và $2 - 4$ nút lựa chọn. Mỗi nút ghi rõ gợi ý kiểm định theo ký hiệu chuẩn ở Hồ sơ 06 mục I.2 (Ví dụ: *"[Ngộ tính - Khá]"* cho Roll, nút xám *"Cần Ngân lượng 50"* cho Cổng chưa đạt). | Chạm chọn phương án. Trong **Quyết Đấu Tam Hiệp**, hiển thị thêm thanh máu đối phương và bộ đếm Hiệp $1/2/3$. |
-| **4. Bàn Điều Khiển Hành Động & Nút "+1 Tuổi" (Bottom Dock)** | Dưới cùng ($30\%$ chiều cao) | Hiển thị số **Điểm Hành Động (AP)** còn lại trong năm (dạng các viên ngọc âm dương sáng đèn), 5 Tab chức năng và nút lớn **"+1 TUỔI (Qua Năm)"** ở chính giữa. | Khi dùng hết AP, nút **"+1 Tuổi"** phát sáng hiệu ứng mực loang nhắc người chơi kết thúc năm. |
+| **2. Cuộn Giấy Biên Niên Sử (Central Scroll Log)** | Giữa màn hình ($65\%$ chiều cao) | Dòng thời gian văn bản tự động cuộn theo từng năm. Mỗi loại sự kiện có **màu chữ kèm biểu tượng đầu dòng** (bảng màu ở mục 1.1), để người mù màu vẫn phân biệt được: **Mực đen** (Sự kiện đời thường), **Đỏ chu sa** ⚔ (Giao chiến / Thù hận), **Tím huyền** ❀ (Tình duyên), **Vàng kim** ✦ (Kỳ ngộ SSS). | Vuốt lên/xuống để đọc lại lịch sử từ năm $0$ tuổi. Các tên NPC và Võ học trong câu văn đều có thể **chạm trực tiếp (Hyperlink/Tooltip)** để xem thông tin nhanh. |
+| **3. Khung Quyết Định Sự Kiện / Giao Chiến (Modal Card)** | Nổi đè lên giữa màn hình khi có Sự kiện hoặc Tam Hiệp | Hiển thị đoạn văn miêu tả tình huống kịch tính và $2 - 4$ nút lựa chọn. Mỗi nút ghi rõ gợi ý kiểm định theo ký hiệu chuẩn ở Hồ sơ 06 mục I.2 (Ví dụ: *"[Ngộ tính - Khá]"* cho Roll, nút xám *"Cần Ngân lượng 50"* cho Cổng chưa đạt). Nhãn tỷ lệ theo xác suất thành công thật: **Hiểm** $< 25\%$, **Khó** $25 - 49\%$, **Khá** $50 - 74\%$, **Dễ** $\ge 75\%$. | Chạm chọn phương án. Trong **Quyết Đấu Tam Hiệp**, hiển thị thêm thanh máu đối phương và bộ đếm Hiệp $1/2/3$. |
+| **4. Bàn Điều Khiển Hành Động & Nút "+1 Tuổi" (Bottom Dock)** | Dưới cùng ($20\%$ chiều cao, đủ cho 1 hàng ngọc AP, 5 Tab và nút "+1 Tuổi"; Cuộn Biên Niên Sử là nội dung chính của game đọc chữ nên được ưu tiên diện tích) | Hiển thị số **Điểm Hành Động (AP)** còn lại trong năm (dạng các viên ngọc âm dương sáng đèn), 5 Tab chức năng và nút lớn **"+1 TUỔI (Qua Năm)"** ở chính giữa. | Khi dùng hết AP, nút **"+1 Tuổi"** phát sáng hiệu ứng mực loang nhắc người chơi kết thúc năm. |
+
+#### 1.1. Bảng màu chuẩn (nền Giấy Tuyên Thành `#F4EFE6`)
+
+| Vai trò | Mã màu | Tương phản với nền | Dùng cho |
+| :--- | :--- | :--- | :--- |
+| Mực tàu | `#1C1B18` | $15.0:1$ | Chữ thường, chữ trên mọi nhãn màu |
+| Đỏ chu sa | `#9E2A2B` | $6.5:1$ | Chữ sự kiện giao chiến, cảnh báo sinh tử |
+| Xanh thanh ngọc | `#2A6F68` | $5.1:1$ | Chữ kỳ ngộ đạo gia |
+| Tím huyền | `#5B3A6E` | $8.1:1$ | Chữ sự kiện tình duyên |
+| Vàng kim đậm | `#7A5C10` | $5.5:1$ | Chữ kỳ ngộ SSS |
+| Vàng kim sáng | `#D4AF37` | $1.8:1$ (**không dùng cho chữ**) | Viền, nền nhãn, hiệu ứng ánh kim; chữ đặt trên nó dùng Mực tàu ($8.2:1$) |
+
+Mọi màu chữ đạt chuẩn WCAG AA ($\ge 4.5:1$). Màu không bao giờ là tín hiệu duy nhất: luôn kèm biểu tượng hoặc nhãn chữ.
 
 ### 2. Chi Tiết 5 Tab Chức Năng Ở Thanh Điều Khiển Dưới Cùng
 1. **Tab [Tu Luyện & Hành Động] (Tốn AP):** Chứa danh sách các việc làm trong năm theo độ tuổi (Luyện nội công, Nghiên cứu kiếm phổ, Làm nhiệm vụ sư môn, Áp tiêu, Đi dạo phố thị, Bế quan).
@@ -34,7 +47,7 @@ $$\text{Tổng Điểm Luân Hồi} = \lfloor\text{Tuổi Thọ} \times 2\rfloor
 * **Trình Tạo Văn Bia Tự Động (Procedural Epitaph Generator):**
   Hệ thống ghép nối 4 cột mốc lớn nhất trong đời nhân vật thành một bài minh văn khắc trên đá (Người chơi có thể xuất ra ảnh để chia sẻ):
   * *Đoạn 1 (Xuất thân & Thiếu thời):* "Sinh năm Giáp Tý tại đất Giang Nam trong gia cảnh hàn vi, năm 8 tuổi kỳ ngộ Lão ngoan đồng nơi hang sâu..."
-  * *Đoạn 2 (Thành tựu Võ học & Danh chấn):* "Năm 25 tuổi một kiếm bại quần hùng trên đỉnh Hoa Sơn,练 thành Cửu Dương Thần Công và Độc Cô Cửu Kiếm..."
+  * *Đoạn 2 (Thành tựu Võ học & Danh chấn):* "Năm 25 tuổi một kiếm bại quần hùng trên đỉnh Hoa Sơn, luyện thành Cửu Dương Thần Công và Độc Cô Cửu Kiếm..."
   * *Đoạn 3 (Tình duyên & Ân oán):* "Trọn đời si tình cùng một vị Yêu nữ Minh Giáo, kết nghĩa kim lan cùng 2 bậc hào kiệt, dưới lưỡi kiếm đã tiễn 14 tên đại ma đầu về nơi chín suối..."
   * *Đoạn 4 (Vẫn lạc & Di sản):* "Năm 78 tuổi tọa hóa trên đỉnh Quang Minh Đỉnh, truyền lại cơ nghiệp vạn kim cùng môn tuyệt học tự sáng tạo cho trưởng tử kế thừa."
 
@@ -96,14 +109,14 @@ Mỗi kiếp người khi khép lại sẽ được hệ thống xét duyệt t�
 11. **[Tình Trường Đa Đoạn - Huyết Nhuộm Đào Hoa] (Bi kịch Đào Hoa Kiếp):**
     * *Điều kiện:* Có quan hệ tình cảm ($\ge 80$ Hảo cảm) với từ **3 Hồng nhan tri kỷ trở lên cùng lúc**, trong đó có ít nhất 1 người thuộc nguyên mẫu **[Độc Phụ Tuyệt Tình]** hoặc **[Yêu Nữ Ma Giáo]**, dẫn đến sự kiện ghen tuông bị chính các nhân tình hợp sức hạ độc/đâm chết trên giường!
 12. **[Phục Quốc Đại Mộng - Hoàng Lương Nhất Mộng] (Mô-típ Mộ Dung Phục):**
-    * *Điều kiện:* Xuất thân Thế gia (Mộ Dung gia) hoặc đầu hàng ngoại bang làm Phong Vương trong sự kiện *Sơn Hà Phá Toái*, phản bội bằng hữu và người yêu để đổi lấy ngai vàng nhưng cuối cùng thất bại trắng tay, ngồi dưới gốc cây nhận đám trẻ con làm thần dân.
+    * *Điều kiện:* Xuất thân Thế gia (Mộ Dung gia) hoặc đầu hàng ngoại bang để được phong vương trong sự kiện *Sơn Hà Phá Toái*, phản bội bằng hữu và người yêu để đổi lấy ngai vàng nhưng cuối cùng thất bại trắng tay, ngồi dưới gốc cây nhận đám trẻ con làm thần dân.
 13. **[Trọn Đời Làm Tạp Dịch - Tảo Địa Thần Tăng Ẩn Mình]:**
     * *Điều kiện:* Gia nhập Thiếu Lâm / Võ Đang / Toàn Chân ở vị trí **Đệ tử Tạp dịch / Hỏa đầu tăng**, suốt 60 năm không thèm thi thăng cấp lên Nội môn mà chỉ quét chùa, đọc kinh và âm thầm luyện *Dịch Cân Kinh / Tiên Thiên Công* lên cấp $10/10$.
 14. **[Bình Phàm Tiểu Nhân Vật - An Nhiên Tự Tại]:**
     * *Điều kiện:* Không học bất kỳ môn võ công nào quá cấp 3, cả đời chỉ làm chủ quán trọ, tiều phu hoặc tiêu sư nhỏ ở Giang Nam, cưới một người vợ hiền lành, sinh 3 đứa con và qua đời trên giường bệnh ở tuổi $70$ trở lên trong sự quây quần của con cháu.
 15. **[Hồng Nhan Bạc Mệnh / Anh Hùng Đoản Mệnh]:**
     * *Điều kiện:* Đã sở hữu thiên phú cao hoặc học được Thần công nhưng bị chết trẻ trước năm **25 tuổi** do bạo phát *[Cửu Dương Tuyệt Mạch]*, bị Cừu gia của cha mẹ truy sát, hoặc uống nhầm độc dược.
-16. **[Phản Đồ Vạn Thế唾 Mạ (Thiên Cổ Tội Nhân)]:**
+16. **[Phản Đồ Vạn Thế Thóa Mạ (Thiên Cổ Tội Nhân)]:**
     * *Điều kiện:* Phản bội từ 3 môn phái trở lên trong một đời người (Học võ xong lại phản sư môn chạy sang phái khác), hoặc mở cổng thành Tương Dương cho quân Bắc Cảnh tràn vào tàn sát võ lâm.
 17. **[Khô Cốt Nơi Đáy Vực - Kỳ Ngộ Bất Thành]:**
     * *Điều kiện:* Phúc duyên $< 30$, cố tình chọn nhảy xuống vách núi tìm bí kíp khi bị truy sát nhưng không gặp cây thông hay hang động nào mà... rơi thẳng xuống đá vỡ sọ chết ngay lập tức!

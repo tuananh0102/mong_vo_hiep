@@ -51,6 +51,21 @@ DAI_SU_KIEN = ("vo_lam", "doat_bao", "son_ha", "huyet_an")
 THUOC_NOI_THUONG = 350      # Chữa Trọng thương kịp thời: Bạch Vân Hùng Đảm Hoàn (HS06 III)
 DUONG_THUONG_N = 50         # Không có thuốc: dưỡng thương [Roll: Căn cốt vs 50], thất bại Ám thương +5
 THNM_CO_BAN, THNM_TA_CONG = 0.30, 0.05  # HS06 I.4 P_THNM (song tu Chí Dương + Chí Âm)
+# Vòng 16: Ma công (Trấn phái Tà phái, Hiệp nghĩa <= -300): Uy lực và Điểm Tier như SSS, học như Trấn phái,
+# đổi lại phản phệ: P_THNM mỗi năm còn trang bị
+MA_CONG, MA_CONG_THNM, MA_CONG_HIEP_NGHIA = True, 0.03, -300
+# Vòng 17: lối chơi mẫu luyện Khinh công và mua binh khí ở Hắc Thị (HS02 II.1, HS02 IV, HS06 II.2)
+KHINH_CONG_MAU, THAN_BINH_MAU = True, True        # Thương nhân mẫu không mua binh khí (không giúp Giao chiến nhanh)
+KHINH_CONG_TRAN = {1: 4, 2: 6, 3: 8, 4: 10}       # Trần cấp Khinh công theo tier
+HAC_THI_CHU_KY, HAC_THI_P_BINH_KHI = 5, 0.70       # 5 năm 1 lần; >= 1 trong 3 món là binh khí: 1 - (2/3)^3
+HAC_THI_BINH_KHI = [(0.8, 30, 2000), (0.2, 60, 6000)]  # (trọng số, Sát thương Thần binh, giá sàn): Lợi khí, Danh khí
+HAC_THI_DAU_GIA = (1.0, 1.5)  # Giá chốt = giá sàn x U(1; 1,5)
+# Vòng 18: Dịch Dung (HS01 II.3, HS06 V.4): [Ám] làm khi Dịch Dung lộ ngay 5%; khi bị rò rỉ hằng năm,
+# 2/3 số lần tội đổ lên kẻ bị giả dạng (việc đó rời danh sách, người chơi không mất Thanh danh)
+DICH_DUNG_GIA, DICH_DUNG_LO_NGAY, DICH_DUNG_DO_TOI = 1500, 0.05, 2 / 3
+TRUY_NA_HIEP_NGHIA = 40  # HS06 II.1: săn tiền thưởng thành công, Hiệp nghĩa +40 (công khai)
+AM_SAT_THAT_BAI_DICH_DUNG = True  # thất bại khi Dịch Dung: mục tiêu nhìn thấy mặt giả, thành 1 việc [Ám] chưa lộ
+AN_DANH_DUNG = -150  # Chính sách mẫu: sát thủ ẩn danh ngừng nhận hợp đồng khi chỉ còn 1 lần lộ là thành Đại ma đầu (Thanh danh <= -300)
 # Vòng 7: Sai phái sư môn (HS04 I.1, HS06 II.1): 1 AP, Bậc 2 - 4, đi cùng đồng môn nên không tử trận
 SAI_PHAI = {2: (50, 150), 3: (100, 250), 4: (150, 350)}  # thù lao theo bậc
 SAI_PHAI_N = {2: 30, 3: 40, 4: 50}                       # [Giao chiến nhanh: N], thất bại chỉ mất thù lao
@@ -398,6 +413,10 @@ LOI_CHOI = {
     # Gia cảnh Phú Thương (HS06 II.4), không vào môn phái, dồn AP vào sản nghiệp
     "Thương nhân": dict(can_cot=45, ngo_tinh=65, phuc_duyen=55, tien=1000, thu_nhap_nha=50,
                         he="duong", mon_phai=False, ta=False, thuong=True),
+    # Vòng 18: sát thủ Hắc Phong Lâu giấu mặt, không môn phái; giết người đầu tiên lúc 16 tuổi (Hiệp nghĩa -100 [Ám]),
+    # mua Dịch Dung ngay khi đủ tiền, tối đa 1 hợp đồng / năm, không móc túi
+    "Sát thủ ẩn danh": dict(can_cot=55, ngo_tinh=55, phuc_duyen=55, tien=20, thu_nhap_nha=5,
+                            he="am", mon_phai=False, ta=True, an_danh=True),
 }
 
 
@@ -421,12 +440,15 @@ class Doi:
     ta: bool
     chuyen_tu: bool = False
     thuong: bool = False
+    an_danh: bool = False
     tuoi: int = 0
     cc_dinh: float = 0
     bac: int = 0
     cong_hien: float = 0
     danh_vong: float = 0
     thanh_danh: float = 0
+    hiep_nghia: float = 0      # Hiệp nghĩa thật (HS01 II.2): Thanh danh trừ các việc [Ám] chưa lộ
+    dich_dung: bool = False
     no: float = 0
     no_nam: int = 0
     am_thuong: int = 0
@@ -436,6 +458,8 @@ class Doi:
     truong_lao: int = 0
     noi: list = field(default_factory=list)
     ngoai: list = field(default_factory=list)
+    khinh: list = field(default_factory=list)
+    than_binh: int = 0
     nguon: dict = field(default_factory=dict)
     moc: dict = field(default_factory=dict)
     chet: int = 0
@@ -444,6 +468,8 @@ class Doi:
     ngan_kho: float = 0
     am: list = field(default_factory=list)   # Hành động [Ám] chưa bại lộ: giá trị Hiệp nghĩa đã trừ
     so_lan_bai_lo: int = 0
+    so_do_toi: int = 0
+    so_hop_dong: int = 0
     so_am: int = 0
     moc_tui_nam: float = 0
     nguyen_nhan: str = ""
@@ -475,11 +501,21 @@ class Doi:
     def canh_gioi(self):
         return max((m.cap for m in self.noi), default=0)
 
+    @property
+    def ma_cong(self):
+        """Đang trang bị Ma công: Trấn phái của Tà phái khi Hiệp nghĩa thật <= -300."""
+        return MA_CONG and self.ta and self.hiep_nghia <= MA_CONG_HIEP_NGHIA and any(m.tier == 3 for m in self.ngoai)
+
+    def tier_chien(self, m):
+        """Tier dùng cho Uy lực và Điểm Tier: Ma công tính như SSS."""
+        return 4 if m.tier == 3 and self.ma_cong else m.tier
+
     def vo_gia(self):
-        best = max(self.ngoai, key=lambda m: UY_LUC[m.tier] * (1 + m.cap / 5), default=Mon(1, 1))
+        best = max(self.ngoai, key=lambda m: UY_LUC[self.tier_chien(m)] * (1 + m.cap / 5), default=Mon(1, 1))
         return VoGia(can_cot=self.can_cot, ngo_tinh=self.ngo_tinh, tuoi=self.tuoi,
                      canh_gioi=self.canh_gioi, he=self.he if self.noi else "ngoai",
-                     tier=best.tier, cap_vo=best.cap, phuc_duyen=self.phuc_duyen)
+                     tier=self.tier_chien(best), cap_vo=best.cap, phuc_duyen=self.phuc_duyen,
+                     khinh_cong=max((m.cap for m in self.khinh), default=0), than_binh=self.than_binh)
 
     @property
     def tier_cao(self):
@@ -529,15 +565,26 @@ def mo_khoa_mon(d, tier):
         d.ngoai.append(Mon(tier))
     if not any(m.tier >= tier for m in d.noi):
         d.noi.append(Mon(tier))
+    if KHINH_CONG_MAU and not any(m.tier >= tier for m in d.khinh):
+        d.khinh.append(Mon(tier))
 
 
 def luyen(d):
     """1 AP luyện công vào môn mới nhất còn chưa max, ưu tiên track đang thấp hơn."""
     tracks = [max(d.noi, key=lambda m: m.tier), max(d.ngoai, key=lambda m: m.tier)]
     tracks = [m for m in tracks if m.cap < 10]
-    if not tracks:
+    m = min(tracks, key=lambda m: (m.cap, m in d.noi)) if tracks else None
+    # Khinh công: chỉ môn có cấp cao nhất được tính, nên chọn môn rẻ nhất để vượt cấp hiện tại (chi phí = số cấp
+    # còn thiếu x Tier factor); luyện khi Chiến lực / AP không thấp hơn track chính (5 điểm / cấp so với 10),
+    # hòa thì chọn Khinh công vì còn giúp bỏ chạy
+    kc = max((x.cap for x in d.khinh), default=0)
+    ung_vien = [x for x in d.khinh if KHINH_CONG_TRAN[x.tier] > kc]
+    if ung_vien:
+        k = min(ung_vien, key=lambda x: (kc + 1 - x.cap) * TIER_FACTOR[x.tier])
+        if m is None or CL_KHINH_CONG / ((kc + 1 - k.cap) * TIER_FACTOR[k.tier]) >= CL_CAP / TIER_FACTOR[m.tier]:
+            m = k
+    if m is None:
         return
-    m = min(tracks, key=lambda m: (m.cap, m in d.noi))
     sp = SU_PHU_THEO_BAC.get(d.bac, 0) if d.mon_phai and d.bac and m.tier <= TIER_THEO_BAC[d.bac] else 0
     m.tien_do += tien_do(d.ngo_tinh, sp, m.tier)
     if m.tien_do >= 100:
@@ -573,12 +620,22 @@ def thang_cap(d, rng):
 
 
 def lam_am(d, rng, gia_tri, am_sat=False):
-    """Ghi 1 hành động [Ám] (HS01 II.3): 20% bại lộ ngay, còn lại cộng vào danh sách chưa lộ."""
+    """Ghi 1 hành động [Ám] (HS01 II.3): 20% bại lộ ngay (5% khi Dịch Dung), còn lại cộng vào danh sách chưa lộ."""
     d.so_am += 1
-    if rng.random() < BAI_LO_TUC_THOI:
+    d.hiep_nghia -= gia_tri
+    if rng.random() < (DICH_DUNG_LO_NGAY if d.dich_dung else BAI_LO_TUC_THOI):
         bai_lo(d, gia_tri, am_sat)
     else:
-        d.am.append((gia_tri, am_sat))
+        d.am.append((gia_tri, am_sat, d.dich_dung))
+
+
+def ro_ri(d, rng):
+    """Bại lộ hằng năm (HS01 II.3): 1 việc [Ám] chưa lộ bị rò rỉ; việc làm khi Dịch Dung có thể đổ tội cho kẻ bị giả dạng."""
+    gia_tri, am_sat, dich_dung = d.am.pop(rng.randrange(len(d.am)))
+    if dich_dung and rng.random() < DICH_DUNG_DO_TOI:
+        d.so_do_toi += 1
+        return
+    bai_lo(d, gia_tri, am_sat)
 
 
 def bai_lo(d, gia_tri, am_sat=False):
@@ -672,7 +729,8 @@ def kinh_doanh(d, rng, su_kien, ap):
         d.hang = ()
     if dung < ap and d.song_bac:
         dung += 1
-        d.thanh_danh -= SONG_BAC_THANH_DANH
+        d.thanh_danh -= SONG_BAC_THANH_DANH  # việc công khai: Hiệp nghĩa đổi theo (HS01 II.2)
+        d.hiep_nghia -= SONG_BAC_THANH_DANH
         if rng.random() < SONG_BAC_BAO_KE and not d.ho_vien and not giao_chien_nhanh(d, rng, 60):
             pass  # bị bảo kê lấy trắng năm đó
         else:
@@ -702,15 +760,21 @@ def kinh_doanh(d, rng, su_kien, ap):
 
 def viec_kiem_tien(d, rng, so_am_sat):
     """Chọn 1 việc kiếm tiền phù hợp nhất hiện có. Trả về True nếu đã làm."""
-    if d.ta and d.tuoi >= 18 and d.thanh_danh <= -100 and not d.truy_sat and so_am_sat[0] < 2:
+    if d.ta and d.tuoi >= 18 and d.hiep_nghia <= -100 and not d.truy_sat and so_am_sat[0] < (1 if d.an_danh else 2) \
+            and (not d.an_danh or (d.dich_dung and d.thanh_danh > AN_DANH_DUNG)):  # sát thủ ẩn danh: có Dịch Dung, chưa sát mức Đại ma đầu
         so_am_sat[0] += 1
+        d.so_hop_dong += 1
         npc = npc_ngang(d, rng)
         kq = quyet_dau(d.vo_gia(), npc, rng)
         if kq["thang"]:
             thu(d, "Ám sát thuê", rng.uniform(400, 1500))
             lam_am(d, rng, 100, am_sat=True)
         else:
-            bai_lo(d, 100, am_sat=True)  # hợp đồng thất bại = bại lộ ngay
+            if d.dich_dung and AM_SAT_THAT_BAI_DICH_DUNG:
+                lam_am(d, rng, 100, am_sat=True)
+            else:
+                d.hiep_nghia -= 100
+                bai_lo(d, 100, am_sat=True)  # hợp đồng thất bại = bại lộ ngay
             if thua_tran_sinh_tu(d, rng, npc, kq):
                 d.chet = d.tuoi
         return True
@@ -718,12 +782,14 @@ def viec_kiem_tien(d, rng, so_am_sat):
         if giao_chien_nhanh(d, rng, SAI_PHAI_N[d.bac]):  # thất bại: nhiệm vụ hỏng, không thù lao
             thu(d, "Sai phái sư môn", rng.uniform(*SAI_PHAI[d.bac]))
         return True
-    if d.tier_cao >= 2 and d.tuoi >= 18 and d.gia_san < TRUY_NA_NGUONG:
+    if d.tier_cao >= 2 and d.tuoi >= 18 and d.gia_san < TRUY_NA_NGUONG and not d.an_danh:
         npc = npc_ngang(d, rng, TRUY_NA_SUC)
         kq = quyet_dau(d.vo_gia(), npc, rng)
         if kq["thang"]:
             thu(d, "Săn tiền thưởng", rng.uniform(*TRUY_NA_THUONG))
             d.danh_vong += DANH_VONG_THANG_TRAN
+            d.hiep_nghia += TRUY_NA_HIEP_NGHIA
+            d.thanh_danh += TRUY_NA_HIEP_NGHIA
         elif thua_tran_sinh_tu(d, rng, npc, kq):
             d.chet = d.tuoi
         return True
@@ -738,7 +804,7 @@ def viec_kiem_tien(d, rng, so_am_sat):
                 return True
         thu(d, "Áp tiêu", thu_lao)
         return True
-    if d.ta and d.tuoi >= 7 and d.gia_san < TRUY_NA_NGUONG:  # chỉ làm việc vặt khi còn khát tiền
+    if d.ta and not d.an_danh and d.tuoi >= 7 and d.gia_san < TRUY_NA_NGUONG:  # chỉ làm việc vặt khi còn khát tiền
         thu(d, "Móc túi", rng.uniform(20, 80))
         d.moc_tui_nam += 15  # HS01 II.3: móc túi cả năm gộp thành 1 hành động [Ám], ghi ở cuối năm
         if rng.random() < 0.20:
@@ -763,9 +829,8 @@ def tuoi_bat_dau_lao_hoa(canh_gioi):
 def song_mot_doi(ten, rng, tuoi_cuoi=120, ghi_nam=False):
     d = Doi(ten=ten, **{k: v for k, v in LOI_CHOI[ten].items()})
     d.cc_dinh = d.can_cot
-    if d.ta:
-        d.thanh_danh = 0
     anh_chup = {}
+    hac_thi = rng.randrange(HAC_THI_CHU_KY)  # năm Hắc Thị mở so với năm sinh
     su_kien, truoc = {}, None
     for moc in MOC_SU_KIEN:  # HS01: bốc 1 trong 4, không lặp sự kiện ở mốc liền trước
         truoc = rng.choice([k for k in DAI_SU_KIEN if k != truoc])
@@ -787,6 +852,13 @@ def song_mot_doi(ten, rng, tuoi_cuoi=120, ghi_nam=False):
             if tuoi >= d.age_max:
                 d.chet, d.nguyen_nhan = tuoi, "Tẩu hỏa nhập ma"
                 break
+        if d.ma_cong and rng.random() < MA_CONG_THNM:  # Ma công phản phệ: không tán công, chịu tổn thương
+            d.so_thnm += 1
+            d.am_thuong += 5
+            d.can_cot = max(0, d.can_cot - THNM_CAN_COT)
+            if tuoi >= d.age_max:
+                d.chet, d.nguyen_nhan = tuoi, "Tẩu hỏa nhập ma"
+                break
         # Nợ: lãi 20%/năm
         if d.no > 0:
             d.no *= 1.20
@@ -797,7 +869,7 @@ def song_mot_doi(ten, rng, tuoi_cuoi=120, ghi_nam=False):
             d.truy_sat -= 1
         # Bại lộ hằng năm (HS01 II.3)
         if d.am and rng.random() < min(BAI_LO_TOI_DA, BAI_LO_MOI_NAM * len(d.am)):
-            bai_lo(d, *d.am.pop(rng.randrange(len(d.am))))
+            ro_ri(d, rng)
         # Thu nhập tự động
         if tuoi <= 15 and d.thu_nhap_nha:
             thu(d, "Gia đình", d.thu_nhap_nha)
@@ -821,9 +893,17 @@ def song_mot_doi(ten, rng, tuoi_cuoi=120, ghi_nam=False):
             d.bac = 1
             mo_khoa_mon(d, 1)
             if d.ta:
-                d.thanh_danh = -150   # Khảo nghiệm Tinh Túc [A], HS03
+                d.thanh_danh = d.hiep_nghia = -150   # Khảo nghiệm Tinh Túc [A], HS03: Hiệp nghĩa -150, Căn cốt +10
+                d.can_cot += 10
         if not d.mon_phai and tuoi == 16 and not d.ngoai:
             mo_khoa_mon(d, 1)       # Lãng khách tự mua bí kíp nhập môn
+            if d.an_danh:
+                lam_am(d, rng, 100)  # án mạng đầu tiên, mở cửa Hắc Phong Lâu (Hiệp nghĩa <= -100)
+        if d.an_danh and not d.dich_dung and d.tien >= DICH_DUNG_GIA + 100:  # Hắc Thị (HS06 V.4)
+            d.tien -= DICH_DUNG_GIA
+            d.nguon["Mua Dịch Dung (âm)"] = -DICH_DUNG_GIA
+            d.dich_dung = True
+            d.moc.setdefault("dich_dung", tuoi)
         # Kỳ ngộ: nâng 1 tier bí kíp (HS06 I.3, vùng Giang Nam +1%)
         if tuoi >= 10 and d.ngoai and rng.random() < 0.02 + d.phuc_duyen * 0.0012 + 0.01 + 0.5 * d.tuyet_canh:
             tier = rng.choices([t for _, t in KY_NGO_TIER], weights=[w for w, _ in KY_NGO_TIER])[0]
@@ -837,6 +917,18 @@ def song_mot_doi(ten, rng, tuoi_cuoi=120, ghi_nam=False):
         # Phân bổ AP
         so_am_sat = [0]
         ap = ap_moi_nam(tuoi, d.canh_gioi)
+        # Hắc Thị Đấu Giá Hội (HS06 II.2): 1 AP đi đấu giá
+        if THAN_BINH_MAU and not d.thuong and tuoi >= 18 and (tuoi + hac_thi) % HAC_THI_CHU_KY == 0 \
+                and d.than_binh < 60 and rng.random() < HAC_THI_P_BINH_KHI:
+            _, sat, gia = rng.choices(HAC_THI_BINH_KHI, weights=[w for w, _, _ in HAC_THI_BINH_KHI])[0]
+            gia *= rng.uniform(*HAC_THI_DAU_GIA)
+            # Chính sách mẫu: chỉ mua khi mua xong không phải quay lại săn truy nã
+            if sat > d.than_binh and d.tien >= gia and d.gia_san - gia >= TRUY_NA_NGUONG:
+                d.tien -= gia
+                d.nguon["Mua binh khí Hắc Thị (âm)"] = d.nguon.get("Mua binh khí Hắc Thị (âm)", 0) - gia
+                d.than_binh = sat
+                d.moc.setdefault(f"than_binh{sat}", tuoi)
+                ap -= 1
         if d.thuong and tuoi >= 16:
             mua_san_nghiep(d, rng, ap)
             ap -= kinh_doanh(d, rng, su_kien, ap)
@@ -885,6 +977,7 @@ def song_mot_doi(ten, rng, tuoi_cuoi=120, ghi_nam=False):
                 d.quy_mo = "vua"
         d.tien_max = max(d.tien_max, d.gia_san)
         d.thanh_danh = clamp(d.thanh_danh, -1000, 1000)  # HS01: thang -1000..+1000
+        d.hiep_nghia = clamp(d.hiep_nghia, -1000, 1000)
         d.danh_vong = min(d.danh_vong, 1000)              # HS01: 0..1000
         if ghi_nam:  # (Chiến lực, Danh vọng hiển thị, chức) mỗi năm, cho mô phỏng 200 NPC
             d.lich_su[tuoi] = (d.vo_gia().chien_luc if d.ngoai else 0, d.dv,
@@ -892,7 +985,8 @@ def song_mot_doi(ten, rng, tuoi_cuoi=120, ghi_nam=False):
         if tuoi in MOC_BAO_CAO:
             anh_chup[tuoi] = dict(tien=d.gia_san, no=d.no, dv=d.dv, dvcn=d.danh_vong, vl=d.vo_gia().vo_luc if d.ngoai else 0, chuc=d.bac if d.mon_phai else (5 if d.quy_mo else 0), td=d.thanh_danh, kho=d.ngan_kho,
                                   tier=d.tier_cao, cap=max((m.cap for m in d.ngoai), default=0),
-                                  cg=d.canh_gioi, cl=d.vo_gia().chien_luc if d.ngoai else 0)
+                                  cg=d.canh_gioi, cl=d.vo_gia().chien_luc if d.ngoai else 0,
+                                  kc=max((m.cap for m in d.khinh), default=0), hn=d.hiep_nghia)
     if not d.chet:
         d.chet = tuoi_cuoi + 1
     return d, anh_chup
@@ -907,8 +1001,8 @@ def bao_cao_vong_doi(rng, n=2000):
     for ten in LOI_CHOI:
         doi = [song_mot_doi(ten, rng) for _ in range(n)]
         out += [f"### {ten}", ""]
-        out += ["| Tuổi | Còn sống | Tiền (trung vị) | Tiền P10 / P90 | Đang nợ | Danh vọng (TV) | Võ học cao nhất (TV) | Cảnh giới NC (TV) | Chiến lực (TV) |",
-                "| ---: | ---: | ---: | ---: | ---: | ---: | :--- | ---: | ---: |"]
+        out += ["| Tuổi | Còn sống | Tiền (trung vị) | Tiền P10 / P90 | Đang nợ | Danh vọng (TV) | Võ học cao nhất (TV) | Cảnh giới NC (TV) | Khinh công (TV) | Chiến lực (TV) |",
+                "| ---: | ---: | ---: | ---: | ---: | ---: | :--- | ---: | ---: | ---: |"]
         for t in MOC_BAO_CAO:
             snap = [a[t] for _, a in doi if t in a]
             if not snap:
@@ -920,7 +1014,8 @@ def bao_cao_vong_doi(rng, n=2000):
             out.append(f"| {t} | {pct(len(snap) / n)} | {trung_vi(ts):,.0f} | {p10:,.0f} / {p90:,.0f} | "
                        f"{pct(sum(s['no'] > 0 for s in snap) / len(snap))} | "
                        f"{trung_vi([s['dv'] for s in snap]):.0f} | tier {tier:.0f}, cấp {cap:.0f} | "
-                       f"{trung_vi([s['cg'] for s in snap]):.0f} | {trung_vi([s['cl'] for s in snap]):.0f} |")
+                       f"{trung_vi([s['cg'] for s in snap]):.0f} | {trung_vi([s['kc'] for s in snap]):.0f} | "
+                       f"{trung_vi([s['cl'] for s in snap]):.0f} |")
         tong = {}
         for d, _ in doi:
             for k, v in d.nguon.items():
@@ -953,6 +1048,10 @@ def bao_cao_vong_doi(rng, n=2000):
         for t, nhan in [(2, "Thượng thừa"), (3, "Trấn phái"), (4, "SSS")]:
             ages = [d.moc[f"ky_ngo_tier{t}"] for d, _ in doi if f"ky_ngo_tier{t}" in d.moc]
             out.append(f"* Nhận bí kíp {nhan} qua kỳ ngộ: {pct(len(ages) / n)} số đời")
+        for sat, nhan in [(30, "Lợi khí"), (60, "Danh khí")]:
+            ages = [d.moc[f"than_binh{sat}"] for d, _ in doi if f"than_binh{sat}" in d.moc]
+            out.append(f"* Mua {nhan} ở Hắc Thị: {pct(len(ages) / n)} số đời"
+                       + (f", tuổi trung vị {trung_vi(ages):.0f}" if ages else ""))
         if any(d.truc_xuat for d, _ in doi):
             out.append(f"* Bị trục xuất khi tranh ngôi Chưởng môn (giữ võ công): {pct(sum(d.truc_xuat for d, _ in doi) / n)}")
         if any(d.quy_mo for d, _ in doi):
@@ -964,6 +1063,15 @@ def bao_cao_vong_doi(rng, n=2000):
                        f"Thanh danh lúc cuối đời (trung vị): {trung_vi([d.thanh_danh for d, _ in doi]):.0f}; "
                        "lúc 20 / 30 / 50 / 70 tuổi: " + " / ".join(
                            f"{trung_vi([a[t]['td'] for _, a in doi if t in a]):.0f}" for t in (20, 30, 50, 70)))
+            if any(d.dich_dung for d, _ in doi):
+                s50 = [a[50] for _, a in doi if 50 in a]
+                out.append(f"* Dịch Dung: mua ở {pct(sum(d.dich_dung for d, _ in doi) / n)} số đời, tuổi trung vị "
+                           f"{trung_vi([d.moc['dich_dung'] for d, _ in doi if 'dich_dung' in d.moc]):.0f}; "
+                           f"hợp đồng ám sát trung bình {statistics.mean(d.so_hop_dong for d, _ in doi):.1f} / đời, "
+                           f"đổ tội thành công {statistics.mean(d.so_do_toi for d, _ in doi):.1f} lần / đời; "
+                           f"Hiệp nghĩa thật lúc 50 tuổi (TV): {trung_vi([s['hn'] for s in s50]):.0f}; "
+                           f"lúc 50 tuổi còn Thanh danh ≥ 0 / > -300: {pct(sum(s['td'] >= 0 for s in s50) / len(s50))}"
+                           f" / {pct(sum(s['td'] > -300 for s in s50) / len(s50))}")
         kt = [d.moc["khai_tong"] for d, _ in doi if "khai_tong" in d.moc]
         if not LOI_CHOI[ten]["mon_phai"]:
             out.append(f"* Khai Tông Lập Phái: {pct(len(kt) / n)} số đời"
@@ -1162,6 +1270,29 @@ def kiem_tra():
     d.tien, d.am_thuong = 1000, 0
     assert not thua_tran_sinh_tu(d, rng, replace(vg, ban_menh="chinh_truc"), {"bat_phan": False})
     assert d.so_trong_thuong == 1 and d.am_thuong == 0 and d.tien == 1000 - THUOC_NOI_THUONG
+    # Ma công (vòng 16): Trấn phái của Tà phái tính như SSS khi Hiệp nghĩa <= -300
+    d.ta, d.ngoai, d.hiep_nghia = True, [Mon(3, 10)], -500
+    assert d.vo_gia().tier == 4
+    d.hiep_nghia = -200
+    assert d.vo_gia().tier == 3
+    # [Ám] (vòng 18): chỉ Hiệp nghĩa giảm; khi Dịch Dung, rò rỉ có thể đổ tội và Thanh danh giữ nguyên
+    d.thanh_danh, d.hiep_nghia, d.dich_dung, d.am = 0, 0, True, []
+    lam_am(d, rng, 100)
+    assert d.hiep_nghia == -100 and d.thanh_danh in (0, -150)
+    d.thanh_danh = 0
+    for _ in range(300):
+        d.am = [(100, True, True)]
+        ro_ri(d, rng)
+    assert 0.6 < d.so_do_toi / 300 < 0.74 and d.thanh_danh == -150 * (300 - d.so_do_toi), d.so_do_toi
+    # Khinh công (vòng 17): không vượt trần theo tier; có môn Trấn phái thì luyện tiếp lên trần 8
+    d.noi, d.khinh, d.bac = [Mon(3, 10)], [Mon(1, 1)], 0
+    for _ in range(50):
+        luyen(d)
+    assert d.vo_gia().khinh_cong == KHINH_CONG_TRAN[1]
+    d.khinh.append(Mon(3))
+    for _ in range(100):
+        luyen(d)
+    assert d.vo_gia().khinh_cong == KHINH_CONG_TRAN[3]
     t = thong_ke(rng, vg, vg, 2000)
     assert 0.45 < t["thang"] < 0.55, t
     print("kiem_tra: OK")

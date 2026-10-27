@@ -1,5 +1,5 @@
 # HỒ SƠ 03: KỊCH BẢN SỰ KIỆN THƠ ẤU & THIẾU NIÊN (0 – 15 TUỔI)
-**Mục tiêu thiết kế:** Xây dựng giai đoạn định hình nhân cách, chỉ số nền tảng, các biến cố gia đình đặc trưng phong cách Kim Dung (như *Trương Vô Kỵ*, *Lệnh Hồ Xung*, *Kiều Phong*, *Dương Quá*) và các nhánh rẽ gia nhập môn phái đầu đời theo lối chơi **1in8b life**.
+**Mục tiêu thiết kế:** Xây dựng giai đoạn định hình nhân cách, chỉ số nền tảng, các biến cố gia đình đặc trưng phong cách Kim Dung (như *Trương Vô Kỵ*, *Lệnh Hồ Xung*, *Kiều Phong*, *Dương Quá*) và các nhánh rẽ gia nhập môn phái đầu đời theo lối chơi **BitLife**.
 
 ---
 
@@ -160,7 +160,7 @@ Các phái Ẩn thế không thể tự tìm đến mà chỉ kích hoạt qua *
 | Môn phái Ẩn thế | Điều kiện Kích hoạt (Tuổi $10 - 14$) | Kịch bản Nhập môn tóm tắt |
 | :--- | :--- | :--- |
 | **Cổ Mộ Phái** | Giới tính Nữ (hoặc Nam có *Mị lực $\ge 75$, Phúc duyên $\ge 65$*), từng bị phản bội hoặc mồ côi. | Bị kẻ thù hoặc đạo sĩ Toàn Chân truy đuổi, chạy lạc vào rừng hoa sơn trà phía sau Chung Nam Sơn, được tôn chủ áo trắng cứu và bắt thề suốt đời không bước chân khỏi Cổ Mộ. |
-| **Tiêu Dao Phái** | *Ngộ tính $\ge 80$* **VÀ** *Mị lực $\ge 80$*. Đã học ít nhất 2 kỹ năng cầm - kỳ - thi - họa lúc $6 - 10$ tuổi. | Giải thế cờ "Trân Lung" do một nho sĩ bày ở quán trà Giang Nam `[Roll: Cờ vs 60]`. *Thành công:* được đưa về Lăng Ba Động truyền thụ *Bắc Minh Thần Công*. *Thất bại:* nho sĩ để lại 1 quân cờ ngọc ([Quân Cờ Trân Lung], Cờ $+10$), sự kiện xuất hiện lại đúng 1 lần vào năm sau nếu vẫn trong độ tuổi $10 - 14$. |
+| **Tiêu Dao Phái** | *Ngộ tính $\ge 80$* **VÀ** *Mị lực $\ge 80$*. Đã học ít nhất 2 kỹ năng cầm - kỳ - thi - họa lúc $6 - 10$ tuổi. | Giải thế cờ "Trân Lung" do một nho sĩ bày ở quán trà Giang Nam (phóng tác: nguyên tác do Tô Tinh Hà bày ở Lôi Cổ Sơn, bí kíp ở Vô Lượng Sơn) `[Roll: Cờ vs 60]`. *Thành công:* được đưa về Lang Hoàn Phúc Địa (nguyên tác) truyền thụ *Bắc Minh Thần Công*. *Thất bại:* nho sĩ để lại 1 quân cờ ngọc ([Quân Cờ Trân Lung], Cờ $+10$), sự kiện xuất hiện lại đúng 1 lần vào năm sau nếu vẫn trong độ tuổi $10 - 14$. |
 | **Đào Hoa Đảo** | Đang ở vùng Giang Nam/Đông Hải, *Ngộ tính $\ge 75$*, tính tình cổ quái (*Hiệp nghĩa từ $-200$ đến $+200$*). | Con thuyền đi biển gặp bão dạt vào đảo đầy hoa đào. Tự mình đi qua trận pháp *Kỳ Môn Ngũ Hành* không cần người dẫn đường `[Roll: Ngộ tính vs 75 HOẶC Kỳ môn vs 50]`. *Thành công:* Đảo chủ kinh ngạc nhận làm đồ đệ. *Thất bại:* lạc trong rừng đào 3 ngày, được một gia nhân câm điếc dẫn ra bờ; Đảo chủ cho thuyền đưa về đất liền kèm cuốn *Kỳ Môn Nhập Môn* (Kỳ môn $+15$). |
 
 ---

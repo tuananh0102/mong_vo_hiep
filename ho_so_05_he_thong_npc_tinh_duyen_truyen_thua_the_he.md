@@ -73,7 +73,7 @@ Trong giang hồ, mỗi khi người chơi chọn kết liễu mạng sống c�
 
 ## IV. HỆ THỐNG HẬU DUỆ, CHỐNG LẠM PHÁT DI SẢN & TRUYỀN THỪA THẾ HỆ
 
-Đây là cơ chế cốt lõi giữ chân người chơi hàng trăm giờ giống với dòng game *1in8b life*: **Cái chết không phải là kết thúc (Game Over), mà là sự chuyển giao đầy thử thách cho thế hệ tiếp theo.**
+Đây là cơ chế cốt lõi giữ chân người chơi hàng trăm giờ giống với dòng game *BitLife*: **Cái chết không phải là kết thúc (Game Over), mà là sự chuyển giao đầy thử thách cho thế hệ tiếp theo.**
 
 ### 1. Sinh Con & Nuôi Dạy Hậu Duệ
 Sau khi Kết hôn (hoặc có sự kiện *"Phong lưu một đêm"* ở tửu lầu/kỹ viện), người chơi có tỷ lệ sinh con.

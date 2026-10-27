@@ -932,3 +932,191 @@ Các biến thể đã thử (cùng thế giới, tỷ lệ "thắng Hoa Sơn 1 
 * 🟡 Có thể chấp nhận cho một kết cục đỉnh cao, nhưng nên lưu ý: các lối chơi mẫu không chủ động săn Thần công SSS hay Thần binh. Người chơi tối ưu cho kết cục này (săn kỳ ngộ SSS, giữ Cảnh giới ≥ 8, có Thần binh) sẽ đạt cao hơn; cần một lối chơi mẫu "Võ si" để đo trước khi chốt.
 * 🟡 Tà phái vẫn 0% ở mọi chỉ số Phong Vân Bảng (xem 15.5).
 * ✅ **Quyết định (2026-10-26):** giữ kết cục #1 ở mức 0 - 1% như một kết cục đỉnh cao; không thêm lối chơi mẫu "Võ si".
+
+## 18. Vòng cân bằng 16 (Tà phái và Thập Đại Cao Thủ)
+
+Kết quả ở [KET_QUA.md](KET_QUA.md); vòng 15 lưu ở [KET_QUA_vong15.md](KET_QUA_vong15.md).
+
+### 18.1. Chẩn đoán
+
+Ở vòng 15, Chiến lực đỉnh của Tà phái hẹp bất thường: P50 334, P90 335, đúng bằng $30 + 100 + 100 + 2 \times 45 + 15$.
+Tà phái mẫu không thiếu luyện công (lên cấp võ 10 và Cảnh giới 10 lúc 50 tuổi, sớm hơn Chính phái); toàn bộ khoảng cách nằm ở **Căn cốt**:
+
+| Nguyên nhân | Căn cốt mất | Chiến lực mất | Loại |
+| :--- | ---: | ---: | :--- |
+| Script bỏ sót *Căn cốt +10* của lựa chọn [A] khảo nghiệm Tinh Túc (HS03 mục 4), chỉ áp Hiệp nghĩa -150 | 10 | 20 | Lỗi mô phỏng |
+| Tuổi 11 - 18 Tà phái mẫu móc túi thay vì Làm thuê (Làm thuê: Căn cốt +1/năm, HS06 II.1) | khoảng 7 | khoảng 14 | Giả định lối chơi |
+| Chính phái mẫu khởi đầu Căn cốt 55, Tà phái 45 | 10 | 20 | Giả định lối chơi |
+
+Có một hiệu ứng ngược: với Căn cốt 45 < 50, Tà phái mẫu không đủ điều kiện Áp tiêu, nên khi đã giàu (≥ 5.000 lạng, ngừng móc túi và săn truy nã) AP kiếm tiền rơi vào luyện công, biến Tà phái mẫu thành "chuyên tu" ngoài ý muốn.
+Sửa lỗi +10 Căn cốt làm Tà phái đủ điều kiện Áp tiêu, nên đỉnh trung vị **giảm** 334 → 292 trong khi P90 tăng 335 → 355; vào Top 10 chỉ tăng 0% → 9%, chiếm 1% bảng.
+
+Kết luận: với luật hiện tại, Tà phái và Chính phái tăng sức như nhau, nhưng Tà phái **không có lợi thế riêng nào** để bù cho việc mất AP vào ám sát, móc túi, và tuổi thơ không có nguồn Căn cốt.
+Trong khi đó Kim Dung luôn có ma đầu trong hàng tuyệt đỉnh (Tây Độc trong Ngũ Tuyệt, Đông Phương Bất Bại, Đinh Xuân Thu), và GDD đã hứa Ma Tâm mở khóa "Ma công tàn độc" (HS01 II.2) mà chưa cho Ma công một con số nào.
+
+### 18.2. Thay đổi đưa vào hồ sơ
+
+| Hạng mục | Nội dung | Hồ sơ |
+| :--- | :--- | :--- |
+| Ma công | Trấn phái của Tà phái (Hấp Tinh, Hóa Công, Huyết Hải Ma Công, Vạn Cổ Phệ Tâm Quyết) khi Hiệp nghĩa ≤ -300: Uy lực 320 và Điểm Tier 45 như SSS, Tier factor vẫn 3 | HS02 II.2 (khối mới), HS06 I.5, HS01 II.2 |
+| Phản phệ | Mỗi năm còn trang bị Ma công: 3% Tẩu Hỏa Nhập Ma (Căn cốt -5, Ám thương +5, không tán công), Hàn Ngọc Sàng nhân 0,5 | HS02 II.2, HS06 I.4 |
+
+Script: hằng số `MA_CONG*`, `Doi.ma_cong`, `Doi.tier_chien`, phản phệ trong vòng năm, 2 assert; sửa lỗi Căn cốt +10 khảo nghiệm Tinh Túc.
+
+### 18.3. Quét mức phản phệ (300 đời mỗi lối, 1.500 năm thế giới)
+
+| Phản phệ / năm | Tà phái trong Thập Đại Cao Thủ (3 seed) | Đời Tà phái vào Top 10 | Tẩu Hỏa Nhập Ma TB / đời |
+| :--- | :--- | :--- | ---: |
+| Không có Ma công | 1% | 9% | 0,1 |
+| 0% | 28% | 43% | 0,1 |
+| 2% | 18% | 32% | 1,1 |
+| **3%** | **10% - 13%** | **23% - 27%** | **1,6** |
+| 5% | 6% - 9% | 16% - 19% | 2,2 |
+| 10% | 2% | 7% | 3,8 |
+
+Chọn 3%: tỷ lệ Tà phái trên bảng gần tỷ lệ NPC Tà phái (20%) nhưng thấp hơn, giữ Chính phái là dòng chính.
+
+### 18.4. Kết quả (2.000 đời, thế giới 3.000 năm, seed chính)
+
+| Chỉ số | Vòng 15 | Vòng 16 |
+| :--- | :--- | :--- |
+| Ngưỡng Top 10 Chiến lực (TV) | 357 | 361 |
+| Thành phần Thập Đại Cao Thủ | Chính 57%, chuyên tu 30%, Lãng khách 12%, Tà 0% | Chính 54%, chuyên tu 24%, **Tà 13%**, Lãng khách 9% |
+| Tà phái vào Top 10 / được mời Hoa Sơn ≥ 1 lần | 0% / 0% | **26% / 20%** |
+| Tà phái thắng Hoa Sơn ≥ 1 lần | 0% | 3% |
+| Tà phái: Chiến lực 60 tuổi (TV) | 327 | 324 |
+| Tà phái: tuổi mất TV (P10 / P90), sống tới 80 | 81 (69 / 81), 71% | **73 (63 / 83), 14%** |
+| Tà phái: Tẩu hỏa nhập ma (số đời có), chết vì Tẩu hỏa | 10%, 0% | 80%, 12% |
+| Lãng khách vào Top 10 | 28% | 20% |
+
+Mục 1 - 4 của KET_QUA.md không đổi ngoài nhiễu ngẫu nhiên.
+
+### 18.5. Nhận xét
+
+* ✅ Tà phái có chỗ trên Phong Vân Bảng (13% Thập Đại Cao Thủ, 1/5 đời Tà phái nhận Anh Hùng Thiếp), nhờ đặc quyền riêng chứ không phải nhờ nới luật chung.
+* ✅ Cái giá đúng tinh thần Kim Dung: Tà phái sống ngắn hơn khoảng 8 năm, 12% chết vì Tẩu hỏa nhập ma (Âu Dương Phong hóa điên, Đông Phương Bất Bại). Vẫn có 70% đời Tà phái sống tới 70 tuổi (mốc của kết cục #14), dù một phần trong số đó sau này chết vì Tẩu hỏa chứ không mất tự nhiên.
+* 🟡 Người chơi Tà phái tối ưu sẽ **tán Ma công lúc về già** để dừng phản phệ (Chiến lực lúc đó đã giảm theo tuổi). Lối chơi mẫu chưa làm điều này, nên tuổi thọ Tà phái ở trên là cận dưới. Nên thêm vào kịch bản một sự kiện "Phế bỏ ma công, quy y" để người chơi có lựa chọn này một cách có chủ đích.
+* 🟡 Lãng khách vào Top 10 giảm 28% → 20% vì bảng là tương đối: Tà phái chiếm chỗ của những người ở sát ngưỡng.
+* 🟡 Ma công tính như SSS về Uy lực nên Tà phái nào có thêm kỳ ngộ SSS cũng không mạnh hơn nữa (đã ở trần tier). Đây là chủ ý: kỳ ngộ SSS là con đường của Chính phái, Ma công là con đường của Tà phái.
+
+## 19. Vòng cân bằng 17 (lối chơi mẫu luyện Khinh công và mua binh khí)
+
+Kết quả ở [KET_QUA.md](KET_QUA.md); vòng 16 lưu ở [KET_QUA_vong16.md](KET_QUA_vong16.md).
+Bảng vòng đời có thêm cột "Khinh công (TV)" và các dòng "Mua Lợi khí / Danh khí ở Hắc Thị".
+
+### 19.1. Phát hiện 1: tier của môn Khinh công không có giá trị
+
+Chiến lực (+5 / cấp), Giảm trừ (+2% / cấp), Roll ra đòn trước và Roll Thân Pháp đều chỉ dùng **Cấp** Khinh công (HS01 II.5, HS06 I.4, I.5).
+Môn Nhập môn (Tier factor 1) lên cấp rẻ gấp 3 lần môn Trấn phái và 5 lần môn SSS, nên theo luật cũ người chơi hợp lý luôn luyện Kim Nhạn Công lên cấp 10 và bỏ qua Lăng Ba Vi Bộ.
+Mô phỏng chính sách "chọn môn rẻ nhất để vượt cấp hiện tại": **100%** đời Chính phái dùng khinh công Nhập môn đến cuối đời, Khinh công cấp 10 từ trước 40 tuổi ở mọi lối chơi trong môn phái.
+
+Sửa (HS02 II.1, HS01 II.5): **trần cấp theo tier**: Nhập môn 4, Thượng thừa 6, Trấn phái 8, SSS 10.
+Sau khi sửa, môn Khinh công đang dùng lúc cuối đời của Chính phái: Trấn phái 55%, Nhập môn 26%, Thượng thừa 18%, SSS 1%.
+
+### 19.2. Phát hiện 2: GDD chưa có giá binh khí
+
+HS06 II.2 chỉ ghi Hắc Thị bán "Thần binh" trong khoảng giá chung 500 - 10.000 lạng; HS02 IV không nói binh khí lấy ở đâu.
+Đề xuất đưa vào hồ sơ (HS06 II.2, HS02 IV):
+
+| Hạng mục | Giá trị | Lý do |
+| :--- | :--- | :--- |
+| Phiên Hắc Thị | 5 năm 1 lần, 3 món, mỗi món 1/3 là binh khí (khoảng 70% phiên có binh khí), tốn 1 AP | Giữ nguyên HS06, chỉ thêm tỷ lệ |
+| Lợi khí (+30, +6 Chiến lực) | 80% số binh khí lên sàn, giá sàn 2.000 lạng | Rẻ hơn mua núi lập phái; mua được khoảng 40 - 50 tuổi |
+| Danh khí (+60, +12 Chiến lực) | 20%, giá sàn 6.000 lạng | Tiêu được khoản dư của tuổi 55+ |
+| Giá chốt | Giá sàn × 1,0 - 1,5 | NPC tranh giá |
+| Thần binh (+100) | Không bán; chỉ qua Kỳ Thư Xuất Thế hoặc kỳ ngộ SSS | Đồ Long Đao, Ỷ Thiên Kiếm là độc nhất |
+
+### 19.3. Phát hiện 3: mua binh khí khi còn ít tiền là án tử
+
+Chính sách thử đầu tiên (mua khi còn dư 2.000 lạng tiền mặt) đẩy gia sản xuống dưới 5.000, khiến lối chơi mẫu quay lại săn truy nã để bù tiền:
+
+| Chính phái | Không mua | Mua khi dư 2.000 tiền mặt | Mua khi gia sản sau mua ≥ 5.000 |
+| :--- | ---: | ---: | ---: |
+| Tử trận Hiệp 3 | 6% | **13%** | 5% |
+| Tuổi mất P10 | 77 | 53 | 70 |
+| Sống tới 80 | 85% | 70% | 76% |
+
+Lối chơi mẫu giữ chính sách thứ 3; HS06 II.2 ghi thêm cảnh báo này cho người viết hướng dẫn và AI NPC.
+Thương nhân mẫu không mua binh khí vì binh khí không giúp gì cho nghề buôn (Giao chiến nhanh chống tống tiền dùng Võ Lực, không có Thần binh); thử cho mua thì kết cục #8 giảm 10% → 4%.
+
+### 19.4. Kết quả (2.000 đời, thế giới 3.000 năm, seed chính)
+
+| Chỉ số | Vòng 16 | Vòng 17 |
+| :--- | :--- | :--- |
+| Khinh công TV lúc 30 / 60 / 80 tuổi (Chính phái) | 0 / 0 / 0 | 4 / 4 / 8 |
+| Khinh công TV lúc 60 tuổi (chuyên tu / Tà / Lãng khách / Thương nhân) | 0 | 8 / 4 / 4 / 4 |
+| Mua Lợi khí / Danh khí (Chính phái) | - | 85% (51 tuổi) / 26% (68 tuổi) |
+| Mua Lợi khí / Danh khí (Tà phái) | - | 91% (43 tuổi) / 34% (59 tuổi) |
+| Chi cho binh khí cả đời (TB, Chính / Tà / Lãng khách / chuyên tu) | - | 3.970 / 4.802 / 3.721 / 2.019 lạng |
+| Tiền TV lúc 70 tuổi (Chính phái) | 16.580 | 10.020 |
+| Chiến lực TV lúc 60 tuổi (Chính / Tà / Lãng khách / chuyên tu) | 309 / 324 / 307 / 353 | 321 / 362 / 319 / 393 |
+| Ngưỡng Top 10 Chiến lực (TV) | 361 | **393** |
+| Tuổi Thập Đại Cao Thủ (TV, P10 - P90) | 53 (47 - 59) | 56 (51 - 62) |
+| Thành phần Thập Đại Cao Thủ | Chính 54%, chuyên tu 24%, Tà 13%, Lãng khách 9% | Chính 55%, chuyên tu 27%, Tà 14%, **Lãng khách 4%** |
+| Vào Top 10 (Chính / Tà / Lãng khách / chuyên tu) | 42% / 26% / 20% / 92% | 41% / 30% / **7%** / 84% |
+| Kết cục #1 mới (mọi lối chơi) | 0 - 1% | 0% |
+| Kết cục #8 (Thương nhân) | 10% | 11% |
+| Tử trận Hiệp 3 (Chính phái) | 6% | 5% |
+
+Mục 1, 3, 4 của KET_QUA.md không đổi ngoài nhiễu (Tam Hiệp và hiệu chuẩn Chiến lực đã có Khinh công, Thần binh từ vòng 12).
+
+### 19.5. Nhận xét
+
+* ✅ Khinh công giờ có lựa chọn thật: môn Nhập môn rẻ để lên nhanh 4 cấp lúc trẻ, môn Trấn phái / SSS là mục tiêu dài hạn khi võ học chính đã gần max.
+* ✅ Hắc Thị là kênh đốt tiền hiệu quả cho tuổi trung niên (Chính phái giảm khoảng 6.500 lạng lúc 70 tuổi) mà không làm ai mắc nợ, nếu người chơi không mua khi đang khát tiền.
+* ✅ Ngưỡng Top 10 tăng 32 điểm nhưng là tăng đều (mọi người cùng có Khinh công, binh khí), thứ tự lối chơi giữ nguyên trừ Lãng khách. Chiến lực tối đa thực tế khoảng 410 (SSS 10/10, Cảnh giới 10, Căn cốt 60, Khinh công 10, Danh khí), dưới trần lý thuyết 630 ở HS01 II.8.
+* 🟠 **Lãng khách tụt khỏi Thập Đại Cao Thủ** (9% → 4% bảng, 20% → 7% đời vào Top 10). Lãng khách mẫu dồn khoảng 3/4 AP vào kiếm tiền, nên không còn AP luyện khinh công Trấn phái sau khi lên cấp 4, trong khi người trong môn phái (đặc biệt chuyên tu) có thêm 20 Chiến lực từ khinh công cấp 8. Nguyên nhân gốc là lối chơi mẫu (Lãng khách là lính đánh thuê), không phải luật; nhưng nếu muốn hình mẫu Lệnh Hồ Xung / Dương Quá có chỗ trên bảng, cần một lối chơi "Lãng khách tu luyện" hoặc nguồn khinh công cao cấp cho người không môn phái (kỳ ngộ khinh công riêng).
+* 🟡 Thần binh +100 chưa có trong mô phỏng vì chỉ có 2 món trong cả thiên hạ; ảnh hưởng của nó lên Phong Vân Bảng là chuyện của 1 - 2 người, không đổi phân bố.
+
+## 20. Vòng cân bằng 18 (lối chơi "ma đầu ẩn mình" qua ám sát thuê)
+
+Kết quả ở [KET_QUA.md](KET_QUA.md); vòng 17 lưu ở [KET_QUA_vong17.md](KET_QUA_vong17.md).
+
+### 20.1. Sửa mô phỏng: tách Hiệp nghĩa thật khỏi Thanh danh
+
+Mục 10.5 đã ghi script dùng Thanh danh thay cho Hiệp nghĩa làm cổng nhận ám sát.
+Giờ `Doi.hiep_nghia` là chỉ số riêng: việc [Ám] chỉ trừ Hiệp nghĩa, việc công khai đổi cả hai (khảo nghiệm Tinh Túc, sòng bạc -10/năm, săn tiền thưởng +40 theo HS06 II.1, trước đây script bỏ sót).
+Cổng Hắc Phong Lâu (Hiệp nghĩa ≤ -100) và cổng Ma công (≤ -300) dùng Hiệp nghĩa thật.
+Các lối chơi cũ không đổi ngoài nhiễu (Tà phái mẫu làm việc ác công khai từ 12 tuổi nên hai chỉ số gần như trùng nhau), trừ Thanh danh Thương nhân lúc 50 tuổi giờ là +210 nhờ săn tiền thưởng.
+
+### 20.2. Chẩn đoán: vì sao không giấu được
+
+Lối chơi mẫu mới **"Sát thủ ẩn danh"**: Lãng khách không môn phái, giết người đầu tiên lúc 16 tuổi (Hiệp nghĩa -100 [Ám], mở cửa Hắc Phong Lâu), mua Dịch Dung (1.500 lạng, HS06 V.4) ngay khi đủ tiền, chỉ nhận hợp đồng khi đã Dịch Dung, tối đa 1 hợp đồng/năm, không móc túi, không săn truy nã (Hiệp nghĩa +40 sẽ tự đóng cửa Hắc Phong Lâu).
+
+Với luật cũ, mỗi hợp đồng sớm muộn đều thành một lần lộ:
+
+* **Thua là lộ ngay.** Mục tiêu là NPC ngang sức nên khoảng 40% hợp đồng thất bại; HS06 II.1 cho thất bại bại lộ tức thời, kể cả khi đang Dịch Dung.
+* **Thắng thì rò rỉ dần.** Xác suất bại lộ hằng năm là 2% × số việc chưa lộ, nên số lần lộ tăng theo bình phương thời gian. Mô hình riêng (chỉ cơ chế bại lộ, 20.000 lần): 1 hợp đồng/năm, đã giảm lộ ngay còn 5% nhờ Dịch Dung, lần lộ đầu rơi vào năm thứ 6 (trung vị) và 30 năm lộ trung bình 7,7 lần (Thanh danh -1.150).
+
+Dịch Dung trong GDD đã hứa "giết người rồi đổ vấy tội cho kẻ mình giả dạng" (HS06 V.4) nhưng chưa có luật nào cho việc đó.
+
+### 20.3. Thay đổi đưa vào hồ sơ
+
+| Luật | Nội dung | Hồ sơ |
+| :--- | :--- | :--- |
+| Đổ tội | Việc [Ám] làm khi Dịch Dung, nếu bị chọn ở bước bại lộ hằng năm: 2/3 khả năng tội đổ cho kẻ bị giả dạng (việc đó rời danh sách, người chơi không mất Thanh danh), 1/3 lộ như thường | HS01 II.3, HS06 V.4 |
+| Thất bại khi Dịch Dung | Hợp đồng ám sát thất bại lúc Dịch Dung không lộ ngay mà thành 1 việc [Ám] chưa lộ | HS06 II.1 |
+
+Mô hình riêng, 1 hợp đồng/năm trong 20 năm, Thanh danh khởi đầu 0: tỷ lệ còn trên mức Đại ma đầu (≤ 2 lần lộ) theo tỷ lệ đổ tội: 0 → 16%, 1/2 → 50%, **2/3 → 66%**, 0,8 → 78%; với 2 hợp đồng/năm: 3% / 18% / 31% / 44%. Chọn 2/3: sát thủ cẩn thận thường giấu được, kẻ tham thì không.
+
+### 20.4. Kết quả trong vòng đời (1.000 đời mỗi biến thể)
+
+| Biến thể | Hợp đồng / đời | Bị lộ / đời | Thu từ ám sát | Thanh danh > -300 lúc 50 tuổi | Thanh danh TV lúc 50 / 70 |
+| :--- | ---: | ---: | ---: | ---: | :--- |
+| Sát thủ kỷ luật (ngừng khi Thanh danh ≤ -150), luật cũ | 1,2 | 1,8 | 621 | 69% | -150 / -150 |
+| **Sát thủ kỷ luật, luật mới** | **5,5** | 2,0 | 2.843 | 71% | -150 / -150 |
+| Sát thủ trọn đời (không ngừng), luật cũ | 19,3 | 13,7 | 9.878 | 7% | -1.000 / -1.000 |
+| Sát thủ trọn đời, luật mới | 30,8 | 5,2 | 15.284 | 26% | -450 / -750 |
+| Thử thêm: thời hiệu 10 năm cho việc làm khi Dịch Dung, trọn đời (không đưa vào) | khoảng 32 * | 4,0 | 16.526 | 31% | - |
+| Thử thêm: chỉ nhận mục tiêu hạng Yếu như bảng truy nã, trọn đời (không đưa vào) | khoảng 32 * | 5,5 | 14.391 | 26% | - |
+
+* Hai dòng thử thêm chạy trước khi script có bộ đếm hợp đồng; số đo được là 33,5 và 33,7 việc [Ám] mỗi đời, gồm cả án mạng đầu tiên lúc 16 tuổi.
+
+Lối chơi mẫu trong KET_QUA.md là bản "kỷ luật, luật mới": sống tới 80 tuổi 58% (Tà phái 14%), tuổi mất TV 82, gần như không vào Top 10 (1%) vì không môn phái và không có tai tiếng để lấy Danh vọng.
+
+### 20.5. Nhận xét
+
+* ✅ Hai luật Dịch Dung giảm số lần lộ mỗi hợp đồng khoảng 3 lần và kéo dài sự nghiệp giấu mặt gấp khoảng 4,5 lần (1,2 → 5,5 hợp đồng trước khi phải dừng). Dịch Dung giờ là món đồ có giá trị rõ cho lối chơi Hắc đạo.
+* ✅ Hai cách làm ác giờ khác nhau rõ: **Đại ma đầu lừng danh** (Tà phái: lộ nhiều, Thanh danh -1.000, nhưng tai tiếng cho Danh vọng và Anh Hùng Thiếp) và **sát thủ vô danh** (Thanh danh quanh -150, sống lâu, giàu vừa, không ai biết tên).
+* 🟠 **Sát thủ giấu mặt trọn đời vẫn không khả thi** (26% còn trên mức Đại ma đầu lúc 50 tuổi, Thanh danh TV -750 lúc 70) và đây là **chủ ý**: nguyên tắc "giang hồ không có bức tường nào không lọt gió" ở HS01 II.3 nghĩa là việc ác tích lũy rồi sẽ lộ. Thời hiệu 10 năm chỉ thêm 5 điểm % nên không đưa vào. Lối ra hợp lệ cho người chơi: ngừng sớm, rửa tiếng bằng Kim Bồn Tẩy Thủ từ 40 tuổi (HS04 III), hoặc tạo vỏ bọc bằng việc thiện công khai (săn truy nã +40 Thanh danh mỗi lần, nhưng cũng +40 Hiệp nghĩa nên phải giết thêm để giữ cổng Hắc Phong Lâu).
+* 🟡 Kết cục #10 Ngụy Quân Tử dùng cùng cơ chế nhưng đi qua sự kiện HS04 II.2 [B] và II.3 [C] chứ không qua ám sát thuê; chưa mô phỏng, vì cần thêm nguồn Thanh danh công khai cho Chính phái mẫu (hiện chỉ có săn truy nã).
