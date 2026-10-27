@@ -271,7 +271,7 @@ Diệt Tuyệt Thập Tam Kiếm ở Minh Giáo đổi thành Ngũ Hành Kỳ Tr
   Đề xuất bổ sung Hồ sơ 08 định nghĩa schema, ví dụ: `id, tuổi_min, tuổi_max, vùng, điều_kiện, trọng_số, lặp_lại?, lựa_chọn[{text, cổng, roll, kết_quả_thành_công, kết_quả_thất_bại, cờ_đặt}]`.
   Việc viết lại các sự kiện hiện có theo schema sẽ tự lộ ra mọi chỗ thiếu nhánh và chỉ số chưa định nghĩa.
 
-**Trạng thái (2026-10-27): ✅ Đã chốt phạm vi theo 3 cột mốc ở `ke_hoach/`** (v0.1 khoảng 60 sự kiện, v0.5 MVP 150 sự kiện như đề xuất dưới, v1.0 khoảng 500 sự kiện và đủ tính năng). Hồ sơ 08 schema viết ở task M0-04.
+**Trạng thái (2026-10-27): ✅ Đã chốt phạm vi theo 3 cột mốc ở `ke_hoach/`** (v0.1 khoảng 60 sự kiện, v0.5 MVP 150 sự kiện như đề xuất dưới, v1.0 khoảng 500 sự kiện và đủ tính năng). Hồ sơ 08 schema: đã có ở `ho_so_08_luoc_do_du_lieu.md`.
 Mô phỏng đã cho biết phần lõi nào cần cho MVP: 6 lối chơi mẫu (Chính phái, chuyên tu, Tà phái, Lãng khách, Thương nhân, Sát thủ ẩn danh) đều chạy được với các hệ thống ở HS01, HS02 V, HS04, HS06; thế giới 200 NPC chạy được bằng chính luật của người chơi (`mo_phong/BAO_CAO.md` mục 15), nên đề xuất 2 lớp NPC có thể đơn giản hóa thành "NPC là một đời mô phỏng".
 Đề xuất MVP: Trung Nguyên, 6 môn phái (Thiếu Lâm, Võ Đang, Hoa Sơn, Cái Bang, Nhật Nguyệt, Tinh Túc) đủ phủ 6 lối chơi; mục tiêu khoảng 150 sự kiện (60 cho 0 - 15 tuổi, 90 cho 16 - 80); Hồ sơ 08 schema viết sau khi chốt danh sách này.
 

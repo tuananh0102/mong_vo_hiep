@@ -96,7 +96,7 @@ Trước khi làm: đọc [README.md](README.md) mục 3 - 5 và [01_KIEN_TRUC.m
 
 ---
 
-### [ ] M0-04 Hồ sơ 08: Lược đồ dữ liệu
+### [x] M0-04 Hồ sơ 08: Lược đồ dữ liệu
 
 **Phụ thuộc:** M0-03.
 **Đọc:** 01 mục 7, 8; REVIEW mục 7 (đề xuất Hồ sơ 08).
