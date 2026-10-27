@@ -10,6 +10,7 @@ import {
 } from './cong_thuc'
 import { apHieuUng } from './hieu_ung'
 import { lanRoll, pRoll } from './kiem_dinh'
+import { chonSuKienNam } from './su_kien'
 import type { DongBienNien, TrangThaiGame } from './kieu'
 import type { Rng } from './rng'
 
@@ -192,8 +193,12 @@ const b14_datApNamMoi: HamBuoc = (d) => {
   return []
 }
 
-// Bước 15: Chọn sự kiện năm mới (01 mục 5.6, HS06 I.3). (M1-18)
-const b15_chonSuKienNam: HamBuoc = () => []
+/**
+ * Bước 15: Chọn sự kiện năm mới (01 mục 5.6, HS06 I.3).
+ */
+const b15_chonSuKienNam: HamBuoc = (d, rng, dl) => {
+  return chonSuKienNam(d, rng, dl)
+}
 
 export interface ThongTinAp {
   ap_con_lai: number

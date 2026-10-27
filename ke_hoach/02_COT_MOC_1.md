@@ -452,7 +452,7 @@ Nối các mã phái sinh vào `docChiSo` (thay chỗ `throw` ở M0-05).
 
 ---
 
-### [ ] M1-10 Chọn sự kiện năm và kỳ ngộ
+### [x] M1-10 Chọn sự kiện năm và kỳ ngộ
 
 **Phụ thuộc:** M1-05, M1-07.
 **Đọc:** 01 mục 5.6; HS06 I.3; HS01 II.7 (cấp kỳ ngộ); `05_LO_HONG_GDD.md` G04.

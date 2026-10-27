@@ -1,12 +1,12 @@
 // 01 mục 5.3, 7; HS06 I.2: Bộ chạy sự kiện và giải quyết quyết định người chơi.
-import type { DuLieu, HieuUng, KiemDinh } from '../du_lieu/luoc_do'
+import type { DuLieu, HieuUng, KiemDinh, SuKien } from '../du_lieu/luoc_do'
 import { docChiSo } from './chi_so'
-import { capKhinhCong } from './cong_thuc'
+import { capKhinhCong, pKyNgo } from './cong_thuc'
 import { danhGia } from './dieu_kien'
 import { apHieuUng } from './hieu_ung'
 import { lanRoll, pRoll, pRollNhieu } from './kiem_dinh'
-import type { DongBienNien, TrangThaiGame } from './kieu'
-import type { Rng } from './rng'
+import type { DongBienNien, LichHen, TrangThaiGame } from './kieu'
+import { chonTheoTrongSo, type Rng } from './rng'
 import { dienMau } from './van_ban'
 
 /**
@@ -339,4 +339,196 @@ export function xuLyChon(
   }
 
   return { dongMoi, loi: null }
+}
+
+/**
+ * 01 mục 5.6: Kiểm tra sự kiện có đủ điều kiện để xuất hiện:
+ * - Không phải sự kiện nối tiếp (noi_tiep).
+ * - Khớp khoảng tuổi [tuoi_min, tuoi_max].
+ * - Khớp vùng đất (nếu có khai báo vung).
+ * - Đạt điều kiện riêng (dieu_kien / Cổng ẩn cấp sự kiện).
+ * - Thỏa mãn quy tắc lặp lại (lap_lai: mot_lan, toi_da, cach_nam).
+ */
+export function duDieuKien(sk: SuKien, d: TrangThaiGame, dl: DuLieu): boolean {
+  // 1. Không phải sự kiện nối tiếp
+  if (sk.loai === 'noi_tiep') {
+    return false
+  }
+
+  // 2. Tuổi nhân vật
+  if (d.nhan_vat.tuoi < sk.tuoi[0] || d.nhan_vat.tuoi > sk.tuoi[1]) {
+    return false
+  }
+
+  // 3. Vùng đất
+  if (sk.vung && sk.vung.length > 0) {
+    if (!sk.vung.includes(d.nhan_vat.vung)) {
+      return false
+    }
+  }
+
+  // 4. Điều kiện (Cổng ẩn cấp sự kiện)
+  if (sk.dieu_kien && !danhGia(sk.dieu_kien, d, dl)) {
+    return false
+  }
+
+  // 5. Quy tắc lặp lại
+  const soLanDaGap = d.nhan_vat.su_kien_da_gap[sk.ma] ?? 0
+  if (sk.lap_lai === 'mot_lan') {
+    if (soLanDaGap >= 1) return false
+  } else if (typeof sk.lap_lai === 'object' && 'toi_da' in sk.lap_lai) {
+    if (soLanDaGap >= sk.lap_lai.toi_da) return false
+  } else if (typeof sk.lap_lai === 'object' && 'cach_nam' in sk.lap_lai) {
+    const namCuoi = d.nhan_vat.co_su_kien[`_nam_${sk.ma}`]
+    if (typeof namCuoi === 'number' && d.nhan_vat.tuoi - namCuoi < sk.lap_lai.cach_nam) {
+      return false
+    }
+  }
+
+  return true
+}
+
+/**
+ * 01 mục 5.6, HS06 I.3, G04: Chọn sự kiện năm mới cho người chơi:
+ * 1. Sự kiện cố định đến tuổi và sự kiện hẹn (lich_hen) đến hạn -> luôn vào hàng đợi.
+ * 2. Hồi Đại sự kiện năm nay (M2: tạm để trống).
+ * 3. Quay R < P_KyNgo -> chọn 1 kỳ ngộ đủ điều kiện theo trọng số.
+ * 4. Nếu chưa có sự kiện cá nhân nào: chọn 1 sự kiện thường đủ điều kiện theo trọng số.
+ * 5. Sự kiện cá nhân thứ 2: nếu không có cố định/hẹn, có thêm 25% cơ hội; tối đa 2 sự kiện cá nhân/năm.
+ * 6. Không có gì: 1 dòng năm bình lặng.
+ */
+export function chonSuKienNam(
+  d: TrangThaiGame,
+  rng: Rng,
+  dl: DuLieu,
+): DongBienNien[] {
+  // Tuổi 0: không có sự kiện ngẫu nhiên trong năm (HS01 IV, G04)
+  if (d.nhan_vat.tuoi === 0) {
+    return []
+  }
+
+  const suKienCaNhan: string[] = []
+
+  // ======================================================================
+  // 1. Sự kiện hẹn (lich_hen) & Sự kiện cố định (loai: 'co_dinh')
+  // ======================================================================
+  const lichHenConLai: LichHen[] = []
+  for (const lh of d.lich_hen) {
+    if (d.nhan_vat.tuoi >= lh.nam_mo && d.nhan_vat.tuoi <= lh.han_nam) {
+      suKienCaNhan.push(lh.su_kien)
+    } else if (d.nhan_vat.tuoi > lh.han_nam) {
+      // Quá hạn: xóa bỏ khỏi lịch hẹn
+    } else {
+      lichHenConLai.push(lh)
+    }
+  }
+  d.lich_hen = lichHenConLai
+
+  // Sự kiện cố định đến tuổi
+  if (dl.su_kien) {
+    for (const sk of Object.values(dl.su_kien)) {
+      if (sk.loai === 'co_dinh' && duDieuKien(sk, d, dl)) {
+        if (!suKienCaNhan.includes(sk.ma)) {
+          suKienCaNhan.push(sk.ma)
+        }
+      }
+    }
+  }
+
+  // ======================================================================
+  // 2. Đại sự kiện năm nay (M2: tạm để trống)
+  // ======================================================================
+
+  // ======================================================================
+  // 3. Quay xúc xắc Kỳ Ngộ: R < P_KyNgo (HS06 I.3)
+  // ======================================================================
+  const p = pKyNgo(d.nhan_vat, dl)
+  const trungKyNgo = rng.trung(p)
+
+  if (trungKyNgo && dl.su_kien) {
+    const dsKyNgo = Object.values(dl.su_kien).filter(
+      (sk) => sk.loai === 'ky_ngo' && duDieuKien(sk, d, dl) && !suKienCaNhan.includes(sk.ma),
+    )
+    if (dsKyNgo.length > 0) {
+      const chon = chonTheoTrongSo(
+        rng,
+        dsKyNgo.map((sk) => ({ gia_tri: sk.ma, trong_so: sk.trong_so ?? 1 })),
+      )
+      if (chon) {
+        suKienCaNhan.push(chon)
+      }
+    }
+  }
+
+  // ======================================================================
+  // 4. Nếu chưa có sự kiện cá nhân nào: chọn 1 sự kiện thường
+  // ======================================================================
+  if (suKienCaNhan.length === 0 && dl.su_kien) {
+    const dsThuong = Object.values(dl.su_kien).filter(
+      (sk) => sk.loai === 'thuong' && duDieuKien(sk, d, dl),
+    )
+    if (dsThuong.length > 0) {
+      const chon = chonTheoTrongSo(
+        rng,
+        dsThuong.map((sk) => ({ gia_tri: sk.ma, trong_so: sk.trong_so ?? 1 })),
+      )
+      if (chon) {
+        suKienCaNhan.push(chon)
+      }
+    }
+  }
+
+  // ======================================================================
+  // 5. Sự kiện cá nhân thứ 2 trong năm (G04): 25% nếu không có cố định/hẹn
+  // ======================================================================
+  const coCoDinhHoacHen = suKienCaNhan.some((ma) => {
+    const sk = dl.su_kien?.[ma]
+    return sk?.loai === 'co_dinh'
+  })
+
+  if (!coCoDinhHoacHen && suKienCaNhan.length === 1 && dl.su_kien) {
+    if (rng.trung(0.25)) {
+      const dsThem = Object.values(dl.su_kien).filter(
+        (sk) =>
+          sk.loai === 'thuong' &&
+          duDieuKien(sk, d, dl) &&
+          !suKienCaNhan.includes(sk.ma),
+      )
+      if (dsThem.length > 0) {
+        const chonThem = chonTheoTrongSo(
+          rng,
+          dsThem.map((sk) => ({ gia_tri: sk.ma, trong_so: sk.trong_so ?? 1 })),
+        )
+        if (chonThem) {
+          suKienCaNhan.push(chonThem)
+        }
+      }
+    }
+  }
+
+  // Giới hạn cứng: tối đa 2 sự kiện cá nhân mỗi năm
+  const ketQuaSuKien = suKienCaNhan.slice(0, 2)
+
+  // ======================================================================
+  // 6. Năm bình lặng (nếu không có sự kiện nào)
+  // ======================================================================
+  const cacDong: DongBienNien[] = []
+  if (ketQuaSuKien.length === 0) {
+    cacDong.push({
+      tuoi: d.nhan_vat.tuoi,
+      van_ban: 'Năm nay giang hồ sóng yên biển lặng, bạn bình an trải qua một năm.',
+      loai_hien_thi: 'thuong',
+    })
+  } else {
+    // Đưa vào hàng đợi sự kiện
+    d.hang_doi_su_kien.push(...ketQuaSuKien)
+
+    // Mở sự kiện đầu tiên nếu chưa có quyết định chờ
+    if (d.cho === null && d.hang_doi_su_kien.length > 0) {
+      const maDau = d.hang_doi_su_kien.shift()!
+      moSuKien(d, rng, dl, maDau)
+    }
+  }
+
+  return cacDong
 }
