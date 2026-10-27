@@ -4,6 +4,7 @@ import { kiemTraBatBien } from './bat_bien'
 import { khoiTaoKiep, thucHienChonThienPhu } from './dau_thai'
 import type { DongBienNien, Lenh, TrangThaiGame } from './kieu'
 import { rngTuSeed, taoRng } from './rng'
+import { xuLyBuocTamHiep } from './tam_hiep/hau_qua'
 import { xuLyChon } from './su_kien'
 import { quaNam } from './vong_nam'
 import { trangBi } from './vo_hoc'
@@ -113,7 +114,15 @@ export function apDung(s: TrangThaiGame, lenh: Lenh, dl: DuLieu): KetQuaLenh {
       break
     }
 
-    case 'tam_hiep':
+    case 'tam_hiep': {
+      const kq = xuLyBuocTamHiep(d, rng, dl, lenh.buoc)
+      if (kq.loi) {
+        return { trang_thai: s, dong_moi: [], loi: kq.loi }
+      }
+      dongMoi.push(...kq.dong_moi)
+      break
+    }
+
     case 'dung_vat_pham':
     case 'mua': {
       return { trang_thai: s, dong_moi: [], loi: 'chua_ho_tro' }

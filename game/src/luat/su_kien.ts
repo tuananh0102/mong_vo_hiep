@@ -3,7 +3,9 @@ import type { DuLieu, HieuUng, KiemDinh, SuKien } from '../du_lieu/luoc_do'
 import { docChiSo } from './chi_so'
 import { capKhinhCong, pKyNgo } from './cong_thuc'
 import { danhGia } from './dieu_kien'
+import { HANG_DOI_THU_MAC_DINH } from './hang_so'
 import { apHieuUng } from './hieu_ung'
+import { moTranTuSuKien } from './tam_hiep/mo_tran'
 import { lanRoll, pRoll, pRollNhieu } from './kiem_dinh'
 import type { DongBienNien, LichHen, TrangThaiGame } from './kieu'
 import { chonTheoTrongSo, type Rng } from './rng'
@@ -231,16 +233,23 @@ export function xuLyChon(
 
   if (lc.kiem_dinh) {
     if (lc.kiem_dinh.loai === 'tam_hiep') {
-      // Chuyển sang trạng thái Tam Hiệp; lưu nhánh thắng / thua để xử lý khi kết thúc trận
+      // Chuyển sang Tam Hiệp; nhánh thành công / thất bại áp khi trận xong (tam_hiep/hau_qua.ts)
+      const cheDo = lc.kiem_dinh.thang_khi === 'tru_vung' ? 'tru_vung' : lc.kiem_dinh.che_do
       d.cho = {
         loai: 'tam_hiep',
-        tran: {
-          doi_thu: lc.kiem_dinh.doi_thu,
-          che_do: lc.kiem_dinh.che_do,
-          thang: lc.thanh_cong,
-          thua: lc.that_bai,
-          bien,
-        },
+        tran: moTranTuSuKien(
+          d,
+          rng,
+          dl,
+          {
+            su_kien: ma,
+            lua_chon: lc.ma,
+            doi_thu: lc.kiem_dinh.doi_thu,
+            hang: HANG_DOI_THU_MAC_DINH,
+            bien,
+          },
+          cheDo,
+        ),
       }
       return { dongMoi: [], loi: null }
     }
@@ -257,25 +266,7 @@ export function xuLyChon(
         }
       }
 
-      if (ketQua) {
-        dongMoi.push({
-          tuoi: d.nhan_vat.tuoi,
-          van_ban: dienMau(ketQua.van_ban, d, dl, bien),
-          loai_hien_thi: sk.loai_hien_thi ?? 'thuong',
-        })
-        for (const hu of ketQua.hieu_ung) {
-          const dongSinh = apHieuUng(hu, d, rng, dl, bien)
-          if (dongSinh.length > 0) dongMoi.push(...dongSinh)
-        }
-        const tomTat = tomTatThayDoi(ketQua.hieu_ung, dl)
-        if (tomTat) {
-          dongMoi.push({
-            tuoi: d.nhan_vat.tuoi,
-            van_ban: tomTat,
-            loai_hien_thi: 'thuong',
-          })
-        }
-      }
+      if (ketQua) dongMoi.push(...apKetQua(sk, ketQua, d, rng, dl, bien))
     } else {
       // Các loại Roll: tính xác suất p thật
       const xacSuat = tinhXacSuatKiemDinh(lc.kiem_dinh, d, dl, bien)
@@ -283,62 +274,53 @@ export function xuLyChon(
       const win = lanRoll(rng, p)
       const ketQua = win ? lc.thanh_cong : lc.that_bai
 
-      if (ketQua) {
-        dongMoi.push({
-          tuoi: d.nhan_vat.tuoi,
-          van_ban: dienMau(ketQua.van_ban, d, dl, bien),
-          loai_hien_thi: sk.loai_hien_thi ?? 'thuong',
-        })
-        for (const hu of ketQua.hieu_ung) {
-          const dongSinh = apHieuUng(hu, d, rng, dl, bien)
-          if (dongSinh.length > 0) dongMoi.push(...dongSinh)
-        }
-        const tomTat = tomTatThayDoi(ketQua.hieu_ung, dl)
-        if (tomTat) {
-          dongMoi.push({
-            tuoi: d.nhan_vat.tuoi,
-            van_ban: tomTat,
-            loai_hien_thi: 'thuong',
-          })
-        }
-      }
+      if (ketQua) dongMoi.push(...apKetQua(sk, ketQua, d, rng, dl, bien))
     }
   } else if (lc.ket_qua) {
-    dongMoi.push({
-      tuoi: d.nhan_vat.tuoi,
-      van_ban: dienMau(lc.ket_qua.van_ban, d, dl, bien),
-      loai_hien_thi: sk.loai_hien_thi ?? 'thuong',
-    })
-    for (const hu of lc.ket_qua.hieu_ung) {
-      const dongSinh = apHieuUng(hu, d, rng, dl, bien)
-      if (dongSinh.length > 0) dongMoi.push(...dongSinh)
-    }
-    const tomTat = tomTatThayDoi(lc.ket_qua.hieu_ung, dl)
-    if (tomTat) {
-      dongMoi.push({
-        tuoi: d.nhan_vat.tuoi,
-        van_ban: tomTat,
-        loai_hien_thi: 'thuong',
-      })
-    }
+    dongMoi.push(...apKetQua(sk, lc.ket_qua, d, rng, dl, bien))
   }
 
-  // 5. Ghi nhận số lần đã gặp sự kiện
+  hoanTatSuKien(d, rng, dl, ma)
+  return { dongMoi, loi: null }
+}
+
+/** Áp một kết quả lựa chọn: dòng văn bản, hiệu ứng, rồi dòng tóm tắt thay đổi. */
+export function apKetQua(
+  sk: SuKien,
+  ketQua: { van_ban: string; hieu_ung: HieuUng[] },
+  d: TrangThaiGame,
+  rng: Rng,
+  dl: DuLieu,
+  bien: Record<string, string>,
+): DongBienNien[] {
+  const dongMoi: DongBienNien[] = [
+    {
+      tuoi: d.nhan_vat.tuoi,
+      van_ban: dienMau(ketQua.van_ban, d, dl, bien),
+      loai_hien_thi: sk.loai_hien_thi ?? 'thuong',
+    },
+  ]
+  for (const hu of ketQua.hieu_ung) {
+    dongMoi.push(...apHieuUng(hu, d, rng, dl, bien))
+  }
+  const tomTat = tomTatThayDoi(ketQua.hieu_ung, dl)
+  if (tomTat) dongMoi.push({ tuoi: d.nhan_vat.tuoi, van_ban: tomTat, loai_hien_thi: 'thuong' })
+  return dongMoi
+}
+
+/** Sau khi một sự kiện có kết quả: ghi nhận đã gặp rồi mở sự kiện kế trong hàng đợi (hoặc hết chờ). */
+export function hoanTatSuKien(d: TrangThaiGame, rng: Rng, dl: DuLieu, ma: string): void {
   d.nhan_vat.su_kien_da_gap[ma] = (d.nhan_vat.su_kien_da_gap[ma] ?? 0) + 1
 
-  // 6. Xử lý mở sự kiện tiếp theo
   // Nếu hiệu ứng `tiep` đã mở sự kiện mới (d.cho có ma khác), giữ nguyên
   const coTiep = d.cho?.loai === 'su_kien' && d.cho.ma !== ma
   if (!coTiep && d.ket_thuc === null) {
     if (d.hang_doi_su_kien.length > 0) {
-      const maKe = d.hang_doi_su_kien.shift()!
-      moSuKien(d, rng, dl, maKe)
+      moSuKien(d, rng, dl, d.hang_doi_su_kien.shift()!)
     } else {
       d.cho = null
     }
   }
-
-  return { dongMoi, loi: null }
 }
 
 /**
@@ -444,6 +426,7 @@ export function chonSuKienNam(
   // ======================================================================
   const p = pKyNgo(d.nhan_vat, dl)
   const trungKyNgo = rng.trung(p)
+  delete d.nhan_vat.co_su_kien['tuyet_canh'] // Tuyệt Cảnh chỉ cộng cho một lượt chọn
 
   if (trungKyNgo && dl.su_kien) {
     const dsKyNgo = Object.values(dl.su_kien).filter(

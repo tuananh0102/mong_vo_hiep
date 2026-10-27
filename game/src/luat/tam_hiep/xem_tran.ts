@@ -109,11 +109,18 @@ function dongNhatKy(e: DongNhatKy, mau: (k: string, v?: Record<string, string | 
   }
 }
 
+/** Hàm điền mẫu văn bản Tam Hiệp (`van_ban/he_thong.json`); thiếu khóa thì trả chính khóa. */
+export function taoMauTamHiep(
+  dl: DuLieu,
+  tenDoiThu: string,
+): (k: string, v?: Record<string, string | number>) => string {
+  const kho = dl.van_ban_he_thong?.tam_hiep ?? {}
+  return (k, v = {}) => dien(kho[k] ?? k, { ten: tenDoiThu, ...v })
+}
+
 /** HP / Nội tức dạng phần trăm, hiệp hiện tại, lựa chọn hợp lệ kèm độ khó, nhật ký đòn dạng câu văn. */
 export function xemTranDau(t: TranDau, dl: DuLieu, tenDoiThu = 'Đối thủ'): TranHienThi {
-  const kho = dl.van_ban_he_thong?.tam_hiep ?? {}
-  const mau = (k: string, v: Record<string, string | number> = {}): string =>
-    dien(kho[k] ?? k, { ten: tenDoiThu, ...v })
+  const mau = taoMauTamHiep(dl, tenDoiThu)
   return {
     che_do: t.che_do,
     hiep: t.hiep,

@@ -1,6 +1,7 @@
 // 01 mục 4.1: kiểu trạng thái game. Trạng thái là object JSON thuần (không class, Map, Date, hàm).
 // Tên trường đúng cột "Mã dữ liệu" ở HS01 II.8 (quy tắc 5 AGENTS.md).
 import type { TrangThaiRng } from './rng'
+import type { TranDau } from './tam_hiep/tran'
 
 export type MaGiaCanh = string
 export type MaVung = string
@@ -169,7 +170,7 @@ export interface TheGioi {
 export type Cho =
   | { loai: 'chon_thien_phu'; lua_chon: [MaThienPhu, MaThienPhu, MaThienPhu] }
   | { loai: 'su_kien'; ma: string; bien: Record<string, string> }
-  | { loai: 'tam_hiep'; tran: unknown }
+  | { loai: 'tam_hiep'; tran: TranDau }
   | { loai: 'chuyen_giai_doan'; ma: string }
 
 /** Sự kiện hẹn (DSL `len_lich`). */

@@ -5,6 +5,7 @@ import type { NhanDoKho } from './kiem_dinh'
 import { nhanDoKho, pRoll } from './kiem_dinh'
 import type { Cho, DongBienNien, KetThuc, TrangThaiGame } from './kieu'
 import { tinhXacSuatKiemDinh } from './su_kien'
+import { xemTranDau, type TranHienThi } from './tam_hiep/xem_tran'
 import { dienMau } from './van_ban'
 
 export interface LuaChonHienThi {
@@ -40,6 +41,7 @@ export interface DuLieuManHinh {
   cho: Cho | null
   ket_thuc: KetThuc | null
   su_kien?: SuKienHienThi | null
+  tam_hiep?: TranHienThi | null
 }
 
 /**
@@ -138,6 +140,10 @@ export function xemManHinh(d: TrangThaiGame, dl: DuLieu): DuLieuManHinh {
     cho: d.cho,
     ket_thuc: d.ket_thuc,
     su_kien: d.cho?.loai === 'su_kien' ? xemSuKien(d, dl) : null,
+    tam_hiep:
+      d.cho?.loai === 'tam_hiep'
+        ? xemTranDau(d.cho.tran, dl, d.cho.tran.ngu_canh?.bien[d.cho.tran.ngu_canh.doi_thu] ?? 'Đối thủ')
+        : null,
   }
 }
 

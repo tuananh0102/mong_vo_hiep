@@ -14,6 +14,7 @@ import {
   HE_SO_THAM_DO,
   KHAC_H1,
   TIEU_HAO_MP_HIEP2,
+  TUYET_SAT,
 } from '../hang_so'
 import { pRoll } from '../kiem_dinh'
 import type { BuocTamHiep, HuongTamHiep, LuaChonPhanDinh } from '../kieu'
@@ -62,6 +63,18 @@ export interface KetQuaTran {
   thoat?: boolean
 }
 
+/** Hạng đối thủ công khai, quyết định Danh vọng thắng / thua (HS01 II.2). */
+export type HangDoiThu = 'de_tu' | 'truong_lao' | 'chuong_mon'
+
+/** Sự kiện đã mở trận: để áp nhánh `thanh_cong` / `that_bai` khi trận xong (M1-11c). */
+export interface NguCanhTran {
+  su_kien: string
+  lua_chon: string
+  doi_thu: string
+  hang: HangDoiThu
+  bien: Record<string, string>
+}
+
 /** Bên a là người chơi, bên b là đối thủ. */
 export interface TranDau {
   che_do: CheDoTran
@@ -81,10 +94,14 @@ export interface TranDau {
   ko_h1: boolean
   ko_som: boolean
   hp_yeu_h2: number
+  /** Ẩn với người chơi: NPC áp đảo có định Tuyệt sát không (HS02 V.3), gieo khi vào Hiệp 3 trận `sinh_tu`. */
+  npc_tuyet_sat: boolean
+  ngu_canh: NguCanhTran | null
   ket_qua: KetQuaTran | null
 }
 
 export interface ThamSoTranDau {
+  ngu_canh?: NguCanhTran
   a: VoGiaTran
   b: VoGiaTran
   che_do: CheDoTran
@@ -129,6 +146,8 @@ export function taoTranDau(ts: ThamSoTranDau): TranDau {
     ko_h1: false,
     ko_som: false,
     hp_yeu_h2: 0,
+    npc_tuyet_sat: false,
+    ngu_canh: ts.ngu_canh ?? null,
     ket_qua: null,
   }
 }
@@ -252,11 +271,15 @@ function sangHiep3(t: TranDau, rng: Rng, choPhepBatPhan: boolean): void {
   t.hiep = 3
   t.buoc = 'phan_dinh'
   t.ben_ap_dao = ad.length === 0 && choPhepBatPhan ? null : chonBenApDao(t, ad, rng)
+  // HS02 V.3: chỉ trận sinh tử, NPC áp đảo người chơi mới có thể Tuyệt sát, theo bản mệnh
+  if (t.ben_ap_dao === 'b' && t.che_do === 'sinh_tu') {
+    t.npc_tuyet_sat = rng.so() < (TUYET_SAT[t.b.vg.ban_menh] ?? 0)
+  }
 }
 
 export function luaChonPhanDinh(t: TranDau): LuaChonPhanDinh[] {
   if (t.buoc !== 'phan_dinh') return []
-  const tyThi = t.che_do === 'ty_thi'
+  const tyThi = t.che_do !== 'sinh_tu' // tỷ thí và trụ vững không có sát chiêu
   if (t.ben_ap_dao === null) return ['hoa', 'lieu_mang']
   if (t.ben_ap_dao === 'a') return tyThi ? ['thu_kiem'] : ['tuyet_sat', 'phe_vo_cong', 'thu_kiem']
   return tyThi ? ['dau_hang'] : ['bo_chay', 'dau_hang', 'nhay_vuc']

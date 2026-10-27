@@ -31,6 +31,18 @@
     "nhat_ky.phan_dinh.lieu_mang": "Hai bên liều mạng đánh tiếp.",
     "nhat_ky.phan_dinh.bo_chay": "Bạn thi triển Khinh công bỏ chạy.",
     "nhat_ky.phan_dinh.dau_hang": "Bạn đầu hàng chịu nhục.",
-    "nhat_ky.phan_dinh.nhay_vuc": "Bạn nhảy xuống vách núi."
+    "nhat_ky.phan_dinh.nhay_vuc": "Bạn nhảy xuống vách núi.",
+    "ket_thuc.thang": "Bạn thắng {ten} trong trận Quyết Đấu Tam Hiệp.",
+    "ket_thuc.thua": "Bạn thua {ten} trong trận Quyết Đấu Tam Hiệp.",
+    "ket_thuc.hoa": "Bạn và {ten} hòa nhau, hẹn ngày tái đấu.",
+    "ket_thuc.ha_guc": "Đòn cuối của bạn khiến {ten} gục xuống, không dậy nổi.",
+    "ket_thuc.tuyet_sat": "Bạn tung đòn tuyệt sát, {ten} đã chết.",
+    "ket_thuc.phe_vo_cong": "Bạn phế bỏ võ công của {ten}, kẻ ấy sống mà như đã chết.",
+    "ket_thuc.thu_kiem": "Bạn thu kiếm nhường nhịn, {ten} cúi đầu thừa nhận.",
+    "ket_thuc.tha_mang": "{ten} tha mạng, bạn mang trọng thương.",
+    "ket_thuc.thoat": "Bạn thoát thân khỏi tay {ten}.",
+    "ket_thuc.nhay_vuc_song": "Bạn rơi xuống vực sâu mà không chết, thoát khỏi tay {ten}.",
+    "ket_thuc.khong_coc_day_vuc": "Bạn nhảy xuống vực sâu, từ đó không ai tìm thấy xương cốt.",
+    "ket_thuc.tu_tran": "Bạn tử trận dưới tay {ten}."
   }
 }

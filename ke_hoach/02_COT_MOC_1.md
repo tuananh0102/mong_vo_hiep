@@ -504,7 +504,7 @@ Task lớn, làm theo 4 phần, mỗi phần một commit.
 
 **Test:** trận tương tác với lựa chọn cố định cho cùng kết quả như `quyetDauTuDong` khi ép cùng lựa chọn và cùng RNG; không lệnh sai bước nào được nhận.
 
-#### [ ] M1-11c Hậu quả trận và Quy tắc Cứu Mạng
+#### [x] M1-11c Hậu quả trận và Quy tắc Cứu Mạng
 
 **Tạo:** `tam_hiep/hau_qua.ts`, `game/test/tam_hiep_hau_qua.test.ts`.
 

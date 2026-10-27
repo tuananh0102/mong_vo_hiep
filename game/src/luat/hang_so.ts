@@ -122,3 +122,20 @@ export const TUYET_SAT: Record<string, number> = {
   chinh_truc: 0.0,
 }
 
+// HS01 II.2: Danh vọng khi thắng Tam Hiệp công khai theo hạng đối thủ; thua công khai trừ một nửa.
+// GIẢ ĐỊNH (M1-11c): chưa có dữ liệu NPC nên mặc định hạng 'truong_lao' (+20), khớp DANH_VONG_THANG_TRAN của mo_phong.py.
+export const DANH_VONG_THANG_TRAN = {
+  de_tu: 5,
+  truong_lao: 20,
+  chuong_mon: 50,
+} as const
+export const HANG_DOI_THU_MAC_DINH = 'truong_lao'
+
+// HS06 I.3: Trạng Thái Tuyệt Cảnh (nhảy vực)
+export const TUYET_CANH_PHUC_DUYEN_CAO = 60
+export const TUYET_CANH_PHUC_DUYEN_THAP = 30
+export const TUYET_CANH_SONG_TRAN = 0.95 // HS02 V.4: không lối thoát nào 100%
+export const TUYET_CANH_NGUONG_ROLL = 45
+export const TUYET_CANH_AM_THUONG = 5
+export const TUYET_CANH_CONG_KY_NGO = 0.5
+

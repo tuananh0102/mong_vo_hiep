@@ -19,6 +19,7 @@ import {
   LAO_HOA_CANH_GIOI,
   LAO_HOA_THUONG,
   TIER_FACTOR,
+  TUYET_CANH_CONG_KY_NGO,
   UY_LUC,
 } from './hang_so'
 import type { NhanVat } from './kieu'
@@ -491,15 +492,16 @@ export function danhVongHienThi(nv: NhanVat): number {
  * HS06 I.3: Tỷ lệ xuất hiện Kỳ Ngộ Hiếm (P_KyNgo).
  * P_KyNgo = 2% + (Phúc Duyên * 0.12%) + Hệ Số Vùng Đất + Trạng Thái Tuyệt Cảnh.
  * Hệ Số Vùng Đất: Trung Nguyên (+0%), Giang Nam (+1%), Tây Vực / Nam Cương / Bắc Cảnh (+4%).
- * (M1: chưa có Tuyệt Cảnh).
+ * Trạng Thái Tuyệt Cảnh: cờ `tuyet_canh` do nhảy vực thành công (Phúc duyên >= 60) đặt, +50% một lượt.
  */
 export function pKyNgo(nv: NhanVat, dl?: DuLieu): number {
   void dl
+  const tuyetCanh = nv.co_su_kien['tuyet_canh'] ? TUYET_CANH_CONG_KY_NGO : 0
   let heSoVung = 0.0
   if (nv.vung === 'giang_nam') {
     heSoVung = 0.01
   } else if (nv.vung === 'tay_vuc' || nv.vung === 'nam_cuong' || nv.vung === 'bac_canh') {
     heSoVung = 0.04
   }
-  return 0.02 + nv.phuc_duyen * 0.0012 + heSoVung
+  return 0.02 + nv.phuc_duyen * 0.0012 + heSoVung + tuyetCanh
 }
