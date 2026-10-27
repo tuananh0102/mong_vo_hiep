@@ -202,7 +202,7 @@ export function ketThucTran(
     const lc = sk?.lua_chon.find((c) => c.ma === nc.lua_chon)
     const nhanh = ketCuc === 'thang' ? lc?.thanh_cong : lc?.that_bai
     if (sk && nhanh) dong.push(...apKetQua(sk, nhanh, d, rng, dl, nc.bien))
-    hoanTatSuKien(d, rng, dl, nc.su_kien)
+    dong.push(...hoanTatSuKien(d, rng, dl, nc.su_kien))
   }
   return dong
 }

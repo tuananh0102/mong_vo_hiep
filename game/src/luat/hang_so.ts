@@ -139,3 +139,29 @@ export const TUYET_CANH_NGUONG_ROLL = 45
 export const TUYET_CANH_AM_THUONG = 5
 export const TUYET_CANH_CONG_KY_NGO = 0.5
 
+
+// HS04 I.1: Bậc môn phái - yêu cầu thăng bậc (tuổi tối thiểu, Cống hiến)
+export const BAC_YEU_CAU: Record<number, { tuoi: number; cong_hien: number }> = {
+  2: { tuoi: 16, cong_hien: 100 },
+  3: { tuoi: 20, cong_hien: 300 },
+  4: { tuoi: 28, cong_hien: 700 },
+  5: { tuoi: 35, cong_hien: 1500 },
+}
+export const BAC_CHUONG_MON = 5
+export const CONG_HIEN_NHIEM_VU = 50
+export const CONG_HIEN_THANG_CAP = 100
+export const CONG_HIEN_TRUOT_2_LAN = 50
+export const TUOI_NGOAI_MON_TOI_DA = 18
+
+// HS06 II.1: Trợ cấp đệ tử môn phái theo bậc (lạng/năm, tự động, 0 AP)
+export const TRO_CAP: Record<number, number> = { 1: 10, 2: 30, 3: 50, 4: 200 }
+
+// HS04 I.1: Sai phái sư môn - thù lao (lạng) và ngưỡng [Giao chiến nhanh] theo bậc
+export const SAI_PHAI: Record<number, { thu_lao: [number, number]; nguong: number }> = {
+  2: { thu_lao: [50, 150], nguong: 30 },
+  3: { thu_lao: [100, 250], nguong: 40 },
+  4: { thu_lao: [150, 350], nguong: 50 },
+}
+
+// HS02 I (G19): Giá Tàng Kinh Các (Cống hiến) theo tier võ học
+export const GIA_TANG_KINH_CAC: Record<number, number> = { 1: 50, 2: 150, 3: 400 }

@@ -73,6 +73,9 @@ export interface ThanhVienMonPhai {
   bac: number
   cong_hien: number
   tu_tuoi: number
+  // HS04 I.1: thất bại thử thách thăng cấp liên tiếp và tuổi lần thất bại gần nhất (thử lại sau 1 năm)
+  truot_cap?: number
+  nam_truot?: number
 }
 
 /** Kết cục #16 đếm số lần phản môn. */

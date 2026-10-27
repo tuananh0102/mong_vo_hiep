@@ -9,7 +9,7 @@
   "dieu_kien_gia_nhap": {
     "va": [
       { "la": "gioi_tinh", "trong": ["nam"] },
-      { "so": "hiep_nghia", "op": ">=", "gt": 0 },
+      { "so": "thanh_danh", "op": ">=", "gt": 0 },
       { "so": "can_cot", "op": ">=", "gt": 50 }
     ]
   },

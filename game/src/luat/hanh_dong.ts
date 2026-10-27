@@ -7,6 +7,7 @@ import { apHieuUng } from './hieu_ung'
 import { lanRoll, pRoll } from './kiem_dinh'
 import type { DongBienNien, TrangThaiGame } from './kieu'
 import type { Rng } from './rng'
+import { doiTangKinhCac, roiPhai, saiPhaiSuMon } from './mon_phai'
 import { luyenCong } from './vo_hoc'
 
 export type HamXuLyHanhDong = (
@@ -241,6 +242,20 @@ export const BANG_XU_LY: Record<string, HamXuLyHanhDong> = {
           loai_hien_thi: 'thuong',
         },
       ],
+    }
+  },
+
+  // HS04 I.1: Sai phái sư môn (Bậc 2 - 4)
+  sai_phai_su_mon: (d, rng, dl) => saiPhaiSuMon(d, rng, dl),
+
+  // HS02 I (G19): đổi Cống hiến lấy võ học ở Tàng Kinh Các
+  tang_kinh_cac: (d, _rng, dl, thamSo) => doiTangKinhCac(d, dl, String(thamSo?.vo_hoc ?? '')),
+
+  // HS01 II.6: tự rời môn phái
+  roi_mon_phai: (d) => {
+    roiPhai(d, 'tu_roi')
+    return {
+      dong_moi: [{ tuoi: d.nhan_vat.tuoi, van_ban: 'Bạn từ biệt sư môn, xuống núi làm Lãng khách.', loai_hien_thi: 'thuong' }],
     }
   },
 

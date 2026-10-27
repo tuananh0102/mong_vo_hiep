@@ -529,7 +529,7 @@ Task lớn, làm theo 4 phần, mỗi phần một commit.
 
 ---
 
-### [ ] M1-12 Môn phái
+### [x] M1-12 Môn phái
 
 **Phụ thuộc:** M1-01, M1-11.
 **Đọc:** HS04 I.1 (toàn bộ); HS02 I (điều kiện 4 phái); HS06 II.1 (trợ cấp, Sai Phái), II.2 (sinh hoạt phí trong môn phái); HS01 II.6; `mo_phong.py` hàm `thang_cap`; `05_LO_HONG_GDD.md` G17, G19.

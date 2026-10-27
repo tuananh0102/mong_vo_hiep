@@ -3,6 +3,7 @@ import type { DuLieu, HieuUng } from '../du_lieu/luoc_do'
 import { congChiSo } from './chi_so'
 import type { DongBienNien, TrangThaiGame } from './kieu'
 import type { Rng } from './rng'
+import { datBac, datMonPhai, roiPhai } from './mon_phai'
 import { hocVoHoc } from './vo_hoc'
 
 function apCong(hu: { cong: Record<string, number>; no_neu_thieu?: string }, d: TrangThaiGame, dl: DuLieu): void {
@@ -117,25 +118,12 @@ function apMatVatPham(hu: { mat_vat_pham: string; so_luong?: number }, d: TrangT
   }
 }
 
-function apGiaNhapMonPhai(hu: { gia_nhap_mon_phai: string; bac?: number }, d: TrangThaiGame): void {
-  d.nhan_vat.mon_phai = {
-    ma: hu.gia_nhap_mon_phai,
-    bac: hu.bac ?? 1,
-    cong_hien: 0,
-    tu_tuoi: d.nhan_vat.tuoi,
-  }
+function apGiaNhapMonPhai(hu: { gia_nhap_mon_phai: string; bac?: number }, d: TrangThaiGame, dl: DuLieu): DongBienNien[] {
+  return datMonPhai(d, dl, hu.gia_nhap_mon_phai, hu.bac ?? 1)
 }
 
 function apRoiMonPhai(hu: { roi_mon_phai: 'tu_roi' | 'truc_xuat' | 'phan_mon' }, d: TrangThaiGame): void {
-  if (d.nhan_vat.mon_phai) {
-    d.nhan_vat.lich_su_mon_phai.push({
-      ma: d.nhan_vat.mon_phai.ma,
-      tu_tuoi: d.nhan_vat.mon_phai.tu_tuoi,
-      den_tuoi: d.nhan_vat.tuoi,
-      cach_roi: hu.roi_mon_phai,
-    })
-    d.nhan_vat.mon_phai = null
-  }
+  roiPhai(d, hu.roi_mon_phai)
 }
 
 function apCongHien(hu: { cong_hien: number }, d: TrangThaiGame): void {
@@ -144,10 +132,8 @@ function apCongHien(hu: { cong_hien: number }, d: TrangThaiGame): void {
   }
 }
 
-function apThangBac(hu: { thang_bac: number }, d: TrangThaiGame): void {
-  if (d.nhan_vat.mon_phai) {
-    d.nhan_vat.mon_phai.bac = hu.thang_bac
-  }
+function apThangBac(hu: { thang_bac: number }, d: TrangThaiGame, dl: DuLieu): DongBienNien[] {
+  return datBac(d, dl, hu.thang_bac)
 }
 
 function apDoiGiaCanh(hu: { doi_gia_canh: string }, d: TrangThaiGame): void {
@@ -243,8 +229,7 @@ export function apHieuUng(
     return []
   }
   if ('gia_nhap_mon_phai' in hu) {
-    apGiaNhapMonPhai(hu, d)
-    return []
+    return apGiaNhapMonPhai(hu, d, dl)
   }
   if ('roi_mon_phai' in hu) {
     apRoiMonPhai(hu, d)
@@ -255,8 +240,7 @@ export function apHieuUng(
     return []
   }
   if ('thang_bac' in hu) {
-    apThangBac(hu, d)
-    return []
+    return apThangBac(hu, d, dl)
   }
   if ('doi_gia_canh' in hu) {
     apDoiGiaCanh(hu, d)

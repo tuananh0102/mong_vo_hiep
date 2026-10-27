@@ -8,7 +8,7 @@
   "quy_mo": "lon",
   "dieu_kien_gia_nhap": {
     "va": [
-      { "so": "hiep_nghia", "op": ">=", "gt": 50 },
+      { "so": "thanh_danh", "op": ">=", "gt": 50 },
       { "so": "ngo_tinh", "op": ">=", "gt": 50 }
     ]
   },

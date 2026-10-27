@@ -5,6 +5,7 @@ import { capKhinhCong, pKyNgo } from './cong_thuc'
 import { danhGia } from './dieu_kien'
 import { HANG_DOI_THU_MAC_DINH } from './hang_so'
 import { apHieuUng } from './hieu_ung'
+import { ghiKetQuaThuThach, suKienThuThach } from './mon_phai'
 import { moTranTuSuKien } from './tam_hiep/mo_tran'
 import { lanRoll, pRoll, pRollNhieu } from './kiem_dinh'
 import type { DongBienNien, LichHen, TrangThaiGame } from './kieu'
@@ -280,7 +281,7 @@ export function xuLyChon(
     dongMoi.push(...apKetQua(sk, lc.ket_qua, d, rng, dl, bien))
   }
 
-  hoanTatSuKien(d, rng, dl, ma)
+  dongMoi.push(...hoanTatSuKien(d, rng, dl, ma))
   return { dongMoi, loi: null }
 }
 
@@ -309,8 +310,9 @@ export function apKetQua(
 }
 
 /** Sau khi một sự kiện có kết quả: ghi nhận đã gặp rồi mở sự kiện kế trong hàng đợi (hoặc hết chờ). */
-export function hoanTatSuKien(d: TrangThaiGame, rng: Rng, dl: DuLieu, ma: string): void {
+export function hoanTatSuKien(d: TrangThaiGame, rng: Rng, dl: DuLieu, ma: string): DongBienNien[] {
   d.nhan_vat.su_kien_da_gap[ma] = (d.nhan_vat.su_kien_da_gap[ma] ?? 0) + 1
+  const dongMoi = ghiKetQuaThuThach(d, dl, ma) // HS04 I.1: thử thách thăng cấp môn phái
 
   // Nếu hiệu ứng `tiep` đã mở sự kiện mới (d.cho có ma khác), giữ nguyên
   const coTiep = d.cho?.loai === 'su_kien' && d.cho.ma !== ma
@@ -321,6 +323,7 @@ export function hoanTatSuKien(d: TrangThaiGame, rng: Rng, dl: DuLieu, ma: string
       d.cho = null
     }
   }
+  return dongMoi
 }
 
 /**
@@ -405,6 +408,12 @@ export function chonSuKienNam(
     }
   }
   d.lich_hen = lichHenConLai
+
+  // HS04 I.1: thử thách thăng cấp môn phái đến hạn
+  const thuThach = suKienThuThach(d, dl)
+  if (thuThach && !suKienCaNhan.includes(thuThach) && !d.hang_doi_su_kien.includes(thuThach)) {
+    suKienCaNhan.push(thuThach)
+  }
 
   // Sự kiện cố định đến tuổi
   if (dl.su_kien) {
