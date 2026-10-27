@@ -393,7 +393,7 @@ Nối các mã phái sinh vào `docChiSo` (thay chỗ `throw` ở M0-05).
 
 ---
 
-### [ ] M1-07 Vòng năm và AP
+### [x] M1-07 Vòng năm và AP
 
 **Phụ thuộc:** M1-06.
 **Đọc:** 01 mục 5.4; HS01 IV; HS01 II.8 (lão hóa); HS01 III.2 (*Tư Chất Ngu Độn*); HS06 I.1 (tuổi thọ, Trọng thương); `05_LO_HONG_GDD.md` G03.
