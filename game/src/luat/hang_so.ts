@@ -205,6 +205,9 @@ export const TRUY_NA: Record<string, { suc: number; cap_them: number; thuong: [n
 
 // HS06 III: Kháng Thuốc - hiệu quả đan dược tăng vĩnh viễn ở lần dùng thứ 1, 2, 3+
 export const KHANG_THUOC: readonly number[] = [1, 0.5, 0]
+// HS06 III: Bạch Hùng Đảm Hoàn, +30 Kháng hàn trong 10 năm
+export const KHANG_HAN_THUOC = 30
+export const KHANG_HAN_NAM = 10
 // HS06 I.1 "Chữa kịp thời": thuốc trị nội thương là thuốc hồi HP giá từ 350 lạng (Bạch Vân Hùng Đảm Hoàn)
 export const GIA_THUOC_NOI_THUONG = 350
 

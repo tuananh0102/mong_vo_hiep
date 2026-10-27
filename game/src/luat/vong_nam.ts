@@ -10,7 +10,7 @@ import {
 } from './cong_thuc'
 import { apHieuUng } from './hieu_ung'
 import { lanRoll, pRoll } from './kiem_dinh'
-import { chiSinhHoat, thuNhapGiaDinh, xuLyNo } from './kinh_te'
+import { chiSinhHoat, hetKhangHanTam, thuNhapGiaDinh, xuLyNo } from './kinh_te'
 import { moiXuongNui, troCapNam } from './mon_phai'
 import { chonSuKienNam } from './su_kien'
 import type { DongBienNien, TrangThaiGame } from './kieu'
@@ -142,6 +142,8 @@ const b9_hieuUngNam: HamBuoc = (d, rng, dl) => {
   if (d.nhan_vat.tuoi > mocLaoHoa) {
     d.nhan_vat.can_cot = Math.max(0, d.nhan_vat.can_cot - 2)
   }
+
+  hetKhangHanTam(d)
 
   // Căn cốt đỉnh không giảm khi lão hóa, nhưng cập nhật nếu có hiệu ứng tăng
   d.nhan_vat.can_cot_dinh = Math.max(d.nhan_vat.can_cot_dinh, d.nhan_vat.can_cot)

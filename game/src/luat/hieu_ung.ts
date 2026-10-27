@@ -1,6 +1,7 @@
 // 01 mục 7.3: Thực thi hiệu ứng (HieuUng).
 import type { DuLieu, HieuUng } from '../du_lieu/luoc_do'
 import { congChiSo } from './chi_so'
+import { hpMax, noiTucMax } from './cong_thuc'
 import type { DongBienNien, TrangThaiGame } from './kieu'
 import { chi, thu } from './kinh_te'
 import type { Rng } from './rng'
@@ -34,12 +35,10 @@ function apCong(hu: { cong: Record<string, number>; no_neu_thieu?: string }, d: 
 function apCongPhanTram(hu: { cong_phan_tram: Record<string, number> }, d: TrangThaiGame, dl: DuLieu): void {
   for (const [ma, pt] of Object.entries(hu.cong_phan_tram)) {
     if (ma === 'hp') {
-      const hpMax = 100 + d.nhan_vat.can_cot * 12
-      const delta = Math.round((hpMax * pt) / 100)
+      const delta = Math.round((hpMax(d.nhan_vat, dl) * pt) / 100)
       congChiSo(dl, d.nhan_vat, 'hp', delta)
     } else if (ma === 'noi_tuc') {
-      const mpMax = 50 + d.nhan_vat.can_cot * 8
-      const delta = Math.round((mpMax * pt) / 100)
+      const delta = Math.round((noiTucMax(d.nhan_vat, dl) * pt) / 100)
       congChiSo(dl, d.nhan_vat, 'noi_tuc', delta)
     }
   }

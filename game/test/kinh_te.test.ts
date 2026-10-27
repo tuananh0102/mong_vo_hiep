@@ -9,6 +9,7 @@ import {
   apTieu,
   chi,
   chiSinhHoat,
+  hetKhangHanTam,
   CHU_NO_TIEU_CUC,
   sinhHoatPhi,
   thu,
@@ -313,6 +314,28 @@ describe('Chợ và đan dược (HS06 III)', () => {
     const kq = apDung(d, { loai: 'hanh_dong', ma: 'uong_dan_duoc', tham_so: { vat_pham: 'kim_sang_duoc' } }, dl)
     expect(kq.loi).toBeNull()
     expect(kq.trang_thai.nhan_vat.hp).toBeGreaterThan(5)
+  })
+})
+
+describe('Kháng hàn tạm và hồi HP', () => {
+  it('Bạch Hùng Đảm Hoàn +30 Kháng hàn, hết sau 10 năm', () => {
+    const d = taoD({ tuoi: 30, hanh_trang: { bach_hung_dam_hoan: 1 } })
+    const s = apDung(d, { loai: 'dung_vat_pham', ma: 'bach_hung_dam_hoan' }, dl).trang_thai
+    expect(s.nhan_vat.khang_han).toBe(30)
+    s.nhan_vat.tuoi = 39
+    hetKhangHanTam(s)
+    expect(s.nhan_vat.khang_han).toBe(30)
+    s.nhan_vat.tuoi = 40
+    hetKhangHanTam(s)
+    expect(s.nhan_vat.khang_han).toBe(0)
+  })
+
+  it('Kim Sáng Dược hồi 30% theo HP tối đa thật (cảnh giới / tuổi)', () => {
+    const d = taoD({ tuoi: 40, hanh_trang: { kim_sang_duoc: 1 } })
+    d.nhan_vat.hp = 1
+    const max = hpMax(d.nhan_vat, dl)
+    const hp = apDung(d, { loai: 'dung_vat_pham', ma: 'kim_sang_duoc' }, dl).trang_thai.nhan_vat.hp
+    expect(hp).toBe(1 + Math.round(max * 0.3))
   })
 })
 

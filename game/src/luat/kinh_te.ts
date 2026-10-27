@@ -11,6 +11,8 @@ import {
   DOI_NO_THANH_DANH,
   GIA_PHONG_TRO,
   GIA_THUOC_NOI_THUONG,
+  KHANG_HAN_NAM,
+  KHANG_HAN_THUOC,
   KHANG_THUOC,
   KHAU_TRU_NO,
   LAI_NO,
@@ -243,13 +245,27 @@ function nhanHieuUng(hu: HieuUng, f: number): HieuUng {
   return hu
 }
 
+const CO_KHANG_HAN = 'khang_han_tam'
+const CO_KHANG_HAN_HET = 'khang_han_tam_den_tuoi'
+
+/** Hết hạn Kháng hàn tạm của thuốc (vòng năm bước 9, sau khi tăng tuổi). */
+export function hetKhangHanTam(d: TrangThaiGame): void {
+  const nv = d.nhan_vat
+  const het = nv.co_su_kien[CO_KHANG_HAN_HET]
+  if (typeof het !== 'number' || nv.tuoi < het) return
+  const them = nv.co_su_kien[CO_KHANG_HAN]
+  nv.khang_han = Math.max(0, nv.khang_han - (typeof them === 'number' ? them : 0))
+  delete nv.co_su_kien[CO_KHANG_HAN]
+  delete nv.co_su_kien[CO_KHANG_HAN_HET]
+}
+
 const khoaDaDung = (ma: string): string => `da_dung_${ma}`
 const DAC_BIET_CHUA_CO = new Set(['chua_tan_phe', 'thien_vuong_bao_tam'])
 
 /**
  * Lệnh `dung_vat_pham` cho đan dược ngoài trận. Kháng Thuốc (HS06 III) cho món `khang_thuoc`: lần 1 trọn,
  * lần 2 còn 50%, từ lần 3 vô tác dụng (vẫn mất thuốc). Thuốc hồi HP giá từ 350 lạng là thuốc trị nội thương: xóa Trọng thương.
- * Chưa có hiệu ứng ở M1: Kháng hàn, hóa giải độc, chữa tàn phế (M2), Thiên Vương Bảo Tâm Đan (mang theo, tự kích hoạt trong trận).
+ * Chưa có hiệu ứng ở M1: hóa giải độc, chữa tàn phế (M2), Thiên Vương Bảo Tâm Đan (mang theo, tự kích hoạt trong trận).
  */
 export function dungVatPham(d: TrangThaiGame, dl: DuLieu, rng: Rng, ma: string): KetQuaHd {
   const nv = d.nhan_vat
@@ -279,6 +295,14 @@ export function dungVatPham(d: TrangThaiGame, dl: DuLieu, rng: Rng, ma: string):
     if (m) nv.noi_tuc_cong_them += Math.round(Number(m[1]) * f)
     else if (tag === 'xoa_toan_bo_am_thuong') nv.am_thuong = 0
     else if (tag === 'keo_dai_tuoi_tho_10') nv.tuoi_tho_cong_them += 10
+    else if (tag === 'khang_han_30_10_nam') {
+      // HS06 III: +30% Kháng hàn trong 10 năm; dùng tiếp thì cộng dồn và gia hạn
+      const them = Math.round(KHANG_HAN_THUOC * f)
+      nv.khang_han += them
+      const cu = nv.co_su_kien[CO_KHANG_HAN]
+      nv.co_su_kien[CO_KHANG_HAN] = (typeof cu === 'number' ? cu : 0) + them
+      nv.co_su_kien[CO_KHANG_HAN_HET] = nv.tuoi + KHANG_HAN_NAM
+    }
   }
   if (hoiHp && vp.gia >= GIA_THUOC_NOI_THUONG) nv.trong_thuong = false
   const moTa = f < 1 ? ` (hiệu quả còn ${Math.round(f * 100)}% vì đã quen thuốc)` : ''
