@@ -1,0 +1,44 @@
+{
+  "ma": "dung_roll",
+  "nguon": "HS03 II.1",
+  "ten": "Thử thách trèo cây hái quả",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [6, 12],
+  "vung": null,
+  "dieu_kien": null,
+  "trong_so": 10,
+  "lap_lai": "mot_lan",
+  "mo_ta": "Bạn nhìn thấy một quả chín mọng trên cành cao.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Trèo lên hái quả [Roll: Căn cốt vs 30]",
+      "kiem_dinh": {
+        "loai": "roll",
+        "chi_so": "can_cot",
+        "nguong": 30
+      },
+      "thanh_cong": {
+        "van_ban": "Bạn thoăn thoắt trèo lên và hái được quả quý.",
+        "hieu_ung": [
+          { "cong": { "can_cot": 1 } }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Bạn trượt chân ngã trầy da đầu gối.",
+        "hieu_ung": [
+          { "cong": { "hp": -10 } }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Bỏ đi không hái",
+      "ket_qua": {
+        "van_ban": "Bạn quay lưng bỏ đi tiếp tục hành trình.",
+        "hieu_ung": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "ma": "sai_that_bai_rong",
+  "nguon": "HS03 II.1",
+  "ten": "Leo núi hái thuốc",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [15, 40],
+  "vung": null,
+  "dieu_kien": null,
+  "trong_so": 5,
+  "lap_lai": "mot_lan",
+  "mo_ta": "Vách đá dựng đứng có một gốc linh chi quý.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Leo lên vách đá",
+      "kiem_dinh": {
+        "loai": "roll",
+        "chi_so": "can_cot",
+        "nguong": 40
+      },
+      "thanh_cong": {
+        "van_ban": "Hái được linh chi.",
+        "hieu_ung": [
+          { "cong": { "can_cot": 2 } }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Trượt chân nhưng không sao.",
+        "hieu_ung": []
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Bỏ qua",
+      "ket_qua": {
+        "van_ban": "Bạn rời đi.",
+        "hieu_ung": []
+      }
+    }
+  ]
+}

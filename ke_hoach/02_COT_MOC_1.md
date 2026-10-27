@@ -188,7 +188,7 @@ Trước khi làm: đọc [README.md](README.md) mục 3 - 5 và [01_KIEN_TRUC.m
 
 ---
 
-### [ ] M0-08 DSL điều kiện, hiệu ứng, văn bản
+### [x] M0-08 DSL điều kiện, hiệu ứng, văn bản
 
 **Phụ thuộc:** M0-05, M0-06.
 **Đọc:** 01 mục 7 (toàn bộ); HS06 I.2; HS01 II.2 (quy tắc đọc Hiệp nghĩa), II.3 (nhãn [Ám]).

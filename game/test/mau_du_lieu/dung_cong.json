@@ -1,0 +1,39 @@
+{
+  "ma": "dung_cong",
+  "nguon": "HS03 II.1",
+  "ten": "Cửa tiệm rèn đao kiếm",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [10, 30],
+  "vung": null,
+  "dieu_kien": null,
+  "trong_so": 10,
+  "lap_lai": "moi_nam",
+  "mo_ta": "Người thợ rèn đang bày bán một thanh thiết kiếm sắc bén.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Mua thiết kiếm [Cổng: Ngân lượng >= 50]",
+      "cong": {
+        "so": "ngan_luong",
+        "op": ">=",
+        "gt": 50
+      },
+      "ket_qua": {
+        "van_ban": "Bạn trả 50 lượng bạc và nhận được thanh kiếm.",
+        "hieu_ung": [
+          { "cong": { "ngan_luong": -50 } },
+          { "nhan_vat_pham": "thiet_kiem", "so_luong": 1 }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Chỉ đứng ngắm nhìn",
+      "ket_qua": {
+        "van_ban": "Bạn ngắm nghía một hồi rồi rời đi.",
+        "hieu_ung": []
+      }
+    }
+  ]
+}

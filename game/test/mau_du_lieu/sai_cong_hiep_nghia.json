@@ -1,0 +1,33 @@
+{
+  "ma": "sai_cong_hiep_nghia",
+  "nguon": "HS03 II.1",
+  "ten": "Cứu giúp dân nghèo",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [15, 60],
+  "vung": null,
+  "dieu_kien": null,
+  "trong_so": 5,
+  "lap_lai": "mot_lan",
+  "mo_ta": "Bạn gặp dân nghèo đang chịu đói khổ bên đường.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Giúp đỡ tiền bạc",
+      "ket_qua": {
+        "van_ban": "Bạn chia sẻ ngân lượng giúp đỡ họ.",
+        "hieu_ung": [
+          { "cong": { "ngan_luong": -10, "hiep_nghia": 20 } }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Làm ngơ",
+      "ket_qua": {
+        "van_ban": "Bạn tiếp tục đi đường của mình.",
+        "hieu_ung": []
+      }
+    }
+  ]
+}

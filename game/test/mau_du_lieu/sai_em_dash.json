@@ -1,0 +1,31 @@
+{
+  "ma": "sai_em_dash",
+  "nguon": "HS03 II.1",
+  "ten": "Gặp lại cố nhân — duyên số",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [15, 60],
+  "vung": null,
+  "dieu_kien": null,
+  "trong_so": 5,
+  "lap_lai": "mot_lan",
+  "mo_ta": "Bạn gặp lại cố nhân nơi quán trọ ven đường.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Mời một chén rượu",
+      "ket_qua": {
+        "van_ban": "Hai người cùng uống rượu tâm sự.",
+        "hieu_ung": []
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Lặng lẽ rời đi",
+      "ket_qua": {
+        "van_ban": "Bạn không làm phiền người ta.",
+        "hieu_ung": []
+      }
+    }
+  ]
+}

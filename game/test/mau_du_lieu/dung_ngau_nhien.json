@@ -1,0 +1,50 @@
+{
+  "ma": "dung_ngau_nhien",
+  "nguon": "HS03 II.1",
+  "ten": "Đoán quẻ đầu xuân",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [10, 80],
+  "vung": null,
+  "dieu_kien": null,
+  "trong_so": 5,
+  "lap_lai": "moi_nam",
+  "mo_ta": "Một đạo sĩ ven đường mời bạn rút một thẻ xăm cầu may.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Rút một thẻ xăm ngẫu nhiên [Ngẫu nhiên]",
+      "kiem_dinh": {
+        "loai": "ngau_nhien",
+        "nhanh": [
+          {
+            "ti_le": 60,
+            "ket_qua": {
+              "van_ban": "Bạn rút được quẻ Thượng Cát, lòng tràn đầy vui vẻ.",
+              "hieu_ung": [
+                { "cong": { "phuc_duyen": 1 } }
+              ]
+            }
+          },
+          {
+            "ti_le": 40,
+            "ket_qua": {
+              "van_ban": "Bạn rút phải quẻ Hạ Hung, đạo sĩ khuyên nên cẩn trọng.",
+              "hieu_ung": [
+                { "dong": { "van_ban": "Năm nay gặp xăm hung, cần cẩn trọng." } }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Lắc đầu từ chối",
+      "ket_qua": {
+        "van_ban": "Bạn mỉm cười không rút xăm.",
+        "hieu_ung": []
+      }
+    }
+  ]
+}
