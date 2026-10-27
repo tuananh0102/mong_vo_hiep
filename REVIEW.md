@@ -18,6 +18,7 @@ Chủ dự án chốt dùng **tên nguyên tác Kim Dung**; 33 lỗ hổng phát
 Nhờ vậy đã đóng: nguyên mẫu Lang Quân (HS05 II.1), quy tắc di chuyển giữa các vùng (mục 1.7, HS01 I), mục 6 (tên nguyên tác, rating 17+), mục 7 (phạm vi theo 3 cột mốc), mục 8 (kết cục #14, #18, danh hiệu phụ, Võ Lâm Minh Chủ, Kỳ Thư Xuất Thế, Kinh Mạch Nghịch Hành, võ công tự sáng tạo).
 Còn mở: mức "nhân đôi" của Âm Dương Hỗ Tế (HS02 II.2) và sức mạnh võ học tự sáng tạo (HS04 III.2) phải chạy mô phỏng khi implement (task M3-05, M3-10); 2 điểm "Còn mở mới" ở trên đo lại ở task M2-18.
 Còn mở (M1-11a, `GIẢ ĐỊNH`): `NhanVat` chưa có Bản mệnh nên `tuNhanVat` dùng `chinh_truc` (như `mo_phong.py`); `MauNpcTran` (`game/src/luat/tam_hiep/toan.ts`) chỉ nhận chỉ số trực tiếp vì chưa có schema NPC (vào ở M2-01).
+Còn mở (M1-11b, `GIẢ ĐỊNH`): trận `tam_hiep/tran.ts` chưa nối vào `apDung` (lệnh `tam_hiep` vẫn `chua_ho_tro`) vì `Cho.tran` hiện là dữ liệu thô từ `su_kien.ts` và đối thủ cần chỉ số NPC; nối ở M1-11c / M1-11d. Hiệp 3 M1 dùng mã `tuyet_sat`, `phe_vo_cong`, `thu_kiem`, `hoa`, `lieu_mang`, `bo_chay`, `dau_hang`, `nhay_vuc`; bỏ chạy thất bại coi như bên Áp đảo thắng.
 Mức độ: 🔴 Chặn (phải sửa trước khi viết data/code), 🟠 Quan trọng (ảnh hưởng cân bằng/trải nghiệm), 🟡 Nhỏ (văn bản, nhất quán).
 
 ---

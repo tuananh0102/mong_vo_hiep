@@ -377,6 +377,12 @@ export const LuocDoTenNpc = z.object({
 })
 export type DanhSachTenNpc = z.infer<typeof LuocDoTenNpc>
 
+// M1-11b: mẫu văn bản hệ thống (nhãn lựa chọn, nhật ký đòn đánh Tam Hiệp), khóa dạng "nhom.ten"
+export const LuocDoVanBanHeThong = z.object({
+  tam_hiep: z.record(z.string(), z.string().min(1)),
+})
+export type VanBanHeThong = z.infer<typeof LuocDoVanBanHeThong>
+
 export interface DuLieu {
   vung: Record<string, Vung>
   chi_so: Record<string, DinhNghiaChiSo>
@@ -390,4 +396,5 @@ export interface DuLieu {
   vat_pham?: Record<string, VatPham>
   hanh_dong?: Record<string, HanhDong>
   ten_npc?: DanhSachTenNpc
+  van_ban_he_thong?: VanBanHeThong
 }

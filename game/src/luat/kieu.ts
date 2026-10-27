@@ -14,7 +14,23 @@ export type MaMonPhai = string
 export type MaGoiLuanHoi = string
 export type MaHanhDong = string
 export type MaO = 'noi_cong' | 'khinh_cong' | 'ngoai_cong' | 'tuyet_ky' | 'binh_khi' | 'giap'
-export type BuocTamHiep = unknown
+export type HuongTamHiep = 'tien_ha_thu' | 'an_binh' | 'than_phap'
+export type LuaChonPhanDinh =
+  | 'tuyet_sat'
+  | 'phe_vo_cong'
+  | 'thu_kiem'
+  | 'hoa'
+  | 'lieu_mang'
+  | 'bo_chay'
+  | 'dau_hang'
+  | 'nhay_vuc'
+/** HS02 V: một bước người chơi trong Quyết Đấu Tam Hiệp (máy trạng thái ở luat/tam_hiep/tran.ts). */
+export type BuocTamHiep =
+  | { loai: 'huong'; huong: HuongTamHiep }
+  | { loai: 'vat_pham'; ma: 'kim_sang_duoc' }
+  | { loai: 'bo_qua' }
+  | { loai: 'chieu'; ma: string }
+  | { loai: 'phan_dinh'; ma: LuaChonPhanDinh }
 
 /** 01 mục 5.2: Lệnh gửi vào động cơ apDung. */
 export type Lenh =

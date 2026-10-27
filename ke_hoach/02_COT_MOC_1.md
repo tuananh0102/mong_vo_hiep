@@ -489,7 +489,7 @@ Task lớn, làm theo 4 phần, mỗi phần một commit.
 
 **Test:** khớp vector `sat_thuong` (nếu xuất được); `tam_hiep_ti_le.json`: tỷ lệ thắng TS chênh Python ≤ 2 điểm % trên 20.000 trận mỗi cặp; mục tiêu cân bằng HS06 I.4 (bên yếu còn 20 - 31% HP sau Hiệp 2 khi ngang sức) đạt.
 
-#### [ ] M1-11b Trận tương tác (máy trạng thái)
+#### [x] M1-11b Trận tương tác (máy trạng thái)
 
 **Tạo:** `tam_hiep/tran.ts`, `game/test/tam_hiep_tran.test.ts`; mở rộng `Lenh` với `BuocTamHiep`.
 
