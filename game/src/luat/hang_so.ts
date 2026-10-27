@@ -59,3 +59,21 @@ export const KHINH_CONG_TRAN: Record<number, number> = {
   3: 8,  // Trấn phái
   4: 10, // Thần công SSS
 }
+
+// HS02 I: Cấp võ học của sư phụ theo bậc đệ tử trong môn phái
+export const SU_PHU_THEO_BAC: Record<number, number> = {
+  1: 6,
+  2: 8,
+  3: 10,
+  4: 10,
+  5: 10,
+}
+
+// HS02 I: Tier võ học tối đa sư phụ môn phái truyền theo bậc
+export const TIER_THEO_BAC: Record<number, number> = {
+  1: 1, // Nhập môn
+  2: 2, // Thượng thừa
+  3: 3, // Trấn phái
+  4: 3,
+  5: 3,
+}

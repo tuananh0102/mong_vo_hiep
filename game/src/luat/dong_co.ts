@@ -6,6 +6,7 @@ import type { DongBienNien, Lenh, TrangThaiGame } from './kieu'
 import { rngTuSeed, taoRng } from './rng'
 import { xuLyChon } from './su_kien'
 import { quaNam } from './vong_nam'
+import { trangBi } from './vo_hoc'
 
 export interface KetQuaLenh {
   trang_thai: TrangThaiGame
@@ -96,9 +97,14 @@ export function apDung(s: TrangThaiGame, lenh: Lenh, dl: DuLieu): KetQuaLenh {
       break
     }
 
+    case 'trang_bi': {
+      const sinh = trangBi(d, dl, lenh.o, lenh.ma)
+      dongMoi.push(...sinh)
+      break
+    }
+
     case 'hanh_dong':
     case 'tam_hiep':
-    case 'trang_bi':
     case 'dung_vat_pham':
     case 'mua': {
       return { trang_thai: s, dong_moi: [], loi: 'chua_ho_tro' }

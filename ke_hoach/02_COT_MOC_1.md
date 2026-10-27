@@ -414,7 +414,7 @@ Nối các mã phái sinh vào `docChiSo` (thay chỗ `throw` ở M0-05).
 
 ---
 
-### [ ] M1-08 Võ học: luyện, ô trang bị, cảnh giới
+### [x] M1-08 Võ học: luyện, ô trang bị, cảnh giới
 
 **Phụ thuộc:** M1-04.
 **Đọc:** HS02 II.1, II.2 (Hệ, không gồm Tẩu hỏa); HS06 I.1 (Tiến độ); HS05 IV.2 (hoàn thiện → cấp tối đa); `mo_phong.py` hàm `luyen`, `mo_khoa_mon`.

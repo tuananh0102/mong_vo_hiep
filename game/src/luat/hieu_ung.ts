@@ -3,6 +3,7 @@ import type { DuLieu, HieuUng } from '../du_lieu/luoc_do'
 import { congChiSo } from './chi_so'
 import type { DongBienNien, TrangThaiGame } from './kieu'
 import type { Rng } from './rng'
+import { hocVoHoc } from './vo_hoc'
 
 function apCong(hu: { cong: Record<string, number>; no_neu_thieu?: string }, d: TrangThaiGame, dl: DuLieu): void {
   for (const [ma, delta] of Object.entries(hu.cong)) {
@@ -96,12 +97,8 @@ function apThemNhan(hu: { them_nhan: string }, d: TrangThaiGame): void {
   }
 }
 
-function apHocVoHoc(hu: { hoc_vo_hoc: string; cap?: number; hoan_thien?: number }, d: TrangThaiGame): void {
-  d.nhan_vat.vo_hoc[hu.hoc_vo_hoc] = {
-    cap: hu.cap ?? 1,
-    tien_do: 0,
-    hoan_thien: hu.hoan_thien ?? 100,
-  }
+function apHocVoHoc(hu: { hoc_vo_hoc: string; cap?: number; hoan_thien?: number }, d: TrangThaiGame, dl: DuLieu): DongBienNien[] {
+  return hocVoHoc(d, dl, hu.hoc_vo_hoc, hu.cap ?? 1, hu.hoan_thien ?? 100)
 }
 
 function apNhanVatPham(hu: { nhan_vat_pham: string; so_luong?: number }, d: TrangThaiGame): void {
@@ -235,8 +232,7 @@ export function apHieuUng(
     return []
   }
   if ('hoc_vo_hoc' in hu) {
-    apHocVoHoc(hu, d)
-    return []
+    return apHocVoHoc(hu, d, dl)
   }
   if ('nhan_vat_pham' in hu) {
     apNhanVatPham(hu, d)
