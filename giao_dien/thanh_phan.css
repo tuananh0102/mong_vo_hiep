@@ -156,11 +156,14 @@ button { font: inherit; color: inherit; }
 
 /* ============ 1. THANH TRẠNG THÁI (Header) ============ */
 .vk-header {
+  position: relative;
   display: grid;
   gap: var(--kc-2);
   padding: var(--kc-3) var(--kc-4) var(--kc-2);
   border-bottom: 1px solid var(--vien);
 }
+/* Thẻ xem nhanh của Header (tên vùng) mở ngay dưới Header */
+.vk-header .vk-popover { top: 100%; left: var(--kc-4); }
 .vk-header__hang {
   display: flex;
   align-items: baseline;
@@ -179,7 +182,16 @@ button { font: inherit; color: inherit; }
   cursor: pointer;
 }
 .vk-header__danh-hieu { color: var(--su-kien-ky-ngo); font-size: var(--co-chu-sm); font-weight: var(--dam-vua); }
-.vk-header__tuoi { font-size: var(--co-chu-sm); color: var(--chu-phu); white-space: nowrap; }
+.vk-header__tuoi {
+  display: grid;
+  justify-items: end;
+  gap: 2px;
+  font-size: var(--co-chu-sm);
+  color: var(--chu-phu);
+  text-align: right;
+  white-space: nowrap;
+}
+.vk-header__tuoi-tho { font-size: var(--co-chu-xs); }
 .vk-header__meta {
   display: flex;
   flex-wrap: wrap;
@@ -256,6 +268,9 @@ button { font: inherit; color: inherit; }
   text-underline-offset: 3px;
   cursor: pointer;
 }
+
+/* Thẻ xem nhanh mở từ tên trong câu: neo vào đầu dòng Biên Niên Sử, đè lên dòng dưới */
+.vk-bien-nien__muc .vk-popover { top: 100%; left: 0; right: 0; width: auto; }
 
 /* Thẻ xem nhanh (tooltip mở bằng chạm) */
 .vk-popover {
@@ -342,6 +357,12 @@ button { font: inherit; color: inherit; }
   cursor: not-allowed;
 }
 .vk-lua-chon--nguy { border-color: var(--hanh-dong-nguy); }
+/* Phương án đang được chọn (ví dụ chọn giới tính ở màn Đầu thai) */
+.vk-lua-chon[aria-pressed="true"] {
+  border-color: var(--vien-nhan);
+  background: var(--be-mat-lom);
+  box-shadow: inset 0 0 0 1px var(--vien-nhan);
+}
 
 /* Quyết Đấu Tam Hiệp: bảng đối thủ + bộ đếm hiệp */
 .vk-tam-hiep {
@@ -540,6 +561,42 @@ button.vk-dong:disabled, button.vk-dong:disabled .vk-dong__meta { color: var(--v
 .vk-uu-dai__dau { display: flex; align-items: baseline; justify-content: space-between; gap: var(--kc-3); }
 .vk-uu-dai__ten { margin: 0; font-size: var(--co-chu-md); font-weight: var(--dam-dam); }
 .vk-uu-dai__mo-ta { margin: 0; font-size: var(--co-chu-sm); color: var(--chu-phu); }
+
+/* ============ MÀN CHUYỂN GIAI ĐOẠN (toàn khung: Đầu thai, chọn Thiên phú, hết kiếp) ============ */
+.vk-mo-man {
+  display: grid;
+  align-content: center;
+  gap: var(--kc-4);
+  min-height: 100dvh;
+  max-width: var(--rong-toi-da);
+  margin-inline: auto;
+  padding: var(--kc-5) var(--kc-4);
+  background: var(--nen);
+}
+.vk-mo-man__tieu-de {
+  margin: 0;
+  font-family: var(--font-tieu-de);
+  font-size: var(--co-chu-2xl);
+  font-weight: var(--dam-dam);
+  line-height: var(--dong-chat);
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+.vk-mo-man__than { margin: 0; color: var(--chu-phu); text-align: center; }
+.vk-mo-man__lua-chon { display: grid; gap: var(--kc-2); margin: 0; padding: 0; list-style: none; }
+
+/* Trường nhập liệu (tên nhân vật) */
+.vk-truong { display: grid; gap: var(--kc-1); }
+.vk-truong__nhan { font-size: var(--co-chu-sm); font-weight: var(--dam-dam); color: var(--chu-phu); }
+.vk-truong__o {
+  min-height: var(--cham-toi-thieu);
+  padding: var(--kc-2) var(--kc-3);
+  border: 1px solid var(--vien-dieu-khien);
+  border-radius: var(--bo-vua);
+  background: var(--be-mat-noi);
+  color: var(--chu);
+  font: inherit;
+}
 
 /* ============ VĂN BIA (dùng trong data-chu-de="tang") ============ */
 .vk-van-bia {

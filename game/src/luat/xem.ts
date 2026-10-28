@@ -1,12 +1,14 @@
 // 01 mục 5.1: Chuẩn bị dữ liệu hiển thị cho giao diện từ trạng thái game thuần.
 import type { DuLieu } from '../du_lieu/luoc_do'
+import { danhVongHienThi, hpMax, noiTucMax, tuoiThoMax } from './cong_thuc'
 import { danhGia, moTaThieu } from './dieu_kien'
 import type { NhanDoKho } from './kiem_dinh'
 import { nhanDoKho, pRoll } from './kiem_dinh'
-import type { Cho, DongBienNien, KetThuc, TrangThaiGame } from './kieu'
+import type { Cho, DongBienNien, KetThuc, NhanVat, TrangThaiGame } from './kieu'
 import { tinhXacSuatKiemDinh } from './su_kien'
 import { xemTranDau, type TranHienThi } from './tam_hiep/xem_tran'
 import { dienMau } from './van_ban'
+import { xemAp } from './vong_nam'
 
 export interface LuaChonHienThi {
   ma: string
@@ -28,18 +30,48 @@ export interface SuKienHienThi {
   lua_chon: LuaChonHienThi[]
 }
 
+/** Màn hình gốc mà giao diện phải hiển thị (M1-16, thiết kế mục 6.2). */
+export type ManHienThi = 'dau_thai' | 'chon_thien_phu' | 'choi' | 'ket_thuc'
+
+export interface ThienPhuChonHienThi {
+  ma: string
+  ten: string
+  do_hiem: 1 | 2 | 3 | 4
+  mo_ta: string
+}
+
+/** Võ học đã học, đủ dữ liệu cho `.vk-lien-ket` + `.vk-popover` trong Biên Niên Sử. */
+export interface VoHocHienThi {
+  ma: string
+  ten: string
+  tier: 1 | 2 | 3 | 4
+  cap: number
+  tran_cap: number
+  mo_ta: string
+}
+
 export interface DuLieuManHinh {
+  man: ManHienThi
   ten: string
   tuoi: number
   gioi_tinh: 'nam' | 'nu'
+  danh_hieu: string
+  tuoi_tho: string
   vung: string
+  mon_phai: string
   ap: number
+  tong_ap: number
+  nen_qua_nam: boolean
   hp: number
+  hp_max: number
   noi_tuc: number
+  noi_tuc_max: number
   ngan_luong: number
   bien_nien: DongBienNien[]
   cho: Cho | null
   ket_thuc: KetThuc | null
+  thien_phu_chon: ThienPhuChonHienThi[]
+  vo_hoc: VoHocHienThi[]
   su_kien?: SuKienHienThi | null
   tam_hiep?: TranHienThi | null
 }
@@ -127,24 +159,125 @@ export function xemSuKien(d: TrangThaiGame, dl: DuLieu): SuKienHienThi | null {
 
 /** Trích xuất dữ liệu cần thiết cho giao diện từ trạng thái game. */
 export function xemManHinh(d: TrangThaiGame, dl: DuLieu): DuLieuManHinh {
+  const nv = d.nhan_vat
+  const ap = xemAp(d)
+
   return {
-    ten: d.nhan_vat.ten,
-    tuoi: d.nhan_vat.tuoi,
-    gioi_tinh: d.nhan_vat.gioi_tinh,
-    vung: dl.vung[d.nhan_vat.vung]?.ten ?? d.nhan_vat.vung,
-    ap: d.nhan_vat.ap_con_lai,
-    hp: d.nhan_vat.hp,
-    noi_tuc: d.nhan_vat.noi_tuc,
-    ngan_luong: d.nhan_vat.ngan_luong,
+    man: manHienThi(d),
+    ten: nv.ten,
+    tuoi: nv.tuoi,
+    gioi_tinh: nv.gioi_tinh,
+    danh_hieu: danhHieu(nv, dl),
+    tuoi_tho: moTaTuoiTho(tuoiThoMax(nv, dl), nv.tuoi),
+    vung: dl.vung[nv.vung]?.ten ?? nv.vung,
+    mon_phai: tenMonPhai(nv, dl),
+    ap: nv.ap_con_lai,
+    tong_ap: ap.tong_ap_nam,
+    nen_qua_nam: ap.nen_qua_nam,
+    hp: nv.hp,
+    hp_max: hpMax(nv, dl),
+    noi_tuc: nv.noi_tuc,
+    noi_tuc_max: noiTucMax(nv, dl),
+    ngan_luong: nv.ngan_luong,
     bien_nien: d.bien_nien,
     cho: d.cho,
     ket_thuc: d.ket_thuc,
+    thien_phu_chon:
+      d.cho?.loai === 'chon_thien_phu'
+        ? d.cho.lua_chon.map((ma) => {
+            const tp = dl.thien_phu[ma]
+            return {
+              ma,
+              ten: tp?.ten ?? ma,
+              do_hiem: tp?.do_hiem ?? 1,
+              mo_ta: tp?.mo_ta ?? '',
+            }
+          })
+        : [],
+    vo_hoc: xemVoHocDaHoc(nv, dl),
     su_kien: d.cho?.loai === 'su_kien' ? xemSuKien(d, dl) : null,
     tam_hiep:
       d.cho?.loai === 'tam_hiep'
         ? xemTranDau(d.cho.tran, dl, d.cho.tran.ngu_canh?.bien[d.cho.tran.ngu_canh.doi_thu] ?? 'Đối thủ')
         : null,
   }
+}
+
+/** M1-16: chọn màn hình gốc theo trạng thái (chưa đầu thai / đang chọn Thiên phú / đang chơi / đã chết). */
+export function manHienThi(d: TrangThaiGame): ManHienThi {
+  if (d.ket_thuc !== null) return 'ket_thuc'
+  if (d.nhan_vat.ten === '') return 'dau_thai'
+  if (d.cho?.loai === 'chon_thien_phu') return 'chon_thien_phu'
+  return 'choi'
+}
+
+/** HS04 I.1: tên 5 bậc môn phái hiển thị ở Header. */
+const TEN_BAC_MON_PHAI: Record<number, string> = {
+  1: 'Ngoại môn',
+  2: 'Nội môn',
+  3: 'Chân truyền',
+  4: 'Trưởng lão',
+  5: 'Chưởng môn',
+}
+
+/**
+ * G31: danh hiệu ở Header, lấy cái đầu tiên đạt:
+ * Ngũ Tuyệt -> Võ Lâm Minh Chủ -> chức vị (Chưởng môn / Giáo chủ / Trưởng lão)
+ * -> mức Thanh danh (Chính Nhân Quân Tử / Đại Ma Đầu) -> mức Danh vọng (Đại hiệp / Danh hiệp).
+ * Danh hiệu Ngũ Tuyệt và Võ Lâm Minh Chủ thuộc M2, M3 nên chưa xét ở đây.
+ */
+export function danhHieu(nv: NhanVat, dl: DuLieu): string {
+  const mp = nv.mon_phai
+  if (mp) {
+    if (mp.bac >= 5) return dl.mon_phai?.[mp.ma]?.phe === 'ta' ? 'Giáo chủ' : 'Chưởng môn'
+    if (mp.bac === 4) return 'Trưởng lão'
+  }
+
+  // HS01 II.2: Thanh danh >= +300 là Chính Nhân Quân Tử, <= -300 là Đại Ma Đầu
+  if (nv.thanh_danh >= 300) return 'Chính Nhân Quân Tử'
+  if (nv.thanh_danh <= -300) return 'Đại Ma Đầu'
+
+  const dv = danhVongHienThi(nv)
+  if (dv >= 700) return 'Đại hiệp'
+  if (dv >= 400) return 'Danh hiệp'
+  return 'Vô danh tiểu tốt'
+}
+
+/** G02: mô tả tuổi thọ ẩn theo số năm còn lại. */
+export function moTaTuoiTho(max: number, tuoi: number): string {
+  const con = max - tuoi
+  if (con >= 20) return 'Khí huyết dồi dào'
+  if (con >= 10) return 'Thân thể vững vàng'
+  if (con >= 5) return 'Tuổi xế chiều'
+  return 'Đèn cạn dầu'
+}
+
+/** HS04 I.1, HS01 II.6: môn phái và bậc hiển thị ở Header. */
+export function tenMonPhai(nv: NhanVat, dl: DuLieu): string {
+  const mp = nv.mon_phai
+  if (!mp) return 'Vô môn vô phái'
+  const phai = dl.mon_phai?.[mp.ma]
+  const ten = phai?.ten ?? mp.ma
+  const bac = mp.bac >= 5 && phai?.phe === 'ta' ? 'Giáo chủ' : (TEN_BAC_MON_PHAI[mp.bac] ?? `Bậc ${mp.bac}`)
+  return `${ten} · ${bac}`
+}
+
+/** Danh sách võ học đã học kèm tier, cấp hiện tại và mô tả 1 dòng (cho popover Biên Niên Sử). */
+export function xemVoHocDaHoc(nv: NhanVat, dl: DuLieu): VoHocHienThi[] {
+  const ds: VoHocHienThi[] = []
+  for (const [ma, daHoc] of Object.entries(nv.vo_hoc)) {
+    const vh = dl.vo_hoc?.[ma]
+    if (!vh) continue
+    ds.push({
+      ma,
+      ten: vh.ten,
+      tier: vh.tier,
+      cap: daHoc.cap,
+      tran_cap: vh.tran_cap,
+      mo_ta: vh.mo_ta,
+    })
+  }
+  return ds
 }
 
 export interface HanhDongHienThi {

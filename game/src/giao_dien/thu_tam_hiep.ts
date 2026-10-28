@@ -7,12 +7,16 @@ import type { TrangThaiGame } from '../luat/kieu'
 
 export function datTranThu(s: TrangThaiGame): TrangThaiGame {
   const nv = s.nhan_vat
+  nv.ten = 'Lý Tiêu Dao'
+  nv.gioi_tinh = 'nam'
+  nv.vung = 'trung_nguyen'
   nv.tuoi = 25
   nv.can_cot = 50
   nv.ngo_tinh = 50
   nv.phuc_duyen = 50
   nv.hp = 825
   nv.noi_tuc = 450
+  nv.ap_con_lai = 1
   nv.hanh_trang['kim_sang_duoc'] = 1
   const tran = moTranTuSuKien(
     s,

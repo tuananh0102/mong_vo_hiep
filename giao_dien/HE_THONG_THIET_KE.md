@@ -149,12 +149,14 @@ Xem trực quan và copy HTML ở [mau.html](mau.html).
 | Thành phần | Lớp gốc | Dùng khi | Biến thể / trạng thái |
 | :--- | :--- | :--- | :--- |
 | Khung màn hình | `.vk-man-hinh` | Gốc của mọi màn hình trong game | |
+| Màn chuyển giai đoạn | `.vk-mo-man` | Toàn khung: Đầu thai, chọn Thiên phú, hết kiếp | `__tieu-de`, `__than`, `__lua-chon` |
+| Trường nhập liệu | `.vk-truong` | Ô nhập chữ ngắn (tên nhân vật) | `__nhan`, `__o` |
 | Thanh trạng thái | `.vk-header` | Header trên cùng | `__ten`, `__vung` là nút mở Sheet |
 | Biên Niên Sử | `.vk-bien-nien` | Dòng thời gian | `__nam` (dính trên), `__muc[data-loai]` |
 | Liên kết trong câu | `.vk-lien-ket` | Tên NPC / võ học / vật phẩm chạm được | |
 | Thẻ xem nhanh | `.vk-popover` | Thông tin 1 - 3 dòng | `__tieu-de` có thể kèm huy hiệu |
 | Lớp phủ + Thẻ quyết định | `.vk-phu > .vk-modal` | Sự kiện bắt buộc chọn | `__tieu-de`, `__than`, `__lua-chon` |
-| Phương án | `.vk-lua-chon` | Mỗi lựa chọn trong Modal | `--nguy`, `aria-disabled="true"` (Cổng chưa đạt) |
+| Phương án | `.vk-lua-chon` | Mỗi lựa chọn trong Modal | `--nguy`, `aria-disabled="true"` (Cổng chưa đạt), `aria-pressed="true"` (đang chọn) |
 | Bảng Tam Hiệp | `.vk-tam-hiep` + `.vk-hiep` | Trong Modal giao chiến; thanh HP đối thủ, bộ đếm hiệp, thanh HP và MP của người chơi (đều theo %) | `.vk-hiep__o[aria-current="step"]` |
 | Dock | `.vk-dock` | Đáy màn hình chính | `__hanh-dong` chứa AP và +1 Tuổi |
 | Ngọc AP | `.vk-ap > .vk-ap__ngoc` | Số AP còn lại | `data-sang="true"` |
@@ -243,3 +245,5 @@ Ký hiệu chuẩn ở [Hồ sơ 06 mục I.2](../ho_so_06_cong_thuc_rng_kinh_te
 | 2026-10-27 | Nội dung 5 Tab mở bằng Sheet, Header vẫn thấy. | Giữ nguyên tắc "một màn hình": luôn thấy HP, tuổi, ngân lượng khi quản lý. |
 | 2026-10-27 | Không có toast. | Biên Niên Sử đã là nơi ghi mọi thông báo; thêm toast tạo hai nguồn sự thật. |
 | 2026-10-27 | Font Noto Serif (dự phòng Georgia). | Hỗ trợ đủ dấu tiếng Việt, hợp chất cổ phong, miễn phí. |
+| 2026-10-28 | Màn Đầu thai và chọn Thiên phú dùng khối toàn khung `.vk-mo-man` thay vì Modal. | Mục 6.2: chuyển giai đoạn lớn là toàn khung; Modal dành cho quyết định giữa chừng. |
+| 2026-10-28 | Thẻ xem nhanh trong Biên Niên Sử neo vào đầu dòng (`.vk-bien-nien__muc .vk-popover`). | Tên võ học nằm giữa câu, neo theo dòng thì không tràn khung 390px. |

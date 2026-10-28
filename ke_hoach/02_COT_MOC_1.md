@@ -608,7 +608,7 @@ Task lớn, làm theo 4 phần, mỗi phần một commit.
 
 ---
 
-### [ ] M1-16 Giao diện màn hình chính, sự kiện, đầu thai
+### [x] M1-16 Giao diện màn hình chính, sự kiện, đầu thai
 
 **Phụ thuộc:** M0-10, M1-05, M1-06, M1-09.
 **Đọc:** HS07 I.1; thiết kế mục 4 - 7, 9, 10; `mau.html` khung "Màn hình chính" và các ô `.vk-lua-chon`, `.vk-huy-hieu[data-do-kho]`.

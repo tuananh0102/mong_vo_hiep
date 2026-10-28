@@ -17,24 +17,9 @@ export interface BoNho {
   loi: string | null
 }
 
+/** M1-16: chưa đầu thai thì trạng thái rỗng (tên rỗng = màn Đầu thai). */
 export function taoTrangThaiMacDinh(seed = Date.now()): TrangThaiGame {
-  const s = taoTrangThaiRong(seed)
-  s.nhan_vat.ten = 'Lý Tiêu Dao'
-  s.nhan_vat.gioi_tinh = 'nam'
-  s.nhan_vat.vung = 'trung_nguyen'
-  s.nhan_vat.tuoi = 0
-  s.nhan_vat.hp = 100
-  s.nhan_vat.noi_tuc = 50
-  s.nhan_vat.ngan_luong = 10
-  s.nhan_vat.ap_con_lai = 2
-  s.bien_nien = [
-    {
-      tuoi: 0,
-      van_ban: 'Lý Tiêu Dao cất tiếng khóc chào đời tại Trung Nguyên.',
-      loai_hien_thi: 'thuong',
-    },
-  ]
-  return s
+  return taoTrangThaiRong(seed)
 }
 
 export function khoiTaoTroChoi(): BoNho {

@@ -29,6 +29,7 @@
   .mau-dien-thoai figcaption { margin-top: var(--kc-2); font-size: var(--co-chu-sm); color: var(--chu-phu); text-align: center; }
   .mau-khung { width: 390px; height: 844px; border: 1px solid var(--vien-dieu-khien); border-radius: 28px; overflow: hidden; box-shadow: var(--bong-2); }
   .mau-khung .vk-man-hinh { height: 100%; }
+  .mau-khung .vk-mo-man { min-height: 100%; }
   .mau-khung[data-chu-de="tang"] { background: var(--nen); display: grid; align-content: center; padding: var(--kc-4); overflow-y: auto; }
 </style>
 </head>
@@ -279,6 +280,26 @@
         </div>
         <figcaption>Văn bia - chủ đề Tang (<code>data-chu-de="tang"</code>)</figcaption>
       </figure>
+
+      <!-- 5. Màn Đầu thai (toàn khung) -->
+      <figure>
+        <div class="mau-khung">
+          <div class="vk-mo-man">
+            <h1 class="vk-mo-man__tieu-de">Vạn Kiếp Giang Hồ</h1>
+            <p class="vk-mo-man__than">Một kiếp người giữa chốn giang hồ. Chọn thân phận rồi bước vào đời.</p>
+            <ul class="vk-mo-man__lua-chon" aria-label="Giới tính">
+              <li><button class="vk-lua-chon" type="button" aria-pressed="true"><span class="vk-lua-chon__noi-dung">Nam tử</span></button></li>
+              <li><button class="vk-lua-chon" type="button" aria-pressed="false"><span class="vk-lua-chon__noi-dung">Nữ tử</span></button></li>
+            </ul>
+            <label class="vk-truong">
+              <span class="vk-truong__nhan">Tên (để trống thì trời định)</span>
+              <input class="vk-truong__o" type="text" value="Lý Tiêu Dao">
+            </label>
+            <button class="vk-nut vk-nut--chinh vk-nut--lon vk-nut--khoi" type="button">Đầu thai</button>
+          </div>
+        </div>
+        <figcaption>Màn Đầu thai (toàn khung, chuyển giai đoạn lớn)</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -366,7 +387,15 @@
       <div class="mau-o"><h3>.vk-lua-chon</h3><ul class="vk-modal__lua-chon">
         <li><button class="vk-lua-chon" type="button"><span class="vk-lua-chon__noi-dung">Gồng mình chịu lạnh</span><span class="vk-lua-chon__kiem-dinh">Căn cốt <span class="vk-huy-hieu" data-do-kho="de">Dễ</span></span></button></li>
         <li><button class="vk-lua-chon" type="button" aria-disabled="true"><span class="vk-lua-chon__noi-dung">Mua áo bông</span><span class="vk-lua-chon__kiem-dinh">Cần Ngân lượng 50</span></button></li>
+        <li><button class="vk-lua-chon" type="button" aria-pressed="true"><span class="vk-lua-chon__noi-dung">Nam tử (đang chọn)</span></button></li>
       </ul></div>
+
+      <div class="mau-o"><h3>.vk-truong</h3>
+        <label class="vk-truong">
+          <span class="vk-truong__nhan">Tên (để trống thì trời định)</span>
+          <input class="vk-truong__o" type="text" placeholder="Lý Tiêu Dao">
+        </label>
+      </div>
 
       <div class="mau-o"><h3>.vk-danh-sach &gt; .vk-dong</h3><ul class="vk-danh-sach" style="margin: 0">
         <li><button class="vk-dong" type="button"><span class="vk-dong__chinh"><span class="vk-dong__tieu-de">Luyện nội công</span><span class="vk-dong__meta">Tử Hà Thần Công +18% tiến độ</span></span><span class="vk-dong__phu"><span class="vk-chi-phi vk-chi-phi--ap">1 AP</span></span></button></li>
@@ -398,8 +427,8 @@
       </div>
 
       <div class="mau-o"><h3>.vk-ap / .vk-tabs</h3>
-        <ul class="vk-ap" aria-label="Điểm hành động: còn 3 trên 5" style="margin-bottom: var(--kc-3)">
-          <li class="vk-ap__ngoc" data-sang="true"></li><li class="vk-ap__ngoc" data-sang="true"></li><li class="vk-ap__ngoc" data-sang="true"></li><li class="vk-ap__ngoc"></li><li class="vk-ap__ngoc"></li>
+        <ul class="vk-ap" aria-label="Điểm hành động: còn 3 trên 4" style="margin-bottom: var(--kc-3)">
+          <li class="vk-ap__ngoc" data-sang="true"></li><li class="vk-ap__ngoc" data-sang="true"></li><li class="vk-ap__ngoc" data-sang="true"></li><li class="vk-ap__ngoc"></li>
         </ul>
         <ul class="vk-tabs" role="tablist">
           <li><button class="vk-tab" role="tab" aria-selected="true" type="button"><span class="vk-tab__bieu-tuong" aria-hidden="true">⛰</span>Chọn</button></li>
