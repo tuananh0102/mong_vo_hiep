@@ -592,7 +592,7 @@ Task lớn, làm theo 4 phần, mỗi phần một commit.
 
 ---
 
-### [ ] M1-15 Nội dung 16+ tuổi
+### [x] M1-15 Nội dung 16+ tuổi
 
 **Phụ thuộc:** M1-14, M1-13.
 **Đọc:** HS04 II.1 - II.3, III; HS04 I.1 (thử thách thăng cấp); Phụ lục A.

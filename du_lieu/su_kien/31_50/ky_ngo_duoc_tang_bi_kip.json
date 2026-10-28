@@ -1,0 +1,50 @@
+{
+  "ma": "ky_ngo_duoc_tang_bi_kip",
+  "nguon": "M1-15 (viết mới, HS01 II.7 cấp kỳ ngộ A)",
+  "ten": "Người Khách Bí Ẩn Tặng Bí Kíp",
+  "loai": "ky_ngo",
+  "cap_ky_ngo": "A",
+  "loai_hien_thi": "ky-ngo",
+  "tuoi": [31, 50],
+  "vung": null,
+  "dieu_kien": { "so": "phuc_duyen", "op": ">=", "gt": 50 },
+  "trong_so": 20,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "Kỳ ngộ cấp A theo HS01 II.7: võ Thượng thừa hoặc Tạp học +10 đến +15. Bí kíp là Hủ Thi Độc Chưởng bản tàn quyển (tier 2, hoàn thiện 60%) để không vượt cấp. Phúc duyên ≥ 50 làm Cổng ẩn cấp sự kiện.",
+  "mo_ta": "Một người khách lạ ngồi cùng bàn trà với bạn ba buổi liền mà không nói một câu. Đến buổi thứ tư, ông ta đẩy sang một cuốn sách rách bìa, bảo: ta già rồi, giữ cũng không dùng được. Trong sách là những trang chép tay về một môn chưởng pháp độc môn, nhiều chỗ đã mờ hẳn.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Cúi đầu nhận sách, khắc cốt ghi tâm rồi luyện từ trang đầu",
+      "ket_qua": {
+        "van_ban": "Ông khách đi trước khi bạn kịp hỏi tên. Bạn đem sách về, dịch từng chữ mờ, luyện đúng thứ tự. Ba tháng sau, lòng bàn tay bạn nóng lên như có lửa khi vận khí, và bạn biết mình vừa học được thứ không dễ gì có trên đời.",
+        "hieu_ung": [
+          { "hoc_vo_hoc": "hu_thi_doc_chuong", "hoan_thien": 60 },
+          { "cong": { "y_thuat": 10 } }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Từ chối vì nghi ngờ, đời nào có ai cho không thứ quý như thế",
+      "ket_qua": {
+        "van_ban": "Bạn đẩy cuốn sách lại. Ông khách nhìn bạn một lúc, gật đầu như hài lòng, rồi cất sách đi. Ông nói một câu trước khi đứng dậy: kẻ biết nghi ngờ là kẻ sống lâu. Bạn không học được võ công nào, nhưng đêm ấy ngủ ngon hơn nhiều người.",
+        "hieu_ung": [
+          { "cong": { "ngo_tinh": 5 } },
+          { "hiep_nghia": 10 }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Nhận sách rồi bán cho một thương nhân sưu tầm bí kíp",
+      "ket_qua": {
+        "van_ban": "Bạn nhận sách, cảm ơn rất lễ phép, rồi mang thẳng tới hiệu sách lớn nhất huyện. Ông chủ trả ba trăm lạng, còn khen bạn biết giá trị của thứ mình có. Bạn ra khỏi hiệu với túi bạc nặng, và một cảm giác khó tả rằng mình vừa bán đi thứ không thể mua lại.",
+        "hieu_ung": [
+          { "cong": { "ngan_luong": 300 } },
+          { "hiep_nghia": -20 }
+        ]
+      }
+    }
+  ]
+}

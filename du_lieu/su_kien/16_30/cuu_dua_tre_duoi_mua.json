@@ -1,0 +1,57 @@
+{
+  "ma": "cuu_dua_tre_duoi_mua",
+  "nguon": "M1-15 (viết mới, Phụ lục A)",
+  "ten": "Đứa Trẻ Giữa Dòng Nước",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [16, 28],
+  "vung": null,
+  "dieu_kien": null,
+  "trong_so": 30,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "Sự kiện thường viết mới. Kiểm định Căn cốt vs 40 đúng ký hiệu [Roll] HS06 I.2; thất bại vẫn có hệ quả và mở hướng khác (Hiệp nghĩa dương nhỏ, Ám thương).",
+  "mo_ta": "Mưa ba ngày liền, con suối nhỏ sau làng đã thành dòng nước đục ngầu cuồn cuộn. Bạn đang trên đường về thì nghe tiếng trẻ con gào thét: một đứa bé đang bám vào cành cây giữa dòng, mỗi lúc một tụt xuống. Trên bờ, mấy người lớn đứng nhìn, không ai dám xuống.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Buộc dây vào eo rồi lao xuống dòng nước",
+      "kiem_dinh": { "loai": "roll", "chi_so": "can_cot", "nguong": 40 },
+      "thanh_cong": {
+        "van_ban": "Nước lạnh buốt, đá dưới chân trơn như mỡ. Bạn bơi chéo dòng, chộp được cổ áo đứa bé và kéo vào bờ trong tiếng reo của cả làng. Đứa bé nôn ra nước rồi khóc oà, còn mẹ nó thì quỳ xuống lạy bạn ba lạy.",
+        "hieu_ung": [
+          { "hiep_nghia": 40 },
+          { "danh_vong": 10 }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Bạn bị dòng nước đẩy đập vào tảng đá, sườn đau tới mức không thở nổi. Người làng ném dây ra, kéo cả bạn lẫn đứa bé lên bờ. Đứa bé sống, bạn nằm liệt mấy ngày và mỗi lần trái gió lại thấy đau trong ngực.",
+        "hieu_ung": [
+          { "hiep_nghia": 15 },
+          { "cong_phan_tram": { "hp": -45 } },
+          { "cong": { "am_thuong": 3 } }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Hô hào người làng cùng chăng dây, túm gậy dài vớt đứa bé",
+      "ket_qua": {
+        "van_ban": "Bạn quát to, chỉ người này bắc cầu, người kia chăng dây, người kia chặt cành. Ba mươi người làm theo, và đứa bé được vớt lên bằng một chiếc gậy dài chứ không phải bằng một cú liều mạng. Cả làng nhớ công bạn nhiều hơn bạn tưởng.",
+        "hieu_ung": [
+          { "hiep_nghia": 15 },
+          { "danh_vong": 3 }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Ngoảnh mặt, đi tiếp vì biết mình không cứu nổi",
+      "ket_qua": {
+        "van_ban": "Bạn đi tiếp. Phía sau, một người đàn ông cuối cùng cũng nhảy xuống và cứu được đứa bé. Tin ấy đến tai bạn vào buổi tối, cùng cảm giác vừa nhẹ nhõm vừa xấu hổ mà bạn sẽ còn nhớ rất lâu.",
+        "hieu_ung": [
+          { "hiep_nghia": -30 }
+        ]
+      }
+    }
+  ]
+}

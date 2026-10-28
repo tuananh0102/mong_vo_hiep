@@ -1,0 +1,64 @@
+{
+  "ma": "giai_cuu_ca_nu",
+  "nguon": "HS04 II.1",
+  "ten": "Giải Cứu Ca Nữ",
+  "loai": "noi_tiep",
+  "loai_hien_thi": "giao-chien",
+  "tuoi": [16, 24],
+  "vung": null,
+  "dieu_kien": null,
+  "trong_so": 0,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "Sự kiện nối tiếp của HS04 II.1, mở bằng len_lich từ nhánh A thất bại của nhiệm vụ xuất sơn. Ở M1 chưa có NPC sống nên chỉ ghi cờ co_on_nhu_tri_ky, NPC Ôn Nhu Tri Kỷ thật ở M3-07. Quá hạn thì cờ ca_nu_mat_tich thay cho việc bán sang Tây Vực (M3-02).",
+  "mo_ta": "Bạn dò la được tin: cô ca nữ bị đưa về phủ của Thế gia ấy, đêm nay sẽ bị chuyển đi cùng một đoàn thương đội. Bức tường phủ cao ba trượng, trong sân có chó dữ và ít nhất hai gã hộ viện. Bạn chỉ có một đêm.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Đột nhập phủ Thế gia giữa đêm, tìm đường vào kho sau",
+      "kiem_dinh": { "loai": "roll", "chi_so": "ngo_tinh", "nguong": 60 },
+      "thanh_cong": {
+        "van_ban": "Bạn men theo bức tường rêu, tìm được cửa kho sau không khóa. Cô ca nữ co ro trong góc, mắt đỏ hoe. Bạn cõng cô vượt tường, để lại sau lưng một phủ Thế gia đang ngủ say. Sáng hôm sau, tin đồn về một người trẻ tuổi đêm khuya cứu người bắt đầu lan khắp trấn.",
+        "hieu_ung": [
+          { "hiep_nghia": 60 },
+          { "danh_vong": 15 },
+          { "dat_co": "co_on_nhu_tri_ky" },
+          { "dat_co": "cuu_ca_nu" }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Con chó dữ sủa lên đúng lúc bạn đặt chân xuống sân. Hộ viện ập ra, bạn chỉ kịp đỡ vài đòn rồi phải nhảy tường chạy. Sáng hôm sau, đoàn thương đội đã đi từ lúc tinh mơ, và trong đó không còn bóng dáng cô ca nữ.",
+        "hieu_ung": [
+          { "hiep_nghia": 10 },
+          { "cong_phan_tram": { "hp": -40 } },
+          { "cong": { "am_thuong": 5 } },
+          { "dat_co": "ca_nu_mat_tich" }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Bỏ 200 lạng chuộc người, làm việc phải phép trước cổng phủ",
+      "cong": { "so": "ngan_luong", "op": ">=", "gt": 200 },
+      "ket_qua": {
+        "van_ban": "Bạn gõ cửa chính, xưng tên, đặt túi bạc lên bàn và nói rõ ý định. Gia chủ phủ ấy nhìn bạn một lúc lâu rồi cười: kẻ biết đi đường chính, đáng để kết giao. Cô ca nữ được thả, và món nợ giữa bạn với Thế gia ấy hóa ra lại thành một mối quen.",
+        "hieu_ung": [
+          { "cong": { "ngan_luong": -200 } },
+          { "hiep_nghia": 40 },
+          { "danh_vong": 10 },
+          { "dat_co": "cuu_ca_nu" }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Đứng nhìn đoàn xe rời trấn rồi quay về con đường cũ",
+      "ket_qua": {
+        "van_ban": "Bạn đứng ở đầu trấn, nhìn đoàn xe khuất dần sau rặng liễu. Có những chuyện đã bỏ lỡ thì cả đời không gặp lại. Đêm ấy bạn ngủ ít hơn thường lệ.",
+        "hieu_ung": [
+          { "hiep_nghia": -20 },
+          { "dat_co": "ca_nu_mat_tich" }
+        ]
+      }
+    }
+  ]
+}

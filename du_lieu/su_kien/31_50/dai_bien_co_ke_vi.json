@@ -1,0 +1,101 @@
+{
+  "ma": "dai_bien_co_ke_vi",
+  "nguon": "HS04 II.3",
+  "ten": "Đại Biến Cố Kế Vị Chưởng Môn",
+  "loai": "co_dinh",
+  "loai_hien_thi": "giao-chien",
+  "tuoi": [35, 55],
+  "vung": null,
+  "dieu_kien": {
+    "va": [
+      { "khong": { "la": "mon_phai", "trong": [""] } },
+      { "so": "bac_mon_phai", "op": ">=", "gt": 3 },
+      { "so": "bac_mon_phai", "op": "<=", "gt": 4 }
+    ]
+  },
+  "trong_so": 0,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "Chuyển nguyên văn HS04 II.3. Bậc 5 ghi bằng thang_bac 5, luật Chưởng môn đầy đủ (đổi tôn chỉ, tuyển Trưởng lão, Danh vọng chức vị +300) ở M2-08, M2-11. Nhánh B thất bại theo GDD phải chuyển sang tỷ thí tại linh đường; M1 chưa nối được hai nhánh nên ghi cờ ke_vi_bi_dong để M2-08 nối. Nhánh C là việc [Ám]; M1 chưa có cơ chế [Ám] nên dùng Hiệp nghĩa -200 rồi bù Thanh danh +300 để ra đúng hiệu quả ròng +100 của GDD.",
+  "m2_noi_tiep": true,
+  "vai": {
+    "dai_su_huynh": { "ten": "Đại Sư Huynh", "vo_luc": 65 }
+  },
+  "mo_ta": "Sư phụ bạn tuổi cao sức yếu, gọi bạn và Đại Sư Huynh vào bên giường bệnh. Ông muốn trao chiếc nhẫn Chưởng môn cho bạn, nhưng chưa kịp nói hết câu thì tắt thở. Đại Sư Huynh lập tức rút kiếm, gào lên vu khống bạn hạ độc thí sư để cướp ngôi. Ngoài cửa, các Trưởng lão đang chạy tới.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Chấp nhận tỷ thí sinh tử ngay tại linh đường để chứng minh trong sạch",
+      "kiem_dinh": { "loai": "tam_hiep", "doi_thu": "dai_su_huynh", "che_do": "sinh_tu" },
+      "thanh_cong": {
+        "van_ban": "Bạn đánh bại Đại Sư Huynh ngay trước bài vị sư phụ. Hắn buông kiếm, quỳ xuống, và các Trưởng lão đồng loạt cúi đầu. Bạn nhận chiếc nhẫn từ tay vị sư thúc lớn tuổi nhất, giữa một linh đường im như tờ. Từ đêm ấy, cả môn phái gọi bạn là Chưởng môn.",
+        "hieu_ung": [
+          { "thang_bac": 5 },
+          { "danh_vong": 100 },
+          { "dat_co": "da_lam_chuong_mon" }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Bạn gục xuống trước bài vị sư phụ. Các Trưởng lão đỡ bạn dậy, nhưng không ai nói một lời bênh vực. Ba ngày sau, bạn bị trục xuất khỏi sơn môn với thanh danh kẻ thí sư. Đại Sư Huynh lên ngôi, và từ trên bậc đá cao ấy, hắn nhìn theo bạn rất lâu, không cười.",
+        "hieu_ung": [
+          { "thanh_danh": -100 },
+          { "roi_mon_phai": "phan_mon" },
+          { "ghi_ke_thu": "dai_su_huynh" }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Chỉ vào chén thuốc, vạch trần loại độc Đại Sư Huynh từng mua ở Tây Vực",
+      "kiem_dinh": {
+        "loai": "roll",
+        "va": [
+          { "chi_so": "ngo_tinh", "nguong": 75 },
+          { "chi_so": "mi_luc", "nguong": 70 }
+        ]
+      },
+      "thanh_cong": {
+        "van_ban": "Bạn cầm chén thuốc lên, chỉ vào cặn đen dưới đáy và nói rành rọt tên loại độc cùng nơi bán. Các Trưởng lão kiểm tra, mặt biến sắc. Đại Sư Huynh phá cửa sổ chạy trốn trong đêm, còn bạn lên ngôi Chưởng môn mà không phải rút kiếm.",
+        "hieu_ung": [
+          { "thang_bac": 5 },
+          { "danh_vong": 100 },
+          { "ghi_ke_thu": "dai_su_huynh" },
+          { "dat_co": "da_lam_chuong_mon" }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Lời buộc tội của bạn thiếu chứng cứ, và vì thế càng đáng ngờ. Các Trưởng lão nhìn nhau, không ai dám tin bên nào. Đại Sư Huynh cười lạnh, rút kiếm chỉ vào mặt bạn: nếu trong sạch thì đấu một trận. Bạn bị đẩy vào thế phải đáp lời.",
+        "hieu_ung": [
+          { "thanh_danh": -50 },
+          { "cong_hien": -100 },
+          { "dat_co": "ke_vi_bi_dong" }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Nhân lúc chưa ai bước vào, ra tay trước rồi đổ tội thí sư cho hắn",
+      "cong_an": { "so": "hiep_nghia", "op": "<", "gt": 0 },
+      "kiem_dinh": { "loai": "roll_doi_khang", "chi_so": "vo_luc", "doi_thu": "dai_su_huynh" },
+      "thanh_cong": {
+        "van_ban": "Một đòn từ sau lưng, nhanh và sạch. Bạn đặt thanh kiếm dính máu vào tay hắn rồi gào lên gọi người. Các Trưởng lão xông vào và thấy đúng cảnh bạn muốn họ thấy. Bạn vừa độc chiếm ngôi Chưởng môn, vừa mang tiếng thơm kẻ thanh lý môn hộ báo thù cho ân sư.",
+        "hieu_ung": [
+          { "hiep_nghia": -200 },
+          { "thanh_danh": 300 },
+          { "danh_vong": 50 },
+          { "thang_bac": 5 },
+          { "dat_co": "da_lam_chuong_mon" },
+          { "dat_co": "am_giet_su_huynh" }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Đòn đánh lén trượt tâm mạch. Đại Sư Huynh gào lên cầu cứu, và các Trưởng lão ập vào thấy bạn cầm kiếm đứng trên hắn, máu còn nhỏ giọt. Không ai cần hỏi thêm. Bạn bị trục xuất ngay trong đêm, và từ hôm ấy cả môn phái truy sát bạn.",
+        "hieu_ung": [
+          { "hiep_nghia": -200 },
+          { "thanh_danh": -100 },
+          { "roi_mon_phai": "phan_mon" },
+          { "ghi_ke_thu": "dai_su_huynh" }
+        ]
+      }
+    }
+  ]
+}

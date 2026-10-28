@@ -1,0 +1,50 @@
+{
+  "ma": "ky_ngo_lao_ban_ruou",
+  "nguon": "M1-15 (viết mới, HS01 II.7 cấp kỳ ngộ B)",
+  "ten": "Bạn Rượu Năm Xưa",
+  "loai": "ky_ngo",
+  "cap_ky_ngo": "B",
+  "loai_hien_thi": "ky-ngo",
+  "tuoi": [55, 80],
+  "vung": null,
+  "dieu_kien": null,
+  "trong_so": 25,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "Kỳ ngộ cấp B theo HS01 II.7: chỉ số cộng tối đa +10, vật phẩm thường. Dùng để lấp khoảng trống sự kiện tuổi già mà không vượt định mức G10.",
+  "mo_ta": "Quán rượu đầu làng đổi chủ từ lâu, nhưng cái bàn góc trong vẫn kê đúng chỗ cũ. Bạn ngồi xuống và thấy một ông lão tóc trắng đã ngồi đó tự bao giờ, tay cầm hai chén. Ông đẩy một chén sang: bốn chục năm rồi, đệ tử. Chén rượu ấy thơm đúng mùi năm xưa.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Nâng chén, uống cạn và ngồi lại tới khuya",
+      "ket_qua": {
+        "van_ban": "Hai người nói chuyện tới khi quán đóng cửa, kể lại những cái tên mà bây giờ chỉ còn hai người trên đời còn nhớ. Trước khi chia tay, ông dúi vào tay bạn một gói giấy nhỏ: mấy viên thuốc, phòng khi trái gió. Bạn đi về, chân bước nhẹ như người trẻ.",
+        "hieu_ung": [
+          { "nhan_vat_pham": "kim_sang_duoc", "so_luong": 2 },
+          { "cong": { "can_cot": 3 } },
+          { "hiep_nghia": 10 }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Nhận chén nhưng chỉ uống một ngụm, giữ đầu óc tỉnh táo",
+      "ket_qua": {
+        "van_ban": "Bạn uống một ngụm rồi đặt chén xuống, nghe ông kể chuyện mà không để men rượu cuốn đi. Ông nhìn ra, cười bảo: già rồi mà vẫn giữ được cái đầu lạnh, đáng. Hai người chia tay lúc trăng lên, và bạn về nhà tỉnh táo, ngủ một giấc thẳng tới sáng.",
+        "hieu_ung": [
+          { "cong": { "ngo_tinh": 4 } }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Từ chối, nói rằng mình không còn uống được nữa",
+      "ket_qua": {
+        "van_ban": "Bạn đẩy chén lại, nói thật rằng thầy thuốc đã cấm rượu. Ông lão gật đầu, tự uống cạn cả hai chén, rồi ngồi im rất lâu. Khi ông đi, bạn ngồi lại một mình ở cái bàn góc, nghe tiếng quán dọn dẹp phía sau.",
+        "hieu_ung": [
+          { "hiep_nghia": 5 },
+          { "cong": { "can_cot": 1 } }
+        ]
+      }
+    }
+  ]
+}

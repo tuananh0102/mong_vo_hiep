@@ -1,0 +1,59 @@
+{
+  "ma": "buc_thu_nac_danh",
+  "nguon": "M1-15 (viết mới, Phụ lục A)",
+  "ten": "Bức Thư Nặc Danh",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [18, 32],
+  "vung": null,
+  "dieu_kien": null,
+  "trong_so": 30,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "Sự kiện thường viết mới, mô-típ tống tiền. Việc tống tiền thật là [Ám] ở M2-06; ở M1 đây là nạn nhân bị tống tiền nên không cần nhãn [Ám].",
+  "mo_ta": "Sáng ra, dưới cửa có một phong thư không dấu gửi. Trong thư chỉ có một câu: biết ngươi đã làm gì ở bến sông, chuẩn bị một trăm lạng, đêm rằm để dưới gốc đa đầu làng. Chữ viết run run như kẻ không quen cầm bút, nhưng địa điểm thì chính xác tới từng tấc.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Đêm rằm đặt đủ một trăm lạng xuống gốc đa",
+      "cong": { "so": "ngan_luong", "op": ">=", "gt": 100 },
+      "ket_qua": {
+        "van_ban": "Bạn đặt túi bạc rồi rút vào bóng tối. Một bóng người gầy gò lấy túi rồi chạy mất. Ba tháng sau không có lá thư thứ hai, nhưng cũng không có gì bảo đảm rằng kẻ đó đã thôi. Bạn học được rằng im lặng đôi khi phải mua bằng bạc.",
+        "hieu_ung": [
+          { "cong": { "ngan_luong": -100 } }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Đêm rằm nấp sẵn, chờ kẻ lấy tiền rồi bám theo",
+      "kiem_dinh": { "loai": "roll", "chi_so": "ngo_tinh", "nguong": 50 },
+      "thanh_cong": {
+        "van_ban": "Bạn theo kẻ đó về tận nhà, phát hiện ra hắn chỉ là một gã đánh cá nợ nần. Bạn chặn hắn giữa đường, lấy lại túi bạc và cả chỗ tiền hắn đã tống tiền người khác. Tin một kẻ vô danh dám bắt kẻ tống tiền loan ra chợ, và cái tên của bạn bắt đầu có người nhớ.",
+        "hieu_ung": [
+          { "hiep_nghia": 20 },
+          { "danh_vong": 5 },
+          { "cong": { "ngan_luong": 50 } }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Bạn bám theo quá lộ liễu. Kẻ đó quay lại, và trong bóng tối hắn có dao. Bạn chỉ kịp đỡ một nhát rồi hắn biến mất cùng túi bạc. Vết cắt ở cánh tay không sâu, nhưng nỗi nhục thì dai.",
+        "hieu_ung": [
+          { "cong_phan_tram": { "hp": -20 } },
+          { "hiep_nghia": -10 }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Mang thư lên trình quan phủ, xin lệnh điều tra",
+      "ket_qua": {
+        "van_ban": "Quan huyện cho người rình ở gốc đa ba đêm liền. Kẻ tống tiền bị bắt khi đang lấy tiền của một người khác, hóa ra là gã thư lại quen mặt trong nha môn. Việc bạn dám báo quan được kể lại ở quán trà, và người ta bắt đầu chào bạn bằng một tiếng thầy.",
+        "hieu_ung": [
+          { "danh_vong": 5 },
+          { "hiep_nghia": 10 },
+          { "thanh_danh": 10 }
+        ]
+      }
+    }
+  ]
+}

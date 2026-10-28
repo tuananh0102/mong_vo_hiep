@@ -1,0 +1,50 @@
+{
+  "ma": "truyen_day_do_de",
+  "nguon": "HS04 III, M1-15 (viết mới)",
+  "ten": "Truyền Dạy Đồ Đệ Cuối Cùng",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [51, 75],
+  "vung": null,
+  "dieu_kien": { "co": "va_nhan_do_de" },
+  "trong_so": 100,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "Nối tiếp sự kiện Nhận Đồ Đệ ở nhóm 31 - 50 tuổi. Truyền thừa nhiều đời đầy đủ ở M3-08; M1 chỉ ghi cờ truyen_day_do_de và cộng chỉ số theo HS04 III.",
+  "mo_ta": "Đồ đệ của bạn đã lớn, võ công đủ để tự đi. Một sáng nó quỳ trước mặt bạn, xin được học nốt những gì bạn còn giữ lại. Bạn nhìn nó và thấy mình của nhiều năm trước, cũng quỳ như thế trước một người thầy đã khuất.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Truyền hết những gì mình biết, không giấu một chiêu nào",
+      "ket_qua": {
+        "van_ban": "Bạn dạy nó từng chiêu, kể cả những chiêu từng cứu mạng bạn và những chiêu bạn chưa từng dùng trước mặt ai. Nó học tới đâu, mắt sáng tới đó. Đêm cuối cùng, bạn đưa cho nó thanh kiếm cũ và nói: từ nay thầy không còn gì để dạy nữa.",
+        "hieu_ung": [
+          { "danh_vong": 15 },
+          { "hiep_nghia": 30 },
+          { "dat_co": "truyen_day_do_de" }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Giữ lại một chiêu phòng thân, phòng khi nó quay lại chống mình",
+      "ket_qua": {
+        "van_ban": "Bạn dạy nó gần hết, chỉ giữ lại một chiêu. Nó không biết, vẫn cúi đầu cảm tạ rồi xuống núi. Nhiều năm sau, bạn nghe tin nó thành danh ở một vùng khác, và tự hỏi nếu năm ấy dạy hết thì mọi chuyện có khác không.",
+        "hieu_ung": [
+          { "danh_vong": 10 },
+          { "cong": { "ngo_tinh": 2 } },
+          { "dat_co": "truyen_day_do_de" }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Từ chối, bảo nó hãy tự tìm con đường riêng",
+      "ket_qua": {
+        "van_ban": "Bạn lắc đầu, nói rằng thứ duy nhất còn dạy được là cách tự đi. Nó cúi đầu ba lạy rồi xuống núi, không quay lại. Bạn đứng ở cửa rất lâu, nghe tiếng bước chân xa dần, và biết mình vừa đẩy đi thứ cuối cùng còn lại của một thời.",
+        "hieu_ung": [
+          { "hiep_nghia": -10 }
+        ]
+      }
+    }
+  ]
+}

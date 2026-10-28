@@ -1,0 +1,59 @@
+{
+  "ma": "dai_hoi_vo_lam_trung_nguyen",
+  "nguon": "HS04 I.2, HS07 IV, M1-15 (viết mới)",
+  "ten": "Đại Hội Võ Lâm Trung Nguyên",
+  "loai": "thuong",
+  "loai_hien_thi": "giao-chien",
+  "tuoi": [31, 50],
+  "vung": null,
+  "dieu_kien": null,
+  "trong_so": 20,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "Sự kiện thường viết mới, dùng Tam Hiệp chế độ tỷ thí (không sinh tử) đúng HS02 V. Danh vọng thắng công khai theo HS01 II.2: Trưởng lão +20, ở đây là đài hội lớn nên lấy +30 trong định mức G10. Việc bán trận là [Ám] thật ở M2-06; M1 ghi Hiệp nghĩa âm và cờ ban_tran.",
+  "vai": {
+    "truong_lao": { "ten": "Trưởng Lão", "vo_luc": 65 }
+  },
+  "mo_ta": "Năm nay Trung Nguyên mở đại hội võ lâm ba ngày tại sân chùa cổ. Các phái dựng cờ, thợ rèn bày binh khí, và trên đài chính là một vị Trưởng lão nổi tiếng đang chờ người thách đấu. Bên lề, một người ăn mặc sang trọng ghé tai bạn: nếu bạn chịu thua đúng hiệp thứ ba, gia chủ hắn sẽ hậu tạ.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Bước lên đài, đánh một trận đường đường chính chính",
+      "kiem_dinh": { "loai": "tam_hiep", "doi_thu": "truong_lao", "che_do": "ty_thi" },
+      "thanh_cong": {
+        "van_ban": "Ba hiệp, không ai bị thương nặng, và tới hiệp thứ ba thì vị Trưởng lão thu kiếm, cúi đầu nhận thua. Cả sân chùa im lặng một nhịp rồi vỡ òa. Từ hôm ấy, người đi đường nhận ra bạn không chỉ nhờ thanh kiếm mà còn nhờ cái tên được xướng lên giữa đại hội.",
+        "hieu_ung": [
+          { "danh_vong": 30 },
+          { "hiep_nghia": 20 }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Bạn thua ở hiệp thứ ba bằng một chiêu thuận tay của vị Trưởng lão, nhưng đứng dậy được và chắp tay thi lễ. Ông vỗ vai bạn, nói trước mặt cả đại hội rằng người dám lên đài đã hơn kẻ đứng dưới đếm cờ. Bạn thua một trận mà được thêm vài người quen.",
+        "hieu_ung": [
+          { "danh_vong": 5 }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Nhận lời, đánh cho đúng ba hiệp rồi chịu thua",
+      "ket_qua": {
+        "van_ban": "Bạn lên đài, đánh đủ ba hiệp rồi buông kiếm đúng như thỏa thuận. Vị Trưởng lão nhìn bạn một lâu, khẽ lắc đầu. Đêm ấy, người của gia chủ kia trao cho bạn hai trăm lạng trong một con hẻm tối. Sáng hôm sau bạn rời hội sớm, nghe phía sau tiếng trống vẫn còn dội.",
+        "hieu_ung": [
+          { "cong": { "ngan_luong": 200 } },
+          { "hiep_nghia": -30 },
+          { "dat_co": "ban_tran" }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Không lên đài, ở nhà luyện công trong mùa đại hội",
+      "ket_qua": {
+        "van_ban": "Ba ngày đại hội, bạn ở nhà đóng cửa luyện công. Tiếng trống hội vọng vào sân, tiếng người reo khi có người thắng. Bạn không ra. Khi đại hội tan, bạn biết mình đã bỏ lỡ một dịp, nhưng cũng cảm thấy nội lực trong người vững hơn trước.",
+        "hieu_ung": [
+          { "cong": { "can_cot": 2 } }
+        ]
+      }
+    }
+  ]
+}

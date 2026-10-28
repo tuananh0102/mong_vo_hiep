@@ -1,0 +1,52 @@
+{
+  "ma": "nui_sau_an_cu",
+  "nguon": "HS04 III, M1-15 (viết mới)",
+  "ten": "Ẩn Cư Nơi Núi Sau",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [60, 80],
+  "vung": null,
+  "dieu_kien": null,
+  "trong_so": 25,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "Sự kiện thường viết mới, mô-típ ẩn cư tuổi già. Bế quan và Dưỡng già đã là hành động AP ở hanh_dong.json (G32); sự kiện này đặt cờ co_nha_tren_nui cho Văn bia và M3-08, không đổi luật.",
+  "mo_ta": "Có một ngôi nhà tranh bỏ không trên sườn núi sau làng, cạnh một con suối nhỏ và một vườn thuốc hoang. Bạn lên đó một lần, ngồi tới chiều, rồi tự hỏi vì sao mình chưa lên đây sớm hơn. Dưới kia là tiếng chợ, tiếng người, bao nhiêu việc không còn cần tới bạn.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Dọn tới ở, tự trồng rau và hái thuốc quanh năm",
+      "ket_qua": {
+        "van_ban": "Bạn sửa lại mái tranh, đóng thêm cái chõng tre, trồng một luống cải. Sáng hái thuốc, chiều ngồi trước hiên nhìn mây. Tháng đầu hơi buồn, tháng thứ ba bạn quên mất mình từng thấy buồn. Tóc bạc thêm, nhưng bước chân lại nhẹ hơn hồi trẻ.",
+        "hieu_ung": [
+          { "cong": { "can_cot": 3 } },
+          { "danh_vong": -5 },
+          { "dat_co": "co_nha_tren_nui" }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Thuê người dựng lại căn nhà, biến nó thành chỗ dạy võ cho trẻ trong vùng",
+      "cong": { "so": "ngan_luong", "op": ">=", "gt": 200 },
+      "ket_qua": {
+        "van_ban": "Bạn bỏ hai trăm lạng sửa nhà, dựng thêm một sân đất nện. Mỗi sáng có chục đứa trẻ lên núi học gậy, học thở, học cách chào nhau. Tiếng đếm nhịp vang trên sườn núi, và người trong vùng bắt đầu gọi nơi ấy là Võ Đường Trên Núi.",
+        "hieu_ung": [
+          { "cong": { "ngan_luong": -200 } },
+          { "danh_vong": 20 },
+          { "hiep_nghia": 30 },
+          { "dat_co": "co_nha_tren_nui" }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Lên đó một đêm rồi lại xuống, không ở lại",
+      "ket_qua": {
+        "van_ban": "Bạn ngồi trên sườn núi tới khi trăng lên, rồi xuống. Căn nhà tranh vẫn bỏ không, cỏ mọc cao thêm mỗi năm. Bạn vẫn sống ở làng, vẫn nghe tiếng chợ mỗi sáng, và không bao giờ nhắc tới đêm ấy với ai.",
+        "hieu_ung": [
+          { "cong": { "ngo_tinh": 3 } }
+        ]
+      }
+    }
+  ]
+}

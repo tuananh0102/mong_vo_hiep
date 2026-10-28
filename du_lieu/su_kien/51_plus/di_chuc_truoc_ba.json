@@ -1,0 +1,49 @@
+{
+  "ma": "di_chuc_truoc_ba",
+  "nguon": "HS04 III, M1-15 (viết mới)",
+  "ten": "Di Chúc Trước Bàn Thờ",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [65, 82],
+  "vung": null,
+  "dieu_kien": null,
+  "trong_so": 25,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "Sự kiện thường viết mới, chuẩn bị cho Văn bia (HS07 II). Truyền thừa và hồi quy chỉ số bẩm sinh cho đời sau ở M3-08; M1 chỉ ghi cờ di_chuc_da_viet.",
+  "mo_ta": "Bạn gọi người thân tới, bảo họ lấy giấy bút. Ngồi trước bàn thờ, bạn nói chậm rãi từng việc: căn nhà để lại cho ai, thanh kiếm treo vách tặng ai, chỗ chôn mấy cuốn sách chép tay. Tới đoạn nói về những người đã khuất, bạn dừng lại khá lâu.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Viết rõ ràng từng món, chia đều cho mọi người",
+      "ket_qua": {
+        "van_ban": "Bạn chia căn nhà, mảnh vườn, mấy cuốn sách, mỗi thứ một phần. Khi đọc xong, không ai trong nhà lên tiếng tranh nhau. Bạn gấp tờ giấy, đặt dưới chân bàn thờ, và thấy nhẹ người như vừa đặt xuống một tảng đá đeo từ lâu.",
+        "hieu_ung": [
+          { "hiep_nghia": 20 },
+          { "danh_vong": 5 },
+          { "dat_co": "di_chuc_da_viet" }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Chỉ để lại cho người xứng đáng nhất, bất kể thứ bậc",
+      "ket_qua": {
+        "van_ban": "Bạn chọn một người, không phải người lớn nhất, cũng không phải người giỏi nhất, mà là người bạn tin sẽ giữ được căn nhà này đúng cách. Những người khác im lặng, có người không vui. Bạn nói một câu: ta đã cân nhắc mấy chục năm rồi, không cần ai nhắc nữa.",
+        "hieu_ung": [
+          { "danh_vong": 10 },
+          { "dat_co": "di_chuc_da_viet" }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Không viết gì, bảo mọi chuyện cứ để tự nhiên",
+      "ket_qua": {
+        "van_ban": "Bạn gấp tờ giấy trắng, đặt lại lên bàn, nói rằng của cải rồi cũng về với đất. Không ai hiểu ý bạn, nhưng cũng không ai dám hỏi. Đêm ấy bạn ngủ sớm, và bàn thờ vẫn sáng đèn như mọi đêm.",
+        "hieu_ung": [
+          { "cong": { "ngo_tinh": 3 } }
+        ]
+      }
+    }
+  ]
+}

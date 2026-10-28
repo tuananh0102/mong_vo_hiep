@@ -1,0 +1,50 @@
+{
+  "ma": "lang_khach_ve_chieu",
+  "nguon": "HS04 I.2, M1-15 (viết mới)",
+  "ten": "Lãng Khách Về Chiều",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [51, 80],
+  "vung": null,
+  "dieu_kien": { "la": "mon_phai", "trong": [""] },
+  "trong_so": 40,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "Biến thể Lãng khách cho nhóm 51+ (REVIEW mục 8). Người không có môn phái không có trợ cấp, không có đồng môn, nên tuổi già khác hẳn người ở phái.",
+  "mo_ta": "Không có sơn môn nào gọi bạn về. Bạn thuê một căn nhà nhỏ ở đầu làng, tự nấu cơm, tự sắc thuốc. Hôm nay có một người trẻ tuổi tìm tới, nói rằng nghe danh bạn từ lâu và muốn xin một lời chỉ dạy. Bạn nhìn gương mặt ấy, thấy lạ mà quen.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Mời vào nhà, kể cho họ nghe cả một đời giang hồ",
+      "ket_qua": {
+        "van_ban": "Bạn nói từ chiều tới tối, kể cả những chuyện chưa từng kể với ai. Người trẻ nghe tới khuya mới đứng dậy chào. Sáng hôm sau họ tới lần nữa, mang theo một ấm trà. Từ đó, căn nhà đầu làng có thêm người ra vào.",
+        "hieu_ung": [
+          { "danh_vong": 10 },
+          { "hiep_nghia": 20 }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Đóng cửa, nói rằng mình đã quên hết rồi",
+      "ket_qua": {
+        "van_ban": "Bạn đóng cửa, ngồi lại trong bóng tối. Ngoài kia, người trẻ đứng một lúc rồi đi. Bạn biết mình không quên gì cả, nhưng có những chuyện kể ra chỉ làm người nghe mệt. Đêm ấy bạn ngủ muộn hơn mọi khi.",
+        "hieu_ung": [
+          { "hiep_nghia": -10 },
+          { "cong": { "ngo_tinh": 2 } }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Nhận họ làm người chép lại chuyện đời mình",
+      "ket_qua": {
+        "van_ban": "Bạn bảo người trẻ ngồi xuống, lấy giấy bút. Mỗi ngày một chương, từ lúc còn nhỏ tới khi tóc bạc. Cuốn sách ấy viết xong sau nửa năm, và lần đầu tiên bạn thấy đời mình nằm gọn trong mấy chục trang giấy.",
+        "hieu_ung": [
+          { "danh_vong": 15 },
+          { "hiep_nghia": 10 },
+          { "dat_co": "co_ky_uc_thanh_thu" }
+        ]
+      }
+    }
+  ]
+}

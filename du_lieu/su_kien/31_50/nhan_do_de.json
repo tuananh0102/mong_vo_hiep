@@ -1,0 +1,53 @@
+{
+  "ma": "nhan_do_de",
+  "nguon": "HS04 I.1, M1-15 (viết mới)",
+  "ten": "Đứa Trẻ Bên Cửa Từ Đường",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [31, 50],
+  "vung": null,
+  "dieu_kien": null,
+  "trong_so": 25,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "Sự kiện thường viết mới, dùng quyền nhận đồ đệ riêng của Bậc 4 (HS04 I.1). Hảo cảm và NPC đồ đệ thật để M2-03; ở M1 chỉ ghi cờ va_nhan_do_de. Cống hiến +50 dùng hiệu ứng cong_hien, người không có môn phái thì không cộng gì (đúng HS01 II.6).",
+  "mo_ta": "Một đứa trẻ gầy gò quỳ trước cửa từ đường ba ngày liền, xin được theo học. Nó nói cha mẹ bị cướp giết, nhà cháy, và trên đời chỉ còn biết mỗi tên bạn. Bạn nhìn đôi tay nó: đã chai sạn vì bổ củi, nhưng các ngón tay lại dài và vững như tay người luyện kiếm.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Nhận nó làm đồ đệ, dạy dỗ nghiêm khắc từng chiêu một",
+      "ket_qua": {
+        "van_ban": "Bạn bắt nó gánh nước ba tháng trước khi dạy chiêu đầu tiên. Nó không kêu ca một lần nào. Hai năm sau, đứa trẻ ấy đã đứng đúng tư thế và biết giữ khoảng cách với đối thủ. Người trong vùng bắt đầu nhắc tới bạn như một bậc thầy.",
+        "hieu_ung": [
+          { "danh_vong": 10 },
+          { "cong_hien": 50 },
+          { "cong": { "ngo_tinh": 2 } },
+          { "dat_co": "va_nhan_do_de" }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Nhận nó, nhưng nuông chiều vì thương hoàn cảnh",
+      "ket_qua": {
+        "van_ban": "Bạn cho nó ăn ngon, mặc ấm, dạy võ mỗi khi nó muốn. Nó quấn bạn như cha, và mỗi lần bạn xuống núi nó lại dúi vào tay bạn vài đồng tiền nó để dành. Nhưng ba năm trôi qua, thanh kiếm của nó vẫn chỉ múa được nửa bài.",
+        "hieu_ung": [
+          { "danh_vong": 5 },
+          { "cong": { "ngan_luong": 100 } },
+          { "dat_co": "va_nhan_do_de" }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Từ chối, đưa nó ít bạc và chỉ tới một môn phái khác",
+      "cong": { "so": "ngan_luong", "op": ">=", "gt": 20 },
+      "ket_qua": {
+        "van_ban": "Bạn đưa nó một túi bạc nhỏ và chỉ về phía đông, nơi có một môn phái chịu nhận trẻ mồ côi. Nó cúi đầu, không nói gì, rồi đi. Nhiều năm sau bạn vẫn nhớ đôi tay dài ấy, và tự hỏi nếu năm đó nhận nó thì mọi chuyện sẽ khác thế nào.",
+        "hieu_ung": [
+          { "hiep_nghia": 5 },
+          { "cong": { "ngan_luong": -20 } }
+        ]
+      }
+    }
+  ]
+}

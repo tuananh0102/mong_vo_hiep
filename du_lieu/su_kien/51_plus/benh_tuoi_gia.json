@@ -1,0 +1,55 @@
+{
+  "ma": "benh_tuoi_gia",
+  "nguon": "HS04 III, M1-15 (viết mới)",
+  "ten": "Bệnh Tuổi Già",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [55, 80],
+  "vung": null,
+  "dieu_kien": null,
+  "trong_so": 30,
+  "lap_lai": { "toi_da": 2 },
+  "ghi_chu": "Sự kiện thường viết mới cho nhóm 51+; dùng lại cờ Trọng thương HS06 I.1 và Điểm Ám Thương HS01 II.8. Tuổi thọ tối đa lấy theo tuoiThoMax ở M1-04 nên bệnh chỉ làm giảm Căn cốt và tăng Ám thương, không trừ thẳng tuổi thọ.",
+  "mo_ta": "Cơn đau đầu gối tới từ mùa trước giờ lan lên tận hông. Bạn đi ba bước phải nghỉ một bước. Ông thầy thuốc trong huyện bảo xương đã khô, khí huyết đã cạn, muốn giữ được cái chân thì phải bỏ hẳn rượu và đường dài.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Kiên trì vận công và đi bộ chậm mỗi ngày",
+      "kiem_dinh": { "loai": "roll", "chi_so": "can_cot", "nguong": 35 },
+      "thanh_cong": {
+        "van_ban": "Mỗi sáng bạn đi quanh sân mười vòng, chậm nhưng đều. Ba tháng sau, cơn đau lùi lại và bạn đứng được lâu hơn. Không ai chữa khỏi tuổi già, nhưng bạn đã mua thêm được vài năm đi lại không cần gậy.",
+        "hieu_ung": [
+          { "cong": { "can_cot": 2 } }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Bạn cố đi nhiều hơn sức mình, và tới vòng thứ bảy thì khuỵu xuống sân. Đầu gối sưng lên, phải nằm ba tuần. Từ đó bạn hiểu cơ thể mình không còn tha thứ cho những lần cố quá.",
+        "hieu_ung": [
+          { "cong": { "can_cot": -2 } },
+          { "trong_thuong": true }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Mua thuốc bổ và thuê người chăm sóc",
+      "cong": { "so": "ngan_luong", "op": ">=", "gt": 150 },
+      "ket_qua": {
+        "van_ban": "Bạn thuê một bà lão trong làng tới nấu cơm và sắc thuốc mỗi ngày. Tiền ra nhiều, nhưng bữa ăn nóng, giấc ngủ sâu, và cơn đau đầu gối dịu hẳn. Bạn nhận ra đồng tiền kiếm được cả đời cuối cùng cũng có chỗ dùng đúng.",
+        "hieu_ung": [
+          { "cong": { "ngan_luong": -150, "can_cot": 2 } }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Kệ, sống được ngày nào hay ngày ấy",
+      "ket_qua": {
+        "van_ban": "Bạn vẫn uống rượu, vẫn đi đường dài khi có việc. Cái chân đau dần thành quen, và bạn học cách chống gậy. Mỗi tháng nó yếu thêm một chút, nhưng bạn không muốn đổi những ngày còn lại lấy một cái đầu gối lành.",
+        "hieu_ung": [
+          { "cong": { "can_cot": -3, "am_thuong": 2 } }
+        ]
+      }
+    }
+  ]
+}

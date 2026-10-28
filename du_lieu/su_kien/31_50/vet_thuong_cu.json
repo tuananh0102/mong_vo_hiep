@@ -1,0 +1,54 @@
+{
+  "ma": "vet_thuong_cu",
+  "nguon": "M1-15 (viết mới, Phụ lục A)",
+  "ten": "Vết Thương Cũ",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [31, 50],
+  "vung": null,
+  "dieu_kien": null,
+  "trong_so": 20,
+  "lap_lai": { "toi_da": 2 },
+  "ghi_chu": "Sự kiện thường viết mới về Điểm Ám Thương (HS01 II.8, HS06 I.1). Chỉ số am_thuong có trong chi_so.json nên cộng trừ trực tiếp được bằng DSL.",
+  "mo_ta": "Trở trời, vai trái lại nhức. Đó là chỗ một thanh đao chém vào từ nhiều năm trước, vết thương đã liền da nhưng chưa từng lành hẳn. Đêm nay cơn đau dữ dội tới mức bạn không nhấc nổi tay, và lần đầu bạn nghĩ tới chuyện phải chữa nó cho dứt.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Tự vận công chữa trị, kiên trì mỗi tối",
+      "kiem_dinh": { "loai": "roll", "chi_so": "can_cot", "nguong": 45 },
+      "thanh_cong": {
+        "van_ban": "Ba tháng vận công đúng cách, cơn đau nhức rút dần. Bạn không chữa khỏi hoàn toàn, nhưng mỗi sáng thức dậy vai đã nhẹ hơn, và lần đầu sau nhiều năm bạn ngủ trọn một đêm không mộng mị.",
+        "hieu_ung": [
+          { "cong": { "am_thuong": -3 } }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Vận công sai đường, khí nghịch lên ngực. Bạn nằm vật ra chiếu, mồ hôi ướt đẫm, và cơn đau còn dữ hơn trước. Từ hôm ấy mỗi khi gắng sức, vai lại nhói như có mũi kim chạy dọc xương.",
+        "hieu_ung": [
+          { "cong": { "am_thuong": 3 } }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Tìm thầy thuốc giỏi, bỏ tiền mua thuốc trị nội thương",
+      "cong": { "so": "ngan_luong", "op": ">=", "gt": 150 },
+      "ket_qua": {
+        "van_ban": "Ông thầy thuốc già bắt mạch, lắc đầu nói vết thương này đã ăn vào kinh mạch. Ông kê cho bạn ba thang thuốc đắng nghét, dặn kiêng rượu nửa năm. Bạn uống đủ, kiêng đủ, và cái vai đau cuối cùng cũng chịu im.",
+        "hieu_ung": [
+          { "cong": { "ngan_luong": -150, "am_thuong": -5 } }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Uống rượu cho quên cơn đau",
+      "ket_qua": {
+        "van_ban": "Bạn uống tới khi cơn đau chìm dưới men. Sáng hôm sau, đầu nặng như đá và vai vẫn nhức. Cứ thế nhiều năm, cơn đau thành người bạn già không mời mà tới, và thể lực bạn xuống dần theo từng mùa trở trời.",
+        "hieu_ung": [
+          { "cong": { "can_cot": -2, "am_thuong": 2 } }
+        ]
+      }
+    }
+  ]
+}

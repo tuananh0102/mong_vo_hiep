@@ -1,0 +1,73 @@
+{
+  "ma": "hoi_vo_thi_tai",
+  "nguon": "M1-15 (viết mới, Phụ lục A)",
+  "ten": "Hội Võ Đầu Xuân",
+  "loai": "thuong",
+  "loai_hien_thi": "giao-chien",
+  "tuoi": [16, 30],
+  "vung": null,
+  "dieu_kien": null,
+  "trong_so": 25,
+  "lap_lai": { "toi_da": 2 },
+  "ghi_chu": "Sự kiện thường viết mới, đài tỷ thí mùa xuân ở huyện. Định mức G10: Danh vọng thắng công khai +5 đến +30, Ngân lượng ±20 đến ±300. Cá cược dùng Ngẫu nhiên hai nhánh 50/50 đúng ký hiệu HS06 I.2.",
+  "mo_ta": "Đầu xuân, huyện mở hội võ ba ngày. Đài gỗ dựng giữa sân đình, người xem chen chật bốn phía. Người giữ đài đã thắng bảy trận liên tiếp, đang ngồi uống nước, mắt láo liên tìm đối thủ. Trên tường treo một tấm biển: thắng giữ đài được mười lạng, thắng trận thứ mười được thưởng thêm một trăm.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Cởi áo ngoài, bước lên đài nhận trận",
+      "kiem_dinh": { "loai": "giao_chien_nhanh", "nguong": 45 },
+      "thanh_cong": {
+        "van_ban": "Ba chiêu. Bạn đánh bại người giữ đài bằng một đòn quét chân rồi khóa tay, gọn tới mức khán giả còn chưa kịp hét. Tiếng vỗ tay vang khắp sân đình, và quan huyện đích thân trao túi bạc cho bạn trước mặt cả huyện.",
+        "hieu_ung": [
+          { "danh_vong": 25 },
+          { "cong": { "ngan_luong": 110 } }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Bạn trụ được bảy chiêu, nhưng chiêu thứ tám hất bạn khỏi đài. Đáp xuống đất bằng lưng, bạn nghe tiếng cười rồi tiếng người đỡ mình dậy. Người giữ đài đỡ bạn lên, vỗ vai bảo: dám lên đã là khá, tập thêm hai năm nữa hãy quay lại.",
+        "hieu_ung": [
+          { "danh_vong": 5 },
+          { "cong_phan_tram": { "hp": -35 } }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Chen vào đám đông, đặt cược vào người giữ đài",
+      "cong": { "va": [{ "so": "ngan_luong", "op": ">=", "gt": 80 }] },
+      "kiem_dinh": {
+        "loai": "ngau_nhien",
+        "nhanh": [
+          {
+            "ti_le": 50,
+            "ket_qua": {
+              "van_ban": "Người giữ đài thắng trận thứ tám, thứ chín, rồi thứ mười. Đám đông vỡ òa, còn bạn lặng lẽ nhận về gấp đôi số bạc đã đặt, cười một mình trong đám người ồn ào.",
+              "hieu_ung": [
+                { "cong": { "ngan_luong": 150 } }
+              ]
+            }
+          },
+          {
+            "ti_le": 50,
+            "ket_qua": {
+              "van_ban": "Một gã thợ rèn lực lưỡng từ đám đông bước lên và hạ người giữ đài trong ba chiêu. Tiếng chửi rủa nổi lên khắp sân, còn bạn mất trắng số bạc đã cược. Tối đó bạn ăn cơm với rau muối, tự nhủ lần sau đừng cược vào thứ mình không kiểm soát.",
+              "hieu_ung": [
+                { "cong": { "ngan_luong": -80 } }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Đứng ngoài đám đông, xem kỹ từng chiêu để học",
+      "ket_qua": {
+        "van_ban": "Bạn đứng tựa cột đình cả buổi chiều, nhìn cách người giữ đài giữ khoảng cách và ra đòn khi đối thủ mất thăng bằng. Về nhà, bạn múa lại từng chiêu trong sân. Có những thứ học được mà không cần ai dạy.",
+        "hieu_ung": [
+          { "cong": { "ngo_tinh": 3 } }
+        ]
+      }
+    }
+  ]
+}

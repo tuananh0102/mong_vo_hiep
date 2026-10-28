@@ -1,0 +1,67 @@
+{
+  "ma": "nhiem_vu_xuat_son",
+  "nguon": "HS04 II.1",
+  "ten": "Nhiệm Vụ Xuất Sơn Đầu Tiên",
+  "loai": "co_dinh",
+  "loai_hien_thi": "giao-chien",
+  "tuoi": [16, 20],
+  "vung": null,
+  "dieu_kien": { "khong": { "la": "mon_phai", "trong": [""] } },
+  "trong_so": 0,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "Chuyển nguyên văn HS04 II.1 cho người đã có sư môn. Nhánh A thất bại hẹn sự kiện nối tiếp Giải cứu Ca Nữ trong 2 năm (tiep qua len_lich). Mất 1 AP năm sau vì bị sư phụ phạt quỳ từ đường (mat_ap_nam_sau). Ôn Nhu Tri Kỷ chỉ ghi cờ co_on_nhu_tri_ky, NPC thật ở M3-07. Biến thể Lãng khách ở tệp nhiem_vu_xuat_son_lang_khach.",
+  "mo_ta": "Lần đầu tiên bạn một mình rời khỏi sơn môn, xuống một thị trấn ven núi của Trung Nguyên. Trong quán rượu, một đám ác bá địa phương đang ép hai cha con người hát rong bán thân gán nợ. Nhìn kỹ thắt lưng tên cầm đầu, bạn giật mình: hắn đeo lệnh bài của một Thế gia lớn có giao tình với sư phụ bạn.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Rút kiếm tương trợ, đánh gãy răng đám ác bá",
+      "kiem_dinh": { "loai": "giao_chien_nhanh", "nguong": 40 },
+      "thanh_cong": {
+        "van_ban": "Bạn ra tay giữa tiếng hò reo của khách trọ. Đám ác bá chạy tán loạn, hai cha con quỳ xuống dập đầu tạ ơn. Cô con gái ngẩng lên nhìn bạn, ánh mắt ấy khắc sâu vào ký ức. Về núi, sư phụ phạt bạn quỳ từ đường vì tội gây thù chuốc oán với Thế gia.",
+        "hieu_ung": [
+          { "hiep_nghia": 50 },
+          { "danh_vong": 10 },
+          { "mat_ap_nam_sau": 1 },
+          { "dat_co": "da_xuat_son" }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Đám ác bá đông gấp ba lần bạn. Một gậy đập vào lưng khiến bạn ngã sấp giữa quán, hai cha con bị lôi đi ngay trước mắt. Bạn lết về núi với thương tích đầy mình, trong lòng chỉ còn nỗi nhục và câu hỏi: cô gái ấy bị đưa đi đâu?",
+        "hieu_ung": [
+          { "hiep_nghia": 20 },
+          { "cong_phan_tram": { "hp": -50 } },
+          { "trong_thuong": true },
+          { "mat_ap_nam_sau": 1 },
+          { "len_lich": { "su_kien": "giai_cuu_ca_nu", "sau_nam": 1, "han_nam": 2 } },
+          { "dat_co": "da_xuat_son" }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Bỏ ra 50 lạng bạc chuộc thân cho hai cha con để giữ hòa khí đôi bên",
+      "cong": { "so": "ngan_luong", "op": ">=", "gt": 50 },
+      "ket_qua": {
+        "van_ban": "Bạn đặt túi bạc lên bàn, nói một câu nhẹ như không: coi như tại hạ mua vui cho cả quán. Tên ác bá cân nhắc rồi cười, thả người, còn bạn thì học được một bài: có những trận không cần rút kiếm vẫn thắng.",
+        "hieu_ung": [
+          { "cong": { "ngan_luong": -50, "ngo_tinh": 5 } },
+          { "hiep_nghia": 20 },
+          { "dat_co": "da_xuat_son" }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Ngồi uống rượu làm ngơ, còn chỉ điểm cho tên ác bá cách bắt người cho khéo",
+      "ket_qua": {
+        "van_ban": "Bạn nâng chén, hạ giọng mách cho tên ác bá một chiêu khiến hai cha con không kịp kêu cứu. Hắn cười lớn, kéo ghế ngồi cùng, cuối buổi dúi vào tay bạn một túi bạc và một lời hứa: sau này xuống núi cứ tìm hắn.",
+        "hieu_ung": [
+          { "hiep_nghia": -80 },
+          { "cong": { "ngan_luong": 100 } },
+          { "dat_co": "am_buon_lau" },
+          { "dat_co": "da_xuat_son" }
+        ]
+      }
+    }
+  ]
+}

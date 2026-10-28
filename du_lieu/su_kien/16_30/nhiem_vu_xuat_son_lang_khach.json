@@ -1,0 +1,65 @@
+{
+  "ma": "nhiem_vu_xuat_son_lang_khach",
+  "nguon": "HS04 II.1, REVIEW mục 8",
+  "ten": "Ngày Đầu Bước Vào Giang Hồ",
+  "loai": "co_dinh",
+  "loai_hien_thi": "giao-chien",
+  "tuoi": [16, 20],
+  "vung": null,
+  "dieu_kien": { "la": "mon_phai", "trong": [""] },
+  "trong_so": 0,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "Biến thể Lãng khách của HS04 II.1 theo đề xuất REVIEW mục 8: người chơi không có sư môn nên không có chuyện bị sư phụ phạt AP, thay bằng mất Danh vọng vì không có chỗ dựa. Nhánh A thất bại cũng hẹn Giải cứu Ca Nữ trong 2 năm.",
+  "mo_ta": "Không có sơn môn nào chờ bạn quay về, cũng chẳng có ai dạy bạn phải làm gì. Bạn dừng chân ở một quán rượu ven đường và thấy một đám ác bá đang đánh đập một người hát rong già, buộc ông ta giao con gái để trừ nợ. Không ai trong quán dám đứng lên.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Một mình xông vào giữa đám đông, đỡ đòn cho ông lão",
+      "kiem_dinh": { "loai": "giao_chien_nhanh", "nguong": 35 },
+      "thanh_cong": {
+        "van_ban": "Bạn không có sư môn, nhưng có hai nắm đấm và một chút liều mạng. Đám ác bá bỏ chạy, ông lão run run cảm tạ, cô con gái đỡ cha dậy. Cả quán nhìn bạn, và lần đầu tiên cái tên vô danh của bạn được người ta nhắc tới.",
+        "hieu_ung": [
+          { "hiep_nghia": 50 },
+          { "danh_vong": 15 },
+          { "dat_co": "da_xuat_son" }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Không có sư huynh nào đứng sau lưng. Bạn bị đánh ngã, hai cha con vẫn bị lôi đi, và bạn nằm lại giữa sàn quán cho tới khi trời sáng. Trong cơn đau, bạn tự nhủ phải tìm ra cô gái ấy.",
+        "hieu_ung": [
+          { "hiep_nghia": 20 },
+          { "cong_phan_tram": { "hp": -50 } },
+          { "trong_thuong": true },
+          { "danh_vong": -5 },
+          { "len_lich": { "su_kien": "giai_cuu_ca_nu", "sau_nam": 1, "han_nam": 2 } },
+          { "dat_co": "da_xuat_son" }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Đứng ra trả nợ thay, coi như mua lấy một đêm yên ổn",
+      "cong": { "so": "ngan_luong", "op": ">=", "gt": 50 },
+      "ket_qua": {
+        "van_ban": "Bạn ném túi bạc xuống bàn và nói thẳng: nợ đã trả, người đi. Tên ác bá liếc túi bạc rồi gật đầu. Ông lão hát rong lén dúi vào tay bạn một mẩu giấy vẽ nguệch ngoạc, bảo đó là chỗ ở của ông ở ngoại thành.",
+        "hieu_ung": [
+          { "cong": { "ngan_luong": -50 } },
+          { "hiep_nghia": 20 },
+          { "dat_co": "da_xuat_son" }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Rời quán, tự nhủ giang hồ ai cũng phải tự lo cho mình",
+      "ket_qua": {
+        "van_ban": "Bạn quay lưng đi trước khi câu chuyện kết thúc. Sau lưng là tiếng đổ vỡ và tiếng khóc. Đêm ấy bạn ngủ ngoài gốc cây, gió lạnh, và câu hỏi ấy vẫn chưa buông bạn ra.",
+        "hieu_ung": [
+          { "hiep_nghia": -40 },
+          { "cong": { "ngo_tinh": 2 } },
+          { "dat_co": "da_xuat_son" }
+        ]
+      }
+    }
+  ]
+}

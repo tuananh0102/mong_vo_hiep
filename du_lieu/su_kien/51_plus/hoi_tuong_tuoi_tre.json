@@ -1,0 +1,48 @@
+{
+  "ma": "hoi_tuong_tuoi_tre",
+  "nguon": "HS04 III, M1-15 (viết mới)",
+  "ten": "Hồi Tưởng Tuổi Trẻ",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [51, 70],
+  "vung": null,
+  "dieu_kien": null,
+  "trong_so": 30,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "Sự kiện thường viết mới cho nhóm 51+ theo HS04 III (tuổi xế chiều). Định mức G10 sự kiện thường 16+: chỉ số gốc ±2 đến ±8, Hiệp nghĩa ±20 đến ±100, Danh vọng ±5 đến ±30.",
+  "mo_ta": "Bạn ngồi trước hiên, nhìn đám trẻ trong làng tập múa gậy. Một đứa trong bọn hét lên đúng câu bạn từng hét năm mười sáu tuổi, và bỗng nhiên bạn thấy mình đứng lại giữa con đường cũ: quán rượu ấy, cơn mưa ấy, người ấy. Đã bốn chục năm rồi.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Đứng dậy, chỉ cho lũ trẻ thế đứng đúng",
+      "ket_qua": {
+        "van_ban": "Bạn cầm gậy của đứa trẻ, đứng vào tư thế rồi giải thích từng chỗ. Lũ trẻ nghe chăm chú, có đứa bắt chước được ngay. Đến chiều, cả làng biết ông già ấy từng là người thế nào, và bạn có thêm một lý do để ra hiên mỗi sáng.",
+        "hieu_ung": [
+          { "danh_vong": 10 },
+          { "hiep_nghia": 20 }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Ngồi yên, uống nốt chén trà và để ký ức tự chảy",
+      "ket_qua": {
+        "van_ban": "Bạn ngồi tới khi trà nguội, nhớ lại từng khuôn mặt, từng lời nói dở dang. Có những việc bạn đã làm đúng, có những việc bạn vẫn ước mình đã làm khác. Chiều xuống, bạn đứng dậy, thấy lòng nhẹ như vừa trả được một món nợ không ai đòi.",
+        "hieu_ung": [
+          { "cong": { "ngo_tinh": 3 } }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Kể lại chuyện cũ cho lũ trẻ nghe, phóng đại một chút cho vui",
+      "ket_qua": {
+        "van_ban": "Bạn kể về trận đánh ở bến đò, về người bạn đã cứu, về thanh kiếm gãy. Lũ trẻ nghe tới mức quên cả cơm chiều. Trong câu chuyện của bạn, bạn trẻ hơn, mạnh hơn, và chưa từng thua ai. Bạn biết mình đang thêm mắm muối, nhưng lũ trẻ thì không cần biết.",
+        "hieu_ung": [
+          { "danh_vong": 5 },
+          { "hiep_nghia": 5 }
+        ]
+      }
+    }
+  ]
+}

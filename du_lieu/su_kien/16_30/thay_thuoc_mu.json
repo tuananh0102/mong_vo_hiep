@@ -1,0 +1,56 @@
+{
+  "ma": "thay_thuoc_mu",
+  "nguon": "M1-15 (viết mới, Phụ lục A)",
+  "ten": "Ông Thầy Thuốc Mù",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [17, 30],
+  "vung": null,
+  "dieu_kien": null,
+  "trong_so": 25,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "Sự kiện thường viết mới, dạy Tạp học Y thuật theo HS01 II.5. Lượng tăng nhỏ hơn một lần Học Tạp học (G07) để không lấn át hành động tiêu AP.",
+  "mo_ta": "Bạn ngủ nhờ trong một miếu hoang thì gặp một ông lão mù đang sắc thuốc. Ông nghe tiếng bạn thở và nói ngay bạn vừa trải qua một trận đánh, trong người còn ứ máu. Ông không hỏi tên, chỉ bảo: ngồi xuống, ta bắt mạch cho.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Ở lại vài tháng, học cách bắt mạch và nhận biết dược liệu",
+      "ket_qua": {
+        "van_ban": "Ông lão dạy bạn bằng cách bắt bạn sờ, ngửi, nếm từng vị thuốc. Ba tháng sau, bạn đã phân biệt được mấy chục loại thảo dược và biết cách cầm máu một vết thương sâu. Ngày bạn đi, ông chỉ nói: thầy thuốc giỏi là người biết khi nào không nên chữa.",
+        "hieu_ung": [
+          { "cong": { "y_thuat": 5 } },
+          { "hiep_nghia": 10 }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Xin ông một thang thuốc chữa vết thương cũ rồi đi tiếp",
+      "ket_qua": {
+        "van_ban": "Ông sắc cho bạn một thang đắng nghét, bảo uống hết trong ba ngày. Hôm thứ ba, cơn đau nhức trong xương biến mất, và bạn nhận ra mình đã ngủ một giấc trọn vẹn đầu tiên sau nhiều tháng.",
+        "hieu_ung": [
+          { "cong_phan_tram": { "hp": 50 } }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Đợi ông ngủ, lục túi thuốc xem có gì bán được",
+      "kiem_dinh": { "loai": "roll", "chi_so": "ngo_tinh", "nguong": 40 },
+      "thanh_cong": {
+        "van_ban": "Bạn lấy được một gói nhân sâm khô và vài lạng bạc ông để trong ống tre. Sáng hôm sau bạn đi trước khi ông thức. Bán được món hàng đó ở chợ huyện, bạn có một khoản kha khá, nhưng từ đó mỗi lần ngửi mùi thuốc bắc bạn lại thấy khó chịu.",
+        "hieu_ung": [
+          { "cong": { "ngan_luong": 60, "y_thuat": 3 } },
+          { "hiep_nghia": -20 }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Ông lão mù chộp đúng cổ tay bạn trước khi bạn kịp mở túi. Ông không mắng, chỉ nói một câu: đôi tay này rồi sẽ chẳng cứu được ai. Bạn bị đuổi ra khỏi miếu giữa đêm, đầu trần đi trong sương.",
+        "hieu_ung": [
+          { "hiep_nghia": -20 },
+          { "cong_phan_tram": { "hp": -10 } }
+        ]
+      }
+    }
+  ]
+}

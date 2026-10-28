@@ -1,0 +1,64 @@
+{
+  "ma": "quan_ruou_ven_duong",
+  "nguon": "M1-15 (viết mới, Phụ lục A)",
+  "ten": "Quán Rượu Ven Đường",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [16, 25],
+  "vung": null,
+  "dieu_kien": null,
+  "trong_so": 40,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "Sự kiện thường viết mới theo Phụ lục A. Định mức G10: chỉ số gốc ±2 đến ±8, Hiệp nghĩa ±10 đến ±50. Ba lựa chọn là ba lối sống: liều lĩnh, khôn khéo, làm ngơ.",
+  "mo_ta": "Mưa dột mái quán, khách trú chật kín. Ở góc trong, một gã đàn ông lực lưỡng đang túm cổ áo một cậu bé bán hàng rong, đòi tiền bảo kê mà cậu không có. Chủ quán giả vờ lau bàn, khách xung quanh cúi mặt vào chén rượu. Cậu bé nhìn quanh cầu cứu, và ánh mắt dừng lại ở bạn.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Đứng dậy, nắm cổ tay gã kia và bẻ ngược ra sau",
+      "kiem_dinh": { "loai": "giao_chien_nhanh", "nguong": 35 },
+      "thanh_cong": {
+        "van_ban": "Gã đàn ông gầm lên rồi bị bạn ghì xuống bàn. Cả quán im phăng phắc, rồi có tiếng vỗ tay lẻ tẻ. Gã bỏ đi, còn cậu bé dúi vào tay bạn mấy đồng tiền lẻ mà bạn phải mất một lúc mới từ chối được.",
+        "hieu_ung": [
+          { "hiep_nghia": 30 },
+          { "danh_vong": 5 }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Gã khỏe hơn bạn tưởng. Một cùi chỏ vào ngực khiến bạn choáng váng, và gã chỉ dừng lại khi có người gọi lớn tên quan binh. Bạn thua trận, nhưng cậu bé đã kịp chạy thoát và ngoái lại nhìn bạn rất lâu.",
+        "hieu_ung": [
+          { "hiep_nghia": 10 },
+          { "cong_phan_tram": { "hp": -30 } }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Mời gã ngồi xuống uống một chén, khéo léo nói đỡ cho cậu bé",
+      "kiem_dinh": { "loai": "roll", "chi_so": "mi_luc", "nguong": 45 },
+      "thanh_cong": {
+        "van_ban": "Bạn rót rượu, khen gã có khí khái, rồi thong thả kể một câu chuyện về kẻ mạnh mà chấp nhặt trẻ con thì thiên hạ cười cho. Gã nghe, mặt giãn ra, cuối cùng đứng dậy bỏ đi, còn nói nửa đùa nửa thật rằng quán này từ nay có bạn thì hắn không tới nữa.",
+        "hieu_ung": [
+          { "hiep_nghia": 20 },
+          { "cong": { "mi_luc": 2 } }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Gã không nghe, còn quay sang chửi bạn là kẻ nhiều chuyện. Chén rượu hắt vào mặt bạn, và gã kéo cậu bé ra ngoài trước ánh mắt im lặng của cả quán. Bạn ngồi lại với vết rượu trên áo, tự nhủ lần sau phải nói khác đi.",
+        "hieu_ung": [
+          { "hiep_nghia": -5 },
+          { "cong_phan_tram": { "hp": -10 } }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Cúi xuống chén rượu của mình, coi như không thấy gì",
+      "ket_qua": {
+        "van_ban": "Bạn nghe tiếng bạt tai, tiếng cậu bé nấc, rồi tiếng cửa quán đóng sập. Chủ quán thở ra một hơi, rót thêm rượu cho bạn và không nói gì. Đêm ấy bạn ngủ dễ, nhưng sáng hôm sau nghe tin cậu bé ấy bị đánh gãy tay ở chợ.",
+        "hieu_ung": [
+          { "hiep_nghia": -20 }
+        ]
+      }
+    }
+  ]
+}

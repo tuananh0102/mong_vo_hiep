@@ -1,0 +1,48 @@
+{
+  "ma": "thang_bac_3",
+  "nguon": "HS04 I.1",
+  "ten": "Thử Thách Bậc 3 - Chiến Thắng Đại Sư Huynh",
+  "loai": "noi_tiep",
+  "loai_hien_thi": "giao-chien",
+  "tuoi": [20, 200],
+  "vung": null,
+  "dieu_kien": null,
+  "trong_so": 0,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "Sự kiện thử thách thăng cấp Bậc 3 của HS04 I.1 (tỷ thí công khai giành vị trí Thủ tọa đại đệ tử), dùng chung cho 4 phái. mon_phai.ts mở khi đủ tuổi 20 và 300 Cống hiến. Tam Hiệp chế độ tỷ thí, không sinh tử đúng HS02 V.",
+  "vai": {
+    "dai_su_huynh": { "ten": "Đại Sư Huynh", "vo_luc": 60 }
+  },
+  "mo_ta": "Sân chính của {mon_phai} kê đủ ghế cho các Trưởng lão. Đại Sư Huynh đã giữ vị trí Thủ tọa mười năm, chưa thua ai. Hôm nay hắn đứng giữa sân, tay cầm kiếm gỗ, cười bảo bạn: muốn ngồi lên trên thì phải bước qua ta. Cả phái đứng xung quanh, không ai nói gì.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Bước vào sân, tỷ thí ba hiệp trước mặt toàn phái",
+      "kiem_dinh": { "loai": "tam_hiep", "doi_thu": "dai_su_huynh", "che_do": "ty_thi" },
+      "thanh_cong": {
+        "van_ban": "Hiệp thứ ba, bạn hất được kiếm gỗ khỏi tay Đại Sư Huynh. Hắn đứng sững một lúc rồi chắp tay cúi đầu, trước mặt các Trưởng lão và cả phái. Chiều hôm ấy, bạn dọn vào ở trong dãy phòng của Chân truyền đệ tử, và từ đó có người gọi bạn là Thủ tọa.",
+        "hieu_ung": [
+          { "thang_bac": 3 },
+          { "danh_vong": 10 }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Bạn trụ được hai hiệp, tới hiệp thứ ba thì thua bằng một đòn thuận tay. Đại Sư Huynh đỡ bạn dậy, vỗ vai nói một câu nghe như khen mà lại nhức hơn chửi. Cả phái giải tán, và bạn biết mình sẽ còn phải chờ thêm một năm nữa mới được thử lại.",
+        "hieu_ung": [
+          { "danh_vong": -5 },
+          { "cong_phan_tram": { "hp": -20 } }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Xin hoãn tỷ thí, xin phép luyện thêm một năm",
+      "ket_qua": {
+        "van_ban": "Bạn cúi đầu xin lui. Các Trưởng lão nhìn nhau, có người gật đầu, có người cười nhạt. Đại Sư Huynh thu kiếm gỗ, bảo bạn cứ luyện cho kỹ. Một năm sau bạn vẫn chưa dám bước lên sân, và cái chức Thủ tọa thì vẫn treo ở đó.",
+        "hieu_ung": [
+          { "cong": { "can_cot": 2 } }
+        ]
+      }
+    }
+  ]
+}

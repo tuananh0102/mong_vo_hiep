@@ -1,0 +1,71 @@
+{
+  "ma": "an_oan_cu_keo_den",
+  "nguon": "HS04 II.3, M1-15 (viết mới)",
+  "ten": "Món Nợ Máu Nhiều Năm",
+  "loai": "thuong",
+  "loai_hien_thi": "giao-chien",
+  "tuoi": [35, 55],
+  "vung": null,
+  "dieu_kien": { "co": "ke_thu_dai_su_huynh" },
+  "trong_so": 100,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "Nối tiếp nhánh thất bại của Đại Biến Cố Kế Vị Chưởng Môn (HS04 II.3): Kẻ Thù Truyền Kiếp quay lại sau nhiều năm. Cừu gia đầy đủ theo HS05 III.2 ở M2-03, M3-09; M1 chỉ dùng cờ ke_thu_dai_su_huynh do hiệu ứng ghi_ke_thu đặt.",
+  "vai": {
+    "dai_su_huynh": { "ten": "Đại Sư Huynh", "vo_luc": 65 }
+  },
+  "mo_ta": "Một buổi chiều, người của phái cũ tới tìm bạn, mặt mày hớt hải: Đại Sư Huynh đã quay về, dẫn theo một toán người và đang đóng quân ở bến đò. Hắn cho người nhắn một câu: món nợ năm xưa, hôm nay trả. Bạn nhìn thanh kiếm treo trên vách đã lâu không rút.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Một mình tới bến đò, nghênh chiến trước mặt mọi người",
+      "kiem_dinh": { "loai": "tam_hiep", "doi_thu": "dai_su_huynh", "che_do": "sinh_tu" },
+      "thanh_cong": {
+        "van_ban": "Trận đánh diễn ra trên bãi cát ướt, dưới mắt cả một bến đò đông người. Đại Sư Huynh gục xuống, và toán người của hắn lặng lẽ rút. Bạn đứng giữa bãi, kiếm còn nhỏ máu, nghe tiếng sóng vỗ và biết rằng món nợ nhiều năm đã khép lại.",
+        "hieu_ung": [
+          { "danh_vong": 30 },
+          { "hiep_nghia": 20 },
+          { "xoa_co": "ke_thu_dai_su_huynh" }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Bạn thua ngay trên bãi cát ấy. Hắn không giết bạn, chỉ để lại một nhát kiếm rạch dọc sườn và một câu: giữ mạng đấy, ta còn quay lại. Người ở bến đò đưa bạn về, và từ đó vết sẹo ấy mỗi khi trở trời lại nhắc bạn nhớ món nợ chưa trả.",
+        "hieu_ung": [
+          { "trong_thuong": true },
+          { "cong": { "am_thuong": 5 } },
+          { "danh_vong": -10 }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Tới bến đò một mình, không mang kiếm, nói chuyện như người lớn",
+      "kiem_dinh": { "loai": "roll", "chi_so": "mi_luc", "nguong": 55 },
+      "thanh_cong": {
+        "van_ban": "Bạn ngồi xuống chiếu, rót rượu, gọi hắn bằng cái tên cũ và kể lại chuyện năm xưa mà không một lời buộc tội. Hắn im rất lâu, rồi đặt chén xuống, nói rằng hắn đã mệt mỏi với món nợ này hơn bạn. Toán người rút đi trong đêm.",
+        "hieu_ung": [
+          { "hiep_nghia": 30 },
+          { "danh_vong": 10 },
+          { "xoa_co": "ke_thu_dai_su_huynh" }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Hắn cười vào mặt bạn, nói rằng kẻ yếu mới ngồi xuống xin hòa. Một cái tát hất bạn khỏi chiếu, và hắn bỏ đi trước khi bạn kịp đứng dậy. Câu chuyện về việc bạn tới bến đò rồi về tay không lan khắp vùng, mỗi người kể một kiểu.",
+        "hieu_ung": [
+          { "cong_phan_tram": { "hp": -30 } },
+          { "danh_vong": -5 }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Thu xếp hành lý, rời vùng trước khi hắn tới",
+      "ket_qua": {
+        "van_ban": "Bạn đi trong đêm, không chào ai. Ba năm sau mới có người kể lại: hắn tới bến đò, chờ ba ngày, rồi bỏ đi với vẻ mặt khó hiểu. Bạn sống, nhưng từ đó cái tên của bạn đi kèm một câu chuyện mà bạn không muốn nghe ai kể lại.",
+        "hieu_ung": [
+          { "danh_vong": -20 },
+          { "hiep_nghia": -10 }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "ma": "cam_do_tang_kinh_cac",
+  "nguon": "HS04 II.2",
+  "ten": "Cám Dỗ Tại Tàng Kinh Các",
+  "loai": "thuong",
+  "loai_hien_thi": "giao-chien",
+  "tuoi": [22, 28],
+  "vung": null,
+  "dieu_kien": {
+    "va": [
+      { "khong": { "la": "mon_phai", "trong": [""] } },
+      { "so": "bac_mon_phai", "op": ">=", "gt": 2 }
+    ]
+  },
+  "trong_so": 100,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "Chuyển nguyên văn HS04 II.2. Điều kiện Bậc 2 trở lên đúng bối cảnh trực đêm Tàng Kinh Các (HS04 I.1 ghi canh gác tầng 1 là việc của Nội môn). GDD viết thắng được 'thăng thẳng lên Chân truyền'; M1 dịch thành +200 Cống hiến thay vì hiệu ứng thang_bac 3, vì người chơi thường đã ở Bậc 3 - 4 trong khoảng tuổi 22 - 28 và thang_bac sẽ hạ bậc (xem REVIEW.md). Nhánh A dùng Tam Hiệp chế độ trụ vững (thang_khi tru_vung) đúng ý 'không cần thắng, chỉ cần không bị đánh gục'. Nhánh B là việc [Ám] thật ở M2-06, M1 tạm tính Hiệp nghĩa công khai -50 kèm cờ su_thuc_de_y và m2_noi_tiep. Bí kíp cấm chép được là Hủ Thi Độc Chưởng bản tàn quyển (60%).",
+  "m2_noi_tiep": true,
+  "vai": {
+    "nhi_su_thuc": { "ten": "Nhị Sư Thúc", "vo_luc": 70 }
+  },
+  "mo_ta": "Một đêm mưa gió, bạn trực đêm ở tầng một Tàng Kinh Các. Tiếng sột soạt vọng từ gian sách cấm. Một bóng đen đang lật giở cuốn bí kíp bị niêm phong. Bạn vung đèn lên, khăn che mặt rơi xuống, và bạn chết lặng: đó là Nhị Sư Thúc, người vẫn ngồi giảng đạo lý cho bạn mỗi sáng.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Hét lớn báo động, gọi Chưởng môn và các Trưởng lão",
+      "kiem_dinh": {
+        "loai": "tam_hiep",
+        "doi_thu": "nhi_su_thuc",
+        "che_do": "sinh_tu",
+        "thang_khi": "tru_vung"
+      },
+      "thanh_cong": {
+        "van_ban": "Nhị Sư Thúc lao vào diệt khẩu. Bạn không thắng nổi lão, nhưng đủ khôn để không bị hạ gục trước khi Chưởng môn phá cửa xông vào. Lão bị bắt ngay tại chỗ, cuốn bí kíp cấm còn nguyên trong tay. Trước toàn phái, Chưởng môn tuyên bố bạn xứng đáng làm Chân truyền đệ tử.",
+        "hieu_ung": [
+          { "cong_hien": 200 },
+          { "danh_vong": 20 },
+          { "dat_co": "bat_duoc_nhi_su_thuc" }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Lão đánh bạn gục trước khi Chưởng môn tới. Khi bạn tỉnh lại, cửa sổ đã mở toang, cuốn bí kíp cấm biến mất, còn Nhị Sư Thúc thì đã xuống núi. Các Trưởng lão ghi nhận bạn đã dám ra tay, nhưng ánh mắt họ nhìn bạn vẫn còn chút nghi ngờ.",
+        "hieu_ung": [
+          { "cong_hien": 100 },
+          { "cong": { "am_thuong": 5 } },
+          { "dat_co": "nhi_su_thuc_phan_bo" },
+          { "ghi_ke_thu": "nhi_su_thuc" }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Nhắm mắt làm ngơ, dùng bí mật này ép Nhị Sư Thúc chép cho một bản",
+      "ket_qua": {
+        "van_ban": "Bạn khép cửa, ngồi xuống, nói một câu khiến lão già tái mặt. Đêm ấy lão chép cho bạn một bản tàn quyển và dúi thêm ba trăm lạng bạc bịt miệng. Từ đó mỗi lần chạm mặt, lão vẫn cười niềm nở, nhưng trong mắt lão có thứ gì đó lạnh hơn mưa đêm.",
+        "hieu_ung": [
+          { "hiep_nghia": -50 },
+          { "cong": { "ngan_luong": 300 } },
+          { "hoc_vo_hoc": "hu_thi_doc_chuong", "hoan_thien": 60 },
+          { "dat_co": "su_thuc_de_y" }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Từ chối lời mặc cả, ngay sáng hôm sau xin gặp Chưởng môn trình rõ",
+      "ket_qua": {
+        "van_ban": "Bạn không nhận bạc, cũng không im lặng. Sáng hôm sau, trước mặt Chưởng môn và các Trưởng lão, bạn kể lại từng lời lão nói. Nhị Sư Thúc bị đưa lên hậu sơn diện bích. Không ai khen bạn, nhưng từ đó trong phái không còn ai dám coi bạn là đứa trẻ mới lớn.",
+        "hieu_ung": [
+          { "hiep_nghia": 30 },
+          { "cong_hien": 50 },
+          { "dat_co": "to_giac_nhi_su_thuc" }
+        ]
+      }
+    }
+  ]
+}

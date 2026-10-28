@@ -1,0 +1,55 @@
+{
+  "ma": "thang_bac_4",
+  "nguon": "HS04 I.1",
+  "ten": "Thử Thách Bậc 4 - Giải Cứu Nguy Nan",
+  "loai": "noi_tiep",
+  "loai_hien_thi": "giao-chien",
+  "tuoi": [28, 200],
+  "vung": null,
+  "dieu_kien": null,
+  "trong_so": 0,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "Sự kiện thử thách thăng cấp Bậc 4 của HS04 I.1, dùng chung cho 4 phái. mon_phai.ts mở khi đủ tuổi 28 và 700 Cống hiến. Tam Hiệp chế độ trụ vững: môn phái phải giữ được cho tới khi viện binh tới. Thất bại thì ghiKetQuaThuThach đặt cờ trợ cấp năm sau bằng 0 đúng HS04 I.1; Hảo cảm đồng môn -10 và NPC tử trận chờ M2.",
+  "vai": {
+    "ke_thu": { "ten": "Kẻ Thù Của Môn Phái", "vo_luc": 70 }
+  },
+  "mo_ta": "Nửa đêm, chuông báo động vang khắp sơn môn. Một toán người đeo khăn đen đã phá cổng sau, đang đánh thẳng vào Tàng Kinh Các. Các Trưởng lão còn ở hậu sơn, viện binh phải nửa canh giờ nữa mới tới. Người duy nhất đứng giữa cửa các lúc này là bạn.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Chặn cửa Tàng Kinh Các, giữ tới khi viện binh tới",
+      "kiem_dinh": { "loai": "tam_hiep", "doi_thu": "ke_thu", "che_do": "sinh_tu", "thang_khi": "tru_vung" },
+      "thanh_cong": {
+        "van_ban": "Bạn đứng ở cửa đá, chịu từng đòn mà không lùi. Khi tiếng chuông thứ ba vang lên, viện binh tràn vào sân, toán khăn đen bỏ chạy. Sáng hôm sau, các Trưởng lão đứng trước toàn phái tuyên bố bạn xứng đáng ngồi vào hàng Trưởng lão.",
+        "hieu_ung": [
+          { "thang_bac": 4 }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Bạn giữ được tới khi đầu gối khuỵu xuống. Toán khăn đen tràn qua cửa, lấy đi vài cuốn sách rồi rút theo tiếng còi. Bạn nằm giữa sân đá, nghe đồng môn gọi tên mình, và trong đầu chỉ có một ý nghĩ: giá như mình trụ thêm được một khắc.",
+        "hieu_ung": [
+          { "cong_phan_tram": { "hp": -50 } },
+          { "cong": { "am_thuong": 5 } }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Cho người đốt lửa chặn hành lang, kéo dài thời gian thay vì đánh trực diện",
+      "kiem_dinh": { "loai": "roll", "chi_so": "ngo_tinh", "nguong": 50 },
+      "thanh_cong": {
+        "van_ban": "Bạn hạ lệnh đốt đống củi khô giữa hành lang, khói dày đặc khiến toán khăn đen không dám xông qua. Chúng chửi rủa, ném vài mồi lửa rồi rút trước khi viện binh tới. Sách vở trong Tàng Kinh Các còn nguyên, và cách bạn xử lý được kể lại như một bài học về cái đầu lạnh.",
+        "hieu_ung": [
+          { "thang_bac": 4 }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Khói lửa lan quá nhanh, chính đồng môn của bạn phải tháo chạy trước. Toán khăn đen nhân lúc hỗn loạn lẻn vào lấy sạch mấy cuốn sách quý. Khi viện binh tới, bạn đứng giữa hành lang cháy dở, mặt đen khói và không nói được câu nào.",
+        "hieu_ung": [
+          { "cong_phan_tram": { "hp": -25 } },
+          { "hiep_nghia": -10 }
+        ]
+      }
+    }
+  ]
+}

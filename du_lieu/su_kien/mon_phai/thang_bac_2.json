@@ -1,0 +1,65 @@
+{
+  "ma": "thang_bac_2",
+  "nguon": "HS04 I.1",
+  "ten": "Thử Thách Bậc 2 - Lập Công Xuất Sơn",
+  "loai": "noi_tiep",
+  "loai_hien_thi": "giao-chien",
+  "tuoi": [16, 200],
+  "vung": null,
+  "dieu_kien": null,
+  "trong_so": 0,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "Sự kiện thử thách thăng cấp Bậc 2 của HS04 I.1 (cột Sự kiện Thăng cấp), dùng chung cho 4 phái, tên phái điền bằng mẫu {mon_phai}. Không vào hàng đợi ngẫu nhiên: mon_phai.ts tự mở qua suKienThuThach khi đủ tuổi 16 và 100 Cống hiến. Ghi kết quả thắng / thua do ghiKetQuaThuThach xử lý (Cống hiến +100, thử lại sau 1 năm, 2 lần liền -50).",
+  "mo_ta": "Sư phụ gọi bạn lên điện, giao một tấm lệnh bài và một cái tên: kẻ đạo tặc khét tiếng đang trú trong miếu hoang ngoài thị trấn, đã cướp của ba nhà trong vùng. Nếu bắt được hắn, {mon_phai} sẽ công nhận bạn là đệ tử Nội môn. Nếu thất bại, bạn vẫn là Ngoại môn, và cả phái sẽ biết.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Một mình lần theo dấu vết, đợi đêm khuya rồi lẻn vào miếu",
+      "kiem_dinh": { "loai": "roll", "chi_so": "ngo_tinh", "nguong": 45 },
+      "thanh_cong": {
+        "van_ban": "Bạn tìm ra lối vào phía sau miếu, chờ hắn ngủ rồi áp sát khóa tay trong ba nhịp thở. Hắn chưa kịp rút đao. Sáng hôm sau, bạn giải hắn về sơn môn. Các sư huynh đứng nhìn, và lần đầu tiên có người gọi bạn bằng tên chứ không phải bằng số thứ tự.",
+        "hieu_ung": [
+          { "thang_bac": 2 }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Bạn đoán sai hướng, để hắn phát hiện và chạy mất. Trên đường về, một cú đá ngược của hắn khiến bạn ngã lăn xuống bậc đá. Máu me đầy mặt, bạn về tới sơn môn với hai bàn tay trắng và một bài học về cái giá của việc tự đi một mình.",
+        "hieu_ung": [
+          { "cong_phan_tram": { "hp": -40 } },
+          { "trong_thuong": true }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Xin hai đồng môn cùng đi, vây bắt theo thế trận",
+      "kiem_dinh": { "loai": "giao_chien_nhanh", "nguong": 35 },
+      "thanh_cong": {
+        "van_ban": "Ba người chia ba hướng, chặn cả ba cửa miếu. Tên đạo tặc chống được vài chiêu rồi bị khóa tay. Đồng môn của bạn cười lớn trên đường về, và câu chuyện ấy được kể lại ở điện ngoài tới mấy năm sau.",
+        "hieu_ung": [
+          { "thang_bac": 2 }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Kế hoạch vây bắt đổ vỡ khi một đồng môn sơ ý đạp cành khô. Tên đạo tặc phá cửa sổ chạy thoát, còn bạn bị hắn ném đá trúng vai. Về phái, bạn phải viết bản tường trình dài ba trang, và cả phái đều biết bạn đã thất bại.",
+        "hieu_ung": [
+          { "cong_phan_tram": { "hp": -30 } },
+          { "cong_hien": -30 }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Bỏ tiền thuê người của Lục Phiến Môn chỉ điểm",
+      "cong": { "so": "ngan_luong", "op": ">=", "gt": 100 },
+      "ket_qua": {
+        "van_ban": "Bạn bỏ một trăm lạng, đổi lấy chỗ trú chính xác và giờ hắn ra ngoài đi chợ. Bạn chặn hắn giữa đường, không cần đánh nhiều. Mọi việc xong gọn, nhưng khi sư phụ hỏi lại chuyện, bạn phải nói dối một câu, và câu dối ấy cứ nằm trong cổ bạn suốt nhiều năm.",
+        "hieu_ung": [
+          { "cong": { "ngan_luong": -100 } },
+          { "hiep_nghia": -10 },
+          { "thang_bac": 2 }
+        ]
+      }
+    }
+  ]
+}

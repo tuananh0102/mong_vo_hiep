@@ -1,0 +1,58 @@
+{
+  "ma": "lang_khach_giang_ho",
+  "nguon": "HS04 I.2, M1-15 (viết mới)",
+  "ten": "Kẻ Không Có Sư Môn",
+  "loai": "thuong",
+  "loai_hien_thi": "thuong",
+  "tuoi": [31, 50],
+  "vung": null,
+  "dieu_kien": { "la": "mon_phai", "trong": [""] },
+  "trong_so": 40,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "Biến thể Lãng khách cho nhóm 31 - 50 tuổi (REVIEW mục 8). Định mức G10 sự kiện thường 16+: Ngân lượng ±20 đến ±300, Danh vọng ±5 đến ±30.",
+  "mo_ta": "Người ta thuê bạn hộ tống một đoàn hàng muối đi qua ba huyện. Trên đường, bạn nhận ra đoàn hàng này thực chất đang chở muối lậu, và viên quan huyện sắp cho lính chặn ở bến đò. Người chủ đoàn đặt thêm một túi bạc trước mặt bạn: cứ đi tiếp, đừng hỏi.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Nhận tiền, đưa đoàn hàng vượt trạm bằng đường núi",
+      "kiem_dinh": { "loai": "giao_chien_nhanh", "nguong": 50 },
+      "thanh_cong": {
+        "van_ban": "Bạn dẫn đoàn đi đường mòn sau núi, tránh được trạm gác và về tới huyện bên an toàn. Chủ đoàn trả đủ, còn thưởng thêm một túi. Bạn biết mình vừa giúp một việc không sạch, nhưng ở giang hồ, kẻ không có sư môn thì phải sống bằng nghề.",
+        "hieu_ung": [
+          { "cong": { "ngan_luong": 200 } },
+          { "danh_vong": 10 }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Lính đón sẵn ở đầu đường mòn. Bạn chỉ kịp vứt túi bạc, đỡ vài đòn rồi chạy vào rừng, mất cả tiền lẫn hành lý. Ba ngày sau về tới trấn, bạn chỉ còn bộ áo rách và một bài học về những việc mình không kiểm soát nổi.",
+        "hieu_ung": [
+          { "cong_phan_tram": { "hp": -40 } },
+          { "cong": { "ngan_luong": 50 } }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Từ chối túi bạc, trả lại hàng và đi con đường của mình",
+      "ket_qua": {
+        "van_ban": "Bạn đặt túi bạc lại bàn, nói một câu rồi xoay người. Chủ đoàn chửi sau lưng, nhưng không dám động thủ. Đi được hai dặm, bạn nghe tiếng lính reo ở bến đò và biết mình vừa tránh được một chuyến giam giữ. Đêm ấy bạn ngủ dưới gốc thông, lạnh nhưng nhẹ lòng.",
+        "hieu_ung": [
+          { "hiep_nghia": 5 },
+          { "cong": { "ngo_tinh": 3 } }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Nhận tiền, nhưng bí mật báo cho quan huyện chỗ hàng lậu",
+      "ket_qua": {
+        "van_ban": "Bạn nhận tiền, đưa đoàn đi đúng đường, rồi cho người đưa tin tới nha môn. Hàng bị tịch thu, chủ đoàn bị bắt, còn bạn đi khỏi trấn trước khi người của hắn kịp tìm ra ai đã bán đứng. Tiền trong túi vẫn còn, nhưng mỗi lần ngang một bến đò bạn lại nhìn sau lưng.",
+        "hieu_ung": [
+          { "cong": { "ngan_luong": 50 } },
+          { "danh_vong": 10 },
+          { "hiep_nghia": -10 }
+        ]
+      }
+    }
+  ]
+}

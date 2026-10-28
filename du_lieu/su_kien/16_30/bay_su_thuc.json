@@ -1,0 +1,65 @@
+{
+  "ma": "bay_su_thuc",
+  "nguon": "HS04 II.2",
+  "ten": "Bẫy Sư Thúc",
+  "loai": "thuong",
+  "loai_hien_thi": "giao-chien",
+  "tuoi": [24, 45],
+  "vung": null,
+  "dieu_kien": {
+    "va": [
+      { "khong": { "la": "mon_phai", "trong": [""] } },
+      { "co": "su_thuc_de_y" }
+    ]
+  },
+  "trong_so": 100,
+  "lap_lai": "mot_lan",
+  "ghi_chu": "Phần nối tiếp của Cám Dỗ Tại Tàng Kinh Các (HS04 II.2). GDD ghi 'mỗi năm sau đó [Ngẫu nhiên: 15%] Nhị Sư Thúc tìm cách đẩy vào chỗ chết'; M1 xấp xỉ bằng một sự kiện thường có Cổng cờ su_thuc_de_y thay cho cơ chế xác suất theo năm. Luật đầy đủ và Hảo cảm -100 để M2-03, M2-06.",
+  "mo_ta": "Ba năm sau đêm ở Tàng Kinh Các, Nhị Sư Thúc lại tỏ ra tử tế một cách quá mức. Lần này lão xung phong nhận nhiệm vụ cùng bạn, đích thân dẫn đường vào một khe núi mà lão bảo có đạo tặc ẩn náu. Con đường hẹp, hai bên là vách đá, và bạn chợt nhận ra phía sau không có ai khác ngoài hai người.",
+  "lua_chon": [
+    {
+      "ma": "a",
+      "nhan": "Vờ như không biết, âm thầm quan sát từng bước chân của lão",
+      "kiem_dinh": { "loai": "roll", "chi_so": "ngo_tinh", "nguong": 60 },
+      "thanh_cong": {
+        "van_ban": "Bạn nhận ra dây thép căng ngang đường và vũng dầu đã rải sẵn. Bạn lặng lẽ gỡ bẫy, chụp lại tang vật, rồi quay về kể hết với Chưởng môn. Lão bị bắt, nhưng trước khi bị giải đi, lão cười nhạt nói to một câu khiến vài Trưởng lão quay lại nhìn bạn.",
+        "hieu_ung": [
+          { "cong_hien": 100 },
+          { "xoa_co": "su_thuc_de_y" },
+          { "dat_co": "bang_chung_su_thuc" }
+        ]
+      },
+      "that_bai": {
+        "van_ban": "Bạn bước hụt vào vũng dầu, trượt xuống khe đá. Đá nhọn rạch nát vai, còn lão đứng trên miệng khe nhìn xuống, chậm rãi nói rằng lão đã cảnh báo bạn đừng đi đường này. Bạn sống sót, nhưng vết thương ấy theo bạn rất lâu.",
+        "hieu_ung": [
+          { "cong_phan_tram": { "hp": -60 } },
+          { "cong": { "am_thuong": 5 } },
+          { "trong_thuong": true }
+        ]
+      }
+    },
+    {
+      "ma": "b",
+      "nhan": "Dừng lại giữa đường, nói thẳng mọi chuyện và xin sư môn phân xử",
+      "ket_qua": {
+        "van_ban": "Bạn quay người, nhìn thẳng vào mắt lão và nói to những gì mình đã làm ba năm trước. Lão không chối, chỉ cười. Sư môn xử lão tội phản môn, còn bạn thì bị ghi một lỗi cũ: kẻ từng tống tiền sư thúc. Không ai khen, nhưng ít nhất không còn ai giấu dao sau lưng bạn.",
+        "hieu_ung": [
+          { "hiep_nghia": 40 },
+          { "thanh_danh": -20 },
+          { "xoa_co": "su_thuc_de_y" }
+        ]
+      }
+    },
+    {
+      "ma": "c",
+      "nhan": "Nhịn, tìm cớ quay về trước khi vào khe núi",
+      "ket_qua": {
+        "van_ban": "Bạn ôm bụng nói đau, xin quay về. Lão nhìn bạn rất lâu rồi gật đầu. Chuyến đi hoãn lại, nhưng bạn biết mình vừa tự tay dời ngày lão ra tay sang một dịp khác, và năm sau bạn sẽ phải dè chừng từng bước.",
+        "hieu_ung": [
+          { "hiep_nghia": -10 },
+          { "mat_ap_nam_sau": 1 }
+        ]
+      }
+    }
+  ]
+}

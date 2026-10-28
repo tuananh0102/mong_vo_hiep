@@ -2,7 +2,8 @@ import { describe, expect, it } from 'vitest'
 import { napTuDia } from '../src/du_lieu/nap_node'
 import { taoTrangThaiRong } from '../src/luat/chi_so'
 import { apDung } from '../src/luat/dong_co'
-import type { TrangThaiGame } from '../src/luat/kieu'
+import type { BuocTamHiep, TrangThaiGame } from '../src/luat/kieu'
+import { luaChonPhanDinh } from '../src/luat/tam_hiep/tran'
 import { xemSuKien } from '../src/luat/xem'
 
 const dl = napTuDia()
@@ -66,14 +67,37 @@ describe('dong_co (apDung)', () => {
 
   it('replay 50 lệnh qua_nam từ cùng seed ra cùng trạng thái giống hệt', () => {
     const seed = 999
-    let s1: TrangThaiGame = taoTrangThaiRong(seed)
-    let s2: TrangThaiGame = taoTrangThaiRong(seed)
+    // M1-15: dùng một kiếp thật thay vì trạng thái rỗng, vì sự kiện 16+ có thể làm giảm tuổi thọ
+    // (Điểm Ám Thương) khiến nhân vật rỗng chết trước tuổi 50.
+    const khoiTaoKiep = (): TrangThaiGame => {
+      let s = taoTrangThaiRong(seed)
+      s = apDung(s, { loai: 'tao_kiep', seed, gioi_tinh: 'nam', ten: '', uu_dai: [] }, dl).trang_thai
+      if (s.cho?.loai === 'chon_thien_phu') {
+        s = apDung(s, { loai: 'chon_thien_phu', ma: s.cho.lua_chon[0] }, dl).trang_thai
+      }
+      return s
+    }
+    let s1: TrangThaiGame = khoiTaoKiep()
+    let s2: TrangThaiGame = khoiTaoKiep()
 
-    // Sự kiện năm mới (M1-14) chặn qua_nam: giải bằng lựa chọn mở đầu tiên rồi qua năm tiếp.
+    // Sự kiện năm mới (M1-14, M1-15) chặn qua_nam: giải bằng lựa chọn mở đầu tiên rồi qua năm tiếp.
+    // Từ M1-15 có sự kiện mở Quyết Đấu Tam Hiệp (Đại Hội Võ Lâm) nên phải giải luôn các bước trận.
     const giaiSuKien = (s: TrangThaiGame): TrangThaiGame => {
-      while (s.cho?.loai === 'su_kien') {
-        const mo = xemSuKien(s, dl)!.lua_chon.find((c) => !c.bi_khoa)!
-        s = apDung(s, { loai: 'chon', ma_lua_chon: mo.ma }, dl).trang_thai
+      while (s.cho?.loai === 'su_kien' || s.cho?.loai === 'tam_hiep') {
+        const cho = s.cho
+        if (cho.loai === 'su_kien') {
+          const mo = xemSuKien(s, dl)!.lua_chon.find((c) => !c.bi_khoa)!
+          s = apDung(s, { loai: 'chon', ma_lua_chon: mo.ma }, dl).trang_thai
+          continue
+        }
+        const t = cho.tran
+        let buoc: BuocTamHiep | null = null
+        if (t.buoc === 'chon_huong') buoc = { loai: 'huong', huong: 'an_binh' }
+        else if (t.buoc === 'giua_hiep') buoc = { loai: 'bo_qua' }
+        else if (t.buoc === 'chon_chieu') buoc = { loai: 'chieu', ma: t.a.chieu[0]!.ma }
+        else if (t.buoc === 'phan_dinh') buoc = { loai: 'phan_dinh', ma: luaChonPhanDinh(t)[0]! }
+        if (buoc === null) break
+        s = apDung(s, { loai: 'tam_hiep', buoc }, dl).trang_thai
       }
       return s
     }
