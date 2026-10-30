@@ -665,7 +665,7 @@ Task lớn, làm theo 4 phần, mỗi phần một commit.
 
 ---
 
-### [ ] M1-19 Bot, đối chiếu thống kê, sửa cân bằng nhỏ
+### [x] M1-19 Bot, đối chiếu thống kê, sửa cân bằng nhỏ
 
 **Phụ thuộc:** M1-18 (và mọi task M1 trước).
 **Đọc:** 01 mục 10.3, 10.6; `mo_phong/BAO_CAO.md` mục vòng mới nhất (lấy số tuổi mất trung vị, tỷ lệ tử trận theo lối chơi).

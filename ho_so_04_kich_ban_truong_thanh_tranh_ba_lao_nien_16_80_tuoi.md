@@ -78,7 +78,7 @@ Nếu người chơi chọn làm Lãng khách (như Dương Quá giai đoạn sa
 ### 3. [Sự kiện Tranh Bá Tuổi 35 – 45]: Đại Biến Cố Kế Vị Chưởng Môn
 * **Bối cảnh:** Sư phụ của bạn tuổi cao sức yếu (hoặc trúng độc trọng thương), gọi bạn và **Đại Sư Huynh** (người có dã tâm lớn nhưng lòng dạ hẹp hòi) vào giường bệnh. Sư phụ muốn truyền chiếc nhẫn Chưởng môn cho bạn, nhưng chưa kịp trối trăng xong thì tắt thở. Đại Sư Huynh lập tức rút kiếm vu khống bạn hạ độc thí sư để cướp ngôi!
 * **Lựa chọn:**
-  * **[A] Chấp nhận tỷ thí sinh tử ngay tại linh đường để chứng minh trong sạch:**
+  * **[A] Chấp nhận tỷ thí phân thắng bại ngay tại linh đường để chứng minh trong sạch:**
     * *Hệ quả:* `[Tam Hiệp: Đại Sư Huynh]`.
     * *Thắng:* Toàn phái tâm phục khẩu phục tôn bạn làm **Tân Chưởng Môn**.
     * *Thua:* Bị trục xuất khỏi môn phái nhưng **giữ nguyên võ công**. *(Thanh danh $-100$ vì bị coi là kẻ thí sư, Cống hiến về $0$. Đại Sư Huynh lên ngôi Chưởng môn và trở thành **Kẻ Thù Truyền Kiếp**. Người chơi chuyển sang con đường Lãng khách, có thể Khai Tông Lập Phái hoặc quay về đoạt lại sư môn sau này)*. Mô phỏng cho thấy nhánh này là tung đồng xu với đối thủ ngang sức, nên hình phạt phế võ công cũ (mất toàn bộ cấp võ học) quá nặng.

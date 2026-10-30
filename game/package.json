@@ -10,6 +10,8 @@
     "test": "vitest run",
     "lint": "eslint .",
     "typecheck": "tsc -b --noEmit",
+    "bot": "tsx cong_cu/bot.ts",
+    "mo-phong": "tsx cong_cu/mo_phong.ts",
     "kiem-tra-du-lieu": "tsx cong_cu/kiem_tra_du_lieu.ts",
     "kiem-tra": "npm run typecheck && npm run lint && npm run kiem-tra-du-lieu && npm run test"
   },

@@ -24,8 +24,8 @@
   "lua_chon": [
     {
       "ma": "a",
-      "nhan": "Chấp nhận tỷ thí sinh tử ngay tại linh đường để chứng minh trong sạch",
-      "kiem_dinh": { "loai": "tam_hiep", "doi_thu": "dai_su_huynh", "che_do": "sinh_tu" },
+      "nhan": "Chấp nhận tỷ thí phân thắng bại ngay tại linh đường để chứng minh trong sạch",
+      "kiem_dinh": { "loai": "tam_hiep", "doi_thu": "dai_su_huynh", "che_do": "ty_thi" },
       "thanh_cong": {
         "van_ban": "Bạn đánh bại Đại Sư Huynh ngay trước bài vị sư phụ. Hắn buông kiếm, quỳ xuống, và các Trưởng lão đồng loạt cúi đầu. Bạn nhận chiếc nhẫn từ tay vị sư thúc lớn tuổi nhất, giữa một linh đường im như tờ. Từ đêm ấy, cả môn phái gọi bạn là Chưởng môn.",
         "hieu_ung": [
