@@ -681,7 +681,7 @@ Task lớn, làm theo 4 phần, mỗi phần một commit.
 
 ---
 
-### [ ] M1-20 Phát hành v0.1 "Nhất Kiếp"
+### [x] M1-20 Phát hành v0.1 "Nhất Kiếp"
 
 **Phụ thuộc:** mọi task M1.
 
