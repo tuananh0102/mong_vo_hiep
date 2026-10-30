@@ -1,8 +1,10 @@
-import { useEffect, useState, type CSSProperties } from 'react'
+import { useEffect, useState, type CSSProperties, type RefObject } from 'react'
 import type { DuLieuManHinh } from '../luat/xem'
 
 export interface PropsThanhTrangThai {
   duLieu: DuLieuManHinh
+  nutTenRef: RefObject<HTMLButtonElement | null>
+  onMoBatTu: () => void
 }
 
 /** HS07 I.1: Header - tên, danh hiệu, tuổi, vùng, môn phái, HP / Nội tức, ngân lượng. */
@@ -11,7 +13,7 @@ function tiLe(giaTri: number, toiDa: number): number {
   return Math.min(100, Math.max(0, Math.round((giaTri / toiDa) * 100)))
 }
 
-export function ThanhTrangThai({ duLieu }: PropsThanhTrangThai) {
+export function ThanhTrangThai({ duLieu, nutTenRef, onMoBatTu }: PropsThanhTrangThai) {
   // M1-16: chạm vùng tạm mở Popover tên vùng; bản đồ Thần Châu ở M3-01
   const [moVung, setMoVung] = useState(false)
 
@@ -30,8 +32,14 @@ export function ThanhTrangThai({ duLieu }: PropsThanhTrangThai) {
     <header className="vk-header">
       <div className="vk-header__hang">
         <div>
-          {/* M1-17 mở Sheet Bát Tự từ tên này */}
-          <button className="vk-header__ten" type="button">
+          {/* M1-17: chạm tên mở Sheet Bát Tự */}
+          <button
+            ref={nutTenRef}
+            className="vk-header__ten"
+            type="button"
+            aria-haspopup="dialog"
+            onClick={onMoBatTu}
+          >
             {duLieu.ten}
           </button>
           <div className="vk-header__danh-hieu">{duLieu.danh_hieu}</div>

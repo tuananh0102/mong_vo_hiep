@@ -19,6 +19,19 @@ export type HamXuLyHanhDong = (
   thamSo?: Record<string, string | number>,
 ) => { dong_moi: DongBienNien[]; loi?: string | null }
 
+/**
+ * HS03 I, G07: cần thầy hoặc sách để học Tạp học:
+ * gia cảnh Phú Thương / Thế Gia, đang ở môn phái, hoặc mang theo sách.
+ */
+export function coThayTapHoc(d: TrangThaiGame, thamSo?: Record<string, string | number>): boolean {
+  return (
+    d.nhan_vat.gia_canh === 'phu_thuong' ||
+    d.nhan_vat.gia_canh === 'vo_lam_the_gia' ||
+    d.nhan_vat.mon_phai !== null ||
+    Boolean(thamSo?.co_sach)
+  )
+}
+
 export const BANG_XU_LY: Record<string, HamXuLyHanhDong> = {
   // G08: Hành động trẻ em 0 - 5 tuổi
   nam_noi: (d, _rng, dl) => {
@@ -174,14 +187,8 @@ export const BANG_XU_LY: Record<string, HamXuLyHanhDong> = {
 
   // G07: Học Tạp học
   hoc_tap_hoc: (d, _rng, dl, thamSo) => {
-    // HS03 I, G07: cần thầy hoặc sách: gia cảnh Phú Thương / Thế Gia, hoặc đang ở môn phái, hoặc có sách
-    const coThay =
-      d.nhan_vat.gia_canh === 'phu_thuong' ||
-      d.nhan_vat.gia_canh === 'vo_lam_the_gia' ||
-      d.nhan_vat.mon_phai !== null ||
-      Boolean(thamSo?.co_sach)
-
-    if (!coThay) {
+    // HS03 I, G07: cần thầy hoặc sách (xem coThayTapHoc)
+    if (!coThayTapHoc(d, thamSo)) {
       return { dong_moi: [], loi: 'thieu_dieu_kien_hoc' }
     }
 

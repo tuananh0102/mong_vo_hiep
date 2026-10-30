@@ -4,7 +4,7 @@ import { ManDauThai } from './ManDauThai'
 import { ManHinh } from './ManHinh'
 
 export function UngDung() {
-  const { duLieuManHinh, phat } = useTroChoi()
+  const { duLieuManHinh, xemTab, phat } = useTroChoi()
 
   if (duLieuManHinh.man === 'dau_thai') {
     return <ManDauThai phat={phat} />
@@ -26,5 +26,5 @@ export function UngDung() {
     )
   }
 
-  return <ManHinh duLieu={duLieuManHinh} phat={phat} />
+  return <ManHinh duLieu={duLieuManHinh} xemTab={xemTab} phat={phat} />
 }

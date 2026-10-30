@@ -1,17 +1,10 @@
 import { Fragment, useEffect, useMemo, useRef, useState } from 'react'
 import type { DongBienNien } from '../luat/kieu'
-import type { VoHocHienThi } from '../luat/xem'
+import { TEN_TIER, type VoHocHienThi } from '../luat/xem'
 
 export interface PropsBienNien {
   bienNien: DongBienNien[]
   voHoc: VoHocHienThi[]
-}
-
-const TEN_TIER: Record<1 | 2 | 3 | 4, string> = {
-  1: 'Nhập môn',
-  2: 'Thượng thừa',
-  3: 'Trấn phái',
-  4: 'Thần công',
 }
 
 interface DoanVan {

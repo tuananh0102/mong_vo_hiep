@@ -5,7 +5,7 @@ import { taoTrangThaiRong } from '../luat/chi_so'
 import { apDung } from '../luat/dong_co'
 import type { Lenh, TrangThaiGame } from '../luat/kieu'
 import { docBanLuu, PHIEN_BAN, tuanTuHoa, type BanLuu } from '../luat/luu'
-import { xemManHinh, type DuLieuManHinh } from '../luat/xem'
+import { xemManHinh, xemTatCaTab, type DuLieuManHinh, type DuLieuTab } from '../luat/xem'
 import { CO_TRAN_THU, datTranThu } from './thu_tam_hiep'
 
 export const KHOA_LUU = 'vkgh.kiep'
@@ -89,9 +89,11 @@ export function reducer(state: BoNho, lenh: Lenh): BoNho {
 export function useTroChoi() {
   const [boNho, phat] = useReducer(reducer, undefined, khoiTaoTroChoi)
   const duLieuManHinh: DuLieuManHinh = xemManHinh(boNho.hien_tai, DU_LIEU)
+  const xemTab: DuLieuTab = xemTatCaTab(boNho.hien_tai, DU_LIEU)
 
   return {
     duLieuManHinh,
+    xemTab,
     trangThai: boNho.hien_tai,
     loi: boNho.loi,
     phat,

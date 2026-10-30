@@ -626,7 +626,7 @@ Task lớn, làm theo 4 phần, mỗi phần một commit.
 
 ---
 
-### [ ] M1-17 Giao diện 4 Tab và Bát Tự
+### [x] M1-17 Giao diện 4 Tab và Bát Tự
 
 **Phụ thuộc:** M1-16, M1-12, M1-13.
 **Đọc:** HS07 I.2; thiết kế mục 6.2, 7; `mau.html` khung "Sheet nội dung Tab".

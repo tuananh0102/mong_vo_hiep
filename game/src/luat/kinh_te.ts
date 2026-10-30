@@ -1,5 +1,5 @@
 // HS06 II.1 - II.4, III; HS06 I.1 (Chữa kịp thời): Kinh tế cơ bản, Nợ, chợ, đan dược trị thương
-import type { DuLieu, HieuUng } from '../du_lieu/luoc_do'
+import type { DuLieu, HieuUng, VatPham } from '../du_lieu/luoc_do'
 import { congChiSo } from './chi_so'
 import { danhVongHienThi, hpMax, noiTucMax } from './cong_thuc'
 import { giaoChienNhanh } from './giao_chien_nhanh'
@@ -263,6 +263,15 @@ const khoaDaDung = (ma: string): string => `da_dung_${ma}`
 const DAC_BIET_CHUA_CO = new Set(['chua_tan_phe', 'thien_vuong_bao_tam'])
 
 /**
+ * HS06 III: đan dược dùng được ngoài trận.
+ * Món chưa có hiệu ứng ở M1 (chữa tàn phế, Thiên Vương Bảo Tâm Đan mang theo) không dùng được.
+ */
+export function dungDuocNgoaiTran(vp: VatPham): boolean {
+  if (vp.loai !== 'dan_duoc') return false
+  return vp.hieu_ung.length > 0 || vp.dac_biet.some((x) => !DAC_BIET_CHUA_CO.has(x))
+}
+
+/**
  * Lệnh `dung_vat_pham` cho đan dược ngoài trận. Kháng Thuốc (HS06 III) cho món `khang_thuoc`: lần 1 trọn,
  * lần 2 còn 50%, từ lần 3 vô tác dụng (vẫn mất thuốc). Thuốc hồi HP giá từ 350 lạng là thuốc trị nội thương: xóa Trọng thương.
  * Chưa có hiệu ứng ở M1: hóa giải độc, chữa tàn phế (M2), Thiên Vương Bảo Tâm Đan (mang theo, tự kích hoạt trong trận).
@@ -272,7 +281,7 @@ export function dungVatPham(d: TrangThaiGame, dl: DuLieu, rng: Rng, ma: string):
   const vp = dl.vat_pham?.[ma]
   if (!vp || vp.loai !== 'dan_duoc') return { dong_moi: [], loi: 'khong_dung_duoc' }
   if ((nv.hanh_trang[ma] ?? 0) < 1) return { dong_moi: [], loi: 'khong_co_vat_pham' }
-  if (vp.hieu_ung.length === 0 && vp.dac_biet.every((x) => DAC_BIET_CHUA_CO.has(x))) {
+  if (!dungDuocNgoaiTran(vp)) {
     return { dong_moi: [], loi: 'khong_dung_duoc' }
   }
 

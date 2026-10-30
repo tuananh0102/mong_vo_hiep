@@ -1,16 +1,43 @@
 import type { Lenh } from '../luat/kieu'
 
+export type MaTab = 'tu_luyen' | 'vo_hoc' | 'nhan_mach' | 'mon_phai'
+
 export interface PropsBanDieuKhien {
   ap: number
   tongAp: number
   nenQuaNam: boolean
+  tabMo: MaTab | null
+  coMonPhai: boolean
+  onChonTab: (ma: MaTab, nut: HTMLButtonElement) => void
   phat: (lenh: Lenh) => void
 }
 
 const SO_NGOC_TOI_DA = 4
 
-/** HS07 I.1, HS01 IV: Dock - ngọc AP, nút "+1 Tuổi", 5 Tab (Tab 5 khóa tới M2-14). */
-export function BanDieuKhien({ ap, tongAp, nenQuaNam, phat }: PropsBanDieuKhien) {
+interface DinhNghiaTab {
+  ma: MaTab
+  ten: string
+  bieuTuong: string
+}
+
+/** HS07 I.2: 5 Tab, Tab Môn Phái mở ngay khi gia nhập phái, Tab 5 khóa tới M2-14. */
+const CAC_TAB: readonly DinhNghiaTab[] = [
+  { ma: 'tu_luyen', ten: 'Tu Luyện', bieuTuong: '⛰' },
+  { ma: 'vo_hoc', ten: 'Võ Học', bieuTuong: '⚔' },
+  { ma: 'nhan_mach', ten: 'Nhân Mạch', bieuTuong: '⚭' },
+  { ma: 'mon_phai', ten: 'Môn Phái', bieuTuong: '⛩' },
+]
+
+/** HS07 I.1, HS01 IV: Dock - ngọc AP, nút "+1 Tuổi", 5 Tab. */
+export function BanDieuKhien({
+  ap,
+  tongAp,
+  nenQuaNam,
+  tabMo,
+  coMonPhai,
+  onChonTab,
+  phat,
+}: PropsBanDieuKhien) {
   const soNgoc = Math.max(ap, Math.min(tongAp, SO_NGOC_TOI_DA))
 
   return (
@@ -33,30 +60,29 @@ export function BanDieuKhien({ ap, tongAp, nenQuaNam, phat }: PropsBanDieuKhien)
         </button>
       </div>
       <ul className="vk-tabs" role="tablist">
-        <li>
-          <button className="vk-tab" role="tab" aria-selected="false" type="button">
-            <span className="vk-tab__bieu-tuong" aria-hidden="true">⛰</span>
-            Tu Luyện
-          </button>
-        </li>
-        <li>
-          <button className="vk-tab" role="tab" aria-selected="false" type="button">
-            <span className="vk-tab__bieu-tuong" aria-hidden="true">⚔</span>
-            Võ Học
-          </button>
-        </li>
-        <li>
-          <button className="vk-tab" role="tab" aria-selected="false" type="button">
-            <span className="vk-tab__bieu-tuong" aria-hidden="true">⚭</span>
-            Nhân Mạch
-          </button>
-        </li>
-        <li>
-          <button className="vk-tab" role="tab" aria-selected="false" type="button">
-            <span className="vk-tab__bieu-tuong" aria-hidden="true">⛩</span>
-            Môn Phái
-          </button>
-        </li>
+        {CAC_TAB.map((tab) => {
+          const khoa = tab.ma === 'mon_phai' && !coMonPhai
+          return (
+            <li key={tab.ma}>
+              <button
+                className="vk-tab"
+                role="tab"
+                aria-selected={tabMo === tab.ma}
+                aria-disabled={khoa ? 'true' : undefined}
+                type="button"
+                onClick={(e) => {
+                  if (khoa) return
+                  onChonTab(tab.ma, e.currentTarget)
+                }}
+              >
+                <span className="vk-tab__bieu-tuong" aria-hidden="true">
+                  {tab.bieuTuong}
+                </span>
+                {tab.ten}
+              </button>
+            </li>
+          )
+        })}
         <li>
           <button
             className="vk-tab"
@@ -65,7 +91,9 @@ export function BanDieuKhien({ ap, tongAp, nenQuaNam, phat }: PropsBanDieuKhien)
             aria-disabled="true"
             type="button"
           >
-            <span className="vk-tab__bieu-tuong" aria-hidden="true">☰</span>
+            <span className="vk-tab__bieu-tuong" aria-hidden="true">
+              ☰
+            </span>
             Phong Vân
           </button>
         </li>
