@@ -4,6 +4,7 @@ import { congChiSo } from './chi_so'
 import { hpMax, noiTucMax } from './cong_thuc'
 import type { DongBienNien, TrangThaiGame } from './kieu'
 import { chi, thu } from './kinh_te'
+import { ketThucKiep } from './ket_cuc'
 import type { Rng } from './rng'
 import { datBac, datMonPhai, roiPhai } from './mon_phai'
 import { hocVoHoc } from './vo_hoc'
@@ -160,16 +161,15 @@ function apGhiKeThu(hu: { ghi_ke_thu: string }, d: TrangThaiGame): void {
   d.nhan_vat.co_su_kien[`ke_thu_${hu.ghi_ke_thu}`] = true
 }
 
-function apChet(hu: { chet: string }, d: TrangThaiGame): void {
-  d.ket_thuc = { nguyen_nhan: hu.chet, tuoi: d.nhan_vat.tuoi }
-  d.cho = { loai: 'chuyen_giai_doan', ma: 'van_bia' }
+function apChet(hu: { chet: string }, d: TrangThaiGame, rng: Rng, dl: DuLieu): void {
+  ketThucKiep(d, rng, dl, hu.chet)
 }
 
 /** Áp dụng một hiệu ứng lên trạng thái game. Trả về các dòng Biên Niên Sử mới sinh ra (nếu có). */
 export function apHieuUng(
   hu: HieuUng,
   d: TrangThaiGame,
-  _rng: Rng,
+  rng: Rng,
   dl: DuLieu,
   bien?: Record<string, string>,
 ): DongBienNien[] {
@@ -269,7 +269,7 @@ export function apHieuUng(
     return []
   }
   if ('chet' in hu) {
-    apChet(hu, d)
+    apChet(hu, d, rng, dl)
     return []
   }
   if ('dong' in hu) {

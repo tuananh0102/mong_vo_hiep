@@ -154,7 +154,7 @@ describe('hieu_ung', () => {
     ])
 
     apHieuUng({ chet: 'trung_doc' }, d, rng, dl)
-    expect(d.ket_thuc).toEqual({ nguyen_nhan: 'trung_doc', tuoi: 30 })
+    expect(d.ket_thuc).toMatchObject({ nguyen_nhan: 'trung_doc', tuoi: 30 })
     expect(d.cho).toEqual({ loai: 'chuyen_giai_doan', ma: 'van_bia' })
   })
 })

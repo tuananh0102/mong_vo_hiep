@@ -15,6 +15,7 @@ import {
 import { pRoll } from '../kiem_dinh'
 import { thu } from '../kinh_te'
 import type { BuocTamHiep, DongBienNien, TrangThaiGame } from '../kieu'
+import { ketThucKiep } from '../ket_cuc'
 import type { Rng } from '../rng'
 import { apKetQua, hoanTatSuKien } from '../su_kien'
 import { kichHoatCuuMang, type HieuUngCuuMang } from './cuu_mang'
@@ -191,10 +192,8 @@ export function ketThucTran(
   else if (luaHau) ghi(mau(`ket_thuc.${luaHau}`))
 
   if (lyDoChet) {
-    // TODO M1-18: chuyển sang ketThucKiep(d, rng, dl, lyDo)
     nv.hp = 0
-    d.ket_thuc = { nguyen_nhan: lyDoChet, tuoi: nv.tuoi }
-    d.cho = { loai: 'chuyen_giai_doan', ma: 'van_bia' }
+    ketThucKiep(d, rng, dl, lyDoChet)
     return dong
   }
 

@@ -41,7 +41,7 @@ describe('dong_co (apDung)', () => {
 
   it('khi đã kết thúc, chỉ nhận lệnh tiep_tuc', () => {
     const s = taoTrangThaiRong(10)
-    s.ket_thuc = { nguyen_nhan: 'thọ chung', tuoi: 80 }
+    s.ket_thuc = { nguyen_nhan: 'thọ chung', tuoi: 80, ket_cuc: 'kc_mac_dinh', diem_luan_hoi: 160, danh_hieu_phu: [] }
     s.cho = { loai: 'chuyen_giai_doan', ma: 'van_bia' }
 
     const resSai = apDung(s, { loai: 'qua_nam' }, dl)
@@ -50,7 +50,8 @@ describe('dong_co (apDung)', () => {
 
     const resDung = apDung(s, { loai: 'tiep_tuc' }, dl)
     expect(resDung.loi).toBeNull()
-    expect(resDung.trang_thai.cho?.loai).toBe('chuyen_giai_doan')
+    expect(resDung.trang_thai.ket_thuc).toBeNull()
+    expect(resDung.trang_thai.nhan_vat.ten).toBe('')
   })
 
   it('lệnh qua_nam tăng tuổi và đặt lại AP', () => {

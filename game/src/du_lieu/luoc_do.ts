@@ -383,6 +383,31 @@ export const LuocDoVanBanHeThong = z.object({
 })
 export type VanBanHeThong = z.infer<typeof LuocDoVanBanHeThong>
 
+// HS07 IV, ke_hoach/01 mục 8: Kết cục. `dieu_kien` là mã hàm trong luat/ket_cuc.ts (KIEM_TRA).
+export const LuocDoKetCuc = z.object({
+  ma: z.string().min(1),
+  thu_tu: z.number().int(),
+  nhom: z.number().int().min(0).max(3),
+  tier: z.enum(['SSS', 'SS', 'A', 'B', 'khong']),
+  diem: z.number().int().min(0),
+  dieu_kien: z.string().min(1),
+  ten: z.string().min(1),
+  mo_ta: z.string().min(1),
+})
+export type KetCucDuLieu = z.infer<typeof LuocDoKetCuc>
+
+// HS07 II: mảnh ghép Văn bia và bảng Can Chi (G20)
+const MauVb = z.string().min(1)
+export const LuocDoVanBia = z.object({
+  can: z.array(MauVb).length(10),
+  chi: z.array(MauVb).length(12),
+  doan_1: z.object({ sinh: MauVb, ky_ngo: MauVb }),
+  doan_2: z.object({ vo_hoc: MauVb, khong_vo_hoc: MauVb, mon_phai: MauVb, vo_mon_phai: MauVb }),
+  doan_3: z.object({ giet: MauVb, thang: MauVb, yen: MauVb }),
+  doan_4: z.object({ chet: z.record(z.string(), MauVb), chet_mac_dinh: MauVb, di_san: MauVb }),
+})
+export type VanBiaDuLieu = z.infer<typeof LuocDoVanBia>
+
 export interface DuLieu {
   vung: Record<string, Vung>
   chi_so: Record<string, DinhNghiaChiSo>
@@ -397,4 +422,6 @@ export interface DuLieu {
   hanh_dong?: Record<string, HanhDong>
   ten_npc?: DanhSachTenNpc
   van_ban_he_thong?: VanBanHeThong
+  ket_cuc?: Record<string, KetCucDuLieu>
+  van_bia?: VanBiaDuLieu
 }

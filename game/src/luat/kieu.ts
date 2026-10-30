@@ -193,6 +193,9 @@ export interface DongBienNien {
 export interface KetThuc {
   nguyen_nhan: string
   tuoi: number
+  ket_cuc: string // mã kết cục chính (ket_cuc.json), HS07 IV
+  diem_luan_hoi: number // HS07 II.1
+  danh_hieu_phu: string[] // mã các kết cục khác cũng đạt, không cộng điểm (G24)
 }
 
 /** Các đời đã qua (M3). */

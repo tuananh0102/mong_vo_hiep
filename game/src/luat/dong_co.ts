@@ -1,6 +1,7 @@
 // 01 mục 5: Động cơ game - một cửa vào duy nhất apDung.
 import type { DuLieu } from '../du_lieu/luoc_do'
 import { kiemTraBatBien } from './bat_bien'
+import { taoTrangThaiRong } from './chi_so'
 import { khoiTaoKiep, thucHienChonThienPhu } from './dau_thai'
 import type { DongBienNien, Lenh, TrangThaiGame } from './kieu'
 import { rngTuSeed, taoRng } from './rng'
@@ -92,8 +93,10 @@ export function apDung(s: TrangThaiGame, lenh: Lenh, dl: DuLieu): KetQuaLenh {
 
     case 'tiep_tuc': {
       if (d.ket_thuc !== null) {
-        // Sau khi chết, tiếp tục chuyển sang màn tiếp theo (HS07)
-        d.cho = { loai: 'chuyen_giai_doan', ma: 'chon_nguoi_ke_thua' }
+        // M1: mọi kiếp đều tuyệt tự (HS05 IV.2 trường hợp 2), Văn bia xong thì về màn Đầu thai.
+        const dongToc = d.dong_toc
+        Object.assign(d, taoTrangThaiRong(rng.nguyen(1, 2 ** 31 - 1)))
+        d.dong_toc = dongToc
       } else {
         d.cho = null
       }

@@ -1,0 +1,29 @@
+{
+  "can": ["Giáp", "Ất", "Bính", "Đinh", "Mậu", "Kỷ", "Canh", "Tân", "Nhâm", "Quý"],
+  "chi": ["Tý", "Sửu", "Dần", "Mão", "Thìn", "Tỵ", "Ngọ", "Mùi", "Thân", "Dậu", "Tuất", "Hợi"],
+  "doan_1": {
+    "sinh": "Sinh năm {nam_sinh} tại đất {vung}, trong gia cảnh {gia_canh}.",
+    "ky_ngo": "Năm {tuoi_ky_ngo} tuổi gặp kỳ ngộ."
+  },
+  "doan_2": {
+    "vo_hoc": "Luyện {vo_hoc} đến cấp {cap}/10.",
+    "khong_vo_hoc": "Cả đời không luyện thành môn võ nào đáng kể.",
+    "mon_phai": "Năm {tuoi_gia_nhap} tuổi gia nhập {mon_phai}, đạt bậc {bac}.",
+    "vo_mon_phai": "Cả đời không gia nhập môn phái nào."
+  },
+  "doan_3": {
+    "giet": "Dưới tay đã có {so_giet} người về nơi chín suối, thắng {so_thang} trận quyết đấu.",
+    "thang": "Thắng {so_thang} trận quyết đấu, thua {so_thua} trận.",
+    "yen": "Không vướng ân oán lớn nào trên giang hồ."
+  },
+  "doan_4": {
+    "chet": {
+      "tho_chung": "Năm {tuoi} tuổi tuổi thọ đã tận, thanh thản tạ thế.",
+      "tu_tran": "Năm {tuoi} tuổi tử trận trong một cuộc quyết đấu sinh tử.",
+      "trung_doc": "Năm {tuoi} tuổi trúng độc mà chết.",
+      "khong_coc_day_vuc": "Năm {tuoi} tuổi nhảy xuống vực sâu, từ đó không ai tìm thấy xương cốt."
+    },
+    "chet_mac_dinh": "Năm {tuoi} tuổi vẫn lạc.",
+    "di_san": "Không người nối dõi, cơ nghiệp theo gió bay."
+  }
+}

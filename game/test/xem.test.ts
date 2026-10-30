@@ -22,7 +22,7 @@ describe('xem / manHienThi', () => {
     expect(manHienThi(d)).toBe('chon_thien_phu')
 
     d.cho = null
-    d.ket_thuc = { nguyen_nhan: 'tho_chung', tuoi: 78 }
+    d.ket_thuc = { nguyen_nhan: 'tho_chung', tuoi: 78, ket_cuc: 'kc_mac_dinh', diem_luan_hoi: 0, danh_hieu_phu: [] }
     expect(manHienThi(d)).toBe('ket_thuc')
   })
 })

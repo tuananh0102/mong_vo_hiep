@@ -645,7 +645,7 @@ Task lớn, làm theo 4 phần, mỗi phần một commit.
 
 ---
 
-### [ ] M1-18 Cái chết, Kết cục, Văn bia, Điểm Luân Hồi
+### [x] M1-18 Cái chết, Kết cục, Văn bia, Điểm Luân Hồi
 
 **Phụ thuộc:** M1-11, M1-07.
 **Đọc:** HS07 II, IV (kết cục #13, #15, #17, #18); HS05 IV.2 trường hợp 2 (tuyệt tự, M1 mọi kiếp đều tuyệt tự); `mau.html` khung "Văn bia"; `05_LO_HONG_GDD.md` G09.

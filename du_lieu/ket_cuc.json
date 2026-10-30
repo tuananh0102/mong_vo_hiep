@@ -1,0 +1,192 @@
+[
+  {
+    "ma": "kc_01",
+    "thu_tu": 1,
+    "nhom": 1,
+    "tier": "SSS",
+    "diem": 500,
+    "dieu_kien": "chi_ton_thien_ha",
+    "ten": "Võ Lâm Chí Tôn - Thiên Hạ Đệ Nhất",
+    "mo_ta": "Tên tuổi của bạn trở thành huyền thoại sống đứng trên đỉnh cao nhất của Thần Châu. Sau khi bạn qua đời, cả võ lâm suốt 100 năm sau vẫn lấy võ học của bạn làm thước đo chuẩn mực."
+  },
+  {
+    "ma": "kc_02",
+    "thu_tu": 2,
+    "nhom": 1,
+    "tier": "SSS",
+    "diem": 500,
+    "dieu_kien": "khai_tong_lap_to",
+    "ten": "Khai Tông Lập Tổ - Nhất Đại Tông Sư",
+    "mo_ta": "Từ hai bàn tay trắng, bạn đã sánh ngang với Đạt Ma Sư Tổ và Trương Tam Phong, khai sáng ra một đại môn phái trường tồn vạn đại."
+  },
+  {
+    "ma": "kc_03",
+    "thu_tu": 3,
+    "nhom": 1,
+    "tier": "SSS",
+    "diem": 500,
+    "dieu_kien": "vi_quoc_vi_dan",
+    "ten": "Vị Quốc Vị Dân - Hiệp Chi Đại Giả",
+    "mo_ta": "Hiệp chi đại giả, vị quốc vị dân. Dù sống hay chết, bách tính khắp Trung Nguyên đều lập đền thờ bạn, hương khói ngàn năm không dứt."
+  },
+  {
+    "ma": "kc_04",
+    "thu_tu": 4,
+    "nhom": 1,
+    "tier": "SSS",
+    "diem": 500,
+    "dieu_kien": "nhat_xuat_dong_phuong",
+    "ten": "Nhật Xuất Đông Phương - Duy Ngã Độc Tôn",
+    "mo_ta": "Cả võ lâm run rẩy dưới gót chân bạn. Các chưởng môn danh môn chính phái mỗi khi nhắc đến tên bạn đều phải biến sắc, thiên hạ quy về một mối bá quyền tàn khốc."
+  },
+  {
+    "ma": "kc_05",
+    "thu_tu": 5,
+    "nhom": 2,
+    "tier": "SS",
+    "diem": 350,
+    "dieu_kien": "tieu_dao_giang_ho",
+    "ten": "Tiêu Dao Giang Hồ - Thần Tiên Quyến Lữ",
+    "mo_ta": "Mặc kệ thế gian tranh đoạt Đồ Long hay Cửu Âm, bạn cùng người thương cưỡi điêu dạo bước nơi sơn cốc, đàn tiêu hòa tấu, để lại sau lưng những lời đồn đại đầy ngưỡng mộ của hậu thế."
+  },
+  {
+    "ma": "kc_06",
+    "thu_tu": 6,
+    "nhom": 2,
+    "tier": "SS",
+    "diem": 350,
+    "dieu_kien": "dien_nhan",
+    "ten": "Thiên Hạ Đệ Nhất Điên Nhân",
+    "mo_ta": "Chẳng biết mình là ai, chẳng cần nhớ chiêu thức tên gì, bạn cười ha hả đi trồng cây chuối về cõi cực lạc trong sự kính sợ tột độ của quần hùng."
+  },
+  {
+    "ma": "kc_07",
+    "thu_tu": 7,
+    "nhom": 2,
+    "tier": "SS",
+    "diem": 350,
+    "dieu_kien": "than_y_doc_vuong",
+    "ten": "Thần Y Cứu Thế - Dược Vương Tái Thế / Vạn Độc Ma Quân",
+    "mo_ta": "Diêm Vương muốn người canh ba chết, nhưng bạn có thể giữ người lại đến canh năm, hoặc ngược lại, bạn chính là Diêm Vương trên nhân thế."
+  },
+  {
+    "ma": "kc_08",
+    "thu_tu": 8,
+    "nhom": 2,
+    "tier": "SS",
+    "diem": 350,
+    "dieu_kien": "phu_kha_dich_quoc",
+    "ten": "Phú Khả Địch Quốc - Thiên Hạ Đệ Nhất Trang Chủ",
+    "mo_ta": "Không cần tự tay rút kiếm, chỉ một cái búng tay ném thỏi vàng của bạn cũng đủ khiến các cao thủ đệ nhất thiên hạ phải lao vào chém giết lẫn nhau."
+  },
+  {
+    "ma": "kc_09",
+    "thu_tu": 9,
+    "nhom": 2,
+    "tier": "SS",
+    "diem": 350,
+    "dieu_kien": "doc_co_cau_bai",
+    "ten": "Độc Cô Cầu Bại - Kiếm Ma Tịch Mịch",
+    "mo_ta": "Tung hoành giang hồ hơn ba mươi năm, giết sạch cừu khấu, bại hết anh hùng, tìm một địch thủ để cầu một trận thua mà không được. Bạn chôn kiếm dưới thung lũng sâu rồi lặng lẽ quy ẩn."
+  },
+  {
+    "ma": "kc_10",
+    "thu_tu": 10,
+    "nhom": 3,
+    "tier": "A",
+    "diem": 200,
+    "dieu_kien": "nguy_quan_tu",
+    "ten": "Ngụy Quân Tử - Thân Bại Danh Liệt",
+    "mo_ta": "Mặt nạ quân tử rơi xuống trước đại hội võ lâm, thanh danh cả đời tan thành tro bụi."
+  },
+  {
+    "ma": "kc_11",
+    "thu_tu": 11,
+    "nhom": 3,
+    "tier": "A",
+    "diem": 200,
+    "dieu_kien": "tinh_truong_da_doan",
+    "ten": "Tình Trường Đa Đoạn - Huyết Nhuộm Đào Hoa",
+    "mo_ta": "Đào hoa thành kiếp nạn: chính những người từng thề non hẹn biển đã đưa bạn về nơi chín suối."
+  },
+  {
+    "ma": "kc_12",
+    "thu_tu": 12,
+    "nhom": 3,
+    "tier": "A",
+    "diem": 200,
+    "dieu_kien": "phuc_quoc_dai_mong",
+    "ten": "Phục Quốc Đại Mộng - Hoàng Lương Nhất Mộng",
+    "mo_ta": "Phản bội bằng hữu và người yêu để đổi lấy ngai vàng, rồi trắng tay, ngồi dưới gốc cây nhận đám trẻ con làm thần dân."
+  },
+  {
+    "ma": "kc_13",
+    "thu_tu": 13,
+    "nhom": 3,
+    "tier": "B",
+    "diem": 100,
+    "dieu_kien": "tao_dich",
+    "ten": "Trọn Đời Làm Tạp Dịch - Tảo Địa Thần Tăng Ẩn Mình",
+    "mo_ta": "Sáu mươi năm quét chùa, đọc kinh, không ai biết người tạp dịch già kia là một tuyệt đỉnh cao thủ."
+  },
+  {
+    "ma": "kc_14",
+    "thu_tu": 14,
+    "nhom": 3,
+    "tier": "B",
+    "diem": 100,
+    "dieu_kien": "binh_pham",
+    "ten": "Bình Phàm Tiểu Nhân Vật - An Nhiên Tự Tại",
+    "mo_ta": "Một đời bình lặng, qua đời trên giường bệnh giữa con cháu quây quần."
+  },
+  {
+    "ma": "kc_15",
+    "thu_tu": 15,
+    "nhom": 3,
+    "tier": "B",
+    "diem": 100,
+    "dieu_kien": "doan_menh",
+    "ten": "Hồng Nhan Bạc Mệnh / Anh Hùng Đoản Mệnh",
+    "mo_ta": "Tài hoa trời phú nhưng yểu mệnh, ngọn đèn vụt tắt khi chưa kịp tỏa sáng."
+  },
+  {
+    "ma": "kc_16",
+    "thu_tu": 16,
+    "nhom": 3,
+    "tier": "A",
+    "diem": 200,
+    "dieu_kien": "phan_do",
+    "ten": "Phản Đồ Vạn Thế Thóa Mạ (Thiên Cổ Tội Nhân)",
+    "mo_ta": "Phản sư môn hết lần này đến lần khác, tên bạn trở thành lời nguyền rủa của cả võ lâm."
+  },
+  {
+    "ma": "kc_17",
+    "thu_tu": 17,
+    "nhom": 3,
+    "tier": "B",
+    "diem": 100,
+    "dieu_kien": "day_vuc",
+    "ten": "Khô Cốt Nơi Đáy Vực - Kỳ Ngộ Bất Thành",
+    "mo_ta": "Không cây thông, không hang động, chỉ có đá vỡ sọ nơi đáy vực. Kỳ ngộ không đến với kẻ thiếu phúc duyên."
+  },
+  {
+    "ma": "kc_18",
+    "thu_tu": 18,
+    "nhom": 3,
+    "tier": "B",
+    "diem": 50,
+    "dieu_kien": "chet_yeu",
+    "ten": "Chết Yểu Từ Trong Nôi - Kiếp Người Chưa Trọn",
+    "mo_ta": "Kiếp người chưa trọn đã khép lại. Điểm Luân Hồi an ủi giúp bạn đầu thai lại ngay."
+  },
+  {
+    "ma": "kc_mac_dinh",
+    "thu_tu": 99,
+    "nhom": 0,
+    "tier": "khong",
+    "diem": 0,
+    "dieu_kien": "luon",
+    "ten": "Giang Hồ Khách Qua Đường",
+    "mo_ta": "Một đời đi qua giang hồ, không để lại danh hiệu nào trong sử sách."
+  }
+]

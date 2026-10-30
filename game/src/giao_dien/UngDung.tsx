@@ -2,6 +2,7 @@ import { useTroChoi } from './dung_tro_choi'
 import { ChonThienPhu } from './ChonThienPhu'
 import { ManDauThai } from './ManDauThai'
 import { ManHinh } from './ManHinh'
+import { VanBia } from './VanBia'
 
 export function UngDung() {
   const { duLieuManHinh, xemTab, phat } = useTroChoi()
@@ -15,15 +16,7 @@ export function UngDung() {
   }
 
   if (duLieuManHinh.man === 'ket_thuc') {
-    // M1-18 thay màn này bằng Văn bia
-    return (
-      <div className="vk-mo-man">
-        <h1 className="vk-mo-man__tieu-de">{duLieuManHinh.ten}</h1>
-        <p className="vk-mo-man__than">
-          Hưởng thọ {duLieuManHinh.tuoi} tuổi. Kiếp này đã khép lại.
-        </p>
-      </div>
-    )
+    return <VanBia duLieu={duLieuManHinh} phat={phat} />
   }
 
   return <ManHinh duLieu={duLieuManHinh} xemTab={xemTab} phat={phat} />

@@ -5,6 +5,7 @@ import {
   LuocDoChiSo,
   LuocDoGiaCanh,
   LuocDoHanhDong,
+  LuocDoKetCuc,
   LuocDoMonPhai,
   LuocDoNhan,
   LuocDoSuKien,
@@ -12,6 +13,7 @@ import {
   LuocDoThienPhu,
   LuocDoTrangThai,
   LuocDoVanBanHeThong,
+  LuocDoVanBia,
   LuocDoVatPham,
   LuocDoVoHoc,
   LuocDoVung,
@@ -109,6 +111,12 @@ export function napDuLieu(tep: Record<string, unknown>): DuLieu {
     } else if (duong === 'npc/ten.json') {
       const tn = doc(duong, noiDung, LuocDoTenNpc)
       if (tn) dl.ten_npc = tn
+    } else if (duong === 'ket_cuc.json') {
+      const ds = doc(duong, noiDung, LuocDoKetCuc.array())
+      if (ds) dl.ket_cuc = theoMa(duong, ds, loi)
+    } else if (duong === 'van_ban/van_bia.json') {
+      const vb = doc(duong, noiDung, LuocDoVanBia)
+      if (vb) dl.van_bia = vb
     } else if (duong === 'van_ban/he_thong.json') {
       const vb = doc(duong, noiDung, LuocDoVanBanHeThong)
       if (vb) dl.van_ban_he_thong = vb

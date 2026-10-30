@@ -111,7 +111,7 @@ export function khoiTaoKiep(
 ): void {
   d.phien_ban = 1
   d.seed = lenh.seed
-  d.nam_the_gioi = 0
+  d.nam_the_gioi = 0 // G20: quay ở cuối hàm để không đổi thứ tự RNG các bước trước
 
   // 1. Giới tính và Tên
   d.nhan_vat.gioi_tinh = lenh.gioi_tinh
@@ -164,6 +164,9 @@ export function khoiTaoKiep(
   d.lich_hen = []
   d.bien_nien = []
   d.ket_thuc = null
+
+  // G20: năm thế giới lúc bắt đầu ván
+  d.nam_the_gioi = rng.nguyen(1100, 1199)
 }
 
 /**

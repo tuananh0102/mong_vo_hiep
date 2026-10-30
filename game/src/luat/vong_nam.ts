@@ -14,6 +14,7 @@ import { chiSinhHoat, hetKhangHanTam, thuNhapGiaDinh, xuLyNo } from './kinh_te'
 import { moiXuongNui, troCapNam } from './mon_phai'
 import { chonSuKienNam } from './su_kien'
 import type { DongBienNien, TrangThaiGame } from './kieu'
+import { ketThucKiep } from './ket_cuc'
 import type { Rng } from './rng'
 
 type HamBuoc = (d: TrangThaiGame, rng: Rng, dl: DuLieu) => DongBienNien[]
@@ -157,11 +158,10 @@ const b10_danhVongAnCu: HamBuoc = () => []
 /**
  * Bước 11: Chết vì hết tuổi thọ: tuoi >= tuoiThoMax(nv) (HS06 I.1).
  */
-const b11_hetTuoiTho: HamBuoc = (d, _rng, dl) => {
+const b11_hetTuoiTho: HamBuoc = (d, rng, dl) => {
   const maxTuoi = tuoiThoMax(d.nhan_vat, dl)
   if (d.nhan_vat.tuoi >= maxTuoi) {
-    d.ket_thuc = { nguyen_nhan: 'tho_chung', tuoi: d.nhan_vat.tuoi }
-    d.cho = { loai: 'chuyen_giai_doan', ma: 'van_bia' }
+    ketThucKiep(d, rng, dl, 'tho_chung')
     return [
       {
         tuoi: d.nhan_vat.tuoi,

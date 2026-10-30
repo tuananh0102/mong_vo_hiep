@@ -9,6 +9,8 @@ import type { NhanDoKho } from './kiem_dinh'
 import { nhanDoKho, pRoll } from './kiem_dinh'
 import type { Cho, DongBienNien, KetThuc, NhanVat, TrangThaiGame } from './kieu'
 import { dungDuocNgoaiTran } from './kinh_te'
+import { canChi, vanBia } from './ket_cuc'
+import { chiTietDiemLuanHoi, type DongDiem } from './luan_hoi'
 import { hangTangKinhCac } from './mon_phai'
 import { tinhXacSuatKiemDinh } from './su_kien'
 import { xemTranDau, type TranHienThi } from './tam_hiep/xem_tran'
@@ -77,6 +79,7 @@ export interface DuLieuManHinh {
   bien_nien: DongBienNien[]
   cho: Cho | null
   ket_thuc: KetThuc | null
+  van_bia: VanBiaHienThi | null
   thien_phu_chon: ThienPhuChonHienThi[]
   vo_hoc: VoHocHienThi[]
   su_kien?: SuKienHienThi | null
@@ -164,6 +167,40 @@ export function xemSuKien(d: TrangThaiGame, dl: DuLieu): SuKienHienThi | null {
   }
 }
 
+export interface VanBiaHienThi {
+  ten_ket_cuc: string
+  mo_ta_ket_cuc: string
+  /** Bậc huy hiệu `data-pham` (SSS 4, SS 3, A 2, B 1); null với kết cục mặc định. */
+  pham: 1 | 2 | 3 | 4 | null
+  tier: string
+  nam: string // "Giáp Tý - Nhâm Thìn · Hưởng thọ 78 tuổi"
+  doan: string[]
+  diem: DongDiem[]
+  tong_diem: number
+  danh_hieu_phu: string[]
+}
+
+const PHAM_THEO_TIER: Record<string, 1 | 2 | 3 | 4> = { SSS: 4, SS: 3, A: 2, B: 1 }
+
+/** HS07 II: dữ liệu màn Văn bia (null khi còn sống). */
+export function xemVanBia(d: TrangThaiGame, dl: DuLieu): VanBiaHienThi | null {
+  const kt = d.ket_thuc
+  if (kt === null) return null
+  const kc = dl.ket_cuc?.[kt.ket_cuc]
+  const sinh = d.nam_the_gioi - kt.tuoi
+  return {
+    ten_ket_cuc: kc?.ten ?? 'Giang Hồ Khách Qua Đường',
+    mo_ta_ket_cuc: kc?.mo_ta ?? '',
+    pham: PHAM_THEO_TIER[kc?.tier ?? ''] ?? null,
+    tier: kc?.tier ?? 'khong',
+    nam: `${canChi(sinh, dl)} - ${canChi(d.nam_the_gioi, dl)} · Hưởng thọ ${kt.tuoi} tuổi`,
+    doan: vanBia(d, dl),
+    diem: chiTietDiemLuanHoi(d, kc ?? { diem: 0 }),
+    tong_diem: kt.diem_luan_hoi,
+    danh_hieu_phu: kt.danh_hieu_phu.map((ma) => dl.ket_cuc?.[ma]?.ten ?? ma),
+  }
+}
+
 /** Trích xuất dữ liệu cần thiết cho giao diện từ trạng thái game. */
 export function xemManHinh(d: TrangThaiGame, dl: DuLieu): DuLieuManHinh {
   const nv = d.nhan_vat
@@ -190,6 +227,7 @@ export function xemManHinh(d: TrangThaiGame, dl: DuLieu): DuLieuManHinh {
     bien_nien: d.bien_nien,
     cho: d.cho,
     ket_thuc: d.ket_thuc,
+    van_bia: xemVanBia(d, dl),
     thien_phu_chon:
       d.cho?.loai === 'chon_thien_phu'
         ? d.cho.lua_chon.map((ma) => {
